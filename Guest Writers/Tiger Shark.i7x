@@ -125,12 +125,12 @@ to say TigerSharkDesc:
 			say ". You feel a shiver running down your spine; the familiar shark believes that you are nothing more than another sea dragon now. Before you get a chance to speak up, the dragon-wrestler grabs at his necklace and boasts, 'These aren't the only ones I beat. Many more have fallen before me, and you will too!'";
 		else if tsw_relationship is 50 (submitted as FSD):
 			say "______";
-		else if tsw_relationship is 52:
+		else if tsw_relationship is 52 (Beat him as FSD):
 			say ". The sight of the trophies makes you growl deeply at your opponent. How dare this guy defile other dragons and go unpunished? Despite having been beaten, the brawler doesn't seem any less confident in his stance or attitude. 'The last time was a ruse. I will get your ass this time, dragon!'";
 		else if tsw_relationship > 49:
 			say ". Even though he didn't harm you last time, you still can't shake being unsettled by these trophies. 'Oh, it's you again. Bad dragon! I told you not to walk out of the water!'";
 		else if  tsw_relationship is 53-55 (Beat him as FSD up to 4 times in a row):
-			say "___";
+			say "_It seems like he is till at it, brandishing that string of tooths in mockery of your kind even though he evidently does not have the chops to wear it as evidenced by your multiple victories over him. He's still brimming with bravado, but with a little more caution this time. 'You're pretty good drake, but I aint  done with you yet!'_";
 		else if tsw_relationship is 60 (Stole his necklace):
 			say "___";
 		else if tasw_relationship is 61 (Submitted as FSD to his vengeful form):
