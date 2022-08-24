@@ -123,10 +123,36 @@ to say TigerSharkDesc:
 		say "     You are faced with a [bold type]scarred[roman type] tiger shark. His front is white, while the rest is ochre and striped. If it wasn't obvious from his bulging muscles alone that he's a fighter, the rest of his body would be enough to convince anyone, as the guy bears a number of impressive scars. He doesn't wear anything that would cover the slit at his groin, almost daring you to check him out in the pose he strikes. A pair of small anal fins are paired around the genital slit to each side. Clothes-wise, the aquatic anthro is almost naked, with just a rope tied around his hips with a few small bags and some kelp fastened to it. What catches your eye in addition to that is a necklace around his neck - with the teeth of his past conquests strung up on a knotted cord";
 		if tsw_relationship is 1:
 			say ". You feel a shiver running down your spine; the familiar shark believes that you are nothing more than another sea dragon now. Before you get a chance to speak up, the dragon-wrestler grabs at his necklace and boasts, 'These aren't the only ones I beat. Many more have fallen before me, and you will too!'";
+		else if tsw_relationship is 50 (submitted as FSD):
+			say "______";
 		else if tsw_relationship is 52:
 			say ". The sight of the trophies makes you growl deeply at your opponent. How dare this guy defile other dragons and go unpunished? Despite having been beaten, the brawler doesn't seem any less confident in his stance or attitude. 'The last time was a ruse. I will get your ass this time, dragon!'";
 		else if tsw_relationship > 49:
 			say ". Even though he didn't harm you last time, you still can't shake being unsettled by these trophies. 'Oh, it's you again. Bad dragon! I told you not to walk out of the water!'";
+		else if  tsw_relationship is 53-55 (Beat him as FSD up to 4 times in a row):
+			say "___";
+		else if tsw_relationship is 60 (Stole his necklace):
+			say "___";
+		else if tasw_relationship is 61 (Submitted as FSD to his vengeful form):
+			say "___";
+		else if tasw_relationship is 62 (Threw fight/lost as FSD to his vengeful form):
+			say "___";
+		else if tasw_relationship is 63 (Beat him as FSD in his vengeful form):
+			say "___";
+		else if tasw_relationship is 63-67 (Win-streak as FSD vs. his vengeful form):
+			say "___";
+		else if tasw_relationship is 68 (Gave him the necklace back as anything other than FSD):
+			say "___";
+		else if tasw_relationship is 69 (Gave him the necklace back as FSD):
+			say "__";
+		else if tasw_relationship is 70 (Transformed him into a FSD):
+			say "__";
+		else if tasw_relationship is 80 (Broke his spirits/mind. He submits willingly to FSDs now):
+			say "__";
+		else if tasw_relationship is 90 (Claimed him while you're a FSD yourself):
+			say "__";
+		else if tasw_relationship is 100 (Didn't claim him yourself, he is taken away by other FSD);
+			say "__";
 		else:
 			say ". Noticing you staring at his neck with your draconic visage, the shark shows you a toothy grin. 'These aren't the only ones I beat. Many more have fallen before me, and you will too!'";
 	else:
