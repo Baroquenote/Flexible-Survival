@@ -254,7 +254,8 @@ to say ChaseDesc:
 	else if Dexterity of Chase is 7: [TODO:Friendship with monogamous sub-Chase]
 		say "     ...";
 	else if Dexterity of Chase is 8: [TODO:Mate with monogamous sub-Chase]
-		say "     ...";
+		say "~~~Chase has come a long way from when you first met him. Apparently, his specific strain of the infection was also tied into him finding a worthy mate. For starters, his body has well... slimmed down from the typical swimmer's build, making him much more effete, both in hight and width. The once electric-blue eyes have now lightened to an almost turquoise color, with a thin layer of lime-green around the edges. The stripes wrapped around his body have also morphed into a more wisp-patterned appearance, with flowing curves and delicate scrolling that flow into each other, ending in gentle flourishes. The most pronounced of those are the stripes that meet in the center of his chest, wrapping around each other so finely that they almost have the appearance of a crest or mantle, adding to his new more regal look.";
+		say "Now that his throat has become so much thinner, he can no longer wear his usual yin yang choker the way that he used to. Instead, the pretty tiger has it wrapped around his wide hips, with the leather strap pulled tight against his fur. Chase no longer has the look of being just another tiger in the den, instead now appearing more like a fair prince among his people. Since you have been staring at him for so long, he notices your attention from across the room and averts your gaze, a cute blush on his pretty face. Then he crooks his finger at you, beckoning you to come closer."	~~~     ...";
 	else if Dexterity of Chase is 9: [TODO:Friendship with primal sub-Chase]
 		say "     ...";
 	else if Dexterity of Chase is 10: [TODO:Mate with primal sub-Chase]
