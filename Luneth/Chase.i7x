@@ -269,7 +269,7 @@ to say ChaseScent:
 	else if Dexterity of Chase is 5 or Dexterity of Chase is 6: [TODO:Primal dom-Chase]
 		say "     ...";
 	else if Dexterity of Chase is 7 or Dexterity of Chase is 8: [TODO:Monogamous sub-Chase]
-		say "     ...";
+		say "     `~~~Chase has a subtle scent, much more bewitching than he did previously. The aroma stirs something in you, making you stare at him possessively as he avoinds eye contact. The perfuming scent of his pheromones almost drowns the scent of the other tigers completely. This is hardly surprising seeing as he has now become the queen of the streak[if Player is female or lust of Chase > 2]. As you approach he tilts his head up scenting the air timmidly. The tiger immediately turns towards you with a big innocent smile, giving you a subdued nod as he absently rubs his rear end with one paw[end if].";~~~~     ...";
 	else if Dexterity of Chase is 9 or Dexterity of Chase is 10: [TODO:Primal sub-Chase]
 		say "     ...";
 
