@@ -89,15 +89,51 @@ Table of GameCharacterIDs (continued)
 object	name
 Zigor	"Zigor"
 
-Zigor is a man. Zigor is in Cuero Lobo.
+Zigor is a man.
+Zigor is in Cuero Lobo.
+ScaleValue of Zigor is 3. [human sized]
+SleepRhythm of Zigor is 0. [0 - awake at all times, 1 - day active, 2 - night active]
+Body Weight of Zigor is 5. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
+Body Definition of Zigor is 5. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
+[Body Adjective is generated out of the body weight and body definition and can be used in scenes - one word descriptive adjective depending on weight and definition groups: low weight group: skinny/slender/lithe; mid weight group: average/fit/muscled; high weight group: pudgy/husky/jacked]
+Androginity of Zigor is 2. [Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/somewhat effeminate/effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
+Mouth Length of Zigor is 7. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
+Mouth Circumference of Zigor is 3. [mouth circumference 1-5, "tiny, small, normal, wide, gaping"]
+Tongue Length of Zigor is 7. [length in inches]
+Breast Size of Zigor is 0. [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+Nipple Count of Zigor is 2. [count of nipples]
+Asshole Depth of Zigor is 10. [inches deep for anal fucking]
+Asshole Tightness of Zigor is 2. [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+Cock Count of Zigor is 1. [number of cocks]
+Cock Girth of Zigor is 3. [thickness 1-5, thin/slender/average/thick/monstrous]
+Cock Length of Zigor is 8. [Length in Inches]
+Ball Count of Zigor is 2. [allowed numbers: 1 (uniball), 2 or 4]
+Ball Size of Zigor is 3. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
+Cunt Count of Zigor is 0. [number of cunts]
+Cunt Depth of Zigor is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Tightness of Zigor is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+Clit Size of Zigor is 0. [size 1-5, very small/small/average/large/very large]
+[Basic Interaction states as of game start]
+PlayerMet of Zigor is false.
+PlayerRomanced of Zigor is false.
+PlayerFriended of Zigor is false.
+PlayerControlled of Zigor is false.
+PlayerFucked of Zigor is false.
+OralVirgin of Zigor is false.
+Virgin of Zigor is true.
+AnalVirgin of Zigor is false.
+PenileVirgin of Zigor is false.
+SexuallyExperienced of Zigor is true.
+TwistedCapacity of Zigor is false. [Twisted Characters can take any penetration, no matter the size]
+Sterile of Zigor is false. [steriles can't knock people up]
+MainInfection of Zigor is "Leather Wolf".
 Description of Zigor is "[zigordesc]".
 Conversation of Zigor is { "Hola!" }.
+The scent of the Zigor is "The wolf smells strongly of oiled leather and lupine arousal.".
 The icon of Zigor is Figure of Zigor_icon.
 zigseat is a number that varies.		[seat configuration: 0 = normal, 1 = taur]
 zigorcycle is a truth state that varies. zigorcycle is usually false. [Monitors if Zigor's training has been cycled.]
 zigorhadiyaquest is a truth state that varies. zigorhadiyaquest is usually false. [Msg about leather jacket for Hadiya's quest]
-
-the scent of the Zigor is "The wolf smells strongly of oiled leather and lupine arousal.".
 
 to say zigordesc:
 	say "     Zigor the leather wolf has the build of an average, fit human being, but altered to have lupine features, most prominently his head, hands, feet and tail. Given that he's wearing/bonded to a leather outfit that covers most of him, you can only see portions of his pelt. His fur contains a mix of gray, black, brown and rust colors that make him stand out from the other wolves you've seen. The leather portions of his hide cover his chest, legs and forearms. It is made of black leather with even some metal rings and straps built into it as well as a separate leather patch that partially covers his plump, pierced sheath. The wolf has a rich, sensual voice and speaks with a distinctly Spanish accent that turns you on every time you hear it.";
@@ -245,7 +281,7 @@ to say zigor_S2_01_MM:	[stage 2 - spreader/pain choice/oral - MM]
 		say "     Having made your choice, Zigor fondles your shaft and nips at your neck. 'Very well. Let us begin. On your knees, my pet,' he growls as he pushes you roughly onto your knees and kicks your legs apart. Your ankles are locked into the spreader bar, which is then connected to one of the floor rings. Manacles are put around your wrists and chained to distant rings to each side of you, leaving your arms spread wide. A tight collar is put around your neck and secured to the spreader bar behind you with another bar, ensuring you're stuck kneeling upright before him. Only once you're nice and trussed up does he pick up the [if dchoice is 1]riding crop[else if dchoice is 2]wooden paddle[else if dchoice is 3]heavy flog[else]leather truncheon[end if] and run his fingers over it in a slow, almost sensual manner before brushing it across your cheek.";
 		say "     [if dchoice is 1]Moving around you, Zigor gives you several swats with the riding crop, mainly across your ass. Each one makes your cock twitch and another dribble of precum run down it[else if dchoice is 2]Moving around you, Zigor gives you a solid whack with the wooden paddle across your ass. This is followed by another and another as he starts spanking you, each blow causing your cock to twitch and dribble more precum[else if dchoice is 3]Moving beside you, Zigor gives you a hard lashing with the flog across your back. This causes you to stiffen in your restraints and whimper, though it also causes your cock to stiffen all the more, too. As he gives you another few lashings, including some across your ass, your cock twitches and dribbles of precum run down it[else]Standing before you, Zigor strikes you in the side with the leather truncheon, then jabs it into your gut. You groan and reflexively try to bend over, but your restraints keep you from doing so. You're given another blow, this time to your other side, followed by the soft touch of the leather club sliding across your cock. Your manhood twitches and fresh precum runs down it and onto the club[end if]. You are given several more blows while the wolf rumbles that he'll toughen you up and teach you to be an obedient pup. While each blow is [if dchoice is 3 or dchoice is 4]quite [end if]painful, it is also very exciting and makes you more and more aroused. By the time he's done, you're left sagging in your restraints, panting heavily and drooling precum into the ever-growing pool between your knees.";
 		say "     [if dchoice is 1]The wolf presses the riding crop against your chest and slowly drags it up your sternum and under your chin, getting you to raise your head until your mouth is in line with his erection[else if dchoice is 2]The wolf gives your ass another swat, hard enough that you arch your back and cry out. As you do, he grabs your raised head and keeps it held up as he strides around you, bringing his erection in front of your mouth[else if dchoice is 3]The wolf presses the pommel of his flog under your chin and lifts your head until your mouth is in line with his erection[else]The wolf runs the truncheon lightly up your bruised side to your neck. He gives your chin a firm knock on the underside, silently getting you to raise your head lest he crack your jaw with another blow. Lifting your head, you find yourself with his erection pointed at your mouth[end if]. 'Get to sucking, cachorro,' he rumbles with a long, rolling 'R'. Between the wolf's strong scent and your pent-up arousal, you obediently bury his bone in your wet maw, licking and sucking at it greedily. He brushes the [if dchoice is 1]riding crop[else if dchoice is 2]wooden paddle[else if dchoice is 3]heavy flog[else]leather truncheon[end if] across your cheek as if reminding you to do a good job lest you be punished. Not that you need any such enticement in your current state. You are eager to please your dominator and master as well as thirsty for his seed. With the scent of leather and him filling your nose, you can think of nothing more by this point.";
-		say "     The wolf holds back much longer than during your earlier sessions, giving you plenty of opportunity to show your devotion to his knotted manhood before he finally rewards you with a sticky flood of his lupine seed. This you swallow down hungrily, licking and sucking for more until finally he's got none left to give. After such an enthusiastic blow job, the wolf sniffs his way down your trapped form, muzzle making its way to your throbbing cock and balls. He gives them a long, slow lick before wrapping his tongue around your shaft and pulling it into his maw. While sucking you, he strokes the [if dchoice is 1]crop[else if dchoice is 2]paddle[else if dchoice is 3]handle of the flog[else]truncheon[end if] against your balls, reminding you of the painful pleasure it's given you. After your long session, you don't hold out long and end up feeding your [Cum Load Size of Player] load to the leather-bound lupine. Licking his muzzle as he rises, he frees you of the restraints lets you drop to the stone floor in a heap. Your muscles and joints sore from being locked in them for so long, you are left there for a time to recover before Zigor escorts you back upstairs with a final tap of the [if dchoice is 1]riding crop[else if dchoice is 2]paddle[else if dchoice is 3]flog[else]leather club[end if] on your ass.";
+		say "     The wolf holds back much longer than during your earlier sessions, giving you plenty of opportunity to show your devotion to his knotted manhood before he finally rewards you with a sticky flood of his lupine seed. This you swallow down hungrily, licking and sucking for more until finally he's got none left to give. After such an enthusiastic blowjob, the wolf sniffs his way down your trapped form, muzzle making its way to your throbbing cock and balls. He gives them a long, slow lick before wrapping his tongue around your shaft and pulling it into his maw. While sucking you, he strokes the [if dchoice is 1]crop[else if dchoice is 2]paddle[else if dchoice is 3]handle of the flog[else]truncheon[end if] against your balls, reminding you of the painful pleasure it's given you. After your long session, you don't hold out long and end up feeding your [Cum Load Size of Player] load to the leather-bound lupine. Licking his muzzle as he rises, he frees you of the restraints lets you drop to the stone floor in a heap. Your muscles and joints sore from being locked in them for so long, you are left there for a time to recover before Zigor escorts you back upstairs with a final tap of the [if dchoice is 1]riding crop[else if dchoice is 2]paddle[else if dchoice is 3]flog[else]leather club[end if] on your ass.";
 	else if dchoice is 5:			[chose all]
 		say "     Telling the wolf that you want them all, he roughly pushes you to the ground and presses a paw onto your head, grinding your face to the floor. 'I told you to choose one, pup,' he growls. 'You are enthusiastic, but indecisive, mi mascota. You need a singleness of thought. You need to focus on one thing and one thing alone - obedience.' Still keeping you under his heel, he grabs the [one of]riding crop[or]flog[at random] and strikes you with it a few times while holding you down. You moan and whimper at the blows, but are quite aroused as well. There is something exciting about the powerful male's dominance over you. Your hard cock is pressed firmly between you and the cool floor.";
 		say "     After tenderizing you with several blows, he removes his paw and picks up the spreader bar. 'On your knees and spread your legs, my pet,' he orders even as he yanks you up by the shoulder and kicks your legs apart. Your ankles are locked into the spreader bar, which is then connected to one of the floor rings. Manacles are put around your wrists and chained to distant rings to each side of you, leaving your arms spread wide. A tight collar is put around your neck and secured to the spreader bar behind you with another bar, ensuring you're stuck kneeling upright before him. Once you're nice and trussed up, he picks up the riding crop and runs his fingers over it in a slow, almost sensual manner before brushing it across your cheek.";
@@ -253,7 +289,7 @@ to say zigor_S2_01_MM:	[stage 2 - spreader/pain choice/oral - MM]
 		say "     Moving around you, Zigor gives you several swats with the riding crop, mainly across your ass and inner thighs. Each one makes your cock twitch and another dribble of precum run down it. After this, he swaps to the wooden paddle, again starting with your ass with a solid whack. This is followed by another and another, spanking you with it until your rear end is throbbing as much as your [Cock of Player] shaft. Next comes the flog with hard lashings across your back. This causes you to stiffen in your restraints and whimper, though it also causes your cock to stiffen all the more, too. The whipping continues as he moves to strike your front as well, flogging you across the chest[if Nipple Count of Player > 0]. The sting of his lashes across your nipples makes them so hard[end if].";
 		say "     Finally, Zigor moves up to the leather truncheon, striking you with it across your sides and then several across your back. You can feel the ache from these and know you'll be bruised for a while from them. A few more strikes are then followed by the soft touch of the leather club sliding across your cock. Your manhood twitches and fresh precum runs down it and onto the club. This brief respite is followed by the wolf jabbing the leather truncheon into your gut. You groan and reflexively try to bend over, but your restraints keep you from doing so. You're left sagging in your restraints, panting heavily and drooling pre into the ever-growing pool between your knees.";
 		say "     The wolf, with the riding crop in hand again, slowly drags it up your sternum and under your chin. Pressing the leather flap at the end under your jaw, he gets you to raise your head until your mouth is in line with his erection. 'Get to sucking, cachorro,' he rumbles with a long, rolling 'R'. Between the wolf's strong scent and your pent-up arousal, you obediently bury his bone in your wet maw, licking and sucking at it greedily. He brushes the [one of]riding crop[or]wooden paddle[or]heavy flog[or]leather truncheon[at random] across your cheek as if reminding you to do a good job lest you be punished. Not that you need any such enticement in your current state. You are eager to please your dominator and master as well as thirsty for his seed. With the scent of leather and him filling your nose, you can think of nothing more by this point.";
-		say "     The wolf holds back much longer than during your earlier sessions, giving you plenty of opportunity to show your devotion to his knotted manhood before he finally rewards you with a sticky flood of his lupine seed. This you swallow down hungrily, licking and sucking for more until finally he's got none left to give. After such an enthusiastic blow job, the wolf sniffs his way down your trapped form, muzzle making its way to your throbbing cock and balls. He gives them a long, slow lick before wrapping his tongue around your shaft and pulling it into his maw. While sucking you, he strokes the [one of]crop[or]paddle[or]handle of the flog[or]truncheon[at random] against your balls, reminding you of the painful pleasure it's given you. After your long session, you don't hold out long and end up feeding your [Cum Load Size of Player] load to the leather-bound lupine. Licking his muzzle as he rises, he frees you of the restraints lets you drop to the stone floor in a heap. Your muscles and joints sore from being locked in them for so long, you are left there for a time to recover before Zigor escorts you back upstairs with a final tap of the [one of]riding crop[or]paddle[or]flog[or]leather club[at random] on your ass.";
+		say "     The wolf holds back much longer than during your earlier sessions, giving you plenty of opportunity to show your devotion to his knotted manhood before he finally rewards you with a sticky flood of his lupine seed. This you swallow down hungrily, licking and sucking for more until finally he's got none left to give. After such an enthusiastic blowjob, the wolf sniffs his way down your trapped form, muzzle making its way to your throbbing cock and balls. He gives them a long, slow lick before wrapping his tongue around your shaft and pulling it into his maw. While sucking you, he strokes the [one of]crop[or]paddle[or]handle of the flog[or]truncheon[at random] against your balls, reminding you of the painful pleasure it's given you. After your long session, you don't hold out long and end up feeding your [Cum Load Size of Player] load to the leather-bound lupine. Licking his muzzle as he rises, he frees you of the restraints lets you drop to the stone floor in a heap. Your muscles and joints sore from being locked in them for so long, you are left there for a time to recover before Zigor escorts you back upstairs with a final tap of the [one of]riding crop[or]paddle[or]flog[or]leather club[at random] on your ass.";
 	else:						[no choice]
 		say "     Shaking your head, you try to resist the urge to accept the wolf's harsh discipline. While the scent of leather and lupine is making you feel lustful and submissive to the strong male, you manage to momentarily pull together enough strength of will to refuse. The wolf growls and pushes you to the ground, pressing a paw roughly onto your cheek and grinding your face onto the floor. 'I told you to choose one, pup,' he growls angrily. 'You came to me for discipline and now you resist me? In my kindness, I offer you your choice of pain and you spurn my generosity? I am most disappointed, gusano. Clearly you need more... vigorous training.' This last he punctuates with a kick to your gut. Despite yourself, you've begun to get hard again, your self-control waning as he becomes more aggressive in his dominance of you.";
 		say "     After softening you up with a few more kicks, he grabs you roughly and pulls you up. 'On your knees and spread your legs, you cur,' he orders even as he kicks your legs apart. Part of your increasingly clouded mind tries to get you to pull away, but your hesitation is enough time for Zigor to lock your ankles into the spreader bar and get it connected to one of the floor rings. Manacles are put around your wrist and chained to distant rings to each side of you. They are pulled painfully tight, leaving your arms spread wide. A tight collar is put around your neck and secured to the spreader bar behind you with another bar, ensuring you're stuck kneeling upright before him. Once you're trussed up so tightly your shoulders and chest ache from the strain, he picks up the riding crop and runs his fingers over it in a slow, almost sensual manner before slapping it harshly across your cheek.";
@@ -262,7 +298,7 @@ to say zigor_S2_01_MM:	[stage 2 - spreader/pain choice/oral - MM]
 		say "     Next comes the flog with hard lashings across your back. This causes you to stiffen in your restraints and whimper, though it also causes your cock to stiffen all the more, too. The whipping continues as he moves to strike your front as well, flogging you across the chest and shoulders again and again hard enough to cover them in welts[if Nipple Count of Player > 0]. The sting of his lashes across your nipples makes them so hard each time they're hit[end if].";
 		say "     Finally, Zigor moves up to the leather truncheon, striking you with it across your sides and then several across your back. His blows are strong, the wolf holding little back in his quest to properly train his recalcitrant pet. A few ribs are cracked and you know you'll be bruised for quite some time despite your accelerated healing. Lost again to the lustful need to be disciplined, your cock throbs and spurts pre with every blow you receive. Even when he jabs the leather truncheon into your gut, your painful groan is accompanied by an aching fullness of your erection. Your body tries to double-over from the blow to your breadbasket, but your restraints keep you from doing so. You're left sagging in your restraints, panting heavily and drooling pre into the ever-growing pool between your knees.";
 		say "     The wolf, with the riding crop in hand again, slaps it across each of your cheeks and growls for you to lift your head. Looking up at your dominator, you find your mouth in line with his erection. 'Get to sucking, cachorro,' he rumbles with a long, rolling 'R'. After the lengthy and painful disciplinary session has left you achingly aroused, you give no thought to resisting and obediently bury his bone in your wet maw, licking and sucking at it greedily. He brushes the [one of]riding crop[or]wooden paddle[or]heavy flog[or]leather truncheon[at random] across your cheek as if reminding you to do a good job lest you be punished, though you no longer need any such enticement in your current state. You are eager to please your dominator and master as well as thirsty for his seed. With the scent of leather and him filling your nose, you can think of nothing more by this point.";
-		say "     The wolf holds back much longer than during your earlier sessions, giving you plenty of opportunity to show your devotion to his knotted manhood before he finally rewards you with a sticky flood of his lupine seed. This you swallow down hungrily, licking and sucking for more until finally he's got none left to give. After such an enthusiastic blow job, the wolf gently caresses your cheek. 'I am pleased to see you feeling dutiful again,' he rumbles. 'Let me show you what else obedience earns you,' he says in that suave accent of his while nuzzling down your chest. He sniffs his way down your trapped form, muzzle making its way to your throbbing cock and balls. He gives them a long, slow lick before wrapping his tongue around your shaft and pulling it into his maw. While sucking you, he strokes the crop against your balls, reminding you of the painful pleasure it's given you. After your long session, you don't hold out long and end up feeding your [Cum Load Size of Player] load to the leather-bound lupine. Licking his muzzle as he rises, he frees you of the restraints lets you drop to the stone floor in a heap. Your muscles and joints sore from being locked in them for so long, you are left there for a time to recover before Zigor escorts you back upstairs with a final tap of the [one of]riding crop[or]paddle[or]flog[or]leather club[at random] on your ass.";
+		say "     The wolf holds back much longer than during your earlier sessions, giving you plenty of opportunity to show your devotion to his knotted manhood before he finally rewards you with a sticky flood of his lupine seed. This you swallow down hungrily, licking and sucking for more until finally he's got none left to give. After such an enthusiastic blowjob, the wolf gently caresses your cheek. 'I am pleased to see you feeling dutiful again,' he rumbles. 'Let me show you what else obedience earns you,' he says in that suave accent of his while nuzzling down your chest. He sniffs his way down your trapped form, muzzle making its way to your throbbing cock and balls. He gives them a long, slow lick before wrapping his tongue around your shaft and pulling it into his maw. While sucking you, he strokes the crop against your balls, reminding you of the painful pleasure it's given you. After your long session, you don't hold out long and end up feeding your [Cum Load Size of Player] load to the leather-bound lupine. Licking his muzzle as he rises, he frees you of the restraints lets you drop to the stone floor in a heap. Your muscles and joints sore from being locked in them for so long, you are left there for a time to recover before Zigor escorts you back upstairs with a final tap of the [one of]riding crop[or]paddle[or]flog[or]leather club[at random] on your ass.";
 	if dchoice is 3:
 		now HP of Player is ( 2 * HP of Player ) / 3;
 	else if dchoice is 4:
@@ -311,7 +347,7 @@ to say zigor_S2_03_MM:	[stage 3 - gangbang/orgy - Mx7]
 
 to say zigor_S2_04_MM:		[ stage 4 - offer of finale - MM ]
 	now zigseat is 0;
-	if BodyName of Player is listed in infections of taurlist:
+	if BodyName of Player is listed in infections of TaurList:
 		now zigseat is 1;
 	if zigorcycle is false:
 		say "     Taken down into Zigor's private playroom once again, you are led to an unusual [if zigseat is 1]bench designed for taurs[else]chair[end if], one that you don't see here during your normal visits. Built of strong metal and padded with leather, it has a series of levers on its side and some large gears and pistons obscured by the shadows beneath it. He motions with a crop for you to take a seat. Obediently, you sit in the raised [if zigseat is 1]bench[else]chair[end if], letting him strap down your wrists, ankles and waist with leather buckles.";
@@ -380,8 +416,84 @@ to say zigor_S2_04_MM:		[ stage 4 - offer of finale - MM ]
 to say randomwolfgimp:
 	say "[one of]Miguel[or]Emilio[or]Fernando[or]Javier[in random order]";
 
+Section 5 - infection
 
-Section 5 - Endings
+
+Table of Random Critters (continued)
+NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Depth	Cunt Tightness	SeductionImmune	Libido	Loot	Lootchance	TrophyFunction	MilkItem	CumItem	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
+--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
+
+When Play begins:
+	Choose a blank row from Table of Random Critters;
+	now NewTypeInfection entry is false;
+	now Species Name entry is "Wolfman";
+	add "Leather Wolf" to infections of CanineList;
+	add "Leather Wolf" to infections of FurryList;
+	add "Leather Wolf" to infections of NatureList;
+	add "Leather Wolf" to infections of MaleList;
+	add "Leather Wolf" to infections of KnottedCockList;
+	add "Leather Wolf" to infections of TaperedCockList;
+	add "Leather Wolf" to infections of SheathedCockList;
+	add "Leather Wolf" to infections of BipedalList;
+	add "Leather Wolf" to infections of TailList;
+	now Name entry is "Leather Wolf";
+	now enemy title entry is "Leather Wolf";
+	now enemy Name entry is "Zigor";
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
+	now attack entry is "Placeholder infection";
+	now defeated entry is "Placeholder infection";
+	now victory entry is "Placeholder infection";
+	now desc entry is "Placeholder infection";
+	now face entry is "a canine muzzle sticking out of your wolf-like head. The sharp teeth inside it make your smiles and growls pretty unforgettable for others, and the long tongue should come in handy for French kissing";
+	now body entry is "tall and well muscled, standing on two legs and showing an interesting mix of lupine and human form. While your legs are fully digitigrade and end in large paws, your arms are changed but still more human-like and end in strong, now clawed, hands";
+	now skin entry is "[one of]black furred[or]densely furred[or]furred[at random]";
+	now tail entry is "You have a fluffy, mid-length tail growing out of your spine, just above the grabbable buns of your ass."; [ Ass/Tail. Write as a full sentence (with period) or leave blank for none. ]
+	now cock entry is "[one of]lupine[or]wolf[or]knotted[at random]";
+	now face change entry is "it stretches out into a large lupine muzzle, filled with a predator's sharp teeth. A shift goes through your worldview when your ears become pointed and move to the top of your head, your vision becomes somehow 'sharper' and new scents assail your now much more sensitive nose"; [ format as "Your face feels funny as (your text)." ]
+	now body change entry is "it morphs into a well toned human-wolf hybrid shape. With the crunching noise of breaking bones, your legs become digitigrade - now ending in large paws instead of feet. Your arms meanwhile fill out with muscles, lengthen a bit and also change the form of their joints slightly. Still, they're closer to human than the legs - even with the new sharp claws at the ends of your fingers"; [ format as "Your body feels funny as (your text)." ]
+	now skin change entry is "dense black fur spreads rapidly over your form. Well, mostly black - your chest shows a large '22' on it in blood-red fur, just like your back"; [ format as "Your skin feels funny as (your text)." ]
+	now ass change entry is "a mid-length lupine tail sprouts from your backside"; [ format as "Your ass feels funny as (your text)." ]
+	now cock change entry is "your member grows thicker as the top of it grows to a sharp point, a large canine knot forming at the base of your new lupine sheath"; [ format as "Your cock feels funny as (your text)." ]
+	now str entry is 17;
+	now dex entry is 16;
+	now sta entry is 15;
+	now per entry is 12;
+	now int entry is 12;
+	now cha entry is 14;
+	now sex entry is "Male"; [ Infection will move the player towards this gender. Current: 'Male' 'Female' 'Both' ]
+	now HP entry is 50;
+	now lev entry is 6; [ Monster level. (Level x 2) XP for victory. (Level / 2) XP for losing. ]
+	now wdam entry is 10; [ Monster's average damage when attacking. ]
+	now area entry is "Nowhere"; [ "Outside" "Mall" "Park" "Beach" etc... Check an existing creature in the area. ]
+	now Cock Count entry is 1; [ Number of cocks the infection will try to cause if sex entry is 'Male' or 'Both'. ]
+	now Cock Length entry is 12; [ Length infection will make cock grow to if cocks. ]
+	now Ball Size entry is 3; [ Cock width, more commonly used for ball size. ]
+	now Nipple Count entry is 2; [ Number of nipples the infection will give a player. ]
+	now Breast Size entry is 0; [ Size of breasts the infection will try to attain. ]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 0; [ The number of cunts the infection will try to cause if sex entry is 'Female' or 'Both'. ]
+	now Cunt Depth entry is 0; [ Depth of female sex the infection will attempt to give a player. ]
+	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]          [ Width of female sex the infection will try to give a player. ]
+	now SeductionImmune entry is false;
+	now libido entry is 40;
+	now loot entry is ""; [ Dropped item, blank for none. Case sensitive. ]
+	now lootchance entry is 0; [ Percentage chance of dropping loot, from 0-100. ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now body descriptor entry is "[one of]strong[or]tall[or]powerful[at random]";
+	now type entry is "lupine";
+	now magic entry is false;
+	now resbypass entry is false;
+	now non-infectious entry is true;
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Nocturnal (night encounters only); 2 = Diurnal (day encounters only) ]
+	now altcombat entry is "default";
+	now BannedStatus entry is false;
+
+
+Section 6 - Endings
 
 Table of GameEndings (continued)
 Name (text)	Type (text)	Subtype (text)	Ending (rule)	Priority (number)	Triggered (truth state)

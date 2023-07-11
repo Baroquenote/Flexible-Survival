@@ -40,6 +40,7 @@ when play begins:
 
 to say ResolveEvent Forced Adoption:
 	if HP of Rex is 0:
+		project Figure of Karen_naked_icon;
 		say "     As you walk down the street of what remains of an upscale neighborhood on the outskirts of the high rise district, you spot a figure up ahead and duck out of sight before they spot you. As the figure gets closer you see that she is an attractive female canine with a thick coat of golden fur, much like the other retriever girls you've seen around the district. From your hiding place you can see she is clutching something against her ample chest with both hands.";
 		say "     She glances around nervously as she walks, when suddenly another figure, a large powerful looking male retriever, steps out of a nearby alley into her path, cutting her off. The retriever girl runs into him and stumbles backward, falling to the ground and dropping whatever she was carrying. Without even acknowledging the male's presence, she begins scrambling around on all fours, looking for her prize, until she comes face to face with his erect canine cock. Slowly she looks up over his body until she is staring lustfully into his eyes. The large male then reaches down and picks up the entranced girl, carrying her back down the alley he emerged from as she whimpers needfully.";
 		WaitLineBreak;
@@ -207,7 +208,7 @@ Cock Length of Rex is 7. [Length in Inches]
 Ball Count of Rex is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Rex is 3. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Rex is 0. [number of cunts]
-Cunt Depth of Rex is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Rex is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Rex is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Rex is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]

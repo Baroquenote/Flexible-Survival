@@ -40,6 +40,8 @@ A person has a number called SubVsDom. [range from -100 (sub) to 0 (vers) to +10
 A person has a number called Weapon damage. Weapon damage is usually 4.
 A person has a number called Armor.
 A person has a number called Capacity.
+A person has a number called ImpregTimer.
+A person has a number called OffspringCount.
 
 [ body numerical variables for all characters ]
 A person has a number called Body Weight. Body Weight is usually 5.
@@ -73,6 +75,8 @@ A person has a number called Asshole Tightness. Asshole Tightness is usually 2.
 
 A person has a text called linkaction.
 A person has a text called MainInfection. MainInfection is usually "Human". [just to have something valid in this, the variable should be overwritten for every NPC]
+A person has a text called ImpregFunction. ImpregFunction is usually "".[@Tag:NotSaved][just to have something valid in this, the variable should be overwritten for every NPC]
+A person has a text called LastSexualPartner.[@Tag:NotSaved]
 A person has a text called FirstAnalPartner.
 A person has a text called FirstVaginalPartner.
 A person has a text called FirstOralPartner.
@@ -150,6 +154,12 @@ Player has a number called AssFuckGiven.
 Player has a number called AssFuckTaken.
 Player has a number called PussyFuckGiven.
 Player has a number called PussyFuckTaken.
+Player has a number called BehaviorCount_Breeder.
+Player has a number called BehaviorCount_Lover.
+Player has a number called BehaviorCount_Rapist.
+Player has a number called BehaviorCount_Nice.
+Player has a number called BehaviorCount_Cruel.
+Player has a number called BehaviorCount_Vore.
 
 to say Player name:
 	if name of Player is "Player":
@@ -161,7 +171,7 @@ Section 2 - Body Parts
 
 [old style body parts - to be phased out once all infections follow the expanded set]
 Player has a text called bodydesc. The bodydesc is usually "[one of]average[or]normal[or]unchanged[at random]". [adjective for body type/appearance]
-Player has a text called bodytype. The bodytype is usually "Human". [broad adjective for species]
+Player has a text called bodytype. The bodytype is usually "human". [broad adjective for species]
 Player has a text called skin. Skin is usually "smooth".
 Player has a text called Cock. Cock is usually "[one of]normal[or]flesh-toned[or]uninfected[or]human[at random]".
 Player has a text called face. Face is usually "charmingly human".
@@ -357,11 +367,19 @@ Definition: A person (called x) is gimpy:
 
 Chapter 2 - Location Based
 
+A person can be collected. A person is usually not collected.
+
+Definition: A person (Called x) is collected:
+	If x is booked, yes;
+	if x is bunkered, yes;
+	no;
+
 A person can be booked. A person is usually not booked.
 
 Definition: A person (Called x) is booked:
 	If x is Trixie, no;
 	if x is Velos, no;
+	if x is Help Book, no;
 	if the location of x is Grey Abbey Library, yes;
 	if the location of x is Grey Abbey 2F, yes;
 	if the location of x is Half-Renovated Room, yes;
@@ -384,7 +402,9 @@ Definition: A person (Called x) is booked:
 A person can be bunkered. A person is usually not bunkered.
 
 Definition: A person (Called x) is bunkered:
+	If x is Trixie, no;
 	if x is Velos, no;
+	if x is Help Book, no;
 	if the location of x is Bunker, yes;
 	if the location of x is Communal Shower, yes;
 	if the location of x is Underground Restroom, yes;
@@ -486,6 +506,11 @@ Definition: A person (called x) is pansexual:
 	else:
 		no;
 
+Definition: A person (called x) is CoA:
+	if "Center of Attention" is listed in feats of x:
+		yes;
+	else:
+		no;
 
 Chapter 4 - Infection Based
 
@@ -617,12 +642,20 @@ Definition: A person (called x) is perminfected:
 	if ( JackalManTF > 0 or JackalBoyTF > 0 ) or nightmaretf > 0 or HellHoundlevel > 0 or ( wrcursestatus >= 7 and wrcursestatus < 100 ), yes;
 	no;
 
-A person can be internal. A person is usually not internal.
+A person can be internalcock. A person is usually not internalcock.
 
-internalbypass is a truth state that varies. internalbypass is usually false.
+internalcockbypass is a truth state that varies. internalcockbypass is usually false.
 
-Definition: A person (called x) is internal:
-	if CockName of x is listed in infections of InternalCockList and internalbypass is false, yes;
+Definition: A person (called x) is internalcock:
+	if CockName of x is listed in infections of InternalCockList and internalcockbypass is false, yes;
+	no;
+
+A person can be internalBalls. A person is usually not internalBalls.
+
+internalBallsBypass is a truth state that varies. internalBallsBypass is usually false.
+
+Definition: A person (called x) is internalBalls:
+	if CockName of x is listed in infections of InternalBallsList and internalBallsBypass is false, yes;
 	no;
 
 A person can be sheathed. A person is usually not sheathed.
@@ -640,7 +673,7 @@ Definition: A person (called x) is knotted:
 A person can be barbed. A person is usually not barbed.
 
 Definition: A person (called x) is barbed:
-	if CockName of Player is listed in infections of BarbedCocklist, yes;
+	if CockName of Player is listed in infections of BarbedCockList, yes;
 	no;
 
 A person can be blunt. A person is usually not blunt.
@@ -662,7 +695,17 @@ Definition: A person (called x) is nocturnal: [as in "can see in low light"]
 	if HeadName of x is listed in infections of PiscineList, yes;
 	if HeadName of x is listed in infections of RodentList, yes;
 	if HeadName of x is listed in infections of VulpineList, yes;
-	no;
+	if Facename of x is listed in infections of AquaticList, yes;
+	if Facename of x is listed in infections of CetaceanList, yes;
+	if Facename of x is listed in infections of CervineList, yes;
+	if Facename of x is listed in infections of FelineList, yes;
+	if Facename of x is listed in infections of InsectList, yes;
+	if Facename of x is listed in infections of MachineList, yes;
+	if Facename of x is listed in infections of MustelidList, yes;
+	if Facename of x is listed in infections of PiscineList, yes;
+	if Facename of x is listed in infections of RodentList, yes;
+	if Facename of x is listed in infections of VulpineList, yes;
+		no;
 
 A person can be keeneyed. A person is usually not keeneyed.
 
@@ -670,6 +713,9 @@ Definition: A person (called x) is keeneyed: [sharpness of view - distance, etc.
 	if HeadName of x is listed in infections of AvianList, yes;
 	if HeadName of x is listed in infections of AvianpredList, yes;
 	if HeadName of x is listed in infections of MachineList, yes;
+	if FaceName of x is listed in infections of AvianList, yes;
+	if FaceName of x is listed in infections of AvianpredList, yes;
+	if FaceName of x is listed in infections of MachineList, yes;
 	no;
 
 A person can be keenscented. A person is usually not keenscented.
@@ -682,12 +728,19 @@ Definition: A person (called x) is keenscented: [can smell special information]
 	if HeadName of x is listed in infections of RodentList, yes;
 	if HeadName of x is listed in infections of UrsineList, yes;
 	if HeadName of x is listed in infections of VulpineList, yes;
+	if FaceName of x is listed in infections of CanineList, yes;
+	if FaceName of x is listed in infections of FelineList, yes;
+	if FaceName of x is listed in infections of MustelidList, yes;
+	if FaceName of x is listed in infections of PorcineList, yes;
+	if FaceName of x is listed in infections of RodentList, yes;
+	if FaceName of x is listed in infections of UrsineList, yes;
+	if FaceName of x is listed in infections of VulpineList, yes;
 	no;
 
 A person can be HeadFurred. A person is usually not HeadFurred.
 
 Definition: A person (called x) is HeadFurred:
-	if HeadName of Player is listed in infections of Bovinelist, yes;
+	if HeadName of Player is listed in infections of BovineList, yes;
 	if HeadName of Player is listed in infections of CanineList, yes;
 	if HeadName of Player is listed in infections of CervineList, yes;
 	if HeadName of Player is listed in infections of EquineList, yes;
@@ -735,7 +788,7 @@ Definition: A person (called x) is HeadSkinned:
 A person can be TorsoFurred. A person is usually not TorsoFurred.
 
 Definition: A person (called x) is TorsoFurred:
-	if TorsoName of Player is listed in infections of Bovinelist, yes;
+	if TorsoName of Player is listed in infections of BovineList, yes;
 	if TorsoName of Player is listed in infections of CanineList, yes;
 	if TorsoName of Player is listed in infections of CervineList, yes;
 	if TorsoName of Player is listed in infections of EquineList, yes;
@@ -784,7 +837,7 @@ Definition: A person (called x) is TorsoSkinned:
 A person can be ArmsFurred. A person is usually not ArmsFurred.
 
 Definition: A person (called x) is ArmsFurred:
-	if ArmsName of Player is listed in infections of Bovinelist, yes;
+	if ArmsName of Player is listed in infections of BovineList, yes;
 	if ArmsName of Player is listed in infections of CanineList, yes;
 	if ArmsName of Player is listed in infections of CervineList, yes;
 	if ArmsName of Player is listed in infections of EquineList, yes;
@@ -832,7 +885,7 @@ Definition: A person (called x) is ArmsSkinned:
 A person can be LegsFurred. A person is usually not LegsFurred.
 
 Definition: A person (called x) is LegsFurred:
-	if LegsName of Player is listed in infections of Bovinelist, yes;
+	if LegsName of Player is listed in infections of BovineList, yes;
 	if LegsName of Player is listed in infections of CanineList, yes;
 	if LegsName of Player is listed in infections of CervineList, yes;
 	if LegsName of Player is listed in infections of EquineList, yes;
@@ -881,7 +934,7 @@ Definition: A person (called x) is LegsSkinned:
 A person can be AssFurred. A person is usually not AssFurred.
 
 Definition: A person (called x) is AssFurred:
-	if AssName of Player is listed in infections of Bovinelist, yes;
+	if AssName of Player is listed in infections of BovineList, yes;
 	if AssName of Player is listed in infections of CanineList, yes;
 	if AssName of Player is listed in infections of CervineList, yes;
 	if AssName of Player is listed in infections of EquineList, yes;
@@ -929,7 +982,7 @@ Definition: A person (called x) is AssSkinned:
 A person can be TailFurred. A person is usually not TailFurred.
 
 Definition: A person (called x) is TailFurred:
-	if TailName of Player is listed in infections of Bovinelist, yes;
+	if TailName of Player is listed in infections of BovineList, yes;
 	if TailName of Player is listed in infections of CanineList, yes;
 	if TailName of Player is listed in infections of CervineList, yes;
 	if TailName of Player is listed in infections of EquineList, yes;
@@ -1283,7 +1336,7 @@ to say Gender Adjective of ( x - a person ):
 to say Body Hair Adjective of ( x - a person ): [used in "He touches your [Body Hair Adjective of Player] chest."]
 	if Body Hair Length of x is:
 		-- 0:
-			say "nonexistant";
+			say "nonexistent";
 		-- 1:
 			say "smooth";
 		-- 2:
@@ -1447,7 +1500,7 @@ to say Cock Girth Adjective of ( x - a person ):
 to say Ball Size Adjective of ( x - a person ):
 	if Ball Size of x is:
 		-- 0:
-			say "non-existant";
+			say "nonexistent";
 		-- 1:
 			say "[one of]acorn-sized[or]gumball-sized[at random]";
 		-- 2:
@@ -1575,7 +1628,7 @@ This is the cock descr rule:
 to say Balls:
 	say "[one of]balls[or]testicles[or]gonads[at random]";
 
-to say cum load size of ( x - a person ):
+to say Cum Load Size of ( x - a person ):
 	if Ball Size of x > 0:
 		if Ball Size of x is 1:
 			say "[one of]piddling[or]tiny[or]minuscule[or]feeble[or]small[or]meager[at random]";

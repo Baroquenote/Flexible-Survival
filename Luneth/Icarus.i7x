@@ -79,7 +79,7 @@ Cock Length of Icarus is 7. [Length in Inches]
 Ball Count of Icarus is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Icarus is 2. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Icarus is 0. [number of cunts]
-Cunt Depth of Icarus is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Icarus is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Icarus is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Icarus is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -98,7 +98,7 @@ Sterile of Icarus is false. [steriles can't knock people up]
 MainInfection of Icarus is "Blue Chaffinch".
 Description of Icarus is "[Icarusdesc]".
 Conversation of Icarus is { "Wilder!" }.
-the scent of Icarus is "[if HP of Icarus >= 50]Breathing in the soft, pleasant scent of the confident songbird makes you feel submissive and aroused[else if FaceName of Player is listed in infections of Avianpredlist or FaceName of Player is listed in infections of Felinelist]The blue songbird smells like prey[else]The blue songbird has a soft, pleasant scent[end if].".
+the scent of Icarus is "[if HP of Icarus >= 50]Breathing in the soft, pleasant scent of the confident songbird makes you feel submissive and aroused[else if FaceName of Player is listed in infections of AvianpredList or FaceName of Player is listed in infections of FelineList]The blue songbird smells like prey[else]The blue songbird has a soft, pleasant scent[end if].".
 
 [See Blue Chaffinch file for collecting Icarus.]
 
@@ -161,7 +161,7 @@ to say sexwithIcarus:
 		say "     Lacking any gender of your own, you feel there's little point in going to Icarus for sex.";
 	else if lastfuck of Icarus - turns < 6:
 		if HP of Icarus < 50:
-			say "     'Oh, I'm still worn out from the last time, but I [if ( BodyName of Player is listed in infections of Avianpredlist and FaceName of Player is listed in infections of Avianpredlist ) or ( BodyName of Player is listed in infections of FelineList and FaceName of Player is listed in infections of Felinelist )]do so want to go again soon[else]hope you'll consider being the scary predator next time[end if].'";
+			say "     'Oh, I'm still worn out from the last time, but I [if ( BodyName of Player is listed in infections of AvianpredList and FaceName of Player is listed in infections of AvianpredList ) or ( BodyName of Player is listed in infections of FelineList and FaceName of Player is listed in infections of FelineList )]do so want to go again soon[else]hope you'll consider being the scary predator next time[end if].'";
 		else:
 			say "     'It's nice to see you so eager to be my slut, but I think it's your turn to wait and go without for a little longer.'";
 	else if HP of Icarus < 50:
@@ -172,10 +172,10 @@ to say sexwithIcarus:
 
 to say icarussex_sub:
 	let formcheck be 0;
-	if BodyName of Player is listed in infections of Avianpredlist and FaceName of Player is listed in infections of Avianpredlist:
+	if BodyName of Player is listed in infections of AvianpredList and FaceName of Player is listed in infections of AvianpredList:
 		now formcheck is 1;
 		now icarus_lastpred is 1;
-	else if BodyName of Player is listed in infections of Felinelist and FaceName of Player is listed in infections of Felinelist:
+	else if BodyName of Player is listed in infections of FelineList and FaceName of Player is listed in infections of FelineList:
 		now formcheck is 2;
 		now icarus_lastpred is 2;
 	if HP of Icarus < 10:
@@ -242,7 +242,7 @@ to say icarussex_sub:
 			blank out the whole of table of fucking options;
 			if Player is male:
 				choose a blank row in table of fucking options;
-				now title entry is "Blow job";
+				now title entry is "Blowjob";
 				now sortorder entry is 2;
 				now description entry is "get him to suck you off";
 				choose a blank row in table of fucking options;
@@ -272,7 +272,7 @@ to say icarussex_sub:
 					if Player consents:
 						let nam be title entry;
 						now sextablerun is 1;
-						if nam is "Blow job":
+						if nam is "Blowjob":
 							if formcheck is 1:
 								say "[icarussex2_ap]";
 							else if formcheck is 2:
@@ -311,10 +311,10 @@ to say icarussex_sub:
 
 to say icarussex_dom:
 	let formcheck be 0;
-	if BodyName of Player is listed in infections of Avianpredlist and FaceName of Player is listed in infections of Avianpredlist:
+	if BodyName of Player is listed in infections of AvianpredList and FaceName of Player is listed in infections of AvianpredList:
 		now formcheck is 1;
 		now icarus_lastpred is 1;
-	else if BodyName of Player is listed in infections of Felinelist and FaceName of Player is listed in infections of Felinelist:
+	else if BodyName of Player is listed in infections of FelineList and FaceName of Player is listed in infections of FelineList:
 		now formcheck is 2;
 		now icarus_lastpred is 2;
 	say "     Feeling the need to be Icarus's fucktoy again, you catch his attention from the rafters with a tantalizing display of your body. Seeing your wanton display, he gives a pleased chirp and flies down to join you. As he nears the ground, you can see his cock already starting to poke from his feathery crotch.";
@@ -973,10 +973,10 @@ to say icarussex6_dom:		[Used for both special preds - not open to regular]
 	setmonster "Blue Chaffinch";
 	choose row MonsterID from the Table of Random Critters;
 	let formcheck be 0;
-	if BodyName of Player is listed in infections of Avianpredlist and FaceName of Player is listed in infections of Avianpredlist:
+	if BodyName of Player is listed in infections of AvianpredList and FaceName of Player is listed in infections of AvianpredList:
 		now formcheck is 1;
 		now icarus_lastpred is 1;
-	else if BodyName of Player is listed in infections of Felinelist and FaceName of Player is listed in infections of Felinelist:
+	else if BodyName of Player is listed in infections of FelineList and FaceName of Player is listed in infections of FelineList:
 		now formcheck is 2;
 		now icarus_lastpred is 2;
 	say "     Noticing the dominant bird watching you with a sour mood, you put on a brief display to entice him. He glares at you and gives an aggressive call before gliding down. He knocks into you, [if scalevalue of Player < 3]bowling you over[else if scalevalue of Player is 3]knocking you down[else]making you stumble to your knees in surprise[end if]. Grabbing you by the scruff of the neck, he starts to drag you towards a service door - one you know leads down to the non-functional boiler room.";
@@ -1017,10 +1017,10 @@ to say icarussex6a_dom:		[Repeatable rough scene A]
 	setmonster "Blue Chaffinch";
 	choose row MonsterID from the Table of Random Critters;
 	let formcheck be 0;
-	if BodyName of Player is listed in infections of Avianpredlist and FaceName of Player is listed in infections of Avianpredlist:
+	if BodyName of Player is listed in infections of AvianpredList and FaceName of Player is listed in infections of AvianpredList:
 		now formcheck is 1;
 		now icarus_lastpred is 1;
-	else if BodyName of Player is listed in infections of Felinelist and FaceName of Player is listed in infections of Felinelist:
+	else if BodyName of Player is listed in infections of FelineList and FaceName of Player is listed in infections of FelineList:
 		now formcheck is 2;
 		now icarus_lastpred is 2;
 	say "     When you put on an enticing display for your birdie master up in the rafters, he glares at you and comes winging down. He banks past you, giving you a talon scratch on the shoulder before landing. He gives your rear a hard smack with talon poking into your bottom. 'Get moving!' he snaps at you. 'I know what you've been up to, you slut.'";
@@ -1028,7 +1028,7 @@ to say icarussex6a_dom:		[Repeatable rough scene A]
 	say "     'Down on your knees, you slut,' he orders, shoving the back of your shoulder. You comply sheepishly, submitting to your passerine master. While out in the city you may behave differently, down here you are the bird's toy. The prospect is exciting, feeling like a release from the stress of your struggles.";
 	say "     He strides in front of you and slaps his penis across your [if formcheck is 1]beak[else]muzzle[end if]. 'Open up, you cock-sucker, and get to work.' Obediently, you open your mouth and take the little guy's cock into it. The blue bird grabs your head and thrusts mercilessly into your mouth. His stiff member pushes into your mouth and throat over and over again. His rough pace makes it difficult for you, but you do your best to lick and suck on his cock in an effort to please him. His talons dig into you as his excitement builds and, taking it to mean he's enjoying your cock-sucking, you continue in earnest despite the discomfort they bring. If anything, the pain is good because it's a sign of your master's pleasure, and hence your own.";
 	say "     When Icarus cums, he blows hard. His load blasts down your throat and wind pipe. Your eyes water and it takes effort to not immediately cough, but you manage to keep licking and swallowing. When he's finished and his talons relax, you pull away, coughing up the gooey mess.";
-	say "     'That's pathetic,' Icarus grumbles. 'You can't even give a proper blow job.' Staggered and on your knees, he quickly grabs you by the scruff and slams you forward into the old boiler. Stars fill your vision and the taste of blood is added to that of your master's seed in your mouth. You give a soft groan from the floor.";
+	say "     'That's pathetic,' Icarus grumbles. 'You can't even give a proper blowjob.' Staggered and on your knees, he quickly grabs you by the scruff and slams you forward into the old boiler. Stars fill your vision and the taste of blood is added to that of your master's seed in your mouth. You give a soft groan from the floor.";
 	if wslevel > 1 and a random chance of wslevel in 5 succeeds:
 		say "     Icarus looks down at you for a moment. Taking aim with his cock, he releases a hot spray of piss onto the back of your head and then down your back. The musky, acrid fluid makes your wounds sting as he provides another reminder that you're his to use as he sees fit. You feel pathetic and weak doing this, but find it strangely arousing to let the little bird abuse you so.";
 	else:
@@ -1048,10 +1048,10 @@ to say icarussex6b_dom:		[Repeatable rough scene B]
 	setmonster "Blue Chaffinch";
 	choose row MonsterID from the Table of Random Critters;
 	let formcheck be 0;
-	if BodyName of Player is listed in infections of Avianpredlist and FaceName of Player is listed in infections of Avianpredlist:
+	if BodyName of Player is listed in infections of AvianpredList and FaceName of Player is listed in infections of AvianpredList:
 		now formcheck is 1;
 		now icarus_lastpred is 1;
-	else if BodyName of Player is listed in infections of Felinelist and FaceName of Player is listed in infections of Felinelist:
+	else if BodyName of Player is listed in infections of FelineList and FaceName of Player is listed in infections of FelineList:
 		now formcheck is 2;
 		now icarus_lastpred is 2;
 	say "     Icarus gives a sharp cry before gliding down to meet you. He gives your ass a hard swat with one wing as he lands. Pointing with the other to the basement door, he orders you down there. Despite what you know is coming, you feel a rush of excitement at the prospect. Ceding so much power and control to him feels like a release after the tension of exploring the city. You lower your head and meekly head into the darkened room.";

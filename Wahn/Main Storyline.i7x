@@ -6,13 +6,8 @@ Version 3 of Main Storyline by Wahn begins here.
 
 [
 Ideas:
-Add in more nanite lore - player being especially infectable; not infective to others
-
-
-
+Add in more nanite lore - player being especially infectible; not infective to others
 ]
-
-
 
 "Contains the content for Dr. Matt and the Main Quest Storyline."
 
@@ -41,7 +36,7 @@ Cock Length of Doctor Matt is 7. [length in inches]
 Ball Count of Doctor Matt is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Doctor Matt is 3. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Doctor Matt is 0. [number of cunts]
-Cunt Depth of Doctor Matt is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Doctor Matt is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Doctor Matt is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Doctor Matt is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -86,7 +81,7 @@ instead of fucking Doctor Matt:
 	else:
 		say "Doctor Matt recognizes the glint of arousal in your eyes as you imagine peeling him out of the suit. He takes a few steps towards the back wall of the room, hovering his hand over the intercom. 'You're not going feral on me, are you? Control yourself, or I'll have to call Orthas!'";
 
-Section 1 - Talking w/Dr Matt (this drives the Main Storyline quests)
+Section 1 - Talking w/Doctor Matt (this drives the Main Storyline quests)
 
 Instead of conversing the Doctor Matt:
 	if HP of Doctor Matt is 100:
@@ -188,6 +183,12 @@ to say DrMattTalkMenu:
 		now sortorder entry is 4;
 		now description entry is "Tell him you're both ready for the experiment";
 	[]
+	if "Permanent Hyper Discussed" is listed in Traits of Fang and Best Wolf is listed in companionList of Player:
+		choose a blank row in table of fucking options;
+		now title entry is "Discuss Hyper Vials";
+		now sortorder entry is 97;
+		now description entry is "Ask him whether he can help you with making Fang permanently hyper";
+	[]
 	choose a blank row in table of fucking options;
 	now title entry is "The Nanite Infection";
 	now sortorder entry is 98;
@@ -229,6 +230,8 @@ to say DrMattTalkMenu:
 				else if (nam is "Beginning the experiment with Susan"):
 					say "[DrMattQuestTalk]";
 					now TalkDone is true;
+				else if (nam is "Discuss Hyper Vials"):
+					say "[DrMattHyperTalk]";
 				else if (nam is "The Nanite Infection"):
 					say "[DrMattTalk1]";
 				else if (nam is "How he ended up here"):
@@ -260,6 +263,77 @@ to say DrMattTalk2:
 to say DrMattTalk3:
 	say "     The suited man looks up at you as you bring up connecting with the world outside of the city, glancing at you through his glasses and nodding. 'Yes, I do still have contact with a colleague in the CDC, Dr. Sutton. As luck will have it, the Trevor Labs facility is part of the shielded communications network that connects a number of selected sites of bio-safety level 4 in case of emergencies. If only Greg and I could have convinced the authorities that they have to delay the planned surge of troops into the city!' He distractedly moves to stroke through his gray hair, only to have his gloved fingers bump against the Plexiglas screen of the helmet. Lowering his hand with an annoyed grunt, Dr. Matt makes a frustrated throwing-away gesture.";
 	say "     'They just won't listen! Sending more troops will only expand the ranks of the infected unless they're properly prepared. And for that, we need more research!' The man focuses on yourself with an intense expression that speaks of his desperate need for progress, and the frustration of a scientist at being rushed. He adds in a grumbling tone, 'The infighting out there is almost as bad as the beasts out on the streets here. Politicians screaming for something to be done yesterday, generals drawing in what local forces they can and preparing for a Hail-Mary push to 'overwhelm the beasts', with those who understand anything about the situation in the middle and ignored by both. Please, help me get some results so we can make them listen.'";
+
+to say DrMattHyperTalk:
+	if Thirst of Fang is 1:
+		if "Hyper Delayed" is listed in Traits of Fang:
+			say "     'I shall remind you that the possible side effects may include increased muscle mass, reduced higher brain function, and uncontrollable arousal. With that in mind, do you want to go ahead with the procedure?' Dr. Matt asks.";
+			say "     [bold type]Do you still wish to go ahead with the procedure to permanently hyper-fy Fang?[roman type][line break]";
+			let Fang_Hyperfy_Choices be a list of text;
+			add "Yes." to Fang_Hyperfy_Choices;
+			add "No. Not yet." to Fang_Hyperfy_Choices;
+			let Fang_Hyperfy_Choice be what the player chooses from Fang_Hyperfy_Choices;
+			if Fang_Hyperfy_Choice is:
+				-- "Yes.":
+					LineBreak;
+					say "     'As you wish, now if he will just hold still, I can inject the solution into the back of his neck,' Dr. Matt informs you both, Fang grudgingly complying. With one hand, the scientist parts the wolf's thick fur, and with the other smoothly jabs the needle into the exposed skin. It should take approximately twenty minutes before the transformation begins, but I would prefer it if you weren't in my lab when it happened.' Understanding Dr. Matt's concern and implied request to leave, you and Fang hastily make your way for the exit, Orthas looking more than a little relieved at your departure. You make it part way back to the library before you decide to find a sheltered spot to safely allow the change to take its course. With a rumble from deep within his chest, your alpha signals the imminent exhibition.";
+					say "     The ripple of his muscles bulging beneath his fur is simultaneously hypnotic and exhilarating, memories of how he held you down and took his pleasure in you causing a fuzzy hot feeling to grow in the back of your mind. Knowing what is coming next, you crouch to better watch as Fang's cock erupts from its sheath, shooting cum across the ground, feeling the effects of the serum though so far remaining disappointingly normal in size. It is only thanks to his rapidly expanding balls that he is able to produce so much, the ever-spreading lake of semen a testament to the productivity of his pendulous scrotum. You wonder how much they could produce before running fry, images of bathing in his cum filling to mind. So caught up in your fantasies, it is a shock when you find yourself coated in the wolf's essence, your alpha humping the air in mix between being overcome with lust and desire to paint you once more with his scent.";
+					WaitLineBreak;
+					say "     The thick, cloying scent of his cum threatens to overwhelm you as it seeps into your pores and trickles into your mouth, all the while flooding your senses and marking you as his once again. With excitement, you drink in the sight of the wolf's cock finally begins to swell both in length and girth, thick veins pulsing along the shaft as it expands inch by inch. You know just how large in can get, but it is no less satisfying to see it continue to grow until it finally reaches just over three feet in length and fatter than you can get your hand around, ensuring that it will require your full devotion to properly pleasure, his balls just as awe-inspiring as they continue to rise and fall in scrotum that you could bury your face in. You have to admit that you are tempted, but you refrain for the moment. Towering over his previous size, between this and the magnified pheromone-laced aroma of his musk, Fang is truly an alpha who exudes an aura of authority, power, and lust, and you immediately prostrate yourself as best as you can before him to await his will.";
+					say "     Gazing down at you for but a brief moment, Fang tips his head back and howls, declaring his superiority and challenging anyone nearby to face him if they dare! Part of you expects him to mount and claim you immediately, but he refrains leaving you to wallow in his cum while he remains prepared for any potential challengers. Eventually, with a chuff of disappointment, your alpha strides back out into the street, leaving you to stumble after him as he makes his way back to the library, the pungent odor of his essence clinging to his fur, though more strongly to you. You can only imagine how rough and dominating he is going to be from now on...";
+					now HP of Fang is 7; [Permanent Hyper Alpha Fang]
+					now Body Weight of Fang is 7;
+					now Body Definition of Fang is 8;
+					now Androginity of Fang is 1;
+					now Mouth Length of Fang is 18;
+					now Tongue Length of Fang is 18;
+					now Asshole Depth of Fang is 36;
+					now Cock Girth of Fang is 5;
+					now Cock Length of Fang is 38;
+					now Ball Size of Fang is 5;
+					TraitLoss "Hyper Delayed" for Fang;
+					TraitLoss "Permanent Hyper Discussed" for Fang;
+					move player to Grey Abbey Library;
+				-- "No. Not yet.":
+					LineBreak;
+					say "     'Fine. It isn't something that you should be doing without extensive consideration, though I do wish you wouldn't waste my time like this. Should you change your mind, it will be waiting for you. Now, was there anything else that you wanted while you were here?' Dr Matt asks, tucking the syringe into a safe place on his desk.";
+		else:
+			say "     'I'll start off by saying that technically you should probably return these vials to the company that produced them. However, given that the scientist that created them is among those unaccounted for in the city and the current circumstances, there isn't much that they can do about it, so just use them responsibly,' Dr. Matt informs you, returning the briefcase. 'For now though, I agreed to try and make the effects permanent in your... companion,' he continues, casting a cautious glance at Fang before producing a syringe with the same fluid as the vials. 'It would be remiss of me if I didn't warn you that this procedure is experimental and that I can't be sure of all the side effects. I think that I have a decent understanding of it from the notes as well as how the nanites will play into this, but there is always the possibility of error. Possible side effects may include increased muscle mass, reduced higher brain function, and uncontrollable arousal. Of course, the nanites can cause the same effects, but considering our past cooperation, I want you to be able to make your own decision from the available information.'";
+			say "     [bold type]Do you still wish to go ahead with the procedure to permanently hyper-fy Fang?[roman type][line break]";
+			let Fang_Hyperfy_Choices be a list of text;
+			add "Yes." to Fang_Hyperfy_Choices;
+			add "No. Not yet." to Fang_Hyperfy_Choices;
+			let Fang_Hyperfy_Choice be what the player chooses from Fang_Hyperfy_Choices;
+			if Fang_Hyperfy_Choice is:
+				-- "Yes.":
+					LineBreak;
+					say "     'As you wish, now if he will just hold still, I can inject the solution into the back of his neck,' Dr. Matt informs you both, Fang grudgingly complying. With one hand, the scientist parts the wolf's thick fur, and with the other smoothly jabs the needle into the exposed skin. It should take approximately twenty minutes before the transformation begins, but I would prefer it if you weren't in my lab when it happened.' Understanding Dr. Matt's concern and implied request to leave, you and Fang hastily make your way for the exit, Orthas looking more than a little relieved at your departure. You make it part way back to the library before you decide to find a sheltered spot to safely allow the change to take its course. With a rumble from deep within his chest, your alpha signals the imminent exhibition.";
+					say "     The ripple of his muscles bulging beneath his fur is simultaneously hypnotic and exhilarating, memories of how he held you down and took his pleasure in you causing a fuzzy hot feeling to grow in the back of your mind. Knowing what is coming next, you crouch to better watch as Fang's cock erupts from its sheath, shooting cum across the ground, feeling the effects of the serum though so far remaining disappointingly normal in size. It is only thanks to his rapidly expanding balls that he is able to produce so much, the ever-spreading lake of semen a testament to the productivity of his pendulous scrotum. You wonder how much they could produce before running fry, images of bathing in his cum filling to mind. So caught up in your fantasies, it is a shock when you find yourself coated in the wolf's essence, your alpha humping the air in mix between being overcome with lust and desire to paint you once more with his scent.";
+					WaitLineBreak;
+					say "     The thick, cloying scent of his cum threatens to overwhelm you as it seeps into your pores and trickles into your mouth, all the while flooding your senses and marking you as his once again. With excitement, you drink in the sight of the wolf's cock finally begins to swell both in length and girth, thick veins pulsing along the shaft as it expands inch by inch. You know just how large in can get, but it is no less satisfying to see it continue to grow until it finally reaches just over three feet in length and fatter than you can get your hand around, ensuring that it will require your full devotion to properly pleasure, his balls just as awe-inspiring as they continue to rise and fall in scrotum that you could bury your face in. You have to admit that you are tempted, but you refrain for the moment. Towering over his previous size, between this and the magnified pheromone-laced aroma of his musk, Fang is truly an alpha who exudes an aura of authority, power, and lust, and you immediately prostrate yourself as best as you can before him to await his will.";
+					say "     Gazing down at you for but a brief moment, Fang tips his head back and howls, declaring his superiority and challenging anyone nearby to face him if they dare! Part of you expects him to mount and claim you immediately, but he refrains leaving you to wallow in his cum while he remains prepared for any potential challengers. Eventually, with a chuff of disappointment, your alpha strides back out into the street, leaving you to stumble after him as he makes his way back to the library, the pungent odor of his essence clinging to his fur, though more strongly to you. You can only imagine how rough and dominating he is going to be from now on...";
+					now HP of Fang is 7; [Permanent Hyper Alpha Fang]
+					now Body Weight of Fang is 7;
+					now Body Definition of Fang is 8;
+					now Androginity of Fang is 1;
+					now Mouth Length of Fang is 18;
+					now Tongue Length of Fang is 18;
+					now Asshole Depth of Fang is 36;
+					now Cock Girth of Fang is 5;
+					now Cock Length of Fang is 38;
+					now Ball Size of Fang is 5;
+					TraitLoss "Permanent Hyper Discussed" for Fang;
+					move player to Grey Abbey Library;
+				-- "No. Not yet.":
+					LineBreak;
+					say "     'Fine. It isn't something that you should be doing without extensive consideration. Should you change your mind, it will be waiting for you. Now, was there anything else that you wanted while you were here?' Dr Matt asks, tucking the syringe into a safe place on his desk.";
+					TraitGain "Hyper Delayed" for Fang;
+	else if Thirst of Fang > 1:
+		say "     'I'm still working on it. Be patient,' Dr. Matt mildly scolds you.";
+	else:
+		say "     Conscious of Dr. Matt's more reserved approach to the sexual aspects of the nanites, you tentatively ease into asking him about the hyper serum. First you give the briefcase to him, apologizing for the state of the notes. He casts a cautious glance towards Fang before devoting his attention to the smeared and stained sheets of paper, perhaps reasoning that Orthas would have prevented the large wolf from entering if she thought him a threat. 'You realize that this isn't my research, don't you? It may take me some time to understand it enough to confidently tell you anything about it,' he warns you without taking his eyes off the notes. You assure him that you understand completely, but wondered if there might be a way to make the effects of the serum permanent. He sighs and goes to scratch the back of his head, but the hazmat suit gets in the way. 'I'll see what I can do. I trust that you don't have anything malicious planned? I will admit to some curiosity about further applications of the serum or its components outside of genital enlargement. Give me a three or [bold type]four days[roman type] and I'll see what I can do. Now, unless there is anything else...' he leaves the question hanging.";
+		now Thirst of Fang is 33;
+		[Countdown rule in Prometheus/Hyper Serum]
 
 Section 2 - Quests
 
@@ -508,11 +582,11 @@ to DrMattSusanQuestConsent:
 
 to DrMattSusanQuestResolution:
 	if Loyalty of Susan is 3: [ready for medical procedure]
-		say "     'Judging by your expression, I take it you were successful in convincing the young woman? Good, good. I've got everything prepared for the two of you over here.' With that said, he points to an examination table, now surrounded by three separate cameras. A whole spread of sampling equipment is laid out on the workbench next to it. 'Please undress and get ready. No need to be shy, I've seen it all before. Well, humans and other primates only, to be specific, but you know what I mean.' With that said, the doctor shepherds you over to his equipment and takes a series of samples from all over your body, then makes you document your physical state in front of the camera, up to and including [if player is male]getting hard and having your cock measured[else if player is female]spreading your folds and showing them off[else]some closeups of your genderless crotch[end if]. At some point, Susan quietly joins, but is not subjected to a similar scrutiny as Dr. Matt still has recent material from her.";
+		say "     'Judging by your expression, I take it you were successful in convincing the young woman? Good, good. I've got everything prepared for the two of you over here.' With that said, he points to an examination table, now surrounded by three separate cameras. A whole spread of sampling equipment is laid out on the workbench next to it. 'Please undress and get ready. No need to be shy, I've seen it all before. Well, humans and other primates only, to be specific, but you know what I mean.' With that said, the doctor shepherds you over to his equipment and takes a series of samples from all over your body, then makes you document your physical state in front of the camera, up to and including [if Player is male]getting hard and having your cock measured[else if Player is female]spreading your folds and showing them off[else]some closeups of your genderless crotch[end if]. At some point, Susan quietly joins, but is not subjected to a similar scrutiny as Dr. Matt still has recent material from her.";
 		say "     'Okay then, that should suffice as a baseline. Now on to the experiment itself. Could you please both step over here?' Dr. Matt makes Susan and yourself take position between the cameras, then asks her to brush her fingers over your arm lightly, followed by longer periods of contact as nothing much happens afterwards. 'Interesting,' the older man says thoughtfully, then raises a digital voice recorder to capture some notes. 'Simple physical touch appears to be insufficient to facilitate transmission of the nanites in the subjects. My hypothesis for this is that the devices are closely integrated in the host body, with no capability of independent movement on the macro scale intended in their design. This might explain the current absence of grey goo scenario effects, despite the supposed degradation of programming and chaotic evolution of nanite strains. Proceeding to next test phase.'";
 		WaitLineBreak;
 		[todo: stronger reaction to fur pulling]
-		say "     Too focused on his work to remember warning her about it beforehand, Dr. Matt takes a pair of tweezers and plucks a tuft of fur from Susan, who calls out at the sudden pain and rubs her shoulder. By the time her hand moves away again, there is no trace of any missing hair left. 'The rapid regeneration of missing fur indicates that nanites must be involved in the process. It is simply to fast to be anything else. Retaining most of this as sample 27A,' the doctor dictates as he pushes Susan's clump of fur into a labelled plastic baggy. Before sealing it though, he fishes out a few hairs again, then bids you to hold out your arm and places the strands on it. Before everyone's eyes, the strands crumble away in barely an eye-blink, with what appears to be dust falling onto your skin and merging with it. For a few seconds, it appears as if you'd grow a fur not unlike the deer herm's, but the small patch spreads only about two inches before being pushed back and rapidly returning to your previous form.";
+		say "     Too focused on his work to remember warning her about it beforehand, Dr. Matt takes a pair of tweezers and plucks a tuft of fur from Susan, who calls out at the sudden pain and rubs her shoulder. By the time her hand moves away again, there is no trace of any missing hair left. 'The rapid regeneration of missing fur indicates that nanites must be involved in the process. It is simply too fast to be anything else. Retaining most of this as sample 27A,' the doctor dictates as he pushes Susan's clump of fur into a labelled plastic baggy. Before sealing it though, he fishes out a few hairs again, then bids you to hold out your arm and places the strands on it. Before everyone's eyes, the strands crumble away in barely an eye-blink, with what appears to be dust falling onto your skin and merging with it. For a few seconds, it appears as if you'd grow a fur not unlike the deer herm's, but the small patch spreads only about two inches before being pushed back and rapidly returning to your previous form.";
 		say "     'Presence of nanites in detached material confirmed. They appear to register that they are no longer connected to the main host and abandon all efforts to retain local structures once a new host becomes available. Nanite number in test appears to be insufficient to facilitate a widespread change in the second test subject against a dominant native strain.' Dr. Matt proceeds to go through similar tests with various bodily fluids, dictating the results as he goes along: saliva ('moderate infectiveness, increasing with prolonged contact due to suspected nanite migration'), blood ('surprisingly light infectiveness'), urine ('skipped due to test subject refusal'), then finally sexual fluids. As he dabs a swab from Susan's pussy only very lightly against your forearm, this starts a rapid spread of deer fur around the point of contact, almost reaching your wrist before it too is pushed back.";
 		WaitLineBreak;
 		say "     The results of the last test have the good doctor visibly excited, and he rapidly speaks to his recorder, 'Fascinating! There appears to be a large concentration of nanites in test subjects reproduction system. This might be intended to capitalize on natural fluid exchange behavior of hosts to facilitate nanite spread! It is too perfect, too tailor-made for maximum transmission capability while hard to detect to be a random mutation of the nanite code! I believe this must be part of the original design!' Raising his gaze after staring into nothingness for a few seconds, Dr. Matt beams at both Susan and yourself and adds, 'Thank you both! This is a puzzle piece that I was missing! Whoever thought these device up was clever, quite clever. It can't be denied that the nanites do have an effect on the libido of the infected, and I was wondering why they all do this.' As he says this, he nods to Susan, who has been casually stroking her cock a little out of boredom while he worked on his tests, with her quickly pulling her hand away, now that she's been put on the spot.";
@@ -522,7 +596,7 @@ to DrMattSusanQuestResolution:
 		now HP of Doctor Matt is 8; [post-Susan exam]
 		now Loyalty of Susan is 6; [experiment completed (either way)]
 	else if Loyalty of Susan is 4: [ready for a fuck]
-		say "     'Judging by your expression, I take it you were successful in wooing the young woman? Good, good. I've got everything prepared for the two of you over here.' With that said, he points to the cot that Orthas set up for Susan, now surrounded by three separate cameras. A whole spread of sampling equipment is laid out on a nearby table. 'You can proceed when ready. No need to be shy, I've seen it all before. Well, humans and other primates only, to be specific, but you know what I mean.' With that said, the doctor shepherds you over to his equipment and takes a series of samples from all over your body, then makes you document your physical state in front of the camera, up to and including [if player is male]getting hard and having your cock measured[else if player is female]spreading your folds and showing them off[else]some closeups of your genderless crotch[end if]. At some point, Susan quietly joins, but is not subjected to a similar scrutiny as Dr. Matt still has recent material from her.";
+		say "     'Judging by your expression, I take it you were successful in wooing the young woman? Good, good. I've got everything prepared for the two of you over here.' With that said, he points to the cot that Orthas set up for Susan, now surrounded by three separate cameras. A whole spread of sampling equipment is laid out on a nearby table. 'You can proceed when ready. No need to be shy, I've seen it all before. Well, humans and other primates only, to be specific, but you know what I mean.' With that said, the doctor shepherds you over to his equipment and takes a series of samples from all over your body, then makes you document your physical state in front of the camera, up to and including [if Player is male]getting hard and having your cock measured[else if Player is female]spreading your folds and showing them off[else]some closeups of your genderless crotch[end if]. At some point, Susan quietly joins, but is not subjected to a similar scrutiny as Dr. Matt still has recent material from her.";
 		SusanSexMenu;
 		WaitLineBreak;
 		if PlayerFucked of Susan is true: [some sex happened]
@@ -556,14 +630,14 @@ to say DrMattQuestTalk:
 	else if HP of Doctor Matt is 7:
 		DrMattSusanQuestResolution; [end of the rewrite, so far]
 	else if HP of Doctor Matt is 9 and hospquest < 8:
-		say "'Please continue to assist Dr Mouse. And let me know what you find out.' Dr Matt then turns back to his work, intent on continuing his research.";
+		say "'Please continue to assist Dr. Mouse. And let me know what you find out.' Dr. Matt then turns back to his work, intent on continuing his research.";
 	else if HP of Doctor Matt is 8 and hospquest is 8:
-		say "     You decide to tell Dr Matt about what you've been doing for Dr Mouse. You leave out what really happened to the scientific device he gave you and he doesn't seem to notice, instead focusing on the fact that he has a competitor. And one that you've been helping.";
+		say "     You decide to tell Dr. Matt about what you've been doing for Dr. Mouse. You leave out what really happened to the scientific device he gave you and he doesn't seem to notice, instead focusing on the fact that he has a competitor. And one that you've been helping.";
 		say "     'I had been wondering what you'd been up to for the last few days in the city while I had nothing for you to do. Idle hands, as they say. This is quite unexpected. You have found another person in the city searching into the mysteries of the nanite infection, but through a different avenue of research. And using the infected as test subjected is...' he coughs as he notices the stern look you [if susan is visible]and Susan [end if]give him. 'That is, possibly using them as unwilling test subjects in such surgical experiments. Most disturbing and unethical, even in such a crisis.'";
-		say "     'I suggest you continue to assist this Dr Mouse individual. It will further ingratiate you to him and allow you to find out more about what's going on with his research. Hopefully, I am wrong about my concerns and this doctor may be of help to us. As well, we do need to know if his concerns about the nanites are valid.";
+		say "     'I suggest you continue to assist this Dr. Mouse individual. It will further ingratiate you to him and allow you to find out more about what's going on with his research. Hopefully, I am wrong about my concerns and this doctor may be of help to us. As well, we do need to know if his concerns about the nanites are valid.";
 		now HP of Doctor Matt is 9;
 	else if HP of Doctor Matt is 9 and hospquest > 7 and mattcollection is 0:
-		say "     'Now, you say that Dr Mouse has been having you collect samples from the city? And from more and more powerful creatures? This is worrisome. I wonder what secrets he may be uncovering. May I see what he's asked you to collect?' he asks.";
+		say "     'Now, you say that Dr. Mouse has been having you collect samples from the city? And from more and more powerful creatures? This is worrisome. I wonder what secrets he may be uncovering. May I see what he's asked you to collect?' he asks.";
 		if triclamped is 0 and triclampedmatt is 0:
 			let tricllfound be 0;
 			if lava lamp is owned, now tricllfound is 1;
@@ -574,7 +648,7 @@ to say DrMattQuestTalk:
 				increase score by 10;
 				now triclampedmatt is 1;
 		else if triclamped is 1 and triclamped is 0:
-			say "     'It is unfortunate that you have turned the sample over to Dr Mouse already,' Dr Matt says. Unfortunately, I don't think it would be wise to try to obtain another.'";
+			say "     'It is unfortunate that you have turned the sample over to Dr. Mouse already,' Dr. Matt says. Unfortunately, I don't think it would be wise to try to obtain another.'";
 			now triclampedmatt is 2;
 		if sabtoothed is 0 and sabtoothedmatt is 0:
 			let sabertoothfound be 0;
@@ -582,7 +656,7 @@ to say DrMattQuestTalk:
 			if sabertoothfound is 0:
 				say "     'I would like to ask you to obtain a sample from one of these creatures for me as well. I know this means you may need to fight a second one, but I want to look into this matter as well.'";
 			if sabertoothfound > 0:
-				say "     'I should like to keep this sample of the sabretooth tiger. I know this means you must obtain another for Dr Mouse, but I would like to take this one for my research. If you were able to obtain this one, surely you can get another for your other employer.'";
+				say "     'I should like to keep this sample of the sabretooth tiger. I know this means you must obtain another for Dr. Mouse, but I would like to take this one for my research. If you were able to obtain this one, surely you can get another for your other employer.'";
 				say "     [bold type]Do you give it to him?[roman type][line break]";
 				LineBreak;
 				say "     ([link]Y[as]y[end link]) - Yes.";
@@ -593,15 +667,15 @@ to say DrMattQuestTalk:
 					say "     'It is good to see that you appreciate the importance of my work.' He picks up the large fang in his gloves and places it in a sample dish.";
 					now sabtoothedmatt is 1;
 				else:
-					say "     'I am disappointed that you don't appreciate the importance of my work. I hope you will at least continue to keep me appraised of Dr Mouse's activities.";
+					say "     'I am disappointed that you don't appreciate the importance of my work. I hope you will at least continue to keep me appraised of Dr. Mouse's activities.";
 					now sabtoothedmatt is 2;
 		else if sabtoothed is 1 and sabtoothedmatt is 0:
 			let sabertoothfound be 0;
 			now sabertoothfound is carried of chipped tooth;
 			if sabertoothfound is 0:
-				say "     'I would like to ask you to obtain a sample from one of these creatures for me as well before Dr Mouse gets too far ahead. I know this means you may need to fight a second one, but my research cannot fall behind.'";
+				say "     'I would like to ask you to obtain a sample from one of these creatures for me as well before Dr. Mouse gets too far ahead. I know this means you may need to fight a second one, but my research cannot fall behind.'";
 			if sabertoothfound > 0:
-				say "     'As you have already given Dr Mouse his sample, I should like to keep this sample for myself,' he says as he places the one you have into a sample dish.";
+				say "     'As you have already given Dr. Mouse his sample, I should like to keep this sample for myself,' he says as he places the one you have into a sample dish.";
 				ItemLoss Chipped tooth by 1;
 				increase score by 10;
 				now sabtoothedmatt is 1;
@@ -609,21 +683,21 @@ to say DrMattQuestTalk:
 			let nermpack be 0;
 			now nermpack is carried of package;
 			if nermpack is 0:
-				say "     'I should like a chance to examine whatever object you are retrieving from this mysterious shop. I want you to bring it here before delivering it to Dr Mouse.'";
+				say "     'I should like a chance to examine whatever object you are retrieving from this mysterious shop. I want you to bring it here before delivering it to Dr. Mouse.'";
 			if nermpack is 1:
-				say "     You pull out the dusty package and set it on one of tables. Dr Matt opens it carefully, using tongs to pull the strings to untie them. When they drop away, he lifts the flaps with his tongs. Peeking inside, you both see a large piece of golden fur. The doctor, relaxing a little, pulls it out and holds it up.";
-				say "     'It seems to be a very old animal hide. Lion, I should guess. I'm not sure why he is interested in this ratty, old thing. But I should take a sample just in case. Dr Matt takes a scalpel to cut a small corner from the old lionskin. But after several tries, he's only made a small notch in it. He grunts and pulls out a larger knife and tries again, eventually managing to slice a small corner from it.";
-				say "     He looks down at the small cutting he's placed in the sample tray. 'That was most perplexing. From all appearances, the hide is very old and should be quite fragile.' He turns the box around, finding the Greek writing on it. 'Nemea? What does that... the Nemean Lion!' Dr Matt stiffly folds up the pelt and puts it back in the box, very slowly tying it back up. 'It... makes no sense. But what else could it be?' The poor doctor seems quite out of sorts and it appears that no further explanation will be forthcoming.";
+				say "     You pull out the dusty package and set it on one of tables. Dr. Matt opens it carefully, using tongs to pull the strings to untie them. When they drop away, he lifts the flaps with his tongs. Peeking inside, you both see a large piece of golden fur. The doctor, relaxing a little, pulls it out and holds it up.";
+				say "     'It seems to be a very old animal hide. Lion, I should guess. I'm not sure why he is interested in this ratty, old thing. But I should take a sample just in case. Dr. Matt takes a scalpel to cut a small corner from the old lionskin. But after several tries, he's only made a small notch in it. He grunts and pulls out a larger knife and tries again, eventually managing to slice a small corner from it.";
+				say "     He looks down at the small cutting he's placed in the sample tray. 'That was most perplexing. From all appearances, the hide is very old and should be quite fragile.' He turns the box around, finding the Greek writing on it. 'Nemea? What does that... the Nemean Lion!' Dr. Matt stiffly folds up the pelt and puts it back in the box, very slowly tying it back up. 'It... makes no sense. But what else could it be?' The poor doctor seems quite out of sorts and it appears that no further explanation will be forthcoming.";
 				increase score by 10;
 				now nerminepackagematt is 1;
 		if nerminepackage is 5 and nerminepackagematt is 0:
-			say "     It is regrettable that you turned over the package to Dr Mouse before I had a chance to examine its contents. I want you to keep me better informed of his activities going forward.";
+			say "     It is regrettable that you turned over the package to Dr. Mouse before I had a chance to examine its contents. I want you to keep me better informed of his activities going forward.";
 			now nerminepackagematt is 2;
 		if nerminepackagematt > 0 and sabtoothedmatt > 0 and triclampedmatt > 0:
 			if nerminepackagematt is 1 and sabtoothedmatt is 1 and triclampedmatt is 1:
-				say "     Having given the scientist a sample from each of the three items Dr Mouse had you collect, he at least seems a little pleased. 'These do only represent the samples he's asked you specifically to gather. It is apparent that his at least partial control of the hospital denizens has allowed him to collect specimens from many of the creatures in the city. It is unclear to me what directions his research is taking and so I want to you continue to assist and monitor him. Hopefully he can discover something to help us deal with this outbreak.'";
+				say "     Having given the scientist a sample from each of the three items Dr. Mouse had you collect, he at least seems a little pleased. 'These do only represent the samples he's asked you specifically to gather. It is apparent that his at least partial control of the hospital denizens has allowed him to collect specimens from many of the creatures in the city. It is unclear to me what directions his research is taking and so I want to you continue to assist and monitor him. Hopefully he can discover something to help us deal with this outbreak.'";
 				say "     'For your assistance in this matter and for ensuring I received a sample from them as well, I should give you something in payment. I had been working on this device. It is only a prototype, but it may be of assistance to you. I am working on an improved model to eventually be used when the military comes in to rescue the infected survivors.'";
-				say "     From one of the worktables, Dr Matt gathers up a cobbled-together device that looks like it was made from an array of wires and lights on a Velcro wristband connected to a handheld game console. 'I had to make its case from the items I had available, but it is quite functional, if a little slow. It acts as a personalized infection status monitor, or PISM. Should you make contact with an unknown infection source, you can see to what degree and which strain has infected your body. While many strains are obvious, others are harder to diagnose until further secondary features or behaviors arise.'";
+				say "     From one of the worktables, Dr. Matt gathers up a cobbled-together device that looks like it was made from an array of wires and lights on a Velcro wristband connected to a handheld game console. 'I had to make its case from the items I had available, but it is quite functional, if a little slow. It acts as a personalized infection status monitor, or PISM. Should you make contact with an unknown infection source, you can see to what degree and which strain has infected your body. While many strains are obvious, others are harder to diagnose until further secondary features or behaviors arise.'";
 				say "     The strap can be placed around your wrist, ankle or other limb. It could even be used with the contacts pressed to your body, if you were ever changed to such a radical degree. To check yourself, simply connect it to the analysis unit and press these buttons,' he says as he indicates them, 'to show you how the infection has spread through your body. It has a catalog drawn from this terminal, but unfortunately must remain keyed to you to work and so it presently can't be used to check others. I hope my larger model for the military will overcome this issue so they can do a quick scan at the base of the people they rescue to be aware of the strains infecting each individual.'";
 				say "     'As I stated, you may have this prototype, as I am working on an improved model for the military. Perhaps it may be of some use to you. If you can continue to help me, I may be able to upgrade its programming later,' he adds, clearly paying you to act as his double-agent.";
 				ItemGain infection monitor by 1;
@@ -633,47 +707,47 @@ to say DrMattQuestTalk:
 			else:
 				now mattcollection is 2;
 	else if mattcollection > 0 and HP of Doctor Matt < 10 and hospquest < 11:
-		say "     'I suggest you continue to assist Dr Mouse. It will further ingratiate you to him and allow you to monitor his activities. I want you to keep me informed on what he's receiving and please bring a sample for me as well. Nor do I wish to fall behind in my research to this little upstart.";
+		say "     'I suggest you continue to assist Dr. Mouse. It will further ingratiate you to him and allow you to monitor his activities. I want you to keep me informed on what he's receiving and please bring a sample for me as well. Nor do I wish to fall behind in my research to this little upstart.";
 	else if HP of Doctor Matt is 10:
-		say "     'A mind like Dr Mouse's cannot be allowed to continue to exploit the nanite infection unhindered. I will need you to take care of him. And be sure to bring back what research materials you can.'";
+		say "     'A mind like Dr. Mouse's cannot be allowed to continue to exploit the nanite infection unhindered. I will need you to take care of him. And be sure to bring back what research materials you can.'";
 	else if HP of Doctor Matt is 8 and hospquest is 13:		[Doc completely unawares, hospital finished]
-		say "     Having much to tell Dr Matt, you begin with your discovery of the unusual activity at the hospital and then the lab within. You go on to talk about the strange doctor you found there, working away at solving the nanite mystery. This gets his attention and he becomes much more interested in your tale. As you continue, you summarize what the mouse related to you about his findings and hypotheses about the infection. You tell him these were what prompted you to assist him with the tasks he asked you to perform.";
-		say "     You describe the apparent control he had over the creatures of the hospital. You relate to him how the research coming from the samples you were collecting began to manifest as changes and increased power in the hospital denizens. Dr Matt is perturbed to hear about this news, both that such experiments were happening and that he was not made aware of another potential source of information on the nanites.";
-		say "     But you do not dwell on that, instead moving on to the most recent incident and the doctor's offer. Dr Matt is quite stunned by it and stammers some thanks for your decision to side with him over the mouse doctor.";
+		say "     Having much to tell Dr. Matt, you begin with your discovery of the unusual activity at the hospital and then the lab within. You go on to talk about the strange doctor you found there, working away at solving the nanite mystery. This gets his attention and he becomes much more interested in your tale. As you continue, you summarize what the mouse related to you about his findings and hypotheses about the infection. You tell him these were what prompted you to assist him with the tasks he asked you to perform.";
+		say "     You describe the apparent control he had over the creatures of the hospital. You relate to him how the research coming from the samples you were collecting began to manifest as changes and increased power in the hospital denizens. Dr. Matt is perturbed to hear about this news, both that such experiments were happening and that he was not made aware of another potential source of information on the nanites.";
+		say "     But you do not dwell on that, instead moving on to the most recent incident and the doctor's offer. Dr. Matt is quite stunned by it and stammers some thanks for your decision to side with him over the mouse doctor.";
 		if susan is visible:
 			say "     Susan moves up beside you as you talk about what happened at the hospital, putting her arms around you and hugging you tightly. She doesn't say anything, only listening and being there for her chosen mate.";
 		if HP of doctor mouse is 2:
-			say "     You relate to Dr Matt the events of the fight that began as you refused to help the mouse and incurred his wrath. Dr Matt seems unsurprised by the doctor's monstrous transformation, given what you related about his research, and is pleased to hear that he was dispatched so thoroughly. You dump out the accumulated research you were able to abscond from the lab, offering it all to the scientist to help him deal with the infection.";
-			say "     Dr Matt is quite intrigued by what he sees in the documents and samples he glances over. 'This is quite a substantial find, my brave assistant. I can see several results that I can put into place immediately and will be able to offer you several more options, should you wish to [bold type]volunteer[roman type] for nanite adjustments.'";
+			say "     You relate to Dr. Matt the events of the fight that began as you refused to help the mouse and incurred his wrath. Dr. Matt seems unsurprised by the doctor's monstrous transformation, given what you related about his research, and is pleased to hear that he was dispatched so thoroughly. You dump out the accumulated research you were able to abscond from the lab, offering it all to the scientist to help him deal with the infection.";
+			say "     Dr. Matt is quite intrigued by what he sees in the documents and samples he glances over. 'This is quite a substantial find, my brave assistant. I can see several results that I can put into place immediately and will be able to offer you several more options, should you wish to [bold type]volunteer[roman type] for nanite adjustments.'";
 			now featunlock is 1;
 		else:
-			say "     You relate to Dr Matt the events of the fight that began as you refused to help the mouse and incurred his wrath. Unable to defeat the mouse, you were not able to stop him, but survived the encounter and have returned to assist the scientist.";
-			say "     'It is unfortunate that this mad doctor was not stopped, but given the resources at his disposal, it is not surprising that you alone could not defeat him. I shall inform the military of these events, as well as the increased threat level at the hospital. They may attempt something to deal with him when the final push is made, but I suspect Dr Mouse will escape in the confusion. He seems too intelligent to not have an exit strategy already formulated.'";
+			say "     You relate to Dr. Matt the events of the fight that began as you refused to help the mouse and incurred his wrath. Unable to defeat the mouse, you were not able to stop him, but survived the encounter and have returned to assist the scientist.";
+			say "     'It is unfortunate that this mad doctor was not stopped, but given the resources at his disposal, it is not surprising that you alone could not defeat him. I shall inform the military of these events, as well as the increased threat level at the hospital. They may attempt something to deal with him when the final push is made, but I suspect Dr. Mouse will escape in the confusion. He seems too intelligent to not have an exit strategy already formulated.'";
 		now HP of Doctor Matt is 12;
 		now level of Doctor Matt is turns;
 	else if HP of Doctor Matt is 9 and hospquest is 13:		[Doc partially unawares, hospital finished]
-		say "     As you start to tell Dr Matt about the recent events at the hospital, at first he believes you to simply be reporting again on another request for samples. But as you tell him about Dr Mouse's plan to have you infected and steal his research, he is quite stunned. He stammers some thanks for your decision to side with him over the mouse doctor.";
+		say "     As you start to tell Dr. Matt about the recent events at the hospital, at first he believes you to simply be reporting again on another request for samples. But as you tell him about Dr. Mouse's plan to have you infected and steal his research, he is quite stunned. He stammers some thanks for your decision to side with him over the mouse doctor.";
 		if susan is visible:
 			say "     Susan moves up beside you as you talk about what happened at the hospital, putting her arms around you and hugging you tightly. She doesn't say anything, only listening and being there for her chosen mate.";
 		if HP of doctor mouse is 2:
-			say "     You relate to Dr Matt the events of the fight that began as you refused to help the mouse and incurred his wrath. Dr Matt seems unsurprised by the doctor's monstrous transformation, given what you related about his research, and is pleased to hear that he was dispatched so thoroughly. You pull out the accumulated research you were able to abscond from the lab, offering it all to the scientist to help him deal with the infection.";
-			say "     Dr Matt is quite intrigued by what he sees in the documents and samples he glances over. 'This is quite a substantial find, my brave assistant. I can see several results that I can put into place immediately and will be able to offer you several more options, should you wish to [bold type]volunteer[roman type] for nanite adjustments.'";
+			say "     You relate to Dr. Matt the events of the fight that began as you refused to help the mouse and incurred his wrath. Dr. Matt seems unsurprised by the doctor's monstrous transformation, given what you related about his research, and is pleased to hear that he was dispatched so thoroughly. You pull out the accumulated research you were able to abscond from the lab, offering it all to the scientist to help him deal with the infection.";
+			say "     Dr. Matt is quite intrigued by what he sees in the documents and samples he glances over. 'This is quite a substantial find, my brave assistant. I can see several results that I can put into place immediately and will be able to offer you several more options, should you wish to [bold type]volunteer[roman type] for nanite adjustments.'";
 			now featunlock is 1;
 		else:
-			say "     You relate to Dr Matt the events of the fight that began as you refused to help the mouse and incurred his wrath. Unable to defeat the mouse, you were not able to stop him, but survived the encounter and have returned to assist the scientist.";
-			say "     'It is unfortunate that this mad doctor was not stopped, but given the resources at his disposal, it is not surprising that you alone could not defeat him. I shall inform the military of these events, as well as the increased threat level at the hospital. They may attempt something to deal with him when the final push is made, but I suspect Dr Mouse will escape in the confusion. He seems too intelligent to not have an exit strategy already formulated.'";
+			say "     You relate to Dr. Matt the events of the fight that began as you refused to help the mouse and incurred his wrath. Unable to defeat the mouse, you were not able to stop him, but survived the encounter and have returned to assist the scientist.";
+			say "     'It is unfortunate that this mad doctor was not stopped, but given the resources at his disposal, it is not surprising that you alone could not defeat him. I shall inform the military of these events, as well as the increased threat level at the hospital. They may attempt something to deal with him when the final push is made, but I suspect Dr. Mouse will escape in the confusion. He seems too intelligent to not have an exit strategy already formulated.'";
 		now HP of Doctor Matt is 12;
 		now level of Doctor Matt is turns;
 	else if HP of Doctor Matt is 11:
 		if susan is visible:
 			say "     Susan moves up beside you as you talk about what happened at the hospital, putting her arms around you and hugging you tightly. She doesn't say anything, only listening and being there for her chosen mate.";
 		if HP of doctor mouse is 2:
-			say "     You relate to Dr Matt the events of the fight that began as you refused to help the mouse and incurred his wrath. Dr Matt seems unsurprised by the doctor's monstrous transformation, given what you related about his research, and is pleased to hear that he was dispatched so thoroughly. You dump out the accumulated research you were able to abscond from the lab, offering it all to the scientist to help him deal with the infection.";
-			say "     Dr Matt is quite intrigued by what he sees in the documents and samples he glances over. 'This is quite a substantial find, my brave assistant. I can see several results that I can put into place immediately and will be able to offer you several more options, should you wish to [bold type]volunteer[roman type] for nanite adjustments.'";
+			say "     You relate to Dr. Matt the events of the fight that began as you refused to help the mouse and incurred his wrath. Dr. Matt seems unsurprised by the doctor's monstrous transformation, given what you related about his research, and is pleased to hear that he was dispatched so thoroughly. You dump out the accumulated research you were able to abscond from the lab, offering it all to the scientist to help him deal with the infection.";
+			say "     Dr. Matt is quite intrigued by what he sees in the documents and samples he glances over. 'This is quite a substantial find, my brave assistant. I can see several results that I can put into place immediately and will be able to offer you several more options, should you wish to [bold type]volunteer[roman type] for nanite adjustments.'";
 			now featunlock is 1;
 		else:
-			say "     You relate to Dr Matt the events of the fight that began as you refused to help the mouse and incurred his wrath. Unable to defeat the mouse, you were not able to stop him, but survived the encounter and have returned to assist the scientist.";
-			say "     'It is unfortunate that this mad doctor was not stopped, but given the resources at his disposal, it is not surprising that you alone could not defeat him. I shall inform the military of these events, as well as the increased threat level at the hospital. They may attempt something to deal with him when the final push is made, but I suspect Dr Mouse will escape in the confusion. He seems too intelligent to not have an exit strategy already formulated.'";
+			say "     You relate to Dr. Matt the events of the fight that began as you refused to help the mouse and incurred his wrath. Unable to defeat the mouse, you were not able to stop him, but survived the encounter and have returned to assist the scientist.";
+			say "     'It is unfortunate that this mad doctor was not stopped, but given the resources at his disposal, it is not surprising that you alone could not defeat him. I shall inform the military of these events, as well as the increased threat level at the hospital. They may attempt something to deal with him when the final push is made, but I suspect Dr. Mouse will escape in the confusion. He seems too intelligent to not have an exit strategy already formulated.'";
 		now HP of Doctor Matt is 12;
 		now level of Doctor Matt is turns;
 	else if hospquest is 13 and "Mental Booster" is not listed in feats of Player:
@@ -716,7 +790,7 @@ to say DrMattQuestTalk:
 			else:
 				say "     'I'll add that water to our supplies to raise our stocks,' the doctor says, taking the water from you. 'We still need [waterneed] more liters though.' You quietly look over your depleted supplies, hoping you have enough for yourself as well.";
 		if foodneed is 0 and waterneed is 0:
-			say "     Having safely stored away the supplies, Dr Matt turns back to you as if wondering why you're still here when there's work to be done[if susan is present]. Susan politely coughs and nods towards the nanite enhancement device while tapping her hoofed foot on the floor[else]. You glare at the doctor for a few seconds before finally pointing to the nanite enhancement device[end if], at which point Dr Matt brushes his gloved hands together and nods, heading over to it as if that was his intention all along.";
+			say "     Having safely stored away the supplies, Dr. Matt turns back to you as if wondering why you're still here when there's work to be done[if susan is present]. Susan politely coughs and nods towards the nanite enhancement device while tapping her hoofed foot on the floor[else]. You glare at the doctor for a few seconds before finally pointing to the nanite enhancement device[end if], at which point Dr. Matt brushes his gloved hands together and nods, heading over to it as if that was his intention all along.";
 			wait for any key;
 			now foodwaterbonus is 1;
 			featget;
@@ -734,9 +808,9 @@ to say DrMattQuestTalk:
 		now HP of Doctor Matt is 15;
 	else if HP of Doctor Matt is 15:
 		if number of fasttravel rooms > ( number of known fasttravel rooms * 2 ):
-			say "     You fill Dr Matt in on what you've been able to learn about the city and the safer paths to travel through it. 'Based on the information you've been able to provide me, you only have about [ ( number of known fasttravel rooms * 100 ) / ( number of fasttravel rooms )]% of the city covered. The military is requesting information on at least 50% of these locations.'";
+			say "     You fill Dr. Matt in on what you've been able to learn about the city and the safer paths to travel through it. 'Based on the information you've been able to provide me, you only have about [ ( number of known fasttravel rooms * 100 ) / ( number of fasttravel rooms )]% of the city covered. The military is requesting information on at least 50% of these locations.'";
 		else:
-			say "     You fill Dr Matt in on what you've been able to learn about the city and the safer paths to travel through it. 'Based on the information you've been able to provide me, you have roughly [ ( number of known fasttravel rooms * 100 ) / ( number of fasttravel rooms )]% of the city covered. That should greatly assist the military with their scouting and rescue efforts.'";
+			say "     You fill Dr. Matt in on what you've been able to learn about the city and the safer paths to travel through it. 'Based on the information you've been able to provide me, you have roughly [ ( number of known fasttravel rooms * 100 ) / ( number of fasttravel rooms )]% of the city covered. That should greatly assist the military with their scouting and rescue efforts.'";
 			now tempnum is 100 + ( 4 * number of known fasttravel rooms);
 			increase freecred by tempnum;
 			now HP of Doctor Matt is 16;
@@ -744,13 +818,13 @@ to say DrMattQuestTalk:
 			say "     You have gained [special-style-1][tempnum][roman type] freecred and now have [freecred] freecred.";
 			WaitLineBreak;
 			say "     You'll notice that I was able to provide you with a sum of 'free credits'. These are a form of currency alternative that the Zephyr conglomerate has implemented. While my contacts with the military assure me that at least portions of the nation are still functioning, it is clear that the federal government is in disarray at the moment. And while Zephyr seems intent on exploiting this to position themselves as the new driving force in the nation, if not the world, there is no question that they are prepared and in possession of considerable knowledge about the infection and the nanites. So much so that I have to wonder about their role in all of this.'";
-			say "     'I want you to make contact with their representatives in the city and give them this package,' Dr Matt says as he passes you a manila envelope. 'It contains a request for certain items and data they have in their possession which would be very useful to my research into the nanites. I'm quite certain they know a lot more than they're letting on, but they should be willing to share this information at least. Now, as they are the representatives of a company, they will most certainly not just hand over this data.'";
+			say "     'I want you to make contact with their representatives in the city and give them this package,' Dr. Matt says as he passes you a manila envelope. 'It contains a request for certain items and data they have in their possession which would be very useful to my research into the nanites. I'm quite certain they know a lot more than they're letting on, but they should be willing to share this information at least. Now, as they are the representatives of a company, they will most certainly not just hand over this data.'";
 			WaitLineBreak;
 			say "     The doctor shuffles a few items around on his desk. 'The military command should have contacted the corporate office as well to negotiate this exchange of information. As payment, I've included selected portions of my research on a storage device you may give them if they agree to the terms. The reason I am sending you as a courier on this is that they may make some demands of you, claiming the offer may be insufficient. Given your experience in dealing with the city, you should be able to handle such a request from them.' It seems that doing Dr. Matt's dirty work isn't enough; now he's renting you out to others to do their dirty work too. Oh well.";
 			if mattcollection is not 1:
 				WaitLineBreak;
 				say "     'I have a prototype here of something I've been working on. While I no longer need it, I do realize that it may prove useful to you even as such. I am working on an improved model to eventually be used when the military comes in to rescue the infected survivors.'";
-				say "     From one of the worktables, Dr Matt gathers up a cobbled-together device that looks like it was made from an array of wires and lights on a Velcro wristband connected to a handheld game console. 'I had to make its case from the items I had available, but it is quite functional, if a little slow. It acts as a personalized infection status monitor, or PISM. Should you make contact with an unknown infection source, you can see to what degree and which strain has infected your body. While many strains are obvious, others are harder to diagnose until further secondary features or behaviors arise.";
+				say "     From one of the worktables, Dr. Matt gathers up a cobbled-together device that looks like it was made from an array of wires and lights on a Velcro wristband connected to a handheld game console. 'I had to make its case from the items I had available, but it is quite functional, if a little slow. It acts as a personalized infection status monitor, or PISM. Should you make contact with an unknown infection source, you can see to what degree and which strain has infected your body. While many strains are obvious, others are harder to diagnose until further secondary features or behaviors arise.";
 				WaitLineBreak;
 				say "     'The strap can be placed around your wrist, ankle or other limb. It could even be used with the contacts pressed to your body, if you were ever changed to such a radical degree. To check yourself, simply connect it to the analysis unit and press these buttons,' he says as he indicates them, 'to show you how the infection has spread through your body. It has a catalog drawn from this terminal, but unfortunately must remain keyed to you to work and so it presently can't be used to check others. I hope my larger model for the military will overcome this issue so they can do a quick scan at the base of the people they rescue to be aware of the strains infecting each individual.";
 				say "     'As I stated, you may have this prototype, as I am working on an improved model for the military. This will be a fine opportunity to field test the technology. After you've had a chance to test it out for a while, I'd like you to report your findings on its functionality,' he adds, clearly his [']gift['] is more a case of you being his beta-tester.";
@@ -772,7 +846,7 @@ to say DrMattQuestTalk:
 		say "     ([link]N[as]n[end link]) - No.";
 		if Player consents:
 			say "     You tell the doctor that you are of course willing to get your humanity back. The doctor smiles and nods, opening up a drawer and pulling out a rat's nest of wires and bio-sensors. 'Okay. Strip down so I can get you hooked up. This sort of thing isn't my usual area of expertise, but thankfully another of my former associates was doing bio-research, so I can use their equipment. She won't be needing it now that she's a feral mutant.'";
-			say "     While he speaks casually about what has happened to his colleagues, he does remain silent for a while, quietly attaching the sensors all over your body with tape. A lot of them get placed across your chest and upon your face, though others end up elsewhere[if Nipple Count of Player > 0]. Some are even placed directly over your nipples[end if][if Player is male]. One is placed upon your [Cock of Player] cock[smn], tape snugly wrapped clear around your shaft[smn][end if][if Player is male and player is not internal]. A linked pair are attached upon your balls[end if][if Player is female]. A small ovoid ones are pushed unceremoniously (and without even dinner and a movie) into your cunt[sfn] and asshole, leaving the wires dangling out of you[else]. A small ovoid one is pushed unceremoniously (and without even dinner and a movie) into your asshole, leaving the wire dangling out of you[end if].";
+			say "     While he speaks casually about what has happened to his colleagues, he does remain silent for a while, quietly attaching the sensors all over your body with tape. A lot of them get placed across your chest and upon your face, though others end up elsewhere[if Nipple Count of Player > 0]. Some are even placed directly over your nipples[end if][if Player is male]. One is placed upon your [Cock of Player] cock[smn], tape snugly wrapped clear around your shaft[smn][end if][if Player is male and player is not internalBalls]. A linked pair are attached upon your balls[end if][if Player is female]. A small ovoid ones are pushed unceremoniously (and without even dinner and a movie) into your cunt[sfn] and asshole, leaving the wires dangling out of you[else]. A small ovoid one is pushed unceremoniously (and without even dinner and a movie) into your asshole, leaving the wire dangling out of you[end if].";
 			WaitLineBreak;
 			say "     With a final smack, the doctor adheres a large suction cup to your forehead. The thin wires from all of these separate sensors are wound together into one larger cable which is then plugged into a monitoring device. It starts up, showing blips and waveforms on its screens while outputting a constant stream of ticker tape.";
 			say "     'Alright, we're ready to go,' the doctor says with enthusiasm. The prospect of science has brightened his mood and he quickly snatches up the spray can[if susan is visible]. Susan, while clearly concerned about you, takes several large steps back to avoid getting hit[end if]. The doctor starts spraying you all over, spreading the mist of strange antiseptic-smelling liquid all over you. You can feel the strange liquid burn and tingle as it sinks into your body, surprisingly you find yourself feeling a little better and more human almost immediately.";
@@ -828,7 +902,7 @@ Section 2 - PISM
 
 Table of Game Objects (continued)
 name	desc	weight	object
-"infection monitor"	"     Cobbled together from various items, Dr Matt's infection analyzer can be used to check your body's infection status. Type [bold type]pism[roman type] to use."	1	infection monitor
+"infection monitor"	"     Cobbled together from various items, Dr. Matt's infection analyzer can be used to check your body's infection status. Type [bold type]pism[roman type] to use."	1	infection monitor
 
 infection monitor is a grab object.
 

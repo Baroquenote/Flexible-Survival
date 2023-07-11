@@ -31,28 +31,29 @@ the fuckscene of Orthas is "[Orthasfuck]".
 
 to say OrthasNPCdesc:
 	project the Figure of Orthas_face_icon;
-	say "     Orthas is a black-scaled dragoness with an overall hunanoid build that shows quite a few muscles while still being decidedly feminine. Her large F-cup breasts leave little doubt of that, making quite a distracting display with every breath she takes. She stands about six and a half feet tall and has a large set of wings folded aganst her back, completing the image of a strong woman that few would dare mess with. Behind her, a long reptilian tail sways slowly from left to right.";
-	say "     Being the guardian of the Trevor Labs building, most of Orthas's time is spent in its lobby, where she dutyfully guards the entrance and the stairs that lead up into the offices and labs.";
+	say "     Orthas is a black-scaled dragoness with an overall humanoid build that shows quite a few muscles while still being decidedly feminine. Her large F-cup breasts leave little doubt of that, making quite a distracting display with every breath she takes. She stands about six and a half feet tall and has a large set of wings folded against her back, completing the image of a strong woman that few would dare mess with. Behind her, a long reptilian tail sways slowly from left to right.";
+	say "     Being the guardian of the Trevor Labs building, most of Orthas's time is spent in its lobby, where she dutifully guards the entrance and the stairs that lead up into the offices and labs.";
+
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+1	"Orthas_Meeting"	Orthas_Meeting	"[EventConditions_Orthas_Meeting]"	Trevor Labs Lobby	2500	2	100
+
+to say EventConditions_Orthas_Meeting:
+	if Orthas is in Trevor Labs Lobby: [list of conditions here]
+		now CurrentWalkinEvent_ConditionsMet is true;
 
 Table of GameEventIDs (continued)
 Object	Name
-Meeting Orthas	"Meeting Orthas"
+Orthas_Meeting	"Orthas_Meeting"
 
-Meeting Orthas is a situation.
-ResolveFunction of Meeting Orthas is "[ResolveEvent Meeting Orthas]".
-Sarea of Meeting Orthas is "Nowhere".
+Orthas_Meeting is a situation.
+ResolveFunction of Orthas_Meeting is "[ResolveEvent Orthas_Meeting]".
+Sarea of Orthas_Meeting is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
 
-instead of going to Trevor Labs Lobby while (Meeting Orthas is not resolved and Resolution of Meeting Orthas is 0 and Orthas is in Trevor Labs Lobby):
-	move player to Trevor Labs Lobby;
-	MeetingOrthasEvent;
-
-to say ResolveEvent Meeting Orthas:
-	MeetingOrthasEvent;
-
-to MeetingOrthasEvent:
+to say ResolveEvent Orthas_Meeting:
 	project the Figure of Orthas_face_icon;
 	if debugactive is 1:
-		say "DEBUG -> First Encounter with Orthas, Resolution of Meeting Orthas: [Resolution of Meeting Orthas]";
+		say "DEBUG -> First Encounter with Orthas, Resolution of Meeting Orthas: [Resolution of Orthas_Meeting]";
 	say "     As you walk into the room, the towering figure of an anthro dragoness awaits you, strong arms crossed before her broad chest and ample breasts. She is wearing parts of a security guard's uniform whose fabric is straining under the muscled bulk her six and a half foot tall frame brings with it. Focusing on you with a watchful eye, the woman calls out to you. '[bold type]Stop right there![roman type] This building is under my protection. Who are you and what do you want? Don't try anything or you're gonna get your ass kicked!' You have little doubt that she can follow through with those threats, given her impressive stature, so you stop in your tracks and tell her your name, earning a curt nod in greeting. 'Oh, you can talk. Not a raving fuckbeast then, eh? Still, I asked what you want.'";
 	LineBreak;
 	say "     [bold type]What do you reply?[roman type][line break]";
@@ -70,18 +71,18 @@ to MeetingOrthasEvent:
 	if calcnumber is 1:
 		LineBreak;
 		say "     Orthas's cautious expression softens a little and she gives you a hint of a smile. 'Well, you've found them. In this building, there's me, Dr. Matt up in the lab, and some other employees hiding out in the deep basement levels. Haven't seen them in a while though, if I have to be honest, but that's not too surprising, given how often I have to fight off the creatures just waltzing in through the door.' She walks closer to you, then holds out her hand in greeting. As you don't immediately react to take it, the dragoness nods in understanding and adds, 'No worries about catching anything, by the way. The doc has told me that I'm not transmitting what made me like this.' Giving yourself a push, you shake her hand and feel its flexible, smooth scales against your skin. The two of you chat a little bit about what you've seen since the start of the outbreak, exchanging stories that would be unbelievable in any other situation. Eventually, Orthas says, 'You should go up and meet Dr. Matt too. I'm sure he'd be glad to see another sane person.'";
-		now Resolution of Meeting Orthas is 1; [said you are searching survivors]
+		now Resolution of Orthas_Meeting is 1; [said you are searching survivors]
 	else if calcnumber is 2:
 		LineBreak;
 		say "     Orthas's expression hardens a little and she shakes her head. 'Well, you're shit out of luck then. Apocalypse or no, everything in here is still company or employee property. Only staff like Dr. Matt, the guys in the deep basement and myself may access and use the stuff. We got to hold out till rescue somehow, so the loading dock and also the catering kitchen up on 3rd are off limits. I've got the keys, so you can save yourself the trip of trying to get in there.' She keeps your eyes locked to hers in a severe stare, long enough to make sure you know she's serious, then shrugs. 'But hey, other than that, it's good to meet another survivor. No hard feelings, alright?' With that said, the dragoness walks closer to you and holds out her hand in greeting.";
 		say "     As you don't immediately react to take it, the Orthas nods in understanding and adds, 'No worries about catching anything, by the way. The doc has told me that I'm not transmitting what made me like this.' Giving yourself a push, you shake her hand and feel its flexible, smooth scales against your skin. The two of you chat a little bit about what you've seen since the start of the outbreak, exchanging stories that would be unbelievable in any other situation. Eventually, Orthas says, 'You should go up and meet Dr. Matt too. I'm sure he'd be glad to see another sane person.'";
-		now Resolution of Meeting Orthas is 2; [said you want to scavenge]
+		now Resolution of Orthas_Meeting is 2; [said you want to scavenge]
 	else:
 		LineBreak;
 		say "     Letting out an annoyed grunt, Orthas looks at you with a frown. 'Well, you're shit out of luck then. I'm sane enough not to fuck around with any random horndog that stumbles in here. That's a quick way to become one of the fuckbeasts that are wandering the streets. No thank you!' Putting her hands on her hips, the statuesque dragoness looks at you, seemingly contemplating sending you away before shrugging to herself. 'Okay, listen. I'm sure you're a swell person, but sex with me is out of the question. Doesn't mean we can't have a nice chat instead though. Not many folks around these days who can hold a conversation, you know. So... no hard feelings, eh?' She walks closer to you, then holds out her hand in greeting.";
 		say "     As you don't immediately react to take it, the dragoness nods in understanding and adds, 'No worries about catching anything, by the way. The doc has told me that I'm not transmitting what made me like this.' Accepting her explanation, you shake the dragoness's hand and feel its flexible, smooth scales against your skin. The two of you chat a little bit about what you've seen since the start of the outbreak, exchanging stories that would be unbelievable in any other situation. Eventually, Orthas says, 'You should go up and meet Dr. Matt too. I'm sure he'd be glad to see another sane person. And no, he won't want to fuck you either.'";
-		now Resolution of Meeting Orthas is 3; [said you want sex]
-	now Meeting Orthas is resolved;
+		now Resolution of Orthas_Meeting is 3; [said you want sex]
+	now Orthas_Meeting is resolved;
 
 Section 1 - Conversation
 
@@ -163,13 +164,13 @@ after going down from 2F Trevor Labs when the HP of Doctor Matt > 2 and HP of Or
 			say "     ([link]N[as]n[end link]) - You'll pass.";
 			if Player consents:
 				LineBreak;
-				say "     Orthas puts on a toothy grin as she reaches up with strong arms and pulls you down onto herself. Her long tongue wraps around yours in an exciting bit of French kissing, while her hands rub your body, making it all tingly in response to her actions. She pulls off the kiss after a moment and rips off the somewhat slimy remnants of her clothes, the sight of which makes you wonder a bit about what happened during her visit to the basement. The dragoness's body is toned and athletic, looking practically amazonian to your own lust-filled eyes. She caresses every part of your body for a little while of pleasurable exploration, before assisting you in taking off any clothes and gear you have with you.";
+				say "     Orthas puts on a toothy grin as she reaches up with strong arms and pulls you down onto herself. Her long tongue wraps around yours in an exciting bit of French kissing, while her hands rub your body, making it all tingly in response to her actions. She pulls off the kiss after a moment and rips off the somewhat slimy remnants of her clothes, the sight of which makes you wonder a bit about what happened during her visit to the basement. The dragoness's body is toned and athletic, looking practically Amazonian to your own lust-filled eyes. She caresses every part of your body for a little while of pleasurable exploration, before assisting you in taking off any clothes and gear you have with you.";
 				if Player is male: [male or herm player]
 					say "     'Ooooh... you're quite the stud!' she says, getting a good gander at your manhood, already half-erect from the heat of the moment. Leaning back on the cushions, the dragoness spreads her strong, scaled legs, fingers moving to pull open the folds of her sex in eager anticipation of your entry. 'Mmm! Come on big boy, give me some love!' An idle thought passes through your mind about whether dragonesses would lay eggs or have live young, but such worries fade before the escalating lust you feel as you push into Orthas's sweltering depths. 'Fuck yeah!' the dragoness growls in satisfaction, her claws digging into the abused sofa as she bucks her hips against yours to drive your shaft deeper. Doing what comes natural, you thrust in and out of her in a rapid tempo, your [Cock of Player] manhood stretching the inner walls of your draconic lover. She feels amazing around your dick, quite warm and snug, as her strong muscles flex and contracting to become a perfect fit over your member.";
 					say "     Orthas herself has her tongue lolling out of her mouth in helpless pleasure and her hands squeeze at her hefty bosom while you ride her. Her pussy muscles seem to be working overdrive on your member, and she is definitely a screamer, as the roars of pleasure fill the whole lobby and make the intact windowpanes tremble in their frames. You're certain that Doctor Matt on the floor above can hear your mating loud and clear. Before long, your pleasure nears the point of no return, and a tingly feeling of tightness fills your balls. You start to gasp out that you're close, but before you have said more than a few words, Orthas's pussy walls clamp down on your cock hard! They squeeze your length in a rhythmic fashion, practically milking you for your cum - and with a pleased groan, you are happy to oblige her and erupt into the woman's innermost depths. Spurt after spurt of your seed paint the walls of her pussy white while Orthas's slit gushes her femcum over your throbbing member and balls.";
 					WaitLineBreak;
 					if Player is not female: [true male player]
-						say "     Orthas blinks and moans out in lust. With a shock, you both realize that her belly has begun to swell out into what obviously must be pregnancy, but with vastly increased speed compared to anything you have seen before. At the same time, your member is slowly pushed out of her sex by... something. Orthas lets out a surprised gasp and becomes quite flustered when she sees her folds being spread by a lengthy, tapered... almost tentacle-like, phallic thing that pushes out of her body. She reaches down to touch it with trembling fingers, then gasps out, 'God, this feels so weird. Definitively not like a cock, that's for sure!' For a second or two your mind is puzzled about the statement, until you remind yourself that the female dragon you just fucked was a man not too long ago, so she actually knows what she's talking about.";
+						say "     Orthas blinks and moans out in lust. With a shock, you both realize that her belly has begun to swell out into what obviously must be pregnancy, but with vastly increased speed compared to anything you have seen before. At the same time, your member is slowly pushed out of her sex by... something. Orthas lets out a surprised gasp and becomes quite flustered when she sees her folds being spread by a lengthy, tapered... almost tentacle-like, phallic thing that pushes out of her body. She reaches down to touch it with trembling fingers, then gasps out, 'God, this feels so weird. Definitely not like a cock, that's for sure!' For a second or two your mind is puzzled about the statement, until you remind yourself that the female dragon you just fucked was a man not too long ago, so she actually knows what she's talking about.";
 						say "     Still, that doesn't answer the question of what her new appendage actually is, so you decide to take the matter to a person who just might perhaps know. Thinking quickly, you help Orthas up and hustle her to Dr. Matt's lab. The man in his red hazmat suit is bent over a workstation as you rush in, looking up from it when he hears you call out to him. 'What are you - oh my!' Dr. Matt exclaims when he sees the state his guardian is in currently. Waving the two of you over to an examination table, he bids Orthas to get on top of it and lay back, then gives her a quick examination while asking both of you questions of what exactly happened. The dragoness sounds rather confused as she haltingly says, 'I was - I went down into the sublevels and - err. There was something there. In the dark.'";
 						WaitLineBreak;
 						say "     Orthas knits her brows in concentration but the most she manages to get out about her time below is some murmurs about 'so many eyes, and arms'. Since she can't seem to explain more clearly, Dr. Matt asks you to fill him in instead while he moves his gloved hands to feel the dragoness's expanding belly and carefully touches the odd organ sprouted from her sex. As you explain in quick words that you fucked Orthas and came in her right before things started to get weird, Dr. Matt nods in understanding. He clears his throat and looks from you to her as he says, 'Well, I think I know what's happened. Orthas, this is an ovipositor. What that means is, when you are inseminated, you will be able to... implant eggs into willing or unwilling subjects. It's actually something that is most common in insects, but some fish and turtles have them too. As do seahorses.'";
@@ -275,7 +276,7 @@ to say Orthas_task2_done:
 	say "     She tosses the stuff back into the box and closes it up. 'Look, I didn't get much of a chance to prove myself as a parent or husband, but I know I can do it.' She wraps her tail around you, pulling and turning you into a hug from behind with her hands on your [if gestation of child > 0]pregnant [end if]belly and her wings around you. 'My old life ain't really worth remembering, but I don't want to forgot to do better this time around. Now, I can't promise to be around all the time - the doc's work's important and someone's got to protect him. But I figure someone like you'll understand that a bit better as sometimes there's things you've got to take care of too. Once we're out of this mess, I'll be around for you and the eggs when you need me.'";
 	WaitLineBreak;
 	if Player is male:
-		say "     Orthas nips along your neck and grinds her hips against your ass. A hand wanders down to your [cock size desc of Player] cock as her touches become more erotic. After fondling you to erection, she nuzzles down your side and gets you to turn back around so she can sink your [Cock of Player] manhood into her muzzle. Her maw is hot and her long tongue twines around your shaft, getting you to moan as pre drools from your cumslit. She works her mouth over you, careful of her teeth, and gives you quite the blow job.";
+		say "     Orthas nips along your neck and grinds her hips against your ass. A hand wanders down to your [cock size desc of Player] cock as her touches become more erotic. After fondling you to erection, she nuzzles down your side and gets you to turn back around so she can sink your [Cock of Player] manhood into her muzzle. Her maw is hot and her long tongue twines around your shaft, getting you to moan as pre drools from your cumslit. She works her mouth over you, careful of her teeth, and gives you quite the blowjob.";
 		say "     Once she's gotten you good and horny, she lays herself back across her security desk, wantonly spreading her legs. With a tantalizing grin, she fingers her dripping snatch before spreading her folds invitingly. 'Come on, lover,' she purrs sensually and you can hardly resist such an invitation. Tossing aside your gear and moving into position, you grab her legs and drive your throbbing cock into her cunny, causing the dragoness to cry out lustfully. You pound away at her, giving her the thorough breeding she desires.";
 		say "     The dragoness's strong inner muscles, capable of dealing with pushing out her eggs, squeeze and massage around your thrusting member, increasing the pleasure for both of you. The thought of dumping your load in her and there being an egg produced right away makes you feel like a virile stud, eager to knock up this fecund scaled beauty. Nuzzling her bosom, you lick and kiss her nipples, telling her how sexy she looks and how you're looking forward to putting an egg in her. To this she grins and licks your cheek with her draconic tongue, rumbling how she's looking forward to putting her egg in you.";
 		say "     Before you can respond to this, the squeezing and milking of her vaginal walls intensifies as her orgasm begins with a roar. Under the powerful stimulation her quivering cunny provides, you don't hold out much longer and are soon blasting your gooey seed into her womb. By the time you're done emptying your load into her, she's already sitting up and rolling you over onto your back. Pulling off your spent shaft, she lets her emerging ovipositor slap wetly against it with a lustful grin.";
@@ -302,8 +303,8 @@ to say Orthas_task2_done:
 				say "     Rubbing your rounded belly, you can feel the egg breaking back down into a gooey mix of semen and lubricating fluids that fill you with warm feeling of pleasure.";
 		else if calcnumber is 2:
 			say "     Orthas rumbles sexily as you guide her dripping ovipositor between your ass cheeks. She grinds against your back door, making sure to send several spurts of lubricating fluids onto and into that stretching ring. And once she's gotten you good and lubed up, she drives that cock-like member into you, pushing past your anus and into your warm bowels. Wrapping your legs around her waist, you goad her to fuck you, not that she needs any encouragement on that score. Her pulsating rod drives into you again and again as it leaks more slick lubrication to prepare you for what's to come. And seeing her belly swelling up, you know it's coming soon.";
-			say "     Panting heavily as the egg starts to move, Orthas grabs your shoulders for support. Her ovipositor throbs deep inside you as you can feel the bulge of the egg start to force your back door open even wider. After some initial difficulty, your body adjusts and soon you're sharing the dragoness's pleasure as the firm ovoid makes its journey into your rectum and then into your bowels. You climax again as you feel it finally settle into your [if the player is mpreg_ok]hidden womb[else]belly[end if] with a good splatter of the dragoness's fluids.";
-			if the player is mpreg_ok:
+			say "     Panting heavily as the egg starts to move, Orthas grabs your shoulders for support. Her ovipositor throbs deep inside you as you can feel the bulge of the egg start to force your back door open even wider. After some initial difficulty, your body adjusts and soon you're sharing the dragoness's pleasure as the firm ovoid makes its journey into your rectum and then into your bowels. You climax again as you feel it finally settle into your [if the Player is mpreg_ok]hidden womb[else]belly[end if] with a good splatter of the dragoness's fluids.";
+			if the Player is mpreg_ok:
 				if the gestation of the child > 0:
 					say "     The essence of the egg just stimulates and aids the progress of the child already inside of you, dissolving its essence to help the young one grow.";
 					decrease gestation of child by a random number from 5 to 10;
@@ -513,10 +514,10 @@ to say Orthasfuck:
 Section 5 - Creature Responses
 
 to say losetoOrthas:
-	say "     The powerful dragoness strikes you with a mighty blow, you are sent flying out the broken door, landing in the hall. As you struggle to rise, you can see her inside, passing the microwave device across Dr Matt to halt the transformation, but it's clear that the damage is at least partially done. The doctor is fondling herself and Orthas even as the dragoness tries to help her, though the hybrid is sane enough to instruct Orthas to continue the process.";
+	say "     The powerful dragoness strikes you with a mighty blow, you are sent flying out the broken door, landing in the hall. As you struggle to rise, you can see her inside, passing the microwave device across Dr. Matt to halt the transformation, but it's clear that the damage is at least partially done. The doctor is fondling herself and Orthas even as the dragoness tries to help her, though the hybrid is sane enough to instruct Orthas to continue the process.";
 
 to say beatOrthas:
-	say "     You manage to knock the dragoness senseless and look over her and the transforming Dr Matt.";
+	say "     You manage to knock the dragoness senseless and look over her and the transforming Dr. Matt.";
 
 to say Orthasdesc:
 	choose row MonsterID from the Table of Random Critters;
@@ -544,34 +545,35 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Dragon"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Dragon"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Dragon" to infections of ReptileList;
 	add "Dragon" to infections of FurryList;
 	add "Dragon" to infections of MagicalList;
 	add "Dragon" to infections of FemaleList;
 	add "Dragon" to infections of TaperedCockList;
 	add "Dragon" to infections of InternalCockList;
+	add "Dragon" to infections of InternalBallsList;
 	add "Dragon" to infections of BipedalList;
 	add "Dragon" to infections of TailList;
 	add "Dragon" to infections of OviImpregnatorList;
 	add "Dragon" to infections of TailweaponList;
-	now Name entry is "Dragon"; [Name of your new Monster]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now Name entry is "Dragon";
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The dragoness slams into you, slamming you back against one of the tables![or]Orthas slashes out at you with her sharp claws, slashing you violently![or]The dragoness's sharp teeth dig into your arm, biting into your flesh![or]Despite her large size, the black dragoness makes a sweeping kick to your legs, sending you to the ground![or]Orthas's jaws move in, trying to bite your head. You manage to grab her head and keep her from getting you with a potentially lethal bite. As you struggle to hold her, she exhales a thick cloud of smoke and sparks that cause you to choke![or]Orthas strikes at you with a series of martial arts strikes. You struggle to block, but end up battered![or]Orthas feints with her fists and manages to wrap her tail around your waist long enough to land a powerful uppercut![at random]";
 	now defeated entry is "[beatOrthas]";
 	now victory entry is "[losetoOrthas]"; [Text used when monster wins, can be directly entered like combat text or description. or if more complex it can be linked to a 'To Say' block as the demonstration text shows.]
 	now desc entry is "[Orthasdesc]"; [ Description of the creature when you encounter it.]
 	now face entry is "draconic head"; [ Face description, format as "You have a (your text)."]
-	now body entry is "that of a well-muscled anthro dragon"; [ Body Description, format as "Your Body is (your text)."]
+	now body entry is "that of a well-muscled anthro dragon"; [ Body Description, format as "Your Body is [Body of Player]." ]
 	now skin entry is "dark scaled"; [ skin Description, format as "Your body is covered in (your text) skin."]
 	now tail entry is "You have a slender, draconic tail."; [ Tail description, write a whole Sentence or leave blank. ]
 	now cock entry is "ridged"; [ Cock Description, format as you have a 'size' (your text) cock]
-	now face change entry is "it shifts and reforms into a dragon's head"; [ face change text. format as "Your face feels funny as (your text)." ]
-	now body change entry is "your body shifts and alters itself, becoming that of a humanoid dragon"; [ body change text. format as "Your body feels funny as (your text)." ]
-	now skin change entry is "hard scales form on your skin, covering your entire body in a tough, but flexible hide"; [ skin change text. format as "Your skin feels funny as (your text)." ]
-	now ass change entry is "a slender, draconic tail forms behind you"; [ ass/tail change text. format as "Your ass feels funny as (your text)." ]
+	now face change entry is "it shifts and reforms into a dragon's head"; [ Face change text, format as "Your face feels funny as [face change entry]." ]
+	now body change entry is "your body shifts and alters itself, becoming that of a humanoid dragon"; [ Body change text, format as "Your body feels funny as [body change entry]." ]
+	now skin change entry is "hard scales form on your skin, covering your entire body in a tough, but flexible hide"; [ Skin change text, format as "Your skin feels funny as [skin change entry]." ]
+	now ass change entry is "a slender, draconic tail forms behind you"; [ Ass/tail change text, format as "Your ass feels funny as [ass change entry]." ]
 	now cock change entry is "it changes shape, gaining firm ridges along its length to stimulate your partner"; [ cock change text. format as "Your cock feels funny as (your text)." ]
 	now str entry is 20;
 	now dex entry is 24;
@@ -582,7 +584,7 @@ When Play begins:
 	now sex entry is "nochange"; [ Invalid answer intentionally getting no change in gender]
 	now HP entry is 150;
 	now lev entry is 12; [ Level of the Monster, you get this much XP if you win, or this much XP halved if you loose ]
-	now wdam entry is 10; [Amount of Damage monster Does when attacking.]
+	now wdam entry is 10; [ Amount of Damage monster Does when attacking. ]
 	now area entry is "Nowhere"; [ Location of monster, in this case nowhere]
 	now Cock Count entry is 1; [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
 	now Cock Length entry is 8; [ Length infection will make cock grow to if cocks]
@@ -597,16 +599,16 @@ When Play begins:
 	now libido entry is 20; [ Set to zero in this monster to control elsewhere ]
 	now loot entry is ""; [ Dropped item. Key will be used later ]
 	now lootchance entry is 0; [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 4; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]powerful[or]strong[or]muscular[at random]";
 	now type entry is "draconic"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is true;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
@@ -618,7 +620,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -630,7 +632,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -649,7 +651,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -670,18 +672,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -695,19 +697,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]

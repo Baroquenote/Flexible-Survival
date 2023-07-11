@@ -72,7 +72,7 @@ to say losetopitbull_f:[Female Pit Bull Defeat Scenes]
 		else:
 			say "     Pulling your legs closer, she drags you forward that she might grind her snatch against yours with such a wanton fervor, perverse hunger made alight the fiery need of the harsh canine, quickly overwhelming you. It's not long before [if Libido of Player > 33]you cry out in orgasm, her own soon following in its wake[else]she cries out in orgasm, your own soon following in its wake[end if], gushing holes smearing their mess across your exposed crotch and thighs. Now satisfied, she pushing you free of her, and she doesn't give you much time to gather yourself and your things before she starts booting you out of her territory, forcing you to flee an embarrassed mess as you are.";
 		CreatureSexAftermath "Player" receives "Stroking" from "Pit Bull";
-	else if FangWS is 1 and (a random chance of 1 in 3 succeeds or (player is kinky and a random chance of 1 in 4 succeeds)):[watersports-marking]
+	else if FangWS is 1 and (a random chance of 1 in 3 succeeds or (Player is kinky and a random chance of 1 in 4 succeeds)):[watersports-marking]
 		say "     Quizzically, she begins to sniff you over, detecting something peculiar about your scent. She steps back, chuckling as she unzips her pants and reveals herself to you, cunt exposed to the open air. You're briefly confused that she doesn't interact with you, but her intent is soon made crystal clear when you're hit with a flood of her urine.";
 		if Player is submissive:
 			say "     You're overwhelmed by your submissive tendencies, driven to take the full brunt of her acrid release. The harsh taste of her fluids against your palate, you immerse yourself in the scent of her piss, partially drinking her fluids. Laughing, she offers mocking approval to such an obliging little bitch[if scalevalue of Player > 3], her amusement exacerbated further by how complicit you are in spite your large size[end if]";
@@ -87,9 +87,9 @@ to say losetopitbull_f:[Female Pit Bull Defeat Scenes]
 		else if scalevalue of Player < 4:
 			say "     Amused, she gives your rear an audible smack and watches you flinch before you watch as she slowly pushes two of her fingers into your exposed anal ring. Writhing in discontent, her irreverent inspection is briefly concluded, only to be replaced by the whole of her fist! [if Player is twistcapped]Thankfully, your infection abides such an intrusion in spite of its size and belligerence, though this only serves to amuse the rough dog and encourage her to assault you more harshly[else]You feel a sharp pain as your beleaguered hole is stretched so suddenly, your impotent struggles an endless source of entertainment to the rough dog[end if].";
 		say "     [if Cock Count of Player > 1]Cocks driven erect by her influence, their need for attention is left largely disregarded by the canine[else if Player is male]Cock driven erect by her influence, its need for attention is left largely disregarded by the canine[else if Cunt Count of Player > 1]Cunts dripping wet with a needy hunger in the wake of her influence, their desire for attention is left largely disregarded by the canine[else if Player is female]Cunt dripping wet with a needy hunger in the wake of her influence, its desire for attention is left largely disregarded by the canine[else]Twisted lust gradually overwhelming you, she doesn't appear to regard your genderless state[end if]; rather, she intends to stimulate you purely by force. You feel her knuckles grind against your [if Player is male]prostate[else]passage[end if] with a reckless abandon";
-		if Libido of Player > 69 and player is male:
+		if Libido of Player > 69 and Player is male:
 			say ". You almost immediately fire off your [Cum Load Size of Player] load, [if Ball Size of Player > 4]drenching your torso and neck[else]seed wasted against your torso[end if]. She's actually a bit surprised by this, probably not suspecting you to be this pathetically easy to get off. Her clear annoyance is inevitably abated when she seems satisfied in her goal of humiliating you, regardless.";
-		else if Libido of Player > 69 and player is female:
+		else if Libido of Player > 69 and Player is female:
 			say ". You almost immediately cry out in orgasm, your sexual fluids dripping down and only serving to lubricate what thrusts that might follow. She's actually a bit surprised by this, probably not suspecting you to be this pathetically easy to get off. Her clear annoyance is inevitably abated when she seems satisfied in her goal of humiliating you, regardless.";
 		else if Player is not neuter:
 			say ". [if Libido of Player > 33]It's not long before you[else]It seems like forever until you finally[end if] cry out in orgasm, your ";
@@ -102,7 +102,7 @@ to say losetopitbull_f:[Female Pit Bull Defeat Scenes]
 		say "     Pulling her fist free of you with an audible, wet sound, she adds further insult to injury by cleaning it against your [if scalevalue of Player > 3]large and [end if]beleaguered frame before she inevitably starts forcing your exhausted and embarrassed form to flee from her territory[if scalevalue of Player < 4 and player is twistcapped], no doubt relegated to walking funny for the while that follows[end if].";
 		CreatureSexAftermath "Player" receives "AssDildoFuck" from "Pit Bull";
 	else:[Player gets pussy in face from female Pit]
-		say "     Exposed before the pit bull, she - in turn - relinquishes herself of her pants, revealing her already-dripping cunt before you. Her intent further elucidated when she pulls your [if scalevalue of Player > 3]head[else]form[end if] closer, demanding that offer up tribute for your trespass. [if HP of Player > 0 or player is submissive]Implicitly complying[else]After a fair amount of coaxing[end if], your [if scalevalue of Player > 3]large maw engulfs the entirety of her slick portal almost immediately. The aggressive canine taking great joy in demeaning someone as large as you[else]lips caress her slick portal, her strong grip forcing you more firmly against her crotch, relegating you to contend with her hungry pussy more than any better restraint might have compelled you to[end if].";
+		say "     Exposed before the pit bull, she - in turn - relinquishes herself of her pants, revealing her already-dripping cunt before you. Her intent further elucidated when she pulls your [if scalevalue of Player > 3]head[else]form[end if] closer, demanding that offer up tribute for your trespass. [if HP of Player > 0 or Player is submissive]Implicitly complying[else]After a fair amount of coaxing[end if], your [if scalevalue of Player > 3]large maw engulfs the entirety of her slick portal almost immediately. The aggressive canine taking great joy in demeaning someone as large as you[else]lips caress her slick portal, her strong grip forcing you more firmly against her crotch, relegating you to contend with her hungry pussy more than any better restraint might have compelled you to[end if].";
 		say "     It's not long before your mandated affections show their effect, [if scalevalue of Player > 3]thick [end if]tongue penetrating her needy snatch, tasting her rising, lascivious fervor. You must contend with the canine's tight grip and belligerent grinding before you're forced to deal with a sudden flood of her sexual fluids, throbbing hole tightening around your slick organ. Pulling herself free of you she sends you off, booting you from her territory now that she is satisfied.";
 		CreatureSexAftermath "Player" receives "OralPussy" from "Pit Bull";
 
@@ -128,10 +128,10 @@ to say losetopitbull_m:[Male Pit Bull Defeat Scenes]
 			increase Libido of Player by 5;
 		say "     Panting behind you for a moment, the pit bull eventually [if scalevalue of Player > 3]pulls himself off you[else]pushes you off of him[end if], giving you little time to gather yourself before forcing you to retreat from his territory.";
 		CreatureSexAftermath "Player" receives "PussyFuck" from "Pit Bull";
-	else if anallevel > 1 and ( a random chance of 1 in 5 succeeds or ( Cunt Count of Player is 0 and a random chance of 1 in 5 succeeds ) or ( ( anallevel is 3 or player is mpreg_ok ) and a random chance of 1 in 5 succeeds ) ):[Player's ass is fucked by Pit]
+	else if anallevel > 1 and ( a random chance of 1 in 5 succeeds or ( Cunt Count of Player is 0 and a random chance of 1 in 5 succeeds ) or ( ( anallevel is 3 or Player is mpreg_ok ) and a random chance of 1 in 5 succeeds ) ):[Player's ass is fucked by Pit]
 		say "     Unbuttoning his pants and pushing you onto your back, he [if scalevalue of Player > 3]takes a moment to adjust your large frame so that your asshole is exposed before him, promptly impaling it with his hardening dick[else]exposes your asshole before him, promptly impaling it with his hardening dick[end if]. [if scalevalue of Player > 3]Having little difficulty in penetrating your anal ring[else if scalevalue of Player < 3 and player is twistcapped]Brief, strained grunts elicited as he contends with your tight ring[else]Blatant in his use of your anal ring[end if], he's fairly reckless in the abusive pursuit of his own personal pleasure, bearing little regard for your own well-being in the matter.";
 		say "     It's not long before you feel his canine knot bang belligerently against your ass, his thrusts becoming increasingly deliberate as he [if scalevalue of Player > 3]forces it in with little effort[else if scalevalue of Player < 3 and player is not twistcapped]squeezes it in with such painful, abusive force[else]quickly forces the thick remainder of his meat into you[end if], ";
-		if Libido of Player > 60 and player is not neuter:
+		if Libido of Player > 60 and Player is not neuter:
 			say "more that enough to cause you to orgasm in twisted pleasure, [if Cock Count of Player > 1]cocks spilling their [Cum Load Size of Player] load impotently into the ground[else if Player is male]cock spilling its [Cum Load Size of Player] load impotently into the ground[else]stuffed hole throbbing against its belligerent intruder[end if]. Your throbbing ring is more than enough to bring him over the edge, and you soon feel his hot seed flood the depths of your bowels.";
 			decrease Libido of Player by Libido of Player / 8;
 		else:
@@ -139,14 +139,14 @@ to say losetopitbull_m:[Male Pit Bull Defeat Scenes]
 			increase Libido of Player by 5;
 		say "     Panting behind you for a moment, the pit bull eventually [if scalevalue of Player > 3]pulls himself off you[else]pushes you off of him[end if], giving you little time to gather yourself before forcing you to retreat from his territory.";
 		CreatureSexAftermath "Player" receives "AssFuck" from "Pit Bull";
-	else if FangWS is 1 and (a random chance of 1 in 3 succeeds or (player is kinky and a random chance of 1 in 4 succeeds)):[Watersports-marking]
+	else if FangWS is 1 and (a random chance of 1 in 3 succeeds or (Player is kinky and a random chance of 1 in 4 succeeds)):[Watersports-marking]
 		say "     Quizzically, he begins to sniff you over, detecting something peculiar about your scent. He steps back, chuckling as he unzips his pants and exposes himself to you, slightly erect cock poking from its sheath. You're briefly confused that he doesn't interact with you, but his intent is soon made crystal clear when you're hit with a flood of his urine.";
 		if Player is submissive:
 			say "     You're overwhelmed by your submissive tendencies driven to take the full brunt of his acrid release. The harsh taste of his fluids against your palate, you immerse yourself in the scent of his piss, partially drinking his fluids. Laughing, he offers mocking approval to such an obliging little bitch[if scalevalue of Player > 3], his amusement exacerbated further by how complicit you are in spite your large size[end if]";
 		else:
 			say "     You [if HP of Player > 0]reluctantly oblige his abuse, taking[else]try to turn away, but he grabs you by your head, forcing you to face[end if] the full brunt of his acrid release. [if scalevalue of Player > 3]It's a pitiful sight, to see a creature as large as you are pissed on by the comparatively diminutive pit bull, forcing your senses to be[else]You can only silently take his humiliation, senses forcefully[end if] flooded with the taste and smell of his harsh fluids";
 		say ". His flow inevitably diminishes before ceasing altogether, much to your [if Player is submissive]discontent[else]relief[end if], before he puts his pants back on and leaves you with a harsh swat on the rear, forcing you to gather your things and retreat from his domain.";
-	else if anallevel > 1 and ( a random chance of 1 in 5 succeeds or ( Cunt Count of Player is 0 and a random chance of 1 in 5 succeeds ) or ( ( anallevel is 3 or player is mpreg_ok ) and a random chance of 1 in 5 succeeds ) ):
+	else if anallevel > 1 and ( a random chance of 1 in 5 succeeds or ( Cunt Count of Player is 0 and a random chance of 1 in 5 succeeds ) or ( ( anallevel is 3 or Player is mpreg_ok ) and a random chance of 1 in 5 succeeds ) ):
 		If scalevalue of Player > 4:[Player's ass fingered by male Pit]
 			say "     He laughs, slapping your rear harshly, no doubt amused to have felled a such a massive trespasser. Too embarrassed, you look away as you feel a couple of fingers beginning to penetrate your anal ring. [if HP of Player > 0]Ignoring what protests you may offer up[else]Soft moans of pleasure escaping your lips[end if], your large passage is more than willing to abide his intrusion. With an audible snort, he regards your accommodation as a challenge and shows no restraint in stuffing the whole of his fist down the portal, to little avail.";
 		else if scalevalue of Player is 4:
@@ -154,9 +154,9 @@ to say losetopitbull_m:[Male Pit Bull Defeat Scenes]
 		else if scalevalue of Player < 4:
 			say "     Amused, he gives your rear an audible smack and watches you flinch before you watch as he slowly pushes two of his fingers into your exposed anal ring. Writhing in discontent, his irreverent inspection is briefly concluded, only to be replaced by the whole of his fist! [if Player is twistcapped]Thankfully, your infection abides such an intrusion in spite of its size and belligerence, though this only serves to amuse the rough dog and encourage him to assault you more harshly[else]You feel a sharp pain as your beleaguered hole is stretched so suddenly, your impotent struggles an endless source of entertainment to the rough dog[end if].";
 		say "     [if Cock Count of Player > 1]Cocks driven erect by his influence, their need for attention is left largely disregarded by the canine[else if Player is male]Cock driven erect by his influence, its need for attention is left largely disregarded by the canine[else if Cunt Count of Player > 1]Cunts dripping wet with a needy hunger in the wake of his influence, their desire for attention is left largely disregarded by the canine[else if Player is female]Cunt dripping wet with a needy hunger in the wake of his influence, its desire for attention is left largely disregarded by the canine[else]Twisted lust gradually overwhelming you, he doesn't appear to regard your genderless state[end if]; rather, he intends to stimulate you purely by force. You feel his knuckles grind against your [if Player is male]prostate[else]passage[end if] with a reckless abandon";
-		if Libido of Player > 69 and player is male:
+		if Libido of Player > 69 and Player is male:
 			say ". You almost immediately fire off your [Cum Load Size of Player] load, [if Ball Size of Player > 4]drenching your torso and neck[else]seed wasted against your torso[end if]. He's actually a bit surprised by this, probably not suspecting you to be this pathetically easy to get off. His clear annoyance is inevitably abated when he seems satisfied in his goal of humiliating you, regardless.";
-		else if Libido of Player > 69 and player is female:
+		else if Libido of Player > 69 and Player is female:
 			say ". You almost immediately cry out in orgasm, your sexual fluids dripping down and only serving to lubricate what thrusts that might follow. He's actually a bit surprised by this, probably not suspecting you to be this pathetically easy to get off. His clear annoyance is inevitably abated when he seems satisfied in his goal of humiliating you, regardless.";
 		else if Player is not neuter:
 			say ". [if Libido of Player > 33]It's not long before you[else]It seems like forever until you finally[end if] cry out in orgasm, your ";
@@ -169,7 +169,7 @@ to say losetopitbull_m:[Male Pit Bull Defeat Scenes]
 		say "     Pulling his fist free of you with an audible, wet sound, he adds further insult to injury by cleaning it against your [if scalevalue of Player > 3]large and [end if]beleaguered frame before he inevitably starts forcing your exhausted and embarrassed form to flee from his territory[if scalevalue of Player < 4 and player is not twistcapped], no doubt relegated to walking funny for the while that follows[end if].";
 		CreatureSexAftermath "Player" receives "AssDildoFucked" from "Pit Bull";
 	else:
-		say "     Exposed before the pit bull, he - in turn - relinquishes himself of his pants, revealing his semi-erect cock before you. His intent further elucidated when he pulls your [if scalevalue of Player > 3]head[else]form[end if] closer, demanding that offer up tribute for your trespass. [if HP of Player > 0 or player is submissive]Implicitly complying[else]After a fair amount of coaxing[end if], your [if scalevalue of Player > 3]large maw engulfs the entirety of his emergent dick almost immediately. Even the aggressive canine can't help but be a little ill at ease dealing with such a large victim[else]lips engulf the tip of his emergent dick, his strong grip forcing you more firmly against his crotch, relegating you to consume every growing inch[end if].";
+		say "     Exposed before the pit bull, he - in turn - relinquishes himself of his pants, revealing his semi-erect cock before you. His intent further elucidated when he pulls your [if scalevalue of Player > 3]head[else]form[end if] closer, demanding that offer up tribute for your trespass. [if HP of Player > 0 or Player is submissive]Implicitly complying[else]After a fair amount of coaxing[end if], your [if scalevalue of Player > 3]large maw engulfs the entirety of his emergent dick almost immediately. Even the aggressive canine can't help but be a little ill at ease dealing with such a large victim[else]lips engulf the tip of his emergent dick, his strong grip forcing you more firmly against his crotch, relegating you to consume every growing inch[end if].";
 		say "     It's not long before your mandated affections render this creature hard, [if scalevalue of Player > 3]tongue wrapping around[else]mouth firmly pressed firmly against[end if] his inflated, needy knot. You must contend with the canine's tight grip and belligerent thrusts, before [if scalevalue of Player > 3]you're forced to deal with a sudden flood of his sexual fluids, relegated to swallowing down each successive gout of the thick, heady seed[else]he suddenly pulls free of you, jerking off for but a second later before you're assaulted by sudden spurts of his sexual fluids across your exposed face and chest, each successive gout of his thick, heady seed coating you[end if]. [if scalevalue of Player > 3]Pulling himself free of you[else]Mocking your form-soiled and shamed state[end if], he sends you off, booting you from his territory now that he is satisfied[if scalevalue of Player < 4]. Doubtlessly, it takes a fair while to clean yourself off of the infectious cum[end if].";
 		CreatureSexAftermath "Player" receives "OralCock" from "Pit Bull";
 
@@ -209,7 +209,7 @@ To say beatthepitbull:
 			now sortorder entry is 5;
 			add 5 to randompitbullchoice;
 	if pitbullgender is 1:
-		if HP of Dominick >= 60 and HP of Dominick < 100 and player is female and ( BodyName of Player is "Breederslut" or FaceName of Player is "Breederslut" ) and inasituation is false:
+		if HP of Dominick >= 60 and HP of Dominick < 100 and Player is female and ( BodyName of Player is "Breederslut" or FaceName of Player is "Breederslut" ) and inasituation is false:
 			choose a blank row in table of fucking options;
 			now title entry is "Recruit for Dominick";
 			now sortorder entry is 99;
@@ -220,7 +220,7 @@ To say beatthepitbull:
 		if anallevel > 1:
 			add 7 to randompitbullchoice;
 	say "     With one final effort you set upon the canine, who falls under the weight of your superior prowess[run paragraph on]";
-	if ( humanity of Player - Libido of Player ) < 0 and (player is male or player is male) and (HP of Dominick < 60 or HP of Dominick >= 100):
+	if ( humanity of Player - Libido of Player ) < 0 and (Player is male or Player is male) and (HP of Dominick < 60 or HP of Dominick >= 100):
 		say ". Compelled by your lust, you lose your self-control and seek to sate your sexual needs using your fallen foe. You immediately remove what attire might obstruct your tainted endeavor and advance upon them.";
 		sort randompitbullchoice in random order;
 		if entry 1 of randompitbullchoice is 1, say "[pitbull_vsex1]";
@@ -230,7 +230,7 @@ To say beatthepitbull:
 		if entry 1 of randompitbullchoice is 5, say "[pitbull_vsex5]";
 		if entry 1 of randompitbullchoice is 6, say "[pitbull_vsex6]";
 		if entry 1 of randompitbullchoice is 7, say "[pitbull_vsex7]";
-	else if Libido of Player >= 30 and (player is male or player is male):
+	else if Libido of Player >= 30 and (Player is male or Player is male):
 		say ". As they lay before you this might be an opportune moment to satisfy any lingering need you might possess. Looking over the fallen canine, you quickly weigh your possible options for sexual fun[if HP of Dominick >= 60 and HP of Dominick < 100 and pitbullgender is 1], including possibly trying to turn this junkyard dog into another pet for Dominick[end if].";
 		repeat with y running from 1 to number of filled rows in table of fucking options:
 			choose row y from the table of fucking options;
@@ -305,7 +305,7 @@ to say pitbull_vsex5:		[scissoring]
 	say "     Pulling the pit bull upright, you offer [if Cunt Count of Player > 1]one of [end if]your exposed, [bodytype of Player] cunt[sfn] to them. Her expression one of ill-regard to this prospect, you're compelled to grind the dripping, [cunt size desc of Player] portal against her face until she obliges you. Tongue's imposed affection offered against its supple lips, it inevitably descends upon its depths, portal now slick with a mix of saliva and sexual fluids.";
 	say "     Not to be too quickly taken over by your wanton need, you free yourself of the canine's slick influence, pushing her onto her back and readjusting your position over the beast, coarse-furred leg pulled entwined with your own[if scalevalue of Player > 4], massive[else if scalevalue of Player is 4], larger[else if scalevalue of Player < 3], smaller[end if] form. Kept in place with one hand, the other assuages your companion, caress of her toned frame and firm breast's inciting moans to escape her muzzle in tainted approval.";
 	say "     Slowly, you start to grind the two of your exposed cunts together, made slick by a mix of saliva and shared sexual fluids, this slick attention intent on fueling this twisted, heated fervor further. Growls of immense pleasure her regard for your endeavors, cementing your lascivious dominion over the beast, though you cannot help but moan in the wake of such sensory delight. [if scalevalue of Player > 3]Ponderous weight[else]Weight[end if] of your lust bearing down on her, your rising, shared heat radiates out into the [if daytimer is day]day[else]night[end if] sky, the loud, irreverent sounds of your sex its companion.";
-	say "     It's not long before the two of you reach the ultimate consummation of your writhing, sweat-slicked endeavors, wracking the two of you with the throes of sapphic bliss. [if scalevalue of Player > 3]Larger form crumpling[else]Crumpling[end if] under the weight of exhaustion[if scalevalue of Player > 4], you take some care as to not crush her under your weight[end if], eventually recovering enough to pull yourself free. The canine appears to still be too battered and tired to go anywhere, so you choose to leave her to her own business, gathering what you might have put aside and departing.";
+	say "     It's not long before the two of you reach the ultimate consummation of your writhing, sweat-slicked endeavors, wracking the two of you with the throes of Sapphic bliss. [if scalevalue of Player > 3]Larger form crumpling[else]Crumpling[end if] under the weight of exhaustion[if scalevalue of Player > 4], you take some care as to not crush her under your weight[end if], eventually recovering enough to pull yourself free. The canine appears to still be too battered and tired to go anywhere, so you choose to leave her to her own business, gathering what you might have put aside and departing.";
 	CreatureSexAftermath "Pit Bull" receives "Stroking" from "Player";
 
 to say pitbull_vsex6:		[receive vaginal]
@@ -368,7 +368,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Pit Bull"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Pit Bull"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Pit Bull" to infections of CanineList;
 	add "Pit Bull" to infections of FurryList;
 	add "Pit Bull" to infections of NatureList;
@@ -378,23 +378,23 @@ When Play begins:
 	add "Pit Bull" to infections of SheathedCockList;
 	add "Pit Bull" to infections of BipedalList;
 	add "Pit Bull" to infections of TailList;
-	now Name entry is "Pit Bull"; [Name of your new Monster]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now Name entry is "Pit Bull";
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "The pit bull [one of]punches at your head and painfully connects[or]delivers a solid knee to your midsection[or]comes at you with a flurry of violent punches[or]hits you square in the jaw with an incredibly solid haymaker[at random]."; [Text used when the monster makes an Attack]
 	now defeated entry is "[beatthepitbull]";
 	now victory entry is "[losetopitbull]";
 	now desc entry is "[pitbulldesc]"; [ Description of the creature when you encounter it.]
-	now face entry is "canine, though somewhat compacted, bears a striking resemblance to a pit bull"; [ Face description, format as "Your face is (your text)."]
-	now body entry is "muscled to fighting form with digitigrade legs ending in paws"; [ Body Description, format as "Your Body is (your text)."]
-	now skin entry is "white fur over your body. You have the occasional black splotch, most notably one on your left eye. It feels soft and pleasurable against your skin"; [ skin Description, format as "Looking at yourself, your body is covered in (your text) skin"]
+	now face entry is "canine, though somewhat compacted, bears a striking resemblance to a pit bull"; [ Face description, format as "Your face is [Face of Player]." ]
+	now body entry is "muscled to fighting form with digitigrade legs ending in paws"; [ Body Description, format as "Your Body is [Body of Player]." ]
+	now skin entry is "white fur over your body. You have the occasional black splotch, most notably one on your left eye. It feels soft and pleasurable against your skin"; [ Skin Description, format as "Looking at yourself, your body is covered in [Skin of Player] skin." ]
 	now tail entry is "You have a short and nubby tail."; [ Tail description, write a whole Sentence or leave blank. ]
 	now cock entry is "deep red, canine-knotted"; [ Cock Description, format as you have a 'size' (your text) cock.]
-	now face change entry is "it becomes more canine, your ears moving towards the top of your head. It flattens a slight bit and you can feel your teeth become sharper. You appear to have the head of a pit bull"; [ face change text. format as "Your face feels funny as (your text)." ]
-	now body change entry is "it becomes adapted for fighting. Muscles grow and become lean. Your legs go digitigrade and claws pop out of your feet. Make that paws now. You feel ready to take on the world"; [ body change text. format as "Your body feels funny as (your text)." ]
-	now skin change entry is "short, white hairs pop out all over, with a few black patches, most notably a splotch on your eye"; [ skin change text. format as "Your skin feels funny as (your text)." ]
-	now ass change entry is "it becomes attractively muscled, and you feel a sharp pop as a small nub of a tail pops out"; [ ass/tail change text. format as "Your ass feels funny as (your text)." ]
+	now face change entry is "it becomes more canine, your ears moving towards the top of your head. It flattens a slight bit and you can feel your teeth become sharper. You appear to have the head of a pit bull"; [ Face change text, format as "Your face feels funny as [face change entry]." ]
+	now body change entry is "it becomes adapted for fighting. Muscles grow and become lean. Your legs go digitigrade and claws pop out of your feet. Make that paws now. You feel ready to take on the world"; [ Body change text, format as "Your body feels funny as [body change entry]." ]
+	now skin change entry is "short, white hairs pop out all over, with a few black patches, most notably a splotch on your eye"; [ Skin change text, format as "Your skin feels funny as [skin change entry]." ]
+	now ass change entry is "it becomes attractively muscled, and you feel a sharp pop as a small nub of a tail pops out"; [ Ass/tail change text, format as "Your ass feels funny as [ass change entry]." ]
 	now cock change entry is "Your cock feels funny as a knot forms on the base while a sheath forms towards the bottom. It shimmers in color before deciding on a deep burgundy color"; [ cock change text. format as "Your cock feels funny as (your text)." ]
 	now str entry is 16;
 	now dex entry is 16;
@@ -402,10 +402,10 @@ When Play begins:
 	now per entry is 10;
 	now int entry is 12;
 	now cha entry is 14;
-	now sex entry is "Female"; 	[ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now sex entry is "Female"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
 	now HP entry is 30;
 	now lev entry is 3; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you lose ]
-	now wdam entry is 7; [Amount of Damage monster Does when attacking.]
+	now wdam entry is 7; [ Amount of Damage monster Does when attacking. ]
 	now area entry is "Junkyard"; [ Current options are 'Outside' and 'Mall'. Case sensitive]
 	now Cock Count entry is 1; [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
 	now Cock Length entry is 8; [ Length infection will make cock grow to if cocks]
@@ -420,16 +420,16 @@ When Play begins:
 	now libido entry is 20; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
 	now loot entry is "dirty water";
 	now lootchance entry is 20; [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]tough[or]muscled[or]lean-and-mean[at random]";
 	now type entry is "canine"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false; [ Bypasses Researcher bonus? true/false (almost invariably false) ]
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own] [ Is this a non-infectious, non-shiftable creature? True/False (usually false) ]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ] [ Is this a non-infectious, non-shiftable creature? True/False (usually false) ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "pbull"; [ Row used to designate any special combat features, "default" for standard combat. ]
 	now BannedStatus entry is false;
@@ -441,7 +441,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -453,7 +453,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -472,7 +472,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -493,18 +493,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -518,19 +518,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -584,7 +584,7 @@ This is the Pit Bull Infection rule:
 			if Player is purefemale:	[Succumb - F]
 				say "     Losing your mind to the infection, you wander off into the city and are drawn to a run-down neighborhood. There, you find one of the female pit bulls you've seen around guarding a junkyard. She approaches cautiously, but as you get on all fours and offer your wet pussy to her, she relaxes and moves in to welcome you properly. Her tongue dives deep into your pussy until you cum before she gets you to return the favor. You settle down with her. When the military move through, you both take hide together among the junk, but do venture out at night to drag away a few more female soldiers to make into horny pit bulls to pleasure your alpha.";
 			if Player is puremale:	[Succumb - M]
-				say "     Losing your mind to the infection, you wander off into the city where you are found by a mostly-unchanged human. She has four enlarged breasts and featureless golden eyes, but no other visible changes. You approach her eagerly, but there is something about her stance and how she looks at you that cuts your charge short. Clearly experienced at handling dogs, she soon has you obediently taking treats and is calling you by pet names. She trains you well over the remaining time in the city; teaching you to be a good dog and rewarding you with treats or hand jobs. Your mind slips further and further away during this time until you're nothing be an obedient pet for your mistress.";
+				say "     Losing your mind to the infection, you wander off into the city where you are found by a mostly-unchanged human. She has four enlarged breasts and featureless golden eyes, but no other visible changes. You approach her eagerly, but there is something about her stance and how she looks at you that cuts your charge short. Clearly experienced at handling dogs, she soon has you obediently taking treats and is calling you by pet names. She trains you well over the remaining time in the city; teaching you to be a good dog and rewarding you with treats or handjobs. Your mind slips further and further away during this time until you're nothing be an obedient pet for your mistress.";
 				say "     When the military comes through, she is extracted along with you. They briefly have some concern about taking you along, but she's quite persuasive and has you demonstrate what a good doggy you are. Eventually released, she sets up a new life for herself with you as her loyal pet. Having been treated to prevent infection, she now happily takes you into her bed, letting you rut your mistress, eventually filling her with pit bull puppies with lovely, alluring, golden eyes.";
 			else if Player is herm:		[Succumb - H]
 				say "     Losing your mind to the infection, you wander off into the city. You come across a small pack of other mixed canines and join their group, soon fighting your way to the top to be the leader. You breed the females and let the deposed male leader fill your womb with his seed, taking him as your loyal beta and breeder. Your pack, like many others in the city, struggles for territory and dominance, eventually growing larger and stronger over time under your leadership.";

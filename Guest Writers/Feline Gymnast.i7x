@@ -80,7 +80,7 @@ to say losetofelinegymnast:
 Summary: Playful licking, then rimming, then player gets anal]
 to say felinelosemoreanal:
 	say "     Grinning mischievously, the cat-like girl kneels down next to you, removing your clothing. She appraises your now naked form, [if Player is male]giving your cock some playful strokes [end if]as she suddenly gets an idea, rolling you onto your stomach. You feel her lie down on top of you as your butt is tickled by her whiskers. Her smooth tongue makes a few playful licks around your lower back and thighs. With a giggle, she grabs your cheeks, spreading them. You let out a startled gasp as she licks your now exposed anus. Giggling even more at your surprise, she pushes her face further between your cheeks, her whiskers tickling you as they move in with her. She slowly circles your pucker with her tongue, making light presses at it every once in a while. You can't help but moan at the odd sensations. Just as you were starting to enjoy it, she pulls her face out of your ass and stands up. Looking back, you give her a pleading look to continue.";
-	say "     'Aw, does my little [if BodyName of Player is listed in infections of felinelist]kitty[else]slut[end if] enjoy having their ass toyed with?' You [if Libido of Player > 75]nod, too aroused to think of denying it[else]blush, looking away as you try to hide the enjoyment you got[end if]. Letting out another giggle, she grabs your hips, pulling you onto all fours. 'Well, it was fun to play with, but I bet that ass of yours is even more fun to be inside,' the lusty cat says as she starts to rub her slick penis against your pucker. Now lubricated from her copious amounts of precum, her barbed penis easily slides into your pucker, the barbs further increasing the pleasure. You both moan as she bends over, nipping at your neck and ears while slowly pumping at you. She reaches one of her arms around you, [if Player is male]gently stroking your [Cock of Player] penis[else if Nipple Count of Player > 0 and Breast Size of Player > 0]caressing your [breast size desc of Player] breasts, teasingly pulling at your nipples[else if Breast Size of Player > 0]caressing your [breast size desc of Player] breasts[else]rubbing up and down your torso with her furred hand[end if]. After drawing a few more moans from you, she straightens up, putting both hands on your ass as she starts fucking you harder and faster. [if Player is male]Your [cock size desc of Player] cock bounces around with the ferocity of her thrusts. [end if]With a loud groan, followed by a yell, you feel your bowels fill with a warm liquid. [if Player is male]She slows down, but keeps fucking your ass until you feel your own orgasm approaching. With one last, lustful groan, your balls churn as they deposit their [Cum Load Size of Player] load onto the ground below you[else]She keeps pounding at your ass as you feel your own orgasm building. With a long, drawn out moan, you're pushed past your limit as your thighs grow wet with your own juices[end if]. Looking back, you watch her pull out of you as globs of her semen drip out of your ass onto the ground.";
+	say "     'Aw, does my little [if BodyName of Player is listed in infections of FelineList]kitty[else]slut[end if] enjoy having their ass toyed with?' You [if Libido of Player > 75]nod, too aroused to think of denying it[else]blush, looking away as you try to hide the enjoyment you got[end if]. Letting out another giggle, she grabs your hips, pulling you onto all fours. 'Well, it was fun to play with, but I bet that ass of yours is even more fun to be inside,' the lusty cat says as she starts to rub her slick penis against your pucker. Now lubricated from her copious amounts of precum, her barbed penis easily slides into your pucker, the barbs further increasing the pleasure. You both moan as she bends over, nipping at your neck and ears while slowly pumping at you. She reaches one of her arms around you, [if Player is male]gently stroking your [Cock of Player] penis[else if Nipple Count of Player > 0 and Breast Size of Player > 0]caressing your [breast size desc of Player] breasts, teasingly pulling at your nipples[else if Breast Size of Player > 0]caressing your [breast size desc of Player] breasts[else]rubbing up and down your torso with her furred hand[end if]. After drawing a few more moans from you, she straightens up, putting both hands on your ass as she starts fucking you harder and faster. [if Player is male]Your [cock size desc of Player] cock bounces around with the ferocity of her thrusts. [end if]With a loud groan, followed by a yell, you feel your bowels fill with a warm liquid. [if Player is male]She slows down, but keeps fucking your ass until you feel your own orgasm approaching. With one last, lustful groan, your balls churn as they deposit their [Cum Load Size of Player] load onto the ground below you[else]She keeps pounding at your ass as you feel your own orgasm building. With a long, drawn out moan, you're pushed past your limit as your thighs grow wet with your own juices[end if]. Looking back, you watch her pull out of you as globs of her semen drip out of your ass onto the ground.";
 	say "     'Isn't it wonderful to cum without touching your [if Player is male]cock?'[else if Player is female]cunt?'[else]... um... I actually don't know how you get off like that,'[end if] she says, giving your ass a playful smack before going on her way, leaving you panting on the ground.";
 	CreatureSexAftermath "Player" receives "AssFuck" from "Feline Gymnast";
 
@@ -114,7 +114,7 @@ to say felineloseoral:
 [Female scene
 Presents a list of options to the player]
 to say felinelosefemale:
-	say "     The lithe little gymnast walks over to you, giggling every once in a while as she starts removing your clothing. With the last shred of fabric removed, she presses herself against your [bodydesc of Player], [bodytype of Player] body. Her breasts rub around your [breast size desc of Player] mounds, drawing a moan from you. Deciding that it means you're ready, she draws back, kneeling between your legs. 'Has this little [if BodyName of Player is listed in infections of Felinelist]kitty[else]girl[end if] been keeping up with her stretches?' she asks, grabbing your hips and pulling them up with her as she stands. You don't have any time to answer as she pushes her face towards yours, bending your spine in ways it probably shouldn't be bent.";
+	say "     The lithe little gymnast walks over to you, giggling every once in a while as she starts removing your clothing. With the last shred of fabric removed, she presses herself against your [bodydesc of Player], [bodytype of Player] body. Her breasts rub around your [breast size desc of Player] mounds, drawing a moan from you. Deciding that it means you're ready, she draws back, kneeling between your legs. 'Has this little [if BodyName of Player is listed in infections of FelineList]kitty[else]girl[end if] been keeping up with her stretches?' she asks, grabbing your hips and pulling them up with her as she stands. You don't have any time to answer as she pushes her face towards yours, bending your spine in ways it probably shouldn't be bent.";
 	if dexterity of Player > a random number between 12 and 20:
 		say "     Somehow, your spine doesn't break as she locks her lips with yours. After a brief kiss, she keeps your legs pressed in place, your [cunt size desc of Player] pussy positioned over your head as she moves around you. Now standing over your head, she lowers herself onto your face, dripping a mixture of sexual fluids from her excited genitals onto you. She presses her face into your waiting folds, lapping at your practically gushing liquid. Surprised at your readiness, she giggles, standing up and removing her tight leotard. Without anything to hold it back, drips of fluids fall onto your face from her pussy, hovering over your head. You watch as she pushes her cock into you agonizingly slowly. She gasps as she bottoms out, clearly enjoying what you have to offer, and loses all restraint as she begins thrusting into you wildly. Within minutes, the cat on top pushes past her limit, releasing a rather thick load inside of you. You moan, so close to release, but the feline above you doesn't seem interested in getting you off right now. From this angle, you can only watch as her balls pulse, pushing everything she has into you. When they finally slow down, she quickly pulls out, pushing you close to the edge again. A glob of your mixed fluids falls on your face, unexpectedly triggering an orgasm with its intense smell. With your [cunt size desc of Player] cunt pulsing, even more fluids find their way into your face before the sleek woman flips your legs back onto the ground. Out of breath, and still battered from the fight, you lie there as your kitty partner drops down next to you, licking your face clean. 'That was fun! Keep practicing those stretches and come back another time, OK?'";
 		CreatureSexAftermath "Player" receives "PussyFuck" from "Feline Gymnast";
@@ -234,7 +234,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Feline"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Feline"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Feline Gymnast" to infections of FelineList;
 	add "Feline Gymnast" to infections of FurryList;
 	add "Feline Gymnast" to infections of NatureList;
@@ -244,15 +244,15 @@ When Play begins:
 	add "Feline Gymnast" to infections of BipedalList;
 	add "Feline Gymnast" to infections of TailList;
 	now Name entry is "Feline Gymnast"; [ Infection/Creature name. Capitalized. ]
-	now enemy title entry is "Feline Gymnast"; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is "Feline Gymnast"; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The gymnast leaps at you, but instead of hitting you, she vaults over you, slashing at your back.[or]She slashes quickly at any part of you she can reach.[at random]";
 	now defeated entry is "[beatthefelinegymnast]"; [ Text when monster loses. ]
 	now victory entry is "[losetofelinegymnast]"; [ Text when monster wins. ]
 	now desc entry is "[felinegymnastdesc]";
-	now face entry is "very human, except for the furry pair of cat ears"; [ Face. Format as Your face is [Face of Player]. ]
-	now body entry is "very thin, but with [one of]smooth[or]toned[or]sleek[at random] muscles. Your hands and feet, while retaining their human shape, now have retractable claws where your fingernails were"; [ Body. Format as "Your body is [Body of Player]." ]
+	now face entry is "very human, except for the furry pair of cat ears"; [ Face description, format as "Your face is [Face of Player]." ]
+	now body entry is "very thin, but with [one of]smooth[or]toned[or]sleek[at random] muscles. Your hands and feet, while retaining their human shape, now have retractable claws where your fingernails were"; [ Body description, format as "Your body is [Body of Player]." ]
 	now skin entry is "[one of]rich[or]dark[or]luxurious[at random] blue fur. It feels soft against your"; [ Skin. Format as "Looking at yourself, your body is covered in [Skin of Player] skin." ]
 	now tail entry is "You have a long tail covered in a lovely shade of blue swaying behind you, helping you keep your balance."; [ Ass/Tail. Write as a full sentence (with period) or leave blank for none. ]
 	now cock entry is "[one of]light pink, feline[or]barbed, feline[or]cat-like[at random]"; [ Cock. Format as "You have a 'size' [Cock of Player] cock." ]
@@ -285,16 +285,16 @@ When Play begins:
 	now libido entry is 60; [ Target libido the infection will rise towards. ]
 	now loot entry is ""; [ Dropped item, blank for none. Case sensitive. ]
 	now lootchance entry is 0; [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 2; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]thin[or]svelte[or]lithe[at random]"; [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender". Use [one of] to vary ]
 	now type entry is "feline"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false; [ Bypasses Researcher bonus? true/false (almost invariably false) ]
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own] [ Is this a non-infectious, non-shiftable creature? True/False (usually false) ]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ] [ Is this a non-infectious, non-shiftable creature? True/False (usually false) ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
@@ -306,7 +306,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -318,7 +318,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -337,7 +337,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -358,18 +358,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -383,19 +383,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]

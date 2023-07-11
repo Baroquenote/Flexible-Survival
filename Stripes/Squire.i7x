@@ -37,7 +37,8 @@ to say squiredesc:
 	now squirefeature is a random number between 1 and 5;
 	if debugactive is 1:
 		say "DEBUG: knightcrestnum: [knightcrestnum], playercrestnum: [playercrestnum], kpstatus: [kpstatus], squirefeature: [squirefeature].";
-	say "     Before you is a handsome young man with [if squirefeature is 1]scruffy brown hair[else if squirefeature is 2]blond locks[else if squirefeature is 3]a pretty-boy face[else if squirefeature is 4]goofy grin[else]bright, blue eyes[end if] in medieval garb. He has a happy eagerness to his face that tells you he's no longer quite right in the head. He is wearing simple breeches and a string-tied shirt with a loose-fitting tabard overtop. The tabard has the colorful crest of [stateknightcrest] on it. In his hand, he holds a short sword marred by a few nicks.";
+	project Figure of Squire_neutral_shirt_pants_shoes_armed_icon;
+	say "     Before you is a handsome young man with a smooth, beardless face, short blond hair and pale blue eyes, dressed in medieval garb. He has a happy eagerness to his face that tells you he's no longer quite right in the head. He is wearing simple leather shoes tied with a string, blue breeches and a white string-tied shirt. A thin leather strip is tied around his waist, holding the sheath of a fairly short sword, while the blade itself is in his hands, looking well-polished, if having a few nicks.";
 	say "     Sizing you up, he raises his sword towards you.";
 	if kpstatus is 1:				[player is Knight]
 		say "     'A knight? You would challenge my master? I think not! I am his brave squire and shall defeat you myself,' he says boldly, only a slight quaver in his voice and a few moment's pause before attacking.";
@@ -76,6 +77,7 @@ Section 2 - Monster Victory
 to say losetosquire:
 	if inasituation is true:
 		stop the action; [text taken care of at the source]
+	project Figure of Squire_smile_hard_icon;
 	if kpstatus is 1:
 		if HP of Player > 0:
 			say "     When you submit to the bold squire, he gives a nervous laugh before growing boastful once the surprise has passed. 'Not much of a knight at all, are you? You would surrender to a lowly squire? Clearly I am more a knight than you,' he adds as he stands taller and sheathes his small sword. 'It looks like you need some more training, and I'm just the brave warrior to do it,' he says, grabbing you in a surprisingly strong grip. Tugging down his breeches, he reveals his stiff member. His seven incher stands proud, hard and ready, as he pushes aside your garb, ready to finally take his turn on top.";
@@ -283,25 +285,25 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Human"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Human"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Squire" to infections of HumanList;
 	add "Squire" to infections of NatureList;
 	add "Squire" to infections of MaleList;
 	add "Squire" to infections of BipedalList;
 	now Name entry is "Squire"; [ Infection/Creature name. Capitalized. ]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The squire[or]The brave lad[or]The young man[or]The bold retainer[or]The brave squire[as decreasingly likely outcomes] [one of]swings his short sword at you[or]jab at you with his sword[or]manages a quick hit on you[or]feints before striking you with his blade[or]shows some skill as he dodges before thrusting at you[at random]!";
 	now defeated entry is "[beatthesquire]"; [ Text when monster loses. ]
 	now victory entry is "[losetosquire]"; [ Text when monster wins. ]
 	now desc entry is "[squiredesc]"; [ Description of the creature when you encounter it. ]
-	now face entry is "thankfully human in appearance - that of [if ( player is herm ) or ( player is neuter) ]a younger and more androgynous[else if Player is male]yourself, but as a young man[else]yourself, but as a tomboyish girl[end if]. Your expression is often one of youthful eagerness and optimism, regardless of how you're feeling at that moment";
+	now face entry is "thankfully human in appearance - that of [if ( Player is herm ) or ( Player is neuter) ]a younger and more androgynous[else if Player is male]yourself, but as a young man[else]yourself, but as a tomboyish girl[end if]. Your expression is often one of youthful eagerness and optimism, regardless of how you're feeling at that moment";
 	now body entry is "that of a young [if Player is female]woman[else]man[end if]. Your body shows some muscle tone from exercise, speaking of a strength yet to come. Across your torso is a loose-fitting tabard with an emblem stitched into it of [stateplayercrest]";
 	now skin entry is "smooth, lightly-tanned";
 	now tail entry is "";
 	now cock entry is "human";
-	now face change entry is "the bones of your head shift with the occasional pop or crack that makes you wince. As these changes progress, your face becomes similar to your old one, but younger and [if ( player is herm ) or ( player is neuter) ]androgynous[else if Player is male]more like that of a young man[else]more like that of a tomboyish girl[end if]";
+	now face change entry is "the bones of your head shift with the occasional pop or crack that makes you wince. As these changes progress, your face becomes similar to your old one, but younger and [if ( Player is herm ) or ( Player is neuter) ]androgynous[else if Player is male]more like that of a young man[else]more like that of a tomboyish girl[end if]";
 	now body change entry is "changes spread through it. Your muscles tense and flex and your body reshapes itself, in time becoming that of a maturing [if Player is female]tomboy[else]young man[end if]. Your body shows some muscle as if you'd recently started physical training. As you look down at your chest, a tabard that is slightly too big for you forms across your torso. In bright colors, its bears the crest of [stateplayercrest] at its center. Any attempt to cover or remove this has it return in short order";
 	now skin change entry is "exciting tingles run all over your [bodydesc of Player] body. Your flesh shifts and changes, subtly at first, until eventually becoming smooth, lightly tanned and quite human in appearance. There's the start of some callouses on your right hand from learning to wield something heavy, which your hand feel somehow empty without it";
 	now ass change entry is "your buttocks muscles firm up, forming a cute bubble-butt made for fucking. You feel an empty craving to have something buried in your asshole";
@@ -324,22 +326,22 @@ When Play begins:
 	now Breast Size entry is 0; [ Size of breasts the infection will try to attain (corresponds to letter cup size). ]
 	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
 	now Cunt Count entry is 0; [ The number of cunts the infection will try to cause if sex entry is 'Female' or 'Both'. ]
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	now SeductionImmune entry is false;
 	now libido entry is 25; [ Target libido the infection will rise towards. ]
 	now loot entry is ""; [ Dropped item, blank for none. Case sensitive. ]
 	now lootchance entry is 0; [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "erudite"; [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender". Use [one of] to vary ]
 	now type entry is "conceptual"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
@@ -351,7 +353,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -363,7 +365,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -382,7 +384,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -403,18 +405,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -428,19 +430,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -510,14 +512,14 @@ to say SquireServiceScene1:
 	Linebreak;
 	say "     ([link]Y[as]y[end link]) - Get acquainted with your knight.";
 	say "     ([link]N[as]n[end link]) - Leave for now.";
-	if player consents:
+	if Player consents:
 		say "     With your heart thumping rapidly in your chest, you slowly approach the man as he pings the last piton into the ground. Noticing a presence, the knight turns with a steady hand placed on his sword. Upon noticing your garb, he lowers his stance to a more comfortable posture and greets you with a smile. 'Ah! Hello boy, what a pleasant surprise! A bit late to set up camp, I know, but fighting evil is worthy of losing a few hours of sleep. Come now, let us go inside, it is getting cold out.' The knight opens the tent and waits patiently outside for you to enter. His calm and commanding presence quashes the anxiety you felt before, and with a goofy grin you eagerly run forward into the charming man's tent.";
 		say "     Inside the tent, you find a few items tossed about and a large bedroll splayed out on the ground. Your mentor closes the tent after he enters and motions you towards the center of the tent. For the next few minutes, you help him set up the rest of the tent interior, including a small fire with a small cooking pot. The time you spend together is simple but pleasing, exchanging soft words as he shows you how to start a fire. He lets you hold his well-polished steel sword, before requesting you help him out of his armor.";
 		WaitLineBreak;
 		say "     You eagerly agree to his request, and hastily run over to fondle his equipment. He instructs you on how to begin your service, showing you where the armor straps are and how to undo them. In a minute or two, you have the last of his plate armor off him as you remove his boots. You can't help but dart your eyes over the fine muscular body poorly concealed under the simple cloth shirt and pants. A slight movement in his pants draws your eyes to a large mound at his crotch, the cotton pants concealing what could only be a thick and hardening cock. 'Come now boy, your service has only just begun,' he says as he places a hand on the back of your head and forces you into his smelly groin.";
 		say "     The strong musk of manly cum graces your nostrils as your nose is pushed into the soft and damp pants. You moan into his stiffening cock, the smell intoxicating you. The larger male releases your head and strips off his shirt, revealing the chiseled abdomen fit for a warrior. His large but firm pectoral muscles are coated with a light dusting of hair and make his chest look huge from your perspective between his legs. His deep cut abs taper down to his waist, as if guiding your eyes to the treasure trove below. He doesn't say a word, a look is all it takes to convince you to venture beyond the simple cloth that divide you and his manhood.";
 		WaitLineBreak;
-		say "     Ambitiously, you reach around and slip your hands into the back of the knight's pants, groping the large, smooth, and firm butt cheeks of your mentor. Squeezing the firm buttocks, you push your nose into the hard cock and pull with your hands to get a satisfyingly deep sniff of the hunks scent.  Without further hesitation, you pull down the knight's pants to his feet in one motion. His large hard cock smacks you in the face as it is freed from its confines. The magnificent tool is coated in slimy cum, clearly from the conquest of a recently vanquished villain.";
+		say "     Ambitiously, you reach around and slip your hands into the back of the knight's pants, groping the large, smooth, and firm butt cheeks of your mentor. Squeezing the firm buttocks, you push your nose into the hard cock and pull with your hands to get a satisfyingly deep sniff of the hunks scent. Without further hesitation, you pull down the knight's pants to his feet in one motion. His large hard cock smacks you in the face as it is freed from its confines. The magnificent tool is coated in slimy cum, clearly from the conquest of a recently vanquished villain.";
 		say "     Darting out your tongue, you clean up the mightily phallus of your favorite warrior. Even his cold and thick semen tastes wonderful on your tongue. You have his cock cleaned of his recent conquest in less than a minute. The knight smiles at you, 'Excellent! A squire that knows his place, you shall go far young man. Now open wide and I shall keep you well-nourished so that one day you may have the body of a knight.'";
 		WaitLineBreak;
 		say "     You look at him in the eyes and place the tip of his fat cockhead onto your tongue. The knight reaches down and places his hands on your head, holding you in place as he thrusts his hard cock into your throat. Your eyes go wide as he burrows his cock in you at a rapid pace, fully seating his foot-long monster into your young throat. Two large balls bounce off your now swollen neck, and he doesn't give you any time to adjust before pulling out and thrusting back in mercilessly. Miraculously, you don't gag on his massive meat as he uses you like a sex toy.";
@@ -536,7 +538,7 @@ to say SquireServiceScene2:
 	Linebreak;
 	say "     ([link]Y[as]y[end link]) - Sneak around the camp to get a better view.";
 	say "     ([link]N[as]n[end link]) - Leave for now.";
-	if player consents:
+	if Player consents:
 		say "     Curiosity getting the better of you, you quietly sneak around the campsite to the other side of the tent. Peering through some of the shrubbery, you find your knight in shining armor fully garbed on his knees. Beneath him is a giant wolf, nearly 10 feet in length, with paws larger than that of men. The beast is currently on its back, exposing its stomach to the knight. You can see some leather wrapped around the wolf's torso to form some kind of a saddle. Looking further down, you see your knight deep throating the beast's cock. Neither appears to have noticed you, but you can't help but be amazed by what is occurring.";
 		say "     Boldly, you walk out of your hiding spot towards your knight. The wolf tenses as you approach, attempting to discern friend from foe. Upon seeing your tabard, the beast goes back to enjoying the attention from your knight. Sitting down next to them, you marvel at the size of the wolf's phallus. The large red member stretches the jaw and throat of your knight each time he sends it down his gullet. Suddenly, the wolf lets out a howl and bucks upwards into the knight's mouth. The large knot presses against the knight's face, burying his nose in the in beast's large endowment. The handsome man chokes on the cock a bit but doesn't back down and swallows the seed eagerly.";
 		WaitLineBreak;
@@ -555,7 +557,7 @@ to say SquireServiceScene3:
 	Linebreak;
 	say "     ([link]Y[as]y[end link]) - Join the knight by the campfire.";
 	say "     ([link]N[as]n[end link]) - Leave for now.";
-	if player consents:
+	if Player consents:
 		say "     Walking forward with a goofy grin, you enter the campsite and greet the noble warrior. He smiles as you approach, 'Ah, good to see you again young man.' He beckons you to sit, and you gladly take a seat. You spend a few minutes talking about your recent activities before you start becoming more distracted by the outline of the man's large soft cock beneath his cotton pants. You barely notice when he stands up and walks up next to you, becoming even more mesmerized as you begin to take in the smell of the warrior. It's only after he says your name a few times that you snap out of it and look up towards the knights smirking face. 'I said let's get to your sword training, up and at em boy.'";
 		say "     Despite a little bewilderment, you manage to get up and walk over to the tent to get the wooden training swords. You bring two swords back to your master, one for each of you. He wields his sword confidently in one hand, as if it weighs nothing to him. Gulping, you steady your own sword with your other hand and wait for his signal. The battle begins with a brief 'Engarde,' followed by a series of powerful blows that you barely manage to parry. Your counter attacks are weak and easily knocked aside, you're going to have to try a lot harder if you want to impress him.:";
 		WaitLineBreak;

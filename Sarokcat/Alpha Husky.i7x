@@ -39,7 +39,7 @@ to say Alpha Husky Desc:
 	project the Figure of HuskyAlpha_soft_icon;
 	if inasituation is true:
 		say ""; [dealt with at the source of the event]
-	else if player is male and player is not female and Resolution of MtFHuskyAlpha is 0 and a random chance of 4 in 10 succeeds: [fully male, not herm, 1st time]
+	else if Player is male and Player is not female and Resolution of MtFHuskyAlpha is 0 and a random chance of 4 in 10 succeeds: [fully male, not herm, 1st time]
 		now MtFHuskyAlphaActive is true;
 		say "[HuskyAlphaMtFdesc1]";
 	else if Resolution of MtFHuskyAlpha > 0 and Resolution of MtFHuskyAlpha < 99 and a random chance of 4 in 10 succeeds: [fully male, not herm, subsequent times]
@@ -138,7 +138,7 @@ to say Alpha Husky attack:
 						SanLoss 10;
 					else: [no further sanity changes]
 						say "     No, you cannot do that. Not yet. Wait, no, not ever! Why did you word it like that in your mind? This... may require some distancing. You proceed to ready yourself to carry on with your doings and avoid thinking on the subject, at least as much.";
-		else if player is male:
+		else if Player is male:
 			if HP of Player > 1: [submits]
 				say "     The alpha stands over you as you cower before him in submission, falling to your knees and leaving yourself to whatever fate he decides. 'What, you're giving up? Or what...' he then begins to wonder to himself as he sees you all so eager to do anything for him. 'You're not suited to be a bitch, but then again";
 				if "Male Preferred" is listed in feats of Player:
@@ -157,14 +157,14 @@ to say Alpha Husky attack:
 					say "     As he carries on thrusting into you, your mind feels more and more keen to call him your alpha, the one who owns you, and it begins to feel... so right. With every slap of his furry sac against your bottom, your yearning for his seed increases, wanting nothing more than to get bred by the handsome husky. 'I think,' he says as he draws back to the pointed tip, then drives the thick knot of his member inside your ass with a hard push, locking himself into you as your anal ring hugs it tightly, 'that you deserve it.' The words stop, replaced with a howl of release when he begins to fill your body with hot gushes of seed, spurt after spurt filling your bowels, leaving a lingering, overtaking joy in your foggy brain.";
 					WaitLineBreak;
 					if "Male Preferred" is listed in feats of Player:
-						say "     Your grasp of your old self feels weak for a moment as strange new adoration for this husky tries to displace it. Not yet satisfied with the outcome, he goes even further and brings his paw-like hand over your [cock of player] cock. Pleasure is prolonged for a while longer as he jerks you off, steady motions at first that increase in pace progressively. Soon, as the motion continues without cease, your body follows with a powerful climax. You cum so hard, so deliciously, that you moan under the canine as he keeps you pinned down under him, stroking your dick until the very last drop leaves you. Amidst your orgasm, he whispers into your ear 'What a good boy... My good boy... You could just become my special little fucktoy, always there for my pleasure...' He then waits until his knot shrinks enough for him to be able to pull out of your ass, then kisses you once before he departs, 'Just think how much nicer it'll be once you've properly accepted your place as my needy male bitch.'";
+						say "     Your grasp of your old self feels weak for a moment as strange new adoration for this husky tries to displace it. Not yet satisfied with the outcome, he goes even further and brings his paw-like hand over your [Cock of Player] cock. Pleasure is prolonged for a while longer as he jerks you off, steady motions at first that increase in pace progressively. Soon, as the motion continues without cease, your body follows with a powerful climax. You cum so hard, so deliciously, that you moan under the canine as he keeps you pinned down under him, stroking your dick until the very last drop leaves you. Amidst your orgasm, he whispers into your ear 'What a good boy... My good boy... You could just become my special little fucktoy, always there for my pleasure...' He then waits until his knot shrinks enough for him to be able to pull out of your ass, then kisses you once before he departs, 'Just think how much nicer it'll be once you've properly accepted your place as my needy male bitch.'";
 					else:
 						say "     Your grasp of your old self feels weak for a moment as strange new adoration for this husky tries to displace it. 'How do you like, being bred by an alpha? Imagine all the pups you could be bearing for me if you'd just let it happen... Just let the heat fill your body, and soon, you'll become a suitable bitch.' He then waits until his knot shrinks enough for him to be able to pull out of your ass, then kisses you once before he departs, 'Just think how much nicer it will be once you give in and be a proper bitch for me.'";
 					say "     When you get to look around, the husky is walking away with his tail high up in the air, glancing over his shoulder with a teasing look before he simply disappears in the distance.";
 					CreatureSexAftermath "Player" receives "OralCock" from "Husky Alpha";
 					CreatureSexAftermath "Player" receives "AssFuck" from "Husky Alpha";
 				else: [male anal scene]
-					say "     He then approaches you, to lick at your face and throat in slow motions. His warm, strong paws rub over your chest as he pushes you back to the ground, laying belly up. His paws caress downwards, and he looks into your eyes, staring deeply into them. The power of his commanding gaze forces you to look away, which only makes him laugh in pleasure at your submissiveness. 'What's wrong? Can't look at me in the eye?' he teases, further amusing himself as your flushed face struggles to keep it together, and then adds, 'That's cute...' as he draws away and slides down his hands to the bottom parts of your body. You feel one of his paw-like hands beginning to caress your [cock of player] cock, which has gone inadvertently hard.";
+					say "     He then approaches you, to lick at your face and throat in slow motions. His warm, strong paws rub over your chest as he pushes you back to the ground, laying belly up. His paws caress downwards, and he looks into your eyes, staring deeply into them. The power of his commanding gaze forces you to look away, which only makes him laugh in pleasure at your submissiveness. 'What's wrong? Can't look at me in the eye?' he teases, further amusing himself as your flushed face struggles to keep it together, and then adds, 'That's cute...' as he draws away and slides down his hands to the bottom parts of your body. You feel one of his paw-like hands beginning to caress your [Cock of Player] cock, which has gone inadvertently hard.";
 					say "     The canine gives it some stroking, which causes you to squirm under him as those pleasant sensations travel up your system. He has this grin on his muzzle... seeing how much control he has over you turns him on, as you can see by his already rock-hard shaft hovering above yours. 'Good things happen to good [boygirl]s, you see...' he informs you in his dominant fashion as he keeps jerking your cock in this almost torturous and slow pace, the yearning for more asking your brain to whimper to him. Your resistance does not last, with lust building up in you as it is, and as if by instinct, you begin to spread your legs and allow the husky to lift one of them and slide up in between. Almost immediately, you feel his dick pressing up against your back door, as if he was just waiting for this.";
 					WaitLineBreak;
 					say "     But he does not enter you right away. His hand is still on your meat, as slow as before, and instead, he simply teases your hole with the tip of his red prick. 'What's that? You want me to take you?' he asks, but he knows very well the answer. You want it, really badly. You almost cry to him amidst your words of begging, and hearing that really pleases him, as you can tell by the throbbing. That pucker of yours tingles desperately to be stretched and filled by his cock, and it is driving you completely insane. 'That's right, you do,' is all he says before finally pushing it into your ass without preparation, only the precum already oozing from his rod serving as lubricant for the insertion. Despite this, he enters as smooth as silk, and begins to mate with you in slow, deep motions, rocking you against the ground with soft growls of affection and ownership.";
@@ -268,7 +268,7 @@ to say alpha huskypack lost:
 		if Player is female:
 			say "     A wet, slippery, canine tongue delves up into your cunt, lapping at your [Cock of Player] sex as they tease at your clit with claw tips carefully. Your sex sings with forced pleasure as the dogs work diligently to bring you to delirious heights.";
 		say "     You shudder and spasm as climax hits you like a freight train, feeding hungry husky mouths with your fluids. They work you until you have no further to give and lower you back to the ground gently. The alpha stands over you, his tail wagging. 'Next time.'";
-		CreatureSexAftermath "Husky Alpha" receives "[if player is male]OralCock[else if player is female]OralPussy[else if player is herm and a random chance of 1 in 2 succeeds]OralCock[else if player is herm]OralPussy[end if]" from "Player";
+		CreatureSexAftermath "Husky Alpha" receives "[if Player is male]OralCock[else if Player is female]OralPussy[else if Player is herm and a random chance of 1 in 2 succeeds]OralCock[else if Player is herm]OralPussy[end if]" from "Player";
 
 
 to say alpha huskypack victory:
@@ -398,7 +398,7 @@ to caughtthealphahusky:
 	now sortorder entry is 1;
 	now description entry is "Collect a bottle of cum from him";
 	[]
-	if player is male:
+	if Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Mount him";
 		now sortorder entry is 3;
@@ -448,7 +448,7 @@ to say AlphaHuskyFucked:
 
 to say AlphaHuskyRidden:
 	say "     Deciding to show this alpha male who's in charge, you decide to take what you want from him instead of letting him force it upon you. Slamming his shoulders down firmly, you straddle him and start grinding your hips down onto his crotch. As his sheath starts to fill and his doggy cock emerges, he starts to pant. He struggles a little, still wanting to be dominant and on top, but you growl at him until his ears dip. Only then do you press that throbbing dog cock into your [if Player is female]juicy pussy[else]tight anus[end if]. You ride him slowly, which makes the normally rough dog whimper for more, but you take your time, savoring both his pleas for you to go faster and the fulfilling ride that you're getting. Once you can't hold back any longer and need release, you pound yourself down onto him hard and fast until you both cum loudly as the canine seed floods your [if Player is female]womb[else]belly[end if][if Player is male]. You shoot your own load across the husky's chest as his semen fills you[end if]. Finished with him, you push yourself off and send the cowed dog on his way. He slinks off, his tail low at having been beaten and used for a change, looking for some place to lick his wounds and salve his pride.";
-	if player is female:
+	if Player is female:
 		CreatureSexAftermath "Player" receives "PussyFuck" from "Husky Alpha";
 	else:
 		CreatureSexAftermath "Player" receives "AssFuck" from "Husky Alpha";
@@ -484,7 +484,7 @@ to say HuskyAlphaMtFdesc1:
 
 to say HuskyAlphaMtFdesc2:
 	say "     You are caught by surprise as a large, handsome anthro husky male appears in front of you, his slim canine muzzle drawn back in an amused grin as he looks you over. Returning the examination, you see that he has a handsome coat of lovely fur and a nice, perky tail wagging behind him, as he obviously enjoys what he is looking at. The beast is obviously one of the rare male alphas that take care of and probably made the many slutty husky bitches around the city. This one, though... You think you recognize him";
-	if player is female and player is not male:
+	if Player is female and Player is not male:
 		say ". 'I like what I'm looking at. It seems you've finally embraced it... And you look a lot better as a feminine and pretty bitch. Shall we make sure you... stay that way? I promise I'll make it enjoyable for the two of us...' The horny husky then rubs his paws together as his thick, erect canine cock bobs with excitement. The knot at the base is already starting to swell with anticipation as he strides forward eagerly!";
 	else:
 		say ". 'Aww... [one of]What a shame. You still look too... manly, for the times we've been together. I guess I just have to fuck you again... Maybe that'll be enough to turn you into a proper girly bitch[or]Look at you, still resisting your fate... Come here, let me show how good it feels to be a female slut[or]You're still looking like that? Guess I have to keep fucking you until we soften those edges... make you look nice, pretty and girly as you should[at random]...' The horny husky then rubs his paws together as his thick, erect canine cock bobs with excitement. The knot at the base is already starting to swell with anticipation as he strides forward eagerly!";
@@ -516,7 +516,7 @@ to HuskyAlphaMtF1Continued:
 	say "     He forces his cock down your throat several times, holding you by the back of your skull and roughly facefucking you for a while. His knot bashes against your lips continuously as his furry sack bounces back and forth, the husky clearly getting more and more excited. 'You're such a little bitch... I'm starting to like you.' At some point, he pulls you off his dick, giving you a brief time to catch your breath, but holds your face still. 'Bend over. I want to fuck you.' You are then released, but you must follow his command, so you turn around, get on all fours and expose your butt to him, which quite pleases the canine. 'We've got a good starting point, here... Very nice ass,' he says, giving one of your cheeks a slap before he squeezes it, to then fondle your hole.";
 	WaitLineBreak;
 	say "     'Not what I'd call a pussy, but it shall serve the same purpose, for now... Until we get you one.' Once the husky repositions himself to align his sex with your entrance, he then teases you by rubbing his meat against it, only grinding between your cheeks. Your hole feels warm as it instinctively throbs at the mere presence of the alpha canine's cock, then beginning to relax and yearn to be filled. 'Can't wait to get fucked, eh? Such a good slut... You make an amazing bitch.' Then, he finally begins to press his manhood into you, pushing it past your anal ring and shoving it deeper... 'This is your place, right here... My bitch,' he says, slapping your butt and leaning over on top of you.";
-	say "     'This is what a real male is like... Owning bitches like you and fucking their brains out...' The alpha male then surprises you as he takes hold of your [cock of player] cock, dandling hard under you and between your legs, squeezing it tight and making you flinch in reflex [if cock length of player >= 7 and cock length of player <= 10]. 'And look at this... not a bad one, if you knew how to use it. But you're just not made to be like me. Might as well have a clit in its place, right? You have no need for a cock unless it's inside you... hehe[else if cock length of player > 10]. 'And have a look at this! Quite an impressive meat... Almost makes me feel bad for getting rid of it, but then again... it's such a waste on a bitch like you. You could never hope to know how to use it... It's just not in you, right? You'd rather actually have it [italic type]in[roman type] you... hehe[else if cock length of player < 7]. 'And what's this? Guess you were already half-way there to go full female with a cock this tiny. More like a clit, by now. It's adorable, even... Look at how hard it throbbed when I called it a clit... It really wants to be one, eh? Don't worry, it's doing a good job, so far[end if]...' As the husky taunts you, he continues to thrust into you, fucking you deep, but slowly, at first.";
+	say "     'This is what a real male is like... Owning bitches like you and fucking their brains out...' The alpha male then surprises you as he takes hold of your [Cock of Player] cock, dandling hard under you and between your legs, squeezing it tight and making you flinch in reflex [if Cock Length of Player >= 7 and Cock Length of Player <= 10]. 'And look at this... not a bad one, if you knew how to use it. But you're just not made to be like me. Might as well have a clit in its place, right? You have no need for a cock unless it's inside you... hehe[else if Cock Length of Player > 10]. 'And have a look at this! Quite an impressive meat... Almost makes me feel bad for getting rid of it, but then again... it's such a waste on a bitch like you. You could never hope to know how to use it... It's just not in you, right? You'd rather actually have it [italic type]in[roman type] you... hehe[else if Cock Length of Player < 7]. 'And what's this? Guess you were already half-way there to go full female with a cock this tiny. More like a clit, by now. It's adorable, even... Look at how hard it throbbed when I called it a clit... It really wants to be one, eh? Don't worry, it's doing a good job, so far[end if]...' As the husky taunts you, he continues to thrust into you, fucking you deep, but slowly, at first.";
 	WaitLineBreak;
 	say "     The husky picks up the pace, eventually, as he puts his muscular furred arm around your neck, rendering any movement of yours helplessly blocked. You remain fully at his mercy, taking his cock deep inside your ass, each thrust going harder and harder, tempting you to moan at the increasing pleasure you are getting from this. 'You seem to like your role a lot, slut... Can't wait to give you some curves... A nice pair of tits... A soaking wet pussy always begging for my cock... a womb for all the pups we're gonna be having together... Might make you my bitch wife!' It is clear that the husky is fantasizing with how you will look after he is done with you, imagining you as his female cum dumpster, his cock throbbing every second while inside you, ramming against your prostate, which begins to shy away as these thoughts cloud your mind.";
 	say "     He gropes your chest, squeezes it and rubs his paw all over it, exciting you even more as he carries on fucking you. 'Hng... I'm close... You wanna take a real alpha male's load inside you? See how it feels to be bred, with all my warm seed deep in you...' he whispers into your ear before pushing his knot into you, locking himself inside your ass as he cums. 'Fuck yeah, bitch, take it all!' The husky goes on grunting as he delivers his sperm inside you, coating your bowels generously as he scoops you into his arms. This whole thing makes you cum as well, spurt after spurt of eager jizz leaving through your cock, but not as vigorously as you are used to... just short squirts of it as your whole body and hole quiver in an intense surge of pleasure.";
@@ -528,16 +528,16 @@ to HuskyAlphaMtF1Continued:
 	now Resolution of MtFHuskyAlpha is 1;
 
 to say HuskyAlphaMtF2: [subsequent times]
-	if HP of player > 1:
+	if HP of Player > 1:
 		say "     Seeing this alpha male in front of you, there is no way you can resist him. You immediately drop to your knees as he approaches you...";
 	else:
 		say "     You attempted to resist him this time, but he is just too powerful. He takes you down without breaking a sweat, unfazed by your futile attempt at fighting back...";
 	say "     'Hey there, slut. Missed me?' he asks, with the biggest grin on his muzzle, standing on front of you with a raging hard-on that keeps on throbbing every other second. 'Hope you haven't been fooling around with that other husky dude. You belong to this alpha only. Now... show me how that body's going,' he commands, and you have no other choice but to obey him...";
 	WaitLineBreak;
-	if player is male:
+	if Player is male:
 		say "     Exposing your body to the husky alpha, you show him that you still have a cock between your legs. He looks at you, very sad and disappointed. 'Seems there's something there that wasn't supposed to be... That's quite a shame, isn't it? Can't quite take you as my bitch wife that way... Maybe we just need to fuck a couple more times, dump a few more loads into you... Don't worry, we'll shape you up into a fine female in no time.'";
 		HuskyAlphaMtF2Male;
-	else if player is female:
+	else if Player is female:
 		say "     Exposing your body to the husky alpha, you show him that your front has only this wet vulva, engorged and moist, very happy to see him. His eyes even shine with joy, and you can swear his meat grew even harder, as he eyes your feminine form. 'What a good girl. No more of that unsightly cock. Bet you don't even miss having one... Why even have it, in the first place? When you've got this one here that can go in a way better place... inside you.'";
 		HuskyAlphaMtF2Female;
 	else:
@@ -549,11 +549,11 @@ to HuskyAlphaMtF2Male:
 	say "     As he is done examining you, the handsome alpha slowly approaches, locking his gaze onto yours until he is in your reach. You chin is then grabbed by his paw in a strong manner, tightly grasping you as you are forced to look at his grinning face. 'I'm sure you'll become a very pretty girl quickly, now. Just give it a couple more times...' Once the alpha husky has got you in his dominant trance, he takes hold of his throbbing meat and, with his other paw, lowers your head towards him, causing your lips to collide with the pointy tip of his cock. 'You know the deal. Suck my cock, get me nice and hard... and then you're getting fucked deep like only a proper slut deserves.'";
 	say "     He forces his cock down your throat several times, holding you by the back of your skull and roughly facefucking you for a while. His knot bashes against your lips continuously as his furry sack bounces back and forth, the husky clearly getting more and more excited. 'That's it, my bitch... Swallow it... savor it... This cock owns you.' At some point, after thrusting into your throat for some more time, he pulls you off his dick, giving you a brief time to catch your breath, but holds your face still. 'That's good enough. Get on all fours, time for your fuck.' You are then released, but you must follow his command, so you turn around, get on all fours and expose your butt to him, which quite pleases the canine. 'You've still got a really nice ass,' he says, giving one of your cheeks a slap before he squeezes it, to then fondle your hole.";
 	WaitLineBreak;
-	say "     'Can't wait to be fingering a pussy in place of that [if player is male]unsightly clit pretending to be a cock[else]void between your legs[end if]. Believe me, you're just gonna feel a lot more like yourself...' Once the husky repositions himself to align his sex with your entrance, he then teases you by rubbing his meat against it, only grinding between your cheeks. Your hole feels warm as it instinctively throbs at the mere presence of the alpha canine's cock, then beginning to relax and yearn to be filled. 'Can't wait to get fucked, eh? Such a good slut... You make an amazing bitch.' Then, he finally begins to press his manhood into you, pushing it past your anal ring and shoving it deeper... 'This is your place, right here... My bitch,' he says, slapping your butt and leaning over on top of you.";
+	say "     'Can't wait to be fingering a pussy in place of that [if Player is male]unsightly clit pretending to be a cock[else]void between your legs[end if]. Believe me, you're just gonna feel a lot more like yourself...' Once the husky repositions himself to align his sex with your entrance, he then teases you by rubbing his meat against it, only grinding between your cheeks. Your hole feels warm as it instinctively throbs at the mere presence of the alpha canine's cock, then beginning to relax and yearn to be filled. 'Can't wait to get fucked, eh? Such a good slut... You make an amazing bitch.' Then, he finally begins to press his manhood into you, pushing it past your anal ring and shoving it deeper... 'This is your place, right here... My bitch,' he says, slapping your butt and leaning over on top of you.";
 	say "     'This is what a real male is like... Owning bitches like you and fucking their brains out... Bet you can't wait to become a permanent addition to my pack... as my bitch wife, eh?' As the husky taunts you, he continues to thrust into you, fucking you deep, but slowly, at first. He does take his time to really get you in the mood, arching your back and pressing your butt against his pelvis, though keeping his knot outside, which continues to swell... 'Is that eagerness I see in you to take my load? That's right... you need it, right? You also can't wait to have a pussy and take my pups in you like a proper slut... Oh yeah, I'll give them to you... All you could ever want...'";
 	WaitLineBreak;
-	say "     The husky picks up the pace, eventually, as he puts his muscular furred arm around your neck, rendering any movement of yours helplessly blocked. You remain fully at his mercy, taking his cock deep inside your ass, each thrust going harder and harder, tempting you to moan at the increasing pleasure you are getting from this. 'I'm picturing you with these really nice curves... A nice pair of tits, or well, several, hehe... A soaking wet pussy always begging for my cock... a womb full of my pups... We're gonna have so many...' It is clear that the husky is fantasizing with how you will look after he is done with you, imagining you as his female cum dumpster, his cock throbbing every second while inside you, [if player is male]ramming against your prostate, which begins to shy away as these thoughts cloud your mind[else]drilling your asshole with the virility only an alpha male can have[end if].";
-	say "     He gropes your chest, squeezes it and rubs his paw all over it, exciting you even more as he carries on fucking you. 'Hng... I'm close... You're ready, slut? Maybe we'll get you that pussy, this time... And we won't need to keep using your rear hole any longer...' he whispers into your ear before pushing his knot into you, locking himself inside your ass as he cums. 'Fuck yeah, bitch... take it all!' The husky goes on grunting as he delivers his sperm inside you, coating your bowels generously as he scoops you into his arms. This whole thing makes[if player is male] you cum as well, spurt after spurt of eager jizz leaving through your cock, but not as vigorously as you are used to... just short squirts of it as[end if] your whole body and hole quiver in an intense surge of pleasure, your climax hitting you so intensely that you think it even excites your alpha even more during his last few shots.";
+	say "     The husky picks up the pace, eventually, as he puts his muscular furred arm around your neck, rendering any movement of yours helplessly blocked. You remain fully at his mercy, taking his cock deep inside your ass, each thrust going harder and harder, tempting you to moan at the increasing pleasure you are getting from this. 'I'm picturing you with these really nice curves... A nice pair of tits, or well, several, hehe... A soaking wet pussy always begging for my cock... a womb full of my pups... We're gonna have so many...' It is clear that the husky is fantasizing with how you will look after he is done with you, imagining you as his female cum dumpster, his cock throbbing every second while inside you, [if Player is male]ramming against your prostate, which begins to shy away as these thoughts cloud your mind[else]drilling your asshole with the virility only an alpha male can have[end if].";
+	say "     He gropes your chest, squeezes it and rubs his paw all over it, exciting you even more as he carries on fucking you. 'Hng... I'm close... You're ready, slut? Maybe we'll get you that pussy, this time... And we won't need to keep using your rear hole any longer...' he whispers into your ear before pushing his knot into you, locking himself inside your ass as he cums. 'Fuck yeah, bitch... take it all!' The husky goes on grunting as he delivers his sperm inside you, coating your bowels generously as he scoops you into his arms. This whole thing makes[if Player is male] you cum as well, spurt after spurt of eager jizz leaving through your cock, but not as vigorously as you are used to... just short squirts of it as[end if] your whole body and hole quiver in an intense surge of pleasure, your climax hitting you so intensely that you think it even excites your alpha even more during his last few shots.";
 	WaitLineBreak;
 	say "     'That's my good girl... Enjoying her male's love. You've done well... Accepting your fate... Embracing your femininity...' he commends you, licking your face and still groping your chest. 'I can already feel my load working your body, softening you... You're gonna feel so much better as a pretty female. Much more yourself.' You are then forced to cuddle with the husky, as he is still knotted to you, all while he feels you up and continues to taunt you. 'Next time you see me... just drop to your knees, service your male and let me continue my work. I promise I'll fuck you until you have a dripping pussy yearning for this cock all the time... Hopefully it's gonna happen soon.'";
 	say "     Moments later, the husky pulls off from you and stands up, grinning, leaving you lying down on the ground. 'See you around, slut. Just make sure to steer clear from that [italic type]other[roman type] [']alpha['], please,' he says, with quote gestures, 'You're mine only. Whatever that dude tells you... he's just delusional. I'm your real alpha.' Then, with his final message delivered, he walks away. You, on the other hand, have to recover from this, but not without losing a significant amount of both your masculinity and dignity.";
@@ -597,8 +597,8 @@ When Play begins:
 	add "Husky Alpha" to infections of TailList;
 	now Name entry is "Husky Alpha";
 	now enemy title entry is "Husky Pack Leader";
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]He leaps forward, snapping and snarling at you.[or]The husky poses for a minute, the light catching on his perfect, sexy coat of fur and making you stare in awe and lust.[or]Leaping towards you, he knocks your hands aside, and his canine muzzle lunges forward as he kisses you right on the mouth![or]He dances around you playfully, his teasing antics making you forget that you are supposed to be fighting him for a minute.[or]He darts forward and rubs himself up against your body, his arousing scent clinging to your body even as he retreats back out of reach.[or]He stalks forward confidently, his erect cock drawing your gaze as he rubs his paws over your body teasingly.[at random]";
 	now defeated entry is "[Alpha Husky loss]";
 	now victory entry is "[Alpha Husky attack]";
@@ -619,36 +619,36 @@ When Play begins:
 	now per entry is 16;
 	now int entry is 10;
 	now cha entry is 20;
-	now sex entry is "Male";  [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now sex entry is "Male"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
 	now HP entry is 50;
-	now lev entry is 8;  [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
-	now wdam entry is 10;  [ Amount of Damage monster Does when attacking. ]
-	now area entry is "Outside";  [ Current options are 'Outside' and 'Mall'. Case sensitive]
-	now Cock Count entry is 1;  [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
-	now Cock Length entry is 10;  [ Length infection will make cock grow to if cocks]
-	now Ball Size entry is 3;  [ Size of balls ]
-	now Nipple Count entry is 2;  [ Number of nipples infection will give you (males have nipples too) ]
-	now Breast Size entry is 0;  [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
-	now Male Breast Size entry is 0;  [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 0;  [ if sex = "Female or both", indicates the number of female sexes infection will grant you.]
+	now lev entry is 8; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
+	now wdam entry is 10; [ Amount of Damage monster Does when attacking. ]
+	now area entry is "Outside"; [ Current options are 'Outside' and 'Mall'. Case sensitive]
+	now Cock Count entry is 1; [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
+	now Cock Length entry is 10; [ Length infection will make cock grow to if cocks]
+	now Ball Size entry is 3; [ Size of balls ]
+	now Nipple Count entry is 2; [ Number of nipples infection will give you (males have nipples too) ]
+	now Breast Size entry is 0; [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 0; [ if sex = "Female or both", indicates the number of female sexes infection will grant you.]
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 0;
 	now SeductionImmune entry is false;
-	now libido entry is 30;  [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
-	now loot entry is "husky alpha fur";  [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
-	now lootchance entry is 50;  [ Chance of loot dropping 0-100 ]
+	now libido entry is 30; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
+	now loot entry is "husky alpha fur"; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
+	now lootchance entry is 50; [ Chance of loot dropping 0-100 ]
 	now MilkItem entry is "husky alpha man-milk";
 	now CumItem entry is "husky alpha cum";
 	now TrophyFunction entry is "[GenerateTrophyList_Husky_Alpha]";
-	now scale entry is 3;  [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
-	now body descriptor entry is "[if latexhuskymode is true][one of]quadrupedal[or]altered[or]animalistic[at random][else][one of]altered[or]animalistic[at random][end if]";  [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender". Use [one of] to vary ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now body descriptor entry is "[if latexhuskymode is true][one of]quadrupedal[or]altered[or]animalistic[at random][else][one of]altered[or]animalistic[at random][end if]"; [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender". Use [one of] to vary ]
 	now type entry is "[one of]canine[or]husky[at random]";
 	now magic entry is false;
-	now resbypass entry is false;  [ Bypasses Researcher bonus? true/false (almost invariably false) ]
+	now resbypass entry is false; [ Bypasses Researcher bonus? true/false (almost invariably false) ]
 	now non-infectious entry is false;
 	now Cross-Infection entry is "Husky Bitch"; [sexually transmitted infection for when the player loses; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;  [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
-	now altcombat entry is "hump";  [ Row used to designate any special combat features, "default" for standard combat. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
+	now altcombat entry is "hump"; [ Row used to designate any special combat features, "default" for standard combat. ]
 	now BannedStatus entry is false;
 
 
@@ -658,7 +658,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is "Husky"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Husky"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is "Husky Alpha"; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 8; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -670,7 +670,7 @@ When Play begins:
 	now Head Adjective entry is "canine"; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is "furred"; [one word descriptive adjective]
 	now Head Color entry is "grey and white"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is ""; [partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is ""; [partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 0; [hair length in inches]
 	now Hair Shape entry is "straight"; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is "white"; [one word color descriptor]
@@ -689,7 +689,7 @@ When Play begins:
 	now Torso Change entry is "grey and white fur sprouts all over it, giving you a warm and shining coat"; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is "covered in a warm coat of [Torso Color of Player] fur"; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is "canine"; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is "furred"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is "grey and white"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -710,18 +710,18 @@ When Play begins:
 	now Arms Color entry is "grey and white"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is "bipedal"; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is "they shift into the digitigrade stance of an anthro husky with thick grey and white fur and paws"; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is "that of an anthro husky, with thick [Legs Color of Player] fur covering them from your hips down to the clawed paws"; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is "that of an anthro husky, with thick [Legs Color of Player] fur covering them from your hips down to the clawed paws"; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is "furry"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is "grey and white"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is "it becomes well-rounded, with grey and white fur sprouting over it"; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
-	now Ass Description entry is "ass, covered thick grey and white fur"; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [ass shape adjective of Player] [ass description of Player]."]
-	now Ass Skin Adjective entry is "furry";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Description entry is "ass, covered thick grey and white fur"; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]."]
+	now Ass Skin Adjective entry is "furry"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is "grey and white"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is "a mid-length canine tail sprouts from your tailbone, soon covered in grey and white fur"; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is "mid-length, [Tail Color of Player] tail"; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is "mid-length, [Tail Color of Player] tail"; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is "furry"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is "grey and white"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 8; [inches deep for anal fucking]
@@ -734,19 +734,19 @@ When Play begins:
 	[Cock Girth Adjective is generated by a function and can be used in scenes too: thin/slender/average/thick/monstrous]
 	now Cock Length entry is 9; [length in inches]
 	now Cock Change entry is "it takes on a reddish color and canine shape, complete with a pointy tip, knot at the base and a sheath to protect it"; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is "is [Cock Color of Player] and has a pointy tip and a knot at the base, as well as a sheath to protect it when not erect"; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is "is [Cock Color of Player] and has a pointy tip and a knot at the base, as well as a sheath to protect it when not erect"; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Adjective entry is "canine"; [one word adjective: avian/canine/...]
 	now Cock Color entry is "red"; [one word color descriptor]
 	now Ball Count entry is 2;
 	now Ball Size entry is 3; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is "balls in a furry, low-hanging sack"; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is "balls in a furry, low-hanging sack"; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 0;
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Change entry is "it takes on a canine appearance, complete with a clit at the top"; [partial sentence that fits in: "Your groin [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt Change entry]."]
-	now Cunt Description entry is "is [Cunt Color of Player]-colored and shaped like that of a canine bitch, with delicate nether lips and the clit at the top"; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is "is [Cunt Color of Player]-colored and shaped like that of a canine bitch, with delicate nether lips and the clit at the top"; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Adjective entry is "canine"; [one word adjective: avian/canine/...]
 	now Cunt Color entry is "pink"; [one word color descriptor]
 	now Clit Size entry is 2; [size 1-5, see Clit Size Adjective]
@@ -779,7 +779,7 @@ Strain of husky alpha cum is "Husky Bitch".
 Usedesc of husky alpha cum is "[husky alpha cum use]";
 
 to say husky alpha cum use:
-	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy fluid cum run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
+	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy cum run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
 	PlayerDrink 5;
 	SanLoss 5;
 
@@ -798,7 +798,7 @@ Strain of husky alpha man-milk is "Husky Alpha".
 Usedesc of husky alpha man-milk is "[husky alpha man-milk use]";
 
 to say husky alpha man-milk use:
-	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the canine man-milk run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
+	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the milk run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
 	PlayerDrink 15;
 
 instead of sniffing husky alpha man-milk:

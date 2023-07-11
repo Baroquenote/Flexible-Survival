@@ -34,19 +34,19 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 when play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Dullahan"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Dullahan"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Dullahan" to infections of DemonList;
 	add "Dullahan" to infections of MaleList;
 	add "Dullahan" to infections of BipedalList;
 	now Name entry is "Dullahan";
-	now enemy title entry is "Dullahan Knight"; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is "Dullahan Knight"; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The statuesque knight swings his greataxe at you, luckily only leaving you with a superficial cut.[or]The demonic warrior knocks you back with his weapon's pommel.[or]With his powerful body, the Dullahan Knight tackles you painfully, causing you to lose your balance for a short time.[or]Rushing at you, the Dullahan swings his greataxe in your direction, its blade tearing through your skin[at random]";
 	now defeated entry is "[DullahanVictory]";
 	now victory entry is "[DullahanDefeat]";
 	now desc entry is "[DullahanDesc]";
-	now face entry is "non-existent, instead covered with darksteel in the shape of a durable helmet. A green mist oozes from within.";
+	now face entry is "nonexistent, instead covered with darksteel in the shape of a durable helmet. A green mist oozes from within.";
 	now body entry is "statuesque and musclebound, fit for the art of battle and war. You're almost twice as tall than an average humanoid.";
 	now skin entry is "pale and scarred, like one of a seasoned warrior.";
 	now tail entry is "You have a plump, muscular ass.";
@@ -74,22 +74,22 @@ when play begins:
 	now Breast Size entry is 0;
 	now Male Breast Size entry is 0;
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	now SeductionImmune entry is true;
 	now libido entry is 0;
 	now loot entry is "dullahan dust";
 	now lootchance entry is 50;
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 4;
 	now body descriptor entry is "[one of]statuesque[or]musclebound[or]massive[or]hulking[at random]";
 	now type entry is "demon";
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is true;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0;
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
@@ -101,7 +101,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -113,7 +113,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -132,7 +132,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -153,18 +153,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -178,19 +178,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -226,7 +226,7 @@ to DullahanSex:
 	now sortorder entry is 1;
 	now description entry is "Treat the Dullahan with a cock worship session";
 	[]
-	if player is male:
+	if Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Have the demon knight turn around and bend over";
 		now sortorder entry is 2;
@@ -312,7 +312,7 @@ to say DullahanSummon:
 		say "     You chose to proceed with summoning a dangerous demonic creature without Xaedihr, who is an expert demonologist able to protect you significantly during your confrontations with the dark knight. The events that will follow can be punishing and unrelentless without proper guidance, and you know what will happen if you lose to the Dullahan in battle. [bold type]Are you sure you wish to delve into demonic affairs all by yourself?[roman type][line break]";
 		say "     [link](Y)[as]y[end link] - Danger? What danger? Just continue with the ritual.";
 		say "     [link](N)[as]n[end link] - Let's be cautious about this.";
-		if player consents:
+		if Player consents:
 			say "     Nonsense. You consider yourself more than capable of doing this alone. With your decision made, your get ready to perform the ritual.";
 			Linebreak;
 			DullahanSummon1;
@@ -508,7 +508,7 @@ to DullahanSummon2: [Dullahan rematch]
 	say "     He strikes you with a single question, his deep voice barging into your mind like a sharp blade onto your skin. [bold type]'Are you here for a fair duel, mortal?'[roman type][line break]";
 	say "     [link](Y)[as]y[end link] - Let's duel.";
 	say "     [link](N)[as]n[end link] - Refuse to duel him.";
-	if player consents:
+	if Player consents:
 		say "     You nod, and bring your guard up. Your acceptance is met with excitement from the knight's behalf. 'Good. Let us fight.'";
 		DullahanSummon2Fight;
 	else:
@@ -575,13 +575,13 @@ to DullahanSummon3Fight:
 to DullahanBadEnd:
 	say "     No matter how much you try, the shadow knight ends up deflecting every last blow of yours, his strength clearly superior to yours. Your inevitable end draws nearer as he kicks you to the ground, raising his greataxe above you. But it never comes down to end your life. Instead, the Dullahan keeps his gaze at you -or so it looks, as you can't tell for sure since he has only his helmet in the place of his head - and slowly lowers his weapon. One of his greaves is planted firmly above your chest, steadily making its way over your neck. He's huge, his monumental frame overpowering you in every way, able to keep you pinned down with little effort. His voice forces itself in your mind once again... 'I will not take your life. Your soul, however... will serve me better.'";
 	WaitLineBreak;
-	say "     The cold metal of his greave presses against your cheek, forcing your face to turn as the knight loses his large loincloth. You're only given a view at him once he gets down above you, his legs on each side of your body, and his hand reaching for your neck. With a hard tug, you're pushed to him, only to bump your nose on the still growing shaft of the knight, not even being given any second to look at it before he gives you an order. 'Lick it.' Without a choice [if player is submissive], further motivated by your inherent desire to serve[else], as you're not allowed to push back[end if], you give his manhood a tentative lick, causing its length to harden even further. Impatiently, the demonic entity drags you across the entirety of his meat, towards the base then back to the tip, an enormous two feet-long of a dick standing hard right in front of you. He makes it so that your lips are firmly pressed against the glans. 'You better open wide and serve your new owner. This will be your new... life, from now on.";
+	say "     The cold metal of his greave presses against your cheek, forcing your face to turn as the knight loses his large loincloth. You're only given a view at him once he gets down above you, his legs on each side of your body, and his hand reaching for your neck. With a hard tug, you're pushed to him, only to bump your nose on the still growing shaft of the knight, not even being given any second to look at it before he gives you an order. 'Lick it.' Without a choice [if Player is submissive], further motivated by your inherent desire to serve[else], as you're not allowed to push back[end if], you give his manhood a tentative lick, causing its length to harden even further. Impatiently, the demonic entity drags you across the entirety of his meat, towards the base then back to the tip, an enormous two feet-long of a dick standing hard right in front of you. He makes it so that your lips are firmly pressed against the glans. 'You better open wide and serve your new owner. This will be your new... life, from now on.";
 	say "     Respecting your new master, you open your mouth as wide as you can, though you barely make it past the glans. The enormous shaft throbs and seems to thicken at each touch you make, turning this into a very difficult task. The only option you have is to stroke his cock with both your hands and run your mouth all over his sensitive spots, though that seems to cause a chuckle on the Dullahan. 'Your physical body truly is pathetic... Let me show you how you're supposed do it.' Fear strikes your senses as he places his large hands on the back of your head, and suddenly, you feel him pulling you. Your mouth presses on his cock so hard that you feel your jaw almost dislocating, and soon, you're helplesly taking his dick.";
 	WaitLineBreak;
 	say "     You have no idea how you're being able to endure his enormous size being slid inside your mouth... Inch by inch, his cock slides in deeper inside, stretching your throat inhumanly as you feel the monster cock bulging out in your neck. He's not done pushing yet, only stopping when your nose bumps into his hairless crotch. The knight makes you look at him, and no words are spoken as you're forced to hold your breath. Then, he slowly pulls out, feeling like it's your insides coming out through your mouth instead as your stretched throat now feels the emptiness of what used to be there, though his manhood never leaves your lips. Your urge to catch your breath never seems to come...";
 	say "     'You've left your physical boundaries. Breathing is no longer necessary.' the Dullahan informs you as he pushes into your mouth once more. His now rock solid length finds itself slipping into your throat again, stretching the fleshy tunnel around his considerable girth. 'Your throat makes a nice fuckhole, mortal... I'm glad I can use it without end.' You feel his cock sliding in and out of your esophagus vigorously as he thrusts powerfully, grabbing you by the ears and moving your head in rhythm with his pounding. Just when you're starting to get used to the treatment, he stops abruptly, then pulls out the same way as before. This time, his dick is removed completely out of your mouth as he gives it a few strokes, though he does reward you with the good sight of his two feet-long pulsing in front of you. 'You feel good... But you don't deserve my load yet.'";
 	WaitLineBreak;
-	say "     His words strike you [if player is submissive]as a tremendous disappointment, just when your body was craving to be used by him all the time[else]as commanding and compelling, and you outright understand why[end if]... 'We'll have an entire eternity for that.' The Dullahan just pulls you from the ground and makes you walk in front of him, his erection dandling between his legs as you both approach a shadowy shaped wagon. A look over your shoulder has your eyes meeting with the visage of your previous human shell. A body your soul no longer inhabits lies on the floor several meters behind you, one that you won't need nor miss anymore. Not for now, at least, as an eternity of servitude next to your new Master awaits you...";
+	say "     His words strike you [if Player is submissive]as a tremendous disappointment, just when your body was craving to be used by him all the time[else]as commanding and compelling, and you outright understand why[end if]... 'We'll have an entire eternity for that.' The Dullahan just pulls you from the ground and makes you walk in front of him, his erection dandling between his legs as you both approach a shadowy shaped wagon. A look over your shoulder has your eyes meeting with the visage of your previous human shell. A body your soul no longer inhabits lies on the floor several meters behind you, one that you won't need nor miss anymore. Not for now, at least, as an eternity of servitude next to your new Master awaits you...";
 	WaitLineBreak;
 	now battleground is "Void";
 	the Player was ended by "Soul taken away by Dullahan";

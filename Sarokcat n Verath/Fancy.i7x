@@ -33,6 +33,12 @@ an everyturn rule:
 		change the south exit of Master's Office to Employee Access;
 		now NightmareOfficeRoomConnection is 1; [room connected]
 
+a postimport rule:
+	if fancyquest > 15 and fancyquest < 100:
+		now Nightmarish Horse Business is inactive; [forever gone, replaces this route]
+		now Stablemaster is nowhere; [take him out of the office if he's in there]
+		now Resolution of NightmareStablemasterEvents is -99; [remove the Stablemaster's Master's Office events if they were ongoing]
+
 Section 0 - NPC Setup
 
 Fancytalk is a number that varies.
@@ -50,21 +56,29 @@ object	name
 Fancy	"Fancy"
 
 Fancy is a woman.
-[Physical details as of game start]
 ScaleValue of Fancy is 3. [human sized]
 SleepRhythm of Fancy is 0. [0 - awake at all times, 1 - day active, 2 - night active]
-Cock Count of Fancy is 0. [X cock]
-Cock Length of Fancy is 0. [X Inches]
-Ball Size of Fancy is 0.
-Ball Count of Fancy is 0. [X balls]
-Cunt Count of Fancy is 1. [X pussy]
-Cunt Depth of Fancy is 24. [X Cunt]
-Cunt Tightness of Fancy is 12. [X Cunt]
-Nipple Count of Fancy is 2. [X nipples]
-Breast Size of Fancy is 4. [X at the start]
+Body Weight of Fancy is 5. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
+Body Definition of Fancy is 5. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
+[Body Adjective is generated out of the body weight and body definition and can be used in scenes - one word descriptive adjective depending on weight and definition groups: low weight group: skinny/slender/lithe; mid weight group: average/fit/muscled; high weight group: pudgy/husky/jacked]
+Androginity of Fancy is 8. [Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/somewhat effeminate/effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
+Mouth Length of Fancy is 10. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
+Mouth Circumference of Fancy is 4. [mouth circumference 1-5, "tiny, small, normal, wide, gaping"]
+Tongue Length of Fancy is 10. [length in inches]
+Breast Size of Fancy is 4. [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+Nipple Count of Fancy is 2. [count of nipples]
+Asshole Depth of Fancy is 24. [inches deep for anal fucking]
+Asshole Tightness of Fancy is 3. [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+Cock Count of Fancy is 0. [number of cocks]
+Cock Girth of Fancy is 0. [thickness 1-5, thin/slender/average/thick/monstrous]
+Cock Length of Fancy is 0. [Length in Inches]
+Ball Count of Fancy is 0. [allowed numbers: 1 (uniball), 2 or 4]
+Ball Size of Fancy is 0. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
+Cunt Count of Fancy is 1. [number of cunts]
+Cunt Depth of Fancy is 24. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Tightness of Fancy is 4. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+Clit Size of Fancy is 3. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
-TwistedCapacity of Fancy is true. [can take oversized members without pain]
-Sterile of Fancy is false.
 PlayerMet of Fancy is false.
 PlayerRomanced of Fancy is false.
 PlayerFriended of Fancy is false.
@@ -75,6 +89,8 @@ Virgin of Fancy is false.
 AnalVirgin of Fancy is false.
 PenileVirgin of Fancy is true.
 SexuallyExperienced of Fancy is true.
+TwistedCapacity of Fancy is false. [Twisted Characters can take any penetration, no matter the size]
+Sterile of Fancy is false. [steriles can't knock people up]
 MainInfection of Fancy is "Mareslut".
 Description of Fancy is "A rather sexy looking mare eyes you with amusement from where she is seated at the small table she is using as a desk, wearing only her soft pelt of white horse fur and a set of white panties that reveal far more than they conceal. Her body is well built and nicely rounded in all the right places. The horsewoman has nice strong thighs, and her powerful hooves stretch out in front of her, her legs parted teasingly to give you a good view of her tightly stretched panties. She rests her equine muzzle on her slightly hoof-like hands as she looks at you with anticipation, her deep blue eyes twinkling with amusement as she cocks her ears forward to hear what you have to say.".
 Conversation of Fancy is { "Grumble!" }.
@@ -165,8 +181,12 @@ to say NightmareQuest:
 					now Nightmaremastery is 1;
 					now Daisy is in Master's Office;
 					move player to Master's Office;
+					move Slutslave to Master's Office;
 					change the north exit of Employee Access to Master's Office;
 					change the south exit of Master's Office to Employee Access;
+					now Nightmarish Horse Business is inactive; [forever gone, replaces this route]
+					now Stablemaster is nowhere; [take him out of the office if he's in there]
+					now Resolution of NightmareStablemasterEvents is -99; [remove the Stablemaster's Master's Office events if they were ongoing]
 					now fancyquest is 16;
 				else:
 					say "'So this is what my new pet wanted to do to me, well remind me to reward Fancy properly for her gift of a lovely new slavegirl,' Your master says with amusement as he looks down on you with a smug smile, the sexy tones of his voice making you shudder and whimper with need, 'Though perhaps I should take some time out to enjoy my new pets first, what do you say pet?' he asks you with amusement, and you find yourself nodding eagerly as your master comes towards you, his cock bobbing teasingly as he approaches, and your mind fills with his amazingly arousing male musk. 'Well pet, spread those legs for your master,' the powerful stallion says with amusement, and you whimper at your stupidity as you hurry to comply, maybe if you had spread yourself as soon as you noticed how wonderful your master was, he would already be inside your eager body you think as you curse your slowness and resolve to do better. He chuckles softly as you eagerly spread your body out in front of him, and wastes no time burying his amazing blunt stallionhood in your deep mare's pussy, making you moan with delight as you feel your master's cock inside your body. He wastes little time in pulling back and thrusting into you again, his amazing velvety cock making you moan with delight as he begins to build up a rhythm of sharp fast thrusts into your eager form.";
@@ -317,7 +337,7 @@ to say PonyQuest:
 		LineBreak;
 		say "     ([link]Y[as]y[end link]) - Agree to help Fancy.";
 		say "     ([link]N[as]n[end link]) - This is too much for you. No thanks.";
-		if player consents:
+		if Player consents:
 			LineBreak;
 			say "[ContinuePonyQuest]";
 		else:

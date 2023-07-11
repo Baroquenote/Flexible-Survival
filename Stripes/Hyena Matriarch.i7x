@@ -11,7 +11,54 @@ Section 1 - Creature Responses
 matriarchdefeated is a number that varies.
 matriarchowned is a number that varies.
 
+to say hyenamat_challenge: [challenging the matriarch to become the new matriarch]
+	now inasituation is true;
+	now fightoutcome is 100;
+	Challenge "Hyena Herm";
+	if fightoutcome >= 10 and fightoutcome <= 19:
+		Challenge "Hyena Herm";
+		if fightoutcome >= 10 and fightoutcome <= 19:
+			Challenge "Hyena Matriarch";
+			if fightoutcome >= 10 and fightoutcome <= 19:			[victory]
+				increase score by 0; [do nothing extra]
+			else if fightoutcome >= 20 and fightoutcome <= 29:	[lose to matriarch]
+				increase score by 0; [do nothing extra]
+		else if fightoutcome >= 20 and fightoutcome <= 29:		[lose to guard #2]
+			say "     Beaten by the matriarch's guard, you are mockingly dragged in front of the matriarch. She strikes you several times while the other hyenas hold you before you are tossed to the ground at her feet.";
+			say "[matriarch attack]";
+			hyenaify; [second infect to match matriarch fight loss]
+			decrease morale of Player by 5;
+	else if fightoutcome >= 20 and fightoutcome <= 29:			[lose to guard #1]
+		say "     Beaten by the matriarch's guard, you are mockingly dragged in front of the matriarch. She strikes you several times while the other hyenas hold you before you are tossed to the ground at her feet.";
+		say "[matriarch attack]";
+		hyenaify; [second infect to match matriarch fight loss]
+		decrease morale of Player by 5;
+	if fightoutcome >= 30:									[flee any fight]
+		say "     Your attempt to flee results in the mocking laugh of the rest of the gang. Several of them grab onto you and you're dragged back in front of the matriarch, who strikes your several times while the other hyenas hold you. You are then tossed to the ground at her feet.";
+		say "[matriarch attack]";
+		hyenaify; [second infect to match matriarch fight loss]
+		decrease morale of Player by 10;
+		now HP of Player is 1;
+	now inasituation is false;
+
+to say hyenamat_victorytf: [victory transformation into hyena matriarch]
+	say "     As the hyena orgy goes on, you feel a growing sense of confidence and empowerment. Looking over yourself, you can see that the victory has not left you unchanged. Your hyena body's gotten larger and stronger with an improved physique. You gain several inches of height as well, making you all the more impressive for leading the gang. You've become a powerful figure suitable for your new role as the gang's matriarch.";
+	setmonster "Hyena Matriarch" silently;
+	turn the Player into a "Hyena Matriarch";
+	choose row MonsterID from the Table of Random Critters;
+	now Cock Length entry is 15; [ Length infection will make cock grow to if cocks]
+	now Ball Size entry is 3; [ Size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
+	now Nipple Count entry is 2; [ Number of nipples infection will give you (males have nipples too) ]
+	now Breast Size entry is 5; [Size of breasts infection will try to attain ]
+	now Cunt Count entry is 1; [ if sex = "Female or both", indicates the number of female sexes infection will grant you.]
+	now Cunt Depth entry is 15;
+	now Cunt Tightness entry is 9;
+	follow the sex change rule;
+	follow the sex change rule;
+	if Libido of Player < libido entry, now Libido of Player is libido entry;
+
 to say matriarch attack:
+	project Figure of Hyena_Matriarch_hard_icon;
 	[puts Herm Hyena as lead monster in case of impregnation]
 	repeat with y running from 1 to number of filled rows in Table of Random Critters:
 		choose row y in Table of Random Critters;
@@ -62,12 +109,17 @@ to say matriarch attack:
 				say "     You aren't sure how long you lie there like that, your body pressed into the floor underneath hers, while an ever growing orgy of hyenas surrounds you, celebrating your submission. She eventually draws herself up, causing you to whimper as she leaves you alone, only to perk up as she leans down to whisper in your ear. 'Next time you'll have the proper equipment to take me fully, won't you?' she says in her raspy voice, causing your mind to race at the thought of being taken properly, like a good little breeding slut, with her warm seed filling you up with her hyena cubs again and again. Your mind calms down though as she pets you almost fondly on the head, her approval of your submissiveness speaking to that permanent new part of you she has burned into your core as you feel the joy of pleasing your master welling up from within. Straightening up, the matriarch leaves you lying there helpless in the middle of the forming orgy, ready and waiting for anyone to use as they please, as she moves back to her own den. As you lie there you can't help but wonder if challenging her was really a smart idea... or maybe you think, as you feel the hands of he other hyenas begin to stroke and grope you, it was really the best idea ever...";
 
 To say matriarch loss:
+	project Figure of Hyena_Matriarch_hard_icon;
 	say "     Successfully defeating the reigning hyena matriarch, all the other hyena members of the hyena gang look on in awed silence as the former matriarch is forced to prostrate herself before you.";
 	say "     Taking advantage of the invitation her prostrated form with its upraised ass provides you, you slowly move around behind her, reveling in your victory. Your cock stiffens as you hear her defeated whimper and the cackling laughter of the hyena's surrounding you both, something about the situation speaking directly to your primal hyena instincts. Your mouth contorts into a feral grin as your hands dig into the coarse fur of her ass, before you sheathe your [Cock of Player] cock into her in one swift thrust, causing her to cry out in pain and pleasure underneath you. Her warm folds wrap your cock with delicious bliss flavored with the feel of victory and the joy of forcing her submission, causing you to moan in delight as you thrust into her.";
 	say "     Building up a rhythm of quick thrusts into her warm wetness, the former matriarch begins to whine and beg underneath you, her obvious submission increasing your pleasure as you turn the formerly dominant hyena into just another breeding slut underneath you. Around you, you are obviously not the only member of the hyena den aroused by the situation, as an orgy begins to break out among the laughing onlookers. The thrill of all the eyes watching you as you reduce the former matriarch to just another breeding hole makes the experience even more exciting as you pound into her body, every thrust driving her face down into the ground where it belongs.";
 	WaitLineBreak;
 	say "     You feel your pleasure growing as you reach the edge of your orgasm, your thrusts stronger and more dominant as she clenches her body underneath you, her soft lips massaging your cock needily, practically begging for you to fill her with your seed. Finally she shudders underneath you with a truly wanton moan, and you can almost sense something break inside her, almost tell the moment she gives herself up to your dominance completely and surrenders herself to your will. The pleasure as you realize the completeness of your victory makes your body shudder as it floods through you, sending you over the edge in the best orgasm of your life as you explode into her. The former matriarch cries out underneath you wantonly, as she embraces her new role in life, the role of a breeding slut, the lowest of the low in the pecking order, a slut for any and all to use as they please, and she embraces it willingly. You can't help but feel completely satisfied as you rest on her back, your cock still spurting into her slowing, ensuring she is filled with your strong, virile seed. Eventually you pull yourself out, and flop down on your side as you watch the rest of your new subjects celebrating your victory with an orgy around you.";
 	increase matriarchowned by 1;
+
+to say Hyena Matriarch Desc:
+	say "     The matriarch strides forward, a confident look on her face as she passes her defeated guards. 'Well now you have my attention,' she snarls, her magnificent spotted fur rising as the challenge circle forms around the two of you.";
+	project Figure of Hyena_Matriarch_clothed_icon;
 
 
 Section 2 - Creature Insertion
@@ -79,7 +131,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Hyena"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Hyena"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Hyena Matriarch" to infections of FelineList;
 	add "Hyena Matriarch" to infections of FurryList;
 	add "Hyena Matriarch" to infections of NatureList;
@@ -89,23 +141,23 @@ When Play begins:
 	add "Hyena Matriarch" to infections of SheathedCockList;
 	add "Hyena Matriarch" to infections of BipedalList;
 	add "Hyena Matriarch" to infections of TailList;
-	now Name entry is "Hyena Matriarch"; [Name of your new Monster]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now Name entry is "Hyena Matriarch";
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]She rakes you with her claws, leaving bloody gashes behind.[or]She backhands you with enough force to send you flying.[or]Her excited member grinds against you as she tries to wrestle you into a submissive position.[or]She rips at you with her insanely sharp teeth.[or]Her hyena laugh fills the room, distracting you with the powerful desire to join her in laughter.[or]She leaps forward suddenly, knocking you to the ground under her.[or]She poses and begins rubbing her large member enticingly, obviously trying to convince you it would be better to submit... and it almost works.[at random]";
 	now defeated entry is "[matriarch loss]";
 	now victory entry is "[matriarch attack]";
-	now desc entry is "[mongendernum 5]The matriarch strides forward, a confident look on her face as she passes her defeated guards. 'Well now you have my attention,' she snarls, her magnificent spotted fur rising as the challenge circle forms around the two of you."; [ Description of the creature when you encounter it.]
-	now face entry is "very hyena look to you now, with a muzzle filled with sharp teeth and a pair of hyena-like ears perched atop your head. Ever since the change you can't help but feel more confident and mighty, anyone who glanced your way could tell you have a leader's"; [ Face description, format as "Your face is (your text)."]
-	now body entry is "that of a powerful fighter, with toned muscles, leaving you with an imposing yet attractive figure. Not left unchanged, your hands are now paw-like in nature, with sharp claws at the tip of each digit"; [ Body Description, format as "Your Body is (your text)"]
-	now skin entry is "brown furred"; [ skin Description, format as "Looking at yourself, your body is covered in (your text) skin"]
+	now desc entry is "[Hyena Matriarch Desc]"; [ Description of the creature when you encounter it.]
+	now face entry is "very hyena look to you now, with a muzzle filled with sharp teeth and a pair of hyena-like ears perched atop your head. Ever since the change you can't help but feel more confident and mighty, anyone who glanced your way could tell you have a leader's"; [ Face description, format as "Your face is [Face of Player]." ]
+	now body entry is "that of a powerful fighter, with toned muscles, leaving you with an imposing yet attractive figure. Not left unchanged, your hands are now paw-like in nature, with sharp claws at the tip of each digit"; [ Body Description, format as "Your Body is [Body of Player]." ]
+	now skin entry is "brown furred"; [ Skin Description, format as "Looking at yourself, your body is covered in [Skin of Player] skin." ]
 	now tail entry is "Your rear end has become tightly muscled, with enough size to it that one could still get a nice hand full. Hanging just above your sculpted derriere is a hyena tail, its brown-furred length barely reaching past your upper thigh."; [ Tail description, write a whole Sentence or leave blank. ]
 	now cock entry is "[one of]knotted[or]black[at random]"; [ Cock Description, format as you have a 'size' (your text) cock]
-	now face change entry is "it rapidly stretches outward, your mouth suddenly feeling very full as your new teeth settle into place. Finding your hands moving instinctively up to your ears, you feel them as they migrate up to the top of your skull. Making their new home on your scalp, they begin taking a more triangular shape, leaving you with hyena ears"; [ face change text. format as "Your face feels funny as (your text)." ]
-	now body change entry is "as it lose any trace of fat you may have had on you, it being replaced with tightly compacted muscle. Focus shifts to your hands as you feel them reshaping into more pawlike appendages. When the transformation finally settles, you're left with new hyena-like paws with sharp claws"; [ body change text. format as "Your body feels funny as (your text)." ]
-	now skin change entry is "it is covered in shaggy brown fur"; [ skin change text. format as "Your skin feels funny as (your text)." ]
-	now ass change entry is "it tightens noticeably and becomes attractively muscled. Given no time to rest, you feel a sharp pain as your tail bone starts grow out, lengthening out to a more animalistic norm. Pain subsiding you find a freshly grown brown-furred tail, a quick test shows that you have slight control over your new hyena tail"; [ ass/tail change text. format as "Your ass feels funny as (your text)." ]
+	now face change entry is "it rapidly stretches outward, your mouth suddenly feeling very full as your new teeth settle into place. Finding your hands moving instinctively up to your ears, you feel them as they migrate up to the top of your skull. Making their new home on your scalp, they begin taking a more triangular shape, leaving you with hyena ears"; [ Face change text, format as "Your face feels funny as [face change entry]." ]
+	now body change entry is "as it lose any trace of fat you may have had on you, it being replaced with tightly compacted muscle. Focus shifts to your hands as you feel them reshaping into more pawlike appendages. When the transformation finally settles, you're left with new hyena-like paws with sharp claws"; [ Body change text, format as "Your body feels funny as [body change entry]." ]
+	now skin change entry is "it is covered in shaggy brown fur"; [ Skin change text, format as "Your skin feels funny as [skin change entry]." ]
+	now ass change entry is "it tightens noticeably and becomes attractively muscled. Given no time to rest, you feel a sharp pain as your tail bone starts grow out, lengthening out to a more animalistic norm. Pain subsiding you find a freshly grown brown-furred tail, a quick test shows that you have slight control over your new hyena tail"; [ Ass/tail change text, format as "Your ass feels funny as [ass change entry]." ]
 	now cock change entry is "it turns pitch black, a knot forming at the base"; [ cock change text. format as "Your cock feels funny as (your text)." ]
 	now str entry is 22;
 	now dex entry is 20;
@@ -113,10 +165,10 @@ When Play begins:
 	now per entry is 12;
 	now int entry is 12;
 	now cha entry is 20;
-	now sex entry is "Both"; 	[ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now sex entry is "Both"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
 	now HP entry is 100;
 	now lev entry is 12; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
-	now wdam entry is 13; [Amount of Damage monster Does when attacking.]
+	now wdam entry is 13; [ Amount of Damage monster Does when attacking. ]
 	now area entry is "Hyena hideout"; [ Current options are 'Outside' and 'Mall'. Case sensitive]
 	now Cock Count entry is 1; [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
 	now Cock Length entry is 8; [ Length infection will make cock grow to if cocks]
@@ -131,16 +183,16 @@ When Play begins:
 	now libido entry is 30; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
 	now loot entry is "lucky horseshoe";
 	now lootchance entry is 0; [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 4; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]lean[or]muscled[at random]";
 	now type entry is "hyena"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is true;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
@@ -152,7 +204,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -164,7 +216,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -183,7 +235,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -204,18 +256,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -229,19 +281,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]

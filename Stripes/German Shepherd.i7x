@@ -75,7 +75,7 @@ to say gsd_desc:
 						say "     The sight of the buff male coming closer makes you excited and you start moving towards him as any thoughts to resist or get away fade from your mind. When he gets near, you drop to all fours and press your head to his paw. You receive a head petting and scritch that makes you very happy. 'That's my good [if Player is female]bitch[else]pup[end if],' he says condescendingly as you submit immediately to him, though his acknowledgement of you as belonging to him pleases and excites you.";
 					else:
 						say "     That [bold type]scarred[roman type] German shepherd you met before is back, your paths having crossed once again. Perhaps he's been looking for you? And having found you, he approaches with a confident swagger. The buff male cracks his knuckles and gives a soft growl.";
-						say "     'I thought I smelled you around, pup. How about you come over here and show your alpha what a good [if gsd_slut is true and player is female]bitch[else if gsd_slut is true]slut[else]beta[end if] you are?' Despite how you may normally feel about him and what he's done to you, being in the presence of your alpha dog triggers something inside you. The sound of his voice and his scent in your nose arouses you and makes you submit to him. He is your alpha and you obey, eager to please him.";
+						say "     'I thought I smelled you around, pup. How about you come over here and show your alpha what a good [if gsd_slut is true and Player is female]bitch[else if gsd_slut is true]slut[else]beta[end if] you are?' Despite how you may normally feel about him and what he's done to you, being in the presence of your alpha dog triggers something inside you. The sound of his voice and his scent in your nose arouses you and makes you submit to him. He is your alpha and you obey, eager to please him.";
 					increase KorvinSubmitCounter by 1;
 					now combat abort is 1;
 					now fightoutcome is 22;
@@ -558,13 +558,13 @@ to say gsd_generic_vsex_02:
 
 to say gsd_generic_vsex_03:
 	say "     The German shepherd lowers his head like a cowed dog. The thrill of the struggle with the canine has gotten you excited, giving you an erection you want satisfied. Marching up to him, he slinks down lower and whines softly as you grab him by the scruff of the neck and hold him. He tries to pull away, but you simply take hold of him more firmly and give his rear a slap.";
-	say "     'Get to licking, dog,' you growl to him. With that, you pull his head between your legs, pressing his muzzle to your loins. Presented with your [if CockName of Player is listed in infections of Caninelist]canine [else][Cock of Player] [end if]cock, he relents easily enough and start nuzzling and licking at it. Keeping your grip on him, he keeps going at it with increasing vigor, soon his doggy tongue is slobbering over your throbbing shaft and balls, lavishing attention on them.";
+	say "     'Get to licking, dog,' you growl to him. With that, you pull his head between your legs, pressing his muzzle to your loins. Presented with your [if CockName of Player is listed in infections of CanineList]canine [else][Cock of Player] [end if]cock, he relents easily enough and start nuzzling and licking at it. Keeping your grip on him, he keeps going at it with increasing vigor, soon his doggy tongue is slobbering over your throbbing shaft and balls, lavishing attention on them.";
 	say "     After leaking pre all across his muzzle, you decide it's time for the main event and guide his maw down over your cock. As he licks and sucks on you, you thrust into his long, canine muzzle until finally you cum, pumping your hot seed into his mouth and down his throat. His ears dip, but he laps it all from your cock and swallows it down. When he's done cleaning you, you pull out and pat his head before sending him on his way, tail wagging happily after the tasty treat he's received.";
 	CreatureSexAftermath "German Shepherd Male" receives "OralCock" from "Player";
 
 to say gsd_generic_vsex_04:
 	say "     The German shepherd lowers his head like a cowed dog. The thrill of the struggle with the canine has gotten you excited, getting your cunt hot and wet. Marching up to him, he slinks down lower and whines softly as you grab him by the scruff of the neck and hold him. He tries to pull away, but you simply take hold of him more firmly and give his rear a slap.";
-	say "     'Get to licking, dog,' you growl to him. With that, you pull his head between your legs, pressing his muzzle to your loins. Presented with your [if CockName of Player is listed in infections of Caninelist]canine [else]wet [end if]pussy, he relents easily enough and starts licking at it. Keeping your grip on him, he keeps going at it with increasing vigor, soon his doggy tongue is slobbering over your sensitive folds, lavishing attention on them[if Player is male and CockName of Player is listed in infections of InternalCockList]while your dribbling cock[smn] rest[smv] upon his muzzle[else if Player is male]while your dribbling cock[smn] and balls rest upon his muzzle.";
+	say "     'Get to licking, dog,' you growl to him. With that, you pull his head between your legs, pressing his muzzle to your loins. Presented with your [if CockName of Player is listed in infections of CanineList]canine [else]wet [end if]pussy, he relents easily enough and starts licking at it. Keeping your grip on him, he keeps going at it with increasing vigor, soon his doggy tongue is slobbering over your sensitive folds, lavishing attention on them[if Player is male and CockName of Player is listed in infections of InternalCockList]while your dribbling cock[smn] rest[smv] upon his muzzle[else if Player is male]while your dribbling cock[smn] and balls rest upon his muzzle.";
 	say "     Longing for more, you press his muzzle in close and he slips his tongue into your cunt, diving up inside you to lap at your flowing juices. His long, doggy tongue dives into you again and again, making you moan with pleasure until finally you cum hard, soaking his muzzle in your juices. He laps up as much as he can and licks your thighs and pussy clean as your climax ebbs. When he's done cleaning you, you push his muzzle back and pat his head before sending him on his way, tail wagging happily after the tasty treat he's received.";
 	CreatureSexAftermath "German Shepherd Male" receives "OralPussy" from "Player";
 
@@ -606,7 +606,7 @@ to say gsd_generic_vsex_08: [Force him to eat your ass]
 	say "     As soon as the male before you is sprawled out in submission, you get a brilliant idea. His chest is solid, his stomach and torso drool worthy, so why not do something that gives you a perfect seat to oggle him? His muzzle points to the sky as he pants, his tongue lolling from his mouth, and so your naked ass is soon hovering over his face. All that you get is a sudden whine as you press your hole against his muzzle. The canine is hestitant, but you give him little choice, grinding your ass against him as you feel his tongue moving into position. He doesn't quite get to fully pleasing you with it immediately, but as you glare down at his torso and remain seated, he comes to realize that he has no choice. That slimy appendage is then quickly lapping over your hole as you move to kneel, giving his tongue just enough space to play along your ass.";
 	say "     His saliva soon paints every inch of your ass crack, giving you a sense of ownership as the canine is forced to expend himself for only your pleasure. His supine position works to your advantage as you grip at his chest, grabbing and tweaking his nipples. He whines at each twist, at each abuse of his sensitive bits, but you know he likes it. Each time you do it, his cock lurches and dribbles even more pre. There's no doubt that he finds submission just as arousing as domination. So you continue to grind backwards into his mouth, letting his tongue dig deeper and deeper into your hole. There's nothing like an eager mouth and a long tongue. You're sure even he knows this, and that this is common for at least some of his kind. Still, the canine can only do so much without going deeper, and soon he jams his long appendage straight into you.";
 	WaitLineBreak;
-	say "     You let out a loud moan, probably one of your loudest yet, and grind back even harder against his tongue, fucking yourself on it. It's almost like getting fucked, but somehow better. That dexterous tongue digs into places in ways a cock never could. You're going mad with pleasure as that slimy appendage dances over your [if player is male]prostate[else]insides[end if]. There's not enough energy left for you to control things, and soon you collapse onto his torso, your head right next to his cock. His own head tilts up to get at your ass some more. He is hooked, and you happily squeeze a hand around the base of his knot, rewarding him with pleasure as your own orgasm shoots through you. Soon you [if player is male]fire off shot after shot of cum, plastering the fur along the canine's stomach and lower chest[else]are squirming in ecstasy as your climax surges through you in a blast[end if].";
+	say "     You let out a loud moan, probably one of your loudest yet, and grind back even harder against his tongue, fucking yourself on it. It's almost like getting fucked, but somehow better. That dexterous tongue digs into places in ways a cock never could. You're going mad with pleasure as that slimy appendage dances over your [if Player is male]prostate[else]insides[end if]. There's not enough energy left for you to control things, and soon you collapse onto his torso, your head right next to his cock. His own head tilts up to get at your ass some more. He is hooked, and you happily squeeze a hand around the base of his knot, rewarding him with pleasure as your own orgasm shoots through you. Soon you [if Player is male]fire off shot after shot of cum, plastering the fur along the canine's stomach and lower chest[else]are squirming in ecstasy as your climax surges through you in a blast[end if].";
 	say "     Your efforts at triggering his knot go rewarded as well, with his own seed firing into the air and falling back down on you. It feels like the pitter patter of a heavy storm, a storm of cum. You're marked, and you love it; You grow to love it even more as he works to drag your orgasm out. His tongue still plays over your insides, giving you mind shattering pleasure. He doesn't stop chowing down until that canine cock begins to recede into its sheathe. The canine leans his head back and gives your ass a slap with an open paw. You both then just stay pressed against each other, your head near his cock as his hot breath wafts over your ass. You're sure you will remember this for awhile, and that he no doubt will too. Maybe you've given him something new to think about as well.";
 	WaitLineBreak;
 	say "     You both eventually pry apart, heading off in your own directions. He seems to lick his lips as he watches you depart, a grin then spreading across your face. It serves as yet another reminder of this little adventure.";
@@ -617,7 +617,7 @@ to say gsd_generic_vsex_09: [Chow down on his hole]
 	say "     Your tongue is quick to get to work, lapping at that hole as you breathe in the sweet smell of this male's musk. He smells like a virile man, and you just love it. There's nothing else like that scent, and it spurs you on to dig your tongue even deeper. The wrinkled skin is tight at first, but it loosens in time, giving you more to work with. The flesh spreads open, relaxes, as you begin to poke your tongue at the dead center of this man's hole. You know what you want, and you will get it. That tongue of yours is quick to stab forward, spearing the canine's hole with an inch of your slippery appendage. There's nothing better than breaking open a clean hole with your tongue, and you can't wait to feel this male's needy moans through it. You don't have to wait long for those moans, either. They sound out and fill the area with such desperation, such need, and you're tempted to think this shepherd hasn't gotten any for days. This city wouldn't allow that, but it's quite flattering to know that you have a silver tongue.";
 	WaitLineBreak;
 	say "     You know he's close, you can feel the telltale twitching through his anus. So you take your own needs in hand, playing with yourself as you tongue fuck him with ever more vigor. There's nothing that'll stand between you and making this canine cum, and so you desperately apply every skill you have to get this musky male to his much deserved finish. The twitching grows ever more noticeable as you continue your efforts, and you know there's no stopping now, for either of you. Just as you approach your own orgasm, so does he. His anus tightens around your tongue and grabs hold, keeping you from pulling it out. So you simply wiggle it around, dragging his copious orgasm out even longer. Your own climax shoots through you, forcing you to clinch your eyes shut as your tongue spasms inside this hunk of a canine.";
-	say "     Soon there's a scent of stronger musk than before, a smell of cum, and the virility that comes with it. You then pull your tongue out of his hole, the muscle lax enough now, and simply rest your head on his ass. His tail is wagging lazily over your head, occasionally dusting over your face with its soft fur. That was a job well done, and one you'll enjoy the memories of. A big, muscled german shepherd was turned into a drooling man-toy, and it was all because of you. With a bit of a break, and some rest, you find your energy soon coming back, and you use it to stand once more. The canine below you is snoring like a baby, and so you take this chance to go your own way.";
+	say "     Soon there's a scent of stronger musk than before, a smell of cum, and the virility that comes with it. You then pull your tongue out of his hole, the muscle lax enough now, and simply rest your head on his ass. His tail is wagging lazily over your head, occasionally dusting over your face with its soft fur. That was a job well done, and one you'll enjoy the memories of. A big, muscled German shepherd was turned into a drooling man-toy, and it was all because of you. With a bit of a break, and some rest, you find your energy soon coming back, and you use it to stand once more. The canine below you is snoring like a baby, and so you take this chance to go your own way.";
 	CreatureSexAftermath "German Shepherd Male" receives "Other" from "Player";
 
 [ - Special Player Victory Scenes - ]
@@ -644,20 +644,20 @@ to say gsd_special_vsex_00:
 		now sortorder entry is 3;
 		now description entry is "Pin him down and use his pole as your toy";
 	[]
-	if player is male:
+	if Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Fellatio";
 		now sortorder entry is 4;
 		now description entry is "make the defeated cur suck you off";
 	[]
-	if player is female:
+	if Player is female:
 		choose a blank row in table of fucking options;
 		now title entry is "Cunnilingus";
 		now sortorder entry is 5;
 		now description entry is "Make the defeated cur eat you out";
 	[]
 	choose a blank row in table of fucking options;
-	now title entry is "Hand job";
+	now title entry is "Handjob";
 	now sortorder entry is 6;
 	now description entry is "Jerk him off to burn off some of his excess libido";
 	[]
@@ -686,7 +686,7 @@ to say gsd_special_vsex_00:
 					say "[gsd_special_vsex_03]";
 				else if nam is "Cunnilingus":
 					say "[gsd_special_vsex_04]";
-				else if nam is "Hand job":
+				else if nam is "Handjob":
 					say "[gsd_special_vsex_05]";
 		else if calcnumber is 0:
 			say "Drive him off: Shall you send the arrogant creature packing?";
@@ -861,12 +861,12 @@ to say gsd_special_final_04:
 	NPCSexAftermath Player receives "PussyDildoFuck" from Korvin;
 
 to say gsd_special_final_05:
-	say "     Tired of dealing with this arrogant dog, you grab him roughly by the back of the neck and push him to the ground. Grinding him face against the ground, you snarl down at him. 'I've had enough of you, you mangy cur. I've proven time and tune again your better.' And seeing just the thing for it, you smile. 'It looks like I'm going to have to beat some sense into you.'";
+	say "     Tired of dealing with this arrogant dog, you grab him roughly by the back of the neck and push him to the ground. Grinding his face against the ground, you snarl down at him. 'I've had enough of you, you mangy cur. I've proven time and tune again your better.' And seeing just the thing for it, you smile. 'It looks like I'm going to have to beat some sense into you.'";
 	say "     Grabbing the yellowed newspaper you spotted, you roll it up and give him several smacks on the muzzle with it. 'Bad dog! Bad! Dog!' He whimpers and drops low to the ground, trying to slink away, but you won't have it. Grabbing him by the tail he's tucked between his legs, you pull his ass up into the air and give it several hard swats with the paper roll as well. 'Bad! Dog!' you repeat, giving him a final hard swat on his balls, drawing a satisfying yelp and whimper from him. Releasing his tail, you knock him to the ground with your foot and chase him off with a few more wild swings of the newspaper. 'Go on! Get out of here. I never want to see you again, you flea-bitten mutt.' He scampers away on all fours with his tail tight between his legs and the head he once held so arrogantly high now barely above the ground. You don't expect he'll dare bother you ever again.";
 	now gsd_pet is 100;
 
 to say gsd_special_final_06:
-	say "     Tired of dealing with this arrogant dog, you grab him roughly by the back of the neck and push him to the ground. Grinding him face against the ground, you snarl down at him, throwing harsh words that detail him being too weak and pathetic to make it on his own. Grabbing a yellowed newspaper you spotted, you roll it up and give him several smacks on the muzzle with it, berating him for being a bad dog. He whimpers and drops low to the ground, trying to slink away, but you won't have it. Grabbing him by the tail he's tucked between his legs, you pull his ass up into the air and give it several hard swats with the paper roll as well. Throwing the newspaper on the ground in front of his face, you look down upon the whimpering mess you've reduced the dog to.";
+	say "     Tired of dealing with this arrogant dog, you grab him roughly by the back of the neck and push him to the ground. Grinding his face against the ground, you snarl down at him, throwing harsh words that detail him being too weak and pathetic to make it on his own. Grabbing a yellowed newspaper you spotted, you roll it up and give him several smacks on the muzzle with it, berating him for being a bad dog. He whimpers and drops low to the ground, trying to slink away, but you won't have it. Grabbing him by the tail he's tucked between his legs, you pull his ass up into the air and give it several hard swats with the paper roll as well. Throwing the newspaper on the ground in front of his face, you look down upon the whimpering mess you've reduced the dog to.";
 	say "     He seems about ready to just lie there in the filthy street and wait for it to be over, with you walking off like before. But not this time, as you have other plans. Waiting a short moment to let his situation sink in, you then crouch down next to him and reach out to pet his head. Clearing your throat and striking a far different tone to before, you tell him that he could still make something of himself, or rather let you make something worthwhile of him if he accepts you as a [Master] and Alpha from now on. His defiance worn down after having been put in his place this one final time, he nods and ascents. 'Yes, you're the Alpha now,' he pants. Giving his head a last stroke, then holding out your hand to be licked submissively, you stand up and whistle for him to follow, which he does with a slow but hopeful wag of his tail.";
 	WaitLineBreak;
 	say "[gsd_recruited]";
@@ -898,9 +898,9 @@ When Play begins:
 	add "German Shepherd Male" to infections of BipedalList;
 	add "German Shepherd Male" to infections of TailList;
 	now Name entry is "German Shepherd Male";
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[attk gsd]";
 	now defeated entry is "[beatthegsd]";
 	now victory entry is "[losetogsd]"; [ Text used when monster wins, can be directly entered like combat text or description. or if more complex it can be linked to a 'To Say' block]
@@ -939,16 +939,16 @@ When Play begins:
 	now libido entry is 60; [ Amount libido goes up by if you submit or are defeated by this monster ]
 	now loot entry is "german shepherd male fur";
 	now lootchance entry is 50; [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
 	now CumItem entry is "german shepherd male cum";
-	now TrophyFunction entry is "-";
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]muscled[or]animalistic[at random]";
 	now type entry is "canine"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is "German Shepherd Bitch"; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is "German Shepherd Bitch"; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "gsd"; [ Row used to designate any special combat features, "default" for standard combat. ]
 	now BannedStatus entry is false;
@@ -972,7 +972,7 @@ When Play begins:
 	now Head Adjective entry is "canine"; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is "furred"; [one word descriptive adjective]
 	now Head Color entry is "tan"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 0; [hair length in inches]
 	now Hair Shape entry is "straight"; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is "brown"; [one word color descriptor]
@@ -991,7 +991,7 @@ When Play begins:
 	now Torso Change entry is "tan and black hair sprouts all over it, giving you a shiny coat of dense fur"; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is "covered in a dense coat of [Torso Color of Player] fur"; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is "canine"; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is "furred"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is "tan and black"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -1012,17 +1012,17 @@ When Play begins:
 	now Arms Color entry is "tan"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is "bipedal"; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is "they shift into the digitigrade stance of an anthro German shepherd with dense, tan fur, ending in a pair of paws"; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is "that of an anthro German shepherd, with dense, [Legs Color of Player] fur covering them from your hips down to the clawed paws"; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is "that of an anthro German shepherd, with dense, [Legs Color of Player] fur covering them from your hips down to the clawed paws"; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is "furry"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Change entry is "it becomes fairly narrow and small, with tan fur sprouting over it"; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
-	now Ass Description entry is "ass, covered dense tan fur"; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [ass shape adjective of Player] [ass description of Player]."]
-	now Ass Skin Adjective entry is "furry";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Description entry is "ass, covered dense tan fur"; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]."]
+	now Ass Skin Adjective entry is "furry"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is "tan"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 2; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is "a mid-length canine tail sprouts from your tailbone, soon covered in tan fur"; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is "mid-length tail with [Tail Color of Player] fur"; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is "mid-length tail with [Tail Color of Player] fur"; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is "furry"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is "tan"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 8; [inches deep for anal fucking]
@@ -1035,19 +1035,19 @@ When Play begins:
 	[Cock Girth Adjective is generated by a function and can be used in scenes too: thin/slender/average/thick/monstrous]
 	now Cock Length entry is 9; [length in inches]
 	now Cock Change entry is "it takes on a reddish color and canine shape, complete with a pointy tip, knot at the base and a sheath to protect it"; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is "is [Cock Color of Player] and has a pointy tip and a knot at the base, as well as a sheath to protect it when not erect"; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is "is [Cock Color of Player] and has a pointy tip and a knot at the base, as well as a sheath to protect it when not erect"; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Adjective entry is "canine"; [one word adjective: avian/canine/...]
 	now Cock Color entry is "red"; [one word color descriptor]
 	now Ball Count entry is 2;
 	now Ball Size entry is 2; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is "balls in a furry, snug sack"; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is "balls in a furry, snug sack"; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
 	now Cunt Depth entry is 0; [length in inches]
 	now Cunt Tightness entry is 0;
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Change entry is "it takes on a canine appearance, complete with a clit at the top"; [partial sentence that fits in: "Your groin [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt Change entry]."]
-	now Cunt Description entry is "is [Cunt Color of Player]-colored and shaped like that of a canine bitch, with delicate nether lips and the clit at the top"; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is "is [Cunt Color of Player]-colored and shaped like that of a canine bitch, with delicate nether lips and the clit at the top"; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Adjective entry is "canine"; [one word adjective: avian/canine/...]
 	now Cunt Color entry is "pink"; [one word color descriptor]
 	now Clit Size entry is 2; [size 1-5, see Clit Size Adjective]
@@ -1079,7 +1079,7 @@ german shepherd male cum is infectious. Strain of german shepherd male cum is "G
 Usedesc of german shepherd male cum is "[GermanShepherdMaleCumUse]";
 
 to say GermanShepherdMaleCumUse:
-	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy fluid cum run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
+	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy cum run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
 	PlayerDrink 5;
 	SanLoss 5;
 
@@ -1121,8 +1121,8 @@ When Play begins:
 	now heat duration entry is 2;
 	now trigger text entry is "A sudden throb between your legs catches you off guard, startling a whimper from your throat as you feel a rush of heat between your legs. Nested between your thighs, your canine spade begins to puff up and swell, engorging and becoming looser, a slow but constant seepage of lubricating fluids starting to run down your thigh, making a mess of your [SkinSpeciesName of Player in lower case] flesh. You are in heat, and your body is making it easy for any male to find and impregnate you.";
 	now description text entry is "swollen and dripping German shepherd twat ";
-	now heat start entry is "[gsdheatstart]"; [Events that trigger at the start of the Heat, in the female-GSD case it increases the cunt width]
-	now heat end entry is "[gsdheatend]"; [Events that trigger at the end of the Heat, in the female-GSD case it reduces cunt width]
+	now heat start entry is "[gsdheatstart]"; [Events that trigger at the start of the Heat, in the female-GSD case it increases the cunt tightness]
+	now heat end entry is "[gsdheatend]"; [Events that trigger at the end of the Heat, in the female-GSD case it reduces cunt tightness]
 	now inheat entry is "[defaultheat]"; [This happens each heat cycle, Default is to increase libido by 5]
 	now fheat entry is true;
 	now mpregheat entry is true;

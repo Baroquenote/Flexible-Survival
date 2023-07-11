@@ -23,20 +23,23 @@ to say losetofruitbat:
 	if Player is not female and a random chance of anallevel in 5 succeeds:
 		say "rolls you over onto all fours and grinds his crotch against your backside. Tugging down the front of his colorful speedo, he frees his turgid member and presses it to your crinkled hole. After a few teasing pushes to lightly press against your tight pucker and coax out some precum to lube you up a little, he carries through on the motion and pops his glans into you. You can't help but moan as you feel him enter you smoothly, clearly quite familiar with doing this.";
 		say "     The bat's wings wrap around you as his vestigial hands [if Player is male]take hold of your cock and start stroking you off[else if Breast Size of Player > 2]take hold of your breasts and start teasing your nipples[else]rub across your bare groin[end if] even as he fucks you. His muzzle rubs against the back of your neck before he starts licking along it, sending shivers that originate at the point of contact and run down your spine to the point of penetration in tingles of delight. The bat's thrusts are practiced and steady, your ass certainly not the first this fruit-scented male had his way with. He seems to know just which ways to move and reposition so he's always getting those sweet spots that make you moan. [if HP of Player > 0]Deep in lustful pleasure, you're very glad you decided to relent and let him have his fun[else]Despite your earlier reluctance, you're reduced to a state of lustful pleasure as he has his way with you[end if].";
-		say "     After a [one of]long and drawn out[or]hard and fast[or]hot and heavy[or]sensual[or]vigorous[at random] fuck session, your winged lover drives his cock deep inside you and releases a high-pitched cry of delight. You can feel his hot semen shooting into your ass and tainting you with its delicious heat. [if Player is male]Feeling this, you can't help but cry out yourself and scatter your own seed across the ground[else]Despite your lack of focused release, you do feel a rush of near-orgasmic excitement run through you as your ass is filled[end if]. As he eases his spent shaft from your messy rear, he pulls you into a kiss, thrusting his tongue into your mouth. You moan at the taste of it, reminiscent of fresh [one of]pineapple[or]peaches[or]plums[or]apricots[or]strawberries[or]mangos[or]cherries[at random]. This sweet taste lingers on your lips after he's sent you on your way in a post-orgasmic haze with a smack of your creamy bottom.[mimpregchance]";
+		say "     After a [one of]long and drawn out[or]hard and fast[or]hot and heavy[or]sensual[or]vigorous[at random] fuck session, your winged lover drives his cock deep inside you and releases a high-pitched cry of delight. You can feel his hot semen shooting into your ass and tainting you with its delicious heat. [if Player is male]Feeling this, you can't help but cry out yourself and scatter your own seed across the ground[else]Despite your lack of focused release, you do feel a rush of near-orgasmic excitement run through you as your ass is filled[end if]. As he eases his spent shaft from your messy rear, he pulls you into a kiss, thrusting his tongue into your mouth. You moan at the taste of it, reminiscent of fresh [one of]pineapple[or]peaches[or]plums[or]apricots[or]strawberries[or]mangos[or]cherries[at random]. This sweet taste lingers on your lips after he's sent you on your way in a post-orgasmic haze with a smack of your creamy bottom.";
+		CreatureSexAftermath "Player" receives "AnalFuck" from "Fruit Bat";
 	else if Player is female and a random chance of 1 in 3 succeeds:
 		say "guides you over onto all fours and brushes a fingertip across your wet folds. He teases between your pussy and asshole a few times as he slips off his colorful speedo, as if considering which to take before opting to line up his turgid member with your hot cunny. After grinding his glans against your waiting entrance a little, he carries through on the motion and pops his glans into you. You can't help but moan as you feel him enter you, your body craving more[if HP of Player <= 0] despite your earlier attempts to fight it[end if].";
 		say "     The bat's wings wrap around you as his vestigial hands [if Player is male]take hold of your cock and start stroking you off[else if Breast Size of Player > 2]take hold of your breasts and start teasing your nipples[else]rub along your sides before moving to your damp folds and teasing them[end if] even as he stuffs your needy cunt. His muzzle rubs against the back of your neck before he starts licking along it, sending shivers that originate at the point of contact and run down your spine to the point of penetration in tingles of delight. It takes the bat a little while to set up a good rhythm and angle, but once he settles into it, he proves to be very good at hitting those sweet spots that make you moan. [if HP of Player > 0]Deep in lustful pleasure, you're very glad you decided to relent and let him have his fun[else]Despite your earlier reluctance, you're reduced to a state of lustful pleasure as he has his way with you[end if].";
-		say "     After a [one of]long and drawn out[or]hard and fast[or]hot and heavy[or]sensual[or]vigorous[at random] fuck session, your winged lover drives his cock deep inside you and releases a high-pitched cry of delight. You can feel his hot semen shooting into your pussy, tainting your womb with its delicious heat. Feeling this, you can't help but cry out [if Player is male]yourself and scatter your own seed across the ground as your inner walls milk his shaft for all he'll give[else]in orgasm, your inner walls milking at his shaft for all he'll give[end if]. After he eases his spent shaft from your messy cunny, he quickly moves around to your face and presses his manhood to your lips. Still in a lustful haze, you lick him clean without hesitation. You moan at the wild blueberry taste of the semen still clinging to it along with your own juices. This sweet taste lingers on your lips after he's sent you on your way in a post-orgasmic haze.[fimpregchance]";
+		say "     After a [one of]long and drawn out[or]hard and fast[or]hot and heavy[or]sensual[or]vigorous[at random] fuck session, your winged lover drives his cock deep inside you and releases a high-pitched cry of delight. You can feel his hot semen shooting into your pussy, tainting your womb with its delicious heat. Feeling this, you can't help but cry out [if Player is male]yourself and scatter your own seed across the ground as your inner walls milk his shaft for all he'll give[else]in orgasm, your inner walls milking at his shaft for all he'll give[end if]. After he eases his spent shaft from your messy cunny, he quickly moves around to your face and presses his manhood to your lips. Still in a lustful haze, you lick him clean without hesitation. You moan at the wild blueberry taste of the semen still clinging to it along with your own juices. This sweet taste lingers on your lips after he's sent you on your way in a post-orgasmic haze.";
+		CreatureSexAftermath "Player" receives "PussyFuck" from "Fruit Bat";
 	else:
 		say "pulls you to your knees and grinds his crotch bulge against your face. With his covered manhood right there, the tantalizing fruity scent is stronger and makes your mouth water [if HP of Player > 0]involuntarily a little[else]all the more for it[end if]. Tugging down on the front of his speedo, he frees his turgid member and presses it to your lips. Tasting a mix of predominantly [one of]pineapple[or]peach[or]plum[or]apricot[or]strawberry[or]mango[or]cherry[at random] and blueberry flavors on it, you respond by opening your mouth and plunging over his eight-inch member.";
 		say "     The bat's vestigial hands rub over your head as he thrusts into your mouth. Your tongue, loving his fruity taste, slathered all across it, lapping up his precum while you rub those plump balls of his. '[one of]Mmm... that's it, sweetie. Rub those big plums of mine[or]Oh yeah, keep it up and you'll get your tasty treat[or]Mmm... berries and cream on its way, you horny thing[at random],' he moans. [if HP of Player > 0]You[else]Despite your earlier resistance, you[end if] can't help but respond, working all the harder for the delicious load he has for you as your lustful desires take control.";
-		say "     When the blow job finally becomes too much for him, your winged lover drives his cock fully into your mouth and releases a high-pitched cry of delight. Your mouth is flooded with his hot semen, splattering that blueberry goo across your palate and down your throat. You eagerly gulp it down and keep sucking for more, only releasing him after he's given up the last drops of his delicious spunk. After he eases his spent shaft from your sticky mouth, [if Player is male and a random chance of Libido of Player in 50 succeeds]his eyes are drawn to your own erection[smn] and he pushes you onto your back. Putting his muzzle around your manhood, he licks and sucks at it until his talented tongue soon pushes you over the edge and you feed your [Cum Load Size of Player] load of [CockSpeciesName of Player in lower case] cum to him in return[else]he pulls you into a kiss, thrusting his tongue into your mouth. You moan at the taste of it, fresh [one of]pineapple[or]peaches[or]plums[or]apricots[or]strawberries[or]mangos[or]cherries[at random] mixing with the lingering taste of wild blueberries already on your tongue[end if]. His sweet taste lingers on your lips after he's sent you on your way in a sex-addled haze.";
+		say "     When the blowjob finally becomes too much for him, your winged lover drives his cock fully into your mouth and releases a high-pitched cry of delight. Your mouth is flooded with his hot semen, splattering that blueberry goo across your palate and down your throat. You eagerly gulp it down and keep sucking for more, only releasing him after he's given up the last drops of his delicious spunk. After he eases his spent shaft from your sticky mouth, [if Player is male and a random chance of Libido of Player in 50 succeeds]his eyes are drawn to your own erection[smn] and he pushes you onto your back. Putting his muzzle around your manhood, he licks and sucks at it until his talented tongue soon pushes you over the edge and you feed your [Cum Load Size of Player] load of [CockSpeciesName of Player in lower case] cum to him in return[else]he pulls you into a kiss, thrusting his tongue into your mouth. You moan at the taste of it, fresh [one of]pineapple[or]peaches[or]plums[or]apricots[or]strawberries[or]mangos[or]cherries[at random] mixing with the lingering taste of wild blueberries already on your tongue[end if]. His sweet taste lingers on your lips after he's sent you on your way in a sex-addled haze.";
+		CreatureSexAftermath "Player" receives "OralCock" from "Fruit Bat";
 
 
 to say beatthefruitbat:
 	increase frbatbeaten by 1;
-	if frbatbeaten < 2 or ( player is neuter ):
+	if frbatbeaten < 2 or ( Player is neuter ):
 		say "     Your continued resistance proves to be more than the bat wants to endure in his search for fun. He moves away from you and flaps higher into the air. '[one of]Oh, with an attitude like that, I'm sure you're sour[or]Hey, don't bruise the fruit[or]You are one bad apple[or]You're missing out on some really big, sweet plums[or]You must be rotten to the core to want to spoil my fun[at random],' he says in disgust before banking away and flying off.";
 	else:
 		say "     Your continued resistance proves to be more than the bat wants to endure in his search for fun. But this time you're ready for him and tackle him as he starts to take to the air. Unable to support the weight of both of you, he tumbles [if showlocale is true]onto the sandy beach[else]to the ground[end if] and is pinned beneath you. But you'd reacted without considering why, or even if, you want him at all. Now that you've caught the bat, what shall you do?";
@@ -52,7 +55,7 @@ to say beatthefruitbat:
 			now sortorder entry is 4;
 			now description entry is "suck each other off";]
 			choose a blank row in table of fucking options;
-			now title entry is "Blow job";
+			now title entry is "Blowjob";
 			now sortorder entry is 5;
 			now description entry is "make him suck you off";
 		if Player is female:
@@ -106,18 +109,21 @@ to say frbatsex_01:
 	say "     Already having the bat pinned beneath you, it's easy enough to yank down the back of his speedo and get your cock lined up with his bubble butt. His little hands dig at the [if showlocale is true]soft beach sand[else]ground[end if] as he tries to pull away, though his rear automatically grinds back against your manhood in obvious invitation. Knowing just what this fruity bat needs, you press your glans to his tailhole and [if Cock Length of Player > 20]force your [cock size desc of Player] cock into his sexy ass with a grunt of effort[else if Cock Length of Player > 12]drive your [cock size desc of Player] cock into his sexy ass with a strong thrust[else if Cock Length of Player > 5]push your [cock size desc of Player] cock into his sexy ass with a steady thrust[else]ease your [cock size desc of Player] cock into his sexy ass[end if]. His tight ring opens easily enough for you[if Cock Length of Player > 12] despite your considerable size[end if], showing that the cute bat's no stranger to taking it up the ass.";
 	say "     With his hot rectum squeezing around your [Cock of Player] cock, you pound away at him with a grin on your face. You reach into the front of his swimsuit and play with his junk, finding him rock hard. You free his plump shaft and start stroking it, enjoying the soft moans of delight the bat gives. Feeling more excited and playful as you screw him, you settle into a steady pace and take your time enjoying his sexy bod.";
 	say "     By the time you're ready to cum, you've gotten the poor bat quite worked up as well. In the end, all it takes is for you to drive your shaft deep inside that sexy bottom of his and start pumping your [Cum Load Size of Player] load into him for him to cry out in ecstasy and cum as well. A deliciously fruity scent wafts up from his splattered cum and you can't resist stealing a sample of it, enjoying its blueberry flavor. When you're finished up, you pull your cock from his creamy ass, give it a swat and pull his speedo back up, leaving your messy load to pool around his ass and leak out around the edges even as the thoroughly fucked bat flies off now that he's had his fun.";
+	CreatureSexAftermath "Fruit Bat" receives "AnalFuck" from "Player";
 
 to say frbatsex_02:
 	setmonster "Fruit Bat";
 	say "     Having the bat pinned beneath you, it's easy enough to force the worn boytoy into the position you want. Groping that package of his, you find him still semi-hard and quickly get him back to full erection once you yank down that speedo and start stroking him. You lower your juicy cunt down overtop of his large cock, taking [if Cunt Depth of Player < 8]as much of his eight inches as you can get[else]the full length of his eight inches[end if] into your [cunt size desc of Player] pussy with a soft moan of delight. He releases a pleasured cry as well and starts thrusting up into you even as you ride his pulsing pole.";
 	say "     As he gets into it, you don't have to worry about holding him down and can instead pull his little wing hands to your [if Breast Size of Player > 0]breasts so they can be played with as well[else][bodytype of Player] chest so it can be caressed[end if][if Player is male]. He eyes your cock longingly, his long tongue licking across his rather vulpine muzzle, but you keep his hands at your chest[end if]. You have your way with the boytoy's cock, riding it for all its worth. Being on top and in control, you adjust the pace and position as needed for your own pleasure, making the most out of the hot and juicy fucking.";
-	say "     When you climax and your cunt clamps down around his shaft in spasms of ecstasy, the bat's not long to follow, spraying his own load into you. You pull off of him even as he's still cumming and pump the last few shots of his berry-scented cum across your crotch and his belly. Your fun over, you pull the colorful swimsuit back over his crotch with an elastic snap onto his oversensitive shaft, making him whimper cutely. You give his ass a final swat and send him on his way.[fimpregchance]";
+	say "     When you climax and your cunt clamps down around his shaft in spasms of ecstasy, the bat's not long to follow, spraying his own load into you. You pull off of him even as he's still cumming and pump the last few shots of his berry-scented cum across your crotch and his belly. Your fun over, you pull the colorful swimsuit back over his crotch with an elastic snap onto his oversensitive shaft, making him whimper cutely. You give his ass a final swat and send him on his way.";
+	CreatureSexAftermath "Player" receives "PussyFuck" from "Fruit Bat";
 
 to say frbatsex_03:
 	setmonster "Fruit Bat";
 	say "     Having the bat pinned beneath you, it's easy enough to force the worn boytoy into the position you want. Groping that package of his, you find him still semi-hard and quickly get him back to full erection once you yank down that speedo and start stroking him. You lower your crinkled hole down overtop of his large cock and he gives a high-pitched chirp of pleasure as his eight incher sinks into your [if scalevalue of Player < 3]tight[else if scalevalue of Player is 3]sexy[else]large[end if] ass. You release a soft moan of delight as he starts thrusting up into you, meeting your downward pushes eagerly.";
 	say "     With him clearly getting into it, you don't have to worry about holding him down and can instead pull his little wing hands to your [if Player is male]throbbing cock[smn] for him to play with. He works them over with an eagerness and familiarity of someone who's had plenty of experience pleasing other males[else if Breast Size of Player > 0]breasts for him to play with[else][bodytype of Player] chest so it can be caressed[end if][if Player is female]. You slip a hand between your thighs to play with your pussy while the bat's rod stuffs your asshole[end if]. You have your way with the boytoy's cock, riding it for all its worth. Being on top and in control, you adjust the pace and position as needed for your own pleasure, making the most out of the hot, tight fucking[if Player is male] by ensuring it pounds right into your prostate[end if].";
-	say "     When you reach orgasm and your rectum clamps down around his shaft in spasms of ecstasy, the bat's not long to follow. He sprays his load onto your bowels even as you [if Player is herm]coat his chest with your [Cum Load Size of Player] load and your feminine juices soak his crotch[else if Player is male]coat his chest with your [Cum Load Size of Player] load[else]soak his crotch with your feminine juices[end if]. You pull off of him even as he's still cumming and pump the last few shots of his berry-scented cum across your groin and his tummy[if Player is male], adding to your own mess[end if]. Your fun over, you pull the colorful swimsuit back over his crotch with an elastic snap onto his oversensitive shaft, making him whimper cutely. You give his ass a final swat and send him on his way.[mimpregchance]";
+	say "     When you reach orgasm and your rectum clamps down around his shaft in spasms of ecstasy, the bat's not long to follow. He sprays his load onto your bowels even as you [if Player is herm]coat his chest with your [Cum Load Size of Player] load and your feminine juices soak his crotch[else if Player is male]coat his chest with your [Cum Load Size of Player] load[else]soak his crotch with your feminine juices[end if]. You pull off of him even as he's still cumming and pump the last few shots of his berry-scented cum across your groin and his tummy[if Player is male], adding to your own mess[end if]. Your fun over, you pull the colorful swimsuit back over his crotch with an elastic snap onto his oversensitive shaft, making him whimper cutely. You give his ass a final swat and send him on his way.";
+	CreatureSexAftermath "Player" receives "AnalFuck" from "Fruit Bat";
 
 to say frbatsex_04:
 	say "***69";
@@ -147,7 +153,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Fruit Bat"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Fruit Bat"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Fruit Bat" to infections of FurryList;
 	add "Fruit Bat" to infections of NatureList;
 	add "Fruit Bat" to infections of MaleList;
@@ -155,9 +161,9 @@ When Play begins:
 	add "Fruit Bat" to infections of FlightList;
 	add "Fruit Bat" to infections of TailList;
 	now Name entry is "Fruit Bat"; [ Infection/Creature name. Capitalized. ]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "The [one of]bat[or]fruit bat[or]blue bat[as decreasingly likely outcomes] [one of]buffets you with his wings[or]claws at you with his taloned fingers[or]claws at you with his taloned feet[or]wraps his wings round you tightly and gropes your [if Breast Size of Player > 0 and a random chance of 1 in 4 succeeds]tits[else]groin[end if][at random].";
 	now defeated entry is "[beatthefruitbat]"; [ Text when monster loses. ]
 	now victory entry is "[losetofruitbat]"; [ Text when monster wins. ]
@@ -190,22 +196,22 @@ When Play begins:
 	now Breast Size entry is 0; [ Size of breasts the infection will try to attain (corresponds to letter cup size). ]
 	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
 	now Cunt Count entry is 0; [ The number of cunts the infection will try to cause if sex entry is 'Female' or 'Both'. ]
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	now SeductionImmune entry is false;
 	now libido entry is 60; [ Target libido the infection will rise towards. ]
 	now loot entry is "tasty peach"; [ Dropped item, blank for none. Case sensitive. ]
 	now lootchance entry is 20; [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]slender[or]winged[at random]";
 	now type entry is "[one of]bat-like[or]chiropteran[at random]";
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 2; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
@@ -217,7 +223,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -229,7 +235,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -248,7 +254,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -269,18 +275,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -294,19 +300,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]

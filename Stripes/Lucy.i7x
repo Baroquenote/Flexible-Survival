@@ -31,10 +31,45 @@ Table of GameCharacterIDs (continued)
 object	name
 Lucy	"Lucy"
 
-Lucy is a woman.
+Lucy is a man.
+ScaleValue of Lucy is 3. [human sized]
+SleepRhythm of Lucy is 0. [0 - awake at all times, 1 - day active, 2 - night active]
+Body Weight of Lucy is 4. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
+Body Definition of Lucy is 3. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
+[Body Adjective is generated out of the body weight and body definition and can be used in scenes - one word descriptive adjective depending on weight and definition groups: low weight group: skinny/slender/lithe; mid weight group: average/fit/muscled; high weight group: pudgy/husky/jacked]
+Androginity of Lucy is 8. [Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/somewhat effeminate/effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
+Mouth Length of Lucy is 7. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
+Mouth Circumference of Lucy is 3. [mouth circumference 1-5, "tiny, small, normal, wide, gaping"]
+Tongue Length of Lucy is 7. [length in inches]
+Breast Size of Lucy is 4. [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+Nipple Count of Lucy is 2. [count of nipples]
+Asshole Depth of Lucy is 8. [inches deep for anal fucking]
+Asshole Tightness of Lucy is 2. [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+Cock Count of Lucy is 0. [number of cocks]
+Cock Girth of Lucy is 0. [thickness 1-5, thin/slender/average/thick/monstrous]
+Cock Length of Lucy is 0. [Length in Inches]
+Ball Count of Lucy is 0. [allowed numbers: 1 (uniball), 2 or 4]
+Ball Size of Lucy is 0. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
+Cunt Count of Lucy is 1. [number of cunts]
+Cunt Depth of Lucy is 6. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Tightness of Lucy is 2. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+Clit Size of Lucy is 3. [size 1-5, very small/small/average/large/very large]
+[Basic Interaction states as of game start]
+PlayerMet of Lucy is false.
+PlayerRomanced of Lucy is false.
+PlayerFriended of Lucy is false.
+PlayerControlled of Lucy is false.
+PlayerFucked of Lucy is false.
+OralVirgin of Lucy is false.
+Virgin of Lucy is false.
+AnalVirgin of Lucy is true.
+PenileVirgin of Lucy is true.
+SexuallyExperienced of Lucy is true.
+TwistedCapacity of Lucy is false. [Twisted Characters can take any penetration, no matter the size]
+Sterile of Lucy is false. [steriles can't knock people up]
+MainInfection of Lucy is "Slut Rat".
 Description of Lucy is "[lucydesc]".
 Conversation of Lucy is { "Hey baby!" }.
-
 the scent of Lucy is "The rat girl smells of perfume and nail polish.".
 
 to say lucydesc:
@@ -87,16 +122,16 @@ to say sexwithLucy:
 			now title entry is "Fuck Lucy";
 			now sortorder entry is 1;
 			now description entry is "Have sex with your sexy rat girlfriend.";
-			if BodyName of Player is "Skunkbeast Lord" and the player is pure:
+			if BodyName of Player is "Skunkbeast Lord" and the Player is pure:
 				choose a blank row in table of fucking options;
 				now title entry is "Skunkbeast fucking";
 				now sortorder entry is 2;
 				now description entry is "Show your ratty girlfriend a bit of your wild side.";
 		if Player is male:
 			choose a blank row in table of fucking options;
-			now title entry is "Blow job";
+			now title entry is "Blowjob";
 			now sortorder entry is 3;
-			now description entry is "Let Lucy give you a blow job.";
+			now description entry is "Let Lucy give you a blowjob.";
 		choose a blank row in table of fucking options;
 		now title entry is "Lick Lucy";
 		now sortorder entry is 4;
@@ -132,7 +167,7 @@ to say sexwithLucy:
 					now sextablerun is 1;
 					if nam is "Fuck Lucy":
 						say "[lucysex1]";
-					else if nam is "Blow job":
+					else if nam is "Blowjob":
 						say "[lucysex2]";
 					else if nam is "Lick Lucy":
 						say "[lucysex3]";
@@ -151,10 +186,10 @@ to say sexwithLucy:
 		clear the screen and hyperlink list;
 
 to say lucysex1:
-	if the remainder after dividing Libido of Lucy by 3 is 0 and BodyName of Player is not listed in infections of Taurlist:
+	if the remainder after dividing Libido of Lucy by 3 is 0 and BodyName of Player is not listed in infections of TaurList:
 		say "     Feeling in the mood to screw the sexy rat girl, you push her down onto the nest, running your hands along her sides as you snuggle up to her. She runs her nimble paws over your [bodytype of Player] body and has you roll onto your back. She leans overtop you and gives you a wild kiss as she moves atop you. She grinds her hips down over yours, causing your [cock size desc of Player] [Cock of Player] cock to twitch in anticipation. With a graceful shift of her hips forward and then back, she gets your glans lined up with her wet folds and pushes herself slowly down onto you, causing you both to moan into the kiss.";
 		say "     As she rides your hard rod, she switches from kissing you to nuzzling and nibbling at your neck and shoulder. Your hands meanwhile move to [one of]her breasts to stroke those softly-furred globes and rub her perky nipples[or]her ass, squeezing her rear and scritching the base of her tail[purely at random], much to your girlfriend's delight. The scent and sounds of rat lust grows stronger, exciting your senses and driving you to thrust up into her as she rides you until you finally cum hard, blasting your hot load into her [if Cock Length of Player > 20]over-stuffed [else if Cock Length of Player > 12]stuffed [end if]cunt, sending her over the edge into orgasm as well[if Ball Size of Player > 5]. Your enlarged balls empty their large load into your sexy girl, stuffing her belly enough that your cum leaves her slender belly visibly rounded. After she slides off your spent shaft, she snuggles up beside you, rubbing this bulge with a contented smile. 'Mmm, what a stud,' she moans[else]. Your balls empty their load into your sexy girl as you kiss and lick at one another. After she slides off your spent shaft and snuggles up beside you, she smiles contentedly and strokes her tummy. 'Mmm, that was great, loverboy,' she moans[end if]. After some more snuggling and kissing (as well as some licking to get you [']cleaned up[']), you head back out into the mall together.";
-	else if the remainder after dividing Libido of Lucy by 3 is 1 and BodyName of Player is not listed in infections of Taurlist:
+	else if the remainder after dividing Libido of Lucy by 3 is 1 and BodyName of Player is not listed in infections of TaurList:
 		say "     Feeling in the mood to screw the sexy rat girl, you pull her down into the nest atop you. You run your hands over her sexy body while she strokes your cock to full hardness. Once she's gotten you ready, she has you roll onto your back and she straddles your hips sideways. With her right leg going across your right hip and against your side, she gets her other leg tucked under your other leg. Glancing back at you, she lowers herself into position, sinking herself slowly down onto your [cock size desc of Player] [Cock of Player] shaft. She grins down at you as she pushes down a little further, clearly enjoying this exotic position.";
 		say "     With her straddling your hips, she gets to set the pace as she begins to ride your [cock size desc of Player] cock while you get a fine view of her sexy profile as she does. Raising your hand puts it on her lovely bottom, letting you rub her tail and beautiful ass while she rides you[if anallevel is 3]. You slip your hand under that tail and start teasing her tailhole, slipping a pair of fingers into it as she moans in delight[end if]. Raising your right leg, your inner thigh rubs against her [if Cock Length of Player > 20]over-stuffed [else if Cock Length of Player > 12]stuffed [end if]crotch. As Lucy's excitement quickly builds, she rides harder and faster, giving her hips little twists and turns that cause delightful quivers of her pussy around your cock. With a hard push down and some final gyrations, her pussy clamps down around you and your crotch is soaked in her juices as she cums with a loud cry of ecstasy. You grab her ass hard and moan as well, pumping your hot seed into your ratty girlfriend[if Ball Size of Player > 5]. Your enlarged balls empty their large load into your sexy girl, stuffing her belly enough that your cum leaves her slender belly visibly rounded. After you withdraw, she moans and pants, rubbing this bulge with a contented smile. 'Mmm, what a stud,' she moans[else]. Your balls empty their load into your sexy girl as you kiss and lick at one another. After you withdraw, she smiles contentedly up at you. 'Mmm, that was great, loverboy,' she moans[end if]. After some more snuggling and kissing (as well as some licking to get you [']cleaned up[']), you head back out into the mall together.";
 	else:
@@ -165,7 +200,7 @@ to say lucysex1:
 
 to say lucysex2:
 	say "     Deciding you want to feel the rat's talented muzzle around your cock, you gently push her to her knees with one hand and stroke your [if Player is male]cock[else]cocks[end if] with the other. Seeing your cock offered up to her, she grins up at you and licks slowly across your [cock size desc of Player] [Cock of Player] shaft while fondling your ballsack with the other[if Cock Length of Player > 20]. 'Oh my, you are a big boy. This is going to take some work,' she squeaks as she keeps licking, working to get the whole of your [cock size desc of Player] cock slick before continuing[else if Cock Length of Player > 10 or Ball Size of Player > 4]. 'Mmm... I'm looking forward to this,' she squeaks as licks it all over before continuing[else if Cock Length of Player > 5]. 'Mmm... let me take care of this, sweetie,' she squeaks as she runs her tongue along its underside before continuing[else]. 'It's not much, but let's see if we can't still have some fun,' she squeaks as her tongue plays across your underwhelming cock[end if][if Player is female]. As her muzzle sinks down over your now throbbing erection, her paw moves a little further to start teasing your juicy cunt and pumping into your wet folds[else]. As her muzzle sinks down over your now throbbing erection, she gives your balls a playful squeeze as the horny rat thirsts for their creamy contents[end if].";
-	say "     Lucy makes the most of her elongated muzzle, tongue and even her ratty teeth to pleasure you, working over it with both experience and eagerness that makes for a wonderful blow job. You stroke her head and caress her ears, moaning down to her about how great it feels and how sexy she is[if Cock Length of Player > 24]. Your enlarged maleness takes some added effort from your eager girl, but eventually she gets it stuffed into her muzzle and down her throat[end if][if Player is male]. Presented with multiple cocks to enjoy, Lucy swaps between them from time to time, using her free paw to stroke them when not in her muzzle[end if]. As she blows you, she has her smooth tail playing between her legs, rubbing at her wet folds at first, but later even stuffing a few inches of it into her cunt. Watching her sexy ass wiggle as she stuffs a little more of her tail into herself proves to be too much and you release a squeaking groan, cumming hard right down your girlfriend's throat, much to her obvious delight. Even as she's gulping it down, she releases muffled moans and her hips quiver all the more as she cums around her own tail[if Ball Size of Player > 5]. Your oversized balls provide a huge load of cum for the sexy girl, which she eagerly swallows all down until you're drained and her usually slender waist is rounded by her creamy meal. After sliding her muzzle off your shaft with a few parting licks, she grins up at you. 'Mmm... tasty and filling...' she moans[else]. Your balls give up their load for the sexy girl, which she eagerly swallows down until you're drained. After sliding her muzzle off your shaft with a few parting licks, she grins up at you. 'Mmm... tasty...' she moans[end if]. You snuggle together for a while, which includes you licking her damp thighs, pussy and tail clean, you head back out into the mall together.";
+	say "     Lucy makes the most of her elongated muzzle, tongue and even her ratty teeth to pleasure you, working over it with both experience and eagerness that makes for a wonderful blowjob. You stroke her head and caress her ears, moaning down to her about how great it feels and how sexy she is[if Cock Length of Player > 24]. Your enlarged maleness takes some added effort from your eager girl, but eventually she gets it stuffed into her muzzle and down her throat[end if][if Player is male]. Presented with multiple cocks to enjoy, Lucy swaps between them from time to time, using her free paw to stroke them when not in her muzzle[end if]. As she blows you, she has her smooth tail playing between her legs, rubbing at her wet folds at first, but later even stuffing a few inches of it into her cunt. Watching her sexy ass wiggle as she stuffs a little more of her tail into herself proves to be too much and you release a squeaking groan, cumming hard right down your girlfriend's throat, much to her obvious delight. Even as she's gulping it down, she releases muffled moans and her hips quiver all the more as she cums around her own tail[if Ball Size of Player > 5]. Your oversized balls provide a huge load of cum for the sexy girl, which she eagerly swallows all down until you're drained and her usually slender waist is rounded by her creamy meal. After sliding her muzzle off your shaft with a few parting licks, she grins up at you. 'Mmm... tasty and filling...' she moans[else]. Your balls give up their load for the sexy girl, which she eagerly swallows down until you're drained. After sliding her muzzle off your shaft with a few parting licks, she grins up at you. 'Mmm... tasty...' she moans[end if]. You snuggle together for a while, which includes you licking her damp thighs, pussy and tail clean, you head back out into the mall together.";
 
 to say lucysex3:
 	say "     In the mood to lavish some attention on your sexy girl, you lower yourself to your knees between her legs, kissing and licking as you go. Aside from a brief pause at her breasts and another at her pierced navel, you move quickly towards your goal, that juicy muff of hers. She gives a squeak of pleasure as you spread her folds with your fingers and run your tongue slowly over her sensitive cunny and clit. 'Mmm... baby, you know how to treat a girl right,' she says, running her paws over your head and flipping her tail around your back in a loose hug. You smile up to her, saying that a sexy girl like her deserves a treat like this before diving back in, tongue lapping over her increasingly wet folds and slipping inside her to make her moan all the more. You take your time, alternating between licking and fingering her quivering hole until she's forced to lean onto your shoulders to even stay upright. With the arousing scent of her feminine rat juices soaking your face and flowing over your tongue, she cums hard as you finger and lick her through a long orgasm. Left panting and woozy, but very content, Lucy flops down onto the bedding with a long sigh of pleasure. You snuggle together for a while, during which you [if Player is male]stroke yourself off onto her soft fur, which you then have fun helping her clean up[else]finger yourself to orgasm while she sucks your nipples[end if]. After that, you head back out into the mall together.";
@@ -190,7 +225,7 @@ to say lucysex7:
 	say "     Feeling in the mood to go wild with the sexy rat girl, you push her down onto the nest and move your big, skunk body over her with a playful growl. She gives an appreciative 'Oooo!' as she runs her paws over your big, strong body. 'Mmm... you're quite the [if skrp is 1]strange [end if]beast now, aren't you?' she says as she runs her paws through the fur of your underbelly[if skrp is 1]. Your additional skunk girl head gives a happy chirr and asks for a kiss. Lucy, always willing to make out with another girl, shares a tongue-filled kiss with your lustful co-inhabitor while your grind your monstrous body and throbbing erection down onto the pretty rat[else]. This gets you excited further and you grind your monstrous body and throbbing erection down onto the pretty rat girl[end if].";
 	say "     Feeling you hard and ready, Lucy turns herself around to start by licking and kissing your cock while laying underneath your animalistic body. Her skillful tongue plays along it in licks and swirls that quickly have you leaking pre[if skrp is 1]. Your added skunk head is delighted to find this leaves the rat girl's juicy cunny within reach and happily exchanges French kissing for pussy licking. Lucy's happy moans and the grinding of her hips up show she's enjoying this as well[end if]. You rumble in pleasure as your ratty girlfriend lavishes attention upon your [cock size desc of Player] black cock while fondling your [if Ball Size of Player > 5]huge [else if Ball Size of Player > 4]big [else if Ball Size of Player > 2]plump [end if]balls. Your excited rumbling grows louder and deeper as she takes your drooling rod past her lips and into her mouth, letting you fuck her muzzle with sharp thrusts[if Cock Length of Player > 24]. And while it is a little slow to get your mighty cock into her muzzle at first, your thrusting eventually gets it stuffed into her muzzle and down her throat[end if].";
 	WaitLineBreak;
-	say "     You enjoy this beastly blow job for a few minutes, but you came her to fuck your rat, and fuck her you will. Very aroused by this point, you pull your [cock size desc of Player] cock free of her sucking maw and manhandle her onto all fours. Your mephit body climbs atop the smaller rat girl and you quickly drive your pulsing rod into the warm depths of her cunt. She releases a loud, lustful squeak as you penetrate her. 'Oh yeah! Fuck me hard, you beast!' she cries, steadying herself as firmly as she can while pushing her ass back and up. You don't hold back, pounding her hard and fast, driving your midnight black shaft into her juicy cunny over and over again. The wild, animalistic fucking makes quite the mess of the rat girl's nest as she's slowly pushed forward by the rough mating by her bestial lover. She doesn't seem to mind though, her vagina squeezing all the tighter around you during this stronger thrusts. The musky scent of your arousal fills the air as your energetic mating continues.";
+	say "     You enjoy this beastly blowjob for a few minutes, but you came her to fuck your rat, and fuck her you will. Very aroused by this point, you pull your [cock size desc of Player] cock free of her sucking maw and manhandle her onto all fours. Your mephit body climbs atop the smaller rat girl and you quickly drive your pulsing rod into the warm depths of her cunt. She releases a loud, lustful squeak as you penetrate her. 'Oh yeah! Fuck me hard, you beast!' she cries, steadying herself as firmly as she can while pushing her ass back and up. You don't hold back, pounding her hard and fast, driving your midnight black shaft into her juicy cunny over and over again. The wild, animalistic fucking makes quite the mess of the rat girl's nest as she's slowly pushed forward by the rough mating by her bestial lover. She doesn't seem to mind though, her vagina squeezing all the tighter around you during this stronger thrusts. The musky scent of your arousal fills the air as your energetic mating continues.";
 	say "     You cum hard with a loud growl, with the rat girl crying out beneath you[if skrp is 1] and your lower skunk head even joining in[end if] as you climax together[if Ball Size of Player > 5]. Your enlarged balls empty their large, beastly load into your sexy girl, stuffing her belly enough that your cum leaves her slender belly visibly rounded[else]. Your mephit balls empty their beastly load into your sexy girl[end if]. Once you're finished, you stay straddles over her and leave your skunk cock buried in her for some time, leaving you to enjoy the sensation of your cock buried in her cum-filled cunt. 'Mmm... I knew you'd be a beast in the sack when I first saw you, but that was even better than I'd imagined,' she says with a soft, teasing giggle. When you do pull out, she makes sure to lick your sticky cock clean before getting up. Her nose does wrinkle up when she notices that your musky scent is still clinging to her fur and she adds a fresh spritz of perfume to ward it off.";
 
 

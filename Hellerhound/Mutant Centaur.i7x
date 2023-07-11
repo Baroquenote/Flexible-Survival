@@ -73,7 +73,7 @@ To say Mutant Centaur Loses:
 	if Libido of Player < 50:
 		say "     The centaur groans, falling onto its face as you strike the final blow. An apple spills out of the pack on its back.";
 		ItemGain fresh apple by 1;
-	if Libido of Player > 50 and player is male:
+	if Libido of Player > 50 and Player is male:
 		say "     The centaur is lying on the ground with its tail skewed off to the side, is the perfect target for your [Cock of Player] maleness. You sidle up behind the centaur, ignored by it in the pain and embarrassment of loss, and slowly insert your cock.";
 		WaitLineBreak;
 		say "     The centaur starts as it realizes what you are doing, and two green tentacles, covered with bumps, raise out from under the body of the centaur.";
@@ -95,7 +95,7 @@ To say Mutant Centaur Loses:
 			CreatureSexAftermath "Mutant Centaur" receives "AssFuck" from "Player";
 			now Libido of Player is 0;
 			SanLoss 4;
-	if Libido of Player > 50 and Cock Count of Player is 0 and player is female:
+	if Libido of Player > 50 and Cock Count of Player is 0 and Player is female:
 		say "     The centaur groans and falls to the ground, his legs crumpling and shoving him onto his side. You get a good view of a massive, green cock with vine-like bumps on the shaft. Its sheath is a darker green, and a matching ball sack hangs down half a foot from the powerful member, two giant round forms stretching the skin. What really gets to you is the two tentacles, like growths, that sprout from stump-like protrusions of the base of its sheath.";
 		if humanity of Player < 40:
 			say "     The sight of those tentacles drives you insane with lust. You grab them and stuff them into your mouth, working your throat to get them down. They then come alive, wriggling down your stomach, into your small intestine, and then out of your hole, causing pain that when mixed with your lust turns to pleasure. The tentacles then enter your pussy, and begin to stimulate it with their wriggling. You are immobilized by the feeling of those long tendrils pumping in and out of more holes in your body than any cock could fuck, and it doesn't take long to come to climax. You cum hard, juices running out of your cunt and pushing the tendrils out with it. Then you hear a moan, and the centaur climaxes, spraying thick green seed all over the dusty ground and its underside. The tendrils retract from your body, and you leave the centaur, accepting an apple that it offers you.";
@@ -205,7 +205,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Centaur"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Centaur"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Mutant Centaur" to infections of EquineList;
 	add "Mutant Centaur" to infections of FurryList;
 	add "Mutant Centaur" to infections of MythologicalList;
@@ -214,22 +214,22 @@ When Play begins:
 	add "Mutant Centaur" to infections of SheathedCockList;
 	add "Mutant Centaur" to infections of TaurList;
 	add "Mutant Centaur" to infections of TailList;
-	now Name entry is "Mutant Centaur"; [Name of your new Monster]
-	now enemy title entry is "Mutant Centaur"; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now Name entry is "Mutant Centaur";
+	now enemy title entry is "Mutant Centaur"; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The Centaur punches your face with its hand[or]The Centaur headbutts you[or]The Centaur's green tentacles rise from under him and slap you[or]The Centaur rears up and slams you with his one of its hooves[at random]!";
 	now defeated entry is "[Mutant Centaur Loses]";
 	now victory entry is "[Mutant Centaur Wins]";
 	now desc entry is "[Mutant Centaur Desc]"; [ Description of the creature when you encounter it.]
-	now face entry is "human, with horse ears"; [ Face description, format as "Your face is (your text)"]
+	now face entry is "human, with horse ears"; [ Face description, format as "Your face is [Face of Player]." ]
 	now body entry is "that of a centaur, with a muscled, human upper torso. Your body has well-defined muscles, but they seem a little strange and don't quite move right. Your arms are strong and muscular, and roughly human in appearance as well. Your lower body is that of a horse, with a muscular equine form and slender legs leading to a set of bottle green hooves";
-	now skin entry is "human on your upper body and blending smoothly into black horsehair on your bottom half to cover your"; [ skin Description, format as "Looking at yourself, your body is covered in (your text) skin"]
+	now skin entry is "human on your upper body and blending smoothly into black horsehair on your bottom half to cover your"; [ Skin Description, format as "Looking at yourself, your body is covered in [Skin of Player] skin." ]
 	now tail entry is "You have a green, flowing tail like a horse coming from just above your behind. It wriggles and squirms unlike a horsetail though, moving more like a tentacle.";
 	now cock entry is "[one of]green and equine[or]equine and tentacled[or]bumped and tentacled[or]bumped and equine[or]green and bump-covered[at random]";
-	now face change entry is "your ears become longer and grow fur, changing shape to become like a horse's"; [ face change text. format as "Your face feels funny as (your text)." ]
-	now body change entry is "your body grows muscled at the bottom, and your legs change into those of a horse. Your muscles grow and shift, moving into slightly different positions. Your breasts feel odd, and it seems like most of their girth is inside of you"; [ body change text. format as "Your body feels funny as (your text)." ]
-	now skin change entry is "the skin below your abdomen grows black fur, melding smoothly into the human skin above"; [ skin change text. format as "Your skin feels funny as (your text)." ]
+	now face change entry is "your ears become longer and grow fur, changing shape to become like a horse's"; [ Face change text, format as "Your face feels funny as [face change entry]." ]
+	now body change entry is "your body grows muscled at the bottom, and your legs change into those of a horse. Your muscles grow and shift, moving into slightly different positions. Your breasts feel odd, and it seems like most of their girth is inside of you"; [ Body change text, format as "Your body feels funny as [body change entry]." ]
+	now skin change entry is "the skin below your abdomen grows black fur, melding smoothly into the human skin above"; [ Skin change text, format as "Your skin feels funny as [skin change entry]." ]
 	now ass change entry is "a twitching quiver runs down your spine as it extends and grows a green horse's tail";
 	now cock change entry is "it spasms in orgasm, spraying out all its cum until dry as it shrinks and looks like it is dead, your balls shrunken and crinkling. They do not look like they were meant to be. Your cock becomes twisted and deformed as it's infested by the strange infection. It turns green and equine in shape with bumps covering it and tentacles growing out of two bulges along its sheath"; [ cock change text. format as "Your cock feels funny as (your text)." ]
 	now str entry is 22;
@@ -238,10 +238,10 @@ When Play begins:
 	now per entry is 13;
 	now int entry is 14;
 	now cha entry is 14;
-	now sex entry is "Female"; 	[ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now sex entry is "Female"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
 	now HP entry is 45;
 	now lev entry is 6; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you lose ]
-	now wdam entry is 8; [Amount of Damage monster Does when attacking.]
+	now wdam entry is 8; [ Amount of Damage monster Does when attacking. ]
 	now area entry is "Nowhere"; [ Current options are 'Outside' and 'Mall'. Case sensitive]
 	now Cock Count entry is 1; [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
 	now Cock Length entry is 24; [ Length infection will make cock grow to if cocks]
@@ -255,17 +255,17 @@ When Play begins:
 	now SeductionImmune entry is false;
 	now libido entry is 80; [done in the loss/win text]		[ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
 	now loot entry is "fresh apple";
-	now lootchance entry is 20;        [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now lootchance entry is 20; [ Percentage chance of dropping loot, from 0-100. ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 4; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]muscular[or]centaur[or]corrupted[at random]";
 	now type entry is "centaur"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false; [ Bypasses Researcher bonus? true/false (almost invariably false) ]
 	now non-infectious entry is true; [ Is this a non-infectious, non-shiftable creature? True/False (usually false) ]
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "hoofstomp"; [ Row used to designate any special combat features, "default" for standard combat. ]
 	now BannedStatus entry is false;
@@ -277,7 +277,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -289,7 +289,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -308,7 +308,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -329,18 +329,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -354,19 +354,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -398,9 +398,9 @@ This is the Mutant Centaur Infection rule:
 		trigger ending "Mutant Centaur Infection";
 		if humanity of Player < 10:
 			say "     As your new, tainted instincts take over, you are drawn back to the plains to join the growing herd of corrupted centaurs in their fight to spread their infection to the others";
-			if centaurmate is 1 and player is female:
+			if centaurmate is 1 and Player is female:
 				say ". You are welcomed by your powerful mate, the first and strongest of the herd. Being the first of his tainted mares, you are given a place above the others and fucked often. You bear him many children, each time becoming more like him until you look as if you were made for each other, as indeed you were[if Player is male]. You are allowed to keep your cock and use it often to corrupt captured centaurs or to punish any in the herd who deserve discipline[end if]. Over time, you conquer and corrupt the other herds, turning them into sex slaves of yours. You then spread your growing people out into the world at large to infest them with your gifts, by force if necessary.";
-			else if centaurmate is 1 and player is male:
+			else if centaurmate is 1 and Player is male:
 				say ". You are welcomed by the herd's powerful leader, the first and strongest of the herd. Being the first he corrupted, you are given a place above the others and made into his lieutenant. He is a little disappointed that you did not return to him as a mare, but instead prepares you a special mash of tainted apples and his cum, which makes your cock grow into an impressive stallion's like his. You are allowed to use it often to corrupt captured centaurs and to punish any in the herd who deserve discipline. Over time, you conquer and corrupt the other herds, turning them into sex slaves of yours. You then spread your growing people out into the world at large to infest them with your gifts, by force if necessary.";
 			if centaurmate is 2:
 				say ". Having initially rejected the first mutant centaur's offer, you are punished for your lack of willingness to accept your place by his side. You are treated as a lowly breeding mare, mounted and fucked by any herd member who wishes to use you to slake their lusts or simply for want of someone to punish and hurt. You accept this over time, knowing it is your place[if Player is female]. You are used to train the newest members how to mount, fuck and corrupt others. You grow heavy with foals of your own and they always are taken away to be raised by the herd, denying you even the love of your children[end if][if Player is male]. Each time you feel a cock ram into you, you also feel the ivy like tentacles curling around the base of your shaft. They keep you from feeling relief for months at a time. Sometimes you're not even permitted to cum until you manage to hold the loads of every centaur in your herd at once. Your mind drifts further from your grasp as relief is obtained less and less, and soon you're just watching your body act of its own accord: your lost face stuck in a look of perpetual ecstasy[end if].";

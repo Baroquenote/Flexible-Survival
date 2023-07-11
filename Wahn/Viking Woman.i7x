@@ -290,7 +290,7 @@ to say Viking loses:
 				increase VikingRelationship by 1;
 			else:
 				LineBreak;
-				say "     Making a fist, you punch the viking woman in the nose, sending her sprawling backwards on the sand. She appears dazed for the moment - giving you a chance to gain some ground and get away from her. As you hurry over the beach, a static charge starts to buld all around you. Uh-oh... that doesn't seem like a good thing. You tense for what might happen next, then feel the hum of electricity suddenly quiet down - like the calm before a storm. Your first instinct in that moment is to jump to the side... and it definitively was the right one. A literal thunderbolt hits the sand right where you had been standing, leaving a patch of it molten into glass, spraying outside in a shower of searing hot droplets. Quite a few of them hit and singe you, but at least you didn't get fried by that lightning bolt.";
+				say "     Making a fist, you punch the viking woman in the nose, sending her sprawling backwards on the sand. She appears dazed for the moment - giving you a chance to gain some ground and get away from her. As you hurry over the beach, a static charge starts to buld all around you. Uh-oh... that doesn't seem like a good thing. You tense for what might happen next, then feel the hum of electricity suddenly quiet down - like the calm before a storm. Your first instinct in that moment is to jump to the side... and it definitely was the right one. A literal thunderbolt hits the sand right where you had been standing, leaving a patch of it molten into glass, spraying outside in a shower of searing hot droplets. Quite a few of them hit and singe you, but at least you didn't get fried by that lightning bolt.";
 				if HP of Player > 10:
 					now HP of Player is 7;
 	else if VikingRelationship is 2: [second victory]
@@ -798,7 +798,7 @@ When Play begins:
 	now Name entry is "Viking Woman";
 	now enemy title entry is "Viking Shieldmaiden";
 	now enemy Name entry is "Sonya";
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[VikingWomanAttacks]";
 	now defeated entry is "[Viking loses]";
 	now victory entry is "[Viking wins]";
@@ -823,31 +823,31 @@ When Play begins:
 	now HP entry is 80;
 	now lev entry is 9;
 	now wdam entry is 15;
-	now area entry is "Beach";             [ Case sensitive]
-	now Cock Count entry is 0;                  [ number of cocks if sex is 'Male' or 'Both' ]
+	now area entry is "Beach"; [ Case sensitive]
+	now Cock Count entry is 0; [ number of cocks if sex is 'Male' or 'Both' ]
 	now Cock Length entry is 0;
-	now Ball Size entry is 0;             [ Size of balls ]
-	now Nipple Count entry is 2;                [ Number of nipples. ]
-	now Breast Size entry is 3;            [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
-	now Male Breast Size entry is 0;       [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 1;                  [ number of pussies if sex is 'Female' or 'Both' ]
+	now Ball Size entry is 0; [ Size of balls ]
+	now Nipple Count entry is 2; [ Number of nipples. ]
+	now Breast Size entry is 3; [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 1; [ number of pussies if sex is 'Female' or 'Both' ]
 	now Cunt Depth entry is 10;
 	now Cunt Tightness entry is 3; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	now SeductionImmune entry is false;
-	now libido entry is 10;                [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
-	now loot entry is "mead horn";         [ Dropped item, blank for none. Case sensitive. ]
-	now lootchance entry is 40;            [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 3;                  [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now libido entry is 10; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
+	now loot entry is "mead horn"; [ Dropped item, blank for none. Case sensitive. ]
+	now lootchance entry is 40; [ Percentage chance of dropping loot, from 0-100. ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "Nordic"; [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender". Use [one of] to vary ]
-	now type entry is "human";             [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
+	now type entry is "human"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is true;
-	now Cross-Infection entry is "Viking Man"; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;         [ 0 = Up at all times; 1 = Nocturnal (night encounters only); 2 = Diurnal (day encounters only) ]
+	now Cross-Infection entry is "Viking Man"; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Nocturnal (night encounters only); 2 = Diurnal (day encounters only) ]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -870,7 +870,7 @@ When Play begins:
 	now Head Adjective entry is "human"; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is "pale"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 10; [hair length in inches]
 	now Hair Shape entry is "straight"; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is "blond"; [one word color descriptor]
@@ -889,7 +889,7 @@ When Play begins:
 	now Torso Change entry is "it it becomes human in shape, with pale, somewhat weather-toughened skin spreading across your chest"; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is "that of a human with a pale skin"; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is "human"; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is "pale"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -910,18 +910,18 @@ When Play begins:
 	now Arms Color entry is "pale"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is "bipedal"; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is "they become human-like, covered in [one of]tough[or]weather-toughened[or]freckled[at random] skin"; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is "that of a human, covered in [one of]tough[or]weather-toughened[or]freckled[at random] [Legs Color of Player] skin"; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is "that of a human, covered in [one of]tough[or]weather-toughened[or]freckled[at random] [Legs Color of Player] skin"; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is "pale"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is "it becomes nice and round"; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is "human ass"; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is "pale"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 9; [inches deep for anal fucking]
@@ -935,19 +935,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is "human"; [one word adjective: avian/canine/...]
 	now Cock Change entry is "it becomes human in shape, with a snug foreskin covering the head"; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is "is [Cock Color of Player] and human shaped, complete with a snug foreskin covering the head"; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is "is [Cock Color of Player] and human shaped, complete with a snug foreskin covering the head"; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is "peach colored"; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is "balls in a snug, lightly hairy sack"; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is "balls in a snug, lightly hairy sack"; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 1;
 	now Cunt Depth entry is 10;
 	now Cunt Tightness entry is 3; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is "human"; [one word adjective: avian/canine/...]
 	now Cunt Change entry is "it becomes human, complete with delicate nether lips and a well-sized clit at the top"; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is "is [Cunt Color of Player] in color and human-shaped, complete with delicate nether lips and a well-sized clit at the top"; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is "is [Cunt Color of Player] in color and human-shaped, complete with delicate nether lips and a well-sized clit at the top"; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is "pastel pink"; [one word color descriptor]
 	now Clit Size entry is 3; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -1272,54 +1272,63 @@ instead of conversing the Sonya:
 		say "[SonyaTalkMenu]";
 
 to say SonyaTalkMenu:
+	say "     [bold type]What do you want to talk with Sonya about?[roman type][line break]";
+	now sextablerun is 0;
 	blank out the whole of table of fucking options;
+	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Talk about the things happening along the coast";
 	now sortorder entry is 1;
 	now description entry is "Have her tell you what she's seen while exploring.";
-	now toggle entry is SonyaTalk rule;
-	choose a blank row in table of fucking options;
+	[]
 	if (VikingKidCounter is 1):
 		choose a blank row in table of fucking options;
 		now title entry is "Talk about your child";
 		now sortorder entry is 2;
 		now description entry is "Ask her about your offspring.";
-		now toggle entry is SonyaTalk rule;
+	[]
 	else if (VikingKidCounter > 1):
 		choose a blank row in table of fucking options;
 		now title entry is "Talk about your children";
 		now sortorder entry is 3;
 		now description entry is "Ask her about your offspring.";
-		now toggle entry is SonyaTalk rule;
-[
+	[
 	choose a blank row in table of fucking options;
 	now title entry is "Talk about the Vikings";
 	now sortorder entry is 3;
 	now description entry is "Ask her about her family and Vikings in general.";
-	now toggle entry is SonyaTalk rule;
-]
+	]
 	sort the table of fucking options in sortorder order;
-	change the current menu to table of fucking options;
-	carry out the displaying activity;
-	clear the screen;
-
-This is the SonyaTalk rule:
-	choose row Current Menu Selection in table of fucking options;
-	let nam be title entry;
-	say "[title entry]: [description entry][line break]";
-	say "Is this what you want?";
-	if Player consents:
-		decrease menu depth by 1;
-		clear the screen;
-		if (nam is "Talk about the things happening along the coast"):
-			say "[SonyaTalk1]";
-		if (nam is "Talk about your child"):
-			say "[SonyaTalk2]";
-		if (nam is "Talk about your children"):
-			say "[SonyaTalk2]";
-		if (nam is "Talk about the Vikings"):
-			say "[SonyaTalk3]";
-		wait for any key;
+	repeat with y running from 1 to number of filled rows in table of fucking options:
+		choose row y from the table of fucking options;
+		say "[link][y] - [title entry][as][y][end link][line break]";
+	say "[link]0 - Nevermind[as]0[end link][line break]";
+	while sextablerun is 0:
+		say "Pick the corresponding number> [run paragraph on]";
+		get a number;
+		if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
+			now current menu selection is calcnumber;
+			choose row calcnumber in table of fucking options;
+			say "[title entry]: [description entry]?";
+			if Player consents:
+				let nam be title entry;
+				now sextablerun is 1;
+				if (nam is "Talk about the things happening along the coast"):
+					say "[SonyaTalk1]";
+				if (nam is "Talk about your child"):
+					say "[SonyaTalk2]";
+				if (nam is "Talk about your children"):
+					say "[SonyaTalk2]";
+				if (nam is "Talk about the Vikings"):
+					say "[SonyaTalk3]";
+				wait for any key;
+		else if calcnumber is 0:
+			now sextablerun is 1;
+			say "     You step back from the female viking, shaking your head slightly as she gives a questioning look.";
+			wait for any key;
+		else:
+			say "Invalid Option. Pick between 1 and [the number of filled rows in the table of fucking options].";
+	clear the screen and hyperlink list;
 
 to say SonyaTalk1:
 	let randomnumber be a random number from 1 to 10;
@@ -1402,7 +1411,7 @@ to say SonyaSexMenu:
 		now sortorder entry is 2;
 		now description entry is "Have sex with your Viking wife, tying her with your knot";
 	[]
-	if Player is male and CockName of Player is listed in infections of felinelist:
+	if Player is male and CockName of Player is listed in infections of FelineList:
 		choose a blank row in table of fucking options;
 		now title entry is "Let her ride your feline shaft";
 		now sortorder entry is 3;
@@ -1487,7 +1496,7 @@ to say SonyaSex2: [doggy style]
 	say "     Under the lusty gaze of your Viking woman, you undress much more quickly, too horny and wound-up to give her such a nice show as she did herself. Sonya doesn't mind, though, as she's more than ready to get into the real fun herself now. Rising back up on her knees, she then reaches out to touch your rock-hard manhood, feeling its pointy end before letting her hand wander up the shaft and gripping the yet small and un-swollen bulge of your knot. Sonya's moans of anticipation join your own at getting your cock stroked and rubbed, and she continues to say in a husky voice, 'I want you to take me like the sexy beast you are, husband. Mount your woman and breed her like a bitch!' That said, the beautiful young woman, moves to kneel on all fours, arching her back with her legs spread a bit to provide a very enticing view of her up-turned butt and wet pussy.";
 	say "     You can't help but follow your libido's urgent demands of taking her without delay - lining up the tip of your [Cock of Player] cock with the viking woman's sex and starting right away with a hard thrust, making Sonya grip the furs on her bed with both hands as she howls in lust and fulfilled need. Horny as you are, you just keep going in the same pace, sliding deeper in a fast and fluid move until the bulge of your knot is touching her nether lips. With a growl that is immediately joined by an aroused gasp of your wife, you give another sharp thrust that pops the last bit of your manhood into Sonya's pussy. After giving her a second to simply enjoy the full feeling such a nonhuman cock brings, you then pull back until the knot comes out again with a wet little slurp and start fucking the sexy woman doggy style.";
 	WaitLineBreak;
-	say "     As you pump in and out, you play a bit at drawing moans and gasps from your wife by switching your moves up a bit - mostly just letting your knot brush against her nether lips before pulling back, but sometimes suddenly following up with another quick hump that pops it in and out again - or even simply hammering all of your manhood into her with one quick thrust. In between gasps and moans, Sonya manages to bring out, 'Yeah baby! Unngh! Harder! Make the ship rock with your power!' Eagerly complying with such a sexy demand, you pull out most of your shaft before plunging back in all the way... which might not make the viking vessel move, but definitively tells everyone on board that you and your wife are going at it with full force, as the Nordic warrior-woman howls in lust at each new thrust. It simply feels amazing to have her warm and tight passage stretched around your manhood as you pound into Sonya, and for a while, anything but the wild and urgent sex you have with her is forgotten...";
+	say "     As you pump in and out, you play a bit at drawing moans and gasps from your wife by switching your moves up a bit - mostly just letting your knot brush against her nether lips before pulling back, but sometimes suddenly following up with another quick hump that pops it in and out again - or even simply hammering all of your manhood into her with one quick thrust. In between gasps and moans, Sonya manages to bring out, 'Yeah baby! Unngh! Harder! Make the ship rock with your power!' Eagerly complying with such a sexy demand, you pull out most of your shaft before plunging back in all the way... which might not make the viking vessel move, but definitely tells everyone on board that you and your wife are going at it with full force, as the Nordic warrior-woman howls in lust at each new thrust. It simply feels amazing to have her warm and tight passage stretched around your manhood as you pound into Sonya, and for a while, anything but the wild and urgent sex you have with her is forgotten...";
 	say "     As much as you wish this could last forever, there are limits to everything. A certain urgency becomes audible in Sonya's aroused shouts and they become faster and somewhat breathless, then she suddenly rocks back hard against you and shouts 'I'm coming!' You can feel the young woman's whole body shuddering under yours, the muscles in her vagina tightening their grip on your cock as the Viking orgasms. In between the sensations of her wet passage milking your cock a bit and the feeling of contentment at bringing your wife to a screaming orgasm, you're not too far behind and feel your knot expand to its full size moments later, locking the two of you together. Pulse after pulse of your fertile seed shoots deep into the young woman's insides, making her your well-bred bitch.";
 	WaitLineBreak;
 	say "     Exhausted, you move to let the two of you sink down on your sides, still with your cock inside her, and try to catch your breath. Sonya reaches back to stroke your side softly, then pulls your arm around her, giving you a little kiss on the hand before letting it rest against her chest. For a while, the two of you just lie there, content in simply enjoying the warm furs on the bed and holding one another. Then eventually, after your knot has done its duty of ensuring that the young woman's womb has had a good long time filled to the brink with your seed, your cock gets soft enough to slip out again, together with a little gush of cum to run down Sonya's legs. She reaches down to feel her wet pussy lips and your cum-dripping member, then says a moment later, 'I love you, my husband - but we can't lie around all day' After rubbing your nose with hers, she gives a little sigh and sits up, then proceeds to clean up a bit with a soft towel from one of the two chests against the wall. Finally, the sexy warrior-woman gathers up her clothes and gets dressed, though not without showing off a bit, which you of course watch with eager eyes from the bed.";

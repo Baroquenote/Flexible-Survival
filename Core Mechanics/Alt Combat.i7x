@@ -31,8 +31,8 @@ chargeup is a number that varies.		[ Used to track an attack that charges across
 fightoutcome is a number that varies.	[ Used to track the different outcomes of a fight. ]
 Lost is a number that varies. [ Previously used to track if the player won or lost - replaced by more complex fightoutcome system - kept for backwards compatibility until all "lost" checks are removed]
 absorb is a number that varies.          [ Used to track the damage absorbed by armor/shield/feats. ]
-damagein is a number that varies.		[ Used to pass the damage to the various aborbancy subroutines. ]
-damageout is a number that varies.		[ Used to receive the adjusted damage after using one of the absorbancy subroutines. ]
+damagein is a number that varies.		[ Used to pass the damage to the various absorbency subroutines. ]
+damageout is a number that varies.		[ Used to receive the adjusted damage after using one of the absorbency subroutines. ]
 duckyactive is a truth state that varies.	[ Used to mark if the ducky's last-minute save has been used this turn. ]
 velossaved is a truth state that varies.	[ Used to mark if Velos's last-minute save has been used this turn. ]
 velossavedyes is a truth state that varies. [ Used to mark if Velos has ever used his last-minute save.]
@@ -271,7 +271,7 @@ To Combat Menu:
 			repeat through table of basic combat:
 				increase combatopt by 1;
 				say "[bold type][combatopt][roman type] - [link][title entry][as][combatopt][end link] ([description entry])[line break][run paragraph on]";
-			say "Your HP: [HP of Player]/[maxHP of Player]  Libido: [Libido of Player]/100[line break]";
+			say "Your HP: [HP of Player]/[MaxHP of Player]  Libido: [Libido of Player]/100[line break]";
 			say "[EnemyCapNameOrTitle] HP: [monsterHP]/[HP in row MonsterID of Table of Random Critters]  Libido: [monsterLibido - monsterLibidoPenalty]/100[line break]";
 			say ">[run paragraph on]";
 			let k be 0;
@@ -486,7 +486,7 @@ This is the player attack rule:
 			else:
 				say "[line break]You give [one of]your opponent[or]your enemy[or]the [EnemyNameOrTitle][purely at random] a [one of]hard swat[or]fleshy smack[or]wet slap[or]firm jab[purely at random] with your [cock size desc of Player] [one of]wang[or]cock[or]prick[purely at random][smn] for [special-style-2][dammy][roman type] additional damage!";
 			increase dam by dammy;
-		if a random chance of specattchance in 20 succeeds and "Ball Crush" is listed in feats of Player and Ball Size of Player >= 5 and bonusattacks < 2 and player is not internal:
+		if a random chance of specattchance in 20 succeeds and "Ball Crush" is listed in feats of Player and Ball Size of Player >= 5 and bonusattacks < 2 and player is not internalBalls:
 			increase bonusattack by 1;
 			let dammy be 0;
 			now dammy is ( Ball Size of Player + a random number between 1 and 3);
@@ -980,7 +980,7 @@ to say avoidancecheck:					[collection of all enemy attack avoidance checks]
 	else if ducky swimring is equipped and duckyactive is true and a random chance of 1 in 8 succeeds:
 		say "Your [one of]inflatable ducky[or]ducky swim ring[or]white ducky[or]cute ducky[at random] ends up taking the hit for you, causing it to pop and deflate for the rest of the fight, but saving you from being hit this [one of]time[or]once[at random].";
 		now avoidance is 1;
-	if avoidance is 0 and level of Velos > 2 and ( ( HP of Player * 100 ) / maxHP of Player ) < 10 and velossaved is false:
+	if avoidance is 0 and level of Velos > 2 and ( ( HP of Player * 100 ) / MaxHP of Player ) < 10 and velossaved is false:
 		say "[one of]Velos, perhaps sensing that things aren't going well out there, makes a surprise exit, startling your foe for a moment before the serpent has to retreat.[or]When the serpent hidden within you emerges suddenly, the [EnemyNameOrTitle] is startled and stumbles back, losing their opportunity to strike.[or]With an exaggerated moaning, Velos rises from your depths, throwing off your opponent.[or]In an attempt to safeguard his friend and his home, Velos emerges. 'Boo.' Stunned by this new foe, the [EnemyNameOrTitle] is thrown off balance for a moment. By the time they recover and swing at Velos, he's already ducked back inside you.[or]Velos emerges from you, yelling angrily at you to stop all that knocking about while he's trying to sleep. Your foe, meanwhile, staggers back several steps from the brief appearance of the snake.[or]Velos, emerging like some serpentine horror from your body, makes moaning, otherworldly noises at your foe. This drives your opponent is back for a few moments['] reprieve.[cycling]";
 		increase HP of Player by 5;
 		now velossavedyes is true;
@@ -1244,7 +1244,7 @@ to win:
 		if a random chance of vorechance in 300 succeeds or hunger of Player > 80:					[chance for vore]
 			if Name entry is not listed in infections of VoreExclusion and enemy type entry is 0: [not on the exclude list and non-unique infection]
 				now voreprompted is true; [player will be prompted for vore]
-	if Player can UB and inasituation is false and scalevalue of Player >= scale entry and fightoutcome is 10 and ubchoice is not 2 and gestation of Child is 0 and larvaegg is not 2 and player is female:
+	if Player can UB and inasituation is false and scalevalue of Player >= scale entry and fightoutcome is 10 and ubchoice is not 2 and gestation of Child is 0 and larvaegg is not 2 and Player is female:
 		let vorechance be 25 + ( Cunt Tightness of Player * 5 );
 		if vorechance > 125, now vorechance is 125;
 		if "Fertile" is listed in feats of Player, increase vorechance by 25;
@@ -1260,12 +1260,12 @@ to win:
 		if a random chance of vorechance in 300 succeeds:					[chance for ub]
 			if Name entry is not listed in infections of VoreExclusion and enemy type entry is 0: [not on the exclude list and non-unique infection]
 				now ubprompted is true; [player will be prompted for ub]
-	if Carnivorous Plant is listed in companionList of Player and hunger of Voria > 7 and Name entry is not listed in infections of VoreExclusion and enemy type entry is 0:
+	if Carnivorous Plant is listed in companionList of Player and hunger of Voria > 7 and Name entry is not listed in infections of VoreExclusion and inasituation is false and enemy type entry is 0:
 		now ok is 0;
-		VoriaPostCombat;	[Carnivorous Plant vore scene. Scenes in Voria file]
-		now fightoutcome is 15;	[Voria vored foe]
-	else if voreprompted is true and ubprompted is true:				[both vore and ub are possible]
-		if vorechoice is 0 and ubchoice is 0:					[player has full choice]
+		VoriaPostCombat; [Carnivorous Plant vore scene. Scenes in Voria file]
+		now fightoutcome is 15; [Voria vored foe]
+	else if voreprompted is true and ubprompted is true and inasituation is false: [both vore and ub are possible]
+		if vorechoice is 0 and ubchoice is 0: [player has full choice]
 			say "     As your battle is coming to a close, you feel a primal rumbling in your belly and in your womb, your twin hungers welling up inside you. Looking down at your fallen foe, you lick your lips and finger yourself, tempted to fill that emptiness you're feeling inside with the [EnemyNameOrTitle]. Shall you give in to your desire to [link]consume (1)[as]1[end link] them, [link]unbirth (2)[as]2[end link] them or [link]suppress (0)[as]0[end link] the urge?";
 			now calcnumber is -1;
 			while calcnumber < 0 or calcnumber > 2:
@@ -1281,7 +1281,7 @@ to win:
 				now fightoutcome is 14; [player ub'ed foe]
 			else:
 				now ok is 1;
-		else if vorechoice is 1 and ubchoice is 1:				[player has choice ub/vore]
+		else if vorechoice is 1 and ubchoice is 1: [player has choice ub/vore]
 			say "     As your battle is coming to a close, you feel a primal rumbling in your belly and in your womb, your twin hungers welling up inside you. Looking down at your fallen foe, you lick your lips and finger yourself. You don't hold back the urge to be filled, but are torn between which emptiness you're feeling to fill with the [EnemyNameOrTitle]. Shall you give in to your desire to [link]consume (1)[as]1[end link] them or to [link]unbirth (2)[as]2[end link] them?";
 			now calcnumber is -1;
 			while calcnumber < 1 or calcnumber > 2:
@@ -1295,12 +1295,12 @@ to win:
 				now ok is 0;
 				ubbyplayer; [See Alt Vore file]
 				now fightoutcome is 14; [player ub'ed foe]
-		else if vorechoice is 1 and ubchoice is 0:				[hunger overrides ub]
+		else if vorechoice is 1 and ubchoice is 0: [hunger overrides ub]
 			say "     As your battle is coming to a close, you feel a primal rumbling in your belly and in your womb, your twin hungers welling up inside you. Looking down at your fallen foe, you lick your lips and finger yourself. In the end, it is the emptiness in your stomach that wins out and you don't hold it back. You advancing on them with the intent to sate your stomach's call with the [EnemyNameOrTitle].";
 			now ok is 0;
 			vorebyplayer; [See Alt Vore file]
 			now fightoutcome is 13; [player vored foe]
-		else if vorechoice is 0 and ubchoice is 1:				[ub overrides hunger]
+		else if vorechoice is 0 and ubchoice is 1: [ub overrides hunger]
 			say "     As your battle is coming to a close, you feel a primal rumbling in your belly and in your womb, your twin hungers welling up inside you. Looking down at your fallen foe, you lick your lips and finger yourself. In the end, it is the hollowness in your uterus that wins out and you don't hold it back. You advancing on them with the intent to use the [EnemyNameOrTitle] to fill the emptiness you feel in your womb.";
 			now ok is 0;
 			ubbyplayer; [See Alt Vore file]
@@ -1334,24 +1334,25 @@ to win:
 			ubbyplayer; [See Alt Vore file]
 			now fightoutcome is 14; [player ub'ed foe]
 	[Vampirism]
-	if ok is 1 and vampiric is true:
+	if ok is 1 and vampiric is true and inasituation is false:
 		if NoHealMode is true:
 			increase HP of Player by ( 2 * lev entry ) / 3;
 		else:
 			increase HP of Player by lev entry;
 		PlayerDrink 3;
 		PlayerEat 1;
-		if HP of Player > maxHP of Player, now HP of Player is maxHP of Player;
+		if HP of Player > MaxHP of Player, now HP of Player is MaxHP of Player;
 	[Trophies and Looting]
-	TrophyLootFunction;
+	if inasituation is false:
+		TrophyLootFunction;
 	[Postcombat Scene]
-	if ok is 1 and "Control Freak" is listed in feats of Player:
+	if ok is 1 and "Control Freak" is listed in feats of Player and inasituation is false:
 		say "Do you want to perform after combat scene?";
 		if Player consents:
 			now ok is 1;
 		else:
 			now ok is 0;
-	if ok is 1:
+	if ok is 1 and inasituation is false:
 		say "[defeated entry]";
 		[
 		if fightoutcome is 10:
@@ -1396,7 +1397,7 @@ to win:
 	now automaticcombatcheck is 0; [combat is over, reset to zero]
 	if gshep is listed in companionList of Player:
 		increase gshep_fights by 1;
-		if gshep_postfight is 0 and ( gsd_pet is 12 or gsd_pet is 13 or gsd_pet is 14 ):	[checks on Korvin's post-fight 'feedback']
+		if gshep_postfight is 0 and ( gsd_pet is 12 or gsd_pet is 13 or gsd_pet is 14 ): [checks on Korvin's post-fight 'feedback']
 			if gshep_fights > 2 and inasituation is false and GShepLastScene - turns >= 4:
 				say "[gshep_postfightargue]";
 	follow the ngraphics_blank rule;
@@ -1411,7 +1412,8 @@ To lose:
 	follow the breast descr rule;
 	now lastfightround is turns;
 	now lost is 1;
-	say "[victory entry][line break]";
+	if inasituation is false:
+		say "[victory entry][line break]";
 	if the story has not ended:
 		if scenario is "Researcher" and ( there is no resbypass in row MonsterID of Table of Random Critters or resbypass entry is false ):
 			say "";
@@ -1550,7 +1552,7 @@ This is the monster libido rule:
 	rule succeeds;
 
 This is the player injury rule:
-	let per be ( HP of Player times 100 ) divided by maxHP of Player;
+	let per be ( HP of Player times 100 ) divided by MaxHP of Player;
 	if per <= 10:
 		now descr is "[if Playerpoison > 0][special-style-1]poisoned[roman type] and [end if][one of]on death's door[or]almost defeated[or]barely mobile[at random]";
 	else if per <= 40:
@@ -1646,9 +1648,9 @@ this is the bearhug rule:
 		say "[noarmorabsorbancy]"; [ignores armor]
 		decrease HP of Player by ( dam - absorb );
 		if absorb is 0:
-			say "You suffer [special-style-2][dam][roman type] damage from its crushing grip! ([HP of Player]/[maxHP of Player] HP)[line break]";
+			say "You suffer [special-style-2][dam][roman type] damage from its crushing grip! ([HP of Player]/[MaxHP of Player] HP)[line break]";
 		else:
-			say "You suffer [special-style-2][dam - absorb] ([dam] - [absorb])[roman type] damage from its crushing grip! ([HP of Player]/[maxHP of Player] HP)[line break]";
+			say "You suffer [special-style-2][dam - absorb] ([dam] - [absorb])[roman type] damage from its crushing grip! ([HP of Player]/[MaxHP of Player] HP)[line break]";
 		if HP of Player > 0:
 			WaitLineBreak;
 			let num1 be a random number between 0 and ( Strength of Player + level of Player );
@@ -1920,7 +1922,7 @@ this is the latexhug rule:
 		now damagein is dam;
 		say "[noarmorabsorbancy]"; [ignores armor]
 		decrease HP of Player by ( dam - absorb );
-		say "Despite your struggle, [one of]the latex continues to spread over your body[or]the latex squeezes tigher around you[at random], further immobilizing you. [special-style-2][dam][roman type] damage! ([HP of Player]/[maxHP of Player] HP)[line break]";
+		say "Despite your struggle, [one of]the latex continues to spread over your body[or]the latex squeezes tigher around you[at random], further immobilizing you. [special-style-2][dam][roman type] damage! ([HP of Player]/[MaxHP of Player] HP)[line break]";
 		if HP of Player > 0:
 			WaitLineBreak;
 			let num1 be a random number between 0 and ( Dexterity of Player + level of Player );

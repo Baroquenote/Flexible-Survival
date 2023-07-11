@@ -59,7 +59,7 @@ to say beattheJaguarWarrior:
 		say "Error! HP of Tehuantl = [HP of Tehuantl]. You shouldn't be able to encounter me right now! Please report this on the forums.";
 
 to say JaguarWarriorDesc:
-	setmongender 3;      [creature is male]
+	setmongender 3; [creature is male]
 	project the Figure of Tehuantl_Male_clothed_icon;
 	if HP of Tehuantl is 0 and inasituation is false:
 		say "     As you wander the halls of the museum, your attention is drawn to a large broken display case. What remains of the exhibit appears to document a powerful Aztec military unit known as jaguar warriors. As you wonder where the contents of the display case might have ended up you hear a low, rumbling growl behind you. Turning quickly to face this potential threat you [run paragraph on]";
@@ -113,7 +113,7 @@ to say JaguarWarriorCaptured: [TODO: Add tracking to the way the player took him
 	now sortorder entry is 1;
 	now description entry is "Grab him by the scruff of the neck and make him acknowledge you as his [master]";
 	[]
-	if player is male:
+	if Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Rub his balls and then fuck his ass"; [-> male T]
 		now sortorder entry is 2;
@@ -125,7 +125,7 @@ to say JaguarWarriorCaptured: [TODO: Add tracking to the way the player took him
 		now sortorder entry is 3;
 		now description entry is "Get the kitty hot and ready, then ride him";
 	[]
-	if player is male:
+	if Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Tease his nipples and then fuck his ass"; [-> female T]
 		now sortorder entry is 4;
@@ -181,6 +181,7 @@ to say TehuantlTameNonSexM:
 to say TehuantlTameNonSexF:
 	say "     You swat the muscled feline's ass lightly, telling him that there's enough of that for now, you're not going to rape him. No, you just pull him up by the scruff of his neck, meeting his eyes and giving him a good long stare to show your dominance. Then you lay out how things are going to be - he's proven to be weaker than you more than once, and you're claiming him as yours now. In fact, he's so weak and pathetic that you're doubting that he even should be a male warrior. Acting like he did, getting his ass beat and then submitting to you seems more appropriate of a mewling pussy. To underline these words, you reach under him and squeeze his chest, to 'check if he's actually a girl', and somewhat surprisingly, your hand starts to fill with a furred curve as you do so, his chest bulging outwards and taking on more female curves in just a few seconds.";
 	say "     The formerly proud warrior lets out a moan and collapses to the ground, writhing before you. Stepping back a little, you watch the transformation you inadvertently kicked off, seeing the man change all over, with some subtle and other quite obvious adjustments to his forms. His cock shrinks back into his body, for one, leaving behind feminine folds, and the shape of his face and head softens a bit. When his new form stabilizes after a few moments, the now female jaguar pushes herself up to kneel before you, looking at you worshipfully. 'Yes, tlacahua. I'm your warslave and will serve,' she says, almost purring. Curiosity has you ask what that word she used was, and she explains that it means 'master' in her original Nahuatl language. You can't help but smile at this and tell her that she's starting to behave like a very good little kitty, then hold out a hand for her to take and pull her up along as you stand up. Your new pet leans in and nuzzles against your chest as you make your way back to the Grey Abbey Library with her.";
+	SetFemalePronouns for Tehuantl;
 	say "[TameTehuantl]";
 
 to say TehuantlTameSex1: [player rubs balls, then fucks his ass -> male T]
@@ -204,8 +205,8 @@ to say TehuantlTameSex2: [player rubs balls, then rides his dick -> male T]
 	say "     After a very pleasurable time having your female bits licked and teased, you can't help but smile as you tell the jaguar that he's been a very good boy, then you hold out a hand for him to take and pull him up along as you stand up. Your new pet leans in and nuzzles against your chest as you make your way back to the Grey Abbey Library with him.";
 	NPCSexAftermath Player receives "PussyFuck" from Tehuantl;
 	NPCSexAftermath Tehuantl receives "OralPussy" from Player;
+	say "[TehuantlMaleShift]";
 	say "[TameTehuantl]";
-	now HP of Tehuantl is 50; [male jaguar pet]
 
 to say TehuantlTameSex3: [player rubs nipples, then fucks his ass and pussy -> female T]
 	say "     Stroking both hands over the jaguar warrior's back, you let them slide around his sides, searching out the little nubs of his nipples on the feline's chest. He gives a little surprised mewl as you brush over them, then lightly pinch both at the same time. Bent over the spotted feline, you comment that he's quite the sexy pussycat - and that he shouldn't worry too much about his fate. Sure, he's yours now, and you reserve the right to pet him and play with his nipples whenever you want - but there's no reason this shouldn't be enjoyable for the both of you. As you proceed to rub him in circling motions, there even is a little purr that can be heard from your former opponent. Clearly, he is starting to realize that becoming your kitty will have its own rewards.";
@@ -217,6 +218,7 @@ to say TehuantlTameSex3: [player rubs nipples, then fucks his ass and pussy -> f
 	NPCSexAftermath Tehuantl receives "PussyFuck" from Player;
 	WaitLineBreak;
 	say "     As you roll off her exhausted form, the rumbling kitty snuggles up against you, staring up at you with a look of adoration as she slips out of consciousness. Clearly very little of the once dominant feline remains in this docile new creature and without a second thought you pull her into your arms as you rise to your feet. Your new pet nuzzles against your chest as you make your way back to the bunker.";
+	SetFemalePronouns for Tehuantl;
 	say "[TameTehuantl]";
 	now HP of Tehuantl is 10; [female jaguar pet]
 
@@ -229,6 +231,7 @@ to say TehuantlTameSex4: [player rubs nipples, then rides his dick -> female T]
 	WaitLineBreak;
 	say "     The exhausted kitty rumbles at she stares up at your with adoration, clearly very little of the once dominant feline remains in this docile new creature and without a second thought your reach down for her. Your new pet nuzzles against your chest as you lift her into your arms, cradling her gently against you as you make your way back to the bunker.";
 	NPCSexAftermath Player receives "PussyFuck" from Tehuantl;
+	SetFemalePronouns for Tehuantl;
 	say "[TameTehuantl]";
 	now HP of Tehuantl is 10; [female jaguar pet]
 
@@ -243,6 +246,7 @@ to say TehuantlMaleShift:
 	now Cunt Tightness of Tehuantl is 0;
 	now Nipple Count of Tehuantl is 2; [2 nipples]
 	now Breast Size of Tehuantl is 0;
+	SetMalePronouns for Tehuantl;
 
 to say TameTehuantl:
 	now battleground is "void";
@@ -263,7 +267,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Jaguar"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Jaguar"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Jaguar Warrior" to infections of FelineList;
 	add "Jaguar Warrior" to infections of FurryList;
 	add "Jaguar Warrior" to infections of NatureList;
@@ -272,16 +276,16 @@ When Play begins:
 	add "Jaguar Warrior" to infections of SheathedCockList;
 	add "Jaguar Warrior" to infections of BipedalList;
 	add "Jaguar Warrior" to infections of TailList; [TODO: Male Female Jaguar infection]
-	now Name entry is "Jaguar Warrior";                   [ The creature's name as displayed and used in naming descriptions]
+	now Name entry is "Jaguar Warrior"; [ The creature's name as displayed and used in naming descriptions]
 	now enemy title entry is "Jaguar Warrior";
 	now enemy Name entry is "Tehuantl";
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
-	now attack entry is "The jaguar warrior [one of]raises his shield and charges forward, knocking you off balance as he smashes it into your chest[or]strikes at you with his obsidian-edged sword[or]knocks your feet out from under you with a sweeping low kick[or]knocks you off balance with his shield before following up with a quick sword strike[at random]!";                      [ Text used when the monster succeeds on an attack]
-	now defeated entry is "[beattheJaguarWarrior]";       [ Text when monster loses. Change 'Jaguar' as above. ]
-	now victory entry is "[losetoJaguarWarrior]";         [ Text when monster wins. Change 'Jaguar' as above. ]
-	now desc entry is "[JaguarWarriorDesc]";              [ Description of the creature when you encounter it. ]
-	now face entry is "that of an attractive feline";     [ Face. Format as Your face is [Face of Player]. ]
-	now body entry is "[JagBodyDesc]";                    [ Body. Format as "Your body is [Body of Player]." ]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
+	now attack entry is "The jaguar warrior [one of]raises his shield and charges forward, knocking you off balance as he smashes it into your chest[or]strikes at you with his obsidian-edged sword[or]knocks your feet out from under you with a sweeping low kick[or]knocks you off balance with his shield before following up with a quick sword strike[at random]!"; [ Text used when the monster succeeds on an attack]
+	now defeated entry is "[beattheJaguarWarrior]"; [ Text when monster loses. Change 'Jaguar' as above. ]
+	now victory entry is "[losetoJaguarWarrior]"; [ Text when monster wins. Change 'Jaguar' as above. ]
+	now desc entry is "[JaguarWarriorDesc]"; [ Description of the creature when you encounter it. ]
+	now face entry is "that of an attractive feline"; [ Face description, format as "Your face is [Face of Player]." ]
+	now body entry is "[JagBodyDesc]"; [ Body description, format as "Your body is [Body of Player]." ]
 	now skin entry is "golden yellow fur, with elegant black rosettes and spots covering your"; [ Skin. Format as "Looking at yourself, your body is covered in [Skin of Player] skin." ]
 	now tail entry is "You have a tight, sexy bottom, accentuated by your elegant jaguar tail lashing back and forth as you move."; [ Ass/Tail. Write as a full sentence (with period) or leave blank for none. ]
 	now cock entry is "[one of]red[or]barbed[or]spined[or]feline[at random]"; [ Cock. Format as "You have a 'size' [Cock of Player] cock." ]
@@ -290,41 +294,41 @@ When Play begins:
 	now skin change entry is "golden yellow fur spreads across your body, adorned by elegant black rosettes and spots"; [ Skin TF text, format as "Your skin tingles as [skin change entry]. ]
 	now ass change entry is "it becomes tight and sexy. Your balance seems to shift slightly as you gain a long, spotted jaguar's tail, which lashes back and forth excitedly even as it helps you maintain a sexy, graceful stride"; [ Ass/Tail TF text, format as "Your ass tingles as [tail change entry]." ]
 	now cock change entry is "it shifts to a feline form, complete with menacing-looking barbs"; [ Cock TF text, format as "Your groin tingles as [cock change entry]." ]
-	now str entry is 17;                  [ These are now the creature's stats... ]
-	now dex entry is 18;                  [ ...and are only altered onto the player via Shifting or the Mighty Mutation feat ]
-	now sta entry is 16;                  [ These values may be used as part of alternate combat.]
+	now str entry is 17; [ These are now the creature's stats... ]
+	now dex entry is 18; [ ...and are only altered onto the player via Shifting or the Mighty Mutation feat ]
+	now sta entry is 16; [ These values may be used as part of alternate combat.]
 	now per entry is 15;
 	now int entry is 12;
 	now cha entry is 12;
-	now sex entry is "Female";            [ Infection will move the player towards this gender. Current: 'Male' 'Female' 'Both' ]
-	now HP entry is 95;                   [ The monster's starting HP. ]
-	now lev entry is 13;                  [ Monster level. (Level x 2) XP for victory. (Level / 2) XP for losing. ]
-	now wdam entry is 15;                 [ Monster's average damage when attacking. ]
-	now area entry is "Museum";           [ "Outside" "Mall" "Park" "Beach" etc... Check an existing creature in the area. ]
-	now Cock Count entry is 1;                 [ Number of cocks the infection will try to cause if sex entry is 'Male' or 'Both'. ]
-	now Cock Length entry is 10;          [ Length in inches infection will make cock grow to if cocks. ]
-	now Ball Size entry is 3;            [ Cock width, more commonly used for ball size. ]
-	now Nipple Count entry is 2;               [ Number of nipples the infection will give a player. ]
-	now Breast Size entry is 4;           [ Size of breasts the infection will try to attain (corresponds to letter cup size). ]
-	now Male Breast Size entry is 0;      [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 1;                 [ The number of cunts the infection will try to cause if sex entry is 'Female' or 'Both'. ]
-	now Cunt Depth entry is 10;          [ Depth in inches of female sex the infection will attempt to give a player. ]
-	now Cunt Tightness entry is 6;            [ Width in inches of female sex the infection will try to give a player. ]
+	now sex entry is "Female"; [ Infection will move the player towards this gender. Current: 'Male' 'Female' 'Both' ]
+	now HP entry is 95; [ The monster's starting HP. ]
+	now lev entry is 13; [ Monster level. (Level x 2) XP for victory. (Level / 2) XP for losing. ]
+	now wdam entry is 15; [ Monster's average damage when attacking. ]
+	now area entry is "Museum"; [ "Outside" "Mall" "Park" "Beach" etc... Check an existing creature in the area. ]
+	now Cock Count entry is 1; [ Number of cocks the infection will try to cause if sex entry is 'Male' or 'Both'. ]
+	now Cock Length entry is 10; [ Length in inches infection will make cock grow to if cocks. ]
+	now Ball Size entry is 3; [ Cock width, more commonly used for ball size. ]
+	now Nipple Count entry is 2; [ Number of nipples the infection will give a player. ]
+	now Breast Size entry is 4; [ Size of breasts the infection will try to attain (corresponds to letter cup size). ]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 1; [ The number of cunts the infection will try to cause if sex entry is 'Female' or 'Both'. ]
+	now Cunt Depth entry is 10; [ Depth in inches of female sex the infection will attempt to give a player. ]
+	now Cunt Tightness entry is 6; [ Width in inches of female sex the infection will try to give a player. ]
 	now SeductionImmune entry is false;
-	now libido entry is 35;               [ Target libido the infection will rise towards. ]
-	now loot entry is "";                 [ Dropped item, blank for none. Case sensitive. ]
-	now lootchance entry is 0;            [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 3;                 [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now libido entry is 35; [ Target libido the infection will rise towards. ]
+	now loot entry is "jaguar warrior fur"; [ Dropped item, blank for none. Case sensitive. ]
+	now lootchance entry is 50; [ Percentage chance of dropping loot, from 0-100. ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]sleek[or]lithe[or]alluring[at random]"; [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender". Use [one of] to vary ]
-	now type entry is "feline";           [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
-	now magic entry is false;             [ Is this a magic creature? true/false (normally false) ]
-	now resbypass entry is false;         [ Bypasses Researcher bonus? true/false (almost invariably false) ]
+	now type entry is "feline"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
+	now magic entry is false; [ Is this a magic creature? true/false (normally false) ]
+	now resbypass entry is false; [ Bypasses Researcher bonus? true/false (almost invariably false) ]
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]    [ Is this a non-infectious, non-shiftable creature? True/False (usually false) ]
-	now DayCycle entry is 0;        [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]    [ Is this a non-infectious, non-shiftable creature? True/False (usually false) ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -335,7 +339,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -347,7 +351,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -366,7 +370,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -387,18 +391,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -412,19 +416,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -443,7 +447,7 @@ to say JagBodyTF:
 	else:
 		say "it shifts to a feline shape, surging with power as you gain the physique of a seasoned warrior, a sleek and agile jungle predator";
 
-Section 3 - Jaguar Headdress
+Section 3 - Jaguar Headdress and loot
 
 Table of Game Objects (continued)
 name	desc	weight	object
@@ -481,6 +485,21 @@ An everyturn rule:
 		choose row MonsterID from the Table of Random Critters;
 		if "Male Preferred" is not listed in feats of Player:
 			now sex entry is "Female";
+
+Table of Game Objects (continued)
+name	desc	weight	object
+"jaguar warrior fur"	"A tuft of spotted fur that looks like it has been pulled out of the coat of a jaguar. It's nicely soft."	0	jaguar warrior fur
+
+jaguar warrior fur is a grab object.
+It is temporary.
+Usedesc of jaguar warrior fur is "[JaguarWarriorFurUse]";
+
+to say JaguarWarriorFurUse:
+	say "Holding the tuft of fur between your fingers, you stroke over it, delighted in its softness. Strangely, the hair disintegrates after a while, becoming a cloud of fine particles that are absorbed into your skin.";
+	infect "Jaguar Warrior";
+
+instead of sniffing jaguar warrior fur:
+	say "The fur has a pleasing, not too strong, animal-like scent.";
 
 Section 4 - NPC
 

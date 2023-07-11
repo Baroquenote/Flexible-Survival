@@ -45,17 +45,17 @@ to say losetovoodoogecko:
 		if a random chance of yy in 100 succeeds:
 			say "     You manage to collect some of the mystical gecko cum in a container before it evaporates away.";
 			ItemGain gecko cum by 1 silently;
-	else if vgeckoloss > 4 and player is male and ( ( vgeckoanal > 3 and anallevel > 1 ) or ( Player is female and Cunt Depth of Player >= ( Cock Length of Player / 3 ) ) ) and Cock Length of Player < 25 and a random chance of 2 in 7 succeeds:
+	else if vgeckoloss > 4 and Player is male and ( ( vgeckoanal > 3 and anallevel > 1 ) or ( Player is female and Cunt Depth of Player >= ( Cock Length of Player / 3 ) ) ) and Cock Length of Player < 25 and a random chance of 2 in 7 succeeds:
 		let analorvag be 0; [0 = anal, 1 = vag - controls scene delivery and selfimpreg]
 		if Player is female and Cunt Depth of Player >= ( Cock Length of Player / 3 ), now analorvag is 1;
 		say "     As before, you find it difficult to move and are unable to resist as she pushes onto your back with her foot. This gecko is in the mood to toy with you further and takes your [cock size desc of Player] [Cock of Player] cock in hand, teasing it to erection while licking at the voodoo doll's crotch hole. The sensation of this echoes in your [if analorvag is 1]cunt[else]anus[end if], feeling her bloated tongue working around inside you. This quickly has you moaning as your arousal increases[if HP of Player <= 0], overcoming your waning resistance[end if].";
 		say "     When she finally withdraws her tongue from the toy, your [if analorvag is 1]pussy[else]asshole[end if] is left feeling stretched and slobbery. Expecting her to drive her meaty rod into the doll, you are unprepared for her pushing it down over your own [if Cock Length of Player > 12]oversized [end if]shaft. You cry out at the conflicting sensation of thrusting into a tight, [if analorvag is 1]slick[else]warm[end if] hole and having what seems like your enlarged phallus forcing itself into you.";
 		say "     The gecko grins in perverse delight at your predicament and pumps the voodoo doll of yourself over your throbbing shaft[if Cock Length of Player > 16]. Given the great size of your cock, it feels incredibly massive inside you, bulging your belly to cope with it[end if]. As you adjust to the amplified penetration of yourself via the magical connection, you increasingly lose yourself to the escalating pleasure and feedback of pounding your own [if analorvag is 1]pussy[else]ass[end if][if Cock Length of Player > 16] beyond all reasonable limits[end if]. Losing any semblance of self-control, you start thrusting into the doll even as the gecko pushes it down. When the lizard offers you her cock directly, you eagerly accept it into your mouth and gulp down her musky load. You groan weakly and cum hard, pumping your load into the doll, resulting in your belly being filled by a proportionally magnified load of purple-streaked cum. You are left bloated and [if Ball Size of Player > 4]gushing[else if Ball Size of Player > 3]pouring[else]drooling[end if] cum from your abused [if analorvag is 1]vagina[else]rectum[end if] [if Ball Size of Player > 4]and overflowing from your mouth [end if]as you pass out. By the time you recover from this mindblowing orgasm, the gecko is gone and you've been left soaking in a [if Ball Size of Player > 4]pool[else]puddle[end if] of your own tainted semen.[if analorvag is 1 or player is mpreg_able][selfimpregchance][end if]";
-	else if vgeckoloss > 4 and player is male and Cock Length of Player >= 25 and a random chance of 2 in 7 succeeds:
+	else if vgeckoloss > 4 and Player is male and Cock Length of Player >= 25 and a random chance of 2 in 7 succeeds:
 		say "     As before, you find it difficult to move and are unable to resist as she pushes onto your back with her foot. This gecko is in the mood to toy with you further and takes your [cock size desc of Player] [Cock of Player] cock in hand, teasing it to erection while licking at your large cumslit. The sensation of her tongue slathering over your oversized manhood soon has you drooling precum for her to lap up hungrily. She even stuffs a pair of fingers into it, working to stretch it open as her tongue delves deeper. This oddly pleasurable act quickly has you moaning as your arousal increases[if HP of Player <= 0], overcoming your waning resistance[end if].";
 		say "     When she finally withdraws her tongue from your cumslit, it is left feeling stretched and slobbery. Expecting her to drive her meaty rod into the doll, you are unprepared for her pushing it down into your hyperphallic shaft. You cry out at the bizarre sensations of having the fabric figure stuffed into your manhood and the tight constriction you feel all around you even as your stretched urethra squeezes down around it. You feel warm and wet as your precum soaks the totem and seeps out around it. Despite its strangeness, it is also oddly exciting.";
 		say "     The gecko grins in perverse delight at your predicament and pumps the voodoo doll of yourself in and out of your hulking shaft. As you adjust to the sensations coming via the magical connection, you increasingly lose yourself to the escalating pleasure and feedback of what feels like being stuffed into your own cock. Losing any semblance of self-control, you start trying to thrust and moan for more as the gecko works the doll into your gaping cumslit. When the lizard gives the dark totem a hard push and shoves it along with her forearm fully into your cum tunnel, you cry out loudly and your balls churn excitedly. She barely has time to pull her arm free before your cock explodes with cum, spraying the cum-laden intruder out along with your semen. You can feel yourself become stuffed and bloated with the cum forced into the doll by the rocketing blast moments before you're knocked out when it strikes the ground. When you finally recover from it all, the gecko is gone and you've been left soaked and stuffed with your own tainted semen.[selfimpregchance]";
-	else if vgeckoloss > 4 and player is female and ( Cunt Tightness of Player > 8 or Player can UB ) and player is impreg_able and a random chance of 1 in 4 succeeds:
+	else if vgeckoloss > 4 and Player is female and ( Cunt Tightness of Player > 8 or Player can UB ) and player is impreg_able and a random chance of 1 in 4 succeeds:
 		say "     As before, you have difficulty moving and are unable to resist when the shemale gecko pushes you over onto your back. With little preamble, she starts fucking the doll, stretching out your vagina as she does. Your breeding hole feels stuffed and stretched, causing you to release a moan of pleasure. Sensing what is being done to the voodoo doll, it feels like a penis as long as your body is being stuffed into your cunt and womb. Each thrust makes your whole body quake with pleasure as what feels like an enormous cock drives into you again and again.";
 		say "     Expecting to be on the receiving end of a massive fucking like before, you're surprised and worried when you notice the gecko grinning down at you with a sinister smile on her reptilian visage as she eyes your widely-gaping pussy. With a hard yank, she drives the voodoo doll firmly onto her cock, making you cry out. As you're twitching with lust, she kneels down between your legs and holds the enchanted doll in place. She keeps a hand locked around the doll's arms, thereby keeping yours pinned to your sides and so preventing you stopping whatever she's got planned. Before your pleasure-stormed brain can realize what's coming, she jams the speared figure right into your cunt, stuffing the large doll halfway up your vagina with one hard push.";
 		say "     Suddenly you're contending with a trio of colliding sensations as you're simultaneously fucked by a massive cock, getting the humanoid figure stuffed into your [one of][if Player can UB]hungry[else]welcoming[end if][or]eager[or]gaping[at random] vagina and feeling the echoes of the very same happening to you. Your arms are pinned to your sides and your senses of taste and smell are overwhelmed by the heady scent of surrounding musky arousal. Simultaneously stuffed and squeezed, all you can do is moan as you are overcome by it all, cumming repeatedly. Your cunt, already spread widely by the mystical connection from your gecko-fucked double, it is easy for her to drive it deeper and deeper into you. When it's most ways in, she folds its legs up against its chest before she makes another hard thrust and drives it fully into you. Every quiver and spasm of your vaginal walls [if Player can UB]as they tug the voodoo doll inexorably deeper [end if]is felt all around you.";
@@ -109,7 +109,7 @@ to say beatthevoodoogecko:
 			now sortorder entry is 2;
 			now description entry is "fuck her shemale ass";
 [			choose a blank row in table of fucking options;
-			now title entry is "Blow job";
+			now title entry is "Blowjob";
 			now sortorder entry is 5;
 			now description entry is "make her suck you off";]
 		if Player is female:
@@ -200,7 +200,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Gecko"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Gecko"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Voodoo Gecko" to infections of EquineList;
 	add "Voodoo Gecko" to infections of FurryList;
 	add "Voodoo Gecko" to infections of NatureList;
@@ -211,9 +211,9 @@ When Play begins:
 	add "Voodoo Gecko" to infections of TailList;
 	add "Voodoo Gecko" to infections of TailweaponList;
 	now Name entry is "Voodoo Gecko"; [ Infection/Creature name. Capitalized. ]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The voodoo shaman thrusts her voodoo doll forward and a swirling purple glow shoots from its eyes and blasts you![or]The gecko lunges forward in a spinning dance, striking you across the face with her tail with a hard slap![or]The shemale leaps onto you, pressing her oversized breasts into your face and quickly chants while smooshing you with them.[or]Pulling the needles from her doll, she jabs you in the thigh with them![or]With her chanting growing fast and low, she waves her doll in the air and darkness swirls around you. Unseen shapes in the cloud grab and grope at you, trying to pull you down even as they excite you, making your self-control wane.[or]With a twist of her body, she wriggles around behind you to grind her erection firmly against your rear.[or]Grabbing your face with her clinging hand, she chants something low and dark while drawing a pattern over your heart with cum. A chillness fills your chest even as a heat rises in your loins.[at random]";
 	now defeated entry is "[beatthevoodoogecko]";
 	now victory entry is "[losetovoodoogecko]";
@@ -252,16 +252,16 @@ When Play begins:
 	now libido entry is 70; [ Target libido the infection will rise towards. ]
 	now loot entry is "gecko cum"; [ Dropped item, blank for none. Case sensitive. ]
 	now lootchance entry is 28; [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
 	now CumItem entry is "gecko cum";
-	now TrophyFunction entry is "-";
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]flexible[or]lithe[or]slender[at random]";
 	now type entry is "[one of]gecko[or]reptilian[or]lizard-like[at random]";
 	now magic entry is true;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
@@ -273,7 +273,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -285,7 +285,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -304,7 +304,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -325,18 +325,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -350,19 +350,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -419,7 +419,7 @@ This is the Voodoo Gecko Infection rule:
 				say "     It is not a warm welcome, as you are tied down by the voodoo geckos on a ritual table in a large hall. Under the oversight of what must be their high priestess, several of them call forth their dark magicks and drain you of your will. Reduced to a zombie state, alive but without mind or will - only lust, you become another slave for one of the shemales. You, alongside the other slaves in her collection, are used to slake her dark, twisted desires. At times, you're even used by their leader, who has claim over all sex slaves in her little domain. At one point, you faintly notice a swelling in the ranks of the enslaved as many human and partially-human slaves are added to their prizes.";
 		else:
 			say "     Managing to keep your mind at least partially intact until rescue, you exit the city with the military rescue forces. Your altered body is viewed with suspicion by the soldiers, but you are taken along regardless. The military scientist who looks into your case, unable to accept the existence of the forces that have touched you, views you simply as slightly confused by your infection and has you remanded to a short series of counselling sessions before your full release";
-			if humanity of Player < 40 and vgeckobeaten > vgeckoloss / 2 and player is pure:
+			if humanity of Player < 40 and vgeckobeaten > vgeckoloss / 2 and Player is pure:
 				say ". Growing tired of the psychobabble by the third session as she tries to tell you that magic doesn't actually exist, something in you clicks into place and purple swirls in your eyes. Drawing upon some innate power you can now connect to, you blast a wave of tangible purple mist from your hands. The magicks that the shrink tried to tell you wasn't real overwhelms her, enslaving her will to yours. After slaking your pent-up lusts upon her body, you have her present you with a clean bill of mental health, accelerating your release.";
 				say "     Once you're released back into society, you continue to maintain your control over the psychiatrist. She makes for a very useful tool as the military has her perform sessions with numerous cases of rescued citizens. Many of those she assesses to be of weaker will or with submissive tendencies as a result of their infection are directed to you as part of their [']rehabilitation[']. This results in you easily collecting a wide array of sex slaves of all types, enslaved to your will by your powers, as they are delivered right to your door. And once the military clean-up of the city is over and your pet shrink is no longer working for them, you [if Player is male]breed her into becoming your gecko apprentice and lover[else if Player is female]transform her into your gecko apprentice and lesbian lover[else]transform her into your gecko apprentice and lover[end if].";
 			else if Player is pure:

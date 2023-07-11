@@ -40,7 +40,7 @@ Cock Length of Val is 8. [length in inches]
 Ball Count of Val is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Val is 4. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Val is 0. [number of cunts]
-Cunt Depth of Val is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Val is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Val is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Val is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -86,9 +86,9 @@ to say ValDesc:
 	say "     As Val notices your intense gaze upon him, he presents himself for your viewing pleasure, stretching and slowly turning to show off his well-rounded ass. He's certainly become a well-trained slave in the short time since his capture.";
 
 instead of conversing the Val:
-	if FaceName of Player is "Orc Warrior" and player is pure:
+	if FaceName of Player is "Orc Warrior" and Player is pure:
 		say "     Seeing an orc warrior approach, Val reflexively licks his lips and one of his hands moves down to rub his quickly hardening cock. He waits for you to speak.";
-	else if FaceName of Player is "Orc Breeder" and player is pure:
+	else if FaceName of Player is "Orc Breeder" and Player is pure:
 		say "     Seeing you approach, Val lets an appreciative gaze wander up and down your body, then asks 'Yes, brother?'";
 	else:
 		say "     Seeing a non-orc approach, Val looks a bit curious at you, then asks 'Yes?'";
@@ -96,47 +96,55 @@ instead of conversing the Val:
 	say "[ValTalkMenu]";
 
 to say ValTalkMenu:
+	say "     [bold type]What do you want to talk with Val about?[roman type][line break]";
+	now sextablerun is 0;
 	blank out the whole of table of fucking options;
 	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Talk about him";
 	now sortorder entry is 1;
 	now description entry is "Let him tell you about himself";
-	now toggle entry is ValTalk rule;
 	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Offer to free him";
 	now sortorder entry is 2;
 	now description entry is "Offer him his freedom";
-	now toggle entry is ValTalk rule;
 	[]
 	if ValPregnancy > 1:
 		choose a blank row in table of fucking options;
 		now title entry is "Talk about his pregnancy";
 		now sortorder entry is 3;
 		now description entry is "Ask him how he feels about being with child";
-		now toggle entry is ValTalk rule;
 	[]
 	sort the table of fucking options in sortorder order;
-	change the current menu to table of fucking options;
-	carry out the displaying activity;
-	clear the screen;
-
-This is the ValTalk rule:
-	choose row Current Menu Selection in table of fucking options;
-	let nam be title entry;
-	say "[title entry]: [description entry][line break]";
-	say "Is this what you want?";
-	if Player consents:
-		decrease menu depth by 1;
-		clear the screen;
-		if (nam is "Talk about him"):
-			say "[ValTalk1]";
-		if (nam is "Offer to free him"):
-			say "[ValTalk2]";
-		if (nam is "Talk about his pregnancy"):
-			say "[ValTalk3]";
-		wait for any key;
+	repeat with y running from 1 to number of filled rows in table of fucking options:
+		choose row y from the table of fucking options;
+		say "[link][y] - [title entry][as][y][end link][line break]";
+	say "[link]0 - Nevermind[as]0[end link][line break]";
+	while sextablerun is 0:
+		say "Pick the corresponding number> [run paragraph on]";
+		get a number;
+		if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
+			now current menu selection is calcnumber;
+			choose row calcnumber in table of fucking options;
+			say "[title entry]: [description entry]?";
+			if Player consents:
+				let nam be title entry;
+				now sextablerun is 1;
+				if (nam is "Talk about him"):
+					say "[ValTalk1]";
+				if (nam is "Offer to free him"):
+					say "[ValTalk2]";
+				if (nam is "Talk about his pregnancy"):
+					say "[ValTalk3]";
+				wait for any key;
+		else if calcnumber is 0:
+			now sextablerun is 1;
+			say "     You step back from the orc breeder, shaking your head slightly as he gives a questioning look.";
+			wait for any key;
+		else:
+			say "Invalid Option. Pick between 1 and [the number of filled rows in the table of fucking options].";
+	clear the screen and hyperlink list;
 
 to say ValTalk1:
 	say "     Val's brows draw together a bit as he tries to think back to his old self. Finally he says, 'I - I can't remember Vincent too well anymore.' Biting his lip, he continues, [one of]'I think I worked... in a store? A clothing store? Terribly long hours, and rude customers, and then... I was sorting items from the dressing rooms back to their places when I changed suddenly. Fur, and fangs and a fox tail.' He rubs the base of his spine thoughtfully, then shrugs.[or]'Master Mul says he doesn't matter anymore, so I guess it's okay.'[or]'He was a fox, no a man - a fox-man? Different than I am now anyways.' With a shrug, he stops trying to remember.[or]'There was a lot of running and hiding from the monsters on the streets, I was never safe. Not like now, with the powerful masters taking care of me.'[or]'He never thought about doing anything with a man. Strange, hm? I don't think I'd want to live without my masters. I'm here for their pleasure.'[at random]";
@@ -185,21 +193,21 @@ An everyturn rule:
 			else:
 				LineBreak;
 				say "     Val's expression falls as you decline, and the disappointment is audible in his voice as he says, 'I - I'll just spend what time I have with Chris then... while he still is Chris.' Turning away from you, the orc breeder then walks over to his son, talking to him in a quiet voice. You decide to keep your distance and leave them to it in peace.";
-			now ValPregnancy is 0;     [no need to tell the player about the birth, as he was present]
+			now ValPregnancy is 0; [no need to tell the player about the birth, as he was present]
 		else:
 			say "     You have a strange feeling in your body, as if you somehow just know that a new life has entered this world. Maybe you should go check on Val in the orc lair...";
-			now ValPregnancy is 4;     [so he can tell the player about their kid in the next meeting]
+			now ValPregnancy is 4; [so he can tell the player about their kid in the next meeting]
 		now ValPregCounter is 0;
 	else if ValPregCounter is 3 and player is not in Slave Cell 1 and HP of Val is 2:
 		say "     [bold type]You remember that the time for the birth of Val's child should be soon. Maybe you should visit the orc breeder in his cell to be at his side when that happens...[roman type][line break]";
 	else if ValPregCounter is 12:
-		now ValPregnancy is 3;   [very visible pregnancy]
+		now ValPregnancy is 3; [very visible pregnancy]
 		if Player is in Slave Cell 1:
 			say "     [bold type]Seeing Val's belly bulge larger and larger, you start wondering what will happen once his time to give birth comes.[roman type][line break]";
 		else if HP of Val is 2: [player knows he is pregnant]
 			say "     [bold type]You remember that the time for the birth of Val's child should be sometime during the next day or two. Maybe you should visit the orc breeder in his cell to be at his side when that happens...[roman type][line break]";
 	else if ValPregCounter is 24:
-		now ValPregnancy is 2;   [visible pregnancy]
+		now ValPregnancy is 2; [visible pregnancy]
 	if ValPregCounter > 1:
 		decrease ValPregCounter by 1;
 

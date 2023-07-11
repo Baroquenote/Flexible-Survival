@@ -43,7 +43,7 @@ Table of GameCharacterIDs (continued)
 object	name
 Team Captain Roman	"Team Captain Roman"
 
-Team Captain Roman is a man.  Understand "Roman" as Team Captain Roman.
+Team Captain Roman is a man. Understand "Roman" as Team Captain Roman.
 ScaleValue of Team Captain Roman is 3. [human sized]
 Body Weight of Team Captain Roman is 6. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 Body Definition of Team Captain Roman is 7. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -62,7 +62,7 @@ Cock Length of Team Captain Roman is 0. [Length in Inches]
 Ball Count of Team Captain Roman is 0. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Team Captain Roman is 0. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Team Captain Roman is 1. [number of cunts]
-Cunt Depth of Team Captain Roman is 8. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Team Captain Roman is 8. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Team Captain Roman is 2. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Team Captain Roman is 2. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -85,8 +85,10 @@ to say RomanDesc:
 	if debugactive is 1:
 		say "     DEBUG: HP of Roman [HP of Roman][line break]";
 	if Roman is in Astroslide Field Locker-room:
+		project Figure of Roman_naked_icon;
 		say "You look at the former team captain. Roman is tied on his back to one of the benches. Old jerseys are pinning his arms under the bench, and pulling his legs up against his chest, exposing his pussy to everyone. Someone has covered his entire body in writings with a red marker. Dirty names, like [']bitch['], [']whore['], or [']team pet['], an arrow pointing down to his crotch, with the mention [']For public use['], and another on his head, pointing at his mouth, saying [']Feed the monkey[']. Roman's eyes meet yours, but he looks absent. He tries to mumble something, but his mouth has been filled with socks, and only a muffled whisper escapes his lips.";
 	else:
+		project Figure of Roman_clothed_icon;
 		if HP of Roman is 0:
 			say "[first time]This is the captain of the Tenvale Silverbacks. You hear some of the apes address him as 'captain Roman'. [only]Roman stands out from the rest of the players. He looks more mature, and in opposition to his teammates, who strut on the field with only a helmet and a shoulder-pad, he wears a tank-top and a pair of shorts, who outline his strong body and the large bulge of his crotch. Damn, he must be hung!";
 		else if HP of Roman is not 5:
@@ -102,6 +104,7 @@ instead of sniffing Team Captain Roman:
 
 [Team scenes are in Tenvale Silverbacks Football Team Quest]
 instead of conversing the Team Captain Roman:
+	project Figure of Roman_clothed_icon;
 	now sextablerun is 0;
 	blank out the whole of table of fucking options;
 	[]
@@ -267,7 +270,7 @@ to say FootballTryoutsResults:
 		now GorillasRep is 9; [star player]
 	else if TryoutScore > 4: [okay results]
 		say "     'Congratulations you made it into the team,' the primate says with a grin and holds out his hand in congratulation. Accepting a firm grip on your forearm and returning the same on his powerful furry limb, you are told, 'When we put everyone's data on the planning board, you rated well in the upper third. Didn't take much convincing for everyone to agree that you deserve a shot on the team.' Waving his hand to indicate the large locker room, he goes on to say, 'Be sure to come by regularly to train. You should make it to the main team in no time.' You thank him and walk away, and into the midst of the gathered football players, getting a very warm welcome (and a few friendly gropes) from the guys.";
-		now GorillasRep is 4;  [b team player]
+		now GorillasRep is 4; [b team player]
 	else: [moderate to bad results]
 		say "     'Listen, we had a look at your results and... made a team decision that you will not be joining as a player,' the primate tells you with a somewhat apologetic expression. Yet as you bow your head in shame and begin turning to walk away, he grabs hold of your arm and adds, 'Wait, I haven't finished yet. I thought it was brave of you to do the tryouts, no matter what came of it, so... I have an offer for you. A way you can still be part of the team and help out. You could be either a [if Player is female]water girl or a laundry girl[else]water boy or a laundry boy[end if].' Roman gives you a supportive slap on the shoulder. 'It will be no small job, managing all these boys['] laundry, but every effort counts, and for that you have my thanks. [bold type]If you work for the team enough times, I am certain that someone will put a good word for you, and put your name forward for the next draft[roman type]. Come back anytime you want, champ. I'm sure that I'll see you on the football field in no time.'";
 		now GorillasRep is 0;
@@ -351,6 +354,7 @@ instead of fucking Team Captain Roman:
 
 [1 - Roman bad ending]
 to say RomanFuck1:
+	project Figure of Roman_naked_icon;
 	say "     You approach the helpless Roman, a glint of lust in your eyes. [bold type]How are you going to ruin your favorite ape today?[roman type][line break]";
 	now sextablerun is 0;
 	blank out the whole of table of fucking options;
@@ -467,6 +471,7 @@ to say RomanFuck1Cuni:
 
 [2  - Roman good ending]
 to say RomanFuck2:
+	project Figure of Roman_naked_icon;
 	say "     Roman ponders your proposition for a moment. A very short moment. 'I guess I do need a distraction from the business, [if lastFuck of Roman is 0]and I trust you to show me a good time[else]especially if we have as much fun as last time[end if].' The both of you skedaddle to Roman's former changing room. It returned to its original function and is now cluttered with football equipment, but there is still enough space for Roman to unroll an exercise mattress on the floor. He looks back at you expectantly and asks, [bold type]'What do you have in mind?'[roman type] You hug the big gorilla tenderly as you whisper the answer in his ear.";
 	now sextablerun is 0;
 	blank out the whole of table of fucking options;
@@ -483,13 +488,13 @@ to say RomanFuck2:
 		now sortorder entry is 2;
 		now description entry is "Everything is in the name";
 	[]
-	if (player is female and Breast Size of Player > 0):
+	if (Player is female and Breast Size of Player > 0):
 		choose a blank row in table of fucking options;
 		now title entry is "Tribadism";
 		now sortorder entry is 3;
 		now description entry is "Have some [']girl time['] with Roman";
 	[]
-	if (player is female and Breast Size of Player is 0):
+	if (Player is female and Breast Size of Player is 0):
 		choose a blank row in table of fucking options;
 		now title entry is "Cunt-boy special";
 		now sortorder entry is 4;
@@ -621,8 +626,9 @@ to say RomanTransformationFootage:
 	project the Figure of HuskyAlpha_soft_icon;
 	say "     When you press the play button, the screen displays the black-and-white, soundless feed of a security camera. It seems that the camera only filmed when there was motion in the field of vision of the recording device. The recording starts the day following the infection. You see the shopkeeper enter his shop from the back-room with wooden planks, about to barricade himself. Unfortunately, he is ambushed by a hyena. The pair leaves the field of the camera during the scuffle but, when it records again, it shows two hyena herms rushing out of the shop. The following recordings show several looters visit the store. [if BrennanRelationship >= 2]You even recognize Brennan at one point. [end if]With each passing day, the visitors are less and less human. The date of recording suddenly jumps forward several weeks when a large gorilla rushes into the store. He is quickly followed by a pack of husky girls, accompanied by an alpha husky. They surround the gorilla, then pile on him. The ape puts a tough resistance, but is eventually taken down.";
 	say "     The alpha has the gorilla brought up to his knees and held fast by his bitches, before pushing his cock inside the primate's mouth. Long minutes of mouth-rape pass. The alpha husky keeps talking. You cannot hear what he says, but the gorilla seems to not like what he hears. The dog cums eventually, and force the ape to drink his cum by pushing his knot past his victim's lips. The husky seems unsatisfied by something, and gives the gorilla a small kick to his package. He gives his girls an order, and the female huskies begin to force themselves on the gorilla's cock. Each time one of the huskies pull out, you notice that the gorilla's cock becomes smaller and smaller. Eventually, the penis completely recedes into the dark-furred body, and in its place is a vagina.";
-	WaitLineBreak;
 	project the Figure of HuskyAlpha_hard_icon;
+	WaitLineBreak;
+	project the Figure of Roman_naked_icon;
 	if HP of Roman > 2:
 		say "     You suddenly realize that the gorilla on the footage matches Roman's story about his transformation. You cannot help but feel a little sorry for him. In the meantime, the alpha husky used the show to make himself hard again. Pulling Roman by the fur of his head, he throws the football trainer on the cash counter and takes Roman's new and ephemeral virginity. He humps the ape hard and fast. Despite his teary eyes, Roman seems to take more and more pleasure in the pounding, until the dog pushes all the way in. Roman's eyes open wide, and you are actually thankful that the footage does not have sound, considering the scream that he just pushed. More pounding ensued until the alpha husky reached his climax. After a dozen more minutes where the husky slaps Roman's butt to spend time, he eventually pulls out from the gorilla and, with a final butt slap, takes his leave.";
 		say "     Roman slowly slides down from the counter and forces himself to stand up. He explores his body, a look of despair on his face. He frantically looks around, and eventually rushes to the backroom. He gets out a couple of minutes later, wearing the pants of the shopkeeper in order to cover his new sex. As he meekly walks out from the store, the footage stops for the final time.";

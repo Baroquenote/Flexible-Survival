@@ -1,5 +1,5 @@
 Version 1 of Sally by Stripes begins here.
-"Adds Dr Matt's Huskybunny slut form, now named Sally, to the Flexible Survival game"
+"Adds Dr. Matt's Huskybunny slut form, now named Sally, to the Flexible Survival game"
 
 Section 1 - Sally the Huskybunny
 
@@ -8,15 +8,50 @@ object	name
 Sally	"Sally"
 
 Sally is a woman.
+ScaleValue of Sally is 3. [human sized]
+SleepRhythm of Sally is 0. [0 - awake at all times, 1 - day active, 2 - night active]
+Body Weight of Sally is 5. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
+Body Definition of Sally is 4. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
+[Body Adjective is generated out of the body weight and body definition and can be used in scenes - one word descriptive adjective depending on weight and definition groups: low weight group: skinny/slender/lithe; mid weight group: average/fit/muscled; high weight group: pudgy/husky/jacked]
+Androginity of Sally is 8. [Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/somewhat effeminate/effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
+Mouth Length of Sally is 6. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
+Mouth Circumference of Sally is 4. [mouth circumference 1-5, "tiny, small, normal, wide, gaping"]
+Tongue Length of Sally is 6. [length in inches]
+Breast Size of Sally is 5. [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+Nipple Count of Sally is 6. [count of nipples]
+Asshole Depth of Sally is 12. [inches deep for anal fucking]
+Asshole Tightness of Sally is 2. [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+Cock Count of Sally is 1. [number of cocks]
+Cock Girth of Sally is 3. [thickness 1-5, thin/slender/average/thick/monstrous]
+Cock Length of Sally is 9. [Length in Inches]
+Ball Count of Sally is 2. [allowed numbers: 1 (uniball), 2 or 4]
+Ball Size of Sally is 3. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
+Cunt Count of Sally is 1. [number of cunts]
+Cunt Depth of Sally is 12. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Tightness of Sally is 3. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+Clit Size of Sally is 3. [size 1-5, very small/small/average/large/very large]
+[Basic Interaction states as of game start]
+PlayerMet of Sally is false.
+PlayerRomanced of Sally is false.
+PlayerFriended of Sally is false.
+PlayerControlled of Sally is false.
+PlayerFucked of Sally is false.
+OralVirgin of Sally is true.
+Virgin of Sally is true.
+AnalVirgin of Sally is true.
+PenileVirgin of Sally is true.
+SexuallyExperienced of Sally is false.
+TwistedCapacity of Sally is false. [Twisted Characters can take any penetration, no matter the size]
+Sterile of Sally is true. [steriles can't knock people up]
+MainInfection of Sally is "".
 Description of Sally is "[sallydesc]".
 Conversation of Sally is { "Fuck me!" }.
-lastSallyfucked is a number that varies. lastSallyfucked is usually 555.
+The scent of Sally is "The cute, little huskybunny herm smells of arousal and sex.".
 the icon of Sally is figure of Sally_icon.
-
-the scent of Sally is "The cute, little huskybunny herm smells of arousal and sex.".
+lastSallyfucked is a number that varies. lastSallyfucked is usually 555.
 
 to say sallydesc:
-	say "     This creature, once the intellectual Dr Matt, is now nothing more than a horny slut and your personal toy. The mouse's injection has left him a mindless, lustful creature eager for sex. Sally, as you've decided to call her, is a cute and sexy huskybunny herm with no desires greater than satisfying her physical desires and yours. The slutty hybrid has fluffy fur with husky markings and tail, but a bunny muzzle and ears. Her body is something between the two, a sensual mix of canine and lapine, with lovely curves and big, rabbit footpaws. As a herm, she has six large, perky breasts, with the upper pair being above-average in size and shrinking slightly for the subsequent two rows. Her nine inch cock is almost constantly hard and both it and her wet pussy dribble with arousal.";
+	say "     This creature, once the intellectual Dr. Matt, is now nothing more than a horny slut and your personal toy. The mouse's injection has left him a mindless, lustful creature eager for sex. Sally, as you've decided to call her, is a cute and sexy huskybunny herm with no desires greater than satisfying her physical desires and yours. The slutty hybrid has fluffy fur with husky markings and tail, but a bunny muzzle and ears. Her body is something between the two, a sensual mix of canine and lapine, with lovely curves and big, rabbit footpaws. As a herm, she has six large, perky breasts, with the upper pair being above-average in size and shrinking slightly for the subsequent two rows. Her nine inch cock is almost constantly hard and both it and her wet pussy dribble with arousal.";
 
 Instead of conversing the Sally:
 	say "     [one of]The slutty huskybunny is running her paws over her body, as if rediscovering again how good it feels to touch her transformed body[or]The horny slut moans and fingers her pussy as she writhes in pleasure on the bed[or]The hybrid creature is taking a rare nap to recover after her almost constant, lustful escapades[or]The horny huskybunny strokes and pumps at her cock until she spurts streams of cum all over herself.[or]As you ask her how she's doing, the huskybunny slut gives you a vacant smile and wriggles in her seat, leaking juices onto the bunk[or]The huskybunny pinches and teases her nipples, moaning softly as milk leaks from them[or]You watch her for a bit as she bends her flexible body and starts licking her cock and pussy clean, slathering her long, canine tongue over them[at random].";
@@ -75,7 +110,7 @@ to say sallypussy:
 		WaitLineBreak;
 		say "     Her body, now that her transformation is complete into a slutty fucktoy, is responsive to your needs and adapts to your desires. You can feel her cunt changing around you, becoming just the right size to satisfy you, becoming [one of]loose for a fast fucking that makes her boobs quiver on her chest[or]a sensual, perfect fit that feels just right around your cock[or]tight and snug, making for a slow, tight fuck that feels so good around your needy cock[in random order].";
 		WaitLineBreak;
-		say "     You pound away at her, enjoying a nice, long lovemaking session. She hooks her legs around you, freeing up your hands to roam over her sexy body. Your fingers tease her all over, having so many sensitive spots and such delightful responses to your touches. Dr Mouse indeed did a fine job with her infection, making her into one of the best fucks you've ever had. You finally drive hard into her and unleash your hot seed, pushing your glans past her cervix and into eager womb. Her vaginal walls squeeze and tug at your spurting member, milking you to get as much as she can. She yips and barks excitedly, husky tail wagging frantically, happy to have pleased her master and at having been seeded with his cum.";
+		say "     You pound away at her, enjoying a nice, long lovemaking session. She hooks her legs around you, freeing up your hands to roam over her sexy body. Your fingers tease her all over, having so many sensitive spots and such delightful responses to your touches. Dr. Mouse indeed did a fine job with her infection, making her into one of the best fucks you've ever had. You finally drive hard into her and unleash your hot seed, pushing your glans past her cervix and into eager womb. Her vaginal walls squeeze and tug at your spurting member, milking you to get as much as she can. She yips and barks excitedly, husky tail wagging frantically, happy to have pleased her master and at having been seeded with his cum.";
 		WaitLineBreak;
 		say "     After a long wait for your afterglow to pass and for your cock to start to soften, you slip out of her with a wet pop. Her pussy clamps down automatically, wanting to keep all your seed inside. You scritch her long, bunny ears and she smiles with her long tongue hanging from her muzzle as she pants happily. As you walk off, she leans over and starts licking her sticky cunt clean.";
 		decrease humanity of Player by a random number between 0 and 2;
@@ -86,7 +121,7 @@ to say sallypussy:
 		WaitLineBreak;
 		say "     Her body, now that her transformation is complete into a slutty fucktoy, is responsive to your needs and adapts to your desires. You can feel her cunt changing around you, becoming just the right size to satisfy you, becoming [one of]loose for a rough pounding that makes the bunk rock noisily and the huskybunny moan and yip loudly in delight[or]a sensual, perfect fit that feels just right around your cock that has her panting and moaning in ecstasy[or]tight and snug, making for a slow, tight fuck that feels so good around your needy cock. You hold her pinned down, enjoying the whimpers of pleasure coming from her needy body[in random order]. You can tell that your slutty pet's enjoying every moment as well.";
 		WaitLineBreak;
-		say "     You pound away at her, enjoying a nice, long session of fucking her. She keeps her large, bunny feet firmly planted and pushes back into every thrust you make. You let your hands to roam over her sexy body. Your fingers tease her all over, having so many sensitive spots and such delightful responses to your touches. Dr Mouse indeed did a fine job with her infection, making her into one of the best fucks you've ever had. Grabbing her breasts and teasing her nipples, you nibble along her bunny ears as you drive hard her into her. A few final thrusts send you over the edge and you unleash your hot seed, pushing your glans past her cervix and into eager womb. Her vaginal walls squeeze and tug at your spurting member, milking you to get as much as she can. She yips and barks excitedly, husky tail wagging frantically, happy to have pleased her master and at having been seeded with his cum.";
+		say "     You pound away at her, enjoying a nice, long session of fucking her. She keeps her large, bunny feet firmly planted and pushes back into every thrust you make. You let your hands to roam over her sexy body. Your fingers tease her all over, having so many sensitive spots and such delightful responses to your touches. Dr. Mouse indeed did a fine job with her infection, making her into one of the best fucks you've ever had. Grabbing her breasts and teasing her nipples, you nibble along her bunny ears as you drive hard her into her. A few final thrusts send you over the edge and you unleash your hot seed, pushing your glans past her cervix and into eager womb. Her vaginal walls squeeze and tug at your spurting member, milking you to get as much as she can. She yips and barks excitedly, husky tail wagging frantically, happy to have pleased her master and at having been seeded with his cum.";
 
 
 to say sallyimpreg:

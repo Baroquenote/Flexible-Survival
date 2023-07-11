@@ -8,7 +8,7 @@ Section 1 - Creature Responses
 
 to say leopardman desc:
 	project Figure of Leopardman_soft_icon;
-	setmongender 3;  [creature is male]
+	setmongender 3; [creature is male]
 	if inasituation is true:
 		say ""; [dealt with at the event source]
 	else:
@@ -25,8 +25,7 @@ to say Leopardman wins:
 		say "     His soft thick spotted fur tickles pleasurably as it rubs up against your [Skin of Player] skin, as he begins to rock his hips forward against yours, his barbs massaging your inner walls with small bursts of pleasure, as he slides his feline cock in and out of your increasingly lust-filled form. You feel his sharp feline teeth brush your neck and you moan as he licks across your neck several times with his raspy feline tongue, the sensation seeming strangely erotic as he rubs his muzzle against your unprotected neck teasingly. The pleasure only seems to build within you as he speeds up his thrusts, all thoughts of anything except sex driven out of your mind as your senses are overwhelmed by his masculine musk, and the feel of his silken soft fur stroking over your [bodytype of Player] body as he continues to thrust that amazingly pleasurable feline cock into your needy passage.";
 		say "     After what seems almost like an eternity of pleasure, the leopardman buries his head against your shoulders, his teeth scraping lightly against your skin as he holds you in place to receive his seed. You find yourself yowling helplessly like a cat as you feel his cock tense and fill your body with his warm, thick seed, your own orgasm smashing through you and making you feel increasingly bestial as he fills your body with his predatory seed. Eventually you can do no more than shudder limply underneath him as he pulls out of you with a look of satisfaction on his feline face, 'What a good little sexy slut you make,' he murmurs with amusement as he traces one of his clawed tips along the side of your face teasingly, 'Now that you know how good it can be, I look forward to seeing you again, my little soon-to-be Leopardess. In the meantime, though, I am sure there are still others out there for me to find and breed...' the leopardman says with a wicked grin as he begins to stalk off down the street, already looking for his next sexual conquest as he leaves you lying there trying to recover from the amazingly sexual experience.";
 		CreatureSexAftermath "Player" receives "PussyFuck" from "Leopardman";
-		infect "Leopardman";
-	else if ( HP of Player > 0 and a random chance of 1 in 3 succeeds ) or ( player is submissive and a random chance of 2 in 3 succeeds ) or ( player is mpreg_ok and a random chance of 1 in 3 succeeds ):
+	else if ( HP of Player > 0 and a random chance of 1 in 3 succeeds ) or ( Player is submissive and a random chance of 2 in 3 succeeds ) or ( Player is mpreg_ok and a random chance of 1 in 3 succeeds ):
 		say "     'Well, I was certainly hoping for some more fun than this,' he rumbles as he looks over your body as you [if HP of Player > 0]give up the fight and submit to[else]collapse helplessly in front of[end if] the powerful and masculine feline. 'Without a proper breeding hole, what good are you?' the leopardman asks teasingly as he looks down at you, the evil grin spreading across his muzzle making you shudder slightly. 'Though you certainly act like a weak and needy female, now don't you?' he purrs in your ear as he pins you down suddenly. 'Maybe you just need a little more... encouragement.'";
 		say "     What he means by this becomes clear as he grinds his hard erection against your backside and gets it lined up with your asshole. You find your heart beating faster as his powerful male scent fills your mind with lust even as one of his clawed hands trails up the inside of your thighs teasingly. The feel of his soft hands tracing up your [bodydesc of Player] body making you moan with arousal and causes the leopard to grin even as he slips a paw [if Player is male]to your [cock size desc of Player] [Cock of Player] manhood. 'Already hard, I see,' he rumbles. 'I knew there was a needy fucktoy somewhere inside you looking to get fucked and bred[else]across your bare groin. 'Nothing at all, eh?' he says in surprise. 'Well, let's see if we can't get you a proper pussy so you can get bred like you so clearly want next time[end if].' And with that said, he pushes his hips forward, sinking his pointed, barbed, feline rod into you.";
 		WaitLineBreak;
@@ -43,8 +42,6 @@ to say Leopardman wins:
 		say "     Soon the Leopard is moaning and yowling with pleasure above you, every sexy sound you wring out of him as you work on his cock seems like a pleasant reward to your lust-addled mind, as you run your tongue over his amazing feline rod and your own rod twitches with desire. Before much longer, your efforts are rewarded, and his cock twitches as it fills your mouth with his wonderful cream, the salty and sweet taste of the leopardman's seed filling your mouth as you eagerly try to gulp down every last amazing drop. You hardly realize that your own cock is busy coating your chest with your own seed as you continue to lick and suck at the leopardman's member, while he yowls his orgasm and triumph out for all to hear.";
 		say "     Eventually the leopardman pulls his spent cock out of your mouth, and you collapse back helplessly as he stands over you with amusement, 'I can see you liked your dose of cream little one,' he says with a chuckle of amusement. 'And while I am sure you can hardly wait for your next dose, there are still plenty of people out there that need to become sexy little leopards like me, and there are plenty of females out there that need a little belly full of leopard cubs as well. And maybe next time you will have a proper little pussy as well for me to fill full of cubs,' he says with an amused flick of his tail as he stalks off into the city, already on the hunt for his next playmate as you lie there and try to recover from the intense sexual experience.";
 		CreatureSexAftermath "Player" receives "OralCock" from "Leopardman";
-		infect "Leopardman";
-
 
 To say Leopardman loses:
 	project Figure of Leopardman_hard_icon;
@@ -53,32 +50,38 @@ To say Leopardman loses:
 	else:
 		say "     The leopardman staggers back, his feline muzzle scrunched up in pain as he clutches at his wounds and glares at you for a minute. You don't give him a chance to react. With quick reflexes, you soon have him pinned to a nearby brick wall. It's got holes galore, and frankly isn't that stable, but you have the advantage, and you doubt he can topple anything in his weekend state.";
 		LineBreak;
-		say "What do you want to do with the Leopardman?";
+		say "     [bold type]What do you want to do with the Leopardman?[roman type][line break]";
 		now sextablerun is 0;
 		blank out the whole of table of fucking options;
 		[]
 		choose a blank row in table of fucking options;
-		now title entry is "Immediately fall to your knees and worship this feline adonis";
+		now title entry is "Immediately fall to your knees and worship this feline Adonis";
 		now sortorder entry is 1;
 		now description entry is "While he's at your mercy, why not show him true appreciation";
 		[]
-		if player is male: [Option only visible for males]
+		if Player is male: [Option only visible for males]
 			choose a blank row in table of fucking options;
 			now title entry is "Beg him to let you worship his paws";
 			now sortorder entry is 2;
 			now description entry is "Slip yourself under his big paws";
 		[]
-		if player is male: [Option only visible for males]
+		if Player is male: [Option only visible for males]
 			choose a blank row in table of fucking options;
 			now title entry is "Turn around and bend over, smacking your ass";
 			now sortorder entry is 3;
 			now description entry is "Feel him inside you and breed you";
 		[]
+		if Player is male: [Option only visible for males]
+			choose a blank row in table of fucking options;
+			now title entry is "Face Fuck";
+			now sortorder entry is 4;
+			now description entry is "Push him to his knees and show him the error of his ways";
+		[]
 		sort the table of fucking options in sortorder order;
 		repeat with y running from 1 to number of filled rows in table of fucking options:
 			choose row y from the table of fucking options;
 			say "[link][y] - [title entry][as][y][end link][line break]";
-		say "[link]100 - Nevermind[as]100[end link][line break]";
+		say "[link]0 - Nevermind[as]0[end link][line break]";
 		while sextablerun is 0:
 			say "Pick the corresponding number> [run paragraph on]";
 			get a number;
@@ -86,40 +89,35 @@ To say Leopardman loses:
 				now current menu selection is calcnumber;
 				choose row calcnumber in table of fucking options;
 				say "[title entry]: [description entry]?";
-				if player consents:
+				if Player consents:
 					let nam be title entry;
 					now sextablerun is 1;
-					if (nam is "Immediately fall to your knees and worship this feline adonis"):
+					if (nam is "Immediately fall to your knees and worship this feline Adonis"):
 						say "[LeopardmanVictorySexOral]";
 					if (nam is "Beg him to let you worship his paws"):
 						say "[LeopardmanVictorySexPaw]";
 					if (nam is "Turn around and bend over, smacking your ass"):
 						say "[LeopardmanVictorySexAnal]";
-			else if calcnumber is 100:
-				say "Leave him?";
-				LineBreak;
-				say "     ([link]Y[as]y[end link]) - Yes.";
-				say "     ([link]N[as]n[end link]) - No.";
-				if the player consents:
-					now sextablerun is 1;
-					say "     You step back from the Leopardman, shaking your head as he gives you a shocked look.";
+					if (nam is "Face Fuck"):
+						say "[LeopardmanVictorySexFaceFuck]";
 					wait for any key;
-				else:
-					say "Pick between 1 and [the number of filled rows in the table of fucking options] or 100 to exit.";
+			else if calcnumber is 0:
+				now sextablerun is 1;
+				say "     You step back from the leopardman, shaking your head slightly as he gives a questioning look.";
+				wait for any key;
 			else:
 				say "Invalid Option. Pick between 1 and [the number of filled rows in the table of fucking options].";
 		clear the screen and hyperlink list;
 
 to say LeopardmanVictorySexOral:
-	say "     With your body so close to his, you can't help but find yourself lost in the sight of the man, the feel of the man. His fur rubs against your skin, and it drives your mind wild, drawing a moan from your clenched lips. You try to keep a tough face, a war face, but the leopardman sees right through you. His lips curl up in one of the smarmiest grins of glee you have ever seen. It only drives you further from sane thought, leaving you with nothing but need. You are just about to beg to get to worship him, but he just licks his lips and pushes off the wall, forcing you to stumble a few feet back. It is then that he leans back against the wall and folds his arms. His head then nods towards his dripping erection. You now no longer have to beg, as he simply says, 'Suck,[if player is male] boy[else] bitch[end if].' You are then on your knees before him in seconds. There's nothing left to do but give in to your screaming mind.";
+	say "     With your body so close to his, you can't help but find yourself lost in the sight of the man, the feel of the man. His fur rubs against your skin, and it drives your mind wild, drawing a moan from your clenched lips. You try to keep a tough face, a war face, but the leopardman sees right through you. His lips curl up in one of the smarmiest grins of glee you have ever seen. It only drives you further from sane thought, leaving you with nothing but need. You are just about to beg to get to worship him, but he just licks his lips and pushes off the wall, forcing you to stumble a few feet back. It is then that he leans back against the wall and folds his arms. His head then nods towards his dripping erection. You now no longer have to beg, as he simply says, 'Suck,[if Player is male] boy[else] bitch[end if].' You are then on your knees before him in seconds. There's nothing left to do but give in to your screaming mind.";
 	say "     The first taste of his seed, his precum, forces a desperate moan from your lips. That sound illicites a chuckle of approval from above, and one that draws a strange glee from your primal mind. Your tongue has already lashed the tip of the barbed cock before you clean, and so the only thing left to do is wrap your lips around that object of worship. As soon as you've curled your mouth around his cock, the leopardman forces his hips forward and grabs your head. He's no longer leaning against the wall, and now hunches over your form as he drives his prick straight down your throat. It's hard to care, to think beyond what pleases him, especially with all of the aphrodisac-like smells surrounding you. His musk makes your mind fall into a mire of constant need, and there's nothing you can, or want to, do to crawl out.";
 	WaitLineBreak;
 	say "     There's nothing left but to worship this great male before you, to run your hands over his abdominals and thighs, all while he begins to pound your face and throat. You gag off and on for a few minutes as he picks up speed, as his soft barbs rub against your throat, and as he grows ever more vicious in lust. So with little other choice, you force your throat to behave; Soon he's easily pushing in and out of it as you constrict your esophagus each time he thrusts in, and loosen it as he pulls out. It makes it easy for him to keep a fast rhythm. Your hands soon stroke down his furred, muscled back as they trail towards his ass. Those digits of yours then grip at his muscled rear as he pounds into you with ever more force. You're left in a daze as you hang on for dear life.";
 	say "     The leopardman shows little concern for you, and keeps up his savage thrusts for several more minutes. It's not until you start yanking him into you that you feel his hips flex, and his grip tighten. That feline cock even lurches and throbs as you both hold each other close. Your face is perpetually stuck in his crotch as he lets out a yowl that deafens all other sound. You then feel it: the first fiery founts of feline cum. You guzzle it down as if it is the nectar of the gods. If nothing else, it would serve as the perfect substitute. Eventually, everything has to end, and as the surges of seed slow to a dribble, he begins to slide out of your mouth. The leopardman then gives you a pat on the head and a few scratches behind the ears. 'Good job, slut,' he purrs out.";
 	WaitLineBreak;
-	say "     Once the feline rod is pulled out, the lopardman turns to leave. He glances back, though, and gives you a toothy grin. 'Next time you're under me, it'll be on my terms.' Then with a lusty purr, he sprints off.";
+	say "     Once the feline rod is pulled out, the leopardman turns to leave. He glances back, though, and gives you a toothy grin. 'Next time you're under me, it'll be on my terms.' Then with a lusty purr, he sprints off.";
 	CreatureSexAftermath "Player" receives "OralCock" from "Leopardman";
-	infect "Leopardman";
 
 to say LeopardmanVictorySexPaw:
 	say "     With a glance down at his paws, you lose control. The sight of those fluffy, feline, furred and muscled paws just makes you a slave to lust. It seems the leopard notices your weakness, as his toes begin to wiggle and flick up and down. It's at that point that you lose all pretense of control over this situation. Even if you are the one that beat the leopardman, it won't give you control of your own base needs: or any way out of needing to worship those furred feline paws. You don't even notice that you have released the leopard until his own hands grip at your shoulders, pushing you down to your knees, and then onto your back. There's no resistance from you, and why would there be? There's such a sexy beast in control of you, and that's what you want, after all.";
@@ -131,7 +129,6 @@ to say LeopardmanVictorySexPaw:
 	say "     There's a sensation of dampness along your stomach and lower chest, a feeling that's accompanied by that ass rubbing harder against your dick. The back of your mind knows what's happening, but the part in control in that moment doesn't care. The wetness gets more noticeable as you move onto the next paw, as you lather and salivate all over the first pad of that paw. As the taste of musk and sweat begins to grow mute there, you move onto your next target, and then your next. Once you've fully lathered every pad of both paws, your tongue laps between the toes, moving from one paw to the other, back and forth, making sure to constantly worship both, to have your tongue trapped between those toes almost nonstop.";
 	say "     It's once this has been going on for several minutes that you feel a burst of wetness cover your torso. The rubbing against your cock grows more intense, and the pressure of the paws against your face grows stronger. The paws then leave your face, your mind still stuck in a daze as the leopard stands up, and by the time your eyes focus enough, and by the time your able to glance around, you're alone. That's when you take the chance to glance down at your torso. The feline came all over you, leaving your entire stomach, and most of your chest, thoroughly caked in cum. Without much other choice, and with your mind still lost to need, you begin to scoop the fluids up in your hands, smelling it before licking your hands clean. It's not until you're fully cleaned up that you realize what you just did. You're then left to simply gather your things and move on.";
 	CreatureSexAftermath "Player" receives "OralCock" from "Leopardman";
-	infect "Leopardman";
 
 to say LeopardmanVictorySexAnal:
 	say "     You know what this man wants, his cock gives you quite the obvious image of need, and you know what your mind is screaming at you to do. So you step back, looking up and down the leopard as he raises a brow in confusion. He even begins to glance around for a way to escape, but before your new friend can leave, you turn around and bend over. You even go as far as to smack your ass. Without glancing back, you can't quite tell his response, but before you have to look, you feel fur against your rear. 'If I had known you were such a whore, I would have just told you to bend over,' the male purrs out. It's then that you feel the wet, barbed tip of your partner's cock rubbing between your cheeks. He begins to grind and hump at you, growing more insistent as he leaks along your lower back and butt. Only when it gets thoroughly damp down there, do you feel the tip start circling your hole.";
@@ -143,7 +140,13 @@ to say LeopardmanVictorySexAnal:
 	say "     You start to wonder if the pleasure will even let you stay conscious, or let you keep your sanity, and when that thought comes to mind your cock lurches. There's no slowing down for the feline as your ass tightens from your oncoming orgasm, no slowing as you release copious amounts of seed onto the ground beneath you both. The leopardman doesn't even make a comment as your ass pulses around his cock. However, his cock soon lodges itself fully in your rear, his balls slamming against you as his hips are held tight to your ass. You then feel it, the surges of cum from that glorious rod, the pulses through it, and the throbbing of the testicles held against you. It doesn't end, it doesn't even slow down for several minutes. You could swear your stomach is bulging out from the onslought of cum this male is filling you with, and only when you start questioning if it'll ever end, does the cream filling stop.";
 	say "     The feline then gives your neck a nibble and lick before yanking out of you. His sudden exit leaves you to collapse on the ground. It's then that you feel him wipe his cock onto your ass. Glancing behind you, you see his grin of absolute superiority, and then you see his ass as he walks away. You're left on the ground, leaking cum from your ass and cock as your still lust addled mind drives your thoughts. It's not for several minutes that you have the strength to stand and gather your belongings. Once everything is settled though, you manage to hobble off back to where you were before the pounding.";
 	CreatureSexAftermath "Player" receives "AssFuck" from "Leopardman";
-	infect "Leopardman";
+
+to say LeopardmanVictorySexFaceFuck:
+	say "     You've had enough of this asshole, and frankly, you think that it's time that the cocky cat learned some humility. Kicking the leopardman's feet from under him, you force your attacker to his knees and push him to face your fully erect shaft. The big cat makes a few weak attempts to escape you, but you quickly stop. Gripping the scruff of his neck firmly, you command your captive kitty to serve you. Looking up at you pleadingly, he opens his mouth, likely to beg you to let him go, allowing you to slam into him. Groaning softly at the feeling of the leopard's warm wet mouth wrapped around your meat, you warn him to behave lest you do anything worse to him and begin brutally face-fucking the gagging feline slamming into his throat. You grind your crotch against the feline adonis['] face. Your victim gags and gurgles lewdly around your cock with each harsh thrust into him, licking you desperately in quite a pleasing way as he panics; inexperienced and unwilling, the big cat messily drools as you throat-fuck him, his slobber trailing down your balls.";
+	say "     Noticing that your captured feline's running out of air, you pull out of his mouth and drape your slimy cock over the leopardman's face, mockingly praising him for his natural ability as he desperately gasps and coughs to regain breath, determined to punish the spotted Narcissus you quickly plunge back into his mouth your balls slapping wetly against his chin with each vicious push into his throat. The vulgar sloppy noises of your forceful coupling ringing out loudly across the city streets.";
+	WaitLineBreak;
+	say "     It's not much longer before you feel your climax coming. The thrill of dominating such a prideful and robust male as this leopardman and the pleasure of ravishing his spasming throat and hot mouth rapidly drive you towards orgasm, causing you to speed up your thrusting. Your weak panther also seems to notice your oncoming climax and moans pathetically around your shaft, the vibrations only adding to your pleasure as you plunge deep into his throat one last time and cum your balls twitching against the big cat's chin. You force him to swallow most of your seed, derisively asking your crushed leopardman if he enjoys his treat before slowly pulling out to shoot the last of your cum across his already spit-smeared face and, to add further insult to injury, wipe your cock clean against his cheek before pushing the humiliated feline to the ground leaving him to pant for breath as you confidently wander off.";
+	CreatureSexAftermath "Leopardman" receives "OralCock" from "Player";
 
 
 Section 2 - Creature Insertion
@@ -155,7 +158,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Leopard"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Leopard"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Leopardman" to infections of FelineList;
 	add "Leopardman" to infections of FurryList;
 	add "Leopardman" to infections of NatureList;
@@ -165,22 +168,22 @@ When Play begins:
 	add "Leopardman" to infections of BipedalList;
 	add "Leopardman" to infections of TailList;
 	now Name entry is "Leopardman";
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The leopardman swipes at you with his sharp claws![or]The leopardman pounces you playfully![or]He darts forward quickly and lashes out with a closed fist![or]The leopardman pauses for a second to watch you carefully, before darting forward and swiping at your legs, knocking you down![or]The leopardman grabs your arms with his hands, and leans forward to give you a teasing kiss before releasing you.[or]He charges forward and knocks you into a wall, pinning you for a second while he rubs his soft fur against you.[at random]";
 	now defeated entry is "[Leopardman loses]";
 	now victory entry is "[Leopardman wins]";
 	now desc entry is "[leopardman desc]";
-	now face entry is "broad, sexy feline muzzle, with golden, slit-pupiled eyes and rounded feline ears sitting atop your new leopard-like face"; [ Face description, format as "Your face is (your text)."]
-	now body entry is "powerful and lean, your well-muscled form carried easily on your powerful legs, their muscles designed for leaping and climbing, which rest easily on your rather paw-like feet. Your hands are tipped with sharp claws, easily suited for both combat and climbing"; [ Body Description, format as "Your Body is (your text)"]
-	now skin entry is "[one of]leopard spotted[or]leopard furred[or]Black and yellow spotted[or]soft furred[or]short fur covered[at random]"; [ skin Description, format as "Looking at yourself, your body is covered in (your text) skin"]
+	now face entry is "broad, sexy feline muzzle, with golden, slit-pupiled eyes and rounded feline ears sitting atop your new leopard-like face"; [ Face description, format as "Your face is [Face of Player]." ]
+	now body entry is "powerful and lean, your well-muscled form carried easily on your powerful legs, their muscles designed for leaping and climbing, which rest easily on your rather paw-like feet. Your hands are tipped with sharp claws, easily suited for both combat and climbing"; [ Body Description, format as "Your Body is [Body of Player]." ]
+	now skin entry is "[one of]leopard spotted[or]leopard furred[or]Black and yellow spotted[or]soft furred[or]short fur covered[at random]"; [ Skin Description, format as "Looking at yourself, your body is covered in [Skin of Player] skin." ]
 	now tail entry is "You have a long, thin feline tail lashing teasingly behind you, its eager movements showing off your well-rounded ass, even as it twitches eagerly as if begging someone to pin it down and fuck you."; [ Tail description, write a whole Sentence or leave blank. ]
 	now cock entry is "[one of]feline[or]leopard[or]barbed[or]pointed[at random]"; [ Cock Description, format as you have a 'size' (your text) cock]
-	now face change entry is "it stretches forward, your nose flattening and your mouth spreading out as they merge together and begin to form a proper feline muzzle. Your eyes seem to blur for a second, and then the world sharpens around you as they become the slit pupils of a hunting cat, and as your changes finish with your new leopardlike ears coming to rest on the top of your head, you can feel your new feline muzzle stretching in a lewd grin as lustful thoughts fill your mind"; [ face change text. format as "Your face feels funny as (your text)." ]
-	now body change entry is "your muscles shift under the skin, your feet shifting and the bones cracking as they become powerful feline paws and your legs shift to allow you to balance easily on your new, pawlike feet. Your hands feel strange as they shift and powerful leopardlike climbing claws push out of the tips of your slightly thicker and more powerful fingers"; [ body change text. format as "Your body feels funny as (your text)." ]
-	now skin change entry is "a soft wave of short leopard spotted fur begins to cover your body, the fur rubbing against your skin softly as it grows in, making you shudder with pleasure as a proper coat of fur covers your body completely"; [ skin change text. format as "Your skin feels funny as (your text)." ]
-	now ass change entry is "a thick feline tail begins to stretch out behind you, the increasingly sexy looking new appendage lashing back and forth teasingly with every step, as if inviting some sexy beast to come play with it"; [ ass/tail change text. format as "Your ass feels funny as (your text)." ]
+	now face change entry is "it stretches forward, your nose flattening and your mouth spreading out as they merge together and begin to form a proper feline muzzle. Your eyes seem to blur for a second, and then the world sharpens around you as they become the slit pupils of a hunting cat, and as your changes finish with your new leopardlike ears coming to rest on the top of your head, you can feel your new feline muzzle stretching in a lewd grin as lustful thoughts fill your mind"; [ Face change text, format as "Your face feels funny as [face change entry]." ]
+	now body change entry is "your muscles shift under the skin, your feet shifting and the bones cracking as they become powerful feline paws and your legs shift to allow you to balance easily on your new, pawlike feet. Your hands feel strange as they shift and powerful leopardlike climbing claws push out of the tips of your slightly thicker and more powerful fingers"; [ Body change text, format as "Your body feels funny as [body change entry]." ]
+	now skin change entry is "a soft wave of short leopard spotted fur begins to cover your body, the fur rubbing against your skin softly as it grows in, making you shudder with pleasure as a proper coat of fur covers your body completely"; [ Skin change text, format as "Your skin feels funny as [skin change entry]." ]
+	now ass change entry is "a thick feline tail begins to stretch out behind you, the increasingly sexy looking new appendage lashing back and forth teasingly with every step, as if inviting some sexy beast to come play with it"; [ Ass/tail change text, format as "Your ass feels funny as [ass change entry]." ]
 	now cock change entry is "it is drawn up closer to your body by a feline sheath forming around it. Your cock itself continues to stretch and change as well, becoming pointed and small barbs growing out of it, both for your feline mate's pleasure and your own"; [ cock change text. format as "Your cock feels funny as (your text)." ]
 	now str entry is 18;
 	now dex entry is 26;
@@ -188,7 +191,7 @@ When Play begins:
 	now per entry is 18;
 	now int entry is 12;
 	now cha entry is 18;
-	now sex entry is "Female";  [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now sex entry is "Female"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
 	now HP entry is 80;
 	now lev entry is 9; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
 	now wdam entry is 11; [ Amount of Damage monster Does when attacking. ]
@@ -202,20 +205,20 @@ When Play begins:
 	now Cunt Count entry is 1; [ if sex = "Female or both", indicates the number of female sexes infection will grant you.]
 	now Cunt Depth entry is 10;
 	now Cunt Tightness entry is 4;
-	now libido entry is 50;  [ Amount player Libido will go up if defeated ]
-	now loot entry is "Spotted fur";  [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
-	now lootchance entry is 50;  [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 3;  [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now libido entry is 50; [ Amount player Libido will go up if defeated ]
+	now loot entry is "Spotted fur"; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
+	now lootchance entry is 50; [ Chance of loot dropping 0-100 ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]sleek[or]powerful[at random]";
 	now type entry is "[one of]feline[or]leopard-like[or]pardine[as decreasingly likely outcomes]";
 	now magic entry is false;
-	now resbypass entry is false;  [ Bypasses Researcher bonus? true/false (almost invariably false) ]
+	now resbypass entry is false; [ Bypasses Researcher bonus? true/false (almost invariably false) ]
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;  [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -226,7 +229,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -238,7 +241,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -257,7 +260,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -278,18 +281,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -303,19 +306,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -327,12 +330,15 @@ Table of Game Objects (continued)
 name	desc	weight	object
 "Spotted fur"	"A small tuft of black and yellow fur, it is very soft and seems like it would feel nice against your skin."	1	  Spotted fur
 
-Spotted fur is a grab object. Understand "fur" as Spotted fur.
+Spotted fur is a grab object.
+It is temporary.
+Understand "fur" as Spotted fur.
+Usedesc of Spotted fur is "[SpottedFurUse]";
 
 instead of sniffing Spotted fur:
 	say "The tuft of fur smells faintly of the powerful feline it came from.";
 
-instead of using Spotted fur:
+to say SpottedFurUse:
 	say "     You take out the strangely attractive small tuft of fur you acquired earlier, rolling the soft fur between your fingers, you find the feel of the fur to be strongly sensual. Enjoying the pleasant feel of the fur, you begin to slowly rub the small bundle of fur over your skin, the silken soft fur tuft tickling your cheeks and chest as you trail it lightly over them several times, making you smile happily. After several passes however you go to trail it along your cheek again, only to realize the fur tuft is no longer there, looking down, you see where bits of the leopardlike fur have anchored themselves into your skin, giving you a small patch of sensual fur of your own to stroke, and you can almost feel the leopardlike changes moving throughout the rest of your body...";
 	infect "Leopardman";
 

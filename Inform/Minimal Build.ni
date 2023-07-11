@@ -231,7 +231,7 @@ Blake is a man.
 Zoe is a woman.
 Alexandra is a woman.
 Ronda is a woman.
-rubber tigress is a pet.
+rubber tigress companion is a pet.
 mouse girl is a pet.
 Carnivorous Plant is a pet.
 gshep is a pet.
@@ -419,7 +419,7 @@ Warehouse District is a room.
 Sitting Area is a room.
 Zoo Entrance is a room.
 Approaching the Capitol Building is a room.
-Palomino is a room.
+PALOMINO Dance Club is a room.
 emap is a number that varies. emap is usually 0.
 zpc_inzone is a truth state that varies. zpc_inzone is false.
 zpc_Zc is a number that varies.[true if players location is listed on table of Zpc Location reference]
@@ -539,7 +539,7 @@ Definition: a person is sugartailed:
 This is the zephyrad rule:
 	if Zephyr Lobby is not known:
 		say "     Playing around with your radio in an attempt to gain some information about what is going on, you find a channel that seems to have a cycling message. 'Good day to anyone listening. This is Zephyr Incorporated. We wanted to you know that even during this current crisis, our branch office in this fine city remains open. Coordinates follow.' After making a mental note of the description, you listen on to the rest of their recording. 'We here are Zephyr Inc are dedicated to the betterment of mankind through science. And of course we also want to help people outlast what is currently going on. Therefore we are going to award company credit - also known as freecred - to those who contribute to keeping the more aggressive infected in check. A number of ways of observation are in effect in the city, and you will be credited for every hostile you pacify. Swing on by and spend your freecred on useful survival gear. We look forward to meeting you shortly.'";
-		say "     The radio continues, 'Please be advised that your Zephyr local branch is now offering compensation for helping keep the local area safe! sign up now and recieve our newest technological advancement - the Zephyr Personal Communicator, [bold type]featuring satellite navigation[roman type] in a device that fits in your pockets! Never get lost again, with the ZPC. Available now as a means to keep you connected with all our Zephyr rewards and product offers. Visit your Zephyr branch now for more information!'";
+		say "     The radio continues, 'Please be advised that your Zephyr local branch is now offering compensation for helping keep the local area safe! sign up now and receive our newest technological advancement - the Zephyr Personal Communicator, [bold type]featuring satellite navigation[roman type] in a device that fits in your pockets! Never get lost again, with the ZPC. Available now as a means to keep you connected with all our Zephyr rewards and product offers. Visit your Zephyr branch now for more information!'";
 		WaitLineBreak;
 		say "     It doesn't sound particularly nice to have such fully branded hardware, but it might be worth checking out as a replacement for your currently bricked Cell Phone.";
 		AddNavPoint Zephyr Lobby;

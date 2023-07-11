@@ -89,7 +89,7 @@ ResolveFunction of Captured Demon is "[ResolveEvent Captured Demon]".
 Sarea of Captured Demon is "Red".
 when play begins:
 	add Captured Demon to BadSpots of MaleList; [male soldier, demon brute]
-	add Captured Demon to badspots of DemonList; [demon brute]
+	add Captured Demon to BadSpots of DemonList; [demon brute]
 
 to say ResolveEvent Captured Demon:
 	say "     Moving through an alley in the seedier part of town, you hear voices from the smashed window of a nearby bar. Careful not to step on anything and make a sound, you slowly walk closer and listen.";
@@ -317,7 +317,7 @@ Cock Length of David is 8. [length in inches]
 Ball Count of David is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of David is 3. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of David is 0. [number of cunts]
-Cunt Depth of David is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of David is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of David is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of David is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -367,13 +367,13 @@ Instead of fucking David:
 		choose a blank row in table of fucking options;
 		now title entry is "Suck David's cock";
 		now sortorder entry is 1;
-		now description entry is "Give him a blow-job.";
+		now description entry is "Give him a blowjob.";
 		[]
-		if (lust of David > 0 and player is male):
+		if (lust of David > 0 and Player is male):
 			choose a blank row in table of fucking options;
 			now title entry is "Have him suck your cock";
 			now sortorder entry is 2;
-			now description entry is "Get a blow-job.";
+			now description entry is "Get a blowjob.";
 		[]
 		if Player is female:
 			choose a blank row in table of fucking options;
@@ -904,7 +904,7 @@ to say DavidTalk5: [trip to the beach]
 					say "     'Sure! Ride my cock!' Brutus growls in his deep voice, then lies down on the towel David prepared for him. With the demon resting comfortably on his back, his massive erection stands proudly upright over his crotch, causing Kaleb almost to drool as his gaze comes to rest on it. The blond surfer immediately steps forward to touch Brutus, putting his hands on the demon's private parts and rubbing them almost reverently. Leaning in to lick the demon's cockhead, the young human slurps up Brutus's precum, then slides his lips over the very tip and suckles on it, animating the demon to produce more and more, which Kaleb then uses to lube up Brutus's massive shaft. 'I'm gonna do it - mount this primo cock', Kaleb tells Robert excitedly and quickly pushes his shorts off, revealing a shapely pale-skinned butt. Moving to stand over Brutus's supine form, he then crouches down, lowering his hips while looking at the thick pole of man-meat he wants to take on.";
 					say "     Coming to stand between Brutus's legs, Robert watches as Kaleb slides his cheeks up and down along Brutus's erection, then says, 'Whoa, he looks even bigger with you right beside him. Be careful and don't break your butt, baby!' Stepping forward to give the other surfer's ass a quick grope, he leans in to kiss Kaleb's neck and adds, 'It'll be hot to see him go into you, but I've got my own plans for it later...' Moving back again to give the purple demon and his boyfriend some room, Robert then pushes his own shorts down far enough to whip out a respectably sized cock, already pretty hard as he starts to slowly jerk on it.";
 					WaitLineBreak;
-					say "     Kaleb straightens his legs again a bit to get into position right above where Brutus holds his manhood straight up with one big, clawed hand. Then he sinks lower until he can feel the large cockhead right against his pucker - slippery with precum and hot against his skin - and keeps going, giving a breathless gasp as his pressure downwards makes the tip pop right in. He takes a deep breath or two, then laughs and throws his head back as he shouts, 'Maaan! This is one thick pole. I love it!' You're just a bit surprised in how quickly he then proceeds to impale himself on even more of Brutus's manhood, giggling and moaning as the tiny bumps on your infernal companion's manhood rub his inner walls. Robert wasn't kidding - that boy is definitively a well-trained butt-slut. Pleased at the relative ease with which Kaleb is taking his cock, Brutus even relaxes his usual restraint a bit and does little jabs upwards with his hips, grunting lustfully as he penetrates deeper into the young man.";
+					say "     Kaleb straightens his legs again a bit to get into position right above where Brutus holds his manhood straight up with one big, clawed hand. Then he sinks lower until he can feel the large cockhead right against his pucker - slippery with precum and hot against his skin - and keeps going, giving a breathless gasp as his pressure downwards makes the tip pop right in. He takes a deep breath or two, then laughs and throws his head back as he shouts, 'Maaan! This is one thick pole. I love it!' You're just a bit surprised in how quickly he then proceeds to impale himself on even more of Brutus's manhood, giggling and moaning as the tiny bumps on your infernal companion's manhood rub his inner walls. Robert wasn't kidding - that boy is definitely a well-trained butt-slut. Pleased at the relative ease with which Kaleb is taking his cock, Brutus even relaxes his usual restraint a bit and does little jabs upwards with his hips, grunting lustfully as he penetrates deeper into the young man.";
 					say "     Eventually, Kaleb is sitting on Brutus's hips with every last inch of the demon's pole buried in his ass. He pants and moans deeply, murmuring, 'Totally rad - I did it. So warm inside me. Sooo gooooodd... unngh - FUCK ME!' With those last shouted words, the young man then starts to bounce up and down on Brutus's shaft, incoherently babbling and moaning as Brutus additionally starts to thrust up on his own and puts both hands on Kaleb's hips to grind against him harder when their hips meet. Meanwhile, Robert wanders around the two of them, dick in hand and casually letting his shorts drop completely. Within moments, he arrives beside Brutus's upper body. After another long look at his boyfriend having the time of his life, the surfer then says to Brutus, 'You know, I've 'trained' with him for a long time to get him those skills as a bottom. You should thank me. Maybe you could- ngh!' Being pretty direct as he is, Brutus doesn't waste a word and simply pulls the young man down to him at that point, one clawed hand grabbing his butt. Opening his mouth, he then slides his lips over Robert's hard shaft, taking great care to keep his teeth from toughing its sensitive skin.";
 					WaitLineBreak;
 					say "     It's pretty hot to watch the threesome play out so close to you - and many people nearby do so, with others wandering closer to see what's going on. Murmurs about the demon's sheer size and voices wondering if they could take it can be heard all around, as well as cheering and little gasps and moans as some do start masturbating to this show. The epic threesome finally reaches its climax as Brutus reaches the point of no return, bucking up against Kaleb with a roar and holding his hips tightly against his crotch. The demon's balls twitch as blast after blast of infernal seed it sent on its way, filling the surfer's butthole, then overflowing and squirting out around Brutus's shaft. Feeling the thick pole jerk and pulse within him is the last straw for Kaleb to get off himself, so barely seconds after Brutus, he gasps loudly and comes, his cum arching through the air to splat down on the purple skin on Brutus's chest.";
@@ -931,7 +931,7 @@ to say DavidTalk5: [trip to the beach]
 					say "     'Whoa, now that's a primo cock!' Kaleb giggles as he wags Brutus's slick and shiny manhood towards Robert, then says to the demon himself, 'Can you lay down please? I totally wanna ride you.' With a lusty rumble in his throat, Brutus does just that, stretching out on the large towel David laid out for him earlier. Even so, part of his legs stand out over the end of it - human towels just never were meant for people of his sheer size. As the demon lays there on the beach, his erection stands straight upright, a towering pole that glistens in the sunlight with the spit and precum on it. Kaleb leans down to give it a last appreciative lick before telling Robert excitedly, 'I'm really gonna do it!' Moving to stand over Brutus's supine form, the surfer then crouches down, lowering his hips while looking at the thick pole of man-meat he wants to take on.";
 					say "     Coming to stand between Brutus's legs, Robert watches as Kaleb slides his cheeks up and down along Brutus's erection, then says, 'Whoa, he looks even bigger with you right beside him. Be careful and don't break your butt, baby!' Stepping forward to give the other surfer's ass a quick grope, he leans in to kiss Kaleb's neck and adds, 'It'll be hot to see him go into you, but I've got my own plans for it later...' Moving back again to give the purple demon and his boyfriend some room, Robert then pushes his own shorts down far enough to whip out a respectably sized cock, already pretty hard as he starts to slowly jerk on it. Not too far away from him, David has also been taken in by the steamy atmosphere, showing quite a tent in his skimpy Speedos.";
 					WaitLineBreak;
-					say "     Kaleb straightens his legs again a bit to get into position right above where Brutus holds his manhood straight up with one big, clawed hand. Then he sinks lower until he can feel the large cockhead right against his pucker - slippery with precum and hot against his skin - and keeps going, giving a breathless gasp as his pressure downwards makes the tip pop right in. He takes a deep breath or two, then laughs and throws his head back as he shouts, 'Maaan! This is one thick pole. I love it!' You're just a bit surprised in how quickly he then proceeds to impale himself on even more of Brutus's manhood, giggling and moaning as the tiny bumps on your infernal companion's manhood rub his inner walls. Robert wasn't kidding - that boy is definitively a well-trained butt-slut. Pleased at the relative ease with which Kaleb is taking his cock, Brutus even relaxes his usual restraint a bit and does little jabs upwards with his hips, grunting lustfully as he penetrates deeper into the young man.";
+					say "     Kaleb straightens his legs again a bit to get into position right above where Brutus holds his manhood straight up with one big, clawed hand. Then he sinks lower until he can feel the large cockhead right against his pucker - slippery with precum and hot against his skin - and keeps going, giving a breathless gasp as his pressure downwards makes the tip pop right in. He takes a deep breath or two, then laughs and throws his head back as he shouts, 'Maaan! This is one thick pole. I love it!' You're just a bit surprised in how quickly he then proceeds to impale himself on even more of Brutus's manhood, giggling and moaning as the tiny bumps on your infernal companion's manhood rub his inner walls. Robert wasn't kidding - that boy is definitely a well-trained butt-slut. Pleased at the relative ease with which Kaleb is taking his cock, Brutus even relaxes his usual restraint a bit and does little jabs upwards with his hips, grunting lustfully as he penetrates deeper into the young man.";
 					say "     Eventually, Kaleb is sitting on Brutus's hips with every last inch of the demon's pole buried in his ass. He pants and moans deeply, murmuring, 'Totally rad - I did it. So warm inside me. Sooo gooooodd... unngh - FUCK ME!' With those last shouted words, the young man then starts to bounce up and down on Brutus's shaft, incoherently babbling and moaning as Brutus additionally starts to thrust up on his own and puts both hands on Kaleb's hips to grind against him harder when their hips meet.";
 					WaitLineBreak;
 					say "     Meanwhile, Robert wanders around the two of them to get a really good look, dick in hand and casually letting his shorts drop completely. After some moments of jauntily strutting around them, naked and hard, he comes to stand right next to David and asks the soldier in a husky voice, 'Hot show, hm?' David can barely take his eyes off the demon and human, distractedly murmuring 'Yeah' - at least until Robert reaches out to pull the stretched fabric of his Speedos down and takes hold of his cock. As David turns to Robert in surprise and opens his mouth to say... something, the blond surfer just takes the chance of pressing his lips David's, giving him a hungry kiss that is eagerly shared as soon as the soldier gets over the initial shock. Coming up to take a breath some while later, Robert pants, 'Let's have some fun while our boyfriend's are busy.'";
@@ -980,7 +980,7 @@ to say DavidTalk5: [trip to the beach]
 			say "     You bring the bag of marshmallows somewhere in one of the beach bags, which sends David over to them to search for it. Soon, you hear a triumphant 'Aha - here it is!' and the soldier returns with a mid-size bag of white candy cubes. 'You'll love these,' he tells Brutus and opens up the bag before continuing, 'You toast these and eat them when they're nice and crunchy, with a molten core. Hmm... we just need some sticks. Wait - hold this...' Handing over the plastic baggy to Brutus, the young man walks off for a moment to talk with the people feeding wood to the fire from a pile next to it, then returns with several thin branches in his hands. Though looking back to where Brutus is sitting, you realize that he doesn't really need one anymore - as the demon just stuck a marshmallow on the pointy end of his long tail and uses that to hold it over the fire.";
 			say "     'Oh,' David says with a smile at Brutus, then he gives you your own branch and a whole handful of marshmallows. Afterwards he sits down right next to the big demon and asks, 'So - are you totally fireproof?' 'Not quite,' Brutus replies in his deep voice, 'But I'm used to far more than this small flame.' A moment later, the demon bends his tail closer and dangles the end with the marshmallow in front of David's face, asking 'This okay?' As David nods and tells him to try it, Brutus pulls the now sticky brown-white lump off and throws it in his mouth. The demon's eyes go wide as he tastes the sweet and he gives a very pleased rumble in his throat, then licks the remains of the marshmallow off his fingers. He is so eager for more that he directly impales one out of the bag as David holds it out for him, then stretches the appendage back towards the fire.";
 			WaitLineBreak;
-			say "     Looking around as you prep some marshmallows on the ends of the branch in your hand, your gaze wanders over the many other beach-goers who share the same fire, sitting around, talking, some just staring into the flames, others roasting their own marshmallows. It's pretty peaceful and communal, giving you hope that maybe a new society might establish itself even if this crazy nanite plague is never cured. Though it'll definitively be quite different than the old one - as demonstrated by your realization that maybe a quarter of the persons sitting nearby are openly fondling each other and the not so distant moaning you can hear over the cash of the surf.";
+			say "     Looking around as you prep some marshmallows on the ends of the branch in your hand, your gaze wanders over the many other beach-goers who share the same fire, sitting around, talking, some just staring into the flames, others roasting their own marshmallows. It's pretty peaceful and communal, giving you hope that maybe a new society might establish itself even if this crazy nanite plague is never cured. Though it'll definitely be quite different than the old one - as demonstrated by your realization that maybe a quarter of the persons sitting nearby are openly fondling each other and the not so distant moaning you can hear over the cash of the surf.";
 			say "     Turning back towards Brutus and David, you see the human now sitting between his demonic lover's spread legs, leaning back against Brutus's wide chest as he holds a stick with a marshmallow over the fire. Brutus's tail is pulled back towards the two of them a moment later, and he pulls a well-toasted piece of candy off it with his fingers, then holds it out to David with a rumbled, 'For you.' 'Thanks,' David replies and happily lets the demon feed it to him. As the demon starts to pull his large hand away afterwards, David takes hold of it to lick Brutus's fingers, then takes the tip of his index finger in his mouth to gently suck on it.";
 			WaitLineBreak;
 			say "     It's pretty sweet how the human and demon feed each other marshmallows and share small caresses as they silently talk and whisper, so you're content with simply watching them without making any great effort of trying to overhear things. Roasting your own sweet candy, watching the flames and hearing waves crash as well as people murmur and moan... is just a nice bit relaxation, which you can really use with everything you're going through every day now.";
@@ -1131,15 +1131,46 @@ to say DavidTalk7:
 	say "     So now there at least are no secrets between them - but you still have to solve the underlying problem. Some sort of specialist in demonic matters and/or interspecies breeding should be able to help, hopefully.";
 	now Libido of David is 61;
 
-after of going to Parade Ground while HP of David is 1:
-	now HP of David is 2;
-	say "     As you enter Camp Bravo, you see a familiar face standing on the parade ground - it's David Jackson, your handsome Private from out in the city. He's watching the minotaur with a bit of a wide-eyed expression. Moving up to him, you say hello.";
-	LineBreak;
-	project the figure of David_face_icon;
-	say "     'Hello again. I was told there might be a special agent coming to talk to us, but I never thought it'd be you. You never told me you're with the government...' You apologize, giving him some airy explanation about needed secrecy and gathering unbiased information. Quickly leading over to another topic, you ask him about what he thinks about the Camp.";
-	say "     David points over at the minotaur, saying 'Just look at the thing - it's huge. Almost couldn't believe it when the first group of men came out and it stuck its cock up their asses and fucked them. And the whole story about why we're doing this sounds a bit fishy to me... but orders are orders.' He gives the minotaur another look and rubs his ass. 'I worry a bit that it'll be my turn soon...'";
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+2	"David_CampBravo_Meeting"	David_CampBravo_Meeting	"[EventConditions_David_CampBravo_Meeting]"	Parade Ground	2500	2	100
 
-after of going to Parade Ground while thirst of David is 5 and HP of David is 3:
+to say EventConditions_David_CampBravo_Meeting:
+	if HP of David is 1: [list of conditions here]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_CampBravo_Meeting	"David_CampBravo_Meeting"
+
+David_CampBravo_Meeting is a situation.
+ResolveFunction of David_CampBravo_Meeting is "[ResolveEvent David_CampBravo_Meeting]".
+Sarea of David_CampBravo_Meeting is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_CampBravo_Meeting:
+	say "     As you enter Camp Bravo, you see a familiar face standing on the parade ground - it's David Jackson, your handsome Private from out in the city. He's watching the minotaur with a bit of a wide-eyed expression. Moving up to him, you greet him, and the young man gives a smile as he recognizes you.";
+	project the figure of David_face_icon;
+	say "     'Hello again. I was told there might be a special agent coming to talk to us, but I never thought it'd be you. You never told me you're with the government...' You apologize, giving him some airy explanation about needed secrecy and gathering unbiased information. Quickly leading over to another topic, you ask him about what he thinks about the Camp. David points over at the minotaur, saying 'Just look at the thing - it's huge. Almost couldn't believe it when the first group of men came out and it stuck its cock up their asses and fucked them. And the whole story about why we're doing this sounds a bit fishy to me... but orders are orders.' He gives the minotaur another look and rubs his ass. 'I worry a bit that it'll be my turn soon...'";
+	now HP of David is 2;
+	now David_CampBravo_Meeting is resolved;
+
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+2	"David_CampBravo_Relationship"	David_CampBravo_Relationship	"[EventConditions_David_CampBravo_Relationship]"	Parade Ground	2500	2	100
+
+to say EventConditions_David_CampBravo_Relationship:
+	if thirst of David is 5 and HP of David is 3: [list of conditions here]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_CampBravo_Relationship	"David_CampBravo_Relationship"
+
+David_CampBravo_Relationship is a situation.
+ResolveFunction of David_CampBravo_Relationship is "[ResolveEvent David_CampBravo_Relationship]".
+Sarea of David_CampBravo_Relationship is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_CampBravo_Relationship:
 	say "     As you step on the parade ground of Camp Bravo, David walks up to you and pulls you aside, saying he has something important to talk to you about. He looks a bit embarrassed about it, hesitating before he says 'Listen, you saved me from minotaur duty, and I like being with you and... you know. I wanted to ask how you see - you and me - us.' He looks at you with an earnest and hopeful expression.";
 	project the figure of David_face_icon;
 	say "     [bold type]What do you tell him?[roman type][line break]";
@@ -1153,66 +1184,28 @@ after of going to Parade Ground while thirst of David is 5 and HP of David is 3:
 		LineBreak;
 		now thirst of David is 10; [fuck-buddy]
 		say "     'Oh, OK - just buddies, you say. I'll go back to Ann then when all this is over.'";
+	now David_CampBravo_Relationship is resolved;
 
-after of going to Bunker while Dexterity of David is 0 and HP of David is 4 and (DavidBunkerEntry - turns > 8) and Sven is in Bunker and HP of Sven >= 8 and HP of Sven < 50:
-	if debugactive is 1:
-		say "     DEBUG: DAVID/SVEN (DEXTERITY 0) WALKIN[line break]";
-	if HP of Sven < 30: [pet Sven]
-		say "     As you enter the bunker, you swing by the rows of beds set up in the room and find David in one of them, stretched out on his back and sleeping. The thin blanket he's under is showing a large tent over his crotch, making it pretty obvious that he's got a boner right now. That must be one nice dream he's having. And you're not the only one who noticed that - not far away, Sven is sitting cross-legged on his own bed, stealing glances at the sleeping man. The snowmeow shyly lowers his gaze and flirts his long tail through the air in front of himself as he notices your attention. It's clear that he's... interested in David, though he'd never make a first move, being as shy and submissive as he is - and your pet on top of that.";
-		LineBreak;
-		say "     Do you want to tell Sven that he should... give David's dream a happy ending ([link]Y[as]y[end link]), or do you let things stand as they are, with him just looking ([link]N[as]n[end link])?";
-		if Player consents:
-			now Dexterity of David is 1; [he gets a blowjob]
-			LineBreak;
-			say "     Walking over to the snow leopard, you sit down beside him and stroke his fur, getting a pleased sigh and rumbling purr from him. Your affectionate snowmeow pet snuggles up to your touch, purring a bit louder as you rub his soft-furred belly, then gives a slight moan as your hand reaches down to cup his balls and fondles them. After petting him some more till he's pretty aroused and about half-hard, you whisper in Sven's ear what you'd like him to do next. Sven quickly looks over to David again and blushes brightly in his ears. 'While he's sleeping? I... I could not. It would be so forward,' he says as his cock throbs hard in your hand, your kitty clearly aroused at the thought of doing something so naughty as that.";
-			say "     'Do it, my pet. You know you want to,' you tell him, giving him a pat on his rear in the right direction for added encouragement. There is a last little moment of hesitation as he looks back to you, then David, and back again, followed by a happy kiss on your cheek. Then your horny little kitty almost flows out of the bed, silently stalking over to the soldier's bed in all his feline grace. Carefully taking hold of David's blanket, he slowly pulls it off, grinning wider and wider as more and more of the sleeping man's naked body comes into sight.";
-			WaitLineBreak;
-			say "     Soon, the blanket is in a small heap at the foot of the bed, with David's naked body in full view of everyone and his hard cock standing up like a flagpole. Sven almost pounces on it in his eagerness, taking the young soldier's cock in a hand-paw and licking up and down its side before giving its head a little peck and then sliding his muzzle down over David's shaft. As the snowmeow goes down on him, soft moans start coming from the still sleeping David, his dream seemingly going into a more active phase to follow his body's impressions. In between the moans, he mumbles a bit, slowly getting more coherent while getting the blowjob, until there finally is an understandable 'Yeah, suck it baby.' and one of David's hands grabs Sven's head to pull him down against his crotch.";
-			say "     It's pretty obvious that he's mostly awake now, though he still has his eyes closed and thinks this is all still part of his dream. Moving his other hand to grab Sven's head too, David pulls him down on his shaft with quickly growing urgency, then thrusts his hips upwards with a grunt as he orgasms, blowing his load into the eager kitty's mouth. His whole body twitches with each blast of cum and the soldier is panting audibly by the time he's done shooting.";
-			say "     His climax over, the satisfied soldier raises his head and looks down with a sleepy expression at the kitty - who grins shyly and dips his ears nervously, fretting he might be in trouble. But David only smiles groggily and says 'Huh? *pant* Sven? That felt *pant* amazingly *pant* good.' Sven purrs in relief and David continues 'Pretty kzzzZZZ...', falling asleep again, rather worn out by the climax after his sudden awakening. Sven dutifully puts the blanket back on him, then bounces back to you to thanks you for being such a great [if Player is purefemale]mistress[else]master[end if] by encouraging your kitty pet.";
-			NPCSexAftermath Sven receives "OralCock" from David;
-		else:
-			now Dexterity of David is 99; [no blowjob from Sven]
-			LineBreak;
-			say "     Walking over to the snow leopard, you sit down beside him and stroke his fur, getting a pleased sigh and rumbling purr from him. After a few minutes with your affectionate snowmeow pet, relaxing as you rub his soft belly-fur and he snuggles up to your touch, you stand up and turn your attention back to the task of surviving in this changed city.";
-	else: [confident Sven]
-		say "     As you enter the bunker, you swing by the rows of beds set up in the room and find David in one of them, stretched out on his back and sleeping. The thin blanket he's under is showing a large tent over his crotch, making it pretty obvious that he's got a boner right now. That must be one nice dream he's having. And you're not the only one who noticed that - not far away, Sven is sitting cross-legged on his own bed, stealing glances at the sleeping man. The snow-leopard grins at you, then nods towards David and flirts his long tail through the air in a flowing, sinuous movement. It is clear that the anthro cat has more than a little bit of interest in the other man. Then from one moment to the next, he's on his feet, stalking towards the sleeping soldier on silent paw-pads.";
-		LineBreak;
-		say "     [bold type]Do you want to watch what Sven's planning to do with David ([link]Y[as]y[end link]), or will you intercept him, making sure that David sleeps unmolested ([link]N[as]n[end link])?[roman type][line break]";
-		if Player consents:
-			now Dexterity of David is 1; [he gets a blowjob]
-			LineBreak;
-			say "     As you watch, Sven quickly closes up to the bed in which David is sleeping, then sits down on its edge slowly, not wanting to wake the man up (yet). With a low purr humming in his chest, the snow leopard leans over the sleeping soldier, his paw-hand barely touching David as he runs it over the man's chest, feeling the warmth of his skin through the thin sheet covering his chest. Then the anthro feline reaches the tent standing over David's crotch and brushes his fingers over the stretched fabric, reaching the top and giving the soldier's erection a teasing rub. A moan is audible as the man stirs a little bit, then relaxes again into his pillow. You hear Sven's purr become a little louder, with his tail swishing through the air in excitement - seems he likes dancing on the edge of being caught... and possibly being caught too, under the right circumstances.";
-			say "     Waiting a few seconds to make sure that David is all the way relaxed again, Sven then carefully takes hold of the blanket and starts to pull it off. More and more of the sleeping man's body comes into sight, first his strong arms and chest revealed inch by muscled inch, then the first hints of his pubic hair in a little treasure trail down from his navel, ending in a well-trimmed bush on his crotch. Soon, the blanket is in a small heap at the foot of the bed, with David's naked body in full view and his hard cock standing up like a flagpole. Sven focuses on it as if in a trance and leans down to take the young soldier's cock in a hand-paw. He gently licks up and down its side before giving its head a little peck and then sliding his muzzle down over David's shaft. As the snow leopard goes down on him, soft moans start coming from the still dozing David, his dream seemingly going into a more active phase to follow his body's impressions.";
-			WaitLineBreak;
-			say "     In between the rising moans, David mumbles a bit, slowly getting more coherent while getting the blowjob, until there finally is an understandable 'Yeah, suck it baby,' and one of David's hands grabs Sven's head to pull him down against his crotch. It is pretty obvious that he's mostly awake now, though he still has his eyes closed and thinks this is all still part of his dream. Moving his other hand to grab Sven's head too, David pulls him down on his shaft with quickly growing urgency, then thrusts his hips upwards with a grunt as he orgasms, blowing his load into the eager kitty's mouth. His whole body twitches with each blast of cum and the soldier is panting audibly by the time he's done shooting.";
-			say "     His climax over, the satisfied soldier raises his head and looks down with a sleepy expression at the snow leopard - who grins impishly at him and flicks his ears while giving a playful purr. David only smiles groggily and says 'Huh? *pant* Sven? That felt *pant* amazingly *pant* good.' Sven purrs in pleasure and David continues 'You're one sexy kzzzZZZ...', falling asleep again, rather worn out by the climax after his sudden awakening. Sven dutifully puts the blanket back on him, then bounces up from the bed, winking at you as he flounces back to his own cot.";
-			NPCSexAftermath Sven receives "OralCock" from David;
-		else:
-			now Dexterity of David is 99; [no blowjob from Sven]
-			LineBreak;
-			say "     Walking over towards David's bed, you shake your head at Sven as he sits down next to the sleeping man, but the snow leopard doesn't really notice it, being all eyes for the handsome soldier. He has already started to gently tug the blanket off David by the time you get there, revealing part of the man's naked, muscular chest. Then you're up close and in Sven's face, doing your best to keep quiet and not wake David as you give the snow leopard a clear head-shake in negation and make shooing motions away from the soldier.";
-			say "     Sven looks from you to the sleeping man, pointing at the two of you and pantomiming with his hands gripping each other, then shrugs and gives a bit of a disappointed huff. He throws you a somewhat reluctant nod, then leans in and teasingly runs his hand over the curve of David's erection, making the man moan in his sleep. After steeling that little touch, the snow leopard gives David a last hungry look before flouncing away. This leaves you standing next to a still sleeping soldier, leaving the man none the wiser that he almost got a 'happy ending' to his dream from your feline friend.";
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+2	"David_Bunker_Relationship"	David_Bunker_Relationship	"[EventConditions_David_Bunker_Relationship]"	Bunker	2500	2	100
 
-after of going to Bunker while Dexterity of David is 1 and HP of David is 4 and Sven is in Bunker and HP of Sven >= 8 and HP of Sven < 50:
-	if debugactive is 1:
-		say "     DEBUG: DAVID/SVEN (DEXTERITY 1) WALKIN[line break]";
-	if HP of Sven < 30: [pet Sven]
-		if Player is purefemale: [female player]
-			say "     As you enter the bunker, you see David sitting on one of the closer beds, right next to Sven. They're talking and you overhear David say '...so let me get this straight, you're -' 'Her pet, yes. She saved me and brought me here, takes care of me - the best and strongest and bravest mistress one can have. She even gave me this nice collar. I love her and am hers.' Sven happily replies, smiling at the young soldier as he praises you. David looks slightly nonplussed at the transformed student's so totally submissive behavior, then shrugs to himself and says 'Well, if that's what you want.' After a quick look down at his crotch and with his cheeks reddening slightly, he continues 'Err - about what you did earlier... thanks? That was... pretty amazing. I thought I was dreaming till after I came and realized you felt pretty furry.'";
-			say "     Sven blushes at the hesitant compliment and ducks momentarily behind his fluffy tail. 'Anything for my mistress's friends,' he says softly. Releasing his furry appendage, he lets it wind around David's waist as he slips up beside him, nuzzling against the young man's shoulder. 'And... and I like you too - you are very nice and very attractive,' he adds quietly as he snuggles all the closer. Confronted with such a soft-spoken and cuddly snowmeow, David can't help himself but stroke Sven's fur too, accepting this strange bunker-mate for what he is.";
-		else: [male/herm/neuter player]
-			say "     As you enter the bunker, you see David sitting on one of the closer beds, right next to Sven. They're talking and you overhear David say '...so let me get this straight, you're -' 'His pet, yes. He saved me and brought me here, takes care of me - the best and strongest and bravest master one can have. He even gave me this nice collar. I love him and am his.' Sven happily replies, smiling at the young soldier as he praises you. David looks slightly nonplussed at the transformed student's so totally submissive behavior, then shrugs to himself and says 'Well, if that's what you want.' After a quick look down at his crotch and with his cheeks reddening slightly, he continues 'Err - about what you did earlier... thanks? That was... pretty amazing. I thought I was dreaming till after I came and realized you felt pretty furry.'";
-			say "     Sven blushes at the hesitant compliment and ducks momentarily behind his fluffy tail. 'Anything for my master's friends,' he says softly. Releasing his furry appendage, he lets it wind around David's waist as he slips up beside him, nuzzling against the young man's shoulder. 'And... and I like you too - you are very nice and very attractive,' he adds quietly as he snuggles all the closer. Confronted with such a soft-spoken and cuddly snowmeow, David can't help himself but stroke Sven's fur too, accepting this strange bunker-mate for what he is.";
-	else: [confident Sven]
-		say "     As you enter the bunker, you see David sitting on one of the closer beds, right next to Sven. They're talking and you overhear David say '...so let me get this straight, you're an exchange student?' Sven replies, 'Yes I am, from Norway. I was hiding out in my basement apartment after things went crazy and I had a run-in with a horny snow leopard. After he... forced me to do things, I did not dare go out anymore, I was too afraid. So I was really glad when our shared friend found me and helped out with some much needed water. But after a few days - that leopard bastard sniffed my place out - or maybe he just stumbled upon it. No matter what, he tried to break in, but we fought him off together and I saw that he wasn't so tough after all...' After Sven falls silent, David in turn recounts your meeting with him, telling Sven about your heroics with the demon brute and getting him out of the 'safety' of Camp Bravo and being fucked by a minotaur.";
-		say "     The two of them chat a bit more about this and that, then eventually David glances down to his crotch and over at his own bed. His cheeks redden slightly and he says, 'Err - about what you did earlier... thanks? That was... pretty amazing. I thought I was dreaming till after I came and realized you felt pretty furry.' Sven smiles at the hesitant compliment and playfully flirts his tail under the handsome soldier's nose. 'Sorry if I caught you a bit by surprise there, but... if I learned anything from all this, it is that you just sometimes have to go for it,' he says softly, then winks at the man and adds, 'Just wanted to give that dream of yours a happy ending.' Letting his tail settle down a bit more, the snow leopard winds it around David's waist as he slips closer beside him, nuzzling against the young man's shoulder. 'And who could resist helping out such a hunk as yourself,' he adds in a husky tone, sliding an arm around David's shoulders. Confronted with the soft-spoken and quite touch-friendly feline, David can't help himself but stroke Sven's fur too, accepting this furred bunker-mate's affection.";
-	now Dexterity of David is 2;
+to say EventConditions_David_Bunker_Relationship:
+	if thirst of David is 5 and HP of David is 4: [list of conditions here]
+		now CurrentWalkinEvent_ConditionsMet is true;
 
-after of going to Bunker while thirst of David is 5 and HP of David is 4:
+Table of GameEventIDs (continued)
+Object	Name
+David_Bunker_Relationship	"David_Bunker_Relationship"
+
+David_Bunker_Relationship is a situation.
+ResolveFunction of David_Bunker_Relationship is "[ResolveEvent David_Bunker_Relationship]".
+Sarea of David_Bunker_Relationship is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_Bunker_Relationship:
 	if debugactive is 1:
 		say "     DEBUG: DAVID (THIRST 5) RELATIONSHIP WALKIN[line break]";
-	say "     As you step on the parade ground of Camp Bravo, David walks up to you and pulls you aside, saying he has something important to talk to you about. He looks a bit embarrassed about it, hesitating before he says 'Listen, you saved me from minotaur duty, and I like being with you and... you know. I wanted to ask how you see - you and me - us.' He looks at you with an earnest and hopeful expression.";
+	say "     As you step into the main room of the bunker, David walks up to you and pulls you aside, saying he has something important to talk to you about. He looks a bit embarrassed about it, hesitating before he says 'Listen, you saved me from minotaur duty, and I like being with you and... you know. I wanted to ask how you see - you and me - us.' He looks at you with an earnest and hopeful expression.";
 	project the figure of David_face_icon;
 	say "     [bold type]What do you tell him?[roman type][line break]";
 	LineBreak;
@@ -1226,8 +1219,114 @@ after of going to Bunker while thirst of David is 5 and HP of David is 4:
 		LineBreak;
 		now thirst of David is 10; [fuck-buddy]
 		say "     'Oh, OK - just buddies, you say. I'll go back to Ann then when all this is over.";
+	now David_Bunker_Relationship is resolved;
 
-after of going to Bunker while Eric is in Bunker and thirst of David > 5 and HP of David is 4 and HP of Eric > 0 and lust of Eric is 0 and Eric is not slutstored: [David spots Eric's genitals and wants to talk about them]
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+3	"David_Sven_SleepBJ"	David_Sven_SleepBJ	"[EventConditions_David_Sven_SleepBJ]"	Bunker	2500	2	100
+
+to say EventConditions_David_Sven_SleepBJ:
+	if Dexterity of David is 0 and HP of David is 4 and (DavidBunkerEntry - turns > 8) and Sven is collected and David is collected and HP of Sven >= 8 and HP of Sven < 50 and Player is not CoA: [list of conditions here]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_Sven_SleepBJ	"David_Sven_SleepBJ"
+
+David_Sven_SleepBJ is a situation.
+ResolveFunction of David_Sven_SleepBJ is "[ResolveEvent David_Sven_SleepBJ]".
+Sarea of David_Sven_SleepBJ is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_Sven_SleepBJ:
+	if debugactive is 1:
+		say "     DEBUG: DAVID/SVEN (DEXTERITY 0) WALKIN[line break]";
+	if HP of Sven < 30: [pet Sven]
+		say "     As you enter the bunker, you swing by the rows of beds set up in the room and find David in one of them, stretched out on his back and sleeping. The thin blanket he's under is showing a large tent over his crotch, making it pretty obvious that he's got a boner right now. That must be one nice dream he's having. And you're not the only one who noticed that - not far away, Sven is sitting cross-legged on his own bed, stealing glances at the sleeping man. The snowmeow shyly lowers his gaze and flirts his long tail through the air in front of himself as he notices your attention. It's clear that he's... interested in David, though he'd never make a first move, being as shy and submissive as he is - and your pet on top of that.";
+		LineBreak;
+		say "     Do you want to tell Sven that he should... give David's dream a happy ending ([link]Y[as]y[end link]), or do you let things stand as they are, with him just looking ([link]N[as]n[end link])?";
+		if Player consents:
+			LineBreak;
+			say "     Walking over to the snow leopard, you sit down beside him and stroke his fur, getting a pleased sigh and rumbling purr from him. Your affectionate snowmeow pet snuggles up to your touch, purring a bit louder as you rub his soft-furred belly, then gives a slight moan as your hand reaches down to cup his balls and fondles them. After petting him some more till he's pretty aroused and about half-hard, you whisper in Sven's ear what you'd like him to do next. Sven quickly looks over to David again and blushes brightly in his ears. 'While he's sleeping? I... I could not. It would be so forward,' he says as his cock throbs hard in your hand, your kitty clearly aroused at the thought of doing something so naughty as that.";
+			say "     'Do it, my pet. You know you want to,' you tell him, giving him a pat on his rear in the right direction for added encouragement. There is a last little moment of hesitation as he looks back to you, then David, and back again, followed by a happy kiss on your cheek. Then your horny little kitty almost flows out of the bed, silently stalking over to the soldier's bed in all his feline grace. Carefully taking hold of David's blanket, he slowly pulls it off, grinning wider and wider as more and more of the sleeping man's naked body comes into sight.";
+			WaitLineBreak;
+			say "     Soon, the blanket is in a small heap at the foot of the bed, with David's naked body in full view of everyone and his hard cock standing up like a flagpole. Sven almost pounces on it in his eagerness, taking the young soldier's cock in a hand-paw and licking up and down its side before giving its head a little peck and then sliding his muzzle down over David's shaft. As the snowmeow goes down on him, soft moans start coming from the still sleeping David, his dream seemingly going into a more active phase to follow his body's impressions. In between the moans, he mumbles a bit, slowly getting more coherent while getting the blowjob, until there finally is an understandable 'Yeah, suck it baby.' and one of David's hands grabs Sven's head to pull him down against his crotch.";
+			say "     It's pretty obvious that he's mostly awake now, though he still has his eyes closed and thinks this is all still part of his dream. Moving his other hand to grab Sven's head too, David pulls him down on his shaft with quickly growing urgency, then thrusts his hips upwards with a grunt as he orgasms, blowing his load into the eager kitty's mouth. His whole body twitches with each blast of cum and the soldier is panting audibly by the time he's done shooting.";
+			say "     His climax over, the satisfied soldier raises his head and looks down with a sleepy expression at the kitty - who grins shyly and dips his ears nervously, fretting he might be in trouble. But David only smiles groggily and says 'Huh? *pant* Sven? That felt *pant* amazingly *pant* good.' Sven purrs in relief and David continues 'Pretty kzzzZZZ...', falling asleep again, rather worn out by the climax after his sudden awakening. Sven dutifully puts the blanket back on him, then bounces back to you to thanks you for being such a great [if Player is purefemale]mistress[else]master[end if] by encouraging your kitty pet.";
+			now Dexterity of David is 1; [he gets a blowjob]
+			NPCSexAftermath Sven receives "OralCock" from David;
+		else:
+			LineBreak;
+			say "     Walking over to the snow leopard, you sit down beside him and stroke his fur, getting a pleased sigh and rumbling purr from him. After a few minutes with your affectionate snowmeow pet, relaxing as you rub his soft belly-fur and he snuggles up to your touch, you stand up and turn your attention back to the task of surviving in this changed city.";
+			now Dexterity of David is 99; [no blowjob from Sven]
+	else: [confident Sven]
+		say "     As you enter the bunker, you swing by the rows of beds set up in the room and find David in one of them, stretched out on his back and sleeping. The thin blanket he's under is showing a large tent over his crotch, making it pretty obvious that he's got a boner right now. That must be one nice dream he's having. And you're not the only one who noticed that - not far away, Sven is sitting cross-legged on his own bed, stealing glances at the sleeping man. The snow-leopard grins at you, then nods towards David and flirts his long tail through the air in a flowing, sinuous movement. It is clear that the anthro cat has more than a little bit of interest in the other man. Then from one moment to the next, he's on his feet, stalking towards the sleeping soldier on silent paw-pads.";
+		LineBreak;
+		say "     [bold type]Do you want to watch what Sven's planning to do with David ([link]Y[as]y[end link]), or will you intercept him, making sure that David sleeps unmolested ([link]N[as]n[end link])?[roman type][line break]";
+		if Player consents:
+			LineBreak;
+			say "     As you watch, Sven quickly closes up to the bed in which David is sleeping, then sits down on its edge slowly, not wanting to wake the man up (yet). With a low purr humming in his chest, the snow leopard leans over the sleeping soldier, his paw-hand barely touching David as he runs it over the man's chest, feeling the warmth of his skin through the thin sheet covering his chest. Then the anthro feline reaches the tent standing over David's crotch and brushes his fingers over the stretched fabric, reaching the top and giving the soldier's erection a teasing rub. A moan is audible as the man stirs a little bit, then relaxes again into his pillow. You hear Sven's purr become a little louder, with his tail swishing through the air in excitement - seems he likes dancing on the edge of being caught... and possibly being caught too, under the right circumstances.";
+			say "     Waiting a few seconds to make sure that David is all the way relaxed again, Sven then carefully takes hold of the blanket and starts to pull it off. More and more of the sleeping man's body comes into sight, first his strong arms and chest revealed inch by muscled inch, then the first hints of his pubic hair in a little treasure trail down from his navel, ending in a well-trimmed bush on his crotch. Soon, the blanket is in a small heap at the foot of the bed, with David's naked body in full view and his hard cock standing up like a flagpole. Sven focuses on it as if in a trance and leans down to take the young soldier's cock in a hand-paw. He gently licks up and down its side before giving its head a little peck and then sliding his muzzle down over David's shaft. As the snow leopard goes down on him, soft moans start coming from the still dozing David, his dream seemingly going into a more active phase to follow his body's impressions.";
+			WaitLineBreak;
+			say "     In between the rising moans, David mumbles a bit, slowly getting more coherent while getting the blowjob, until there finally is an understandable 'Yeah, suck it baby,' and one of David's hands grabs Sven's head to pull him down against his crotch. It is pretty obvious that he's mostly awake now, though he still has his eyes closed and thinks this is all still part of his dream. Moving his other hand to grab Sven's head too, David pulls him down on his shaft with quickly growing urgency, then thrusts his hips upwards with a grunt as he orgasms, blowing his load into the eager kitty's mouth. His whole body twitches with each blast of cum and the soldier is panting audibly by the time he's done shooting.";
+			say "     His climax over, the satisfied soldier raises his head and looks down with a sleepy expression at the snow leopard - who grins impishly at him and flicks his ears while giving a playful purr. David only smiles groggily and says 'Huh? *pant* Sven? That felt *pant* amazingly *pant* good.' Sven purrs in pleasure and David continues 'You're one sexy kzzzZZZ...', falling asleep again, rather worn out by the climax after his sudden awakening. Sven dutifully puts the blanket back on him, then bounces up from the bed, winking at you as he flounces back to his own cot.";
+			NPCSexAftermath Sven receives "OralCock" from David;
+			now Dexterity of David is 1; [he gets a blowjob]
+		else:
+			LineBreak;
+			say "     Walking over towards David's bed, you shake your head at Sven as he sits down next to the sleeping man, but the snow leopard doesn't really notice it, being all eyes for the handsome soldier. He has already started to gently tug the blanket off David by the time you get there, revealing part of the man's naked, muscular chest. Then you're up close and in Sven's face, doing your best to keep quiet and not wake David as you give the snow leopard a clear head-shake in negation and make shooing motions away from the soldier.";
+			say "     Sven looks from you to the sleeping man, pointing at the two of you and pantomiming with his hands gripping each other, then shrugs and gives a bit of a disappointed huff. He throws you a somewhat reluctant nod, then leans in and teasingly runs his hand over the curve of David's erection, making the man moan in his sleep. After steeling that little touch, the snow leopard gives David a last hungry look before flouncing away. This leaves you standing next to a still sleeping soldier, leaving the man none the wiser that he almost got a 'happy ending' to his dream from your feline friend.";
+			now Dexterity of David is 99; [no blowjob from Sven]
+	now David_Sven_SleepBJ is resolved;
+
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+3	"David_Sven_Talk1"	David_Sven_Talk1	"[EventConditions_David_Sven_Talk1]"	Bunker	2500	2	100
+
+to say EventConditions_David_Sven_Talk1:
+	if Dexterity of David is 1 and HP of David is 4 and Sven is collected and David is collected and HP of Sven >= 8 and HP of Sven < 50 and Player is not CoA: [list of conditions here]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_Sven_Talk1	"David_Sven_Talk1"
+
+David_Sven_Talk1 is a situation.
+ResolveFunction of David_Sven_Talk1 is "[ResolveEvent David_Sven_Talk1]".
+Sarea of David_Sven_Talk1 is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_Sven_Talk1:
+	if debugactive is 1:
+		say "     DEBUG: DAVID/SVEN (DEXTERITY 1) WALKIN[line break]";
+	if HP of Sven < 30: [pet Sven]
+		if Player is purefemale: [female player]
+			say "     As you enter the bunker, you see David sitting on one of the closer beds, right next to Sven. They're talking and you overhear David say '...so let me get this straight, you're -' 'Her pet, yes. She saved me and brought me here, takes care of me - the best and strongest and bravest mistress one can have. She even gave me this nice collar. I love her and am hers.' Sven happily replies, smiling at the young soldier as he praises you. David looks slightly nonplussed at the transformed student's so totally submissive behavior, then shrugs to himself and says 'Well, if that's what you want.' After a quick look down at his crotch and with his cheeks reddening slightly, he continues 'Err - about what you did earlier... thanks? That was... pretty amazing. I thought I was dreaming till after I came and realized you felt pretty furry.'";
+			say "     Sven blushes at the hesitant compliment and ducks momentarily behind his fluffy tail. 'Anything for my mistress's friends,' he says softly. Releasing his furry appendage, he lets it wind around David's waist as he slips up beside him, nuzzling against the young man's shoulder. 'And... and I like you too - you are very nice and very attractive,' he adds quietly as he snuggles all the closer. Confronted with such a soft-spoken and cuddly snowmeow, David can't help himself but stroke Sven's fur too, accepting this strange bunker-mate for what he is.";
+		else: [male/herm/neuter player]
+			say "     As you enter the bunker, you see David sitting on one of the closer beds, right next to Sven. They're talking and you overhear David say '...so let me get this straight, you're -' 'His pet, yes. He saved me and brought me here, takes care of me - the best and strongest and bravest master one can have. He even gave me this nice collar. I love him and am his.' Sven happily replies, smiling at the young soldier as he praises you. David looks slightly nonplussed at the transformed student's so totally submissive behavior, then shrugs to himself and says 'Well, if that's what you want.' After a quick look down at his crotch and with his cheeks reddening slightly, he continues 'Err - about what you did earlier... thanks? That was... pretty amazing. I thought I was dreaming till after I came and realized you felt pretty furry.'";
+			say "     Sven blushes at the hesitant compliment and ducks momentarily behind his fluffy tail. 'Anything for my master's friends,' he says softly. Releasing his furry appendage, he lets it wind around David's waist as he slips up beside him, nuzzling against the young man's shoulder. 'And... and I like you too - you are very nice and very attractive,' he adds quietly as he snuggles all the closer. Confronted with such a soft-spoken and cuddly snowmeow, David can't help himself but stroke Sven's fur too, accepting this strange bunker-mate for what he is.";
+	else: [confident Sven]
+		say "     As you enter the bunker, you see David sitting on one of the closer beds, right next to Sven. They're talking and you overhear David say '...so let me get this straight, you're an exchange student?' Sven replies, 'Yes I am, from Norway. I was hiding out in my basement apartment after things went crazy and I had a run-in with a horny snow leopard. After he... forced me to do things, I did not dare go out anymore, I was too afraid. So I was really glad when our shared friend found me and helped out with some much needed water. But after a few days - that leopard bastard sniffed my place out - or maybe he just stumbled upon it. No matter what, he tried to break in, but we fought him off together and I saw that he wasn't so tough after all...' After Sven falls silent, David in turn recounts your meeting with him, telling Sven about your heroics with the demon brute and getting him out of the 'safety' of Camp Bravo and being fucked by a minotaur.";
+		say "     The two of them chat a bit more about this and that, then eventually David glances down to his crotch and over at his own bed. His cheeks redden slightly and he says, 'Err - about what you did earlier... thanks? That was... pretty amazing. I thought I was dreaming till after I came and realized you felt pretty furry.' Sven smiles at the hesitant compliment and playfully flirts his tail under the handsome soldier's nose. 'Sorry if I caught you a bit by surprise there, but... if I learned anything from all this, it is that you just sometimes have to go for it,' he says softly, then winks at the man and adds, 'Just wanted to give that dream of yours a happy ending.' Letting his tail settle down a bit more, the snow leopard winds it around David's waist as he slips closer beside him, nuzzling against the young man's shoulder. 'And who could resist helping out such a hunk as yourself,' he adds in a husky tone, sliding an arm around David's shoulders. Confronted with the soft-spoken and quite touch-friendly feline, David can't help himself but stroke Sven's fur too, accepting this furred bunker-mate's affection.";
+	now Dexterity of David is 2;
+	now David_Sven_Talk1 is resolved;
+
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+2	"David_Eric_Cuntboy_Talk"	David_Eric_Cuntboy_Talk	"[EventConditions_David_Eric_Cuntboy_Talk]"	Bunker	2500	2	100
+
+to say EventConditions_David_Eric_Cuntboy_Talk:
+	if Eric is collected and David is collected and thirst of David > 5 and HP of David is 4 and HP of Eric > 0 and lust of Eric is 0 and Eric is not slutstored and Player is not CoA: [David spots Eric's genitals and wants to talk about them]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_Eric_Cuntboy_Talk	"David_Eric_Cuntboy_Talk"
+
+David_Eric_Cuntboy_Talk is a situation.
+ResolveFunction of David_Eric_Cuntboy_Talk is "[ResolveEvent David_Eric_Cuntboy_Talk]".
+Sarea of David_Eric_Cuntboy_Talk is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_Eric_Cuntboy_Talk:
 	if debugactive is 1:
 		say "     DEBUG: DAVID/ERIC (LUST [lust of DAVID]) 1 WALKIN[line break]";
 	project the figure of David_face_icon;
@@ -1268,8 +1367,26 @@ after of going to Bunker while Eric is in Bunker and thirst of David > 5 and HP 
 		now lust of Eric is 2;
 	else:
 		say "ERROR-Eric-[HP of Eric]C: He isn't in one of the states he should be in! Please report how you got to this message.";
+	now David_Eric_Cuntboy_Talk is resolved;
 
-after of going to Bunker while Erica is in Bunker and thirst of David > 5 and HP of David is 4 and HP of Eric is 200 and (lust of Erica is 0 or lust of Erica is 50): [David finds out about Erica]
+
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+2	"David_Erica_Gender_Talk"	David_Erica_Gender_Talk	"[EventConditions_David_Erica_Gender_Talk]"	Bunker	2500	2	100
+
+to say EventConditions_David_Erica_Gender_Talk:
+	if Erica is collected and David is collected and thirst of David > 5 and HP of David is 4 and HP of Eric is 200 and (lust of Erica is 0 or lust of Erica is 50) and Player is not CoA: [David finds out about Erica]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_Erica_Gender_Talk	"David_Erica_Gender_Talk"
+
+David_Erica_Gender_Talk is a situation.
+ResolveFunction of David_Erica_Gender_Talk is "[ResolveEvent David_Erica_Gender_Talk]".
+Sarea of David_Erica_Gender_Talk is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_Erica_Gender_Talk:
 	if debugactive is 1:
 		say "     DEBUG: DAVID/ERICA (LUST [lust of DAVID]) 1 WALKIN[line break]";
 	project the figure of David_face_icon;
@@ -1280,16 +1397,35 @@ after of going to Bunker while Erica is in Bunker and thirst of David > 5 and HP
 		say "     As you enter the bunker, David walks up to you and pulls you to the side, whispering he has something talk to you about. He looks a bit embarrassed about it, and you notice his eyes straying over to where Erica sits on her bunk (reading something with her back to you) before he continues. 'So... I saw you take Eric aside earlier and didn't want to intrude but... he looks so different than before.' David's hands make a little circling movement over his chest and face, then he continues, 'He's - she's - really cute, but... is she a transvestite and you helped her come out or something?'";
 		say "     You shake your head and reply that that's not quite it and make some vague mentions of Erica's extraordinary transformations, as compared to the regular stuff going on these days. David looks over to Erica and opens his mouth to ask for specifics, but you put a hand on his arm and shake your head. After all, Erica might not want just anyone to know everything about her, so David will just have to ask her himself if he is curious enough. That explanation seems enough for the young man... for now, but the interested gleam in his eye shows you that it won't be the end of it with him.";
 	now lust of Erica is 1;
+	now David_Erica_Gender_Talk is resolved;
 
-after of going to Bunker while Eric is in Bunker and thirst of David > 5 and HP of David is 4 and HP of Eric > 0 and lust of Eric is 1: [David talks with Eric about his gender and they exchange stories]
+
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+3	"David_Eric_Talk1"	David_Eric_Talk1	"[EventConditions_David_Eric_Talk1]"	Bunker	2500	2	100
+
+to say EventConditions_David_Eric_Talk1:
+	if Eric is collected and David is collected and thirst of David > 5 and HP of David is 4 and HP of Eric > 0 and lust of Eric is 1 and Player is not CoA: [David talks with Eric about his gender and they exchange stories]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_Eric_Talk1	"David_Eric_Talk1"
+
+David_Eric_Talk1 is a situation.
+ResolveFunction of David_Eric_Talk1 is "[ResolveEvent David_Eric_Talk1]".
+Sarea of David_Eric_Talk1 is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_Eric_Talk1:
 	if debugactive is 1:
 		say "     DEBUG: DAVID/ERIC TALK WALKIN[line break]";
-	say "     As you enter the bunker, you see David and Eric sitting together on one of the far bunks, talking. Curious about what's going on, you unobtrusively walk closer and overhear:";
+	say "     As you enter the main room of the bunker, you see David and Eric sitting together on one of the far bunks, talking. Curious about what's going on, you unobtrusively walk closer and overhear:";
 	LineBreak;
 	say "     [DavidEricTalk]";
+	now David_Eric_Talk1 is resolved;
 
 An everyturn rule: [you can just wait for them to talk too]
-	if Player is in Bunker and Eric is in Bunker and thirst of David > 5 and HP of David is 4 and HP of Eric > 0 and lust of Eric is 1:
+	if Player is in Bunker and Eric is collected and thirst of David > 5 and HP of David is 4 and HP of Eric > 0 and lust of Eric is 1 and Player is not CoA:
 		say "     As you spend some time in the bunker, you notice David and Eric sitting together on one of the far bunks, talking. Curious about what's going on, you unobtrusively walk closer and overhear:";
 		LineBreak;
 		say "     [DavidEricTalk]";
@@ -1299,29 +1435,78 @@ An everyturn rule: [you can just wait for them to talk too]
 		now Libido of David is 81; [The urges push through]
 		now BrutusEscalationTimer is 0;
 
-after of going to Bunker while Erica is in Bunker and thirst of David > 5 and HP of David is 4 and HP of Erica > 0 and lust of Erica is 1: [David talks with Erica and they exchange stories]
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+3	"David_Erica_Talk1"	David_Erica_Talk1	"[EventConditions_David_Erica_Talk1]"	Bunker	2500	2	100
+
+to say EventConditions_David_Erica_Talk1:
+	if Erica is collected and David is collected and thirst of David > 5 and HP of David is 4 and HP of Erica > 0 and lust of Erica is 1 and Player is not CoA: [David talks with Erica and they exchange stories]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_Erica_Talk1	"David_Erica_Talk1"
+
+David_Erica_Talk1 is a situation.
+ResolveFunction of David_Erica_Talk1 is "[ResolveEvent David_Erica_Talk1]".
+Sarea of David_Erica_Talk1 is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_Erica_Talk1:
 	if debugactive is 1:
 		say "     DEBUG: DAVID/Erica TALK WALKIN[line break]";
-	say "     As you enter the bunker, you see David and Erica sitting together on one of the far bunks, talking. Curious about what's going on, you unobtrusively walk closer and overhear:";
+	say "     As you enter the main room of the bunker, you see David and Erica sitting together on one of the far bunks, talking. Curious about what's going on, you unobtrusively walk closer and overhear:";
 	LineBreak;
 	say "     [DavidEricaTalk]";
+	now David_Erica_Talk1 is resolved;
 
 An everyturn rule: [you can just wait for them to talk too]
-	if Player is in Bunker and Erica is in Bunker and thirst of David > 5 and HP of David is 4 and HP of Erica > 0 and lust of Erica is 1:
+	if Player is in Bunker and Erica is in Bunker and thirst of David > 5 and HP of David is 4 and HP of Erica > 0 and lust of Erica is 1 and Player is not CoA:
 		say "     As you spend some time in the bunker, you notice David and Erica sitting together on one of the far bunks, talking. Curious about what's going on, you unobtrusively walk closer and overhear:";
 		LineBreak;
 		say "     [DavidEricaTalk]";
 
-instead of going to Bunker while HP of David is 4 and (Libido of David is 57): [David wants Brutus to get out more]
-	move player to Bunker;
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+2	"David_Brutus_Excursion_Talk"	David_Brutus_Excursion_Talk	"[EventConditions_David_Brutus_Excursion_Talk]"	Bunker	2500	2	100
+
+to say EventConditions_David_Brutus_Excursion_Talk:
+	if David is collected and HP of David is 4 and (Libido of David is 57) and Player is not CoA: [David wants Brutus to get out more]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_Brutus_Excursion_Talk	"David_Brutus_Excursion_Talk"
+
+David_Brutus_Excursion_Talk is a situation.
+ResolveFunction of David_Brutus_Excursion_Talk is "[ResolveEvent David_Brutus_Excursion_Talk]".
+Sarea of David_Brutus_Excursion_Talk is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_Brutus_Excursion_Talk:
 	if debugactive is 1:
 		say "     DEBUG: DAVID/BRUTUS TRIP INTERACTION[line break]";
 	project the figure of David_face_icon;
-	say "     As you enter the bunker, David is already waiting for you and waves you over. When you come closer, he says, 'I've been thinking... about Brutus, you know. He's never had a normal life, has he? Just forever as a rampaging beast like that one demon who attacked me.' The young man shudders, rubbing the healed claw-mark on his side as he thinks back to it, then catches himself and continues, 'So - how about we take Brutus out for a nice trip or two, show him what he's been missing. Come on, it'll be good for him and between the three of us, there shouldn't be too much danger in going outside. I bet you know a few nice places to visit. Just talk to me if you wanna go out...'";
+	say "     As you enter the main room of the bunker, David is already waiting for you and waves you over. When you come closer, he says, 'I've been thinking... about Brutus, you know. He's never had a normal life, has he? Just forever as a rampaging beast like that one demon who attacked me.' The young man shudders, rubbing the healed claw-mark on his side as he thinks back to it, then catches himself and continues, 'So - how about we take Brutus out for a nice trip or two, show him what he's been missing. Come on, it'll be good for him and between the three of us, there shouldn't be too much danger in going outside. I bet you know a few nice places to visit. Just talk to me if you wanna go out...'";
 	now Libido of David is 58;
+	now David_Brutus_Excursion_Talk is resolved;
 
-instead of going to Bunker while HP of David is 4 and (Libido of David is 0 or Libido of David is 1 or Libido of David is 50 or Libido of David is 52 or Libido of David is 58 or Libido of David is 81 or Libido of David is 83) and demon brute is listed in companionList of Player: [David reacts when the player comes in with the demon brute pet]
-	move player to Bunker;
+
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+1	"David_Brutus_Interaction1"	David_Brutus_Interaction1	"[EventConditions_David_Brutus_Interaction1]"	Bunker	2500	2	100
+
+to say EventConditions_David_Brutus_Interaction1:
+	if David is collected and HP of David is 4 and (Libido of David is 0 or Libido of David is 1 or Libido of David is 50 or Libido of David is 52 or Libido of David is 58 or Libido of David is 81 or Libido of David is 83) and demon brute is listed in companionList of Player and Player is not CoA: [David reacts when the player comes in with the demon brute pet]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_Brutus_Interaction1	"David_Brutus_Interaction1"
+
+David_Brutus_Interaction1 is a situation.
+ResolveFunction of David_Brutus_Interaction1 is "[ResolveEvent David_Brutus_Interaction1]".
+Sarea of David_Brutus_Interaction1 is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_Brutus_Interaction1:
 	if debugactive is 1:
 		say "     DEBUG: DAVID/BRUTUS INTERACTION 1[line break]";
 	if Libido of David is 0: [first time David sees the player with a demon brute]
@@ -1465,8 +1650,23 @@ instead of going to Bunker while HP of David is 4 and (Libido of David is 0 or L
 		say "     It is clear that he has genuine feelings about David and does feel very attached to the young soldier. Still, the purple giant's careful choice of words to you just now makes you think that... there might be more to this. You should think carefully if you really do want to fulfill his request.";
 		now Libido of David is 84;
 
-instead of going to Bunker while HP of David is 4 and demon brute is listed in companionList of Player and Libido of David > 52 and Libido of David < 80 and a random chance of 1 in 3 succeeds: [David reacts when the player comes in with the demon brute pet]
-	move player to Bunker;
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+2	"David_Brutus_Interaction2"	David_Brutus_Interaction2	"[EventConditions_David_Brutus_Interaction2]"	Bunker	2500	2	100
+
+to say EventConditions_David_Brutus_Interaction2:
+	if David is collected and HP of David is 4 and demon brute is listed in companionList of Player and Libido of David > 52 and Libido of David < 80 and a random chance of 1 in 3 succeeds and Player is not CoA: [David reacts when the player comes in with the demon brute pet]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_Brutus_Interaction2	"David_Brutus_Interaction2"
+
+David_Brutus_Interaction2 is a situation.
+ResolveFunction of David_Brutus_Interaction2 is "[ResolveEvent David_Brutus_Interaction2]".
+Sarea of David_Brutus_Interaction2 is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_Brutus_Interaction2:
 	if debugactive is 1:
 		say "     DEBUG: DAVID/BRUTUS INTERACTION 2[line break]";
 	if Libido of David is 53: [David thanked Brutus after he got hurt - some attraction here]
@@ -1489,10 +1689,27 @@ instead of going to Bunker while HP of David is 4 and demon brute is listed in c
 		else: [Brutus is rather more obvious]
 			say "     As you walk into the bunker with Brutus in tow, the large demon makes a beeline for David, who was just [one of]reading a book[or]sorting through his supplies[or]cleaning his weapon[or]making his bed[or]folding his clothes[at random]. With a loud 'Hey there, David!' he pulls the young soldier into a tight embrace, the smaller human pressed against his muscled chest. Then he lowers his head and runs his forked tongue along his friend's neck before giving him a lust-filled kiss that is eagerly returned. Watching them make out, you notice the demon's hand cupping David's ass as he holds him, giving it an appreciative squeeze. Putting the man down some short while later, Brutus walks back to you and takes his usual place - behind your shoulder on the right side.";
 
-instead of navigating Grey Abbey Library while (HP of David is 4 and demon brute is listed in companionList of Player and Libido of David > 81 and Libido of David < 86 and a random chance of 1 in 5 succeeds):
-	say "[NavCheck Grey Abbey Library]";
-	if NavCheckReturn is false, stop the action;
-	move player to Grey Abbey Library;
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+4	"David_Brutus_DominationSex_Repeat"	David_Brutus_DominationSex_Repeat	"[EventConditions_David_Brutus_DominationSex_Repeat]"	Grey Abbey Library	2500	2	50
+
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+4	"David_Brutus_DominationSex_Repeat"	David_Brutus_DominationSex_Repeat	"[EventConditions_David_Brutus_DominationSex_Repeat]"	Grey Abbey Library	2500	2	50
+
+to say EventConditions_David_Brutus_DominationSex_Repeat:
+	if (David is collected and HP of David is 4 and demon brute is listed in companionList of Player and Libido of David > 81 and Libido of David < 86 and a random chance of 1 in 5 succeeds) and Player is not CoA:
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_Brutus_DominationSex_Repeat	"David_Brutus_DominationSex_Repeat"
+
+David_Brutus_DominationSex_Repeat is a situation.
+ResolveFunction of David_Brutus_DominationSex_Repeat is "[ResolveEvent David_Brutus_DominationSex_Repeat]".
+Sarea of David_Brutus_DominationSex_Repeat is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_Brutus_DominationSex_Repeat:
 	if debugactive is 1:
 		say "     DEBUG -> DAVID BRUTUS DOMINATION SEX WALKIN <- DEBUG[line break]";
 	if Libido of David is 82:
@@ -1500,7 +1717,7 @@ instead of navigating Grey Abbey Library while (HP of David is 4 and demon brute
 	let randomnumber be a random number from 1 to 3;
 	if randomnumber is:
 		-- 1:
-			say "     As you enter the library and go about your business, you notice at some point that Brutus isn't by your side anymore. Now where did he go? Usually he couldn't be more dutiful, never leaving his spot behind your left shoulder. Then suddenly, you hear a loud gasp from between the long bookshelves several rows over, followed by deep-voiced lustful grunts. Ah, that explains it - recognizing the tone of voice, you realize it's David that drew the purple giant... and given the noises you have no doubts what activity they're busy with.";
+			say "[LibraryEntry_NavOrWalk], you notice at some point that Brutus isn't by your side anymore. Now where did he go? Usually he couldn't be more dutiful, never leaving his spot behind your left shoulder. Then suddenly, you hear a loud gasp from between the long bookshelves several rows over, followed by deep-voiced lustful grunts. Ah, that explains it - recognizing the tone of voice, you realize it's David that drew the purple giant... and given the noises you have no doubts what activity they're busy with.";
 			LineBreak;
 			say "     Do you want to go and watch?";
 			if Player consents:
@@ -1516,7 +1733,7 @@ instead of navigating Grey Abbey Library while (HP of David is 4 and demon brute
 				say "     No - let them have their privacy. Or at least as much privacy as you ever get when you have wild sex in a public library. You turn your thoughts to other things and tune them out - at least until you hear the deep growl of, 'Take it like a good little slut!' and the moans and grunts that accompany Brutus filling David's ass with his seed (or so you assume). Soon after, the purple demon comes out of an aisle between the shelves not too far off, cum literally dripping from his massive cock. You don't say anything about it as you can feel it's a sign of pride for him - proving that he's given his mate, his man, one hell of a fuck.";
 			NPCSexAftermath David receives "AssFuck" from Brutus;
 		-- 2:
-			say "     As you enter the library and go about your business, you notice at some point that Brutus isn't by your side anymore. Now where did he go? Usually he couldn't be more dutiful, never leaving his spot behind your left shoulder. Then suddenly, you hear a loud gasp from between the long bookshelves several rows over, followed by deep-voiced lustful grunts. Ah, that explains it - recognizing the tone of voice, you realize it's David that drew the purple giant... and given the noises you have no doubts what activity they're busy with.";
+			say "[LibraryEntry_NavOrWalk], you notice at some point that Brutus isn't by your side anymore. Now where did he go? Usually he couldn't be more dutiful, never leaving his spot behind your left shoulder. Then suddenly, you hear a loud gasp from between the long bookshelves several rows over, followed by deep-voiced lustful grunts. Ah, that explains it - recognizing the tone of voice, you realize it's David that drew the purple giant... and given the noises you have no doubts what activity they're busy with.";
 			LineBreak;
 			say "     [bold type]Do you want to go and watch?[roman type][line break]";
 			LineBreak;
@@ -1540,7 +1757,7 @@ instead of navigating Grey Abbey Library while (HP of David is 4 and demon brute
 				say "     No - let them have their privacy. Or at least as much privacy as you ever get when you have wild sex in a public library. You turn your thoughts to other things and tune them out - at least until you hear the deep growl of, 'Take it like a good little slut!' and the moans and grunts that accompany Brutus filling David's stomach with his seed (or so you assume). Soon after, the purple demon comes out of an aisle between the shelves not too far off, cum literally dripping from his massive cock. You don't say anything about it as you can feel it's a sign of pride for him - proving that he's given his mate, his man, one hell of a fuck.";
 			NPCSexAftermath David receives "AssFuck" from Brutus;
 		-- 3:
-			say "     As you enter the library, you notice that David is sitting on one of the sofas near the entrance, seemingly waiting for you. Literally jumping to his feet as he sees you coming, the young man walks up in an impatient stride, then... just passes you by with only a casual hello, coming to stand before Brutus. Almost before he's done saying, 'Hello Brutus,' one of David's hands is resting on the large demon's shaft, rubbing its tick length, and the next words out of the soldier's mouth are, 'Man, I don't know what's up with me. I - I've been feeling so incredibly horny all day. Thinking about you, about... this thick cock. Please, my love - take me now. I need it.' Giving a satisfied rumble from his throat as his erection becomes fully hard, the large demon replies, 'Of course! You're one hot fuck that I just can't get enough of!' That said, he just picks up David, holding him in a tight embrace and making out with the young man as he carries him back to the sofa.";
+			say "[LibraryEntry_NavOrWalk], you notice that David is sitting on one of the sofas near the entrance, seemingly waiting for you. Literally jumping to his feet as he sees you coming, the young man walks up in an impatient stride, then... just passes you by with only a casual hello, coming to stand before Brutus. Almost before he's done saying, 'Hello Brutus,' one of David's hands is resting on the large demon's shaft, rubbing its tick length, and the next words out of the soldier's mouth are, 'Man, I don't know what's up with me. I - I've been feeling so incredibly horny all day. Thinking about you, about... this thick cock. Please, my love - take me now. I need it.' Giving a satisfied rumble from his throat as his erection becomes fully hard, the large demon replies, 'Of course! You're one hot fuck that I just can't get enough of!' That said, he just picks up David, holding him in a tight embrace and making out with the young man as he carries him back to the sofa.";
 			say "     A moment later, the human soldier is dropped to land with his back on the soft surface, where he immediately kicks off his shoes and starts to shimmy out of his pants. Meanwhile, Brutus leans over the needily panting human and kisses him again, putting a large hand on his chest to feel David's muscles. He draws in the thin fabric of what soon is the soldier's only piece of clothing left, then gives it a quick wrench, leaving David completely naked. Flinging the ripped cloth aside, Brutus lowers his head to start licking his human boyfriend's balls and cock, then works his say up, forked tongue flicking to play over David's nipples before he reaches his head and their lips meet again in a long kiss. The position with David on his back and Brutus's body covering all of his puts them in a perfect position to fuck, and the young man eagerly spreads his leg for his beloved purple giant.";
 			LineBreak;
 			say "     [bold type]Do you want to watch their coupling?[roman type][line break]";
@@ -1602,7 +1819,7 @@ to say DavidSex1: [player sucks him]
 			say "     Stepping up close to the young soldier, you put your arms around him and pull him in for a deep kiss before he can react. There's a look of alarm in his eyes for a second, then he accepts your tongue exploring his mouth and gives in. As you come back up for air, he stammers 'I - I shouldn't... we're not supposed to...', but quickly falls silent as you reach down and stroke the bulge in his pants. With all the minotaur pheromones in the air here, he's already half hard and pretty pliable.";
 		else:
 			say "     Stepping up close to the young soldier, you put your arms around him and pull him in for a deep kiss before he can react. There's a look of alarm in his eyes for a second, then he accepts your tongue exploring his mouth and gives in. As you come back up for air, he stammers 'I - I shouldn't... we're not supposed to...', but quickly falls silent as you reach down and stroke his crotch, a bulge quickly forming in his pants. Not getting any relief except rushed masturbation in the weeks and months since the outbreak started, Private Jackson is like putty in your hands, his horny body telling him to go along with anything you want.";
-		say "     Kneeling down in front of him, you undo David's zipper and pull out his cock, making the man moan as you handle his erect manhood. Stroking up and down on his shaft, you have him rock-hard in no time, then move your head forward a bit and lick over the tip. Next you take his cock into your mouth, and start bobbing up and down on it, while David groans and murmurs things like 'So good...' and 'You're a lot better than...' You give the young soldier a long and amazing blow-job, keeping at it until he suddenly shouts 'I'm coming!' and starts to shoot strings of cum into your mouth. You wait till he stops twitching and the last spurt of semen leaves his cock, then stand up and start making out with him, smiling inwardly as you push some of his own cum in David's mouth with your tongue to give him a taste.'";
+		say "     Kneeling down in front of him, you undo David's zipper and pull out his cock, making the man moan as you handle his erect manhood. Stroking up and down on his shaft, you have him rock-hard in no time, then move your head forward a bit and lick over the tip. Next you take his cock into your mouth, and start bobbing up and down on it, while David groans and murmurs things like 'So good...' and 'You're a lot better than...' You give the young soldier a long and amazing blowjob, keeping at it until he suddenly shouts 'I'm coming!' and starts to shoot strings of cum into your mouth. You wait till he stops twitching and the last spurt of semen leaves his cock, then stand up and start making out with him, smiling inwardly as you push some of his own cum in David's mouth with your tongue to give him a taste.'";
 		WaitLineBreak;
 		say "     As he comes down from the rush of orgasm a while later and David's brain starts working again, he pants 'Wow, you're better than... Oh!' with a guilty expression suddenly shadowing his face. 'I got a girlfriend - and now I've cheated on her having oral sex! What will she say when I get back home? I - you...' Pulling his mouth to yours for another quick kiss, you tell him to calm down and that his girlfriend surely won't learn about you two once he goes back to her when this is all over. What happens in this city stays in the city. Unless of course you can make him fully yours to keep, you think to yourself...";
 	else:
@@ -1611,7 +1828,7 @@ to say DavidSex1: [player sucks him]
 		else:
 			say "     Stepping up close to the young soldier, you put your arms around him and pull him in for a deep kiss, then let your hands wander down to his crotch. Through the fabric you feel his manhood already filling out, as his body reacts to you kiss and touch. ";
 		say "Kneeling down in front of him, you undo David's zipper and pull out his cock, making the man moan as you handle his erect manhood. Stroking up and down on his shaft, you have him rock-hard in no time, then move your head forward a bit and lick over the tip. Next you take his cock into your mouth, and start bobbing up and down on it, while David groans and murmurs things like 'So good...' and 'You're a lot better than...'";
-		say "     You give the young soldier a long and amazing blow-job, keeping at it until he suddenly shouts 'I'm coming!' and starts to shoot strings of cum into your mouth. You wait till he stops twitching and the last spurt of semen leaves his cock, then stand up and start making out with him, smiling inwardly as you push some of his own cum in David's mouth with your tongue to give him a taste.' ";
+		say "     You give the young soldier a long and amazing blowjob, keeping at it until he suddenly shouts 'I'm coming!' and starts to shoot strings of cum into your mouth. You wait till he stops twitching and the last spurt of semen leaves his cock, then stand up and start making out with him, smiling inwardly as you push some of his own cum in David's mouth with your tongue to give him a taste.' ";
 		if thirst of David is 10: [fuck buddy]
 			say "As he comes down from the rush of orgasm a while later and David's brain starts working again, he pants 'Wow, you're better than Ann. Best fuck-buddy ever. I'll miss you when I'm back with her.'";
 		else if thirst of David is 20: [boy/girlfriend]
@@ -1626,7 +1843,7 @@ to say DavidSex2: [he sucks the player]
 	else:
 		say "     Stepping up close to the young soldier, you put your arms around him and pull him in for a deep kiss, then let your hands wander down to his crotch. Through the fabric you feel his manhood already filling out, as his body reacts to you kiss and touch.";
 		say "     Pulling back from David, you quickly strip off your clothes and sit at the edge of one of the nearby bunk beds. Holding out your hard [Cock of Player] manhood, you wave him closer and tell the young soldier to suck you off. [if lust of David is 1 or lust of David is 51 or lust of David is 52]He just stands there for a moment, staring at your cock until you say 'Come on, you liked getting fucked with it, didn't you? Just give it a try...' then steps up and kneels between your legs[else]He smiles at you, licking his lips, then steps up and kneels between your legs[end if].";
-	say "     Taking hold of your cock, the young soldier holds it up and licks along the shaft before taking the tip in his mouth. You put your hands on his head and softly push it down on your cock, helping him to get into sucking on it. Soon you have him bobbing up and down on your manhood, with his lips tight around the shaft. [if lust of David is 1]Even though it's his first blow-job, he's pretty good at it, knowing how to handle a cock from being a man himself[else]He's very eager to please you, even trying to deep-throat you once or twice[end if].";
+	say "     Taking hold of your cock, the young soldier holds it up and licks along the shaft before taking the tip in his mouth. You put your hands on his head and softly push it down on your cock, helping him to get into sucking on it. Soon you have him bobbing up and down on your manhood, with his lips tight around the shaft. [if lust of David is 1]Even though it's his first blowjob, he's pretty good at it, knowing how to handle a cock from being a man himself[else]He's very eager to please you, even trying to deep-throat you once or twice[end if].";
 	say "     Before too much longer, you feel the need to cum rise in your balls and say 'I'm close, suck me harder.' [if lust of David is 0]You pull his head against your crotch as you start shooting, spurt after spurt of your seed filling his hot mouth[else]He pushes your cock into his mouth all the way as you orgasm, making you shoot directly down his throat and into his stomach[end if].";
 	WaitLineBreak;
 	if thirst of David is 10: [fuck buddy]
@@ -1872,11 +2089,27 @@ to say DavidSex11: [Brutus & David Threesome (Brutus gets DP'd)]
 	NPCSexAftermath Brutus receives "AssFuck" from David;
 	NPCSexAftermath Brutus receives "AssFuck" from Player;
 
-instead of going down from the Grey Abbey Library while (David is in Bunker and RyouseiDavidInteraction is 0 and royal tiger is listed in companionList of Player):
-	move player to Bunker;
+
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+3	"David_Ryousei_Meeting"	David_Ryousei_Meeting	"[EventConditions_David_Ryousei_Meeting]"	Bunker	2500	2	100
+
+to say EventConditions_David_Ryousei_Meeting:
+	if (David is in Bunker and RyouseiDavidInteraction is 0 and royal tiger companion is listed in companionList of Player): [list of conditions here]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_Ryousei_Meeting	"David_Ryousei_Meeting"
+
+David_Ryousei_Meeting is a situation.
+ResolveFunction of David_Ryousei_Meeting is "[ResolveEvent David_Ryousei_Meeting]".
+Sarea of David_Ryousei_Meeting is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_Ryousei_Meeting:
 	if debugactive is 1:
 		say "     DEBUG: David meets Ryousei; RyouseiDavidInteraction: [RyouseiDavidInteraction][line break]";
-	say "     As you come down the stairway and walk into the main room of the bunker, you spot David nearby - casually leaning against the wall while reading a book. He seems quite absorbed by the story playing out in the pages of his novel, so you decide not to call out to him in greeting and just get on with what you were doing. Yet as you turn away from the young soldier and take your first step, your tiger companion lets out a deep-voiced mrowl from the depth of his throat and walks over to David instead. The muscular man remains focused on his book for a few more heartbeats, then notices Ryousei's movement towards him and looks up.";
+	say "     As you enter main room of the bunker, you spot David nearby - casually leaning against the wall while reading a book. He seems quite absorbed by the story playing out in the pages of his novel, so you decide not to call out to him in greeting and just get on with what you were doing. Yet as you turn away from the young soldier and take your first step, your tiger companion lets out a deep-voiced mrowl from the depth of his throat and walks over to David instead. The muscular man remains focused on his book for a few more heartbeats, then notices Ryousei's movement towards him and looks up.";
 	say "     'What the - a tiger?!' David exclaims, becoming wide-eyed as he takes in the six and a half foot tall anthro tiger walking purposefully towards him. Taking to a more active stance in an eye-blink, trained muscles tensing as he tries to decide what's going on, the soldier's gaze flicks over the room around him to take everything in at a rush. Things like ways of escape, options to take in a fight, other people - like you, for example. He looks at you and is momentarily surprised at how calm you are, watching him and Ryousei. Then the large cat is upon him, showing David a smile that reveals his impressive set of teeth and giving a little bow in greeting.";
 	WaitLineBreak;
 	say "     'Hajimemashite, human. I am Ryousei, first general of the mighty shogun Aki,' your feline companion introduces himself, patiently waiting for David to get over his initial shock, then come to attention. 'David Jackson, private in the US army. Er - nice to meet you sir?' the soldier replies, still rather surprised at the calm and cultured demeanor of this nonhuman companion of yours. 'Splendid. May I ask you a question, David Jackson?' Ryousei continues, still giving David a friendly smile. Getting a nod from the human soldier a few seconds later, the anthro tiger reaches out to hook a finger under the chain of David's dog tags, pulling them up to dangle freely in the light.";
@@ -1887,24 +2120,28 @@ instead of going down from the Grey Abbey Library while (David is in Bunker and 
 	now RyouseiDavidInteraction is 1;
 	now lastRyouseiDavidInteraction is turns;
 
-after going down from Grey Abbey Library while (David is in Bunker and RyouseiDavidInteraction < 2 and royal tiger is listed in companionList of Player and (lastRyouseiDavidInteraction - turns > 6)):
-	if RyouseiDavidInteraction is 1:
-		if debugactive is 1:
-			say "     DEBUG: David & Ryousei Scene; RyouseiDavidInteraction: [RyouseiDavidInteraction][line break]";
-		say "[DavidRyouseiScene1]";
-	else if RyouseiDavidInteraction is 2:
-		if debugactive is 1:
-			say "     DEBUG: David & Ryousei Scene; RyouseiDavidInteraction: [RyouseiDavidInteraction][line break]";
-		say "[DavidRyouseiScene2]";
-	else if RyouseiDavidInteraction is 3:
-		if debugactive is 1:
-			say "     DEBUG: David & Ryousei Scene; RyouseiDavidInteraction: [RyouseiDavidInteraction][line break]";
-		say "[DavidRyouseiScene3]";
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+3	"David_Ryousei_Sparring1"	David_Ryousei_Sparring1	"[EventConditions_David_Ryousei_Sparring1]"	Bunker	2500	2	100
 
-to say DavidRyouseiScene1:
-	say "     Coming down into the bunker, you soon find yourself without your tiger companion by your side, as Ryousei wanders off to say hello to David when he spots the young man doing push-ups a short distance away. 'Greetings, David Jackson,' the anthro feline says in a friendly tone, giving a little bow. David goes on to finish his current set of... six, seven, eight push-ups, then pushes himself off strongly, getting his feet under him and standing up straight in an impressive show of athleticism. 'Hello Ryousei, nice to see you big guy,' the human tells your tiger companion, offering him his hand to shake and adding, 'And by the way, you can just call me David, okay? Don't need the last name all the time.'";
+to say EventConditions_David_Ryousei_Sparring1:
+	if (David is collected and RyouseiDavidInteraction < 2 and royal tiger companion is listed in companionList of Player and (lastRyouseiDavidInteraction - turns > 6)) and Player is not CoA:
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+David_Ryousei_Sparring1	"David_Ryousei_Sparring1"
+
+David_Ryousei_Sparring1 is a situation.
+ResolveFunction of David_Ryousei_Sparring1 is "[ResolveEvent David_Ryousei_Sparring1]".
+Sarea of David_Ryousei_Sparring1 is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent David_Ryousei_Sparring1:
+	project Figure of Ryousei_clothed_icon;
+	say "     As you enter main room of the bunker, you soon find yourself without your tiger companion by your side, as Ryousei wanders off to say hello to David when he spots the young man doing push-ups a short distance away. 'Greetings, David Jackson,' the anthro feline says in a friendly tone, giving a little bow. David goes on to finish his current set of... six, seven, eight push-ups, then pushes himself off strongly, getting his feet under him and standing up straight in an impressive show of athleticism. 'Hello Ryousei, nice to see you big guy,' the human tells your tiger companion, offering him his hand to shake and adding, 'And by the way, you can just call me David, okay? Don't need the last name all the time.'";
 	say "     'Of course. David it is then,' Ryousei answers, bypassing the human's hand and giving his underarm a tight grip, something your soldier friend returns after catching on a second or two later. 'I see you are in training, steeling yourself for battle. A warrior's work never ends, right?' the tiger starts a nice little banter with David, and the two of them chat about keeping fit and training. Eventually, Ryousei says, 'I have to say that I am curious what sort of techniques your people use in a fight. How about a friendly duel to measure up against each other? And don't worry, I'll keep the claws sheathed for this one.' Accompanying the last sentence, the tiger flexes the fingers on one hand to show off his set of curved feline claws, then lets them retract again with a twitch.";
 	WaitLineBreak;
+	project Figure of Ryousei_fundoshi_icon;
 	say "     'Sure - I guess,' David replies while scratching the back of his head a bit unsurely. Seems like the man still doesn't know what to expect from his new acquaintance - and how could he, given Ryousei's otherworldly origin. With the decision made to fight, the tiger is quick to collect the thin mattresses from a number of unused beds, spreading them on the ground as an improvised training mat. After that, he strips down, unwrapping his muscular body from its kimono till the only garment on his body is a white fundoshi. Gesturing for David to take position on one end while he himself takes a stance on the other, the fight is set up. After another bow, the tiger starts to approach his human opponent in a combat-ready stance, moving slowly to study David's movements. Tension builds between them as they circle one another, then the first blow is struck - and ducked, by David.";
 	say "     What follows is a flurry of punches, strikes and grappling - none of it too hard, as both of the men try not to hurt the other. It is fairly fun to watch, two trained men making blow and counter-blow, ducking and evading or sometimes even intentionally taking a hit to get into a better position. Still, it isn't hard to realize that Ryousei has been going easy on his human buddy, especially when you see the lightning-quick leg sweep with which he sends David down on the mat at the end of it. The human soldier lies panting on the mattress for a second, then sees Ryousei's tail flicking past in his line of sight and makes a grab for it. Hands closing on the striped appendage, the soldier takes a tight grip and gives a sudden tug, unbalancing a very surprised-looking Ryousei. A (soft) kick to the back of the tiger's hollow of the knee brings Ryousei down on his back too, hitting the mattresses right next to the soldier.";
 	WaitLineBreak;
@@ -1914,12 +2151,7 @@ to say DavidRyouseiScene1:
 	say "     Closing his open mouth with a snap and gulping, David starts to apologize, only to be stilled by Ryousei's large hand on his chest in a calming gesture. 'It is okay friend. I'm not offended. In fact... whether you meant it in earnest or not, I can say that I am... interested. Given the weeks and months on campaign, finding some rest in the arms of a fellow soldier is just natural.' Ryousei's grin gets a little wider and a loud purr resonates in the depth of his broad chest. The anthro tiger strokes his hand down David's front, feeling the trained man's pecs and abs, then pulls it away and stands up. 'Feel free to think about it and to tell me if you want to try other fun things to do on mattresses,' Ryousei says with a wink, then leaves David to think in peace and goes to put on his kimono again.";
 	now RyouseiDavidInteraction is 2;
 	now lastRyouseiDavidInteraction is turns;
-
-to say DavidRyouseiScene2:
-	say "";
-
-to say DavidRyouseiScene3:
-	say "";
+	now David_Ryousei_Sparring1 is resolved;
 
 Section 3 - Endings
 

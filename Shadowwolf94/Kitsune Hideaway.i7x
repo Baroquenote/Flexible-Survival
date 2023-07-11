@@ -26,21 +26,30 @@ object	name
 Kitsune	"Kitsune"
 
 Kitsune is a man.
-[Physical details as of game start]
+Kitsune is in Foxy Hideaway.
 ScaleValue of Kitsune is 3. [human sized]
 SleepRhythm of Kitsune is 0. [0 - awake at all times, 1 - day active, 2 - night active]
-Cock Count of Kitsune is 1. [X cock]
-Cock Length of Kitsune is 11. [X Inches]
-Ball Size of Kitsune is 7.
-Ball Count of Kitsune is 2. [X balls]
-Cunt Count of Kitsune is 0. [X pussy]
-Cunt Depth of Kitsune is 0. [X Cunt]
-Cunt Tightness of Kitsune is 0. [X Cunt]
-Nipple Count of Kitsune is 2. [X nipples]
-Breast Size of Kitsune is 0. [X at the start]
+Body Weight of Kitsune is 3. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
+Body Definition of Kitsune is 5. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
+[Body Adjective is generated out of the body weight and body definition and can be used in scenes - one word descriptive adjective depending on weight and definition groups: low weight group: skinny/slender/lithe; mid weight group: average/fit/muscled; high weight group: pudgy/husky/jacked]
+Androginity of Kitsune is 8. [Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/somewhat effeminate/effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
+Mouth Length of Kitsune is 8. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
+Mouth Circumference of Kitsune is 4. [mouth circumference 1-5, "tiny, small, normal, wide, gaping"]
+Tongue Length of Kitsune is 8. [length in inches]
+Breast Size of Kitsune is 0. [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+Nipple Count of Kitsune is 2. [count of nipples]
+Asshole Depth of Kitsune is 12. [inches deep for anal fucking]
+Asshole Tightness of Kitsune is 2. [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+Cock Count of Kitsune is 1. [number of cocks]
+Cock Girth of Kitsune is 3. [thickness 1-5, thin/slender/average/thick/monstrous]
+Cock Length of Kitsune is 11. [Length in Inches]
+Ball Count of Kitsune is 2. [allowed numbers: 1 (uniball), 2 or 4]
+Ball Size of Kitsune is 3. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
+Cunt Count of Kitsune is 0. [number of cunts]
+Cunt Depth of Kitsune is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Tightness of Kitsune is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+Clit Size of Kitsune is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
-TwistedCapacity of Kitsune is true. [can take oversized members without pain]
-Sterile of Kitsune is false.
 PlayerMet of Kitsune is false.
 PlayerRomanced of Kitsune is false.
 PlayerFriended of Kitsune is false.
@@ -51,10 +60,11 @@ Virgin of Kitsune is false.
 AnalVirgin of Kitsune is false.
 PenileVirgin of Kitsune is false.
 SexuallyExperienced of Kitsune is true.
+TwistedCapacity of Kitsune is true. [Twisted Characters can take any penetration, no matter the size]
+Sterile of Kitsune is false. [steriles can't knock people up]
 MainInfection of Kitsune is "Kitsune".
 Description of Kitsune is "A beautiful silver vulpine stands on two digitigrade legs while looking at you with heated, but controlled eyes. Nine tails dance teasingly behind the fox-man's back as he smiles at you good-naturedly. His long and lithe form seems to almost sway slightly with the subtle motions of Kitsune rocking his hips from side to side. His smile soon turns saucy as Kitsune looks you up and down, his eyes lingering a particularly long time on your groin as though studying a tempting morsel, before he looks up to your face once again. With a predatory grin crossing his muzzle, you can't help but feel slightly on edge as the feral nature of the other shines through the graceful visage that the vulpine puts on for you. Though somewhat human-like in appearance, there is no doubt of the fox-man's animal nature as Kitsune stares at you with a growing hunger. A slow sweep of a red tongue along full and pale lips lets you know not to forget this.".
 Conversation of Kitsune is { "Hmmm!" }.
-Kitsune is in Foxy Hideaway.
 
 Kitsunetalk is a number that varies.
 Kitsunearoused is a number that varies.
@@ -124,7 +134,7 @@ to say KitsuneTalkMenu:
 	say "     [KitsuneLocationComment][KitsuneGroupComment][KitsuneIndividualComment]";]
 
 to say KitsuneTalk2:
-	say "     'Aren't you self-centered?' the Kitsune chuckles before looking at you properly. 'Looking for my approval, or are you hoping to show off? Stand still and let me have a look at both your outward as well as inward form. After all, this seems like something that it is worth being thorough for. [if player is not naked]Remove your clothes for me please. I don't know why you lot insist on wearing anything beyond a collar or jewelry anyway. It just gets in the way.' Complying, you quickly strip and give the vulpine an unimpeded view of your naked body, turning when directed. [else]I must commend you on how liberated you are. Most of your kind seem to try and hide their bodies beneath cloth and armor, so it is refreshing to find someone like you who understands that it just gets in the way when you want to 'frolic'. You unabashedly display your naked form to the vulpine, turning when directed. [end if]'Hmm. Very nice. I haven't seen a soul quite like this for a while... Alright, what did you want to know? My impression of your physical state, or your mental condition?'";
+	say "     'Aren't you self-centered?' the Kitsune chuckles before looking at you properly. 'Looking for my approval, or are you hoping to show off? Stand still and let me have a look at both your outward as well as inward form. After all, this seems like something that it is worth being thorough for. [if Player is not naked]Remove your clothes for me please. I don't know why you lot insist on wearing anything beyond a collar or jewelry anyway. It just gets in the way.' Complying, you quickly strip and give the vulpine an unimpeded view of your naked body, turning when directed. [else]I must commend you on how liberated you are. Most of your kind seem to try and hide their bodies beneath cloth and armor, so it is refreshing to find someone like you who understands that it just gets in the way when you want to 'frolic'. You unabashedly display your naked form to the vulpine, turning when directed. [end if]'Hmm. Very nice. I haven't seen a soul quite like this for a while... Alright, what did you want to know? My impression of your physical state, or your mental condition?'";
 	say "     [bold type]Would you rather his opinion on your form or your mind? (Only Form available at the moment, sorry.)[roman type][line break]"; [Mind yet to be added]
 	LineBreak;
 	say "     ([link]Y[as]y[end link]) - Form. What is his impression on your outward appearance?";
@@ -142,31 +152,31 @@ to say KitsuneTalk2:
 Section 3 - Kitsune Comments
 
 to say KitsuneGenderComment: [Comments on player's gender]
-	if player is herm and breast size of Player is 0: [Male Herm]
-		say "     'I see that you bear the organs of both man and woman. I would be curious to know whether you were born as such, or inherited them from the ongoing catastrophe. One advantage that I hope that you have taken advantage of is the improved ability to penetrate while being penetrated. If you and your partners are flexible enough, you might even be able to have [italic type]all [roman type]of your holes filled at once. I am however noticing a flat chest though, which I must say has its own appeal even though it means that there is less of you to caress. [if player is mpreg_ok]I'm also sensing that you have a little secret. Something to do with an anal birthing chamber perhaps? [end if]";
-	else if player is herm and breast size of Player > 0: [Herm]
-		say "     'I see that you bear the organs of both man and woman. I would be curious to know whether you were born as such, or inherited them from the ongoing catastrophe. One advantage that I hope that you have taken advantage of is the improved ability to penetrate while being penetrated. If you and your partners are flexible enough, you might even be able to have [italic type]all [roman type]of your holes filled at once. I also like that you have breasts. Gives me more to caress and stroke while we speak of sweet nothings. [if player is mpreg_ok]I'm also sensing that you have a little secret. Something to do with an anal birthing chamber perhaps? [end if]";
-	else if player is male and breast size of Player is 0: [Male]
-		say "     'Oh my. Such a handsome man you are. If you've always had these looks then I'm sure that you were greatly admired by women, and probably men too. Otherwise, the outbreak in the city has really been kind to you. It would be selfish of you not to want to grace as many people with your presence, some more closely than others. Myself included, I might add[if player is mpreg_ok]. I'm also sensing that you have a little secret. Something that males don't normally have the ability to do[end if]. ";
-	else if player is male and breast size of Player > 0: [Dick Girl]
-		say "     'I don't know where to look. Your breast or your cock. They're both calling to me, and I don't know which I like more. I would be curious to know whether you have always been gifted so, or whether the ongoing catastrophe granted you such a pleasing body. All the fun of being able to penetrate someone while having them caress the curves of your chest. [if player is mpreg_ok]I'm also sensing that you have a little secret. Something to do with an anal birthing chamber perhaps? [end if]";
-	else if player is female and breast size of Player is 0: [Cuntboy]
-		say "     'I hope that you've been making mischief with that flat chest and the slit between your legs. Trick people into thinking that you bear the gifts of manhood, then shock them when you reveal that treasure between your legs. Having a flat chest has its own appeal, but it does mean that there is less of you to run my hands over. [if player is mpreg_ok]I'm also sensing that you have a little secret. Something to do with an anal birthing chamber perhaps? [end if]";
-	else if player is female and breast size of Player > 0: [Female]
-		say "     'Aren't you just a delight to sex-starved eyes, my dear. Have you had problems with men and women following you home and wanting to get to know you? I'm sure that the residents of the city have been noticing you too. I wouldn't mind being a little closer to you, running my hands over your breasts, then across your tummy before sneaking down towards your cleft for just a moment. [if player is mpreg_ok]I'm also sensing that you have a little secret. Something to do with an anal birthing chamber perhaps? [end if] ";
+	if Player is herm and Breast Size of Player is 0: [Male Herm]
+		say "     'I see that you bear the organs of both man and woman. I would be curious to know whether you were born as such, or inherited them from the ongoing catastrophe. One advantage that I hope that you have taken advantage of is the improved ability to penetrate while being penetrated. If you and your partners are flexible enough, you might even be able to have [italic type]all [roman type]of your holes filled at once. I am however noticing a flat chest though, which I must say has its own appeal even though it means that there is less of you to caress. [if Player is mpreg_ok]I'm also sensing that you have a little secret. Something to do with an anal birthing chamber perhaps? [end if]";
+	else if Player is herm and Breast Size of Player > 0: [Herm]
+		say "     'I see that you bear the organs of both man and woman. I would be curious to know whether you were born as such, or inherited them from the ongoing catastrophe. One advantage that I hope that you have taken advantage of is the improved ability to penetrate while being penetrated. If you and your partners are flexible enough, you might even be able to have [italic type]all [roman type]of your holes filled at once. I also like that you have breasts. Gives me more to caress and stroke while we speak of sweet nothings. [if Player is mpreg_ok]I'm also sensing that you have a little secret. Something to do with an anal birthing chamber perhaps? [end if]";
+	else if Player is male and Breast Size of Player is 0: [Male]
+		say "     'Oh my. Such a handsome man you are. If you've always had these looks then I'm sure that you were greatly admired by women, and probably men too. Otherwise, the outbreak in the city has really been kind to you. It would be selfish of you not to want to grace as many people with your presence, some more closely than others. Myself included, I might add[if Player is mpreg_ok]. I'm also sensing that you have a little secret. Something that males don't normally have the ability to do[end if]. ";
+	else if Player is male and Breast Size of Player > 0: [Dick Girl]
+		say "     'I don't know where to look. Your breast or your cock. They're both calling to me, and I don't know which I like more. I would be curious to know whether you have always been gifted so, or whether the ongoing catastrophe granted you such a pleasing body. All the fun of being able to penetrate someone while having them caress the curves of your chest. [if Player is mpreg_ok]I'm also sensing that you have a little secret. Something to do with an anal birthing chamber perhaps? [end if]";
+	else if Player is female and Breast Size of Player is 0: [Cuntboy]
+		say "     'I hope that you've been making mischief with that flat chest and the slit between your legs. Trick people into thinking that you bear the gifts of manhood, then shock them when you reveal that treasure between your legs. Having a flat chest has its own appeal, but it does mean that there is less of you to run my hands over. [if Player is mpreg_ok]I'm also sensing that you have a little secret. Something to do with an anal birthing chamber perhaps? [end if]";
+	else if Player is female and Breast Size of Player > 0: [Female]
+		say "     'Aren't you just a delight to sex-starved eyes, my dear. Have you had problems with men and women following you home and wanting to get to know you? I'm sure that the residents of the city have been noticing you too. I wouldn't mind being a little closer to you, running my hands over your breasts, then across your tummy before sneaking down towards your cleft for just a moment. [if Player is mpreg_ok]I'm also sensing that you have a little secret. Something to do with an anal birthing chamber perhaps? [end if] ";
 	else: [Neuter]
-		say "     Oh. Well, you're a bit boring. Why are you so determined to miss out on the fun that you would disfigure yourself? Or was this forced upon you? If so, I'm sure there must be some sort of drug that can fix you one way or another. Pills? Potions? The loving touch of an over-enthusiastic lover to heal you of your deformity? Please excuse my rudeness, but your lack of genitals causes a sense of unease in me. [if player is mpreg_ok]I'm also sensing that you have a little secret. Something to do with an anal birthing chamber perhaps? [end if]";
+		say "     Oh. Well, you're a bit boring. Why are you so determined to miss out on the fun that you would disfigure yourself? Or was this forced upon you? If so, I'm sure there must be some sort of drug that can fix you one way or another. Pills? Potions? The loving touch of an over-enthusiastic lover to heal you of your deformity? Please excuse my rudeness, but your lack of genitals causes a sense of unease in me. [if Player is mpreg_ok]I'm also sensing that you have a little secret. Something to do with an anal birthing chamber perhaps? [end if]";
 
 to say KitsuneGenitalComment: [Comments on player's genitals]
-	if cock length of Player is 0: [No penis]
+	if Cock Length of Player is 0: [No penis]
 		say "Focusing on your groin, I can plainly tell you that you don't appear to have a penis. Were you aware of this? I certainly hope so. ";
-	else if cock length of Player < 5: [Small penis]
+	else if Cock Length of Player < 5: [Small penis]
 		say "Your cock isn't even half the size of mine, but I get the impression that you know how to use it. Technique is more important than size[if CockName of Player is listed in infections of KnottedCockList]. I'm loving the knot as well. It really improves a penis[end if]. ";
-	else if cock length of Player < 8: [Average penis]
+	else if Cock Length of Player < 8: [Average penis]
 		say "That looks to be a pretty normal sized cock. Not particularly large or small, though the average in the city is probably a bit bigger[if CockName of Player is listed in infections of KnottedCockList]. I'm loving the knot as well. It really improves a penis[end if]. ";
-	else if cock length of Player < 15: [Large penis]
+	else if Cock Length of Player < 15: [Large penis]
 		say "That is an impressive cock you have there. Could really fill a person up, and there are plenty of candidates for such a filling[if CockName of Player is listed in infections of KnottedCockList]. The knot is an added bonus, just to make sure your partner stays where you want them[end if]. ";
-	else if cock length of Player < 21: [Huge penis]
+	else if Cock Length of Player < 21: [Huge penis]
 		say "Goodness. You're cock is nearly twice the size of mine! That's going to be more than a mouthful when that goes in, or the equivalent of any other orifice that you have offered to you[if CockName of Player is listed in infections of KnottedCockList]. Also, the knot will nicely stretch whomever you plug it into, ensuring that they won't forget being with you[end if]. ";
 	else: [Monstrous penis]
 		say "Watch where you swing that thing. You could definitely call that thing a spear, and I hope that you give it a regular polish, preferably with help[if CockName of Player is listed in infections of KnottedCockList]. You might want to warn your partners about the effect your knot may have on them though[end if]. ";
@@ -188,29 +198,29 @@ to say KitsuneGenitalComment: [Comments on player's genitals]
 		say "I think that you have gotten carried away with growing your balls. Beyond being able to do a one man bukkake, there can't possibly be any advantage to having them that size, can there? ";
 	else: [Beach Ball Size]
 		say "Your balls look silly. I have no idea how you even walk. Do you perhaps bounce along on them before bathing in your own cum from the stimulation? ";
-	if cunt depth of Player is 0: [No vagina]
+	if Cunt Depth of Player is 0: [No vagina]
 		say "Unless I'm mistaken, you don't seem to have a pussy. Such a shame, I would have liked to pet it. ";
-	else if cunt depth of Player < 5: [Small vagina]
+	else if Cunt Depth of Player < 5: [Small vagina]
 		say "Your partners must love you, considering how tight I imagine you are, though I doubt they can go particularly deep. ";
-	else if cunt depth of Player < 8: [Average vagina]
+	else if Cunt Depth of Player < 8: [Average vagina]
 		say "I think that you should be able to fit most normal cocks in your pussy, though you might want to be careful with the extremely well-endowed. ";
-	else if cunt depth of Player < 15: [Large vagina]
+	else if Cunt Depth of Player < 15: [Large vagina]
 		say "Making sure you can take any cock you want in your pussy? Unless they are obscenely large, I think you've achieved your aim. ";
-	else if cunt depth of Player < 21: [Huge vagina]
+	else if Cunt Depth of Player < 21: [Huge vagina]
 		say "Do you think that perhaps you've gone too far? There shouldn't be any cock that you can't fit in your pussy. ";
 	else: [Monstrous vagina]
 		say "I think by this point it isn't so much about what cocks you can fit in your pussy, but rather whether you can fit a person in there. I hope you have good muscle control in your vaginal walls. ";
-	if breast size of Player is 0: [Flat-chested]
+	if Breast Size of Player is 0: [Flat-chested]
 		say "Some might think that the absence of breasts detracts from your image. Not me. It has its own appeal and means that I can feel your heartbeat more easily.'";
-	else if breast size of Player < 3: [A or B]
+	else if Breast Size of Player < 3: [A or B]
 		say "I think that your breasts are very pretty. They compliment your appearance and give enough for a discerning fox to have a pleasurable squeeze.'";
-	else if breast size of Player < 5: [C or D]
+	else if Breast Size of Player < 5: [C or D]
 		say "Now those are some nice breasts if ever I saw some. Enough to give someone a comfy head rest while snuggling or snoozing, but small enough that your life can go on without much difficulty.'";
 	else: [E and upwards (Maybe DD. I don't know breast sizing)]
 		say "Those are quite considerably sized breasts. I think that you could almost use them as weapons, especially given the current state of the city.'";
 
 to say KitsuneSpeciesComment: [Comments on player's species]
-	if player is not pure or Bodyname of Player is "Hybrid":
+	if Player is not pure or BodyName of Player is "Hybrid":
 		say "     'Couldn't just settle on one infection could you? Had to try multiple, and now you don't really count as anything in particular beyond being chimeric. I suppose that I shouldn't discount the possibility that this was forced upon you though. If it pleases you, I could make you into quite the attractive kitsune like myself. Fluffy fur, multiple tails, dashing figure... what's not to like? That was a rhetorical question, just in case you were going to answer. I like myself and that's the main thing, just like it is important that you are content with whatever form you take. ";
 	else if BodyName of Player is "Kitsune":
 		say "     'Now there's an attractive form. I must compliment you on your impeccable choice in appearance, and whomever it was that gave you such a fine figure deserves a reward. Such lush fur and beautiful coloration really brings out your eyes. If I were you, I would be careful to stay looking like this while adventuring around the city and perhaps convincing others to consider it as a look. Because to be honest, who wouldn't look good as a multi-tailed fox? However with such a form comes responsibilities such as mischief and trickery, though not of the malicious kind, we aren't monsters. Perhaps you can tell me about your activities when you have the time. Preferably in [italic type]great detail[roman type]. ";
@@ -223,7 +233,7 @@ to say KitsuneSpeciesComment: [Comments on player's species]
 	else if BodyName of Player is "Nightmare":
 		say "     'Your form belies more power than one would expect from a horse. You also look a lot more... malevolent. Therefore, I deduce that you have taken over the Stables Hotel and are the new 'Stable Master'. Perhaps you should have considered other options for defeating him before you became a manifestation of nightmares. Between bored deities, practitioners of magic, and the few remaining scientists in the city, someone might have had more ideas on overcoming him. But I'm letting my prejudices control me. If you are happy with how you look, then who am I to judge? To be honest, I'm a little afraid of you. But only a little. ";
 	else if BodyName of Player is listed in infections of TaurList:
-		say "     'Ooh, you're tauric. How interesting. Has this change encouraged an interest in archery, or has it given you an obsession with pretending to be rider and steed, swinging your weapon at your foes? I jest, but you have to admit that it sounds pretty fun. Being a taur must give you all sorts of new possibilities. Increased speed, height advantage over many others, the ability to strap people beneath you [if player is male]so you can fuck them [end if]while you run... Or maybe you enjoy having them atop you, whether it is in the bedroom or galloping through the city. Explore these new possibilities. Take my word, it's fun. ";
+		say "     'Ooh, you're tauric. How interesting. Has this change encouraged an interest in archery, or has it given you an obsession with pretending to be rider and steed, swinging your weapon at your foes? I jest, but you have to admit that it sounds pretty fun. Being a taur must give you all sorts of new possibilities. Increased speed, height advantage over many others, the ability to strap people beneath you [if Player is male]so you can fuck them [end if]while you run... Or maybe you enjoy having them atop you, whether it is in the bedroom or galloping through the city. Explore these new possibilities. Take my word, it's fun. ";
 	else if BodyName of Player is listed in infections of LatexList:
 		say "     'I think that you're taking [']kinky['] to the next level by being made completely from latex, though I would imagine that it makes cleanup considerably easier after you've had your fun. Do you creak or squelch when you move as latex seems to do when worn as clothing, or does it just move out of the way, allowing you to move stealthily and avoid attracting the attention of predatory latex enthusiasts? While it isn't a form I would want to have myself, I can appreciate your adventurousness choosing it. So many of the city's residents seem to be boringly furry canines... ";
 	else if BodyName of Player is listed in infections of FoodList:
@@ -245,7 +255,7 @@ to say KitsuneSpeciesComment: [Comments on player's species]
 	else if BodyName of Player is listed in infections of BovineList:
 		say "     'I was unaware that there were any farms nearby, or did you wander here from the plains? I jest, but with the number of wolves stalking the streets, a herbivore such as yourself is likely in a considerable amount of danger of becoming prey. Luckily, in the current situation, they are more likely to sate their lusts than their appetites, and with how you pull off the look, even I'm considering letting my instincts loose and basting you in sauce. I hope that I'm not making you uncomfortable. I wouldn't ever do something like that. At least not without your consent. ";
 	else if BodyName of Player is listed in infections of CanineList:
-		say "     'Who's a good [if player is male]boy[else if player is female]girl[else]doggy[end if]? Yes, it's you. Yes it's you. I'm sure I have some balls around here somewhere that you could play with if you wanted. You just have that look that makes me want to rub your tummy and maybe a bit more. Endearing eyes, soft fur, and such an expressive tail. Do you have a preference for herding sheep, hunting deer, or strengthening your bond with a companion? If so, make sure that these are your own thoughts, and not the programming of the nanites taking control of you. ";
+		say "     'Who's a good [if Player is male]boy[else if Player is female]girl[else]doggy[end if]? Yes, it's you. Yes it's you. I'm sure I have some balls around here somewhere that you could play with if you wanted. You just have that look that makes me want to rub your tummy and maybe a bit more. Endearing eyes, soft fur, and such an expressive tail. Do you have a preference for herding sheep, hunting deer, or strengthening your bond with a companion? If so, make sure that these are your own thoughts, and not the programming of the nanites taking control of you. ";
 	else if BodyName of Player is listed in infections of CervineList:
 		say "     'You're slightly more adventurous with your form than I would expect from a mortal. Deer and elk are usually for the extra horny, if I might make an observation. With such muscular haunches, you must be quite the hit with the lupine community skulking around the city, though I imagine that a few other people will have also expressed interest in you. Don't be afraid to stand up for what you want. A moose with sharp hooves and hard antlers is no easy prey, even for a pack of wolves. So as long as you can mimic their strength, there will be few who can refuse your desires. ";
 	else if BodyName of Player is listed in infections of EquineList:
@@ -276,9 +286,9 @@ to say KitsuneSpeciesComment: [Comments on player's species]
 		say "     'I see that you have a thing for bears. Is it a size thing, or do you have a fetish for really tight hugs? The feel of a larger body pressed up against your own, wrapping you in an embrace and allowing you to feel their warmth through their fur... Mmmmm, such a delightful image. Perhaps I could persuade you at some point to allow me this feeling, or perhaps you would prefer to be the one hugged? Why not both? I have all the time in the world, or at least as long as your soldiers don't move in. I get the impression that they aren't big on hugs at the moment. ";
 	else if BodyName of Player is listed in infections of VulpineList:
 		say "     'So close to the perfect form, but you missed out slightly, don't you think? Still, such lush fur and beautiful coloration really brings out your eyes, and you only need a few more tails to improve the look. If you ask nicely, I might help you in the final step to becoming a kitsune. All it would take would be a hand in collecting some of my essence, or possibly a mouth... But back to you. Even as a normal fox, there are certain expectations. Ignore the myth about foxes only enjoying being penetrated themselves. Your sexual preferences should be your own. Also, while you don't need to be as mischievous as that coyote in the park, at least try and commit some trickery. There is a reputation to maintain. ";
-	else if Bodyname of Player is listed in infections of BodyHorrorList:
+	else if BodyName of Player is listed in infections of BodyHorrorList:
 		say "     'Well then... would you look at you. I don't think I've seen anything as, shall we say, [']full of character['] for quite some time. I can't imagine that there are many denizens of the city who would willingly choose to look like that or find it attractive, but the majority is quite often wrong so you have my admiration for your confidence in going out looking like that. You really do look like the stuff of nightmares, though humans really do have an obsession with chaos, evil, and the Nightmare Realms so I suppose that I shouldn't be too surprised. Just promise that you won't let the corruption of the outside seep to deeply into your soul or you might find yourself hunted by more competent individuals that soldiers. ";
-	else if Bodyname of Player is listed in infections of OtherworldlyList:
+	else if BodyName of Player is listed in infections of OtherworldlyList:
 		say "     'Someone's enjoys their science fiction and isn't afraid for everyone to know it. Yes, I know what sci-fi is, this isn't the first time I've visited your world and I must say that it is entertaining at leats for a while before you have parasites ripping their way out of a host's body or ripping someone's spine out. I much prefer xenophilic relationships deepening as opposed to attempts at conquest but to each their own. At least with how this city is at the moment sex is much more prevalent. If you do require a host for your young at least find someone willing and impregnate them in a more conventional manner. Childbirth may be painful, but much less so when they don't cause permanent damage to the mother. ";
 	else: [Anything else]
 		say "     ERROR. If you are seeing this, then it means that you are of an infection that we haven't covered in the dialogue. Could you please report this to the bug channel of the Flexible Survival Discord server, and we will try to remedy this. Thank you.";
@@ -511,7 +521,7 @@ to say Kitsune_DomRidingVag:
 
 [to kitsuneinfect: [puts Kitsune as lead monster]
 	setmonster "Kitsune";
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own] [No monster is selected here]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ] [No monster is selected here]
 	infect "Kitsune";
 	now non-infectious entry is true;]
 
@@ -531,7 +541,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Kitsune"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Kitsune"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Kitsune" to infections of VulpineList;
 	add "Kitsune" to infections of FurryList;
 	add "Kitsune" to infections of NatureList;
@@ -546,20 +556,20 @@ When Play begins:
 	now Name entry is "Kitsune";
 	now enemy title entry is "Kitsune";
 	now enemy Name entry is "Honoka";
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The tall fox man laughs while shooing you away playfully. A blue ball of flame appears in his hand when you don't back down.[at random]";
 	now defeated entry is "[Kitsune loss]";
 	now victory entry is "[Kitsune attack]";
 	now desc entry is "A silver furred vulpine stands on two digitigrade legs while looking at you calculatingly. Piercing azure eyes glare at you somewhat hotly as if the fox-man is trying to undress you with his eyes. Just exactly who or what is this creature that stands with nine soft and flowing tails at his backside? The loincloth tied over his waist tells you nothing, save that the other is well endowed."; [ Description of the creature when you encounter it.]
-	now face entry is "elongated, with a silver foxy muzzle. While it may appear to belong to a normal anthro at first glance, the fact that your eyes are colored in an almost otherworldly, piercing blue easily disproves that assumption. Deep and fathomless as they are, anyone meeting your gaze can say that there is an air of wisdom and mystery about you"; [ Face description, format as "Your face is (your text)."]
-	now body entry is "now that of a creature who is one of both vulpine and human in genetic makeup. A lithe frame hides the dense muscles you have underneath your thick pelt of soft fur. On down your twin digitigrade legs hold you steadily as you balance yourself on your rough paw pads. Grace and poise seem to be the words that define you as the power inside of your veins almost sings with mystical energy"; [ Body Description, format as "Your Body is (your text)"]
+	now face entry is "elongated, with a silver foxy muzzle. While it may appear to belong to a normal anthro at first glance, the fact that your eyes are colored in an almost otherworldly, piercing blue easily disproves that assumption. Deep and fathomless as they are, anyone meeting your gaze can say that there is an air of wisdom and mystery about you"; [ Face description, format as "Your face is [Face of Player]." ]
+	now body entry is "now that of a creature who is one of both vulpine and human in genetic makeup. A lithe frame hides the dense muscles you have underneath your thick pelt of soft fur. On down your twin digitigrade legs hold you steadily as you balance yourself on your rough paw pads. Grace and poise seem to be the words that define you as the power inside of your veins almost sings with mystical energy"; [ Body Description, format as "Your Body is [Body of Player]." ]
 	now skin entry is "[one of]silver-furred[or]heavily pelted[or]kitsune-coated[or]supremely fluffy fox-furred[at random]"; [ skin Description, format as "Looking at yourself, your body is covered in (your text) skin"]
-	now tail entry is "A single fox tail sways behind you, swaying almost as if lonesome in want of others to be alongside of it. Thick and luxurious in texture, your tail does possess a sort of superior quality about itself that others would find themselves in awe of were they to look at you."; [ Tail description, write a whole Sentence or leave blank. ]
+	now tail entry is "[KitsuneTails]"; [ Tail description, write a whole Sentence or leave blank. ]
 	now cock entry is "[one of]vulpine[or]canid[or]tapered[or]sheathed[or]thickly knotted[at random]"; [ Cock Description, format as you have a 'size' (your text) cock]
-	now face change entry is "your eyes blink as you notice that your face has pushed out to form a narrow fox muzzle colored with moonlight silver fur. Cocking your head to the side you notice that you can hear the wind blowing around you and gape when you realize that your ears have pushed up on top of your head. Long and furry, the twitching folds flip up and down as you move them out of instinct, not to mention curiosity. Looking between your face you notice that you have a black dotted nose, a few whiskers on each side of your snout and finally that your tongue is now long and thick as you pop the organ out from your muzzle"; [ face change text. format as "Your face feels funny as (your text)." ]
-	now body change entry is "you notice that the form you now support is one that is covered from neck down to toe in silver fur. Slightly confused as to what has happened to you, you find that your body now has taken on the form of a silver kitsune, the same as Kitsune himself. Tall and imposingly powerful, you feel as the your heart is beating somewhat slower as your senses seem to come alive in a newfound way as you can literally [italic type]feel[roman type] things that you never had before"; [ body change text. format as "Your body feels funny as (your text)." ]
-	now skin change entry is "scratch at yourself lightly while trying very, very hard not to. What you come to find by looking down at yourself is that you now have a silver pelt of fur gracing your body. The itching was from the fur pushing out from beneath your skin"; [ skin change text. format as "Your skin feels funny as (your text)." ]
-	now ass change entry is "you wiggle your rump around as though trying to get something from off of your backside. Grunting and finally reaching back to take a scratch you find that you now have a single silver vulpine tail wagging behind you somewhat happily as you stare at it intensely"; [ ass/tail change text. format as "Your ass feels funny as (your text)." ]
+	now face change entry is "your eyes blink as you notice that your face has pushed out to form a narrow fox muzzle colored with moonlight silver fur. Cocking your head to the side you notice that you can hear the wind blowing around you and gape when you realize that your ears have pushed up on top of your head. Long and furry, the twitching folds flip up and down as you move them out of instinct, not to mention curiosity. Looking between your face you notice that you have a black dotted nose, a few whiskers on each side of your snout and finally that your tongue is now long and thick as you pop the organ out from your muzzle"; [ Face change text, format as "Your face feels funny as [face change entry]." ]
+	now body change entry is "you notice that the form you now support is one that is covered from neck down to toe in silver fur. Slightly confused as to what has happened to you, you find that your body now has taken on the form of a silver kitsune, the same as Kitsune himself. Tall and imposingly powerful, you feel as the your heart is beating somewhat slower as your senses seem to come alive in a newfound way as you can literally [italic type]feel[roman type] things that you never had before"; [ Body change text, format as "Your body feels funny as [body change entry]." ]
+	now skin change entry is "scratch at yourself lightly while trying very, very hard not to. What you come to find by looking down at yourself is that you now have a silver pelt of fur gracing your body. The itching was from the fur pushing out from beneath your skin"; [ Skin change text, format as "Your skin feels funny as [skin change entry]." ]
+	now ass change entry is "you wiggle your rump around as though trying to get something from off of your backside. Grunting and finally reaching back to take a scratch you find that you now have a single silver vulpine tail wagging behind you somewhat happily as you stare at it intensely"; [ Ass/tail change text, format as "Your ass feels funny as [ass change entry]." ]
 	now cock change entry is "you shuffle your legs together as you feel something pushing and changing down between your legs. Not wanting to look, but knowing that you have to, you let your vision stray down and then gasp at the sight of a silver sheath and tapered shaft both starting up at you. Faintly you wonder if a knot has come included with this package but upon pulling your sheath back you realize that - yep - you have a small bulb at the end of your vulpine dick"; [ cock change text. format as "Your cock feels funny as (your text)." ]
 	now str entry is 14;
 	now dex entry is 18;
@@ -567,7 +577,7 @@ When Play begins:
 	now per entry is 15;
 	now int entry is 18;
 	now cha entry is 20;
-	now sex entry is "Both"; 	[ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now sex entry is "Both"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
 	now HP entry is 100;
 	now lev entry is 12; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
 	now wdam entry is 8; [ Amount of Damage monster Does when attacking. ]
@@ -585,16 +595,16 @@ When Play begins:
 	now libido entry is 30; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
 	now loot entry is ""; [ Dropped item. Key will be used later ]
 	now lootchance entry is 0; [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]lithe[or]strong[at random]"; [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender" Use [one of] to vary ]
 	now type entry is "vulpine"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is true;
 	now resbypass entry is true;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
@@ -606,7 +616,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -618,7 +628,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -637,7 +647,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -658,18 +668,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -683,19 +693,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -717,5 +727,29 @@ This is the Kitsune Infection rule:
 		else:
 			say "     By the time the military comes in to clean up the city, you and Kitsune have gotten close enough to each other than you decide not to part. The silver fox-man is amused with the human's attempts to study him, but only because he spends nine-tenths of the time confusing their machines on the who/how/what of what he is. In the end they scientist who had examined the two of you end up releasing you after Kitsune's strain finally makes them surrender to their own ignorance. Of course this matters little to you because once you and Kitsune have stepped out into the free world you both spend the next hundred or so years getting to know each other even better than before, while at the same time you receive lessons on how to be a proper kitsune from the other male. As the years roll by more and more tails slip out from your backside, beautifully fluffy as well as luxuriously soft, the flowing appendages become the key sight for others to know you by as the title Many-Tales soon follows you around like a restless spirit. One reason why others call you this is because of your numerous tails, which you almost never seem to conceal with your powers, and two because of the stories you tell others when asked by them to retell some of your past during your more idle hours. Kitsune spends a lot of time teasing you about this when you two are alone together, but you return his jibes by calling him Old Man whenever he does. This results in a lot of fights between you two, though most of them good natured one, but it also ends with a lot of passionate make up sex with your long time friend.";
 
+to say KitsuneTails:
+	if "Extra Tails" is listed in feats of Player:
+		say "Nine fox tails sway behind you, twisting and dancing almost as if each one has a mind of its own. Thick and luxurious in texture, your tails possess a sort of superior quality about them that draws the eye, giving you an otherworldly beauty.";
+	else:
+		say "A single fox tail sways behind you, its slow wave seeming almost lonesome, in want of others alongside it. Thick and luxurious in texture, your tail possesses a sort of superior quality about itself that imparts a bit of otherworldly beauty to your appearance.";
+
+[Debug code to add multiple tails. Feel free to remove if you expand the content to include a less hackneyed approach. -Voidsnaps]
+
+AddKitsuneTails is an action applying to nothing.
+understand "add tails" as AddKitsuneTails.
+understand "remove tails" as AddKitsuneTails.
+
+check AddKitsuneTails:
+	if debugactive is 0:
+		say "You aren't currently debugging.";
+		stop the action;
+
+carry out AddKitsuneTails:
+	if "Extra Tails" is listed in feats of Player:
+		say "DEBUG: Extra tails removed.";
+		remove "Extra Tails" from feats of Player;
+	else:
+		say "DEBUG: Extra Tails added.";
+		add "Extra Tails" to feats of Player;
 
 Kitsune Hideaway ends here.

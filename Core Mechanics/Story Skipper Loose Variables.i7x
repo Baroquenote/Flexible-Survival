@@ -118,6 +118,10 @@ to TextVariableSave:
 			now TextVarValue entry is bcfinalchairform;
 		-- "bcfinalpillarform":
 			now TextVarValue entry is bcfinalpillarform;
+		-- "BlancheNonBinaryMomDad":
+			now TextVarValue entry is BlancheNonBinaryMomDad;
+		-- "BlancheNonBinaryMommyDaddy":
+			now TextVarValue entry is BlancheNonBinaryMommyDaddy;
 		-- "BlueDesignator":
 			now TextVarValue entry is BlueDesignator;
 		-- "bodyselector":
@@ -795,14 +799,14 @@ to NumberVariableSave:
 			now NumberVarValue entry is dentedbikecount;
 		-- "didsubmit":
 			now NumberVarValue entry is didsubmit;
-		-- "DiegoBitched":
-			now NumberVarValue entry is DiegoBitched;
+		-- "Diegobitched":
+			now NumberVarValue entry is Diegobitched;
 		-- "DiegoButtSlut":
 			now NumberVarValue entry is DiegoButtSlut;
-		-- "DiegoChanged":
-			now NumberVarValue entry is DiegoChanged;
-		-- "DiegoFucked":
-			now NumberVarValue entry is DiegoFucked;
+		-- "Diegochanged":
+			now NumberVarValue entry is Diegochanged;
+		-- "Diegofucked":
+			now NumberVarValue entry is Diegofucked;
 		-- "dinonest":
 			now NumberVarValue entry is dinonest;
 		-- "dnfightresult":
@@ -2339,14 +2343,10 @@ to NumberVariableSave:
 			now NumberVarValue entry is riddlesphinx;
 		-- "Riddlewin":
 			now NumberVarValue entry is Riddlewin;
-		-- "rodhosp":
-			now NumberVarValue entry is rodhosp;
 		-- "RomanceBooksFound":
 			now NumberVarValue entry is RomanceBooksFound;
 		-- "rondafight":
 			now NumberVarValue entry is rondafight;
-		-- "rondahosp":
-			now NumberVarValue entry is rondahosp;
 		-- "rsc":
 			now NumberVarValue entry is rsc;
 		-- "RTWinCounter":
@@ -2735,8 +2735,6 @@ to NumberVariableSave:
 			now NumberVarValue entry is VentFluidAmount;
 		-- "VentFoxContentLevel":
 			now NumberVarValue entry is VentFoxContentLevel;
-		-- "VentFoxEncounterCount":
-			now NumberVarValue entry is VentFoxEncounterCount;
 		-- "VentFoxLastFed":
 			now NumberVarValue entry is VentFoxLastFed;
 		-- "VentFoxRelationship":
@@ -3284,8 +3282,10 @@ to TruthVariableSave:
 			now TruthVarValue entry is inheat;
 		-- "insectlarva":
 			now TruthVarValue entry is insectlarva;
-		-- "internalbypass":
-			now TruthVarValue entry is internalbypass;
+		-- "internalCockbypass":
+			now TruthVarValue entry is internalCockbypass;
+		-- "internalBallsbypass":
+			now TruthVarValue entry is internalBallsbypass;
 		-- "isHellhound":
 			now TruthVarValue entry is isHellhound;
 		-- "ishunting":
@@ -3370,8 +3370,6 @@ to TruthVariableSave:
 			now TruthVarValue entry is messypigaltorgasm;
 		-- "MFSDUBM":
 			now TruthVarValue entry is MFSDUBM;
-		-- "micaelastory1":
-			now TruthVarValue entry is micaelastory1;
 		-- "MKunleashed":
 			now TruthVarValue entry is MKunleashed;
 		-- "mlamiaboobmash":
@@ -3516,8 +3514,6 @@ to TruthVariableSave:
 			now TruthVarValue entry is Susanoversize;
 		-- "SvenStory1":
 			now TruthVarValue entry is SvenStory1;
-		-- "TentacleRead":
-			now TruthVarValue entry is TentacleRead;
 		-- "Terminatorsleep":
 			now TruthVarValue entry is Terminatorsleep;
 		-- "TerminatorSleepActivated":
@@ -3759,6 +3755,10 @@ to VariableTextLoad:
 					now bcfinalchairform is TextVarValue entry;
 				-- "bcfinalpillarform":
 					now bcfinalpillarform is TextVarValue entry;
+				-- "BlancheNonBinaryMomDad":
+					now BlancheNonBinaryMomDad is TextVarValue entry;
+				-- "BlancheNonBinaryMommyDaddy":
+					now BlancheNonBinaryMommyDaddy is TextVarValue entry;
 				-- "BlueDesignator":
 					now BlueDesignator is TextVarValue entry;
 				-- "bodyselector":
@@ -4454,14 +4454,14 @@ to VariableNumberLoad:
 					now dentedbikecount is numberVarValue entry;
 				-- "didsubmit":
 					now didsubmit is numberVarValue entry;
-				-- "DiegoBitched":
-					now DiegoBitched is numberVarValue entry;
+				-- "Diegobitched":
+					now Diegobitched is numberVarValue entry;
 				-- "DiegoButtSlut":
 					now DiegoButtSlut is numberVarValue entry;
-				-- "DiegoChanged":
-					now DiegoChanged is numberVarValue entry;
-				-- "DiegoFucked":
-					now DiegoFucked is numberVarValue entry;
+				-- "Diegochanged":
+					now Diegochanged is numberVarValue entry;
+				-- "Diegofucked":
+					now Diegofucked is numberVarValue entry;
 				-- "dinonest":
 					now dinonest is numberVarValue entry;
 				-- "dnfightresult":
@@ -6002,14 +6002,10 @@ to VariableNumberLoad:
 					now riddlesphinx is numberVarValue entry;
 				-- "Riddlewin":
 					now Riddlewin is numberVarValue entry;
-				-- "rodhosp":
-					now rodhosp is numberVarValue entry;
 				-- "RomanceBooksFound":
 					now RomanceBooksFound is numberVarValue entry;
 				-- "rondafight":
 					now rondafight is numberVarValue entry;
-				-- "rondahosp":
-					now rondahosp is numberVarValue entry;
 				-- "rsc":
 					now rsc is numberVarValue entry;
 				-- "RTWinCounter":
@@ -6400,8 +6396,6 @@ to VariableNumberLoad:
 					now VentFluidAmount is numberVarValue entry;
 				-- "VentFoxContentLevel":
 					now VentFoxContentLevel is numberVarValue entry;
-				-- "VentFoxEncounterCount":
-					now VentFoxEncounterCount is numberVarValue entry;
 				-- "VentFoxLastFed":
 					now VentFoxLastFed is numberVarValue entry;
 				-- "VentFoxRelationship":
@@ -6962,8 +6956,10 @@ to VariableTruthLoad:
 					now inheat is TruthVarValue entry;
 				-- "insectlarva":
 					now insectlarva is TruthVarValue entry;
-				-- "internalbypass":
-					now internalbypass is TruthVarValue entry;
+				-- "internalCockbypass":
+					now internalCockbypass is TruthVarValue entry;
+				-- "internalBallsbypass":
+					now internalBallsbypass is TruthVarValue entry;
 				-- "isHellhound":
 					now isHellhound is TruthVarValue entry;
 				-- "ishunting":
@@ -7048,8 +7044,6 @@ to VariableTruthLoad:
 					now messypigaltorgasm is TruthVarValue entry;
 				-- "MFSDUBM":
 					now MFSDUBM is TruthVarValue entry;
-				-- "micaelastory1":
-					now micaelastory1 is TruthVarValue entry;
 				-- "MKunleashed":
 					now MKunleashed is TruthVarValue entry;
 				-- "mlamiaboobmash":
@@ -7196,8 +7190,6 @@ to VariableTruthLoad:
 					now Susanoversize is TruthVarValue entry;
 				-- "SvenStory1":
 					now SvenStory1 is TruthVarValue entry;
-				-- "TentacleRead":
-					now TentacleRead is TruthVarValue entry;
 				-- "Terminatorsleep":
 					now Terminatorsleep is TruthVarValue entry;
 				-- "TerminatorSleepActivated":

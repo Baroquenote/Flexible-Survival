@@ -19,27 +19,6 @@ Version 5 of Anastasia by Stripes begins here.
 [ 12 = salamander raid completed ]
 
 
-ScaleValue of Anastasia is 3. [human sized]
-SleepRhythm of Anastasia is 0. [0 = awake at all times, 1 = awake in the day, 2 = awake at night]
-Cock Count of Anastasia is 0. [cock]
-Cock Length of Anastasia is 0. [cock length]
-Ball Size of Anastasia is 0. [number of player balls: 1, 2 or 4]
-Ball Count of Anastasia is 0. [no balls]
-Cunt Count of Anastasia is 1. [no pussy]
-Cunt Depth of Anastasia is 0. []
-Cunt Tightness of Anastasia is 0. []
-Nipple Count of Anastasia is 0. [2 nipples]
-Breast Size of Anastasia is 0. [flat]
-Humanity of Anastasia is 60.
-PlayerMet of Anastasia is false.
-PlayerRomanced of Anastasia is false.
-PlayerFriended of Anastasia is false.
-PlayerControlled of Anastasia is false.
-PlayerFucked of Anastasia is false.
-OralVirgin of Anastasia is false.
-Virgin of Anastasia is true.
-AnalVirgin of Anastasia is true.
-
 Section 1 - Events
 
 Table of GameEventIDs (continued)
@@ -52,7 +31,7 @@ The level of Captured Bird is 3.
 
 when play begins:
 	add Captured Bird to BadSpots of FemaleList;
-	add Captured Bird to badspots of HermList;
+	add Captured Bird to BadSpots of HermList;
 	add Captured Bird to BadSpots of FurryList;
 
 to say ResolveEvent Captured Bird:
@@ -77,16 +56,16 @@ to say ResolveEvent Captured Bird:
 					increase score by 15;
 					now HP of Anastasia is 1;
 					if MaleList is not banned, now Familiar Feather is active;
-					now Resolution of Captured Bird is 1;	[Saved phoenix]
-		if fightoutcome >= 20 and fightoutcome <= 29:			[lost]
+					now Resolution of Captured Bird is 1; [Saved phoenix]
+		if fightoutcome >= 20 and fightoutcome <= 29: [lost]
 			say "     Keeping you pinned down, the feline enjoys having some fun with you as the others from her group return. They come with buckets of water, tossing them onto the flaming bird until her fires go out and she's left ashen and shivering in the remains of the net. The panther taurs give some celebratory yells, kisses and gropes before, as a team, dragging off their captured prey in the damaged net. The soaked bird shivers, but does not struggle as it's taken away to meet its fate.";
-			now Resolution of Captured Bird is 2;	[Did not save phoenix]
-		if fightoutcome >= 30:							[fled]
+			now Resolution of Captured Bird is 2; [Did not save phoenix]
+		if fightoutcome >= 30: [fled]
 			say "     You manage to make your escape from the felines, leaving them to their original prize. Hearing some of the others returning, you don't stick around to see what's happening and just try and get more distance between you and the lustful predators.";
-			now Resolution of Captured Bird is 3;	[Ran from trying to save phoenix]
+			now Resolution of Captured Bird is 3; [Ran from trying to save phoenix]
 	else:
 		say "     Figuring that it's not your problem, you slip back the way you came, leaving the cats to their grisly barbecue.";
-		now Resolution of Captured Bird is 99;	[Did not try to save phoenix]
+		now Resolution of Captured Bird is 99; [Did not try to save phoenix]
 	now Captured Bird is resolved;
 
 Table of GameEventIDs (continued)
@@ -221,11 +200,47 @@ object	name
 Anastasia	"Anastasia"
 
 Anastasia is a woman.
-Description of Anastasia is "[Anastasiadesc]".
+ScaleValue of Anastasia is 3. [human sized]
+SleepRhythm of Anastasia is 0. [0 - awake at all times, 1 - day active, 2 - night active]
+Body Weight of Anastasia is 3. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
+Body Definition of Anastasia is 4. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
+[Body Adjective is generated out of the body weight and body definition and can be used in scenes - one word descriptive adjective depending on weight and definition groups: low weight group: skinny/slender/lithe; mid weight group: average/fit/muscled; high weight group: pudgy/husky/jacked]
+Androginity of Anastasia is 8. [Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/somewhat effeminate/effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
+Mouth Length of Anastasia is 6. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
+Mouth Circumference of Anastasia is 3. [mouth circumference 1-5, "tiny, small, normal, wide, gaping"]
+Tongue Length of Anastasia is 6. [length in inches]
+Breast Size of Anastasia is 0. [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+Nipple Count of Anastasia is 0. [count of nipples]
+Asshole Depth of Anastasia is 12. [inches deep for anal fucking]
+Asshole Tightness of Anastasia is 2. [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+Cock Count of Anastasia is 0. [number of cocks]
+Cock Girth of Anastasia is 0. [thickness 1-5, thin/slender/average/thick/monstrous]
+Cock Length of Anastasia is 0. [Length in Inches]
+Ball Count of Anastasia is 0. [allowed numbers: 1 (uniball), 2 or 4]
+Ball Size of Anastasia is 0. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
+Cunt Count of Anastasia is 1. [number of cunts]
+Cunt Depth of Anastasia is 12. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Tightness of Anastasia is 2. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+Clit Size of Anastasia is 2. [size 1-5, very small/small/average/large/very large]
+[Basic Interaction states as of game start]
+PlayerMet of Anastasia is false.
+PlayerRomanced of Anastasia is false.
+PlayerFriended of Anastasia is false.
+PlayerControlled of Anastasia is false.
+PlayerFucked of Anastasia is false.
+OralVirgin of Anastasia is true.
+Virgin of Anastasia is true.
+AnalVirgin of Anastasia is true.
+PenileVirgin of Anastasia is true.
+SexuallyExperienced of Anastasia is false.
+TwistedCapacity of Anastasia is false. [Twisted Characters can take any penetration, no matter the size]
+Sterile of Anastasia is true. [steriles can't knock people up]
+MainInfection of Anastasia is "".
+Description of Anastasia is "[AnastasiaDesc]".
 Conversation of Anastasia is { "Burninate!" }.
-The icon of Anastasia is Figure of Anastasia_icon.
-
 the scent of the Anastasia is "The phoenix has a pleasent scent of woodsmoke.".
+Humanity of Anastasia is 60.
+The icon of Anastasia is Figure of Anastasia_icon.
 
 to say Anastasiadesc:
 	say "     The phoenix reborn looks much as she did in her last incarnation, fully avian in form and as tall as a normal human being when upright. She has rich red and golden plumage over her hawk-like body. The edges of her wings tail feathers dance with a softly glowing flame. Her golden eyes look towards you[if loyalty of Anastasia is 2], happy to see you[else if loyalty of Anastasia is 3] lovingly[else] with curiosity[end if].";
@@ -257,9 +272,9 @@ to say sexwithAnastasia:
 		Anastasiasexmenu;
 	else:
 		now lastfuck of Anastasia is turns;
-		if HP of Anastasia is 5:
+		if HP of Anastasia is 6:
 			say "[Anastasiasex00]"; [first time]
-		else if (player is not neuter) and ( ( HP of Anastasia is 9 or HP of Anastasia is 10 ) and a random chance of 1 in 2 succeeds ) or ( HP of Anastasia > 10 and a random chance of 1 in 4 succeeds ):	[volcano]
+		else if (Player is not neuter) and ( ( HP of Anastasia is 9 or HP of Anastasia is 10 ) and a random chance of 1 in 2 succeeds ) or ( HP of Anastasia > 10 and a random chance of 1 in 4 succeeds ):	[volcano]
 			say "[Anastasiasex06a]"; [volcano - lead-in]
 			if Player is male and ( a random chance of 2 in 3 succeeds or HP of Anastasia is 9 ):
 				say "[Anastasiasex06b]"; [volcano - sex]
@@ -282,7 +297,7 @@ to say sexwithAnastasia:
 			else if a random chance of 1 in 2 succeeds:
 				say "[Anastasiasex02]"; [fuck her]
 			else:
-				say "[Anastasiasex01]"; [birdy blow job]
+				say "[Anastasiasex01]"; [birdy blowjob]
 		else if Player is female and a random chance of 1 in 2 succeeds:	[wants pussy]
 			say "[Anastasiasex04]"; [receive cunnilingus]
 		else:
@@ -313,7 +328,7 @@ to Anastasiasexmenu:
 		now sortorder entry is 4;
 		now description entry is "fuck her in the lava pool";
 		choose a blank row in table of fucking options;
-		now title entry is "Birdy blow job";
+		now title entry is "Birdy blowjob";
 		now sortorder entry is 6;
 		now description entry is "take a go at the phoenix's beak";
 	if Player is female:
@@ -354,7 +369,7 @@ to Anastasiasexmenu:
 			if Player consents:
 				let nam be title entry;
 				now sextablerun is 1;
-				if nam is "Birdy blow job":
+				if nam is "Birdy blowjob":
 					say "[Anastasiasex01]";
 				else if nam is "Mount her":
 					say "[Anastasiasex02]";
@@ -392,9 +407,9 @@ to say Anastasiasex00:		[first time]
 	if Player is male:
 		say "     Finding yourself increasingly aroused by the red and gold bird, you press your face to her cloacal vagina and start licking and kisses at it, enjoying her mix of bird-like singing and moans of delight. 'This is so nice. I've never felt like this before. Oh, I... I need more...' she cries out as you give her clit a nibble. As your tongue plays across those juicy folds, you toss aside your gear and clothes, stroking your rapidly stiffening cock.";
 		say "     Deciding to give her the [']more['] she's looking for, you move in behind her, lining up your cock with her feathered vent. She moans loudly and shivers in delight as your cock sink into her wonderfully hot hole. The heat of her loins fills you, filling you with vigor that drives you to pound into her hard and fast. She takes this with unabashed ecstasy, reveling in the wild rutting. You run your hands through her soft, downy feathers as you mate her. Her flames wash over your body painlessly, almost as if they are holding you in a loving embrace.";
-		if Ball Size of Player < 12:
+		if Ball Size of Player < 7:
 			say "     You can feel the heat of her loins flowing into you, pooling inside your groin and seeping into your balls. They swell a little from this power and feel as if they're filled with magma-hot cum. This pressure builds and builds until finally you drive your cock deep inside her and release your hot load, blasting wonderfully hot semen deep inside the firebird. She cries out in a shriek of delight, cumming hard as well as your cum floods her womb. Once you're drained, you climb off of her and snuggle up with her, enjoying some loving nips from her large beak.";
-			increase Ball Size of Player by 1;
+			BallsGrow Player by 1;
 		else:
 			say "     You can feel the heat of her loins flowing into you, pooling inside your groin and seeping into your balls. They feel as if they're filled with magma-hot cum. This pressure builds and builds until finally you drive your cock deep inside her and release your hot load, blasting wonderfully hot semen deep inside the firebird. She cries out in a shriek of delight, cumming hard as well as your cum floods her womb. Once you're drained, you climb off of her and snuggle up with her, enjoying some loving nips from her large beak.";
 		NPCSexAftermath Anastasia receives "PussyFuck" from Player;
@@ -403,30 +418,30 @@ to say Anastasiasex00:		[first time]
 		say "     Not equipped to mount the needy bird, you slide several fingers into her instead, giving her a good finger-fucking. She moans loudly and shivers in delight as your digits sink into her wonderfully hot hole. The heat of her loins fills you, filling you with vigor that flows up your arm and drives you to pound into her hard and fast. She takes this with unabashed ecstasy, reveling in it all the more as you press another finger into her and soon your entire hand. You stroke your free hand through her soft, downy feathers as you work to please her. You can feel the heat of her loins flowing into you until finally she can't hold back any longer and cries out in delight, cumming hard with a shriek of pleasure. Her hot juices wash over you, tasting delicious as you lick up as much as you can get while continuing to thrust through her climax. After slipping your hand free, you snuggle up with her, enjoying some loving nips from her large beak.";
 		NPCSexAftermath Player receives "OralPussy" from Anastasia;
 
-to say Anastasiasex01:		[blow job]
+to say Anastasiasex01:		[blowjob]
 	say "     Deciding to have some more fun with the fiery bird, you run your hands across her body, ruffling her feathers to get her excited. She nuzzles her large head against your side as you divest yourself of your clothes and gear. 'I want to try it this way, my friend,' she says, nuzzling her sharp beak down towards your cock. Eyeing her sharp beak, you stroke her head feathers and remind her to be careful. She gives your side a playful nip and releases a chirping chuckle.";
 	say "     Opening her beak, Anastasia lets your [cock size desc of Player] [Cock of Player] shaft slide into it before closing it just enough to hold it gently while her broad, thick tongue slides across it. You can't help but moan as that strong tongue slides across your cock and her searing hot breath blows sensually across your flesh, filling you with a warmth that soaks into you. You stroke her head, complimenting her on how well she's doing and how quickly she's learning. You thrust gently into her mouth, but mostly let the giant bird take care of it.";
-	if Ball Size of Player < 12:
+	if Ball Size of Player < 7:
 		say "     You can feel the heat of her mouth flowing into you, pooling inside your groin and seeping into your balls. They swell a little from this power and feel as if they're filled with magma-hot cum. This pressure increases until finally you grip her head and your cock throbs in her maw, releasing shot after shot of your hot seed deep down her throat, which she happily swallows down. Her tongue works you over until you've given every drop you can, then she cuddles you up in her flaming wings.";
-		increase Ball Size of Player by 1;
+		BallsGrow Player by 1;
 	else:
 		say "     You can feel the heat of her mouth flowing into you, pooling inside your groin and seeping into your balls. They almost feel as if they're filled with magma-hot cum. This pressure increases until finally you grip her head and your cock throbs in her maw, releasing shot after shot of your hot seed deep down her throat, which she happily swallows down. Her tongue works you over until you've given every drop you can, then she cuddles you up in her flaming wings.";
 	NPCSexAftermath Anastasia receives "OralCock" from Player;
 
 to say Anastasiasex02:		[fuck her]
 	say "     Deciding to enjoy more intimate time with the phoenix, you run your hands across her body and then down to her hot loins when the turns and presents her tail to you. 'Oh yes, I want you inside me again, my friend,' she calls out, shifting her taloned feet and grabbing for purchase. You move in behind her, sinking your hard, throbbing cock into her wet, dripping cloacal pussy. Feeling her heat flowing into you again, you rut her hard and fast, much to her delight.";
-	if Ball Size of Player < 12:
+	if Ball Size of Player < 7:
 		say "     You can feel the heat of her loins flowing into you, centering at your groin and seeping into your balls. They swell a little from this power and feel as if they're filled with molten lava. This pressure builds and builds until finally you push your cock deep inside her and cum loudly, blasting wonderfully hot semen deep inside the firebird. She cries out with a loud, avian shriek of delight, cumming hard as well as your seed floods her womb. Once you're drained, you climb off of her and snuggle up with her, enjoying some loving nips from her large beak.";
-		increase Ball Size of Player by 1;
+		BallsGrow Player by 1;
 	else:
 		say "     You can feel the heat of her loins flowing into you, pooling inside your groin and seeping into your balls. They feel as if they're filled with molten lava. This pressure builds and builds until finally you drive your cock deep inside her and release your hot load, blasting wonderfully hot semen deep inside the firebird. She cries out in a shriek of delight, cumming hard as well as your seed floods her womb. Once you're drained, you climb off of her and snuggle up in the bird's downy feathers, enjoying some loving nips from her large beak.";
 	NPCSexAftermath Anastasia receives "PussyFuck" from Player;
 
 to say Anastasiasex03:		[fuck her - on her back]
 	say "     Deciding to enjoy more intimate time with the phoenix, you run your hands through her soft feathers, scritching at her strong breast. She chirps happily and, with a little encouragement, rolls onto her back with her wings spread. She moans softly as your cock nudges between her raised legs and slides across the wet lips of her cloacal pussy. 'Mmm... ready to go again, I see,' she says, nuzzling her beak against your cheek. You ease yourself slowly into her, sliding your hard, throbbing cock into her wet, dripping cunt. As her invigorating heat flows into you again, you pound into her zealously, making her chirp and sing in delight.";
-	if Ball Size of Player < 12:
+	if Ball Size of Player < 7:
 		say "     You can feel the heat of her pussy flowing into you, washing through your body and seeping into your balls. You can sense them getting heavier, fuller as this power suffuses you. It feels like there is a raging inferno of power within them, one that only makes you stronger and more virile for your avian lover. This pressure builds and builds until finally you push your cock deep inside her and cum loudly, shooting your hot seed deep inside the phoenix. She cries out with a shriek of delight, her cloaca clamping down around your shaft and milking it for all it will give of that hot flood. Once you're drained, you flop down atop the giant bird, nuzzling against her feathers as she folds her wings around you.";
-		increase Ball Size of Player by 1;
+		BallsGrow Player by 1;
 	else:
 		say "     You can feel the heat of her pussy flowing into you, washing through your body and seeping into your balls. It feels like there is a raging inferno of power within them, one that only makes you stronger and more virile for your avian lover. This pressure builds and builds until finally you push your cock deep inside her and cum loudly, shooting your hot seed deep inside the phoenix. She cries out with a shriek of delight, her cloaca clamping down around your shaft and milking it for all it will give of that hot flood. Once you're drained, you flop down atop the giant bird, nuzzling against her feathers as she folds her wings around you.";
 	NPCSexAftermath Anastasia receives "PussyFuck" from Player;
@@ -473,7 +488,7 @@ to say Anastasiasex06a:		[lead-in]
 to say Anastasiasex06b:		[volcano - sex]
 	say "     Feeling the heat of the volcano surrounding and suffusing you, you are filled with lustful excitement. You move into position and line up your [cock size desc of Player] [Cock of Player] cock with the phoenix's hot pussy and sink into her. Her cunt feels even hotter than the magma and you moan loudly, driving into her with great zeal. Her fiery body trembles beneath you and she moans in pleasure. The large bird's beak nips and nuzzles at you as you continue to thrust into her, making her body sway lightly on the molten lava.";
 	say "     The firebird's cloacal pussy squeezes and milks at your shaft, wanting a thorough fucking as badly as you do. You can feel her heat and the heat of the volcano sinking into you, flowing energy into your groin and filling your balls with a powerful heat[if Ball Size of Player < 12] and making them swell further[end if] as you seek to breed this wonderous bird. As you pound into her, she stretches herself back on the lava, wings wide to take in as much of its energy as she can, still seeking to recover her lost strength. She sings, a musically chirping birdsong, but with rhythm and cadence to it as well. Her flames of her feathers grow stronger, burning higher and brighter as her excitement builds.";
-	if Ball Size of Player < 12, increase Ball Size of Player by 1;
+	BallsGrow Player by 1;
 	say "     Eventually, it is too much for you and you drive hard into her, sinking your aching cock deep into Anastasia's cunt and unleashing your molten load of semen as it overflows from your balls and blasts into the lustful phoenix. Her singing grows louder and more jubilant as your seed is pumped into her and she cums as well, her cloaca quivering and squeezing at your cock needfully until your balls are drained and you're both left moaning and panting as you float lazily atop her in the lava. After you've both had some time to recover, she takes you in her talons and flies you back up to the cave.";
 	NPCSexAftermath Anastasia receives "PussyFuck" from Player;
 
@@ -505,7 +520,7 @@ to say Anastasiasex06c:		[volcano - basalt dildo]
 to say Anastasiasex06d:		[volcano - 69]
 	say "     Feeling the heat of the volcano surrounding and suffusing you, you are filled with lustful excitement. Eager to satisfy your intense arousal, you carefully move around atop the fiery bird and bring your head to her cloacal pussy while offering your own crotch to the sexy bird. She nuzzles at your hip and gives you a playful nip before nuzzling at your [if Player is herm]cock and cunt[else if Player is male]cock[else]cunt[end if], letting her broad tongue slide across your genitals. You moan in pleasure and bury your face in her crotch, licking and kissing at her hot cunt. Feeling far hotter than usual, this heat still brings you nothing but pleasure, adding to the strength and heat of your own arousal.";
 	say "     Your attention to the phoenix's cloacal pussy makes her moan and chirp in pleasure, which brings a smile to your face. And she returns the pleasure in kind, [if Player is male]having taken your cock into her beak and sucking eagerly upon it[else]sliding her tongue across your oversensitive pussy, making your steaming juices flow all the more[end if]. You please one another like this while the recovering phoenix floats across the lava, soaking in its power for added pleasure to this lustful encounter. And wanting to [one of]make her lava bath even more intense, you cautiously dip your hand into the magma pool and pour it over her cunt, making her squawk in sudden delight. Taking this as a good sign, you scoop several more handfuls to spread over her heated folds before take a big scoop and pour it right into her, plunging your hand into her cunt along with the red hot lava[or]satisfy her craving even more, you slide several fingers into her pussy, frigging her quickly with them. And once she's loosened up, you slide your whole hand down into her needy cunt, pumping into her hard and fast as she squawks in delight[at random]. This sends her crashing over the edge into climax, her hot, dripping cunt clenching down hard around you as her tongue goes into overdrive to get you to cum as well. You can't hold back long and are soon crying out in delight as well. You both are left moaning and panting as you float lazily atop her in the lava. After you've both had some time to recover, she takes you in her talons, along with her toy and flies you back up to the cave.";
-	if player is male:
+	if Player is male:
 		NPCSexAftermath Anastasia receives "OralCock" from Player;
 	else:
 		NPCSexAftermath Anastasia receives "OralPussy" from Player;
@@ -519,12 +534,12 @@ to say Anastasiasex08:		[dommy fuck]
 	say "     In the mood to enjoy the phoenix's sexy body again, you run your hand along her side and then under her tail to her heated pussy. Fingering it roughly gets a squawk of surprised pleasure from her. Moving with confidence and control, you coax the fiery bird to press her upper body to the ground while raising her tailfeathers, presenting herself to you. With a grin, you pump your fingers in and out of her cloacal pussy faster, enjoying how her hips quiver as her juices run down her thighs. Only once she's good and worked up do you bring your [cock size desc of Player] cock to her dripping folds and mount her.";
 	say "     Placing your hands on her shoulder blades, both the keep her pinned and to let you bear down upon her, you drive your [Cock of Player] shaft into her again and again. Feeling her heat flowing into you again, your excitement grows at you rut her all the harder, much to her delight. That heat flows through you and seems to pool inside your testicles[if Ball Size of Player < 12]. You can sense them getting heavier and churning with your seed like bubbling magma in need of volcanic release[else]. You can sense your seed churning inside them like bubbling magma in need of volcanic release[end if]. The pressure builds, but you hold it back, pounding the lustful bird harder and faster. Dominated and loving it, all she can do is chirp and trill as she grinds back into you.";
 	say "     Eventually, you drive the phoenix to orgasm, her flames welling up and the temperature of her clenching pussy sky-rocketing. She shrieks in delight and moans for you to cum in her. And with all that added heat pouring into you, your balls bubble over and you drive hard into her a final time, burying your [cock size desc of Player] [Cock of Player] cock deep inside the firebird's cunt and unleashing your hot load into her womb in an effort to sire a few more eggs in the crimson bird of flame. Once spent, you pull out and let the tried phoenix flop out on the cave floor, panting and chirping softly in post-orgasmic bliss. Striding over to her face, you fill her beak with your sticky shaft, having her clean up the gooey mix of semen and female juices from it.";
-	if Ball Size of Player < 12, increase Ball Size of Player by 1;
+	BallsGrow Player by 1;
 	NPCSexAftermath Anastasia receives "PussyFuck" from Player;
 
 
 [*** - flight scene?
-	[else if Player is male and HP of Anastasia >= 12 and BodyName of Player is listed in infections of Avianpredlist and a random chance of 3 in 7 succeeds:	[***]
+	[else if Player is male and HP of Anastasia >= 12 and BodyName of Player is listed in infections of AvianpredList and a random chance of 3 in 7 succeeds:	[***]
 		if HP of Anastasia is 12:
 			say "     I've been feeling stronger lately. I think I might have the strength for a short flight... a short [']mating['] flight,' she adds coyly, nuzzling her beak against your cheek. Giving your wings a rustle, you try to tell her that you've not quite gotten the hang of flying yes, but she won't hear it. 'In that case, I'll take care of the flying. It will not be a problem. Don't you trust me?' she trills teasingly. Given all the amazing things she's already shown herself capable of, what's one more?";]
 ]

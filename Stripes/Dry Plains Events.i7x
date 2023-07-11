@@ -24,19 +24,7 @@ to say ResolveEvent Creeping Grass:
 
 Section 2 - Ranch House
 
-Table of GameEventIDs (continued)
-Object	Name
-Ranch House	"Ranch House"
-
-Ranch House is a situation.
-ResolveFunction of Ranch House is "[ResolveEvent Ranch House]".
-Sarea of Ranch House is "Plains".
-
-to say ResolveEvent Ranch House:
-	say "     You come the ruins of what was probably a ranch house. You search through the broken home, but find nothing of use or value. Looking around, you see that some of the fence still stands and notice a second fallen structure. Going over, you can quickly tell that this was once a small stable from the smell of horses hanging over it. You take care where you step, avoiding the dark messes as well as the white ones from equine cum. Hoof-prints in the dirt around the stable head off into the plains where the transformed horses probably live now in some altered form.";
-	increase score by 1;
-	now Ranch House is resolved;
-
+[Replaced/Expanded - see Austin/Ranch House Event.i7x]
 
 Section 3 - Soaring Eagle
 
@@ -64,7 +52,7 @@ Partial Ruin is a situation.
 ResolveFunction of Partial Ruin is "[ResolveEvent Partial Ruin]". The level of Partial Ruin is 5.
 Sarea of Partial Ruin is "Plains".
 when play begins:
-	add Partial Ruin to badspots of HermList;
+	add Partial Ruin to BadSpots of HermList;
 	add Partial Ruin to BadSpots of FurryList;
 
 to say ResolveEvent Partial Ruin:
@@ -210,7 +198,7 @@ Pit Trap is a situation.
 ResolveFunction of Pit Trap is "[ResolveEvent Pit Trap]". The level of Pit Trap is 5.
 Sarea of Pit Trap is "Plains".
 when play begins:
-	add Pit Trap to badspots of HermList;
+	add Pit Trap to BadSpots of HermList;
 	add Pit Trap to BadSpots of FurryList;
 
 to say ResolveEvent Pit Trap:
@@ -321,7 +309,7 @@ to say ResolveEvent Watering Hole:
 				say "     Lowering you onto all fours in the water, he lines up his cock with your waiting pucker and slowly sinks his shaft into you. You moan in pleasure and push into his thrusts, aroused by the idea of fucking in this pond the birds have been using as their bath. And you're quite certain many of them have been cumming in it as well, tasting their semen in the water as you take that drink you wanted while getting fucked. The strong eagle rubs his feathered hands along your back and over your ass as he keep plowing his throbbing, leaking prick into you. 'Isn't that nice, my little chick? A big eagle cock to fuck you right. Stuff that slutty ass of yours.' You moan and nod, lost in the lustful mating. When he finally cums, he blasts his thick load into you and you cum moments later.[movichance]";
 			if humanity of Player > 15:
 				say "     Finished with his bath and his fuck, he helps you out of the water and rubs his feathered hand across your stuffed tummy, nipping at your neck with his beak. As you prepare to go, he flies off. Looking up as he gains altitude, you spot several other eagles soaring over the pond and head on your way, as the others may not be so friendly about an intruder at their bathing spot. Both covered in and filled with eagle-tainted fluids, ";
-				if BodyName of Player is "Bald Eagle" and player is pure:
+				if BodyName of Player is "Bald Eagle" and Player is pure:
 					say "the infection soaks deeper into you, further corrupting your body and mind. Still awash in the pleasures of the mating and the overdose on tainted water, you are quite pleased with the feeling of the infection spreading through you.";
 					SanLoss 5;
 				else:
@@ -399,7 +387,7 @@ Treasure Hunters is a situation.
 ResolveFunction of Treasure Hunters is "[ResolveEvent Treasure Hunters]".
 Sarea of Treasure Hunters is "Plains".
 when play begins:
-	add Treasure Hunters to badspots of HermList;
+	add Treasure Hunters to BadSpots of HermList;
 	add Treasure Hunters to BadSpots of FurryList;
 
 

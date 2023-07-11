@@ -54,7 +54,7 @@ to say giantdesc:
 				Linebreak;
 				say "     ([link]Y[as]y[end link]) - Yes, show him the ring.";
 				say "     ([link]N[as]n[end link]) - No need for that.";
-				if player consents:
+				if Player consents:
 					Linebreak;
 					now combat abort is 1;
 					say "[ApproachTheGiant]";
@@ -95,7 +95,7 @@ to say beatthegiant:
 		Linebreak;
 		say "     ([link]Y[as]y[end link]) - Simply dodge it. His move is very predictable.";
 		say "     ([link]N[as]n[end link]) - Make him come for you. Chances are that he trips and falls, as weakened as he is.";
-		if player consents:
+		if Player consents:
 			Linebreak;
 			say "     The giant stomps his feet angrily after your final blow, making the ground shake and sending all the nearby creatures in hiding scattering to the four winds. 'You're too much trouble to deal with right now. [one of]I'll catch you later[or]I'll deal with you after I catch them[or]I've got a stampede on my hands[at random],' he booms, charging off in a random direction after the fleeing animals. Glad to be rid of him, you head off, hoping to avoid his attention in the future.";
 		else:
@@ -171,7 +171,7 @@ to say WatchTheGiant:
 			say "     It seems that you caught the giant on his break, and in the middle of what he likes to call [']playtime['] with some of the critters he's treating. At first, it looks like he's simply jerking off, but in the middle of his fist is an anthro [one of]zebra[or]giraffe[or]rhino[or]tiger[at random] being spread open and full body stretched on the gigantic cock that is almost splitting them in half. It's incredible how they're basically being used as living fleshlights, their insides rearranged to accommodate the massive size of the dong that's bulging out of their shapes. You can hear the giant man moaning as he slides them down and up his shaft vigorously, as they squirm and cry out of their distended forms.";
 			say "     Such display leaves you rather bothered, even more so when the overgrown human male finally reaches his orgasm, cum spewing through the animal's mouth and leaking from their orifices, as they swell to hold all of the jizz that is being deposited inside them, ending up in a form that's more similar to a meat balloon that the giant discards back in their pen to [']rest[']. Surely they will need it after being plowed like that by a monstrous several foot long cock.";
 		-- 2:
-			say "     Looks like the giant is tidying up things around the zoo. Though he's not just cleaning around, no, he's obsessively rearranging objects and other types of things too large for an average person to move around. Nothing seems to be right to him as he spends long minutes trying to get everything the way he wants. But you don't complain, as while he does all this, you get a privileged view at his enormous butt whenever he bends over to grab something off the ground, or to keep aligning stuff. It's almost scary the fact his pucker could fit someone of [if scalevalue of player < 5]your size[else]a normal size[end if] and seal them shut fully buried in his gigantic ass. Actually, you can't help but wonder if that actually already happened.";
+			say "     Looks like the giant is tidying up things around the zoo. Though he's not just cleaning around, no, he's obsessively rearranging objects and other types of things too large for an average person to move around. Nothing seems to be right to him as he spends long minutes trying to get everything the way he wants. But you don't complain, as while he does all this, you get a privileged view at his enormous butt whenever he bends over to grab something off the ground, or to keep aligning stuff. It's almost scary the fact his pucker could fit someone of [if scalevalue of Player < 5]your size[else]a normal size[end if] and seal them shut fully buried in his gigantic ass. Actually, you can't help but wonder if that actually already happened.";
 			say "     After long minutes, it seems he's done. That is, before he's onto chasing another critter that is trying to escape, making the earth around you shake with each heavy footstep he gives. Looks like your free show is over.";
 		-- 3:
 			say "     In fact, you wouldn't need your eyes to realize what happened just before you got here. There's an intense smell of sex and cum as you look at the giant trying to clean up his own mess off the area he's been resting at. Not just that, but scattered all over the ground, there are numerous animals of various shapes and sizes, completely bloated and leaking his fluids on top of more puddles of white cream. He's grabbing them one by one, giving them a tongue bath, and putting them back on their places while they're too heavy and swollen to move on their own. You hear him praising them for being good [']playthings['] before the licking starts, and they're only put down where the only cum they have visible is the one leaking out of their abused holes.";
@@ -195,14 +195,14 @@ to say SubmitToGiant:
 				SubmitGiantAss;
 
 to SubmitHumanGiantFuck:
-	say "     As if only realizing now that you're a giant like him, albeit much smaller, he lifts you up to your feet. 'Wait a second... You must be that new recruit I was promised! It's about time you got here! Things are a real mess, I really needed an extra pair of hands.' he admits, and you can't help but look confused as to why he's thinking you're some sort of reinforcement when you really just attacked him in plain sight. 'Though you were very bad, attacking me like that! We don't even know each other, yet...' he says, eyeing you from head to toe, before adding 'I think you need your first training lesson.' in the end of his speech. His words fall heavily on you as he bends you over his knee, your ass pointing outwards as he [if player is not naked]removes whatever gear you have covering it and [end if]lands his large, meaty hand on top of your buttcheeks, a loud smack sound storming audibly.";
+	say "     As if only realizing now that you're a giant like him, albeit much smaller, he lifts you up to your feet. 'Wait a second... You must be that new recruit I was promised! It's about time you got here! Things are a real mess, I really needed an extra pair of hands.' he admits, and you can't help but look confused as to why he's thinking you're some sort of reinforcement when you really just attacked him in plain sight. 'Though you were very bad, attacking me like that! We don't even know each other, yet...' he says, eyeing you from head to toe, before adding 'I think you need your first training lesson.' in the end of his speech. His words fall heavily on you as he bends you over his knee, your ass pointing outwards as he [if Player is not naked]removes whatever gear you have covering it and [end if]lands his large, meaty hand on top of your buttcheeks, a loud smack sound storming audibly.";
 	say "     'Here you have to obey and respect me, you hear? Maybe this spanking will make sure you do.' he says, as he keeps hitting your ass with vigor, each cheek turning red and burning with pain by the second he keeps slapping your rear. You can't help but grunt, squirm and protest, to no avail, as he continues to spank you as if nothing was happening. 'You were a very bad [boygirl]... I don't think you've had enough.' his taunts continue, and soon, it's not just slapping, but one of his thick fingers actually finding its way between your cheeks, pushing itself inside your anus way faster than what you would find ideal. He keeps burying the entire length of his index inside you while shaking his hand a bit, to make sure you feel that huge wiggling finger stretching your hole.";
 	WaitLineBreak;
 	say "     'You like that? Think you can take any more?' he asks, but not really awaiting an answer, instead shoving another finger, distending your pucker to painfully wide measures, to which you can only grunt in discontent. The giant pays no mind to you, only continuing to torture your ass as he sees fit, enjoying watching you cry and squirm under his grasp. Your cheeks are still burning hot, and now your hole feels like it's being ripped apart. 'Why are you not standing still while receiving your training? Guess you need more spanking!' he lets you know before rapidly pulling his fingers out of your ass and landing strong, loud slaps, which hurt even more than the first. He spanks you so hard that eventually your skin becomes numb of such pain, and he often alternates from spanking to fingering, whichever makes you cry more...";
 	say "     Though there is something that saves you from getting tortured anymore. There seems to be a runaway critter than he needs to chase before they get away. 'Alright, training's over. Hope you have learned your lesson, small fry. Now get back to work while I'm gone.' he orders, after putting you on the ground to chase after the escapee. You're left sore and with the biggest pain in the ass, quite literally.";
 
 to SubmitGiantCock:
-	say "     He brings you to his eye level, [if player is not naked]taking every gear you might have had on off and throwing it away[else]rotating your fully exposed body, having a good look at you[end if], to appreciate your shape and so little size compared to his. 'Since you quickly understood that you're no match for someone like me, your punishment will be more fun. For me, at least.' he says, licking his lips with an enormous tongue surging from beneath, before bringing you close to his mouth and give you a long, hard lick all over your body, enough to cover you in his slick saliva. You're fearing the worst when he opens his mouth and gives you a clear view of his gaping maw, looking terrifying from your perspective, but he doesn't seem to actually bring you any closer to his mouth. Instead, he pulls you away slightly, enough to be able to look at you once more.";
+	say "     He brings you to his eye level, [if Player is not naked]taking every gear you might have had on off and throwing it away[else]rotating your fully exposed body, having a good look at you[end if], to appreciate your shape and so little size compared to his. 'Since you quickly understood that you're no match for someone like me, your punishment will be more fun. For me, at least.' he says, licking his lips with an enormous tongue surging from beneath, before bringing you close to his mouth and give you a long, hard lick all over your body, enough to cover you in his slick saliva. You're fearing the worst when he opens his mouth and gives you a clear view of his gaping maw, looking terrifying from your perspective, but he doesn't seem to actually bring you any closer to his mouth. Instead, he pulls you away slightly, enough to be able to look at you once more.";
 	say "     'It would be easy for me to swallow you whole, even!' he says, laughing at you, before adding 'But I have other plans for you...' With that said, he begins to lower you, slowly, past his muscular chest... then over his abs... and onto his naked bottom, as he sits on the ground. Having you tight on his grip, he stretches his legs forward, slightly split, getting comfortable as he yet continues to lower you. When you think he's going to put you down, the direction of his movements change, and you're being brought closer and closer to his enormous cock, with a massive set of balls underneath it, each probably as big as you are tall! 'Enjoying the view down there? Maybe you'd like to take a closer look...' he says, as once more he pushes you in the direction of his junk, his manly scent becoming overwhelming to you...";
 	WaitLineBreak;
 	say "     Eventually, you're smothered against his warm and plump sack, emanating his scent so intensely that you can only feel slightly lightheaded. He doesn't stop there, however. Lying you down on the ground, facing up, just before his nuts, he releases you from his grasp, but your short period of freedom is suddenly terminated when the giant lifts his cum factories and drops them right on top of you, effectively trapping all your body underneath his huge and heavy orbs, only leaving your head out. 'How do you like that, huh? Enjoying the full size and weight of my balls on you? I hope you do, because you're gonna stay there while I work on this cock.' he taunts you, grinning as he gives his monstrous dong a good couple of strokes.";
@@ -212,7 +212,7 @@ to SubmitGiantCock:
 	say "     'So puny and vulnerable now... I could let you drown by just letting my precum cover you. That will teach you not to bother me in the future!' he says to you, laughing as he strokes faster and faster... By the sound and trembling his balls are making, he must be getting close. It must be his cum sloshing around and getting ready to be shot out. He keeps you there, trapped underneath, as his movements become harder and even faster, each swing making his enormous nuts pressure against you at nearly painful levels, so much that you can almost feel yourself bouncing together with his sack. 'Ohh... I hope you enjoy the bath...' he says, before pulling you from underneath his orbs, holding you in place in the ground, and pointing his cock at you...!";
 	WaitLineBreak;
 	say "     It is only a matter of seconds until he shouts 'Fuck... Yeah!' as a ridiculous amount of thick cum is shot in your direction, the first spurt enough to completely cover your body as he keeps on pumping out more and more, further covering you in white jizz until the very last drop leaves his prick. You're left to roll over and desperately attempt to free your nose and mouth in order to breathe, only to slip and sink further in the massive poodle formed by the giant's fluids. He grunts as he squeezes his shaft thorough, enjoying seeing you struggle to get his cum out of your covered face. 'You need help with that?' he says, as he once again grabs you with his huge hand, brings you over his mouth and licks you in every inch and corner of your body, tasting his own man juice.";
-	if vorelevel > 1 and scalevalue of player < 5: [cock vore]
+	if vorelevel > 1 and scalevalue of Player < 5: [cock vore]
 		say "     But... he doesn't seem to be done with you, yet...";
 		WaitLineBreak;
 		say "     'That felt good... but you know... Now my balls are empty...' he says, with a wicked grin forming between his lips as he keeps stroking his still hard shaft. 'I might need something, or someone, to fill them up again... Oh, don't worry, you'll enjoy it in there. It's nice and warm.' You almost can't believe your eyes as you're once more brought down to his junk, and instead of being directed towards his balls around his shaft, he intends to shove you down IN through his gaping slit! Without any further ado, the giant only makes the initial effort to fit your feet in his pee hole, then simply begins to push you down slowly as he lets out a pleasure moan. 'Down my dick you go...' he lets you know, pushing you deeper as your ankles and calves begin to sink in the hot, fleshy tunnel that keeps clenching and pulsing around your legs.";
@@ -223,23 +223,23 @@ to SubmitGiantCock:
 		WaitLineBreak;
 		follow the turnpass rule;
 		follow the turnpass rule;
-		say "     You wake up hours later, at the shore of a lake nearby, completely naked and accompanied by a massive trail of white jizz. Your body is still whole and you're in good shape, albeit very dizzy and mildly confused towards what happened exactly. By the looks of it, seems like the giant came you out of his balls right before you were turned into his next orgasm, fortunately for you. Walking by for a bit, [if player is not naked]you're also able to find the gear he stripped away, so you put it back on[else]you see which way to go next[end if] and prepare to leave.";
+		say "     You wake up hours later, at the shore of a lake nearby, completely naked and accompanied by a massive trail of white jizz. Your body is still whole and you're in good shape, albeit very dizzy and mildly confused towards what happened exactly. By the looks of it, seems like the giant came you out of his balls right before you were turned into his next orgasm, fortunately for you. Walking by for a bit, [if Player is not naked]you're also able to find the gear he stripped away, so you put it back on[else]you see which way to go next[end if] and prepare to leave.";
 		infect;
 		infect;
 	else:
-		say "     'Hope you have learned your lesson!' he tells you, laughing at your so vulnerable state. 'Now get out of my face before I regret not squashing you like a bug.' he says, while throwing you away back into the forest. Luckily, a nearby bush cushions your fall, though you don't escape without a few bruises and cuts. That's fine, better than being crushed by a gigantic man, one could wonder[if player is not naked]... You're also able to find the gear he stripped away from you, so you put it back on and prepare to leave[end if]...";
+		say "     'Hope you have learned your lesson!' he tells you, laughing at your so vulnerable state. 'Now get out of my face before I regret not squashing you like a bug.' he says, while throwing you away back into the forest. Luckily, a nearby bush cushions your fall, though you don't escape without a few bruises and cuts. That's fine, better than being crushed by a gigantic man, one could wonder[if Player is not naked]... You're also able to find the gear he stripped away from you, so you put it back on and prepare to leave[end if]...";
 
 to SubmitGiantAss:
-	say "     He brings you to his eye level, [if player is not naked]taking every gear you might have had on off and throwing it away[else]rotating your fully exposed body, having a good look at you[end if], to appreciate your shape and so little size compared to his. 'Since you quickly understood that you're no match for someone like me, your punishment will be more fun. For me, at least.' he says, licking his lips with an enormous tongue surging from beneath, before bringing you close to his mouth and give you a long, hard lick all over your body, enough to cover you in his slick saliva. You're fearing the worst when he opens his mouth and gives you a clear view of his gaping maw, looking terrifying from your perspective, but he doesn't seem to actually bring you any closer to his mouth. Instead, he pulls you away slightly, enough to be able to look at you once more.";
+	say "     He brings you to his eye level, [if Player is not naked]taking every gear you might have had on off and throwing it away[else]rotating your fully exposed body, having a good look at you[end if], to appreciate your shape and so little size compared to his. 'Since you quickly understood that you're no match for someone like me, your punishment will be more fun. For me, at least.' he says, licking his lips with an enormous tongue surging from beneath, before bringing you close to his mouth and give you a long, hard lick all over your body, enough to cover you in his slick saliva. You're fearing the worst when he opens his mouth and gives you a clear view of his gaping maw, looking terrifying from your perspective, but he doesn't seem to actually bring you any closer to his mouth. Instead, he pulls you away slightly, enough to be able to look at you once more.";
 	say "     'It would be easy for me to swallow you whole, even!' he says, laughing at you, before adding 'But I have other plans for you...' With that said, he begins to lower you, slowly, past his muscular chest... then over his abs... and over his naked bottom... legs... It really is a long trip down to the ground, where he sits you. Although, you have a very, very strange feeling about this, since the giant is kneeling above you, keeping you between both his legs and giving you a complete view of his growing cock and expansive ass, clouding you in darkness. 'How do you feel about having a giant ass all for yourself, eh?' he threats you as his colossal rear hovers above you. The last thing you are able to see is that hungry-looking pucker between his asscheeks approaching you at an alarming pace, before it sits right on top of you, engulfing your whole face in it.";
 	WaitLineBreak;
 	say "     With your world enclosed in the space between the giant's enormous buttocks, things get really hot, very literally, as the musky air around nearly suffocates you with its intense humidity. 'You better wiggle for me! And start licking my ass to make up for your intrusion.' his voice booms out to you, and you have no choice but to comply. He truly has a big anus, twitching at you with every touch you lay on it, and loves to thoroughly slurp at your face every time the giant man grinds his ass against you. Sweat covers your body as you give your best to appease the giant, lest you want to risk being grinded until nothing more of you is left. With your tongue, you give it a tentative lick, which the zookeeper replies with yet another hump against your face. 'Was that your tongue? Fuck, that felt good...'";
 	say "     This continues for a while longer, with mostly you being smothered under a gigantic ass, forced to please his hole like the pint-sized plaything you are to him. Rubbing, kissing and licking are all on table when it comes to obliging his demands, and you can tell this whole situation pleases him a lot, were it not for the jerking motions that you can feel towards your side, as well as his grunts. But the more excited he gets, the more relaxed his pucker seems, and given your size difference, that could prove problematic...";
-	if vorelevel > 1 and scalevalue of player < 5: [anal vore possibility]
+	if vorelevel > 1 and scalevalue of Player < 5: [anal vore possibility]
 		Linebreak;
 		say "     ([link]Y[as]y[end link]) - Hold yourself against his ass.";
 		say "     ([link]N[as]n[end link]) - Don't fight it.";
-		if player consents:
+		if Player consents:
 			Linebreak;
 			SubmitGiantAssNormal;
 		else:
@@ -261,7 +261,7 @@ to SubmitGiantAssAV:
 	WaitLineBreak;
 	follow the turnpass rule;
 	follow the turnpass rule;
-	say "     You wake up hours later, at the shore of a lake nearby, completely naked and accompanied by a massive trail of white jizz. Your body is still whole and you're in good shape, albeit very dizzy and mildly confused towards what happened exactly. By the looks of it, seems like the giant got you out of his ass, and proceeded to give you a cumbath while you were unconscious. Fortunately for you, he didn't actually consume you, or anything worse. Walking by for a bit, [if player is not naked]you're also able to find the gear he stripped away, so you put it back on[else]you see which way to go next[end if] and prepare to leave.";
+	say "     You wake up hours later, at the shore of a lake nearby, completely naked and accompanied by a massive trail of white jizz. Your body is still whole and you're in good shape, albeit very dizzy and mildly confused towards what happened exactly. By the looks of it, seems like the giant got you out of his ass, and proceeded to give you a cumbath while you were unconscious. Fortunately for you, he didn't actually consume you, or anything worse. Walking by for a bit, [if Player is not naked]you're also able to find the gear he stripped away, so you put it back on[else]you see which way to go next[end if] and prepare to leave.";
 	infect;
 	infect;
 
@@ -476,13 +476,13 @@ to say ApproachTheGiantPickUp:
 		LineBreak;
 		say "     ([link]Y[as]y[end link]) - Let the Giant relieve himself with you.";
 		say "     ([link]N[as]n[end link]) - You would rather not have that happen.";
-		if player consents:
+		if Player consents:
 			LineBreak;
 			say "     That would be alright, for you, so you nod and let the giant man have his fun with you. 'I'm really, really turned on by you, little thing...'";
 			ApproachTheGiantPickUpSex;
 		else:
 			LineBreak;
-			say "     Unfortunately, you would rather be on your way, now. You are understanding about his loneliness, but you do have places to be and things to do, so you let him know that. 'Aw... Okay... That's fine, little person, I won't insist. But if you change your mind, I'll be here...' he replies, with disappointment in his voice, as he puts you back down. You only now noticed that he had a massive boner while he was chatting with you, which he proceeds to hide in embarassment. 'I'll... attend to stuff, I suppose. See you around! Oh, and... keep the ring with you, so I can tell you apart from other critters more easily.' You think the giant then leaves to masturbate on his own while you get to retreat without having to get involved.";
+			say "     Unfortunately, you would rather be on your way, now. You are understanding about his loneliness, but you do have places to be and things to do, so you let him know that. 'Aw... Okay... That's fine, little person, I won't insist. But if you change your mind, I'll be here...' he replies, with disappointment in his voice, as he puts you back down. You only now noticed that he had a massive boner while he was chatting with you, which he proceeds to hide in embarrassment. 'I'll... attend to stuff, I suppose. See you around! Oh, and... keep the ring with you, so I can tell you apart from other critters more easily.' You think the giant then leaves to masturbate on his own while you get to retreat without having to get involved.";
 	else:
 		say "     'You're such a cute tiny thing... It really turns me on knowing you enjoy this, too...'";
 		ApproachTheGiantPickUpSex;
@@ -495,9 +495,9 @@ to ApproachTheGiantPickUpSex:
 	say "     You reach a point that you are merely bouncing your body up and down and humping against his shaft, stimulating the massive dick in as much ways, inches and corners as you can. The momentum is emphasized by the pace that you keep increasing, excitement and lust taking over your mind for a while, causing you to run your tongue over the precum covered glans that assault your buds with a taste of salt. 'Fuck, yes, d-don't stop... You're... Fuck...' The giant cannot even bring himself to speak, moans instead replacing any word he could mutter, as you feel his entire member beginning to tremble and throb at an increasing rate. 'I-if you keep that up, I'll... I'll...' The zookeeper fails to finish his sentence as a sudden explosion of cum is shot upwards like a powerful geyser, making it rain all around you. Each spurt thicker than the last until it reaches a peak, during what seems like a minute!";
 	say "     'C-cum a lot...! Fuck, I'm cumming a lot! I-it doesn't... stop...!' He goes on and grabs his cock, helplessly jerking it off as he forgets about you, for moments, which is quite... not a very good thing. Lost in his lusts, his load gets all over you, quickly covering you as he just points the rest of his extensive orgasm to you and sinks you in a thick puddle of jizz. Almost indiscernible from the rest of your surroundings, which is just creamy cum, the giant panics for moments, after his orgasm begins to subside. 'Oh no! Fuck! Little thing, are you okay?!' he rushes to pick you up and wipe most of that stubborn cum out of your body. 'I covered you in it! Let me help you!'";
 	WaitLineBreak;
-	say "     He is, actually, really eager to help, and by help, he really means licking you clean with his large tongue, rubbing that slick organ of his all across your body, including your [if player is male]cock[else if player is female]pussy[else]chest and sensitive areas[end if] with surprisingly accuracy. He keeps doing so, over and over again, each lick slower, more sensual, skillful and precise... He truly wants to lick you until there is no hint of his cum left on your skin, but the way he does it is so arousing that you are brought closer and closer to your climax. 'Don't worry, little [guygal], I'll clean up the mess I made on you, I won't stop until you're pristine clean!' He does not really hear any of your warnings as you approach your orgasm...";
+	say "     He is, actually, really eager to help, and by help, he really means licking you clean with his large tongue, rubbing that slick organ of his all across your body, including your [if Player is male]cock[else if Player is female]pussy[else]chest and sensitive areas[end if] with surprisingly accuracy. He keeps doing so, over and over again, each lick slower, more sensual, skillful and precise... He truly wants to lick you until there is no hint of his cum left on your skin, but the way he does it is so arousing that you are brought closer and closer to your climax. 'Don't worry, little [guygal], I'll clean up the mess I made on you, I won't stop until you're pristine clean!' He does not really hear any of your warnings as you approach your orgasm...";
 	say "     'You dirty [guygal]... You really got a lot of cum on you... I need to lick you good...' he says, almost whispering, as he presses his tongue down on you even harder, over all that brings pleasure to you, so persistently, almost as if he knew what he was doing to turn you on so much... You cannot hold it, anymore. Within just a few moments, you";
-	if player is male:
+	if Player is male:
 		say "cum right in his mouth, and he does not even flinch at it, only receiving your load with a pleasant hum as his huge lips wrap around your cock. 'Mmmh... What was that? Did you just... cum? From my licking? That's... cute, little thing... It tasted really good...'";
 	else:
 		say "being to quiver and moan as this surge of intense pleasure strikes you like a truck rolling over you. 'O-oh! D-did I... Did I just do something wrong? A-are you hurt? Oh... I see what... I didn't know this would excite you so much... That's really... cute, little thing!'";
@@ -516,15 +516,15 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Human"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Human"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Human Giant" to infections of HumanList;
 	add "Human Giant" to infections of MythologicalList;
 	add "Human Giant" to infections of MaleList;
 	add "Human Giant" to infections of BipedalList;
-	now Name entry is "Human Giant"; [Name of your new Monster]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now Name entry is "Human Giant";
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "The [one of]giant[or]giant man[or]lumbering brute[or]towering creature[at random] [one of]bashes you with a massive fist[or]slaps you with an enormous backhand, knocking you back[or]grabs you in his crushing grip before throwing you to the ground[or]clobbers you with his makeshift club[or]swings his massive club into you[or]stomps a giant foot down onto you[at random]!";
 	now defeated entry is "[beatthegiant]";
 	now victory entry is "[losetogiant]";
@@ -545,7 +545,7 @@ When Play begins:
 	now per entry is 22;
 	now int entry is 12;
 	now cha entry is 12;
-	now sex entry is "Nochange"; 	[ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now sex entry is "Nochange"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
 	now HP entry is 650; [ How many HP has the monster got? She's not too hard- she doesn't want to win so much as not lose]
 	now lev entry is 18; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
 	now wdam entry is 41; [Amount of Damage monster Does when attacking. Claws and massive strength]
@@ -563,16 +563,16 @@ When Play begins:
 	now libido entry is 30; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
 	now loot entry is "";
 	now lootchance entry is 0; [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 5; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]muscled[or]strong[or]towering[or]huge[at random]";
 	now type entry is "[one of]giant[or]human[at random]";
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
@@ -584,7 +584,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -596,7 +596,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -615,7 +615,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -636,18 +636,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -661,19 +661,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]

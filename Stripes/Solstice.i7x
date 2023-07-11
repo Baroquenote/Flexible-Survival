@@ -23,7 +23,7 @@ Sarea of Fox Adventurer is "Outside".
 
 when play begins:
 	add Fox Adventurer to BadSpots of FemaleList;
-	add Fox Adventurer to badspots of HermList;
+	add Fox Adventurer to BadSpots of HermList;
 	add Fox Adventurer to BadSpots of FurryList;
 
 to say ResolveEvent Fox Adventurer:
@@ -103,7 +103,7 @@ Sarea of Onyx Crow is "Museum".
 
 when play begins:
 	add Onyx Crow to BadSpots of FemaleList;
-	add Onyx Crow to badspots of HermList;
+	add Onyx Crow to BadSpots of HermList;
 	add Onyx Crow to BadSpots of FurryList;
 
 to say ResolveEvent Onyx Crow:
@@ -155,7 +155,7 @@ an everyturn rule:
 
 an everyturn rule:
 	if ( HP of Solstice is 3 or HP of Solstice is 4 ) and Solstice is in Makeshift Rec Room and the player is in the Grey Abbey Library:
-		say "     Returning to the central room of the library, you are startled to find a new person casually waiting for you. Solstice is here, leaning against one of the bookshelves, glancing through a book. The vulpogryph smiles and tucks the book back on the shelf as you come striding over[if HP of Fang is 1 or HP of Fang is 2]. Sparing a quick glance to Fang, who seems as surprised to find the intruder here, the guard wolf dips [PosPro of Fang] ears and slinks back, clearly having failed in [PosPro of Fang] guard duties somehow[else if HP of Fang is 3 or HP of Fang is 4 or HP of Fang is 5]. Fang growls a little from [PosPro of Fang] post at the door, clearly upset that this intruder somehow managed to get past [ObjectPro of Fang] unnoticed[end if].";
+		say "     Returning to the central room of the library, you are startled to find a new person casually waiting for you. Solstice is here, leaning against one of the bookshelves, glancing through a book. The vulpogryph smiles and tucks the book back on the shelf as you come striding over[if HP of Fang is 1 or HP of Fang is 2]. Sparing a quick glance to Fang, who seems as surprised to find the intruder here, the guard wolf dips [PosPro of Fang] ears and slinks back, clearly having failed in [PosPro of Fang] guard duties somehow[else if HP of Fang is 3 or HP of Fang is 4 or HP of Fang is 5 or HP of Fang is 6 or HP of Fang is 7]. Fang growls a little from [PosPro of Fang] post at the door, clearly upset that this intruder somehow managed to get past [ObjectPro of Fang] unnoticed[end if].";
 		say "     'Hey there. Pretty nice setup [if ( number of booked people + number of bunkered people ) > 2]you and your pals have[else]you've[end if] got going here. Not much interest to the critters out there and a reinforced bunker in case things get really bad. Definitely need to get some more supplies for that, though. Things got rather hectic back at my old place, so I figured I could move in here with you, sweetie.' She runs a taloned paw along your side.";
 		if HP of Solstice is 3:
 			say "     Still upset with her about the feather, you push her hand away. 'What? Oh, I'm so sorry, hon. I didn't mean for anything like that to happen. It must've fallen out,' she says apologetically[if the player is partvg]. 'It certainly looks good on you though,' she adds with a grin and another stroke to your altered body[end if]. You calm down, accepting that it could very well have been an accident.";
@@ -170,15 +170,50 @@ object	name
 Solstice	"Solstice"
 
 Solstice is a woman.
+ScaleValue of Solstice is 3. [human sized]
+SleepRhythm of Solstice is 0. [0 - awake at all times, 1 - day active, 2 - night active]
+Body Weight of Solstice is 4. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
+Body Definition of Solstice is 6. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
+[Body Adjective is generated out of the body weight and body definition and can be used in scenes - one word descriptive adjective depending on weight and definition groups: low weight group: skinny/slender/lithe; mid weight group: average/fit/muscled; high weight group: pudgy/husky/jacked]
+Androginity of Solstice is 8. [Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/somewhat effeminate/effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
+Mouth Length of Solstice is 6. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
+Mouth Circumference of Solstice is 3. [mouth circumference 1-5, "tiny, small, normal, wide, gaping"]
+Tongue Length of Solstice is 6. [length in inches]
+Breast Size of Solstice is 4. [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+Nipple Count of Solstice is 2. [count of nipples]
+Asshole Depth of Solstice is 10. [inches deep for anal fucking]
+Asshole Tightness of Solstice is 2. [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+Cock Count of Solstice is 0. [number of cocks]
+Cock Girth of Solstice is 0. [thickness 1-5, thin/slender/average/thick/monstrous]
+Cock Length of Solstice is 0. [Length in Inches]
+Ball Count of Solstice is 0. [allowed numbers: 1 (uniball), 2 or 4]
+Ball Size of Solstice is 0. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
+Cunt Count of Solstice is 1. [number of cunts]
+Cunt Depth of Solstice is 10. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Tightness of Solstice is 2. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+Clit Size of Solstice is 3. [size 1-5, very small/small/average/large/very large]
+[Basic Interaction states as of game start]
+PlayerMet of Solstice is false.
+PlayerRomanced of Solstice is false.
+PlayerFriended of Solstice is false.
+PlayerControlled of Solstice is false.
+PlayerFucked of Solstice is false.
+OralVirgin of Solstice is false.
+Virgin of Solstice is false.
+AnalVirgin of Solstice is false.
+PenileVirgin of Solstice is true.
+SexuallyExperienced of Solstice is true.
+TwistedCapacity of Solstice is false. [Twisted Characters can take any penetration, no matter the size]
+Sterile of Solstice is true. [steriles can't knock people up]
+MainInfection of Solstice is "Vulpogryph".
 Description of Solstice is "[solsticedesc]".
 Conversation of Solstice is { "Treasure!" }.
+The scent of Solstice is "Solstice smells of dusty tombs and ancient secrets under a thick layer of arousal.".
 
 to say solsticedesc:
 	say "     Transformed by the strange artifact you helped her recover, Solstice has become an unusual, gryphon-like creature. Her upper body is decidedly avian in nature, with black feathers and a crow's head and beak. Her eyes are sharp and have a lustful glint as they look at you. She has a pair of broad, black wings attached to her back as well. Her paws resemble bird-like talons. There are some hints of her previous, vulpine nature as well, with foxish ears and mammalian breasts filling her red shirt. Her lower body is largely unchanged and is that of a sexy, multi-tailed vixen, though those tails are now covered in black plumage. Her fur is a silvery gray in stark contrast to her darker feathers. Along with her red, sleeveless top, the vulpogryph wears a pair of khaki shorts with attached pouches. She's even set up her bedroll in one of the reading rooms to the side of the library and is keeping her small backpack there as well.";
 
 the linkaction of Solstice is "Possible Actions: [link]talk[as]talk Solstice[end link], [link]smell[as]smell Solstice[end link], [link]fuck[as]fuck Solstice[end link], [link]lesson[as]lesson Solstice[end link][line break]";
-
-the scent of Solstice is "Solstice smells of dusty tombs and ancient secrets under a thick layer of arousal.".
 
 Instead of conversing Solstice:
 	say "[one of]'It's so nice being here with you, my sweetie,' she rumbles, running a paw across your chest.[or]'We should spend more time together, hon.[or]'I'd love to tell you about my adventures. We could make a sexy [link]lesson[as]lesson Solstice[end link] out of them,' she says, nibbling your ear.[or][if Player is fullyvg]'You make such a sexy vulpogryph, my dear. I knew you'd make a wonderful mate,' [else if Player is partvg]'You will be such a sexy vulpogryph when I'm done, my dear. You'll be my perfect mate,' [else]'I think you'd look much better as a sexy vulpogryph like me, hon,' [end if]she purrs sensually as she runs her taloned paws over you.[or]'Mmm... you should stay here with me, sexy. We could so much fun together.'[or]'I think I'd prefer to stay out here than in the bunker, if it's all the same with you.'[in random order]";
@@ -334,6 +369,6 @@ This is the Solstice's Epilogue rule:
 			if humanity of Player < 10:
 				say "     When you succumb to your infection, Solstice sadly packs up her stuff from the library and heads back out into the city. She slips past the military cordon and returns to her life as a treasure hunter.";
 			else:
-				say "     As the soldiers are moving into the city to rescue those they can, Solstice comes up and tells you that she'll need to split. As an 'adventurer', she explains, some people in authority may not take to kindly to her track record with certain international governments or legal technicalities. You catch a glimpse of something gold inside her backpack and suspect she's gathered quite a few precious items from around the city. The vulpogryph gives to a tight hug and nuzzles you with her beak, saying she'd really wished it'd worked out better with you[if diegochanged < 2], but also that she's met a cute, sneaky coyote who's promised to help her trick her way past the authorities on her expeditions from now on[else], but that she's got plans to snag a sexy archeologist she knows into being her mate and adventuring partner[end if].";
+				say "     As the soldiers are moving into the city to rescue those they can, Solstice comes up and tells you that she'll need to split. As an 'adventurer', she explains, some people in authority may not take to kindly to her track record with certain international governments or legal technicalities. You catch a glimpse of something gold inside her backpack and suspect she's gathered quite a few precious items from around the city. The vulpogryph gives to a tight hug and nuzzles you with her beak, saying she'd really wished it'd worked out better with you[if Diegochanged < 2], but also that she's met a cute, sneaky coyote who's promised to help her trick her way past the authorities on her expeditions from now on[else], but that she's got plans to snag a sexy archeologist she knows into being her mate and adventuring partner[end if].";
 
 Solstice ends here.

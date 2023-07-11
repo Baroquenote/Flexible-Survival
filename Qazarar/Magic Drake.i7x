@@ -86,8 +86,8 @@ to say losetomagicdrake:
 		now mdasslevel is 5;
 	else if mdasslevel is 5:
 		say "     With the fight over, the shemale pins you down [one of]on the ground[or]across some rubble[or]over a smashed car[or]over a fallen tree[as decreasingly likely outcomes]. 'Well, you're almost to the point I want you, my little plaything. Let's see if we can't get you finished up,' she says with a chuckle. She then moves overtop of you, pinning you beneath her crushing booty. She grinds her ass in your face and you can feel her bloated balls and swollen cock also pressing down upon you.";
-		say "     As she starts to rock herself overtop of you, your head ends up wedged between her ass and ballsack, the musky scent of the shemale making your already oxygen-deprived brain all the more foggy and muddled. The comes an odd tickle at your back door as something flicks against it a few times, followed by a more firm prodding. As it pushes its way into you, stretching your tight hole open, the way it wriggles brings the realization that it's her tail squirming into you to stretch you open. Despite, or perhaps even because of, your helpless situation, you start to grow aroused and moan[if anallevel is 3 or (anallevel is 2 and player is submissive)]. With her tight tailhole before you and a growing lust overtaking you, you start licking at her puckered hole[end if].";
-		say "     You can faintly hear the dragoness incanting, but cannot make out the words. But you know the feeling when it comes, another stream of energy running across and flowing into your ass, causing it to swell and bloat even further. Your hips pop and snap, widening a great deal as they're stretched to accommodate more and more of her thick tail pushing into you. Your anus is stretched and widened by the steady advance of the scaled appendage, which sends a surprising amount of pleasure into you. It seems your draconic booty's been made extra-sensitive and ripe for fucking[if anallevel is 3 or (anallevel is 2 and player is submissive)]. And with you rimming her pucker wildly, she doesn't hold back in her own moans either[end if].";
+		say "     As she starts to rock herself overtop of you, your head ends up wedged between her ass and ballsack, the musky scent of the shemale making your already oxygen-deprived brain all the more foggy and muddled. The comes an odd tickle at your back door as something flicks against it a few times, followed by a more firm prodding. As it pushes its way into you, stretching your tight hole open, the way it wriggles brings the realization that it's her tail squirming into you to stretch you open. Despite, or perhaps even because of, your helpless situation, you start to grow aroused and moan[if anallevel is 3 or (anallevel is 2 and Player is submissive)]. With her tight tailhole before you and a growing lust overtaking you, you start licking at her puckered hole[end if].";
+		say "     You can faintly hear the dragoness incanting, but cannot make out the words. But you know the feeling when it comes, another stream of energy running across and flowing into your ass, causing it to swell and bloat even further. Your hips pop and snap, widening a great deal as they're stretched to accommodate more and more of her thick tail pushing into you. Your anus is stretched and widened by the steady advance of the scaled appendage, which sends a surprising amount of pleasure into you. It seems your draconic booty's been made extra-sensitive and ripe for fucking[if anallevel is 3 or (anallevel is 2 and Player is submissive)]. And with you rimming her pucker wildly, she doesn't hold back in her own moans either[end if].";
 		say "     Eventually this builds to a peak when the dragoness roars and cums hard, spraying her load. You can feel the heavy, gurgling throbs of her balls pumping their white payload to paint the area with her seed[if Player is not neuter]. You end up cumming as well, driven to climax by the incessant squirming of her scaly appendage inside you[else]. This is further aggravated by the incessant squirming of her scaly appendage inside you[end if]. Eventually, you are released, the dragoness removing her bulk from you slowly and easing that textured tail from your hypersensitive hole. Helping you up, the sorceress gives your ass a pat and a fondling. 'Yes, that's just how I like it. You're ready to be my cock-sleeve next time we meet, my cute familiar,' she says, fingering your loose hole. You're then left to stumble away, walking funny from both your comically overgrown ass and delightfully aching, widely gaping asshole.";
 		now mdasslevel is 6;
 	else if mdasslevel is 6:		[maxed ass, ready for fucking]
@@ -115,8 +115,7 @@ to say losetomagicdrake:
 					increase Libido of Player by 5;
 				else if Player is male and Ball Size of Player < Ball Size entry and "Female Preferred" is not listed in feats of Player and "Modest Organs" is not listed in feats of Player:
 					say "     While cumming, the draconic sorceress reaches around to [if CockName of Player is listed in infections of InternalCockList]rub over your hidden balls[else]grab your twitching balls and knead them[end if]. Chanting softly, words obscured by the gurgling blasts of all the cum filling you, she sends magical power through her hands that causes your testicles to grow further. When she's done both her climax and her spell, she [if scalevalue of Player < 3]peels[else]eases[end if] you off her softening penis and leaves you there, bloated with her semen and leaking a steady flow of it from your gaping back door.";
-					increase Ball Size of Player by 1;
-					now Ball Size of Player is ( ( Ball Size of Player * 3 ) + Ball Size entry ) / 4;
+					BallsGrow Player by 1;
 					decrease humanity of Player by 1;
 					increase Libido of Player by 5;
 				else if Breast Size of Player < Breast Size entry and "Flat Chested" is not listed in feats of Player:
@@ -223,7 +222,7 @@ to say mdrake_bigger_better:
 		say "     Still in a daze of pleasure, you barely notice your mistress leaving. You stay there, sitting in the street immobilized by your own ass, for quite some time. Eventually, however, it begins to deflate, returning to your relatively normal size, leaving you somewhat... disappointed. Despite that, however, you know that your mistress will do her best to make you bigger and better than ever before, and you find yourself eager to see what else she may have in store for you. After several more moments of daydreaming about what else she might do to your soft behind, you finally climb back to your feet, with a normal jiggle from your merely-huge ass, and begin to leave. ";
 		increase mdmaxlossscene by 1;
 	else if mdmaxlossscene is 2:
-		say "     [if HP of player > 0]Overcome by your lusts for your mistress, you surrender. As the sight of your submission, she steps forward, no longer planning on attacking you. 'Good, good. I'm glad you've decided to come back for more,' she coos. The drake saunters over to you as you gather your composure, recovering quickly from the brief spat. 'Don't worry, my familiar, I'm going to treat you so wonderfully that you'll never want to leave.' The drake runs a claw down the side of your face, inciting a pleasant shudder to creep down your spine.[else]You stumble backwards, completely beaten, unable to resist further even if you wanted to. Seeing the difference, the drake looks pleased with herself.. 'Naughty thing, thinking you can beat me? Such a feisty familiar... It's almost cute to watch you try to fight, but soon enough you'll know better,' the drake taunts, reaching you. She strokes your face, sending tingles down your body as you can feel traces of her magic coursing through you. You find your fatigue fading away, but in its place grows a powerful lust. It's clear to you that she's trying to make you submit to her, even after your defeat.[end if] 'Now, I suppose it's time to play with you again, my dear. Since your last visit I've come up with several wonderful ideas for how best to improve you.'";
+		say "     [if HP of Player > 0]Overcome by your lusts for your mistress, you surrender. As the sight of your submission, she steps forward, no longer planning on attacking you. 'Good, good. I'm glad you've decided to come back for more,' she coos. The drake saunters over to you as you gather your composure, recovering quickly from the brief spat. 'Don't worry, my familiar, I'm going to treat you so wonderfully that you'll never want to leave.' The drake runs a claw down the side of your face, inciting a pleasant shudder to creep down your spine.[else]You stumble backwards, completely beaten, unable to resist further even if you wanted to. Seeing the difference, the drake looks pleased with herself.. 'Naughty thing, thinking you can beat me? Such a feisty familiar... It's almost cute to watch you try to fight, but soon enough you'll know better,' the drake taunts, reaching you. She strokes your face, sending tingles down your body as you can feel traces of her magic coursing through you. You find your fatigue fading away, but in its place grows a powerful lust. It's clear to you that she's trying to make you submit to her, even after your defeat.[end if] 'Now, I suppose it's time to play with you again, my dear. Since your last visit I've come up with several wonderful ideas for how best to improve you.'";
 		say "     For a moment you are simply waiting on your knees for your mistress to decide what to do with you, shivering in anticipation of what new heights of pleasure she could bring you to. The drake lets you simmer for a time, pacing around you, carefully eying every detail of your form. 'I'm glad that you've taken to my gifts so well, familiar. Now, follow me, my next plan requires somewhat more setup than before.' Without another word, she turns around and begins walking further into the Red Light District. Unwilling to disobey, you follow her, keeping to your hands and knees as you do so. The drake's occasional glances over her shoulder at you are marked by a smug grin, showing that she appreciates your method of transport.";
 		WaitLineBreak;
 		say "     Finally your mistress leads you into a small square, featuring what seems to be a set of old fashioned stocks. You're sure you've never seen them before, but your attempts to ponder their origins are interrupted by the magic drake guiding you towards them. You instantly realize what she has in store, as there could be no reason to bring you to these stockades other to then lock you in them. A moment later you're proven correct, as she waves her staff, causing one of the pillories to open. She gestures towards it with her free hand. 'Go on, familiar. You're going to have a wonderful time here, believe me,' she coos. The thought of being locked up in that contraption is a somewhat terrifying one, but at the same time you know that following the orders of your mistress has never lead you astray. You muster what little courage you have left, and climb up onto the raised dais, before finally settling yourself into position. The drake lets out a breathy laugh as she lowers the top back into place, locking you firmly into the wooden structure. 'Oh, what fun this is going to be for the both of us!'";
@@ -541,14 +540,12 @@ to say beatthemagicdrake:
 									decrease Libido of Player by 3;
 									say "     The magic does end up working though, seeping into you with a pleasant tingle that suffuses your green cock[smn]. This causes [itthemm] to shrink down, losing [if Cock Length of Player > 2]a couple of inches[else]an inch[end if]. You try to keep going, but the pleasure of this sends you over the edge, moaning loudly. The remaining magical energy gets funneled into your climax and you splatter a larger-than-normal mess of fresh seed onto the ground[if Cock Length of Player is 1]. As your tiny prick[smn] didn't go away completely, you doubt you'll be able to shrink yourself down any further this way[end if]. The angry dragoness growls impotently as your sexy penis[esmn] shrink[smv], leaving [itthemm] feeling a little more manageable for you to deal with.";
 								else if mdstaffaction is 7:		[ball growth]
-									increase Ball Size of Player by 1;
+									BallsGrow Player by 1;
 									follow the cock descr rule;
 									increase Libido of Player by 5;
-									if the remainder after dividing the Ball Size of Player by 3 is 0, increase Ball Size of Player by 1;
 									say "     The magic does end up working though, seeping into you with a pleasant tingle that suffuses your transformed testicles. They swell up a little larger, growing until they become a [Ball Size Adjective of Player] pair of draconic balls. You try to keep going, but the pleasure of this sends you over the edge, moaning loudly. The remaining magical energy gets funneled into your climax and you splatter a considerably larger-than-normal mess of fresh seed onto the ground. Despite being upset with you for using her magic yourself, the sorceress certainly seems pleased with the outcome, at least.";
 								else if mdstaffaction is 8:		[ball reduction]
-									decrease Ball Size of Player by 1;
-									if the remainder after dividing the Ball Size of Player by 3 is 0, decrease Ball Size of Player by 1;
+									BallsShrink Player by 1;
 									if Ball Size of Player < 1, now Ball Size of Player is 1;
 									follow the cock descr rule;
 									decrease Libido of Player by 3;
@@ -594,12 +591,10 @@ to say mdrake_pvictory_03:
 			now CockName of Player is "Magic Drake";
 			now CockSpeciesName of Player is "Magic Drake";
 			now Cock of Player is cock entry;
-			if Ball Size of Player < 36:
-				increase Ball Size of Player by ( 50 - Ball Size of Player ) / 10;
+			BallsGrow Player by 2;
 			follow the sex change rule;
 		else:
-			if Ball Size of Player < 36:
-				increase Ball Size of Player by ( 50 - Ball Size of Player ) / 10;
+			BallsGrow Player by 2;
 	else:
 		say "     Eventually this perverse penetration becomes too much and you drive your cock fully into the dragoness's, cumming with a lustful groan. You blast shot after shot of your [Cum Load Size of Player] load down into her urethra[if Ball Size of Player > 4], feeding your some of your load all the way down into her balls[end if] as she moans and squirms beneath you. Once you're spent, you pull out and watch as her spasming penis twitches and slaps against her belly while some of your cum leaks back out. She moans and rubs it with a desperate need to release, soon cumming with a roar that splatters a mix of your semen and hers across herself and the ground beyond. She flops back onto the ground, your kinky abuse of her mighty manhood leaving her momentarily dazed.";
 
@@ -622,7 +617,7 @@ to say mdrake_pvictory_05:
 to say mdrake_pvictory_06:		[Receive fellatio]
 	say "     Feeling you deserve some small payback for the trouble this lust-crazed creature's been causing, you take hold of your [cock size desc of Player] cock and stroke it to erection. The sight of it catches the sorceress's attention, partially distracting her from her efforts to rise. As you approach her draconic muzzle, she licks her lips and releases a needy moan. And when you bring your [Cock of Player] manhood just barely within reach, her reptilian tongue stretches out to lick its tip.";
 	say "     'Come on. Give it to me, my sweet,' she moans with an obvious need that brings a grin to your lips. While a little tempted to tease her longer, you want to get it on and so move forward, plunging your [Cock of Player] cock into her warm muzzle. Rocking your hips, you plunge into her sucking maw. Her tongue plays over your meat and her hands [if CockName of Player is listed in infections of InternalCockList]fondle your [Ball Size Adjective of Player] [Balls] with an obvious hunger[else]grab your hips to urge you onwards[end if].";
-	say "     Seeing her meaty pillar bobbing in front of you, you grab it and start stroking it as further encouragement for the slutty sorceress. The titanic manhood is shaped like a normal cock, but taken to enormous size. Its smooth flesh, phallic shape and throbbing veins would have it seem human in form were it not for its green hue. This examination is a casual one, undertaken while enjoying the blow job and giving a hand job (as best you can give its size) in return.";
+	say "     Seeing her meaty pillar bobbing in front of you, you grab it and start stroking it as further encouragement for the slutty sorceress. The titanic manhood is shaped like a normal cock, but taken to enormous size. Its smooth flesh, phallic shape and throbbing veins would have it seem human in form were it not for its green hue. This examination is a casual one, undertaken while enjoying the blowjob and giving a handjob (as best you can give its size) in return.";
 	say "     As your climax hits you, you thrust deeply into the buxom beauty's maw. Cumming hard, you blast your [Cum Load Size of Player] load across her tongue and down her throat[if Ball Size of Player >= 6]. Your voluminous output is enough to plump the dragoness's belly with her feast of hot semen[end if]. With your orgasm waning, you shift your focus to her cock, rubbing and stroking it just right to finish her off. Angling it away, you delight in watching the high arcs and messy splatters her blasts of cum make until finally her spent shaft flops down onto the ground, temporarily sated.";
 
 to say mdrake_pvictory_07:
@@ -706,22 +701,23 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Dragon"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Dragon"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Magic Drake" to infections of ReptileList;
 	add "Magic Drake" to infections of FurryList;
 	add "Magic Drake" to infections of MagicalList;
 	add "Magic Drake" to infections of HermList;
 	add "Magic Drake" to infections of TaperedCockList;
 	add "Magic Drake" to infections of InternalCockList;
+	add "Magic Drake" to infections of InternalBallsList;
 	add "Magic Drake" to infections of BipedalList;
 	add "Magic Drake" to infections of TailList;
 	add "Magic Drake" to infections of OviImpregnatorList;
 	add "Magic Drake" to infections of TailweaponList;
 	add "Magic Drake" to infections of FirebreathList;
 	now Name entry is "Magic Drake"; [ Infection/Creature name. Capitalized. ]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The scaly sorceress[or]The magical drake[or]The dragon woman[or]The buxom shemale[at random] [one of]shoots you with a blast of sticky sparkles from her staff[or]hip-checks you with her massive bottom, slamming you between her ass and something else[or]slaps you hard with her throbbing erection[or]swings her staff in a wide arc, sending you tumbling as some unseen force sends you and debris flying back[or]conjures a spectral fist from her staff which then strikes you repeatedly[or]mashes your face between her tits, both suffocating and crushing your head between those plump globes[at random]."; [ Successful attack message ]
 	now defeated entry is "[beatthemagicdrake]"; [ Text when monster loses. ]
 	now victory entry is "[losetomagicdrake]"; [ Text when monster wins. ]
@@ -754,22 +750,22 @@ When Play begins:
 	now Breast Size entry is 10; [ Size of breasts the infection will try to attain (corresponds to letter cup size). ]
 	now Male Breast Size entry is 10; [ Breast size for if Sex="Male", usually zero. ]
 	now Cunt Count entry is 0; [ The number of cunts the infection will try to cause if sex entry is 'Female' or 'Both'. ]
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	now SeductionImmune entry is false;
 	now libido entry is 45; [ Target libido the infection will rise towards. ]
 	now loot entry is ""; [ Dropped item, blank for none. Case sensitive. ]
 	now lootchance entry is 0; [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]plump[or]pudgy[or]curvaceous[or]girly[or]feminine[at random]";
 	now type entry is "[one of]draconic[or]dragon[or]reptilian[as decreasingly likely outcomes]";
 	now magic entry is true;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "firebreath"; [ Row used to designate any special combat features, "default" for standard combat. ]
 	now BannedStatus entry is false;
@@ -781,7 +777,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -793,7 +789,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -812,7 +808,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -833,18 +829,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -858,19 +854,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -966,7 +962,7 @@ to say mdrake_bad_end:
 		say "     She later celebrates her status as the newest deity of the city by encouraging her growing ranks of disciples within it to build a massive temple. Through the aid of your mistress, the work of decades becomes an effort of mere months, and the center of her power is graced with a proper homage to her splendor. When it is finally complete, the magic drake then moves you from your former tower home into the decorated halls of her new temple, to be the symbol of her strength and generosity for all her followers. As a further gift in return for their loyalty, she allows all of them to ravish you in your new place of honor. You have no objection, happy to serve more cocks if that's what your mistress wants—besides, what they lack in size compared to her, they can almost make up for in sheer numbers.";
 		say "     Your time as the drake's idol is satisfying in any number of ways. Each load her followers deposit in you adds more power to your mistress, and that knowledge brings you more joy than being fucked by itself does. Still, the act of having your rear stuffed by so many people is still worthwhile on its own—even if they aren't as satisfying as your goddess, pleasuring her devotees is still a great way to spend the time when you aren't being railed by her. The best occasions are the ones when your goddess herself graces the temple with her presence, and rails you in front of all her disciples, showing off her sheer size, power, and virility.";
 		say "     Fortunately for you, no matter how powerful of a goddess your mistress becomes, no matter how unbelievably huge and hung she is, she always has time for her perfect slutty familiar. In between the times when you're servicing her, all you can think about is the next time she'll fuck you, and she never keeps you waiting for very long. You're in your own personal heaven every time your booty is wrapped around your goddess' divine cock, the only thing that can truly fill you at your incredible size. The warmth she brings inside you is equal parts love and lust, something you're perfectly happy to be drowning in for the rest of your days. Your mistress, your goddess, your queen, and everything else besides—she's the only thing you'll ever need.";
-		[I was thinking that would be the submit option, the pc then ending up in the drakes temple as her concubine and species idol. The entire city having turned into magic drakes thanks to the magic she can get the pc to build up from butt stuffin. The bigger the pcs butt, the more magic she gets. Thats sorta what i wanted. Submit and she makes a perfect society of lust, size and plenty thanks to the rampant amount of magic around. Everyone gets to live lives of pleasure without need or want with her as their goddess ( all the magic flowing to her will certainly let her achieve that.)]
+		[I was thinking that would be the submit option, the pc then ending up in the drakes temple as her concubine and species idol. The entire city having turned into magic drakes thanks to the magic she can get the pc to build up from butt stuffin. The bigger the pcs butt, the more magic she gets. That's sorta what I wanted. Submit and she makes a perfect society of lust, size and plenty thanks to the rampant amount of magic around. Everyone gets to live lives of pleasure without need or want with her as their goddess ( all the magic flowing to her will certainly let her achieve that.)]
 		decrease score by 25;
 		now humanity of Player is 0;
 		trigger ending "Magic Dragoness's Servant";
@@ -996,7 +992,7 @@ to say mdrake_bad_end:
 		say "     In an instant you have the same shaft you were worshiping placed against your rear entrance, expecting a sudden and forceful penetration. Instead, she simply rests outside your hole, as if waiting for something. A flash of comprehension dawns, as you realize that she wants you to make the first move, and give her a treat. Grumbling internally, you nonetheless start to gently push yourself backwards onto her cock, slowly and carefully welcoming her inside. Bit by bit she stretches you out, under the power of your own limbs, until you are at last resting most of the way down her dick, as far as you can push yourself at this angle. When you reach that point you simply savor the sensation, against your better judgment, while trying not to think about the fact that the only thing hiding you from the room is a thin tablecloth.";
 		say "     After that moment of contemplation, you start to rock back and forth, slowly working her in and out of you. Each time she's fully sheathed in you, you shiver in a mix of unwelcome pleasure and humiliation, for just how easily you're letting yourself be controlled by this sorceress. Despite your shame, however, your slams become more and more energetic, unable to help yourself when you have such a huge rod to fill you. Your ever more eager attempts extract the seed from her titanic sack eventually become a success, marked by the drake finally taking action herself and making one final thrust into you, deeper than you reached on your own. Once she hilts into your ass, balls clapping against your cheeks, she releases a torrent of enchanted cum deep into you, and slowly your world fades into a haze of pleasure, the only clear thought as you go under being about how satisfied the drake sounds.";
 		WaitLineBreak; [tower]
-		say "     This time your return to consciousness is far swifter, as you sit directly upright from where you were apparently laying down. A far cry from the restaurant you were just in, you instead are in a somewhat spartan room of drab colors, with no doors to be seen and merely a single window, with the only comfortable item in sight being the rather large and fluffy bed you find yourself on. In sharp contrast to the rest of the room, the bed is also primarily a bright and eye catching pink, with the occasional trim or throw pillow in clean whites or softer pinks. Where the room around you looks like a dungeon, if a well furnished one, the bed looks fit for a princess. A look down at yourself once again, and you find yourself dressed in a regal nightgown, a perfect match to the bed. Rather than let that distract you, you look around further, expecting the drake to appear from anywhere.";
+		say "     This time your return to consciousness is far swifter, as you sit directly upright from where you were apparently laying down. A far cry from the restaurant you were just in, you instead are in a somewhat Spartan room of drab colors, with no doors to be seen and merely a single window, with the only comfortable item in sight being the rather large and fluffy bed you find yourself on. In sharp contrast to the rest of the room, the bed is also primarily a bright and eye catching pink, with the occasional trim or throw pillow in clean whites or softer pinks. Where the room around you looks like a dungeon, if a well furnished one, the bed looks fit for a princess. A look down at yourself once again, and you find yourself dressed in a regal nightgown, a perfect match to the bed. Rather than let that distract you, you look around further, expecting the drake to appear from anywhere.";
 		say "     Unlike the previous strange situations you've been in, quite some time passes before the slightest interesting thing happens. You end up passing the time exploring every corner of your prison, learning that you seem to be in the upper room of some sort of tower, and eventually changing out of the sleepwear you had into an ornate dress, because surely it's better than nothing, right? Eventually however, the tedium is broken by a loud roaring sound, strong enough to shake even the stone room you're trapped in. You immediately rush to the window to see what might have caused it, and true to form find the magic drake outside the window. Or in this case, the magic dragon. The sorceress seems to have grown far larger than before, and has taken a much more feral dragon form. The second thing you notice, however, is the endowment on this dragon, a truly massive shaft that manages to somehow be larger still than that of the drake's normal self. The sight of that cock leaves your ass feeling suddenly empty, and you quickly shake your head to try and dismiss thoughts of how it would feel inside you.";
 		say "     When you return to looking forward, the dragon grins. The expression is completely different on the more bestial face, but is still perfectly recognizable as the self satisfied grin of the magic drake. With no more warning than what her smile always promises, she dives forward, and grabs you in one huge claw, lifting you into the air. For a moment you flail wildly, your first reaction to try and escape her grasp, but a glance at the ground far below you dissuades you from that course of action. Instead you are left to simply wait for the sorceress to do something, preferably land. Some time later, your silent wish is granted, as she glides downward, finally coming to a rest within a mountainside cave. She carefully drops you onto the floor with her claw, or more specifically a strange bowl-shaped depression in that floor, before looking down at you with clear hunger in her draconic eyes.";
 		WaitLineBreak;
@@ -1038,6 +1034,14 @@ instead of sniffing gilded staff:
 
 Usedesc of gilded staff is "[mdrakecontact]";
 
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+1	"Wallstuck"	Wallstuck	"[EventConditions_Wallstuck]"	Grey Abbey Library	2500	2	100
+
+to say EventConditions_Wallstuck:
+	if (mdasslevel > 3 and gilded staff is not owned):
+		now CurrentWalkinEvent_ConditionsMet is true;
+
 Table of GameEventIDs (continued)
 Object	Name
 Wallstuck	"Wallstuck"
@@ -1048,10 +1052,7 @@ The level of Wallstuck is 5.
 Sarea of Wallstuck is "Outside".
 
 [Drake Visit - gain gilded staff and leads to more content]
-instead of navigating Grey Abbey Library while (location of player is Red Light District and mdasslevel > 3 and gilded staff is not owned and a random chance of 1 in 2 succeeds):
-	say "[NavCheck Grey Abbey Library]";
-	if NavCheckReturn is false, stop the action;
-	move player to Grey Abbey Library;
+to say ResolveEvent Wallstuck:
 	say "     It all began as an otherwise normal day at the Grey Abbey Library. You had been minding your own business for the most part, taking a break from the hectic adventures of the city around you, and simply relaxing in your own body. Suddenly, however, this peace is disrupted when a loud crackling sound echoes from somewhere near the front entrance. Startled, you turn to face the entrance, your not-insignificant rear armament swinging wide enough to smack the side of a shelf and knock several items loose. You find more important things occupy your attention than cleaning up after your momentary distract, however, as you see the likely source of the unusual sound – the magic drake herself, at your own front door.";
 	say "     Seeing the one responsible for a specific part of your own transformation right here in the library, so far away from her usual haunts, is enough to make you speechless. Though you can't see it yourself, you suspect your own expression is similarly in a state of disbelief. The drake however is seemingly unbothered, or perhaps even somewhat pleased, by your reaction to her presence. Her relatively calm face shifts into a wide grin, rife with the smug aura you so associate with her, and she strides towards you. 'Oh, so this is where my familiar has been living, hmm? Not a bad little home, really, a fine place for my toy to stay when away from me.' Before you have time to truly process that, she reaches your position and throws a scaled arm around your shoulder, giving you a slight squeeze. 'Well, aren't you going to give me a tour?' Still slightly in a state of emotional disarray, and further distracted by the closeness of the overpowering figure, you nod dumbly, and start walking.";
 	WaitLineBreak;
@@ -1064,6 +1065,7 @@ instead of navigating Grey Abbey Library while (location of player is Red Light 
 	say "     'The next time you're ready to have a visit from your mistress, or even just wish to speak with me further, just use it.' She smirks at your still slightly bewildered expression. 'Something tells me you won't have any trouble understanding how it's used, isn't that right familiar?' With a loud chuckle, she steps away from you completely, and strolls purposefully back out of the library, leaving you still dazed and very aroused – something you're familiar with when it comes to the sorceress.";
 	CreatureSexAftermath "Player" receives "AssDildoFuck" from "Magic Drake";
 	ItemGain gilded staff by 1;
+	now Wallstuck is resolved;
 
 to say mdrakecontact:
 	if mdrakequest is 0: [first time scene]

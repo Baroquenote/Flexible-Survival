@@ -73,7 +73,7 @@ Instead of conversing the Brian:
 		say "     'Huh?' The large rhino man stops staring at the wall for a minute, his eyes darting around until they finally focus on you. 'Oh, hey. Not a good idea to go and sneak up on a guy like that,' he says, pushing a fist into the palm of his other hand, the action releasing several audible cracks before he mirrors the movement with his off hand, drawing out more sounds of knuckles cracking. He then precedes to look back at the cracked area of the wall a second later. 'The name is Brian, and you can, I'm sure, plainly see that I had a bit of a run-in with a rather unique mutant....well, I guess he more ran into me,' Brian chuckles lightly, his gray skin seeming to flush red in embarrassment, a jerking movement causing you to flick an eye to his groin.";
 		WaitLineBreak;
 		say "     'I'm sure a person of your ";
-		if BodyName of Player is "Human" and player is pure:
+		if BodyName of Player is "Human" and Player is pure:
 			say "resistance,' ";
 		else:
 			say "curiosity,' ";
@@ -268,7 +268,7 @@ to say sexwithBrian05_prelim:		[anal on Brian preliminary - not been fucked befo
 	if "Black Belt" is listed in feats of Player, increase playernum by 4;
 	if "Dominant" is listed in feats of Player, increase playernum by 2;
 	if Player is submissive, decrease playernum by 2;
-	let briannum be 75;  [approx equiv for Rhino]
+	let briannum be 75; [approx equiv for Rhino]
 	if HardMode is true, increase briannum by level of Player / 2;
 	now briannum is a random number between 1 and briannum;
 	now playernum is a random number between 1 and playernum;

@@ -59,30 +59,30 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Batcubus"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Batcubus"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Batcubus" to infections of FurryList;
 	add "Batcubus" to infections of NatureList;
 	add "Batcubus" to infections of FemaleList;
 	add "Batcubus" to infections of BipedalList;
 	add "Batcubus" to infections of FlightList;
 	add "Batcubus" to infections of TailList;
-	now Name entry is "Batcubus"; [Name of your new Monster]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now Name entry is "Batcubus";
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]She grabs your groin roughly with her gloved hand while giggling.[or]She slaps you hard on the face, leaving a red mark of a hand.[or]The batcubus knocks you down and places the heel of her purple boot hard on your chest, blowing a kiss before jumping away, giggling.[at random]"; [Text used when the monster makes an Attack]
 	now defeated entry is "[beatthebatcubus]"; [ Text or say command used when Monster is defeated.]
 	now victory entry is "[Batcubus attack]"; [ Text used when monster wins, can be directly entered like combat text or description. Or if more complex it can be linked to a 'To Say' block as the demonstration text shows.]
 	now desc entry is "[mongendernum 4]     An anthropomorphic bat, but she seems different than a normal bat. Her lips are coated in a purple lipstick, which obviously contains a powerful aphrodisiac judging by the smell. Her breasts are rather large, JJ cups it looks like. Her torso appears to be covered by some red corset, but that is obviously just fur when you spot a drop of milk come out from her nipple. Her arms are in elegant white gloves that go almost all the way to her shoulders. Her legs are covered in purple high heel boots that cover them completely. Her fur is snow white. Her face and head is that of a bat's with its upturned nose and triangular ears. She simply smiles at you, licking her lips as she saunters over to you, obviously wanting to kiss you."; [ Description of the creature when you encounter it.]
 	now face entry is "that of a female bat. It is beautiful and elegant, and your lips are covered with purple lipstick that is sweet when you lick it"; [ Face description, format as 'Your face is (your text)']
 	now body entry is "slender and elegant. Your torso looks like it is covered with a red corset, but it is actually fur"; [ Body Description, format as 'Your Body is (your text)']
-	now skin entry is "white furred"; [ skin Description, format as "Looking at yourself, your body is covered in (your text) skin"]
+	now skin entry is "white furred"; [ Skin Description, format as "Looking at yourself, your body is covered in [Skin of Player] skin." ]
 	now tail entry is "Your ass is that of a bat. It is really cute."; [ Tail description, write a whole Sentence or leave blank. ]
 	now cock entry is "pteropine"; [ Cock Description, format as you have a 'size' (your text) cock]
-	now face change entry is "you feel something weird on your lips. You lick them just to find they taste sweet and your mouth and groin quickly fill with lust-filled warmth. They are coated in the batcubus's purple lipstick. You can't help but lick your lips over and over, each lick making you more and more horny and advances your transformation further. Your face pulls forward into a bat muzzle and your ears extend into triangles and pulled to the top of your head. You soon finish your transformation, with your face resembling that of a beautiful bat. You lick your lips once again"; [ face change text. format as "Your face feels funny as (your text)." ]
-	now body change entry is "your body begins to slender out, becoming beautiful and elegant. Your hands are covered in white gloves. Your legs end up covered in purple high-heeled boots that go all the way up your legs. A strange red fur covers your torso, making it look like you are wearing a red corset, even though you are actually naked"; [ body change text. format as "Your body feels funny as (your text)." ]
-	now skin change entry is "it is covered in beautiful white fur"; [ skin change text. format as "Your skin feels funny as (your text)." ]
-	now ass change entry is "you bend over, panting in lust. Your ass and hips fill out, making you look oh so fuckable and fertile in your position"; [ ass/tail change text. format as "Your ass feels funny as (your text)." ]
+	now face change entry is "you feel something weird on your lips. You lick them just to find they taste sweet and your mouth and groin quickly fill with lust-filled warmth. They are coated in the batcubus's purple lipstick. You can't help but lick your lips over and over, each lick making you more and more horny and advances your transformation further. Your face pulls forward into a bat muzzle and your ears extend into triangles and pulled to the top of your head. You soon finish your transformation, with your face resembling that of a beautiful bat. You lick your lips once again"; [ Face change text, format as "Your face feels funny as [face change entry]." ]
+	now body change entry is "your body begins to slender out, becoming beautiful and elegant. Your hands are covered in white gloves. Your legs end up covered in purple high-heeled boots that go all the way up your legs. A strange red fur covers your torso, making it look like you are wearing a red corset, even though you are actually naked"; [ Body change text, format as "Your body feels funny as [body change entry]." ]
+	now skin change entry is "it is covered in beautiful white fur"; [ Skin change text, format as "Your skin feels funny as [skin change entry]." ]
+	now ass change entry is "you bend over, panting in lust. Your ass and hips fill out, making you look oh so fuckable and fertile in your position"; [ Ass/tail change text, format as "Your ass feels funny as [ass change entry]." ]
 	now cock change entry is "it becomes pteropine"; [ cock change text. format as "Your cock feels funny as (your text)." ]
 	now str entry is 13;
 	now dex entry is 19;
@@ -90,35 +90,35 @@ When Play begins:
 	now per entry is 12;
 	now int entry is 10;
 	now cha entry is 16;
-	now sex entry is "Female";          [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
-	now HP entry is 49;                 [ How many HP has the monster got? ]
-	now lev entry is 6;                 [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
-	now wdam entry is 6;               [ Amount of Damage monster Does when attacking.]
-	now area entry is "Warehouse";        [ Current options are 'Outside' and 'Mall'. Case sensitive]
-	now Cock Count entry is 0;               [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
-	now Cock Length entry is 0;         [ Length infection will make cock grow to if cocks]
-	now Ball Size entry is 0;          [ Size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
-	now Nipple Count entry is 2;             [ Number of nipples infection will give you (males have nipples too) ]
-	now Breast Size entry is 16;        [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
-	now Male Breast Size entry is 16;   [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 1;               [ if sex = "Female or both", indicates the number of female sexes infection will grant you.]
-	now Cunt Depth entry is 12;        [ Length of female sex infection will attempt to give you. ]
-	now Cunt Tightness entry is 7;          [ Width of female sex infection will try and give you ]
+	now sex entry is "Female"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now HP entry is 49; [ How many HP has the monster got? ]
+	now lev entry is 6; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
+	now wdam entry is 6; [ Amount of Damage monster Does when attacking.]
+	now area entry is "Warehouse"; [ Current options are 'Outside' and 'Mall'. Case sensitive]
+	now Cock Count entry is 0; [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
+	now Cock Length entry is 0; [ Length infection will make cock grow to if cocks]
+	now Ball Size entry is 0; [ Size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
+	now Nipple Count entry is 2; [ Number of nipples infection will give you (males have nipples too) ]
+	now Breast Size entry is 16; [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Male Breast Size entry is 16; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 1; [ if sex = "Female or both", indicates the number of female sexes infection will grant you.]
+	now Cunt Depth entry is 12; [ Length of female sex infection will attempt to give you. ]
+	now Cunt Tightness entry is 7; [ Width of female sex infection will try and give you ]
 	now SeductionImmune entry is false;
-	now libido entry is 80;             [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
-	now loot entry is "batcubus milk";  [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
-	now lootchance entry is 75;         [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 3;               [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now libido entry is 80; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
+	now loot entry is "batcubus milk"; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
+	now lootchance entry is 75; [ Chance of loot dropping 0-100 ]
+	now MilkItem entry is "Batcubus Milk"; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is "Batcubus Cum"; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]slender[or]elegant[cycling]";
 	now type entry is "[one of]bat[or]batty[or]bat-like[at random]";
-	now magic entry is true;            [ Is this a magic creature? true/false (normally false) ]
-	now resbypass entry is false;       [ Bypasses Researcher bonus? true/false (almost invariably false) ]
+	now magic entry is true; [ Is this a magic creature? true/false (normally false) ]
+	now resbypass entry is false; [ Bypasses Researcher bonus? true/false (almost invariably false) ]
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]  [ Is this a non-infectious, non-shiftable creature? True/False (usually false) ]
-	now DayCycle entry is 0;      [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]  [ Is this a non-infectious, non-shiftable creature? True/False (usually false) ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -129,7 +129,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -141,7 +141,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -160,7 +160,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -181,18 +181,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -206,19 +206,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -236,12 +236,35 @@ instead of sniffing batcubus milk:
 say "You open the lid of the bottle and smell the milk. Seems fresh and drinkable, even though it isn't refrigerated. Must be a side effect of the nanites in it.";
 
 batcubus milk is a grab object.
+batcubus milk is milky.
+Purified of batcubus milk is "distilled milk".
+batcubus milk is infectious.
+Strain of batcubus milk is "Batcubus".
 Usedesc of batcubus milk is "[batcubus milk use]";
 
 to say batcubus milk use:
 	say "Taking the cap of the bottle of milk, you greedily drink down its contents, swallowing the tasty milk.";
 	PlayerDrink 6;
 	infect "Batcubus";
+
+Table of Game Objects (continued)
+name	desc	weight	object
+"Batcubus cum"	"A plastic water bottle containing a moderate amount of milky white fluid. Almost could be mistaken for some sort of buttermilk, if someone hadn't written 'Batcubus Cum' across the label on the bottle. You [italic type]could[roman type] drink it to quench your thirst, or you maybe just do it for fun. Who knows what else it might do to you though..."	1	batcubus cum
+
+batcubus cum is a grab object.
+batcubus cum is cum.
+Purified of batcubus cum is "distilled cum".
+batcubus cum is infectious.
+Strain of batcubus cum is "Batcubus".
+Usedesc of batcubus cum is "[batcubus cum use]";
+
+to say batcubus cum use:
+	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy cum run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
+	PlayerDrink 5;
+	SanLoss 5;
+
+instead of sniffing batcubus cum:
+	say "You open the lid for a moment and take a sniff. Doesn't smell too bad actually, just kinda nutty.";
 
 Section 4 - Endings
 

@@ -33,7 +33,7 @@ to say Helot wins:
 			WaitLineBreak;
 			say "     Lying on the ground, exhausted, naked and sweaty, you notice something... different about the man who just fucked you. His hair has gotten shorter and he seems even more in shape than before. The helmeted head of the changed Helot turns to look at you. 'Get off my cloak, slave - before you leak cum all over it.' He even sounds different, more commanding and certain of being obeyed somehow. Undoing the clasp holding your red cloak, you put a hand under your asshole so that the man's sperm doesn't drip on the fabric and move aside. Your fucker picks up the cloak and dons it, then walks away, his transformation into a proud warrior complete. After the newly shifted Spartan is gone, you clean yourself up as much as possible, then pick up the ragged loincloth lying beside you and bind it around your hips.";
 			say "[StealthHelotTransformation]";
-		else if BodyName of Player is "Spartan Warrior" and FaceName of Player is "Spartan Warrior" and player is female: [Spartan females + herms]
+		else if BodyName of Player is "Spartan Warrior" and FaceName of Player is "Spartan Warrior" and Player is female: [Spartan females + herms]
 			say "     As you kneel down in front of him to show your submission, the Helot looks at you in shock for a second, then chuckles. 'So you're not all such unbeatable warriors after all.' Looking downward, he notices that even though you do have a male body, there is a pussy between your legs. 'Oh wait - you aren't a Spartan boy after all. What were you thinking coming here, girl? Not that it matters now... gonna pound that pussy!' The young man undoes the knots on his ragged loincloth, then throws it aside to reveal his already half hard cock. 'Come and get me ready, little Spartan,' he says tauntingly, holding out his erection and grinning widely as you have to crawl several feet to take it into your mouth. He lets you bob up and down on his shaft for a while, then decides to take things into his own hands. Plucking your Greek helmet off and donning it himself, he runs both his hands over your head and grabs you by the hair. Then he starts moving your head as he fucking into your mouth. Pushing deep quickly, he makes you cough a few times but still continues going without much interest in your comfort.";
 			WaitLineBreak;
 			say "     The Helot's moans in lust get louder and louder and he plunges in and out of your mouth with increasing speed until suddenly, he stops, his shaft deep in your throat. Taking a deep breath, he pulls out slowly, waiting a moment before saying 'Phew - almost came right here. But not yet - I promised you I'll fuck you. Get on your back, girlie.' Stepping back, he leers at you in lust as you move to lie down on your red cloak. Your captor moves into position between your legs, raising and spreading them. As you feel the tip of his erection hotly against your pussy lips, he says 'Look me in the eye when I fuck you like a common slave! Admit it, this is what you wanted all along!' Then he thrusts into you with a satisfied grunt, burying his hard shaft in your vagina. As his invading member slides deeper, stretching your passage around it, something inside you tells you he's right - this is right - your place in the world is under this virile young man, serving him. Fully submitting to be the Spartan's slave with that realization, you grind back against him, moaning deeply as his cock rubs your insides. Slamming forward with powerful thrusts, the young warrior's hips hitting yours with slapping noises, the Spartan speeds up as his arousal mounts. Soon he gives a deep moan, plunging his shaft as deep into your body as he can, and spurt after spurt of his seed shoot into you, splashing into your womb. You can feel his hard shaft pulse against your inner walls with each further burst of cum. 'Feel that, you Spartan bitch? That's a former slave's load filling you. Try to explain that to your family!'";
@@ -170,7 +170,7 @@ to say Helot loses:
 
 to say Helot ride:
 	say "     Spreading the dropped loincloth a bit on the ground with your foot so he at least has something under his ass, you tell the young man to lie down. He obeys your commands quickly and without hesitation, looking pretty good with his toned body stretched out and the long hard cock standing erect, waiting for your pleasure.";
-	if (player is male) or (player is herm and anallevel > 1): [male + herm (except those with less anal)]
+	if (Player is male) or (Player is herm and anallevel > 1): [male + herm (except those with less anal)]
 		say "     Kneeling down next to him, you bend over and take the Helot's cock into your mouth. Bobbing up and down on it a bit, you make sure it's nice and wet, then straddle him with your knees left and right of his hips. With this athletic man laid out before you, his erection resting hotly against your bottom you almost shake in anticipation. After running your hands down his chest, stroking and touching his hairless skin, you grasp his erect shaft to hold it up and lower yourself on it.";
 		say "     Both of you moan as the tip of his cock penetrates your hole, spreading it around his hard shaft. You go deeper, slowly sinking him further into you until finally your buns touch his hips and he's all the way in. Taking a deep breath, you wait for a moment to get used to the hard rod, then start sliding up and down on it. The Helot's shaft feels great rubbing your inner walls and you gasp as it hits your prostate. Riding his cock has your former opponent pretty wound up, and soon he puts his hands on your hips to pull you down on his shaft as he thrusts upwards into you.";
 		say "     With the wild ride on the Helot's cock just getting a bit wilder, it's not much longer before you're driven over the edge. Your whole body stiffens and your anal muscles grip your partner's cock tightly as you cum, long strings of your seed arching out of your cock to splat all over the Helot's chest. And he's not far behind either, with his shaft starting to throb moments later as your insides are painted with his cum.";
@@ -244,9 +244,9 @@ When Play begins:
 	add "Helot Manservant" to infections of MaleList;
 	add "Helot Manservant" to infections of BipedalList;
 	now Name entry is "Helot Manservant";
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]He gives you a hard kick - ouch, that hurt.[or]He punches you with a balled fist.[or]Throwing a handful of dirt into your face, the young Helot manages a painful blow to your side while you're off guard.[at random]";
 	now defeated entry is "[Helot loses]";
 	now victory entry is "[Helot wins]";
@@ -271,31 +271,31 @@ When Play begins:
 	now HP entry is 70;
 	now lev entry is 9;
 	now wdam entry is 12;
-	now area entry is "Campus";         [ Case sensitive]
-	now Cock Count entry is 1;               [ number of cocks if sex is 'Male' or 'Both' ]
+	now area entry is "Campus"; [ Case sensitive]
+	now Cock Count entry is 1; [ number of cocks if sex is 'Male' or 'Both' ]
 	now Cock Length entry is 12;
-	now Ball Size entry is 2;          [ Size of balls ]
-	now Nipple Count entry is 2;             [ Number of nipples. ]
-	now Breast Size entry is 0;         [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Ball Size entry is 2; [ Size of balls ]
+	now Nipple Count entry is 2; [ Number of nipples. ]
+	now Breast Size entry is 0; [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
 	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 0;               [ number of pussies if sex is 'Female' or 'Both' ]
+	now Cunt Count entry is 0; [ number of pussies if sex is 'Female' or 'Both' ]
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	now SeductionImmune entry is false;
-	now libido entry is 40;             [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
-	now loot entry is "";               [ Dropped item, blank for none. Case sensitive. ]
-	now lootchance entry is 0;          [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 3;               [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now libido entry is 40; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
+	now loot entry is ""; [ Dropped item, blank for none. Case sensitive. ]
+	now lootchance entry is 0; [ Percentage chance of dropping loot, from 0-100. ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "lean"; [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender". Use [one of] to vary ]
-	now type entry is "human";          [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
+	now type entry is "human"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;      [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -306,7 +306,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -318,7 +318,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -337,7 +337,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -358,18 +358,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -383,19 +383,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -422,7 +422,7 @@ WanderingHelotTimer is usually 20000.
 to say ResolveEvent Wandering Helot:
 	If resolution of Wandering Helot is 0:
 		say "     While exploring the streets of the once rich and prosper High Rise District, you come across a very unusual event. Far ahead of you, still barely visible from your perspective of view, is a man walking in your direction. From what you can perceive, he's wearing a backpack, holding onto the straps with his posture slightly arched forward, an indicative that whatever he's carrying must be heavy, or that he has found plenty of loot in his last scavenge run. Though what makes your eyes jump is that he, in fact, looks perfectly human... Until his silhouette lightens and his true nature is revealed. A fully fledged, independent and lonesome helot, walking around all by himself, scavenging around the streets of this district, has somehow found a way to escape the college grounds and become a wanderer!";
-		say "     How he managed to do that, you have no idea, but he surely looks a little puffier than the usual helots you encounter under the sometimes cruel ownership of the spartans. This one must have been having success in his adventurous life, and judging by the amount of loot he must have on his back right now, you'd say he's got very good scavenging skills. He hasn't noticed you yet, as you took cover behind a corner to some dark alley before you fell in his line of sight, and he's going to get right past you in a few.";
+		say "     How he managed to do that, you have no idea, but he surely looks a little puffier than the usual helots you encounter under the sometimes cruel ownership of the Spartans. This one must have been having success in his adventurous life, and judging by the amount of loot he must have on his back right now, you'd say he's got very good scavenging skills. He hasn't noticed you yet, as you took cover behind a corner to some dark alley before you fell in his line of sight, and he's going to get right past you in a few.";
 		now resolution of Wandering Helot is 1;
 		WaitLineBreak;
 		WanderingHelot1;
@@ -492,7 +492,7 @@ to WanderingHelot1:
 			LineBreak;
 			say "     ([link]Y[as]y[end link]) - Accept and give him a blowjob in exchange for loot.";
 			say "     ([link]N[as]n[end link]) - You could just try to tackle him down, anyway.";
-			if player consents: [blowjob]
+			if Player consents: [blowjob]
 				say "     What's the harm in sucking some dick for vital supplies? Besides that, he's got a really good one, so it's a win-win situation for both of you... probably. Nodding positively to the Helot, he gives his manhood a longer stroke and steps forward, placing a hand on the back of your head and guiding you over to his crotch. 'You better do a good job, too.'";
 				say "     With you now on your knees in front of him, you bring your hands over his shaft and balls, giving each one of them a nice gentle squeeze before you lick the underline of his meat stick right towards the top of his already throbbing erection. 'Is that all you've got? That's how bad you want some of my hard earned loot?!' he taunts you, but the moans he lets out while you work his cock betray his attempts at looking tough. Eventually, he just loses himself in the sensation of your warm tongue and mouth covering every pulsing inch of his dong, and he stops talking altogether, leaning his head back and simply enjoying your treatment. Now with the Helot fully under the influence of your amazing cocksucking skills, you manage to pick up the pace and lead him closer to the edge...";
 				say "     'Fuck, I wasn't expecting you to be so good...' he says, which is actually flattering. Grabbing his balls with one hand and stroking the rest of his shaft with the other, you give it all into sucking the entirety of his length, and that soon drives him near orgasm. You have a feeling he tries to make you slow down, but he doesn't seem very sure of that, and so you know you have the green light to make him cum right away. Stroking his dick with increased vigor as your tongue works the tip of his cock, leaking precum like crazy, his moaning intensifies as he gets closer to cum...";
@@ -556,7 +556,7 @@ to WanderingHelotTackle:
 		else: [SEX]
 			LineBreak;
 			say "     The thought seems to grow more and more attractive in your mind, as you give in to the sensation of the helot's dick, still covered by his loincloth, slipping between your cheeks. 'I'm sure you want to steal from me! But... You're making me horny, too...!' he admits, and his efforts at fighting you come to a stop. Jerking his hips, you feel each thrust against your rear pump his erection a second harder than the last, and you find yourself nearly riding his prick, which is throbbing by now. This amount of teasing leaves you incapable of resisting the temptation, and with the helot underneath you, now even more vulnerable, it's just so easy to get what you want from him... either physically or materialistically.";
-			say "     However, right now you're just focused on the throbbing rod that's teasing your backside, and feeling really tempted to just sit on it and give you both a very quick release. He seems to be helpless regarding this, not even fighting back as you gently push his loincloth away, revealing his by now glistening and rock hard erection. Then, slipping your hand around the throbbing shaft, you start stroking it, slowly and gently, as you[if player is not naked] slide down your lower gear just enough so that your cheeks stick outside and[end if] hover your rear above the manservant's dong, which is pulsing and eager for attention. The tip is so wet that you can feel it slide around your pucker with ease, a simple little push enough to make the cock sink itself inside you. 'Ahh...! Oh, it has been a while since I... Fuck, that feels good...'";
+			say "     However, right now you're just focused on the throbbing rod that's teasing your backside, and feeling really tempted to just sit on it and give you both a very quick release. He seems to be helpless regarding this, not even fighting back as you gently push his loincloth away, revealing his by now glistening and rock hard erection. Then, slipping your hand around the throbbing shaft, you start stroking it, slowly and gently, as you[if Player is not naked] slide down your lower gear just enough so that your cheeks stick outside and[end if] hover your rear above the manservant's dong, which is pulsing and eager for attention. The tip is so wet that you can feel it slide around your pucker with ease, a simple little push enough to make the cock sink itself inside you. 'Ahh...! Oh, it has been a while since I... Fuck, that feels good...'";
 			WaitLineBreak;
 			say "     You make an attempt to take as much of it inside you as you can, feeling his length reaching deep in your ass and throbbing even more. How much time has it been since this guy had any release at all? You feel like he's about to bust and you just got started... Though it's your hole that's feeling really good right now, so you focus on that by bringing it up and down, albeit slowly so you don't set off a cum eruption just yet. With enough care, you manage to ride his meat stick for a while before he warns you 'I'm gonna cum...!' with a squeaky tone, almost as if he was really trying hard to not just shoot for a long time now. Knowing he really won't last for much longer, you proceed to pull out...";
 			say "     But as you do so, as slow as you try to be, you do it for long enough to set him off, and before you get your ass out - quite literally - of the danger area, you feel a thick and warm spurt of man milk hitting your buttcheek hard! You figure you should help him with the rest by stroking him as he unloads the rest, cum just flying everywhere around the both of you, and he surely shoots a lot, not even saving your hand from getting soaked in the white stuff! Just how much cum was this guy holding inside? He catches his breath and looks at you, completely exhausted from the intense orgasm he just had. 'That was... Fuck... I-I mean, well, now that you've got what you wanted, can you let me go?!' He doesn't sound very sure of what he's saying, but since you already had your fun, it's probably best just to leave him be. You get up to stand on your feet and move on...";
@@ -619,12 +619,12 @@ to say ResolveEvent Helot Captive:
 		now inasituation is false;
 		if fightoutcome < 20: [won]
 			now resolution of Captive Helot is 2;
-			say "     Now, there is a helot in here... On the ground, tied up, vulnerable, and with a hard-on between his legs, looking at you with puppy eyes. His mouth is covered as well, and his hands are tied on his back. The way he's spreading his legs and showing off his throbbing meat may seem like he's begging you for some other kind of [']release[']. The spartan may come back soon with reinforcements, and it's too late to save this man, but you could show him some mercy very quickly, if you're willing to put your hands to work.";
+			say "     Now, there is a helot in here... On the ground, tied up, vulnerable, and with a hard-on between his legs, looking at you with puppy eyes. His mouth is covered as well, and his hands are tied on his back. The way he's spreading his legs and showing off his throbbing meat may seem like he's begging you for some other kind of [']release[']. The Spartan may come back soon with reinforcements, and it's too late to save this man, but you could show him some mercy very quickly, if you're willing to put your hands to work.";
 			say "     With your superior strength, you manage to subdue the Spartan warrior and kick him out of the spot, to which he is not happy about. 'I will bring justice upon you the next time I see you! Just you wait!' Having received his threat, your way to his victims is free now, and you manage to at least save the soldier. You actually have no idea how one was dragged down all the way here, but he thanks you as you undo the ropes restraining him. 'Can't thank you enough for this! This place is crazy... I can't give you anything in return but my appreciation, however. Hope that's enough...' he says to you in a rather afraid tone. But you weren't expecting a reward anyway, so you let him go, and he eagerly runs away from here.";
 			LineBreak;
 			say "     ([link]Y[as]y[end link]) - Provide him with a generous handjob.";
 			say "     ([link]N[as]n[end link]) - Just leave at once.";
-			if player consents: [handjob]
+			if Player consents: [handjob]
 				Linebreak;
 				say "     You suppose a quick handwork won't put you in any danger, and it seems like the poor Helot could really use your help. Crouching down, you slip your hand around the manservant's shaft, feeling it throb in your grasp as soon as you tighten your grip around it, and begin slowly stroking it up and down. He lets out a long muffled moan as he gives in to your touch, closing his eyes and resting his head against the wall. This will be very quick, after all, as he's already moving his hips matching with your own movements. You stroke it faster and faster after about a minute, and it's another couple of seconds before his moaning gets louder, becoming grunts of pleasure soon enough.";
 				say "     Breathing heavily, he starts shooting all over himself as you continue to milk his cock, not letting go of it until the very last drop leaks out of his throbbing member. You've got some of the juice in your hand, but all the rest landed right over his abs and chest, as well as the ropes keeping him in place. He now seems thrown in bliss, not even paying attention to you as you start leaving the area, and just in time! You can see an angry group of Spartans walking towards the spot, and you're glad to be far gone before they can catch you. Now you just have to keep a low profile, but it shouldn't be that much of a problem since the one you fought probably doesn't remember your face at all, anyway.";
@@ -666,7 +666,7 @@ to say ResolveEvent Generous Helot:
 		LineBreak;
 		say "     ([link]Y[as]y[end link]) - Accept his offering.";
 		say "     ([link]N[as]n[end link]) - Refuse and let him keep it.";
-		if player consents:
+		if Player consents:
 			say "     You nod, extending your hand to grab the [bold type]canned food[roman type], and he lets you have it. There's a smile on his face as he takes his leave, not even looking behind. How odd...";
 			ItemGain food by 1 silently;
 			now GenerousHelotTimer is turns;

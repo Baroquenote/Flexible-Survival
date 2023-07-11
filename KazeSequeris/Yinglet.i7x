@@ -6,11 +6,13 @@ to say Yinglets wins:
 	if Player is male:
 		say "     You've been bested by these little ambushers, and you've no choice but to give in to their demands. Judging by the way they smirk and stroke their exposed malehoods, there's only one thing they want. They start arguing about who gets what, but before you can crawl away, the alpha of the group cuts you off and jabs his cock in your face. You bite your lip, but decide cooperation is better for your health. You open your mouth, and he stuffs himself inside. At first you just sit there and take it, letting him hump your face. Eventually though, you start working your tongue around the shaft and adding a bit of suction to better pleasure him. For a moment, you forget that he isn't alone. You're reminded all too suddenly when you feel two pairs of hands spread you from behind! Before you can protest or even process what's about to happen, the two smaller males stuff their smaller members right into your ass, side by side. The double penetration comes as a shock, but luckily they aren't too big to handle.";
 		say "     You squirm, trying to find some comfort in your semi-prone position while you endure the frenzied fucking. The largest male makes a sound between a grunt and a squeak, his stick-like arms gripping your head tight as he feeds his whole cock. You taste a thick, salty liquid flow across your tongue and rapidly fill your mouth. A little manages to escape your lips, but you opt to swallow the rest of it before he suffocates you in the thick fur of his underfluffies. He pulls out and flops backwards, tongue lulling out, and you get your first fresh breath that isn't heavy with his musk. Another moment passes, and you feel the two males in your rear finish one after another. You claw at the dirt as they give you both barrels, pumping your tunnel full of warmth. With them sated, you're free to scamper off, leaving them with grins on their little rodent faces, and you dripping with their seed.";
+		CreatureSexAftermath "Player" receives "AssFuck" from "Yinglet";
 	else if Player is female:
 		say "     The yinglet mob surrounds you, snickering at their newest conquest - you. Resigning to their might, you prepare yourself whatever they have in mind for you. The yinglets close in, dropping their shivs now that they see you nice and compliant. You lie on your back and wait for what's to come. The largest of them proudly steps up and pushes himself up between your legs. The tiny brute lacks any sort of finesse, barely running his tongue along your slit if only to get you slick for himself. He mounts you and unceremoniously crams his malehood into you. Luckily the rat-like creature's small size makes it an easy fit. Meanwhile, his buddies set about using your unoccupied parts. One of them grabs you by the hair and yanks your head his way. Your mouth gets stuffed with yinglet dick, and you've no choice but to suckle at it whilst he thrusts himself against between your lips and against your tongue.";
 		say "     The other one gets impatient and jumps up on your chest. Straddling your torso, he uses his tiny hands to push your breasts together. When he shoves his cock between your breasts, it's a bit uncomfortable for both of you... but after a while, the pre pouring from his tip lubes you up enough for him to enjoy humping your breasts. Despite the circumstances, you actually find yourself enjoying the attention. The male between your legs helps to sate your own lusts, the groping and massaging motions on your chest are almost hypnotic, and the salty taste of pre on your tongue is surprisingly pleasant. You can feel the trio getting closer to their peaks by the way they thrust against you with increasing enthusiasm. The one on your chest finishes first, cramming his conical length between your breasts and cumming against your neck and chin. He pulls back to finish painting your breasts until he's spent. The male in your mouth is next, hugging himself to your head as the salty taste of his orgasm floods your tongue.";
 		WaitLineBreak;
 		say "     The largest male is last to finish, seeming to savor his time in your womanly folds. He pumps you full of his seed, tongue lulling from his mouth from pure bliss. You climax with him, inner muscles squeezing tight as they can around his pointed member. Once the 'alpha' of the group pulls himself from you, the trio retrieve their shivs and skitter off, leaving you a sticky mess on the ground. You sigh softly, feeling oddly satisfied, but also... a subtle longing to find more males to mate with. You move along before those unbidden thoughts can go anywhere dangerous.";
+		CreatureSexAftermath "Player" receives "PussyFuck" from "Yinglet";
 
 to say Yinglets loses:
 	say "     The trio of yinglets collapse in haphazard shapes. You toss one that lands on his back and lies their with his limbs in the air, another tumbles over and folds in half, getting a face full of his own butt. The last noodle lands face-first and bends over backwards. If they weren't the most flexible creatures you'd ever seen, you might've worried that you went a little overboard. As they recover though, they immediately surrender and beg for mercy.";
@@ -22,13 +24,13 @@ to say YingletsSexMenu:
 	now sextablerun is 0;
 	blank out the whole of table of fucking options;
 	[]
-	if player is female:
+	if Player is female:
 		choose a blank row in table of fucking options;
 		now title entry is "Be fucked by them";
 		now sortorder entry is 0;
 		now description entry is "Make it up to the poor guys";
 	[]
-	if player is male:
+	if Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Fuck them";
 		now sortorder entry is 2;
@@ -95,7 +97,7 @@ When Play begins:
 	now NewTypeInfection entry is false;
 	now Species Name entry is "Yinglet";
 	add "Yinglet" to infections of FurryList;
-	add "Yinglet" to infections of Magicallist;
+	add "Yinglet" to infections of MagicalList;
 	add "Yinglet" to infections of MythologicalList;
 	add "Yinglet" to infections of FemaleList;
 	add "Yinglet" to infections of BipedalList;
@@ -108,8 +110,8 @@ When Play begins:
 	now defeated entry is "[Yinglets loses]";
 	now victory entry is "[Yinglets wins]";
 	now desc entry is "[YingletsDesc]";
-	now face entry is "pointed and rodent-like, but with ears resembling that of a bat. You only have four needle-like teeth in the back of your mouth and a single, over-sized tooth at the front. Your tongue within is thin and birdlike, and your eyes are large and round. Little whisker-like feelers sprout from your brow. Your head is supported on a long, flexible neck"; [Your face is (your text).]
-	now body entry is "very curvy... but less like an hourglass, and more like a noodle. Rather than stand up straight, your body is slouched forward like a raptor, relying on your tail for balance. Your arms are an almost comical mix of super-thin and extra-long. The majority of muscle and fat rests in your shortened upper arms, which very quickly give way to your stick-like forearms. The narrow, clawed digits at the end are surprisingly dexterous, and yet somehow a little clumsy. Your legs feel less like legs, and more like a set of stilts. Your thighs are the thickest where all your legs' springy muscle resides. Past that point, your legs are very thin, almost stick-like, ending in hands identical to the ones on your arms. Between your legs lies a little slit that houses your genitals"; [Your body is (your text).]
+	now face entry is "pointed and rodent-like, but with ears resembling that of a bat. You only have four needle-like teeth in the back of your mouth and a single, over-sized tooth at the front. Your tongue within is thin and birdlike, and your eyes are large and round. Little whisker-like feelers sprout from your brow. Your head is supported on a long, flexible neck"; [ Face description, format as "Your face is [Face of Player]." ]
+	now body entry is "very curvy... but less like an hourglass, and more like a noodle. Rather than stand up straight, your body is slouched forward like a raptor, relying on your tail for balance. Your arms are an almost comical mix of super-thin and extra-long. The majority of muscle and fat rests in your shortened upper arms, which very quickly give way to your stick-like forearms. The narrow, clawed digits at the end are surprisingly dexterous, and yet somehow a little clumsy. Your legs feel less like legs, and more like a set of stilts. Your thighs are the thickest where all your legs' springy muscle resides. Past that point, your legs are very thin, almost stick-like, ending in hands identical to the ones on your arms. Between your legs lies a little slit that houses your genitals"; [ Body Description, format as "Your Body is [Body of Player]." ]
 	now skin entry is "fluffy-furred"; [Looking at yourself, your body is covered in (your text) skin.]
 	now tail entry is "Your tail is less a limb on its own, and more an extension of your body. It's long, covered in fur, and narrows down to a pointed tip."; [either empty ("") or full sentence, with period]
 	now cock entry is "pointed and conical";
@@ -142,9 +144,9 @@ When Play begins:
 	now libido entry is 40;
 	now loot entry is "barnacle encrusted gem";
 	now lootchance entry is 30;
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 2;
 	now body descriptor entry is "[One of]slender[or]flexible[or]noodle[or]noodle-like[at random]";
 	now type entry is "yinglet";
@@ -272,7 +274,7 @@ This is the Yinglet Infection rule:
 		trigger ending "Yinglet "; [Here it states, that the ending has been played.]
 		if humanity of Player < 10:
 			say "     At some point, you start thinking about what you're going to do when you're rescued from this place. You imagine what kind of life you'd have in this tiny weasel-rat body of yours. All those humans, and other creatures bigger than you... You'd have to spend all your time not desperately trying not to get stepped on! You consider a job, or a mate... and soon you realize... thinking is hard. But you're so good at it! Yes, back in society, you're a pest at best. But here, you are soso smart! The smartest, strongest yinglet! You decide you no longer wish to be rescued.";
-			say "     You roam the area and seek out all the yinglets you can. After a masterful display of your slightly above average strength and wit, they decide to follow you for safety and guidance. You start your own yinglet enclave, where you are heralded by your lessers as [if player is male]Patriarch. You're the best hunter, fisher, and you know where to find the best clams! You teach your lessers how to fight and defend the females, and of course, you have priority in the female's breeding schedule. Failing that, there's always a smaller male to slide yourself into when the need is great. [else]Matriarch. You have plenty of males to protect you, and you teach them all the best ways to find food. When you aren't teaching and caring for the young, you're busy making more of them. You have your pick of the males, and of course only the ones you deep worthy get a shot at you. In the end, you may have thrown away your humanity, but among the yinglets, you're a queen! [end if]Yinglets often return to you with their finding of shiny-things, which you gladly accept or bestow upon your favorite underlings as rewards. Sometimes they find more of those little gem-things, filled with swirling liquid. Outsiders who find themselves turned into yinglets themselves soon come to terms with their new position and gladly join your enclave. Thoughts of civilization soon fade into a distant memory, your new life is far more interesting now.";
+			say "     You roam the area and seek out all the yinglets you can. After a masterful display of your slightly above average strength and wit, they decide to follow you for safety and guidance. You start your own yinglet enclave, where you are heralded by your lessers as [if Player is male]Patriarch. You're the best hunter, fisher, and you know where to find the best clams! You teach your lessers how to fight and defend the females, and of course, you have priority in the female's breeding schedule. Failing that, there's always a smaller male to slide yourself into when the need is great. [else]Matriarch. You have plenty of males to protect you, and you teach them all the best ways to find food. When you aren't teaching and caring for the young, you're busy making more of them. You have your pick of the males, and of course only the ones you deep worthy get a shot at you. In the end, you may have thrown away your humanity, but among the yinglets, you're a queen! [end if]Yinglets often return to you with their finding of shiny-things, which you gladly accept or bestow upon your favorite underlings as rewards. Sometimes they find more of those little gem-things, filled with swirling liquid. Outsiders who find themselves turned into yinglets themselves soon come to terms with their new position and gladly join your enclave. Thoughts of civilization soon fade into a distant memory, your new life is far more interesting now.";
 		else:
 			say "     When the rescue came, you weren't too sure what to do with yourself. Your new body made most forms of labor difficult, but eventually you found a use for it. You volunteer yourself to join the relief forces. Fighter, you are not, but your small body and keen perception make you ideal for scouting difficult terrain. You've got a penchant for finding people, and an even greater one for finding shiny valuables that make a pretty penny on the side (when you don't keep it for your own personal collection). You're content with your new life and body, and despite the teasing from your much larger teammates, you come to feel welcome among them. Plus, your unique body and all its flexibilities turn out to be quite a hit for those with a more... exotic taste. You don't spend your nights lonely.";
 

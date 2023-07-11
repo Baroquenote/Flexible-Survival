@@ -169,14 +169,14 @@ to say PhilipTalkHimself:
 	say "     It seems Philip has nothing else to tell you and that he doesn't remember much about his past, but he doesn't seem bothered by it. In fact, you are pretty sure that, as long as he keeps getting lots of food, he should be very happy.";
 
 to say PhilipTalkTransformation:
-	say "     Surely, there are some pig-like transformations out there, but Philip's is a bit more peculiar than most. You wonder how exactly he got transformed, so you decide to ask him. 'How did I end up like this? Some jerk zapped me with a strange ray gun that turned me into a big fat pig.' he says, rather unironically. For moments, you think he is joking, but judging by how unfazed he sounded, it seems that was exactly what happened. 'I know it sounds strange, but you've been there, right? That place is full of nutjobs. What's an idiot with a ray gun in the middle of an upside-down world full of horny furries, spartans, demons and *oink!* fuck knows what else?!' He then makes a pause as he takes a deep breathe, seeming a bit annoyed, but he quickly recovers.";
+	say "     Surely, there are some pig-like transformations out there, but Philip's is a bit more peculiar than most. You wonder how exactly he got transformed, so you decide to ask him. 'How did I end up like this? Some jerk zapped me with a strange ray gun that turned me into a big fat pig.' he says, rather unironically. For moments, you think he is joking, but judging by how unfazed he sounded, it seems that was exactly what happened. 'I know it sounds strange, but you've been there, right? That place is full of nutjobs. What's an idiot with a ray gun in the middle of an upside-down world full of horny furries, Spartans, demons and *oink!* fuck knows what else?!' He then makes a pause as he takes a deep breathe, seeming a bit annoyed, but he quickly recovers.";
 	say "     'Anyway, it ain't that bad. I've grown to like this shape, and so do others, for some reason... I guess being big and heavy is hot for many, including myself...' he adds, grinning by the end as he gives his fat gut a generous rub, making it jiggle slightly with its voluptuous mass. It does seem he ended up liking the results, in the end.";
 
 to say PhilipTalkTF:
 	say "     Having taken a liking for Philip's [']studly physique['], you wonder if it would be possible for you to share some similarities. In other words, you ask him if he can make you look more like him. It might be the first time you see the big pig jump out of his usual resting spot and move so fast towards you, eagerness visible in his body motions. 'Really?! You want some of this meat on you?' he asks, grabbing his gut and raising it before letting go, his whole fatness jiggling with the momentum. He then puts his big arm around you and gives [italic type]you[roman type] a generous rub all over your body. 'I'm sure you'd look really sexy as a sow... But there are options, depending on what you [']take['] from me...'";
 	say "     Surprisingly carefully, he explains the differences between two of the results you can obtain from him. 'I guess you'd get to be [bold type]more like me if you got some of my fur[roman type]... But if you really want to aim for that [bold type]sow look, maybe you should drink something more creamy[roman type]... Y'know.' he says, leaning back just enough for you to be able to see past his big gut, as he massages his own balls that seem full of what he's talking about. 'I know I'd prefer the latter, but since you've been feeding me well and keeping me safe, I'll let you choose.' he adds, and you can see his rather sizable boar cock twitching as it raises towards a near erection.";
 	WaitLineBreak;
-	if player is submissive:
+	if Player is submissive:
 		say "     [italic type]You really have a hard time resisting his advances, your mind being so close to automatically pick the cum option and just make you kneel in front of him, giving him the greatest blowjob you possibly could and swallow all of that pig cum in the end, letting that tasty creamy seed turn into the sexiest sow just for him and his pleasure... But fortunately, you manage to get a grip of yourself. Barely, though. And the thought still lingers in your mind... He would really like that, wouldn't he?[roman type][line break]";
 		SanLoss 5;
 		WaitLineBreak;
@@ -195,7 +195,7 @@ to say PhilipTalkTF:
 			say "Invalid choice. Type [link]1[end link] to pick his fur or [link]2[end link] to drink some cum directly off his dick or [link]3[end link] to ask for some bottled cum instead or [link]4[end link] to go back with your request.";
 	if calcnumber is 1: [his fur]
 		Linebreak;
-		say "     You decided that you want a safer approach and go with his own strain, which means his fur. He doesn't look too disappointed, but you know he would prefer something else. 'Alright.' he says, as he goes grab something sharp enough to cut some of his short pig fur and hand it to you. 'Handle it carefully, a little breeze could send it all flying. Best you use it now... Just a suggestion, *oink!* of course...' As he finishes speaking, you collect his offering and thank him for it. 'It was nothing. You can pay me later, in food or something else. Like offering yourself to be my [if player is male]sowboy once you're looking studly like me[else]sow once you're a sexy pig lady[end if].' he winks and grins, before he returns to his corner.";
+		say "     You decided that you want a safer approach and go with his own strain, which means his fur. He doesn't look too disappointed, but you know he would prefer something else. 'Alright.' he says, as he goes grab something sharp enough to cut some of his short pig fur and hand it to you. 'Handle it carefully, a little breeze could send it all flying. Best you use it now... Just a suggestion, *oink!* of course...' As he finishes speaking, you collect his offering and thank him for it. 'It was nothing. You can pay me later, in food or something else. Like offering yourself to be my [if Player is male]sowboy once you're looking studly like me[else]sow once you're a sexy pig lady[end if].' he winks and grins, before he returns to his corner.";
 		ItemGain piggy fur by 1;
 	else if calcnumber is 2: [his cum, from a blowjob]
 		if lastfuck of Philip - turns < 6:
@@ -240,7 +240,7 @@ to say PhilipTalkPIG:
 			say "[pig_fratinitiation]";
 		else:
 			say "     You thank Philip for his readyness to introduce you to the fraternity, but you let him know that you won't go right now. 'Ah, I see. Maybe later, then?' he asks, ending with a snort.";
-	else if piginitiation is 3 and Philip is in large shed and player is not neuter:
+	else if piginitiation is 3 and Philip is in large shed and Player is not neuter:
 		say "     Deciding to bring up his old fraternity again now that he's fed and safe, you get a much better response from the big piggy. 'Those were some good times back with the guys at the mighty Phi Iota Gamma,' he says with a series of loud oinking at the end. 'Mmm... I miss the ole mudhole. We had some really good parties. I wonder how the place is doing these days...' he muses, rubbing his roly-poly belly.";
 		say "     Seeing your opportunity, you tell him that it seems to be doing really well, just having had a really wild party the other day. Plenty of beer, lots of horny sows, all still there and having a good time. You add that you'd wanted to check it out, but they'd said it was for frat brothers only.";
 		say "     He nods at this. 'Yeah, them's the rules,' he mutters, clearly already thinking of the prospect of beer and sows. 'Ain't nothing saying I can't go though. You can be my guest and we can get you initiated into the mighty Phi Iota Gamma.' He wraps his big arm around you and hugs you to his muddy body, grinning merrily and oinking up a storm as the requisite response.";
@@ -380,7 +380,7 @@ to pigfeed:
 			LineBreak;
 			say "     ([link]Y[as]y[end link]) - Feed Philip.";
 			say "     ([link]N[as]n[end link]) - No.";
-			if player consents:
+			if Player consents:
 				Linebreak;
 				ItemLoss food by 5;
 				say "[PhilipSpecialFeed]";
@@ -392,9 +392,9 @@ to pigfeed:
 
 to say PhilipSpecialFeed:
 	say "     Happy to deliver the good news to Philip, you let him know that you actually have plenty of food with you, and a lot to spare. 'Ooh... that's great... Now if you just came over here and let me take a look at what you've got...' he says, while lazily lying down in his muddy corner, staring at you as he gives his waiting gut a few rubs";
-	if pigfed is 3 and player is not naked:
-		say ". You walk towards him with all the food, but the pigman stops you, suddenly. 'If you're gonna come here all geared up, you better be ready to scrub the mud out of everything. I suggest you get naked...' he says, which almost seems like an order[if player is submissive], that you are glad to follow[else]. Whatever, he does make a good point[end if], so you remove everything that is covering your body before you proceed any further.";
-	else if pigfed > 3 and player is not naked:
+	if pigfed is 3 and Player is not naked:
+		say ". You walk towards him with all the food, but the pigman stops you, suddenly. 'If you're gonna come here all geared up, you better be ready to scrub the mud out of everything. I suggest you get naked...' he says, which almost seems like an order[if Player is submissive], that you are glad to follow[else]. Whatever, he does make a good point[end if], so you remove everything that is covering your body before you proceed any further.";
+	else if pigfed > 3 and Player is not naked:
 		say ". Knowing the rules, you undress before you start walking towards him with all the food.";
 	else:
 		say ". Naked as you are, you find no problem in just continuing to walk towards the muddy mess and him with all the food.";
@@ -703,7 +703,7 @@ to say sexwithphilip:
 		say "     Approaching Philip for some more of his big, sloppy loving, you find him in Sandra's company. She's chatting to him pleasantly, but clearly has her eyes on his enlarged cock. He's also eying her quite appreciatively, quite literally salivating at the bunny girl's breasts. Shall you encourage them to have some fun so you can join in or will you let them be alone together?";
 		if Player consents:
 			say "     You smile as you go join them, moving in beside Philip and running your hands over him. He oinks and gives you a sloppy kiss as he welcomes you. 'Mmm... hello there,' he grunts. 'The bunny and I were just getting to know each other a li-' he starts to say before getting distracted as you give his pink shaft a playful stroke, causing him to oink loudly again. Glancing over, you catch Sandra glaring at you as you manhandle her prize.";
-			say "     With an agreeing nod and a friendly, yet flirtatious smile, you remark that, indeed, you should take this opportunity to know eachother better, while playfully complimenting Philip's body, hinting at his very large size. He chuckles at his, rubbing his hands over his pudgy body, though it's the hefty, dribbling cock that has Sandra's attention as you offer her a go at his erection. And she's quickly on her knees, licking and kissing at that porcine rod, her earlier anger gone as she goes down on that musky pillar of meat.";
+			say "     With an agreeing nod and a friendly, yet flirtatious smile, you remark that, indeed, you should take this opportunity to know each other better, while playfully complimenting Philip's body, hinting at his very large size. He chuckles at his, rubbing his hands over his pudgy body, though it's the hefty, dribbling cock that has Sandra's attention as you offer her a go at his erection. And she's quickly on her knees, licking and kissing at that porcine rod, her earlier anger gone as she goes down on that musky pillar of meat.";
 			say "     Pleased to see your two new friends going at it, you drift between them, your hands running over their bodies. Sandra's pussy drips with her juices, which you enjoy lapping up for a few minutes before fondling Philip's balls. When you swap to the bunny girl's breasts, you remember the pig's interest in them and get them to change positions so the big boar man's cock is pressed between those fuzzy globes. Between that, the eager sucking and your playful groping, it's not much longer before Philip's greasy cum is pumped into her muzzle and then sprayed across those lovely tits. You have fun helping to lick her clean[if thirst of Player > 50] and suckling a delicious drink of her milk to wash it all down[end if] while Philip rolls over to rest in his muddy wallow.";
 			NPCSexAftermath Sandra receives "OralCock" from Philip;
 			now HP of Philip is 2;
@@ -732,7 +732,7 @@ to say sexwithphilip:
 	LineBreak;
 	say "     ([link]Y[as]y[end link]) - Let Philip take charge.";
 	say "     ([link]N[as]n[end link]) - Back away.";
-	if player consents:
+	if Player consents:
 		Linebreak;
 		let piggymalefun be 8;
 		if Player is submissive, increase piggymalefun by 2;
@@ -780,7 +780,7 @@ to say sexwithphilip:
 					say "     As you pull your body from the mud, you find that you've once again gained a full set of eight piggish nipples down your front.";
 					now Nipple Count of Player is 8;
 			NPCSexAftermath Player receives "AssFuck" from Philip;
-		if pigfucked > 0 and player is male and CockName of Player is not "Piggy" and (BodyName of Player is "Piggy" or BodyName of Player is "Messy Pig"):
+		if pigfucked > 0 and Player is male and CockName of Player is not "Piggy" and (BodyName of Player is "Piggy" or BodyName of Player is "Messy Pig"):
 			say "     As the heat of Philip's strong cum warms your insides, you feel a tingle in your cock as it throbs and spurts its seed onto the messy floor. Your shaft changes, becoming humanlike, but pinker. It is musky and has a thick scent, much like your piggy lover's.";
 		now Cock of Player is cock entry;
 		now CockName of Player is "Piggy";
@@ -854,7 +854,7 @@ Instead of going to large shed while (Resolution of Sweets For The Piggy is 1 an
 	say "     'Here I thought you could conjure food out of nowhere... That'd make me like you a lot. I like people who can make food appear in front of me.' The mage rolls his eyes and sighs 'Of course you do.' Philip only carries on finishing his little meal as Xaedihr turns around and walks away. He does not really pay much further attention to you until it is over. 'That redhead's cute and he can make food appear... I like him. Without all that imp stuff, though, that's nasty. Tell him I want my food imp-free!' You tell him you will do what you can just to leave him relieved and in peace.";
 	now Resolution of Sweets For The Piggy is 2;
 
-Instead of going to large shed while ((Ranfer is in Main & 7th Street or smilodon bodyguard is listed in companionList of Player) and Resolution of RanferPhilip is 0 and a random chance of 1 in 2 succeeds):
+Instead of going to large shed while ((Ranfer is in Main & 7th Street or smilodon bodyguard is listed in companionList of Player) and Philip is in Large Shed and Resolution of RanferPhilip is 0 and a random chance of 1 in 2 succeeds):
 	say "     When you walk into the large shed";
 	if Ranfer is in Main & 7th Street:
 		say ", you see not only Philip there, but also Ranfer, as they seem to be exchanging something";
@@ -867,8 +867,8 @@ Instead of going to large shed while ((Ranfer is in Main & 7th Street or smilodo
 	say "     'Then I suggest you practice. It might take you... several attempts.' The big cat then stands up and proceeds to walk away, past you, with the biggest smug expression you have seen on him. Though, Philip does not seem too bothered by it. You can tell that he probably even liked it. 'Damn, he's your bodyguard?! That dude flipped me like I weighed nothing... And he can find food! That's hot. You really make great friends, you know?' He just remains there, lying down on the ground, not bothering to get up as he gets himself comfortable. 'So, you wanted to talk or something?'";
 	now Resolution of RanferPhilip is 1;
 
-Instead of going to large shed while (Hayato is in Darkened Alcove and Resolution of HayatoPhilip is 0 and a random chance of 1 in 3 succeeds):
-	say "     As you arrive at the large shed, you notice a large red person talking to Philip, and you quickly can tell this is Hayato, and they seem to be talking. 'Whoa, where did you get this? Tastes fucking good!' says the boar man, excitedly, as he munches on something. 'I've found these noodles that on an abandoned asian restaurant. You just put hot water on it and it becomes cooked like this. Pretty good, right?' explains Hayato. What Philip seems to be eating is, indeed, a cup of noodles the red oni must have found while scavenging. The boar man seems to love every bit of it, too. 'I really love this! Can you get me more?' he asks, still munching on it all. 'Ah, I guess if I find some, I can share... They're not that common, though, but I heard you liked food, so...'";
+Instead of going to large shed while (Hayato is in Darkened Alcove and Philip is in Large Shed and Resolution of HayatoPhilip is 0 and a random chance of 1 in 3 succeeds):
+	say "     As you arrive at the large shed, you notice a large red person talking to Philip, and you quickly can tell this is Hayato, and they seem to be talking. 'Whoa, where did you get this? Tastes fucking good!' says the boar man, excitedly, as he munches on something. 'I've found these noodles that on an abandoned Asian restaurant. You just put hot water on it and it becomes cooked like this. Pretty good, right?' explains Hayato. What Philip seems to be eating is, indeed, a cup of noodles the red oni must have found while scavenging. The boar man seems to love every bit of it, too. 'I really love this! Can you get me more?' he asks, still munching on it all. 'Ah, I guess if I find some, I can share... They're not that common, though, but I heard you liked food, so...'";
 	say "     'So you wanted to be friends with me? Hehe... I'd offer to wrestle in the mud against you, but you're a really big dude, I wouldn't stand a chance and you'd always win. No fun in that!' Hayato laughs at this. 'I could go easy on you, if that'd make you feel better?' 'Nah, it wouldn't. I like earning my victories... Oink!' The red oni leans forward, curious about this. 'But why is that? I thought it'd be just for the fun...' The pig man then replies, 'It just feels better to give the loser what they deserve when you worked for it, yeah? Like you actually get on top of them and pin them down with your moves... But since you're so... huge... It kinda defeats the purpose. But you're cool and give me nice food. I like you!'";
 	WaitLineBreak;
 	say "     'I'm glad! Being friends with everyone here is something I'm always looking forward to do. Call me Hal, by the way.' They share a few more words with one another until Hayato notices you. The red oni then stands up, greets you and leaves with a smile on his face. 'Your red friend's really hot, too. He's way too big, though... I'd get my ass kicked in the mud. But I like him. I approve.' The boar then beckons you to come closer. 'Came here for a chat, then?'";
@@ -968,7 +968,7 @@ This is the Pig Infection rule:
 					say "     The time in the military's quarantine area is quite unpleasant, as most people tend to avoid you for some reason. But at least it ends up being brief, as they don't seem to want to keep you around long either. You have such a full figure with luscious curves and a rich scent; you feel that you are a lovely and attractive woman, but no one else you meet seems to realize this.";
 					say "     After your eventual release, you have difficulty finding steady work. No one seems to appreciate your rich fragrance. You only manage to get odd jobs for quite a while before eventually becoming a garbage woman. The prevalent scent of your work keeps your coworkers from complaining about your scent and some part of you always enjoys getting dirtier and smellier from a day's work.";
 					say "     One day while working the bulldozer at the far end of the landfill, a friendly coworker calls you over. When you climb out to join the seagull, he presses you down into the trash and mounts you. You try your best to muffle your squeals of delight, not wanting to get into trouble, but loving the nasty feeling of being fucked at work on a messy pile of trash. After filling you, he invites you to join him at his place after work for more. That night is a wild romp that soon becomes more and more nights of the same. You move into his love nest and bear him clutch after clutch of eggs filled with winged piggies, loving your messy, dirty bird.";
-			if ( pigfucked > 0 ) or ( player is female and Philip is in Large Shed ):	[Philip farm endings]
+			if ( pigfucked > 0 ) or ( Player is female and Philip is in Large Shed ):	[Philip farm endings]
 				if Sandra is in the Bunker:
 					if Snow is in the Grey Abbey Library:
 						say "     Sandra and Snow join you and Philip at the pig farm. The four of you spend your days having extremely wild and passionate orgies. Sandra and Snow are soon expecting their own litters of piglets. Philip feels like the luckiest pig in world now that he has his own personal harem.";

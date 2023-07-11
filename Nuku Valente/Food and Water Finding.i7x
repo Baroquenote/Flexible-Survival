@@ -139,7 +139,7 @@ to say ResolveEvent Potential Resources:
 		say " to sway.";
 		let petbonus be false;
 		let bonus be ( charisma of Player plus level of Player minus 10 ) divided by 2;
-		if equinoid warrior is listed in companionList of Player or felinoid companion is listed in companionList of Player or demon brute is listed in companionList of Player or royal tiger is listed in companionList of Player:
+		if equinoid warrior is listed in companionList of Player or felinoid companion is listed in companionList of Player or demon brute is listed in companionList of Player or royal tiger companion is listed in companionList of Player:
 			increase bonus by 2;
 			now petbonus is true;
 		if HardMode is true and bonus > 10, now bonus is 10;
@@ -177,7 +177,7 @@ to say ResolveEvent Potential Resources:
 						ItemGain y by 1;
 						say " and even manage to haggle a second one from them";
 				say ".";
-				if Player is submissive or player is kinky:
+				if Player is submissive or Player is kinky:
 					say "     Despite (or perhaps even because of) how dirty you feel for what you've done, you can't help but be a little pleased with yourself and quite turned on.";
 					increase Libido of Player by 10;
 					increase morale of Player by 1;
@@ -202,7 +202,7 @@ to say ResolveEvent Potential Resources:
 						ItemGain y by 1;
 						say " and even manage to haggle a second one from them";
 				say ".";
-				if Player is submissive or player is kinky:
+				if Player is submissive or Player is kinky:
 					say "     Despite (or perhaps even because of) how dirty you feel for what you've done, you can't help but be a little pleased with yourself and quite turned on.";
 					increase Libido of Player by 10;
 					increase morale of Player by 1;

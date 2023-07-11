@@ -53,14 +53,14 @@ object	name
 Otto	"Otto"
 
 Otto is a man.
-ScaleValue of Otto is 3. [human sized]
+ScaleValue of Otto is 3. [5' 1"]
 Body Weight of Otto is 7. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 Body Definition of Otto is 3. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
 [Body Adjective is generated out of the body weight and body definition and can be used in scenes - one word descriptive adjective depending on weight and definition groups: low weight group: skinny/slender/lithe; mid weight group: average/fit/muscled; high weight group: pudgy/husky/jacked]
 Androginity of Otto is 2. [Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/somewhat effeminate/effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
-Mouth Length of Otto is 6. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
+Mouth Length of Otto is 4. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
 Mouth Circumference of Otto is 3. [mouth circumference 1-5, "tiny, small, normal, wide, gaping"]
-Tongue Length of Otto is 6. [length in inches]
+Tongue Length of Otto is 4. [length in inches]
 Breast Size of Otto is 0. [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
 Nipple Count of Otto is 2. [count of nipples]
 Asshole Depth of Otto is 6. [inches deep for anal fucking]
@@ -71,7 +71,7 @@ Cock Length of Otto is 6. [6 Inches]
 Ball Count of Otto is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Otto is 2. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"] [Increase by 1 for Alpha, decrease by 1 for Omega]
 Cunt Count of Otto is 0. [number of cunts]
-Cunt Depth of Otto is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Otto is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Otto is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Otto is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -135,7 +135,7 @@ to say OttoTalkMenu:
 		now sortorder entry is 2;
 		now description entry is "Ask Dr. Fuchs whether he could spare you a medkit";
 	[]
-	[if HP of player is not maxHP of player:
+	[if HP of Player is not MaxHP of player:
 		choose a blank row in table of fucking options;
 		now title entry is "Medical Attention";
 		now sortorder entry is 2;
@@ -236,7 +236,7 @@ to DoctorandSoldierEvent: [Otto saves a soldier's life]
 	say "     Perhaps concerned about the doctor's safety when violence seems second nature to the hyena group before him, several larger beasts - an imposing tiger, a tattered-looking wolf, and a [']grinning['] crocodile - advance until they are flanking him and ensuring his protection. The hyenas seem to be gauging their chances of punishing Fuchs for his insolence until the wolf lets out a howl. The piercing cry seems to echo around the street and you would imagine through the city. A replying howl confirms your suspicions and seems to be a turning point for the gang of feliforms. 'This isn't over. He's going to die anyway, and I'll come back with more of the gang to teach you a lesson,' the leader of the group snarls. A snap from the crocodile hurries the hyenas['] retreat, rushing down the street and out of sight. Dr. Fuchs hurries back to his patient, the soldier's breathing becoming increasingly labored.";
 	say "     'I don't know what to do. The damage is too extensive for me to treat without more advanced medical apparatus than I have available,' Otto glumly notes. 'And I doubt that the machines in the hospital are still in working order. The mystery is how this man hasn't transformed in anyway.' The soldier stirs, opening his eyes and taking a sharp breath through clenched teeth. 'We were given immunity boosters, doc,' he answers quietly. 'But it will be running out soon, so if you keep me alive for long enough, I might heal, but I have too much pride to want to be a hyena. I'll be damned if I let them gain any small victory,' he says determinedly. While the doctor's expression briefly lightened at such a simple explanation to the puzzle and the course of action that might remedy it, the soldier's unwillingness to become a hyena to save himself returns him to looking pensive. The choice between acceding to the soldier's wishes and thus letting him die, or sustaining him until the immunosuppressants wear off and letting him turn into a hyena conflict on his face.";
 	WaitLineBreak;
-	say "     To everyone's surprise, the black fox pipes up with a suggestion. 'The transformation doesn't have to be into a hyena. We could try and infect him with another species. A blood sample might have a greater concentration of whatever it is causing the transformations, so if we inject it into him, medical arguments aside, it might overpower any remnants of hyena DNA.' The onlookers['] expressions vary from awe and curiosity to disgust. Dr Otto Fuchs rubs his chin as he thinks, contemplating the feasibility of the suggestion. 'I'm willing to try if you are,' the soldier croaks, his skin getting increasingly pale as his lifeblood pools on the road. 'I don't want to die if there is some merit to that idea.' Otto seems to come to a conclusion, 'It seems to be the only option left to save you, and it seems more ethical than either of the other two options. We just need a volunteer,' he states. To your surprise, the tiger and the crocodile both volunteer.";
+	say "     To everyone's surprise, the black fox pipes up with a suggestion. 'The transformation doesn't have to be into a hyena. We could try and infect him with another species. A blood sample might have a greater concentration of whatever it is causing the transformations, so if we inject it into him, medical arguments aside, it might overpower any remnants of hyena DNA.' The onlookers['] expressions vary from awe and curiosity to disgust. Dr. Otto Fuchs rubs his chin as he thinks, contemplating the feasibility of the suggestion. 'I'm willing to try if you are,' the soldier croaks, his skin getting increasingly pale as his lifeblood pools on the road. 'I don't want to die if there is some merit to that idea.' Otto seems to come to a conclusion, 'It seems to be the only option left to save you, and it seems more ethical than either of the other two options. We just need a volunteer,' he states. To your surprise, the tiger and the crocodile both volunteer.";
 	say "     'I wasn't expecting anyone to be willing to help me, as I'm sure word of what I did to that rabbit has spread,' the soldier says. Dr. Fuchs replies sympathetically, 'He survived and made a full physical recovery, but you're running out of time. It would seem that you have two volunteers, but you'll probably become their species so make your choice quickly but carefully. I understand that this will likely estrange you from the military, so you have my condolences,' The soldier looks thoughtful for a moment before looking at you. 'I remember you from last time. What do you think? Who should I accept a blood transfusion from?' He doesn't seem to have a preference, the whole situation probably dulling his ability to think.";
 	say "     [bold type]You think for a moment before replying...[roman type][line break]";
 	LineBreak;

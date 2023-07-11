@@ -101,7 +101,7 @@ to say SatyrFratSexMenu:
 	now sortorder entry is 5;
 	now description entry is "See what happens with the cute guy as he drinks the heady liquid";
 	[]
-	if SatyressStage > 0 and player is male:
+	if SatyressStage > 0 and Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Get it on with a sexy satyress - publicly";
 		now sortorder entry is 6;
@@ -316,7 +316,7 @@ to say SatyrFratSex4: [Bj for Richard]
 		WaitLineBreak;
 		say "     Breathlessly lying under the college age hunk that you just had very public sex with, you look down over yourself, [if Player is male]splattered all over chest with your own cum[else if Player is female]all sweaty and dripping femcum from your pussy[else]all sweaty as you are[end if], then up at the still panting and widely grinning Richard and finally at the crowd of people in the room. With the show being over now, they mostly turned back to dancing, although you can see several couples making out, as well as a blowjob between two guys going on over there in the corner. Mission accomplished, one could say...";
 		say "     Richard stays inside you for a while longer, enjoying the feeling of being so close to you and sharing a few kisses, then he eventually pulls out with a sigh and says, 'You were simply amazing, baby. Wow, really.' After proceeding to help you clean up by offering his t-shirt as an impromptu towel, he later bids you farewell and goes upstairs to clean himself up too.";
-		if player is female:
+		if Player is female:
 			NPCSexAftermath Player receives "PussyFuck" from Richard;
 		else:
 			NPCSexAftermath Player receives "AssFuck" from Richard;
@@ -336,7 +336,7 @@ to say SatyrFratSex4: [Bj for Richard]
 		WaitLineBreak;
 		say "     Breathlessly lying under the college age hunk that you just had very public sex with, you look down over yourself, [if Player is male]splattered all over chest with your own cum[else if Player is female]all sweaty and dripping femcum from your pussy[else]all sweaty as you are[end if], then up at the still panting and widely grinning Richard and finally at the crowd of people in the room. With the show being over now, they mostly turned back to dancing, although you can see several couples making out, as well as a blowjob between two guys going on over there in the corner. Mission accomplished, one could say...";
 		say "     Richard stays inside you for a while longer, enjoying the feeling of being so close to you and sharing a few kisses, then he eventually pulls out with a sigh and says, 'You were simply amazing, baby. Wow, really.' After proceeding to help you clean up by licking your chest clean, he later bids you farewell and goes upstairs to wash up himself too.";
-		if player is female:
+		if Player is female:
 			NPCSexAftermath Player receives "PussyFuck" from Richard;
 		else:
 			NPCSexAftermath Player receives "AssFuck" from Richard;
@@ -418,7 +418,7 @@ to say SatyrFratSex5:
 
 to say SatyrFratSex6: [Fucking a satyress]
 	project the Figure of Satyress_naked_icon;
-	say "     Letting your eyes wander over the crowd of partying students, you spot a bare-breasted sorority girl sporting a pair of cute little horns on her forehead. Looks like the satyress strain of the nanite infection you inadvertently helped create his spreading well. After snatching up two cups of satyr wine from the counter in front of Talov, you move closer to the laughing and dancing young woman, winding your way past several people who are making out and casually grind against one another. This gives you time to take in her curly [one of]blond[or]ginger[or]brown[or]auburn[at random]hair and check out the fur on two long hoofed legs and her shapely behind with its cute tail. That babe is definitively a looker. Before much longer, you're up close with her, holding out your alcoholic ice-breaker as you introduce yourself and chugging back a swallow from the second cup as she takes it.";
+	say "     Letting your eyes wander over the crowd of partying students, you spot a bare-breasted sorority girl sporting a pair of cute little horns on her forehead. Looks like the satyress strain of the nanite infection you inadvertently helped create his spreading well. After snatching up two cups of satyr wine from the counter in front of Talov, you move closer to the laughing and dancing young woman, winding your way past several people who are making out and casually grind against one another. This gives you time to take in her curly [one of]blond[or]ginger[or]brown[or]auburn[at random]hair and check out the fur on two long hoofed legs and her shapely behind with its cute tail. That babe is definitely a looker. Before much longer, you're up close with her, holding out your alcoholic ice-breaker as you introduce yourself and chugging back a swallow from the second cup as she takes it.";
 	say "     With the satyr wine stoking the fires of lust and arousal in both of you, there is little need of more than a few moments of breathless small-talk before the satyress runs a hand up the side of your chest and steps a little bit closer. Her lips meet yours and the two of you share an eager kiss, followed by you suggesting some more vigorous action and her giving a pleasant little giggle and happy nod. As she wraps her arms around your neck and starts making out, you slowly push her backwards a little, leading the young woman in the direction of a nearby sofa. Step by step getting closer to your goal, you slide a hand down her chest and brush it over her crotch, feeling the sensitive folds of her sex.";
 	WaitLineBreak;
 	say "     In between the continuing tongue-wrestling and you stroking the satyress - realization flashes for a second that you don't even know her name - the feelings of lust and arousal in you soar along with her own - and soon she gives an urgent sigh of 'I wanna fuck' in a second when your lips aren't jammed together. Still making out in a wild rush, you push her on towards the sofa you had been aiming for anyways, eager to get to the next place for urgent love-making in sight. As the two of you stumble through the dancing crowd, bumping various people out of the way, the initial complaints quickly give way to whoops and hollers as more and more party-goers become aware of your state of un-dress and sexual arousal. One hand between your partner's legs, two fingers buried in her moist snatch, the two of you soon reach your destination and with a little push, she falls back to sit on it. Immediately sinking to your knees between the soft-furred legs of your satyr partner, you start lapping at her pussy, making the transformed sorority girl grip the pillows and shout in pleasure.";

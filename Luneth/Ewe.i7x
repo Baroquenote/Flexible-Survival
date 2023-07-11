@@ -12,11 +12,13 @@ to say ewe attack:
 	project Figure of Ewe_icon;
 	if Player is male:
 		say "     The ewe barrels into you one last time, knocking you to the ground. The lust-crazed sheep grins happily as she looks down at your prone body, her thick tongue licking across her sheep-like muzzle as she gazes down at your already erect [Cock of Player] cock. Before you can do anything else, the ewe throws herself onto you, making you grunt In surprise as her weight lands on top of you, knocking the wind out of you as she pins you to the ground eagerly. Struggling to catch your breath, you find your head filled with the female sheep's powerful scent, the ewe rubbing her soft, silken-fleeced body against your chest. Her scent only makes your arousal worse with every gasping breath, your mind fogging over with pleasure as she lowers herself onto your stiff member. Soon your gasping becomes eager panting, the female sheep lifting herself up and beginning to ride your shaft, the intense sensation of her warm body gripping your cock so tightly overwhelming any potential objections you might have. Soon you are bucking your hips up eagerly as the sheep moans and bleats happily above you, your hands wandering over her soft woolen body even as her own hoof-like hands rub up against your [Skin of Player] chest. Finally the sensations are obviously too much for the ewe, and with one last bleating cry, you can feel her juices coating your shaft as she shudders in orgasm above you. The feel of her body orgasming around your cock triggers your own intense explosion of pleasure, and you grip her thighs tightly as you shoot your seed into her body, making her moan happily even as you twitch underneath her. Once your orgasm is finally over, the ewe pulls herself off your exhausted body, a silly smile on her face as she proceeds to rub herself up against your body again. 'You'll make a wonderful Ram,' she moans as she lifts her soft muzzle up to your ear, her lips rubbing across your ear teasingly as you try to regain your scattered wits. 'A nice big strong Ram for me, won't that be nice?' the ewe says teasingly, stroking your chest with her hoof-like hand again a few times. Without further words, she pulls herself to her feet and staggers off into the city, leaving you lying there and panting from your recent exertions, wondering if you really would object to being a ram if you got that kind of treatment every day...";
+		CreatureSexAftermath "Ewe" receives "PussyDildoFuck" from "Player";
 	else:
 		if veggiegardenfight is 0:
 			say "     'Finally! I won't be alone anymore!' the ewe says as she rubs her body up against your defeated form. Her soft, woolly scent fills your head as she begins to clutch you to her eagerly. 'If I had to spend any more time without a flock, I thought I would go crazy!' the ewe says as she holds you to her tightly, and while you are pretty sure she has already been without a flock for too long, the feel of the naked ewe's soft wool rubbing up against you seems very soothing. You let yourself relax for a bit in her arms, listening to her happy chattering about the joys of belonging to a flock and how very lonely she has been without one, then talking about what a wonderful sheep you will make. Slightly worried about that last part of her statement, you wait until your new friend falls into an obviously exhausted sleep before slipping out of her arms and making your way back out into the city. You wonder what the lonely ewe will do when she wakes up alone again, and if perhaps it might have been better for her if you had taken her with you...";
 		else:
 			say "     'Oh, I've got you now, little thief,' the ewe says with a chuckle, groping your chest and then down to between your legs as she presses you to the ground, rubbing her soft, woolen body against yours. 'I should make you pay me back for taking our vegetables,' she bleats, grabbing your head and pressing it between her thighs. With the arousing scent of her cunt in your face, you can't help but start licking her. She grinds her pussy against your tongue until she has a loud, bleating orgasm.";
+			CreatureSexAftermath "Player" receives "OralPussy" from "Ewe";
 	infect;
 
 To say ewe loss:
@@ -25,6 +27,7 @@ To say ewe loss:
 		say "     Bleating sadly, the ewe collapses onto all fours in front of you, the defeated ewe looks up at you pleadingly as she stands there helplessly. Her lonely, lustful eyes filled with need as she crouches down on the ground submissively. As you turn to leave, you hear her soft voice beg from behind you. 'Please, I've been so lonely... don't you want me either?' she asks plaintively, making you pause as you look back to see her obviously needy rear raised towards you. Do you take the sheep up on her offer?";
 		if Player consents:
 			say "     You grin as you look down on the eager ewe. Unable to resist her heat-filled scent and the sight of her winking sex, you reach forward and bury your hands in her soft fleece, making her bleat eagerly in anticipation. Gripping her hips tightly, you slide your [Cock of Player] rod into her wet, velvety opening, her passage spreading wide before your cock as she moans in pleasure. Feeling increasingly powerful, you begin to thrust into the ewe's heat-filled body again and again, her warm inner walls feeling like heaven, each thrust bringing you both closer and closer to your passionate climax. Soon your cock explodes within her, and you moan with pleasure as your seed spills into her body. She lets out a low bleating sound underneath you, her body shuddering in pleasure as well before she collapses onto the ground. Grinning as you struggle to stay standing on your unsteady feet, you look down at the happily-fucked ewe sprawled out on the ground, enjoying the sated expression on her face for a few minutes before continuing with your explorations of the city.";
+			CreatureSexAftermath "Ewe" receives "PussyDildoFuck" from "Player";
 			if MaleList is not banned:
 				infect "Ram";
 			else:
@@ -49,7 +52,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Sheep"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Sheep"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Ewe" to infections of BovineList;
 	add "Ewe" to infections of FurryList;
 	add "Ewe" to infections of NatureList;
@@ -59,22 +62,22 @@ When Play begins:
 	add "Ewe" to infections of BipedalList;
 	add "Ewe" to infections of TailList;
 	now Name entry is "Ewe";
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]She moves forward and rubs her soft wool over your body.[or]She lowers her head down and charges, knocking you back.[or]The ewe eyes you carefully before striking at your weak spots![or]The naked ewe pauses and strokes her soft wool teasingly, distracting you from the fight![or]The ewe windmills her arms as she charges forward, somehow managing to land a lucky blow.[at random]";
 	now defeated entry is "[ewe loss]";
 	now victory entry is "[ewe attack]";
 	now desc entry is "";
-	now face entry is "short black muzzle"; [ Face description, format as "Your face is (your text)."]
+	now face entry is "short black muzzle"; [ Face description, format as "Your face is [Face of Player]." ]
 	now body entry is "stocky, but feminine, with lovely curves to your body. Your arms are thinner, ending in dainty, hoof-like hands which struggle to handle items at times. Your legs have strong thighs for leaping and crossing rough terrain and slender calves ending in dark hooves";
 	now skin entry is "[one of]woolly[or]soft wool[or]white fleeced[at random]";
 	now tail entry is "A short, round, sheep-like nub of a tail sits right over your ass, occasionally flicking one way or another in response to some stimulus, often lifting up teasingly above your rear."; [ Tail description, write a whole Sentence or leave blank. ]
 	now cock entry is "[one of]sheep-like[or]ram[or]black and pink spotted[at random]"; [ Cock Description, format as you have a 'size' (your text) cock]
-	now face change entry is "you feel your ears stretch out to the sides of your head, your face pushing forward into a sheep-like muzzle"; [ face change text. format as "Your face feels funny as (your text)." ]
-	now body change entry is "your body seems to swell out slightly as it takes on a somewhat stocky yet feminine appearance, your fingers fusing into three almost hooflike fingers. The muscles in your legs then shift, making it easier to move on your new hooves"; [ body change text. format as "Your body feels funny as (your text)." ]
-	now skin change entry is "it is covered in soft woolen fleece, almost begging to be touched"; [ skin change text. format as "Your skin feels funny as (your text)." ]
-	now ass change entry is "your ass expands into a more rounded shape. A short round nub of a tail startles you as it pushes its way out above your increasingly cute ass"; [ ass/tail change text. format as "Your ass feels funny as (your text)." ]
+	now face change entry is "you feel your ears stretch out to the sides of your head, your face pushing forward into a sheep-like muzzle"; [ Face change text, format as "Your face feels funny as [face change entry]." ]
+	now body change entry is "your body seems to swell out slightly as it takes on a somewhat stocky yet feminine appearance, your fingers fusing into three almost hooflike fingers. The muscles in your legs then shift, making it easier to move on your new hooves"; [ Body change text, format as "Your body feels funny as [body change entry]." ]
+	now skin change entry is "it is covered in soft woolen fleece, almost begging to be touched"; [ Skin change text, format as "Your skin feels funny as [skin change entry]." ]
+	now ass change entry is "your ass expands into a more rounded shape. A short round nub of a tail startles you as it pushes its way out above your increasingly cute ass"; [ Ass/tail change text, format as "Your ass feels funny as [ass change entry]." ]
 	now cock change entry is "it twists and warps between your legs, growing thicker as it takes on a black and pink tint, before drawing up into a new sheath between your legs"; [ cock change text. format as "Your cock feels funny as (your text)." ]
 	now str entry is 12;
 	now dex entry is 16;
@@ -100,17 +103,17 @@ When Play begins:
 	now libido entry is 80;
 	now loot entry is "tainted wool";
 	now lootchance entry is 20;
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 3;  [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]stocky[or]cute[at random]";
-	now type entry is "ovine";  [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
+	now type entry is "ovine"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
-	now resbypass entry is false;  [ Bypasses Researcher bonus? true/false (almost invariably false) ]
+	now resbypass entry is false; [ Bypasses Researcher bonus? true/false (almost invariably false) ]
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;  [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -121,7 +124,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -133,7 +136,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -152,7 +155,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -173,18 +176,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -198,19 +201,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -256,7 +259,7 @@ This is the Ewe Infection rule:
 						say "     When the rescue arrives, Leon reluctantly allows you to come with them as they leave the city, your less dominant sheep-like form no threat to the powerful male's control of his flock. As the flock settles down and begins to start up a new business together, you prove your worth to the flock by taking care of many of the business matters that require travel, as many of the ewes are helpless without their flock or their ram. As the business begins to proper, you feel increasingly proud of yourself, and Leon even acknowledges that you have earned yourself a proper place in the flock. Eventually, he even manages to find you a sheep of your own for you to take care of, the ewe named Mary you helped back in the city. The two of you bond easily, and you find yourself happier than ever as the two of you travel everywhere together, making sure your flocks business prospers.";
 					else:
 						say "     When the soldiers arrive, you guide them to the store and the flock of sheep taking shelter there. The flock greet you with a joyous response, Leon welcoming you into his fleecy arms. And while he's reluctant to allow his excited flock to leave the store, he can't actually refuse under the circumstances either. You and the rest of the sheep end up going through the military base together. While Leon manages his ewes, your less aggressive nature allows you to help him deal with the processing procedures for the sheep. This helps give a better impression of your flock overall so things go more smoothly.";
-						say "     Upon release, Leon searches for a place to have his flock settle down, eventually finding a suitable business in the form of a clothes factory in a remote town. With the hardworking ewes to supply the wool and manpower, it's easy for Leon to keep his material costs low and production high. It's still a little rough going at first while the sheep are learning their new trade, but the profits pick up quickly after that. You know this because you work in the office with the ram, taking care of the accounting for him... when not providing the occasional executive blow job or ass to fill.";
+						say "     Upon release, Leon searches for a place to have his flock settle down, eventually finding a suitable business in the form of a clothes factory in a remote town. With the hardworking ewes to supply the wool and manpower, it's easy for Leon to keep his material costs low and production high. It's still a little rough going at first while the sheep are learning their new trade, but the profits pick up quickly after that. You know this because you work in the office with the ram, taking care of the accounting for him... when not providing the occasional executive blowjob or ass to fill.";
 						say "     The business improves steadily, more orders coming in as product quality increases while maintaining low prices. Production increases as well as the flock grows and more and more of the large factory becomes staffed. One of the buildings next door is purchased and converted into an outlet store, further increasing profits. You get put in charge of this as well.";
 						say "     The outlet store becomes an additional means of recruiting ewes through various means. The occasional tainted garment gets slipped to an appealing customer. Would-be shoplifters are detained in Leon's new breaking room. Your personal favorite is to let an overconfident client [']lure['] you into a changing room for some fun, only to turn to the tables on them with your cock. Once they've blown you, they're ready for Leon to finish training them to be a loyal, hard-working ewe for the flock. Over time, more and more people in the area become flock members themselves. Eventually, the whole town is sheep-run with Leon in charge.";
 				else:

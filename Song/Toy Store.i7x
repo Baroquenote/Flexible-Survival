@@ -27,7 +27,7 @@ to say ResolveEvent toy store:
 	say "     ([link]N[as]n[end link]) - Without a clear view, you have no idea what kind of mutants (or how many of them) are inside the toy store. You'd rather avoid the risk.";
 	if Player consents:
 		say "     Gathering your courage, you open the front door and step inside. You immediately realize that this place is filled to the brink with latex foxes, a whole nest of them playing with each other on the ground. Almost every piece of furniture has been overturned in their frenzy, and rubber cum streaks the walls in a musty sheen, its heady odor overwhelming your senses. As soon as they notice your presence, the rubbery canids['] attention turns to you, eager to turn you into just another squeaky playmate.";
-		if Libido of Player > 49 and (humanity of Player < 50 or player is kinky or player is submissive) and player is not dominant: [Kinky, Submissive, and low humanity players with 50+ libido are given a chance to submit without violence. Dominant players will never consider this]
+		if Libido of Player > 49 and (humanity of Player < 50 or Player is kinky or Player is submissive) and Player is not dominant: [Kinky, Submissive, and low humanity players with 50+ libido are given a chance to submit without violence. Dominant players will never consider this]
 			say "     Although you should be preparing to fight, a part of you longs to just give in and let these foxes have their way with you. You try to dispel the urge, but the sight of so many virile creatures and the intoxicating scent of sex in the air only excite you further. Sensing your hesitance, they reign in their urge to take what they want by force. One of them presses his muzzle against your thigh before looking up at you with knowing, imploring eyes, the creature's cum-slick shaft throbbing beneath his belly. More of them follow suit, and your thoughts grow hazier as they rub and brush against you, teasing you with that sleek, slick contact and their obvious arousal. It'd be nice to take the edge off, you tell yourself, rubbing one of them behind the ear as you fantasize about being fucked by these playful, well-endowed foxes.";
 			say "     [bold type]Do you give in to the powerful urge to succumb to your lusts?[roman type][line break]";
 			say "     ([link]Y[as]y[end link]) - Why wouldn't you? These creatures seem intent on showing you a good time.";
@@ -49,7 +49,7 @@ to say ResolveEvent toy store:
 		now toystoreseen is true;
 		now Resolution of Toy Store is 99; [Saw Store, May Return Later]
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own] [Redundant check to clear prop for players who don't lose/submit]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ] [Redundant check to clear prop for players who don't lose/submit]
 	WaitLineBreak; [Pause to ensure all content is fully seen before moving back to previous nav point]
 
 
@@ -129,7 +129,7 @@ to say toystoreloss:
 	setmonster "Latex Fox"; [Redundant code here because Inform throws a fit otherwise!]
 	choose row MonsterID from the Table of Random Critters;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own] [Allows the fox to infect again]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ] [Allows the fox to infect again]
 	infect "Latex Fox";
 	infect "Latex Fox";
 	infect "Latex Fox";

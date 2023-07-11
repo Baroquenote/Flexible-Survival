@@ -25,7 +25,44 @@ Table of GameCharacterIDs (continued)
 object	name
 Cindy	"Cindy"
 
-Cindy is a woman. Cindy is in Sunny Snacks.
+Cindy is a woman.
+Cindy is in Sunny Snacks.
+ScaleValue of Cindy is 3. [human sized]
+SleepRhythm of Cindy is 0. [0 - awake at all times, 1 - day active, 2 - night active]
+Body Weight of Cindy is 4. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
+Body Definition of Cindy is 4. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
+[Body Adjective is generated out of the body weight and body definition and can be used in scenes - one word descriptive adjective depending on weight and definition groups: low weight group: skinny/slender/lithe; mid weight group: average/fit/muscled; high weight group: pudgy/husky/jacked]
+Androginity of Cindy is 8. [Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/somewhat effeminate/effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
+Mouth Length of Cindy is 6. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
+Mouth Circumference of Cindy is 3. [mouth circumference 1-5, "tiny, small, normal, wide, gaping"]
+Tongue Length of Cindy is 6. [length in inches]
+Breast Size of Cindy is 3. [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+Nipple Count of Cindy is 2. [count of nipples]
+Asshole Depth of Cindy is 10. [inches deep for anal fucking]
+Asshole Tightness of Cindy is 1. [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+Cock Count of Cindy is 0. [number of cocks]
+Cock Girth of Cindy is 0. [thickness 1-5, thin/slender/average/thick/monstrous]
+Cock Length of Cindy is 0. [Length in Inches]
+Ball Count of Cindy is 0. [allowed numbers: 1 (uniball), 2 or 4]
+Ball Size of Cindy is 0. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
+Cunt Count of Cindy is 1. [number of cunts]
+Cunt Depth of Cindy is 12. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Tightness of Cindy is 2. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+Clit Size of Cindy is 3. [size 1-5, very small/small/average/large/very large]
+[Basic Interaction states as of game start]
+PlayerMet of Cindy is false.
+PlayerRomanced of Cindy is false.
+PlayerFriended of Cindy is false.
+PlayerControlled of Cindy is false.
+PlayerFucked of Cindy is false.
+OralVirgin of Cindy is false.
+Virgin of Cindy is false.
+AnalVirgin of Cindy is false.
+PenileVirgin of Cindy is true.
+SexuallyExperienced of Cindy is true.
+TwistedCapacity of Cindy is true. [Twisted Characters can take any penetration, no matter the size]
+Sterile of Cindy is true. [steriles can't knock people up]
+MainInfection of Cindy is "".
 Description of Cindy is "[cindydesc]".
 Conversation of Cindy is { "What can I get you?" }.
 the fuckscene of Cindy is "[nosexwithcindy]".
@@ -163,7 +200,7 @@ carry out ssvending:
 
 Section 4 - Unwanted Trouble
 
-instead of going west from Beach Plaza when ( HP of Cindy is 4 and a random chance of 2 in 3 succeeds ) and player is not neuter:
+instead of going west from Beach Plaza when ( HP of Cindy is 4 and a random chance of 2 in 3 succeeds ) and Player is not neuter:
 	say "     As you start down the steps to the beach, there's an obvious commotion going on. A large squad of muscular men in naught but sandals, red cloaks and Grecian helmets are attacking the peaceful beachgoers. Some of the latter being dragged off, though some are being assaulted right then and there. A half-dozen of these soldiers are storming up the stairs to the Sunny Snacks patio, pushing past the mutants trying to flee down the stairs. You can see Cindy, the only one left up there, about to be cornered and outnumbered by the attackers.";
 	say "     If you're going to do something, you'd best do it soon.";
 	say "     [bold type]Shall you rush up to try to help the restauranteur or clear out like the other beachgoers are trying to do?[roman type][line break]";
@@ -283,7 +320,7 @@ to say sexwithcirce:
 		if CockName of Player is "Human" or CockName of Player is "Human" or CockName of Player is "Herm Human" or CockName of Player is "Herm Human":
 			now phumancock is true;
 		say "     Circe smiles at your offer and makes a quick check of the patio. 'I think the customers are all set right now. I think I can slip away for a little fun.' She posts up her 'Back in 15 min' sign and leads you inside the snack shack. After some heavy petting while the two of you get undressed, you end up with her on the silver framed divan.";
-		if Player is male and BodyName of Player is listed in infections of caninelist and CockName of Player is listed in infections of caninelist and a random chance of 2 in 3 succeeds:	[M/F doggy player gets doggy style]
+		if Player is male and BodyName of Player is listed in infections of CanineList and CockName of Player is listed in infections of CanineList and a random chance of 2 in 3 succeeds:	[M/F doggy player gets doggy style]
 			say "     'Mmm... you make quite the sexy beast. How about we get the doggy to bury his bone?' she says in a sultry tone. She slips her bikini bottom off before getting on all fours and displaying her curvy ass and hot, eager pussy for you. With a grin and a spank on her plush rear, she invites you to hop on up and fuck her like the horny dog of a man you are.";
 			say "     With such an offer from the beautiful woman, you move atop her with a playful growl. Getting your doggy dick lined up, you slide your [cock size desc of Player] cock into her. She turns out to be a perfect fit for your canine cock, taking you full with a snug grip. Thus mounted on the willing female, you let your doggy urges take over and hump her like an animal. She moans in delight, grinding her hips back and urging you to fuck you like a beast.";
 			say "     You fuck Circe energetically and she takes it with equal enthusiasm. Her cunt squeezes and milks at your cock with every thrust. You make wild, rough love to the sexy sorceress. And you do so like the beast she urges you to be, licking and nipping at her neck and shoulders, growling lustfully and panting heavily[if Player is knotted]. When you finally drive your knot fully into the woman and tie with her[else]. When your climax hits and you drive your pulsing shaft fully into the woman[end if], she cries out in ecstasy and clamps down tight around it. You cum hard, pumping your canine-tainted seed into her wanton womb.";

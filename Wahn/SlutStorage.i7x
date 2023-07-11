@@ -66,7 +66,9 @@ to say MortimerDesc:
 [TODO: Mention Blue if the Player does know them - and vice versa]
 
 instead of conversing Mortimer:
-	if "IntroEvent_Done" is not listed in Traits of Mortimer: [first encounter intro]
+	if "Noncon" is listed in BanList of Player:
+		say "     As you step up, the goo person gives you a suspicious look up and down, then says, 'Yeah no - you don't look like you belong here. Move along, this isn't for you.' That said, he waves you away and ignores any further attempt to talk to him.";
+	else if "IntroEvent_Done" is not listed in Traits of Mortimer: [first encounter intro]
 		say "     Just as you are about to step up to the gate and call out to the goo person, you see two people step out of one of the side passages a little bit further back, providing access to some of the countless storage bays in the facility. It is an anthro bulldog wearing nothing but a ratty pair of jeans, as well as another goo who looks pretty much identical to the gate guard. The two of them are talking as they approach, and you manage to catch part of it, with the bulldog saying, '...keep the little slut safely locked up, Mortimer. Even if she bangs on the door or something like that, alright? Not quite done training her to accept her new role. And if a dude [italic type]does[roman type] show up here asking for his sister...' The goo person next to him raises a hand to interrupt him, then replies with a slimy (literally dripping) grin, 'Say no more, I'll just inform him that what is stored - or not stored here - is the private business of my customers. And if he becomes aggressive or anything, you know how tight the place can be. No worries.'";
 		say "     After the last words were said, he casually waves towards the deeper part of the walled in facility, where you can make out four additional copies of his goo form move around and work. The next thing that happens as the duo reaches the other goo standing at the door buzzer is that Mortimer just steps up and merges with his copy, becoming half a foot taller and girthier. The newly merged being still looks the same in all other respects, and just continues talking in the same tone as before. 'Before you go, I do want to remind you again of the storage fees. Before any old or new deposited goods are accessed, you'll have to pay up.' Grunting under his breath, the anthro dog replies, 'Yeah, yeah, I remember. Hard not to, with the pain of lugging all those bottles of milk and cum here constantly.' With a sly smile creeping over his face, Mortimer spreads his arms as he offers, 'If you prefer, we can switch you to the alternate payment plan. Just say the word.'";
 		WaitLineBreak;
@@ -372,7 +374,7 @@ to say Mortimer_MaleSlutsMenu:
 	now sextablerun is 0;
 	blank out the whole of table of fucking options;
 	[]
-	if "Joshiro" is listed in StoredSluts_Male:
+	if there is a name of "Joshiro" in the Table of StoredSluts:
 		choose a blank row in table of fucking options;
 		now title entry is "Joshiro";
 		now sortorder entry is 1;
@@ -410,7 +412,7 @@ to say Mortimer_OtherSlutsMenu:
 	now sextablerun is 0;
 	blank out the whole of table of fucking options;
 	[]
-	if "Snow" is listed in StoredSluts_Other:
+	if there is a name of "Snow" in the Table of StoredSluts:
 		choose a blank row in table of fucking options;
 		now title entry is "Snow";
 		now sortorder entry is 1;
@@ -419,8 +421,14 @@ to say Mortimer_OtherSlutsMenu:
 	if there is a name of "Eric" in the Table of StoredSluts:
 		choose a blank row in table of fucking options;
 		now title entry is "Eric";
-		now sortorder entry is 1;
+		now sortorder entry is 2;
 		now description entry is "Visit the cuntboy to have some fun";
+	[]
+	if there is a name of "Doctor Mouse" in the Table of StoredSluts:
+		choose a blank row in table of fucking options;
+		now title entry is "Doctor Mouse";
+		now sortorder entry is 3;
+		now description entry is "Visit the hulking mouse to have some fun";
 	[]
 	sort the table of fucking options in sortorder order;
 	repeat with y running from 1 to number of filled rows in table of fucking options:
@@ -441,6 +449,8 @@ to say Mortimer_OtherSlutsMenu:
 					say "[StoredSlut_Snow]";
 				else if nam is "Eric":
 					say "[Eric_StorageVisit]";
+				else if nam is "Doctor Mouse":
+					say "[Mouse_StorageVisit]";
 				TraitGain "SlutUsed" for Mortimer;
 		else if calcnumber is 0:
 			now sextablerun is 1;

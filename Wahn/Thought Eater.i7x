@@ -71,6 +71,8 @@ to say TESlaveSexMenu:
 	now non-infectious entry is true;
 	setmonster "Herm Human";
 	choose row MonsterID from the Table of Random Critters;
+	say "     [bold type]What do you want to do with the thought eater's 'distraction'? Lee seems eager to do whatever you want...[roman type][line break]";
+	now sextablerun is 0;
 	blank out the whole of table of fucking options;
 	[]
 	if Player is male:
@@ -78,82 +80,77 @@ to say TESlaveSexMenu:
 		now title entry is "Have him blow your cock";
 		now sortorder entry is 1;
 		now description entry is "Let the herm slave blow you";
-		now toggle entry is TESlaveSex rule;
 	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Suck his cock";
 	now sortorder entry is 2;
 	now description entry is "Put the Asian dude's shaft in your mouth";
-	now toggle entry is TESlaveSex rule;
 	[]
 	if Player is female:
 		choose a blank row in table of fucking options;
 		now title entry is "Have him lick your pussy";
 		now sortorder entry is 3;
 		now description entry is "Put the herm slave's mouth to good use";
-		now toggle entry is TESlaveSex rule;
 	[]
 	if Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Fuck his pussy";
 		now sortorder entry is 4;
 		now description entry is "Fill the herm slave's pussy with your cock";
-		now toggle entry is TESlaveSex rule;
 	[]
 	if Player is female:
 		choose a blank row in table of fucking options;
 		now title entry is "Let him fuck your pussy";
 		now sortorder entry is 5;
 		now description entry is "Ride the Asian dude's cock";
-		now toggle entry is TESlaveSex rule;
 	if (Cock Count of Player > 1):
 		choose a blank row in table of fucking options;
 		now title entry is "Take his ass";
 		now sortorder entry is 6;
 		now description entry is "Fill the herm slave's ass with your cock";
-		now toggle entry is TESlaveSex rule;
 	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Let him fuck your ass";
 	now sortorder entry is 7;
 	now description entry is "Ride the Asian dude's cock";
-	now toggle entry is TESlaveSex rule;
-	[]
-	choose a blank row in table of fucking options;
-	now title entry is "Nothing";
-	now sortorder entry is 8;
-	now description entry is "Don't have sex with the herm slave after all";
-	now toggle entry is TESlaveSex rule;
 	[]
 	sort the table of fucking options in sortorder order;
-	change the current menu to table of fucking options;
-	carry out the displaying activity;
-	clear the screen;
-
-This is the TESlaveSex rule:
-	choose row Current Menu Selection in table of fucking options;
-	let nam be title entry;
-	say "[title entry]: [description entry]?";
-	if Player consents:
-		decrease menu depth by 1;
-		clear the screen;
-		if (nam is "Have him blow your cock"):
-			say "[TESlaveSex1]";
-		if (nam is "Suck his cock"):
-			say "[TESlaveSex2]";
-		else if (nam is "Have him lick your pussy"):
-			say "[TESlaveSex3]";
-		else if (nam is "Fuck his pussy"):
-			say "[TESlaveSex4]";
-		else if (nam is "Let him fuck your pussy"):
-			say "[TESlaveSex5]";
-		else if (nam is "Take his ass"):
-			say "[TESlaveSex6]";
-		else if (nam is "Let him fuck your ass"):
-			say "[TESlaveSex7]";
-		else if (nam is "Nothing"):
-			say "[TESlaveSexCancel]";
-		wait for any key;
+	repeat with y running from 1 to number of filled rows in table of fucking options:
+		choose row y from the table of fucking options;
+		say "[link][y] - [title entry][as][y][end link][line break]";
+	say "[link]0 - Nevermind[as]0[end link][line break]";
+	while sextablerun is 0:
+		say "Pick the corresponding number> [run paragraph on]";
+		get a number;
+		if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
+			now current menu selection is calcnumber;
+			choose row calcnumber in table of fucking options;
+			say "[title entry]: [description entry]?";
+			if Player consents:
+				let nam be title entry;
+				now sextablerun is 1;
+				if (nam is "Have him blow your cock"):
+					say "[TESlaveSex1]";
+				if (nam is "Suck his cock"):
+					say "[TESlaveSex2]";
+				else if (nam is "Have him lick your pussy"):
+					say "[TESlaveSex3]";
+				else if (nam is "Fuck his pussy"):
+					say "[TESlaveSex4]";
+				else if (nam is "Let him fuck your pussy"):
+					say "[TESlaveSex5]";
+				else if (nam is "Take his ass"):
+					say "[TESlaveSex6]";
+				else if (nam is "Let him fuck your ass"):
+					say "[TESlaveSex7]";
+				wait for any key;
+		else if calcnumber is 0:
+			now sextablerun is 1;
+			say "     Changing your mind, you step back from Lee's almost naked form and look down the hallway again. Your moment of hesitation has allowed the thought eater to get away, vanishing from sight. He must have gone into one of the side passages, but you can't tell which one. Not much point in running after him now. You leave the Asian man standing alone in the underground passage, looking relieved that his master got away, in addition to a somewhat dejected look at you spurning him offering himself.";
+			wait for any key;
+		else:
+			say "Invalid Option. Pick between 1 and [the number of filled rows in the table of fucking options].";
+	clear the screen and hyperlink list;
 
 to say TESlaveSex1: [cock sucked by Lee]
 	say "     As you put your hands on his shoulders and softly push down on them, the slave willingly kneels, eager to fulfill his task. While you drop your pack and gear, his hands are on your hips, sliding down any clothing you're wearing to reveal your already half-hard manhood. He takes it in his hand, jerking it a few times, then looks up at you with a submissive expression and proceeds to lick your balls, taking one, then the other into his mouth and playing his tongue over them. Holding your cock up, he then slowly licks up its underside before finally arriving at the tip. 'I've trained a lot to better please my master,' he says with a dreamy smile, then slides his soft lips over your cockhead.";
@@ -212,9 +209,6 @@ to say TESlaveSex7: [player's ass fucked by Lee]
 	CreatureSexAftermath "Player" receives "AssFuck" from "Herm Human";
 	infect "Herm Human";
 
-to say TESlaveSexCancel: [don't have sex with Lee]
-	say "     Changing your mind, you step back from Lee's almost naked form and look down the hallway again. Your moment of hesitation has allowed the thought eater to get away, vanishing from sight. He must have gone into one of the side passages, but you can't tell which one. Not much point in running after him now. You leave the Asian man standing alone in the underground passage, looking relieved that his master got away, in addition to a somewhat dejected look at you spurning him offering himself.";
-
 to say Thought_Eater_Desc:
 	setmongender 3;
 	say "     A pale-skinned humanoid creature steps out of the darkness ahead of you. Wearing a tight-fitting jumpsuit on its tall form, you can see it's got a pretty skinny build with long arms and legs, and judging from the bulge in the pubic area, is male. The head of the creature looks only vaguely human. Under a high-arching cranium a quartet of tentacles forms the lower half of its face, their ends twitching forward as if to reach for you.";
@@ -245,9 +239,9 @@ When Play begins:
 	add "Thought Eater" to infections of TentacleCockList;
 	add "Thought Eater" to infections of BipedalList;
 	now Name entry is "Thought Eater";
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
 	now enemy Name entry is "Master";
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The creature concentrates and suddenly your left arm punches you in the side.[or]With a slash of long, clawed fingers, the thought eater leaves bloody streaks on your skin.[or]One of the thought eater's four tentacles slaps you in the face.[at random]";
 	now defeated entry is "[Thought_Eater_Loses]";
 	now victory entry is "[Thought_Eater_Wins]";
@@ -268,35 +262,35 @@ When Play begins:
 	now per entry is 22;
 	now int entry is 28;
 	now cha entry is 16;
-	now sex entry is "Male";              [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
-	now HP entry is 75;                   [ How many HP has the monster got? ]
-	now lev entry is 12;                  [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
-	now wdam entry is 7;                  [ Amount of Damage monster Does when attacking.]
-	now area entry is "Nowhere";          [ Case sensitive]
-	now Cock Count entry is 1;                 [ number of cocks if sex is 'Male' or 'Both' ]
+	now sex entry is "Male"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now HP entry is 75; [ How many HP has the monster got? ]
+	now lev entry is 12; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
+	now wdam entry is 7; [ Amount of Damage monster Does when attacking.]
+	now area entry is "Nowhere"; [ Case sensitive]
+	now Cock Count entry is 1; [ number of cocks if sex is 'Male' or 'Both' ]
 	now Cock Length entry is 12;
-	now Ball Size entry is 2;            [ Size of balls ]
-	now Nipple Count entry is 2;               [ Number of nipples. ]
-	now Breast Size entry is 0;           [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
-	now Male Breast Size entry is 0;      [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 0;                 [ number of pussies if sex is 'Female' or 'Both' ]
+	now Ball Size entry is 2; [ Size of balls ]
+	now Nipple Count entry is 2; [ Number of nipples. ]
+	now Breast Size entry is 0; [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 0; [ number of pussies if sex is 'Female' or 'Both' ]
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	now SeductionImmune entry is true;
-	now libido entry is 0;               [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
-	now loot entry is "tentacle tip";     [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
-	now lootchance entry is 40;           [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 3;                 [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now libido entry is 0; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
+	now loot entry is "tentacle tip"; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
+	now lootchance entry is 40; [ Chance of loot dropping 0-100 ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]spindly[or]tall[at random]";
 	now type entry is "[one of]hybrid[or]monstrous[at random]";
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is true;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;        [ 0 = Up at all times; 1 = Nocturnal (night encounters only); 2 = Diurnal (day encounters only) ]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Nocturnal (night encounters only); 2 = Diurnal (day encounters only) ]
 	now altcombat entry is "default"; [ Row used to designate any special combat features, "default" for standard combat. ]
 	now BannedStatus entry is false;
 
@@ -307,7 +301,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -319,7 +313,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -338,7 +332,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -359,18 +353,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -384,19 +378,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -423,7 +417,7 @@ to TEInfect:
 	setmonster "Thought Eater";
 	choose row MonsterID from the Table of Random Critters;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	infect "Thought Eater";
 	now non-infectious entry is true;
 
@@ -440,7 +434,7 @@ This is the Thought Eater Infection rule:
 			say "     Your worldview shifting further and further from anything close to human, you eventually succumb to your urges to own and control others. Your first victim is a husky you meet out on the street, easily overpowering her mind and making her yours. From then on, it's pretty easy to gather more slaves, using her as a puppet to parade in front of others and draw them closer.";
 			say "     As your power and number of followers grows more and more, you prepare for the impending arrival of the military by moving your lair to a mostly empty industrial area, keeping your slaves out of sight in a large warehouse. When one, then a day later another, army scout finally comes along, you manage to dominate them quickly enough so neither of them can give word of anything, then send them on their way. With the men reporting the area to be empty, the military's sweep just passes over you and your slaves, leaving you undiscovered.";
 			if Player is male:
-				say "     Several days later, the first of your two soldier slaves returns, bringing a female soldier with him whom he promised a good time. Which she most definitively has - riding your cock after quickly succumbing to your mental power. While you fuck and impregnate your new harem slave, you let one of your other servants take care of the scout as a reward, then send him back out to bring you another human woman.";
+				say "     Several days later, the first of your two soldier slaves returns, bringing a female soldier with him whom he promised a good time. Which she most definitely has - riding your cock after quickly succumbing to your mental power. While you fuck and impregnate your new harem slave, you let one of your other servants take care of the scout as a reward, then send him back out to bring you another human woman.";
 		else:[sane]
 			say "     When the military finally moves in, you're brought into a medical holding facility. There a doctor checks you out, then gives you a shot to neutralize the remaining nanites in your system before you're released. It's not easy to find a place in society looking as you do, and after a while of getting hostile stares and insulting comments, a human even attacks you outside of a bar one night.";
 			say "     Reacting out of instinct at first, you lash out at him with a mental blast, bringing the man to his knees. After that, your built-up anger unloads almost explosively, making you invade his head, flaying away layer after layer of his thoughts. Which leaves him a drooling shell, and gives you quite a bit of information about the gang he is in and the underground business going on in the area. Recognizing the chance of gaining control of it all, you let your slave lead you to his friends, then their rivals, turning them into your servants one by one - though being careful to leave them a bit more functional than him. Thus, you become 'The Overmind', a crime lord with an ever growing influence and power.";

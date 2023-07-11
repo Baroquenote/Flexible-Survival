@@ -630,6 +630,30 @@ Definition: A person (called x) is NProN:
 	if PronounSet of x is "Neuter", yes;
 	no;
 
+A person can be pronounMale. A person is usually not pronounMale.
+
+Definition: A person (called x) is pronounMale:
+	if SubjectPro of Player is "he", yes;
+	no;
+
+A person can be pronounFemale. A person is usually not pronounFemale.
+
+Definition: A person (called x) is pronounFemale:
+	if SubjectPro of Player is "she", yes;
+	no;
+
+A person can be pronounHerm. A person is usually not pronounHerm.
+
+Definition: A person (called x) is pronounHerm:
+	if SubjectPro of Player is "shi", yes;
+	no;
+
+A person can be pronounNeuter. A person is usually not pronounNeuter.
+
+Definition: A person (called x) is pronounNeuter:
+	if SubjectPro of Player is "it", yes;
+	no;
+
 [Menu]
 
 pronounsetting is an action applying to nothing.
@@ -737,6 +761,13 @@ to say sir:
 		say "sir";
 	else:
 		say "ma'am";
+
+to say dude:
+	if PronounSet of Player is "Female" or PronounSet of Player is "Herm":
+		say "dudette";
+	else:
+		say "dude";
+
 
 [Being verbs]
 

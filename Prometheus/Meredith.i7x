@@ -167,14 +167,14 @@ object	name
 Meredith	"Meredith"
 
 Meredith is a woman.
-ScaleValue of Meredith is 4. [horse sized]
+ScaleValue of Meredith is 4. [6' 10"]
 Body Weight of Meredith is 4. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 Body Definition of Meredith is 3. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
 [Body Adjective is generated out of the body weight and body definition and can be used in scenes - one word descriptive adjective depending on weight and definition groups: low weight group: skinny/slender/lithe; mid weight group: average/fit/muscled; high weight group: pudgy/husky/jacked]
 Androginity of Meredith is 8. [Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/somewhat effeminate/effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
-Mouth Length of Meredith is 6. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
+Mouth Length of Meredith is 5. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
 Mouth Circumference of Meredith is 3. [mouth circumference 1-5, "tiny, small, normal, wide, gaping"]
-Tongue Length of Meredith is 6. [length in inches]
+Tongue Length of Meredith is 5. [length in inches]
 Breast Size of Meredith is 4. [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
 Nipple Count of Meredith is 2. [count of nipples]
 Asshole Depth of Meredith is 12. [inches deep for anal fucking]
@@ -185,7 +185,7 @@ Cock Length of Meredith is 0. [Length in Inches]
 Ball Count of Meredith is 0. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Meredith is 0. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Meredith is 1. [number of cunts]
-Cunt Depth of Meredith is 12. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Meredith is 12. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Meredith is 3. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Meredith is 3. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -422,7 +422,7 @@ to say Meredithsexmenu:
 	now sextablerun is 0;
 	blank out the whole of table of fucking options;
 	if Player is male:
-		if BodyName of Player is not listed in infections of taurlist:
+		if BodyName of Player is not listed in infections of TaurList:
 			choose a blank row in table of fucking options;
 			now title entry is "Fuck her";
 			now sortorder entry is 1;
@@ -437,7 +437,7 @@ to say Meredithsexmenu:
 		now sortorder entry is 2;
 		now description entry is "Have a go at Mare's ass";]
 		choose a blank row in table of fucking options;
-		now title entry is "Blow job";
+		now title entry is "Blowjob";
 		now sortorder entry is 3;
 		now description entry is "Have Mare suck you off";
 	choose a blank row in table of fucking options;
@@ -481,7 +481,7 @@ to say Meredithsexmenu:
 					say "[Meredithsex1]";
 				else if nam is "Anal":
 					say "[Meredithsex2]";
-				else if nam is "Blow job":
+				else if nam is "Blowjob":
 					say "[Meredithsex3]";
 				else if nam is "Eat her out":
 					say "[Meredithsex4]";
@@ -501,7 +501,7 @@ to say Meredithsexmenu:
 
 to say Meredithsex1:
 	say "     In the mood to fuck the mare's equine cunny, you give her a quick kiss before moving around to her rear. Rubbing your hands over her flanks, you bring your [Cock of Player] cock into position and rub it against her rear. Enjoying the soft, eager nickers of the geeky mare, you draw it out, brushing your glans across her wet folds several times before finally easing your [cock size desc of Player] penis into her. Feeling your [if Cock Length of Player < 12]small for her shaft sinking into her needy cunt, she gives a moaning nicker[else if Cock Length of Player < 24]goodly-sized shaft sinking into her needy cunt, she gives a loud moaning nicker[else]impressively large shaft sinking into her needy cunt, she gives a moaning nicker. '[one of]Oh Curie[or]By Newton[or]Eureka[at random], that's big,' she exclaims[end if].";
-	if BodyName of Player is listed in infections of taurlist:
+	if BodyName of Player is listed in infections of TaurList:
 		say "     Having mounted Mare, you put your arms around her upper body. Holding onto her both around the torso and with your forelegs around her flanks, you steady yourself atop her and start pounding away. Despite being a smaller mare than Vanessa, her transformed body's able to support your weight while you pound her needy cunny[if Cock Length of Player > 36] with your belly-bulging monster-cock[end if]. You alternate between groping the red-headed centaur's breasts and gripping her front hips when you go to pound her particularly hard.";
 	else:
 		say "     Having thrust into Mare, you grip her meaty rump with your hands and start pounding away. Settling into a rhythm, you let your hands roam around to rub her flanks, mare breasts[if anallevel is 3], underbelly and equine pucker[else] and underbelly[end if]. And once you've got her pushing lightly back into your thrusts, [if Cock Length of Player > 36]you drive your belly-bulging monster-cock fully into her, much to her nickering delight[else]you get her nickering with delight[end if]. You alternate between stroking the red-headed centaur's [one of]tail[or]flanks[or]back[at random] and teasing her [one of][if anallevel is 3]equine pucker[else]equine udder[end if][or]equine udder[or]spread folds[or]throbbing clit[at random] between phases when you're pounding her particularly hard.";
@@ -533,7 +533,7 @@ to say Meredithsex5:
 to say Meredith_3some1:
 	say "     Recalling that it's been a while since you did anything with Vanessa, you motion for her to come over and join the both of you. Mare's quite happy to see her join in, putting her arms around the sexy centaur breeder and sharing a loving kiss. They face each other and playfully cuddle for a bit, hands running over each other's body while you snuggle up to them, arm around the waist of each centaur.";
 	if Player is male:
-		say "     After this warmup, Vanessa trots around to give Mare a swat on the rear, telling her to get into position and to raise her tail for you. The bigger centaur then lines up alongside her and does the same. With the lovely sight of these two mares showing their juicy equine vulvae to you, you rise to full hardness and move in to take advantage of their offer. Selecting Mare first, you [if BodyName of Player is listed in infections of taurlist]mount the transformed researcher and [end if]sink your [Cock of Player] cock into her hot, wet folds and start pounding away. You certainly don't leave the other centaur out of it though, reaching over to finger her cunny while you fuck her friend.";
+		say "     After this warmup, Vanessa trots around to give Mare a swat on the rear, telling her to get into position and to raise her tail for you. The bigger centaur then lines up alongside her and does the same. With the lovely sight of these two mares showing their juicy equine vulvae to you, you rise to full hardness and move in to take advantage of their offer. Selecting Mare first, you [if BodyName of Player is listed in infections of TaurList]mount the transformed researcher and [end if]sink your [Cock of Player] cock into her hot, wet folds and start pounding away. You certainly don't leave the other centaur out of it though, reaching over to finger her cunny while you fuck her friend.";
 		say "     You swap between the two every couple of minutes, taking your time at first to make sure you can last long enough to satisfy them both. Certainly they're both very excited even while it's not their turn to judge from the copious juices flowing from them as you finger their quivering petals or fingerfuck their pussies. They snuggle and make out while you ride them as well, arms around each other and hands groping breasts and teasing nipples. Soft nickers and whinnies are mixed into their tender words of affection they share.";
 		say "     Swapping between them allows you to compare their cunts, unable to quite decide which you enjoy the best. While Mare's is naturally a little smaller and tighter given her smaller stature, Vanessa's inner muscles still manage to squeeze tighter around your thrusting shaft. You're still left undecided as you feel your climax fast approaching and swap to Mare one last time, really start pounding into her juicy cunny to finish. You cry out in orgasmic release, pumping your [Cum Load Size of Player] load into the whinnying mare. That final added sensation of your spurting semen sends her over the edge. Vanessa soon follows as you work your now slick hand in and out of her cunt rapidly while draining your balls into her friend. Once your orgasms have passed and you all move apart, more kisses and snuggling is shared before Vanessa and Meredith settle onto the floor side by side while you ready to go about some other tasks.";
 		if HP of Meredith > 10:
@@ -552,7 +552,7 @@ to say Meredith_3some1:
 to say Meredith_3some2:
 	say "     Spotting the husky nearby watching with lewd interest, you decide to have her join in on the fun. Knowing she'll be up for playing with her friend, you motion for the canine girl to come over. Her tail wags happily as she runs over on all fours in her excitement. Mare eeps in surprise as she finds a cold doggy nose buried in her snatch moments later, dropping the last few things in her hands. The doggy tongue slurping into her distracts her from picking them up and she shifts her hind legs apart a little further and releases a satisfied moan.";
 	if Player is male:
-		say "     Once you're satisfied that the husky's gotten Mare nice and ready for you, you get your [Cock of Player] cock lined up with her pussy and let the helpful doggy slut guide it in. Colleen moves around to Meredith's front, hugging and kissing her while they play with each other's breasts. The sight of them making out turns you on all the more and you grip your lover's [if BodyName of Player is listed in infections of taurlist]waist gently[else]hips firmly[end if] and fuck her all the faster. The soft whinnies and yips of the excited females mix with your own cries as the three of you go at it.";
+		say "     Once you're satisfied that the husky's gotten Mare nice and ready for you, you get your [Cock of Player] cock lined up with her pussy and let the helpful doggy slut guide it in. Colleen moves around to Meredith's front, hugging and kissing her while they play with each other's breasts. The sight of them making out turns you on all the more and you grip your lover's [if BodyName of Player is listed in infections of TaurList]waist gently[else]hips firmly[end if] and fuck her all the faster. The soft whinnies and yips of the excited females mix with your own cries as the three of you go at it.";
 		say "     After a particularly long kiss with lots of doggy tongue, Colleen breaks off and moves under the centaur. Nosing around the juicy hole you're stuffing, she starts lapping at your shaft and Meredith's cunny each time you withdraw before another thrust. From the increase of wet sounds, you can tell the husky's also fingering herself wildly under there[if CockName of Player is not listed in infections of InternalCockList]. And with that tongue also finding its way to your [Ball Size Adjective of Player] [Balls][else]. And with that playful tongue[end if], you're quickly building to your climax as well.";
 		say "     All this proves to be too much for the researcher first, sending her over the edge into an orgasmic bout of whinnying as her hot cunt squeezes and milks at your[if Cock Length of Player > 36] belly-bulging[end if] manhood. You follow soon after, shooting your hot seed into that needy womb. A canine moan and frantic lapping informs you that the husky's cumming as well as she gathers up the leaking semen and feminine juices seeping from that creamy hole. And when you pull out, she's right there to stuff your cock into her muzzle to lick and suck it clean. Meredith's given similar treatment, the helpful doggy lapping the leaking excess from her friend's cunt. They cuddle up together and, after some hugs and kisses for each, you leave them there while you get back to other matters.";
 		if HP of Meredith > 10:

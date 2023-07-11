@@ -82,7 +82,7 @@ Cock Length of Kenaz is 11. [length in inches]
 Ball Count of Kenaz is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Kenaz is 3. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Kenaz is 0. [number of cunts]
-Cunt Depth of Kenaz is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Kenaz is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Kenaz is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Kenaz is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -739,7 +739,8 @@ Understand "scale up" as Firepolescaling.
 
 Check Firepolescaling:
 	If LowerFirepole is not visible:
-		say "[if PALOMINO is known and a random chance of 1 in 2 succeeds]If you want to play around on a pole, try the PALOMINO.[else]Thinking about monkeying around on a fire pole, are we?[end if]";
+		say "[if PALOMINO Dance Club is known and a random chance of 1 in 2 succeeds]If you want to play around on a pole, try the PALOMINO.[else]Thinking about monkeying around on a fire pole, are we?[end if]";
+		stop the action;
 
 carry out Firepolescaling:
 	say "     Figuring that you could do with a light workout, you decide to climb the fire pole.";

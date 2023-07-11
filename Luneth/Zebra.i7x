@@ -17,12 +17,12 @@ to say Zebra wins:
 			say "     DEBUG: Empty scene in the file 'Zebra.i7x' - Dealing with the event outcome is taken care of at the event source[line break]";
 		stop the action;
 	else: [regular combat victory over the player]
-		if ((player is male) and (player is submissive) and (LostToZebra is 3)):
+		if ((Player is male) and (Player is submissive) and (LostToZebra is 3)):
 			say "     'What? You again?!' The zebra man looks at your panting form with a puzzled look on his face. His expression changes to a leering grin. 'You must be one of those beta males I've heard the [one of]huskies[or]wolves[or]German Shepherds[at random] talking about.' [if Player is mpreg_ok]The stallion bends down and sniffs you. 'Or even one of those omega males!' he says with a grin. [end if]He taps the side of his muzzle thoughtfully. 'Well, I was always told never to look a gift horse in the mouth, and I'm not going to start now.' He steps up to you, bumping your face with his huge dick. [bold type]What will your stud do next?[roman type][line break]";
 			increase LostToZebra by 1;
 			wait for any key;
 			say "[ZebraDommingPlayerSexMenu]";
-		else if ((player is male) and (player is submissive) and (LostToZebra > 3)):
+		else if ((Player is male) and (Player is submissive) and (LostToZebra > 3)):
 			say "     The stallion knocks you over with a little kick. 'Back again, eh? Can't say I blame you, my little boy mare. After all, who could resist all of this?' The zebra man strikes a few poses, his muscled body rippling as he showcases his arms and chest. He finishes the routine by slapping your face with his massive prick. [bold type]'Now, what to do with my new favorite mare?'[roman type][line break]";
 			wait for any key;
 			say "[ZebraDommingPlayerSexMenu]";
@@ -33,16 +33,16 @@ to say Zebra wins:
 			say "     You struggle to hang on to any scrap of yourself, as he pounds his hard rod into you, each thrust making it harder and harder to remember why you would ever want to be independent or human. After what seems like an eternity of rough pleasure, his body tenses as he shoots his thick equine seed into you, the hot, sticky semen flooding your womb with his stallion sperm and overflowing out down his cock as he pumps more and more into you, laying his mark deep into your body. You can only lie there helplessly as he pulls himself out, his seed leaking out of your well-used body as he hauls himself up and grins down at you. 'Let's see if that doesn't make a proper zebra mare out of you now,' he says in a smug tone. 'Now, I have to go check on the rest of the herd, and maybe find a few more new mares while I'm at it. You'll be sure to come back to join us soon now, won't you?' The zebra beast asks with a short laugh, as if the matter was never in doubt, as he trots away, leaving you lying there with his seed still leaking out of you.";
 			CreatureSexAftermath "Player" receives "PussyFuck" from "Zebra Stallion";
 			increase LostToZebra by 1;
-		else if Player is not female and player is mpreg_ok and a random chance of anallevel in 4 succeeds:	[Mpreg anal]
+		else if Player is not female and Player is mpreg_ok and a random chance of anallevel in 4 succeeds:	[Mpreg anal]
 			say "     '[if Player is male]Another male[else]A useless gelding[end if] in my territory! Well, we will... *sniff*... see about... *sniff*...' the large stallion starts to say before catching a whiff of something in the air. 'Oh ho! What have we here? It looks like we have a breeder mare posing as a male.' He chuckles as he grabs you roughly. He runs his hooved hands over your lower belly, taking in your scent again. [if Player is mpreg_able]'And here you are, ready to be knocked up again, you male mare[else]'It seems someone's already gotten to you. Best to give you a [italic type]proper reminder[roman type] to return to my herd the next time your male mare body is ready[end if].' Grinning lewdly, he pushes you to the ground and strokes his erect zebra cock.";
-			say "     [if HP of Player > 0 or player is submissive]Your body, giving in to the striped stallion's dominant scent and actions, moves onto all fours and has you raise your ass in the air[else]Too worn out to put up more than a token resistance by this point, your head fogs with lust, the striped stallion's dominant scent and actions awakening an almost instinctive need to submit to his strong, masculine needs. As the last of your will struggles against this, he pushes you onto all fours and raises your ass up[end if]. With you presenting such a delectable[if Player is mpreg_able], breedable[end if] target, he rubs the blunt tip of his drooling cock against your tight ring. Smearing his precum against it for a little added lubrication, he gives your anus a few probing pushes. 'Oh, you will make a fine mare,' the zebra grunts lustfully, spurting another gob of precum, this one flowing into your relaxing hole. 'And now, we just need to make sure you are MY mare!' With that, the horny zebra pulls your ass firmly towards his hips while his other hand guides his equine rod into your rectum.";
+			say "     [if HP of Player > 0 or Player is submissive]Your body, giving in to the striped stallion's dominant scent and actions, moves onto all fours and has you raise your ass in the air[else]Too worn out to put up more than a token resistance by this point, your head fogs with lust, the striped stallion's dominant scent and actions awakening an almost instinctive need to submit to his strong, masculine needs. As the last of your will struggles against this, he pushes you onto all fours and raises your ass up[end if]. With you presenting such a delectable[if Player is mpreg_able], breedable[end if] target, he rubs the blunt tip of his drooling cock against your tight ring. Smearing his precum against it for a little added lubrication, he gives your anus a few probing pushes. 'Oh, you will make a fine mare,' the zebra grunts lustfully, spurting another gob of precum, this one flowing into your relaxing hole. 'And now, we just need to make sure you are MY mare!' With that, the horny zebra pulls your ass firmly towards his hips while his other hand guides his equine rod into your rectum.";
 			WaitLineBreak;
 			say "     You gasp as he steadily drives his long, thick cock into your bowels until it's fully buried inside of you. You moan and squirm beneath him, your body trembling with growing pleasure at having this virile stud inside of you. Any remaining thoughts of resisting or escaping quickly fade as he starts thrusting, his equine pole pumping into your tight ass over and over again. Your eyes glaze over in pleasure as his thick rod spears deep inside of you again and again. [if Player is male]Your prostate throbs and pulses each time his medial ring pops past your sphincter. [end if]He ruts you hard in his intent to claim you as his own, and your body responds to his needs, your inner walls squeezing and pulling at his shaft, longing for him to stake his claim on your [if Player is mpreg_able]hidden womb[else][bodytype of Player] body[end if]. You moan as the experienced stallion nips at you with his mouth and controls you with his hands, even as he pounds into you. His every move means to reinforce his dominant position and reduce you to nothing more than a submissive little herd member.";
 			say "     You struggle to hold onto any scrap of yourself as he pounds his hard rod into you. Each thrust makes it harder and harder to remember why you would ever want to be independent or human when you have such a virile stallion to breed you. After an eternity of rough pleasure, his body tenses, and he shoots his thick seed into you. His sticky semen floods your bowels[if scalevalue of Player <= 3] enough to plump out your belly[end if][if Player is mpreg_able] as it rushes into your hidden womb[end if] with plenty of excess overflowing around his pulsing shaft. He manhandles you with a rough, confident manner as he pumps blast after blast of zebra cum into your receptive body, your hips grinding back as you can only moan for more at this point.";
 			CreatureSexAftermath "Player" receives "AssFuck" from "Zebra Stallion";
 			say "     Having left his mark inside of you, he slowly withdraws his still twitching cock and sprays a few stripes of zebra cum across your back. A gush of his sperm pours from your gaping anus when he pulls out, and you find yourself reaching back, doing your best to plug your stretched hole with your fingers to hold that hot, wet goo inside until your muscles can recover and close. He chuckles at the sight of this and grins down at you. 'Let's see if that doesn't make a proper zebra mare out of you, you strange little [if Player is male]male[else]gelding[end if],' he says in a smug tone. 'Now, I have to go check on the rest of the herd, and maybe find a few more new mares while I'm at it. I look forward to you joining us there, my special male breeder,' he adds, caressing your cheek with a lewd grin. 'You'll be sure to come back to join us now, won't you?' the zebra beast asks with a short laugh, as if the matter was never in doubt. He trots away with a confident gait, leaving you laying there in a sticky pool of his seed. Thoughts of being part of his herd and being bred up the ass repeatedly by the virile stud roll around in your lust-addled mind for quite some time.";
 			increase LostToZebra by 1;
-		else if Player is not female and player is submissive and a random chance of 2 in 3 succeeds:
+		else if Player is not female and Player is submissive and a random chance of 2 in 3 succeeds:
 			say "     '[if Player is male]Another male[else]A useless gelding[end if] in my territory! Well, we will see about that!' the large stallion says. As the confident stallion brashly looks you over, your submissive urges kick in. You find yourself drawn to his half-hard cock, longing to see its full girth, to feel its full girth [bold type]in you[roman type]! The striped stud chuckles as you start licking and kissing at his cock, coaxing it to engorge. 'Look at you, so eager to be my mare";
 			if Player is not mpreg_ok and a random chance of anallevel in 5 succeeds:		[Submissive anal]
 				say ". Well, who am I to disappoint you?'";
@@ -454,7 +454,7 @@ When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
 	now Species Name entry is "Zebra";
-	add "Zebra Stallion" to infections of Equinelist;
+	add "Zebra Stallion" to infections of EquineList;
 	add "Zebra Stallion" to infections of FurryList;
 	add "Zebra Stallion" to infections of MaleList;
 	add "Zebra Stallion" to infections of BluntCockList;
@@ -462,22 +462,22 @@ When Play begins:
 	add "Zebra Stallion" to infections of BipedalList;
 	add "Zebra Stallion" to infections of TailList;
 	now Name entry is "Zebra Stallion";
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]He slams his large forehead right into your head, causing you to see stars![or]The large beast pauses for a minute to stroke his thick zebra cock and grins at you lewdly, the sight and his strong dominant musk sapping your will to fight![or]He lashes out at you with his strong hoof-like hands![or]He charges forward wildly, slamming his body into yours![or]The zebra stallion lowers his shoulder and rams into you, throwing you to the ground painfully![at random]";
 	now defeated entry is "[Zebra loses]";
 	now victory entry is "[Zebra wins]";
 	now desc entry is "[ZebraDesc]";
-	now face entry is "a long, zebra-like muzzle. Your ears have lengthened and constantly swivel above your head as they search for danger, though your eyes still stare with human emotion"; [Your face is (your text)."]
-	now body entry is "thickly built. You stand easily on your strong digitigrade legs, balancing easily on your thick hooves. Your four-fingered hands bear a strong resemblance to equine hooves, and you can't seem to manipulate objects quite as well as you could before"; [ Body Description, format as "Your Body is (your text)"]
-	now skin entry is "[one of]black-and-white-striped[or]coarse-furred[or]zebra-striped[or]zebra fur[at random]"; [ skin Description, format as "Looking at yourself, your body is covered in (your text) skin"]
+	now face entry is "a long, zebra-like muzzle. Your ears have lengthened and constantly swivel above your head as they search for danger, though your eyes still stare with human emotion"; [ Face description, format as "Your face is [Face of Player]." ]
+	now body entry is "thickly built. You stand easily on your strong digitigrade legs, balancing easily on your thick hooves. Your four-fingered hands bear a strong resemblance to equine hooves, and you can't seem to manipulate objects quite as well as you could before"; [ Body Description, format as "Your Body is [Body of Player]." ]
+	now skin entry is "[one of]black-and-white-striped[or]coarse-furred[or]zebra-striped[or]zebra fur[at random]"; [ Skin Description, format as "Looking at yourself, your body is covered in [Skin of Player] skin." ]
 	now tail entry is "You have a whip-like zebra tail hanging off of your tight, powerful ass. Long, coarse, black hairs extend from part of the sides of the tail and from the tip, extending its length almost to the ground as it swishes behind you."; [ Tail description, write a whole Sentence or leave blank. ]
 	now cock entry is "[one of]equine[or]zebra[or]thick, black[at random]"; [ Cock Description, format as you have a 'size' (your text) cock]
-	now face change entry is "you feel it stretch forward into a proper zebra-like muzzle, your teeth flattening and your nose expanding to take in the new scents around you. With a painful stretching feeling, your ears are tugged upwards to rest on top of your head, and black hair sprouts up to form a mohawk-like zebra mane. Soon, the only difference between your face and that of a normal zebra is a slightly humanlike cast to your features, plus your strangely human eyes staring out at the world through an animal's face"; [ face change text. format as "Your face feels funny as (your text)." ]
-	now body change entry is "its chest thickens and stretches into a more zebra-like barrel. Legs thickening and shifting into a digitigrade stance, your feet round out into rough hooves underneath you. Your arms thicken with new muscle while your fingers seem to flow and merge, leaving you with only three fingers and a thumb on each hand. The tips of your reformed digits are covered in thick, black nails, giving your hands a strong hoof-like appearance"; [ body change text. format as "Your body feels funny as (your text)." ]
-	now skin change entry is "soft, black-and-white-striped fur slowly covers your body, your skin twitching and shuddering as it settles into place"; [ skin change text. format as "Your skin feels funny as (your text)." ]
-	now ass change entry is "it firms up, and you feel a sharp stretching sensation as a thin whip-like zebra tail pushes its way out from above your ass. With a sharp, short shock of pain, strands of thick zebra hair explode out of the tip of the appendage and form a tuft of fur"; [ ass/tail change text. format as "Your ass feels funny as (your text)." ]
+	now face change entry is "you feel it stretch forward into a proper zebra-like muzzle, your teeth flattening and your nose expanding to take in the new scents around you. With a painful stretching feeling, your ears are tugged upwards to rest on top of your head, and black hair sprouts up to form a mohawk-like zebra mane. Soon, the only difference between your face and that of a normal zebra is a slightly humanlike cast to your features, plus your strangely human eyes staring out at the world through an animal's face"; [ Face change text, format as "Your face feels funny as [face change entry]." ]
+	now body change entry is "its chest thickens and stretches into a more zebra-like barrel. Legs thickening and shifting into a digitigrade stance, your feet round out into rough hooves underneath you. Your arms thicken with new muscle while your fingers seem to flow and merge, leaving you with only three fingers and a thumb on each hand. The tips of your reformed digits are covered in thick, black nails, giving your hands a strong hoof-like appearance"; [ Body change text, format as "Your body feels funny as [body change entry]." ]
+	now skin change entry is "soft, black-and-white-striped fur slowly covers your body, your skin twitching and shuddering as it settles into place"; [ Skin change text, format as "Your skin feels funny as [skin change entry]." ]
+	now ass change entry is "it firms up, and you feel a sharp stretching sensation as a thin whip-like zebra tail pushes its way out from above your ass. With a sharp, short shock of pain, strands of thick zebra hair explode out of the tip of the appendage and form a tuft of fur"; [ Ass/tail change text, format as "Your ass feels funny as [ass change entry]." ]
 	now cock change entry is "it darkens to a deep-black color, and its tip blunts into an equine tip. A zebra's sheath forms at its base, and it pulls up into it, ready to emerge when you get aroused"; [ cock change text. format as "Your cock feels funny as (your text)." ]
 	now str entry is 19;
 	now dex entry is 19;
@@ -490,30 +490,30 @@ When Play begins:
 	now lev entry is 8;
 	now wdam entry is 10;
 	now area entry is "Zoo";
-	now Cock Count entry is 1;  [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
-	now Cock Length entry is 18;  [ Length infection will make cock grow to if cocks]
-	now Ball Size entry is 3;  [ Size of balls ]
-	now Nipple Count entry is 2;  [ Number of nipples infection will give you (males have nipples too) ]
-	now Breast Size entry is 6;  [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
-	now Male Breast Size entry is 0;  [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 1;  [ if sex = "Female or both", indicates the number of female sexes infection will grant you.]
+	now Cock Count entry is 1; [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
+	now Cock Length entry is 18; [ Length infection will make cock grow to if cocks]
+	now Ball Size entry is 3; [ Size of balls ]
+	now Nipple Count entry is 2; [ Number of nipples infection will give you (males have nipples too) ]
+	now Breast Size entry is 6; [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 1; [ if sex = "Female or both", indicates the number of female sexes infection will grant you.]
 	now Cunt Depth entry is 9;
 	now Cunt Tightness entry is 4;
 	now SeductionImmune entry is false;
-	now libido entry is 60;  [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
-	now loot entry is "zebra fur";  [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
-	now lootchance entry is 30;  [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "zebra cum";
-	now TrophyFunction entry is "-";
-	now scale entry is 3;  [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now libido entry is 60; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
+	now loot entry is "zebra fur"; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
+	now lootchance entry is 30; [ Chance of loot dropping 0-100 ]
+	now MilkItem entry is "zebra stallion milk"; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is "zebra stallion cum";
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]thick[or]barrel-chested[at random]";
 	now type entry is "[one of]equine[or]zebrine[at random]";
 	now magic entry is false;
-	now resbypass entry is false;  [ Bypasses Researcher bonus? true/false (almost invariably false) ]
+	now resbypass entry is false; [ Bypasses Researcher bonus? true/false (almost invariably false) ]
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;  [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -524,7 +524,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -536,7 +536,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -555,7 +555,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -576,18 +576,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -601,19 +601,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -645,10 +645,10 @@ This is the Zebra Stallion Infection rule:
 			else if Player is female:
 				say "     Surrendering to your new instincts, the instincts instilled in you by the strong and powerful zebra stallion, you find yourself hurrying back to the zoo, unable to stand being separated from the herd any longer. Soon, you are found by the strong and dominant zebra stallion you fought earlier, though the burning between your legs at the sight of his strong handsome form ensures that fighting the stallion is definitely the last thing on your mind. You find yourself trembling as the zebra stallion comes over and brushes himself against you, the feel of his hard, strong body next to yours making you feel weak and helpless, like you need this powerful stallion to hold you, to own you, to make you part of his herd, and protect you from ever being alone again.";
 				say "     Soon, you find yourself completely overcome with these new needs, and you find yourself begging him to take you, to make you his, to fill your belly with his strong zebra foals, and make his claim to your body plain for all to see. The stallion chuckles as he teases you with his hoof-like hands, enjoying the way he can make you beg and squirm for him. He accepts your surrender and fills you with his thick black cock, causing your eyes to roll back in pleasure as you let out soft whinnying noises with each thrust of his large equine member. Your muscles clench him inside you tightly as he ruts you with abandon, your tightness and eagerness seeming to please your new master, the stallion who will soon sire his foals in you! Realizing at last your true place, the place of a slutty, little zebra mare in this strong stallion's herd, you abandon any last vestiges of your old life as your powerful orgasm grips you and his thick zebra cock shoots his powerful seed deep within you. The hot, thick seed floods through your womb as you pant helplessly in his strong arms. You can feel it settling into your depths, sealing your fate as nothing more than a slutty, little mare to your stallion, just another striped member of his herd for him to use and breed whenever he wants.";
-			else if Player is male and player is submissive and (LostToZebra >= 3):
+			else if Player is male and Player is submissive and (LostToZebra >= 3):
 				say "     Feeling a calling deep inside of you, your thoughts are drawn to the zebra herd, and your body must follow. You are soon found by a rather smug zebra stallion. You quickly fall to your knees, knowing that your place is to serve such a dominant male. Welcoming you as his male mare, he bends you over and soon has you submitting to him and getting bred by his ebon pole.";
 				say "     You grow pleased with your new life[if Player is mpreg_ok], even as your foal grows inside of you[else] as your stallion's cumdump[end if]. And your stallion is a generous one, allowing you to mount any [italic type]incurable[roman type] males he finds, even as he rides you. This treatment eventually turns them into smaller, submissive males like yourself[if Player is mpreg_ok], with the ability to bear foals. Your offspring and those of your ilk are always more submissive females or servile male breeders[end if]. The others get traded around between the herds like so much horseflesh, but you are always kept by your striped stallion as his special prize.";
-			else if Player is male and player is mpreg_ok:
+			else if Player is male and Player is mpreg_ok:
 				say "     Feeling a calling deep inside of you, your thoughts are drawn to the zebra herd and your body must follow. You are soon found by a rather smug zebra stallion. At first, you are tempted to resist, some part of you wanting to be a stallion yourself, but when he advances on you, you find yourself giving in. Welcoming you as his male mare, he bends you over and soon has you submitting to him and getting bred by his ebon pole.";
 				say "     You grow pleased with your new life, even as your foal grows inside you. And your stallion is a generous one, allowing you to mount any [italic type]incurable[roman type] males he finds, even as he rides you. This treatment eventually turns them into smaller male mares like yourself. [if Player is dominant]You are permitted to continue breeding them as an outlet for your own dominant urges; it is a privilege you take advantage of often. [end if]Your offspring and those of your ilk are always more submissive females or servile male breeders. The others get traded around between the herds like so much horseflesh, but you are always kept by your striped stallion as his special prize.";
 			else:
@@ -662,7 +662,7 @@ This is the Zebra Stallion Infection rule:
 		else if Player is dominant and (ZebraLossCount > 4):
 			say "     With the military closing in, there's one last thing you need to do before you're rescued; find your pet stallion. Making your way to the zoo, it doesn't take long before he finds you, his nostrils flaring at your scent. You scatter his herd, unwilling to add any complications to your gambit. Turning yourselves in at the earliest opportunity, the military quickly processes you both as unfortunate, but ordinary, survivors. Certainly neither of you appears to be one of the more troublesome sorts who have created their own personal militias or harems. Life afterwards is difficult for you at first, as it is for any of the mutated, but it doesn't take long for you to turn the tides in your favor.";
 			say "     Having seen firsthand the power horse cock can have over a person, you open an escort service specializing in horsemen, with your stallion as your primary stud. Though your stable has been made non-infectious, as per military policy, you quickly build a client base that is nonetheless hungry for horse dick, and you are happy to provide. Your stallion is one of the more popular of your escorts, but it is the two of you who are the star attraction when you break out the crop and bridle at your company parties. Your business gives you and your zebra a comfortable life, although never [italic type]too[roman type] comfortable for your stud, and he wouldn't have it any other way.";
-		else if Player is male and player is submissive and (LostToZebra >= 3):
+		else if Player is male and Player is submissive and (LostToZebra >= 3):
 			say "     Helicopters flying overhead, you run for the zoo, desperate to find your master before it's too late. It's not long before he finds you, and he holds you close, making you feel safe as this chaotic world is turned right side up again. Your stallion is held longer than you are, and he looks a bit worse for the wear when he's finally released. He tells you that he's alright, but the army had wanted detailed information about his 'unsavory activities,' as they put it, in order to locate specific survivors. Life after the rescue is hard for the two of you, as it is for all mutants, and it takes some time before the two of you get back onto your hooves.";
 			say "     What makes the scales tip in your favor is when the two of you are approached by a [one of]horse[or]lion[or]tiger[or]deer[or]gator[or]wolf[or]hyena[at random]morph who offers an interesting proposition. They'd noticed that during the outbreak that horsecock was a popular treat for many, though they declined to say whether they knew from personal experience, and they were wondering if you and your stud would like to work at their escort agency. Your stallion eagerly agrees for the both of you, but he insists that both of you will only have to fuck, not get fucked. 'I'm a top, and this guy's ass belongs to me.' This is an easy caveat to accommodate, and it's not long before the two of you become some of the agency's most requested escorts. Though you fuck a lot of ass and pussy on the job, at home, it's you with your legs over your head, screaming for your stud to stuff you with his horsecock[if Player is mpreg_ok] and put a foal in you[end if].";
 		else:
@@ -687,18 +687,39 @@ to say zebra fur use:
 
 Table of Game Objects (continued)
 name	desc	weight	object
-"zebra cum"	"A plastic water bottle almost completely filled with a milky white fluid. Almost could be mistaken for some sort of buttermilk, if someone hadn't written 'Zebra Cum' across the label on the bottle. You [italic type]could[roman type] drink it to quench your thirst, or you maybe just do it for fun. Who knows what else it might do to you though..."	1	zebra cum
+"zebra stallion milk"	"A plastic water bottle filled with what is clearly milk. One could think it was a regular cow's milk, if someone hadn't written 'Zebra Stallion Milk' across the label on the bottle. You [italic type]could[roman type] drink it to quench your thirst, or you maybe just do it for fun. Who knows what else it might do to you though..."	1	zebra stallion milk
 
-zebra cum is a grab object. zebra cum is cum.
-zebra cum is infectious. Strain of zebra cum is "Zebra Stallion".
-Usedesc of zebra cum is "[zebra cum use]";
+zebra stallion milk is a grab object.
+zebra stallion milk is milky.
+zebra stallion milk is infectious.
+Strain of zebra stallion milk is "Zebra Stallion".
+Usedesc of zebra stallion milk is "[zebra stallion milk use]".
 
-to say zebra cum use:
-	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy fluid cum run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
+to say zebra stallion milk use:
+	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the milk run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
 	PlayerDrink 5;
 	SanLoss 5;
 
-instead of sniffing zebra cum:
+instead of sniffing zebra stallion milk:
+	say "You open the lid for a moment and take a sniff. Smells kinda like any other milk, really.";
+
+Table of Game Objects (continued)
+name	desc	weight	object
+"zebra stallion cum"	"A plastic water bottle containing a moderate amount of milky white fluid. Almost could be mistaken for some sort of buttermilk, if someone hadn't written 'Zebra Stallion Cum' across the label on the bottle. You [italic type]could[roman type] drink it to quench your thirst, or you maybe just do it for fun. Who knows what else it might do to you though..."	1	zebra stallion cum
+
+zebra stallion cum is a grab object.
+zebra stallion cum is cum.
+zebra stallion cum is infectious.
+Strain of zebra stallion cum is "Zebra Stallion".
+Usedesc of zebra stallion cum is "[zebra stallion cum use]".
+
+to say zebra stallion cum use:
+	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy cum run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
+	PlayerDrink 5;
+	SanLoss 5;
+
+instead of sniffing zebra stallion cum:
 	say "You open the lid for a moment and take a sniff. Doesn't smell too bad actually, just kinda nutty.";
+
 
 Zebra ends here.

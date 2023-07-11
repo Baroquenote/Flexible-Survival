@@ -46,7 +46,7 @@ Cock Length of Skarnoth is 16. [length in inches]
 Ball Count of Skarnoth is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Skarnoth is 4. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Skarnoth is 0. [number of cunts]
-Cunt Depth of Skarnoth is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Skarnoth is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Skarnoth is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Skarnoth is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -138,7 +138,7 @@ Section 3 - Sex
 
 Instead of fucking the Skarnoth:
 	say "     As you approach the handsome demon, he [one of]leans back in his high-backed chair and hooks a leg over one of its armrests, pushing up his crotch for you to look at[or]gives you a lewd grin and runs a finger along his rippling chest muscles, all the way down to his navel[or]smiles at you lewdly and pushes his tongue out, demonstrating quite a range of flexibility with it[or]beckons you closer with slow, sensual motions of his tail[or]raises both arms and hooks his fingers together behind his head, stretching his muscles in an enticing show of masculinity[at random]. 'What brings you here master,' Skarnoth greets you with a teasing tone, 'Do you want to teach this evil-doer to be a productive member of society, happy to be introduced to a better way? No... I don't think so - not with that lusty gleam in your eyes. So - punishment it is then, eh? Show me what a bad, bad boy I've been!'";
-	say "     Laughing in amusement, he proceeds to lightly slap a hand against one of his rock-hard pecs, then abs, followed by sliding it down [if SkarnothThongStatus is 1]and eventually rubbing his bare cock and balls, making an enticing show of it for your viewing. The demon begins to get hard and plays with[else]to the black thong barely concealing his sizable manhood. Stretching the flexible fabric to hook it under his balls, the demon prince reveals[end if] his thick and throbbing cock and strokes it slowly up and down. With a wink to you, he adds, 'And if you feel like getting a little taste of the forbidden fruit, I'm definitively your man. Come on - you won, so live a little. No one's gonna hold it against you if you crave a nice thick demon cock. I won't tell anyone, I promise.' Skarnoth's sharp canines almost seem to gleam as he smiles broadly after saying that, wiggling his eyebrows at you.";
+	say "     Laughing in amusement, he proceeds to lightly slap a hand against one of his rock-hard pecs, then abs, followed by sliding it down [if SkarnothThongStatus is 1]and eventually rubbing his bare cock and balls, making an enticing show of it for your viewing. The demon begins to get hard and plays with[else]to the black thong barely concealing his sizable manhood. Stretching the flexible fabric to hook it under his balls, the demon prince reveals[end if] his thick and throbbing cock and strokes it slowly up and down. With a wink to you, he adds, 'And if you feel like getting a little taste of the forbidden fruit, I'm definitely your man. Come on - you won, so live a little. No one's gonna hold it against you if you crave a nice thick demon cock. I won't tell anyone, I promise.' Skarnoth's sharp canines almost seem to gleam as he smiles broadly after saying that, wiggling his eyebrows at you.";
 	wait for any key;
 	say "[SkarnothSexMenu]";
 
@@ -152,7 +152,7 @@ to say SkarnothSexMenu:
 	choose a blank row in table of fucking options;
 	now title entry is "Suck Skarnoth's cock";
 	now sortorder entry is 1;
-	now description entry is "Give him a blow-job";
+	now description entry is "Give him a blowjob";
 	[]
 	if Player is male:
 		choose a blank row in table of fucking options;
@@ -251,10 +251,10 @@ to say SkarnothSex2: [facefuck Skarnoth]
 	say "     With a huff of hot air from his nostrils, Skarnoth starts sucking on your fingers and playing his tongue over them. It feels great to have this powerful being at your beck and call, holding him by the chin with your thumb while you pump two fingers in and out of his increasingly sloppy mouth. After enjoying the moment for a little bit, you command Skarnoth to undo your pants, which he does without hesitation. The hard shaft of your erection springs out as it is freed from the tight confines it was in, brushing against the hot pillar of Skarnoth's demonic prick in a quite pleasurable sensation. Shoving your pants down to drop to the floor, the muscular male gives a lusty grunt and closes a hand around both of your cocks - stroking them together.";
 	WaitLineBreak;
 	say "     Your captive demon is quite good at teasing a guy to higher and higher arousal, jerking you off in a comfortable grind of his warm skin on your dick. For a second, you're almost ready to just let him stroke you till you blow your load all over that muscle-ribbed chest of his, paint those abs in your cum - but then you remember that you had something else in mind. Pulling back a little from the sexy demon, you tap his shoulders and command for him to kneel. [one of]'Oooh, wanna smack the evil demon in the face with your dick? Do you think that'll be a punishment?'[or]'About time you get to it!'[or]'So you wanna punish the evil demon by giving him your rod? Did you know that many exorcisms end this way?'[or]'Gonna let me eat out your ass to fuck you after all? You know you want to!'[at random] he calls out in a teasing tone, then gives a little lusty growl as you grab his curved horns to use as convenient handholds.";
-	say "     Finding his head pulled forward to grind your crotch against Skarnoth's face, the demon chuckles at your demanding treatment. He even jerks his own hard cock while doing so and keeps up making taunting remarks - most of them incomprehensible by being mumbled while he's pressed to your crotch or balls. Eventually you have enough of just rubbing up against Skarnoth and pull the demon's head back harshly, which allows him to look up at you, sticking out his tongue in a grin and chuckling before you plug his open mouth with your hard cock. The demon prince's lips and tongue feel pleasantly warm against your erection, more so than a human would... but then, that's kinda the point about fucking around with a visitor from hell.";
-	say "     Making use of the oh so convenient handholds Skarnoth's horns provide, you face-fuck your captive harshly, not holding back at all as your balls smack against his chin in thrust after thrust. He seems to take this in stride, playing his tongue over your shaft and with his cheeks bending inward as he sucks hard on your thrusting pick. Hell, he even accepts a deep-throat fuck without the slightest hint of gagging and all the while masturbates his own cock in a steady rhythm. Calling this demon sexually skilled is definitively an understatement. While you are busy pounding Skarnoth's face, his tail moves against you, snaking up against the back of your leg in a hot line of contact. The spaded tip of it almost seems to be searching for something, feeling its way up and up.";
+	say "     Finding his head pulled forward so you can grind your crotch against his face, the demon chuckles at your demanding treatment. He even jerks his own hard cock while doing so and keeps on making taunting remarks - most of them incomprehensible mumbles since he's pressed to your crotch or balls. Eventually you have enough of just rubbing up against Skarnoth and pull the demon's head back harshly, which allows him to look up at you, sticking out his tongue in a grin and chuckling before you plug his open mouth with your hard cock. The demon prince's lips and tongue feel pleasantly warm against your erection, more so than a human would... but then, that's kinda the point about fucking around with a visitor from hell.";
+	say "     Making use of the oh so convenient handholds Skarnoth's horns provide, you face-fuck your captive harshly, not holding back at all as your balls smack against his chin in thrust after thrust. He seems to take this in stride, playing his tongue over your shaft,his cheeks bending inward as he sucks hard on your thrusting prick. Hell, he even accepts a deep-throat fuck without the slightest hint of gagging and all the while masturbates his own cock in a steady rhythm. Calling this demon sexually skilled is definitely an understatement. While you are busy pounding Skarnoth's face, his tail moves over you, snaking up against the back of your leg in a hot line of contact. The spaded tip of it almost seems to be searching for something, feeling its way up and up.";
 	WaitLineBreak;
-	say "     Eventually Skarnoth's tail slides into the valley between your buttocks, brushing back and forth a little before the tip catches on the edge of your pucker. Before you really can react to what you know this means, the demon goes wild in sucking on your cock and fondles your balls in a quite pleasurable manner, trying to distract you while he gets his appendage in to tail-fuck you. From the somewhat slick feeling of his tail-tip, he must have lubed it up with his own pre too!";
+	say "     Eventually Skarnoth's tail slides into the valley between your buttocks, brushing back and forth a little before the tip catches on the edge of your pucker. Before you can react to what you know this means, the demon goes wild in sucking on your cock and fondles your balls in a quite pleasurable manner, trying to distract you while he gets his appendage in to tail-fuck you. From the somewhat slick feeling of his tail-tip, he must have lubed it up with his own pre, too!";
 	LineBreak;
 	say "     [bold type]Do you let him fuck you with his tail?[roman type][line break]";
 	say "     ([link]Y[as]y[end link]) - Just enjoy it.";
@@ -262,19 +262,19 @@ to say SkarnothSex2: [facefuck Skarnoth]
 	if Player consents:
 		LineBreak;
 		say "     As turned on as you are by the demon hunk, you are more than alright with letting him enjoy the fruits of his little game of distraction - so you even push back a little as his tail-tip presses in against your pucker. Slick with Skarnoth's own pre, the fleshy spade enters you with relative ease and gives you the interesting sensation of face-fucking and being fucked by the same guy all at once. The demon's grunts of lust around the hard shaft in his mouth take on a quite satisfied tone and he replies to every hard yank on his horns by pushing his tail deep and twisting it a little. Your hot chain-fuck quickly pushes the demon closer and closer to his limits, and before much longer he groans loudly. With that, the kneeling shape of the demon prince starts trembling and twitching, as do his throat muscles around your prick, tensing up with every new spurt of cum he is blasting all over the ground between your feet.";
-		say "     Feeling Skarnoth suck hard on your dick, you're not too far behind joining your partner in orgasm and bury your erection all the way down his throat. Almost as soon as your swinging balls hit his chin in one last satisfying slap, you start blasting away with spurt after spurt of thick and creamy cum, filling Skarnoth's stomach with your load. You keep his face tightly pressed against your crotch for a while as your orgasm goes on with more and more semen being pumped into Skarnoth - so much so that he eventually has to push against your hips to show he's running out of air. With an amused huff through your nose, you pull back and allow him to gasp for air, splashing the demon's red-skinned face with several blasts of cum before the climax eventually tapers off. Only after you've finished cumming and made the demon lick off the last drops from your softening prick do you take hold of his tail and slowly pull it out of your ass.";
+		say "     Feeling Skarnoth suck hard on your dick, you're not too far behind, joining your partner in orgasm as you bury your erection all the way down his throat. Almost as soon as your swinging balls hit his chin in one last satisfying slap, you start blasting away with spurt after spurt of thick and creamy cum, filling Skarnoth's stomach with your load. You keep his face tightly pressed against your crotch for a while as your orgasm goes on with more and more semen being pumped into Skarnoth - so much so that he eventually has to push against your hips to show he's running out of air. With an amused huff through your nose, you pull back and allow him to gasp for air, splashing the demon's red-skinned face with several blasts of cum before the climax eventually tapers off. Only after you've finished cumming and made the demon lick off the last drops from your softening prick do you take hold of his tail and slowly pull it out of your ass.";
 		WaitLineBreak;
-		say "     As you start picking up your gear and pants to get dressed, Skarnoth stands up straight and enjoys the sight of your naked body, even going so far as lightly slapping your ass as you bend over. 'That was fun,' he says with a chuckle, then wipes his face with a slow swipe of his clawed hand. Looking at the white cum sticking to his fingers, he gives you a wink and then sucks it off finger by finger before sauntering over to throw himself on his red leather chair.";
+		say "     As you start picking up your gear and pants to get dressed, Skarnoth stands up straight and enjoys the sight of your naked body, even going so far as to lightly slap your ass as you bend over. 'That was fun,' he says with a chuckle, then wipes his face with a slow swipe of his clawed hand. Looking at the white cum sticking to his fingers, he gives you a wink and then sucks it off finger by finger before sauntering over to throw himself on his red leather chair.";
 		if Loyalty of Skarnoth < 10:
 			increase Loyalty of Skarnoth by 1;
 		NPCSexAftermath Player receives "AssDildoFuck" from Skarnoth;
 	else:
 		LineBreak;
-		say "     As turned on as you are by the demon hunk, you still decide to stop him before things get out of hand. After all, you're the boss here and he should better remember that! Catching the long tail in an iron grip, you pull it away from your ass and tell Skarnoth that he's been a bad boy, underlining it by yanking his horns back, forcing him to look up at you. Grinning, he licks his sloppy lips and replies in a challenging tone, 'And what are you gonna do about it?' In reaction to that, you crouch down with his tail in hand, ignoring Skarnoth's tries to free the long appendage with sharp tugs. Looking at the glistening fleshy spade at the end, lubed with his own pre to allow for easier fucking, the choice is clear. Slapping Skarnoth's buttocks with your other hand and pulling one cheek to the side a little, you shove his tail-tip at the demon prince's own pucker, burying it all the way to where your fist is closed around the tail.";
+		say "     As turned on as you are by the demon hunk, you still decide to stop him before things get out of hand. After all, you're the boss here and he'd better remember that! Catching the long tail in an iron grip, you pull it away from your ass and tell Skarnoth that he's been a bad boy, underlining it by yanking his horns back, forcing him to look up at you. Grinning, he licks his sloppy lips and replies in a challenging tone, 'And what are you gonna do about it?' In reaction to that, you crouch down with his tail in hand, ignoring Skarnoth's tries to free the long appendage with sharp tugs. Looking at the glistening fleshy spade at the end, lubed with his own pre to allow for easier fucking, the choice is clear. Slapping Skarnoth's buttocks with your other hand and pulling one cheek to the side a little, you shove his tail-tip into the demon prince's own pucker, burying it all the way to where your fist is closed around the tail.";
 		say "     'Nnngh!' he groans out loud at the sudden and deep penetration, but Skarnoth's smile never wavers. Chuckling, he adds, 'Someone likes to play rough, eh? What? Did you think this is the first time that has been up there?! I could - ummmphH!' Having had enough of his teasing, you stuff the demon's mouth with your shaft once more, hammering into him in a relentless throat-fuck. Between enjoying your partner's talented mouth and the thrill of dominating such a powerful being, you soon get closer and closer to your impending climax. Burying your erection all the way down his throat, you start blasting away with spurt after spurt of creamy cum almost as soon as your swinging balls hit his chin. It feels amazing to have your prick buried in the hot, right tunnel of his throat and to fill Skarnoth's stomach with your load.";
 		WaitLineBreak;
 		say "     Keeping his face tightly pressed against your crotch for a while as your orgasm goes on - with more and more semen being pumped into Skarnoth - he eventually has to push against your hips to show he's running out of air. With an amused huff through your nose, you pull back and allow him to gasp for air, splashing the demon's red-skinned face with several blasts of cum before the climax eventually tapers off. Meanwhile, the demon pushes himself to orgasm by tail-fucking his own ass, blasting long streaks of demon cum all over the floor between your legs";
-		say "     As you start picking up your gear and pants to get dressed, Skarnoth stands up straight and enjoys the sight of your naked body, even going so far as lightly slapping your ass as you bend over. 'That was fun,' he says with a chuckle, then wipes his face with a slow swipe of his clawed hand. Looking at the white cum sticking to his fingers, he gives you a wink and then sucks it off finger by finger before sauntering over to throw himself on his red leather chair.";
+		say "     As you start picking up your gear and pants to get dressed, Skarnoth stands up straight and enjoys the sight of your naked body, even going so far as to lightly slap your ass as you bend over. 'That was fun,' he says with a chuckle, then wipes his face with a slow swipe of his clawed hand. Looking at the white cum sticking to his fingers, he gives you a wink and then sucks it off finger by finger before sauntering over to throw himself on his red leather chair.";
 		if Loyalty of Skarnoth > 1 and Loyalty of Skarnoth < 10:
 			decrease Loyalty of Skarnoth by 1;
 		NPCSexAftermath Skarnoth receives "AssDildoFuck" from Player;
@@ -371,11 +371,27 @@ to say SkarnothSex7: [Spank Skarnoth's ass]
 Section 4 - Events
 
 [
-instead of going northwest from Grey Abbey Library while (HP of Skarnoth > 1):
-	move player to Half-Renovated Room;
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+2	"Skarnoth_Walkin1"	Skarnoth_Walkin1	"[EventConditions_Skarnoth_Walkin1]"	Half-Renovated Room	2500	2	100
+
+to say EventConditions_Skarnoth_Walkin1:
+	if HP of Skarnoth > 1: [list of conditions here]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+Skarnoth_Walkin1	"Skarnoth_Walkin1"
+
+Skarnoth_Walkin1 is a situation.
+ResolveFunction of Skarnoth_Walkin1 is "[ResolveEvent Skarnoth_Walkin1]".
+Sarea of Skarnoth_Walkin1 is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent Skarnoth_Walkin1:
 	if debugactive is 1:
 		say "     DEBUG: SKARNOTH WALK-IN - HP of SKARNOTH: [HP of Skarnoth], THIRST OF Skarnoth: [thirst of Skarnoth][line break]";
-	say "     .";
+	say "     ";
+	now Skarnoth_Walkin1 is resolved;
 ]
 
 Section 5 - Infection for combat purposes
@@ -394,9 +410,9 @@ When Play begins:
 	add "Demon Prince" to infections of BipedalList;
 	add "Demon Prince" to infections of TailList;
 	now Name entry is "Demon Prince";
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
 	now enemy Name entry is "Skarnoth";
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]Skarnoth[or]The demon prince[or]The powerful demon[or]The handsome demon[at random] [one of]flashes past you in a flurry of claw-slashes with his hands, leaving behind bleeding gashes in your side.[or]jumps forward and gives you a bear hug, forcing both arms against your sides in impotent immobility. As air is being driven out of your lungs, you feel his breath hotly against your cheek, followed by his tongue licking possessively along your jawline. An eye-blink later, he lets go of you, laughing as you collapse to the ground and gasp for air.[or]throws himself on you and grabs your arm, then humps his hips forward. He is playing with you, only leaving a few scratches after making sure you feel his erect cock rub against your side.[or]gets a grip on your shoulder and throws you to the ground wish a harsh shove, which puts you on all fours with your ass raised. 'That's the proper way to await your master. Maybe you'll be an amusing pet after all.'[or]gives you a head-ringing slap that dazes you for a second, then lets his clawed hands roam over your body, feeling and groping you.[or]grabs you by the neck and aggressively kisses you, with his tongue exploring your mouth.[at random]";
 	now defeated entry is "[line break]";
 	now victory entry is "[line break]";
@@ -417,35 +433,35 @@ When Play begins:
 	now per entry is 14;
 	now int entry is 12;
 	now cha entry is 22;
-	now sex entry is "Male";           [ Infection will move the player towards this gender. Current: 'Male' 'Female' 'Both' ]
+	now sex entry is "Male"; [ Infection will move the player towards this gender. Current: 'Male' 'Female' 'Both' ]
 	now HP entry is 275;
-	now lev entry is 20;               [ Monster level. (Level x 2) XP for victory. (Level / 2) XP for losing. ]
-	now wdam entry is 35;              [ Monster's average damage when attacking. ]
-	now area entry is "Nowhere";       [ "Outside" "Mall" "Park" "Beach" etc... Check an existing creature in the area. ]
-	now Cock Count entry is 1;              [ Number of cocks the infection will try to cause if sex entry is 'Male' or 'Both'. ]
-	now Cock Length entry is 16;       [ Length in inches infection will make cock grow to if cocks. ]
-	now Ball Size entry is 4;         [ Cock width, more commonly used for ball size. ]
-	now Nipple Count entry is 2;            [ Number of nipples the infection will give a player. ]
-	now Breast Size entry is 0;        [ Size of breasts the infection will try to attain (corresponds to letter cup size). ]
-	now Male Breast Size entry is 0;   [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 0;              [ The number of cunts the infection will try to cause if sex entry is 'Female' or 'Both'. ]
-	now Cunt Depth entry is 0;        [ Depth in inches of female sex the infection will attempt to give a player. ]
+	now lev entry is 20; [ Monster level. (Level x 2) XP for victory. (Level / 2) XP for losing. ]
+	now wdam entry is 35; [ Monster's average damage when attacking. ]
+	now area entry is "Nowhere"; [ "Outside" "Mall" "Park" "Beach" etc... Check an existing creature in the area. ]
+	now Cock Count entry is 1; [ Number of cocks the infection will try to cause if sex entry is 'Male' or 'Both'. ]
+	now Cock Length entry is 16; [ Length in inches infection will make cock grow to if cocks. ]
+	now Ball Size entry is 4; [ Cock width, more commonly used for ball size. ]
+	now Nipple Count entry is 2; [ Number of nipples the infection will give a player. ]
+	now Breast Size entry is 0; [ Size of breasts the infection will try to attain (corresponds to letter cup size). ]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 0; [ The number of cunts the infection will try to cause if sex entry is 'Female' or 'Both'. ]
+	now Cunt Depth entry is 0; [ Depth in inches of female sex the infection will attempt to give a player. ]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]         [ Width in inches of female sex the infection will try to give a player. ]
 	now SeductionImmune entry is false;
 	now libido entry is 30;
-	now loot entry is "";              [ Dropped item, blank for none. Case sensitive. ]
-	now lootchance entry is 0;         [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 4;              [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now loot entry is ""; [ Dropped item, blank for none. Case sensitive. ]
+	now lootchance entry is 0; [ Percentage chance of dropping loot, from 0-100. ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 4; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]demonic[or]infernal[or]powerful[at random]";
 	now type entry is "[one of]demon[at random]";
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is true;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;     [ 0 = Up at all times; 1 = Nocturnal (night encounters only); 2 = Diurnal (day encounters only) ]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Nocturnal (night encounters only); 2 = Diurnal (day encounters only) ]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -456,7 +472,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -468,7 +484,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -487,7 +503,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -508,18 +524,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -533,19 +549,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]

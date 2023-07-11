@@ -28,12 +28,13 @@ bargainbinusagetotal is a number that varies.
 
 bargainhunting is an action applying to nothing.
 
+understand "hunt bargain bin" as bargainhunting.
 understand "hunt bargain" as bargainhunting.
 understand "hunt bin" as bargainhunting.
 understand "buy bargain" as bargainhunting.
-understand "sort bin" as bargainhunting.
 understand "sort bargain bin" as bargainhunting.
 understand "sort bargain" as bargainhunting.
+understand "sort bin" as bargainhunting.
 understand "hunting bargain" as bargainhunting.
 
 check bargainhunting:
@@ -160,7 +161,7 @@ carry out bargainhunting:
 						ItemGain dog milk by 1;
 					ItemGain honeycomb by 1;
 					ItemGain Tasty Fish by 1;
-		else if Z is 15: [Dr Matt samples]
+		else if Z is 15: [Dr. Matt samples]
 			if FemaleList is banned and ( HermList is banned or FurryList is banned ):
 				say "     Searching through the bargain bin, you find a [bold type]small travel pouch[roman type] tucked away in the corner. Curious about what may be inside, you pull the container out and open its zipper. Sadly, when you flip the flap at the top open, all you find is a wad of used bubblegum and a bottle of water. Ugh! Oh well, can't win them all and at least you got some water back...";
 				LineBreak;
@@ -356,7 +357,7 @@ carry out bargainhunting:
 			wait for any key;
 			let P be a random number between one and six;
 			if P is 1:
-				Move player to The PALOMINO;
+				Move player to PALOMINO Dance Club;
 			if P is 2:
 				Move player to Zoo Entrance;
 			If P is 3:
@@ -373,7 +374,7 @@ carry out bargainhunting:
 				LineBreak;
 				StatChange "Stamina" by 1;
 				if remainder after dividing stamina of Player by 2 is 0:
-					increase maxHP of Player by level of Player plus 1;
+					increase MaxHP of Player by level of Player plus 1;
 				say "[bold type]You lose 10 HP![roman type][line break]";
 				decrease HP of Player by 10;
 				if HP of Player < 0:
@@ -463,9 +464,9 @@ to say plrtcl:
 		ItemGain water bottle by 1;
 	else:
 		let Q be a list of numbers;
-		if MaleList is not banned, add 1 to Q;  [Plush Lion]
-		if FemaleList is not banned, add 2 to Q;  [Rubber Tigress]
-		if HermList is not banned, add 3 to Q;  [Chocolate Lab]
+		if MaleList is not banned, add 1 to Q; [Plush Lion]
+		if FemaleList is not banned, add 2 to Q; [Rubber Tigress]
+		if HermList is not banned, add 3 to Q; [Chocolate Lab]
 		sort Q in random order;
 		now tempnum is entry 1 of Q;
 		if tempnum is 1:

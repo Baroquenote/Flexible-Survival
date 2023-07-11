@@ -125,7 +125,7 @@ to say ResolveEvent Ogre Encounter:
 				say "     He inches in slowly while you moan beneath him. The more Gurke pushes into you, the more eager you get to have his cock buried balls-deep inside of you. Your wish is finally granted when you feel his huge balls gently rest upon your ass. Gurke, once again, pauses for a few moments before he starts fucking you with short, slow thrusts, only taking an inch or two out at a time. You let out a few deep moans while he gently has his way with you. 'Good boy,' he says, still fucking you gently. 'I want to take my time with you.' His thrust stays the same for quite some time. Eventually, your new lover starts to take some more of his cock out with each thrust, eventually taking it all the way out to the tip. Though the length may have changed, his slow, tantalizing pace remains the same.";
 				WaitLineBreak;
 				say "     His two partners, who have been watching this whole time, make their way to either side of you and begin slowly stroking their cocks over you. Gurke notices his partners and finally begins to pick up the pace of his humping. You are caught off guard by his sudden change of pace and almost fall onto your face. You moan beneath him as he starts to pound faster and faster into you, and it seems to get him even more riled up because he suddenly begins to brutally fuck your hole. His voluminous, gray balls make a loud smack with each of his hard thrusts. His partners, who seem to be enjoying the show, start stroking themselves faster. Gurke grabs hold of your hips and gives them a couple of good smacks while fucking you. Before long, the air is filled with the sounds of your moans, fapping, and loud grunts. This goes on for a little while longer before you hear his partners['] grunts change, and they both orgasm.";
-				say "     You feel spurt after spurt of their hot seed fall onto your back while they cover you with their cum. Their orgasms seem to last forever before you finally feel the last drop of cum fall onto your soaked back. The pleasure of being fucked by Gurke and getting covered in his partners['] cum sets you over the edge as you shoot your load onto the ground beneath you. As you orgasm, your hole tightens around Gurke's cock, and you feel his thrust become shorter and more desperate before, with one more hard slam, he buries his cock inside of you and begins filling you. His seed quickly floods your bowels as he just keeps pumping you full of his cum. Once his orgasm finally subsides, he pulls his spent cock from your hole and gives your ass a hard smack. 'Man, I don't think you will recover from this.' Gurke laughs,. 'I haven't seen a hole beat up like this in years.' His two partners chuckle while you slowly drift away. The last thing you remember is hearing Gurke tell you to look for them sometime if you ever want to become their newest plaything before passing out from exhaustion. You wake up and clean off their dried-up cum as best as you can before making your way back to safety.";
+				say "     You feel spurt after spurt of their hot seed fall onto your back while they cover you with their cum. Their orgasms seem to last forever before you finally feel the last drop of cum fall onto your soaked back. The pleasure of being fucked by Gurke and getting covered in his partners['] cum sets you over the edge as you shoot your load onto the ground beneath you. As you orgasm, your hole tightens around Gurke's cock, and you feel his thrust become shorter and more desperate before, with one more hard slam, he buries his cock inside of you and begins filling you. His seed quickly floods your bowels as he just keeps pumping you full of his cum. Once his orgasm finally subsides, he pulls his spent cock from your hole and gives your ass a hard smack. 'Man, I don't think you will recover from this.' Gurke laughs. 'I haven't seen a hole beat up like this in years.' His two partners chuckle while you slowly drift away. The last thing you remember is hearing Gurke tell you to look for them sometime if you ever want to become their newest plaything before passing out from exhaustion. You wake up and clean off their dried-up cum as best as you can before making your way back to safety.";
 				CreatureSexAftermath "Player" receives "AssFuck" from "Ogre Male";
 			else:
 				say "     The three Ogres quickly circle you removing their underwear showing off they're proud, rapidly growing members. The leader moves closer initially and gently puts a finger under your chin, lifting your head up. 'We're going to have fun with you little thing.' He says with a proud grin plaster across his face. He wastes little time deciding what he wants. You are suddenly met with a hard smack of his dick across your cheek. The Ogre chuckles and slaps you with his meaty member a few more times. The other ogres begin to laugh while stroking each other off. Finally, finished slapping you. You feel the warm head of his thick cock rest upon your lips. 'It isn't going to suck itself, you know.' He says. 'If you do a good job, I'll give you a nice pounding to go with it.'";
@@ -332,7 +332,7 @@ to say GurkeStory:
 		say "     You push back, helping him slide in his monstrous cock inch by breathtaking inch. Finally your wish is granted, and you feel his plump balls resting on your thigh. Satisfied with his work, he gyrates his hips for a moment before he begins slowly fucking you. He starts out fairly slow, only inching himself in and out of you, with his strokes only becoming a little longer with each thrust. You can't help but moan beneath him while he takes advantage of your now stuffed hole, knowing damn well that you aren't going to stop him from doing what he wants. 'Mmmm.' Gurke says, 'You're just as nice as I remember. This won't take me too long. I hope you enjoy it.' Not a moment after his comments he starts jackhammering your hole. The smell of sex quickly engulfs the tent while you slowly become a moaning, lust-filled mess beneath him. His plump balls rapidly smack against your thigh with a nice smack. Other than your needy moans, you hear wet slurps with each and every thrust as your hungry hole tries to swallow Gurke girthy cock.";
 		WaitLineBreak;
 		say "     Your insides are stretched out to accommodate his size. His cock fills you with pure ecstasy. His cock easily glides against your inner walls while more pre paints your insides. You do the best you can to match his hectic rhythm pushing back every time he thrusts back in. He pushes your head down and grabs onto the cuffs to give him more leverage to pound you even harder than before. 'That's it,' Gurke groans, 'You take it like a good pet. I want to hear you moan.' Just as he commands you begin to moan even loader and begging him to keep fucking you. 'That's what I like to hear.' He says, 'Now I hope you're ready to get filled up with Ogre cream.' You don't quite get it at first but are soon hit by what he meant. Right on cue, the Ogre grunts and thrusts into with all his strength causing you to slip forward belly first into the blankets.";
-		say "     His hot Ogre cum blasts squirt by squirt into you. Filling you with warmth while he continues to cum. Almost simultaneously, you find yourself orgasming, [if player is male]your cock spurting your sticky seed between your stomach and the blankets[else if player is female]your pussy leaking copious amounts of femcum[else]trembling and twitching in pleasure[end if]. Long after your own orgasm, Gurke's cock finally stops pumping you with his load. With a few heavy breaths, he pulls out of you, leaving you with a warm yet empty feeling, which is quickly followed by his warm cum trickling out of your abused pucker and down your balls. 'It looks like you had as much fun as I did,' Gurke said slightly out of breath, 'You're going to have my load up there for a while.' You nod waiting for him to shove his cock back inside of you, Unfortunately for you, he does not and you feel him unlocking the cuffs, and setting your hands free.";
+		say "     His hot Ogre cum blasts squirt by squirt into you. Filling you with warmth while he continues to cum. Almost simultaneously, you find yourself orgasming, [if Player is male]your cock spurting your sticky seed between your stomach and the blankets[else if Player is female]your pussy leaking copious amounts of femcum[else]trembling and twitching in pleasure[end if]. Long after your own orgasm, Gurke's cock finally stops pumping you with his load. With a few heavy breaths, he pulls out of you, leaving you with a warm yet empty feeling, which is quickly followed by his warm cum trickling out of your abused pucker and down your balls. 'It looks like you had as much fun as I did,' Gurke said slightly out of breath, 'You're going to have my load up there for a while.' You nod waiting for him to shove his cock back inside of you, Unfortunately for you, he does not and you feel him unlocking the cuffs, and setting your hands free.";
 		WaitLineBreak;
 		say "     You have to admit that it was quite fun letting him have his way with you even though your shoulders are now stiff thanks to his handcuffs. You tell him you want to do it again but he gives you a soft pat on the ass. 'Maybe next time,' He says softly, 'but right now, I need to hit the hay.' You whimper slightly while he helps you up. You look him over once again, mainly focusing on his cum soaked cock, before putting your gear back on. He follows you out the tent giving your ass a hard slap, which lets loose a small amount of his cum. 'Well, I'm sure I'll be seeing you around again, especially after the pounding I just gave you.' Gurke laughs. You tell him that you'll stop by again sometime soon/ With that you say your goodbyes to everyone and head back to the city streets.";
 		CreatureSexAftermath "Player" receives "AssFuck" from "Ogre Male";
@@ -426,7 +426,7 @@ to say OgreCampFuck:
 			say "     This go-around he is met with almost no resistance and his cock slides right into you. You give out a long drawn out moan while he slowly pushes his length into you. After a few moments you learn that he's bottomed out inside you. This incredibly full feeling spreads throughout your body, making you question why you don't just stay here and get stuffed with his cock twenty-four seven. But you quickly remember why you can't and decide to just live in the moment and enjoy this nice full feeling for as long as you can. After giving you some time to adjust to his large member, he begins rocking his hips with a quick but very short motion. This causes you to moan needily practically begging him to go faster. Your wish is his command, and he starts pulling out a little further and thrusting back in faster than before.";
 			WaitLineBreak;
 			say "     You feel your body get pushed across the log with each thrust back in. Wanting more fun, and not wanting any slivers, you start pushing back into the thrusts. Matching his speed with pinpoint accuracy. You've been having such a good time with his cock you forgot about the other two until Kogs smacks your face with his thick cock leaving a small smear of precum in its wake. Not wanting to leave him out you open your mouth allowing him to push his cock into your maw. He steadily pushes his cock in, with little disregard to your comfort, until his plump balls bump against your chin. He slowly pulls his cock from your mouth then back in small pushes giving you room to breathe if you need it. The taste of his thick member covers your tongue with a nice sweaty taste, with a hint of his salty precum.";
-			say "     Still enjoying Kogs' nice little face fucking, you reach out and grab ahold of Mogs cock and begin jerking his hot member slowly. You do your best to multitask with all three of their cocks focusing on the pummeling that Gurke is giving you for a little bit, then trying to find ways to please Kogs cock that's made itself at home in your mouth, and stroking of Mogs thick member that is really dripping out pre. Gurke hot member really starts to glide in and out of you with ease, the more pre it drips into you. It's rubbing your walls in just the right way and really rubs against your prostate. Before too long, you find yourself clenching and [if Player is male]spraying a load onto the side of the log, and ground below[else if player is female]dripping femcum onto the side of the log, and ground below[else]trembling in orgasm[end if]. 'Cumming already?' Gurke asking mockingly, 'We've only just started.' Without any hesitation, Gurke and Kogs begin feverishly fucking you from both sides.";
+			say "     Still enjoying Kogs' nice little face fucking, you reach out and grab ahold of Mogs cock and begin jerking his hot member slowly. You do your best to multitask with all three of their cocks focusing on the pummeling that Gurke is giving you for a little bit, then trying to find ways to please Kogs cock that's made itself at home in your mouth, and stroking of Mogs thick member that is really dripping out pre. Gurke hot member really starts to glide in and out of you with ease, the more pre it drips into you. It's rubbing your walls in just the right way and really rubs against your prostate. Before too long, you find yourself clenching and [if Player is male]spraying a load onto the side of the log, and ground below[else if Player is female]dripping femcum onto the side of the log, and ground below[else]trembling in orgasm[end if]. 'Cumming already?' Gurke asking mockingly, 'We've only just started.' Without any hesitation, Gurke and Kogs begin feverishly fucking you from both sides.";
 			WaitLineBreak;
 			say "     You are pushed back and forth between the two Ogres cocks in perfect harmony. Gurke Pushes your face into Kogs thrusts and vice versa. This goes on for some time before Mogs starts to twitch and grunt. You start stroking him off even faster and soon enough, he lets out a loud moan and starts to shoot his load all over your neck and back. He paints you with his load spurt after spurt for some time before leaving your back almost cover with his warm cum. He quickly plops down on the ground to catch his breath. Kogs isn't far behind. Kogs grabs your head and buries his cock deep into your mouth and holds you in place while he pumps your stomach full of his load. Squirt after hot squirt of his cum in shot down your throat and into your stomach, and you greedily swallow it all for the length of his quite lengthy, orgasm. Finally spent he pulls his, now soft, cock from your mouth and rests it in front of you so that you can continue to lick his tip, which you do.";
 			say "     After a few more minutes of Gurke rough, ball slapping, and slurp making, fuck session he buries his bone deep inside of you and unleashes a torrent of his hot Ogre cum into your deepest depths. He fills you up to the point you don't think you can hold his load anymore. Luckily you do and he frees his cock from your bred hole. 'Oh man,' Gurke sighs, 'Did we do a number on you. You're covered head to toe in cum, and we bred you on both sides. You are a really nice slut, aren't you.' You blush at his compliment and thank him for the good time. 'Not to hit it and quit it.' Gurke says 'but we do have to rest up now. We got plenty more fucking to do today, and as fun, as it would be it can't only be with you.' You let out a quiet sigh and nod in agreement. 'Don't get too down. You're more than welcome to come back and be our little cum collector, some other time.' Kogs says, smacking you in the face with his cock. The three of them chuckle then help you onto your feet. You stagger for a few seconds while your knees are still weak from the pounding you received. You hesitantly put your clothes back on and head back out onto the streets, waving to the three of them as you leave.";
@@ -482,14 +482,14 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Ogre"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Ogre"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Ogre Male" to infections of OtherworldlyList;
 	add "Ogre Male" to infections of MaleList;
 	add "Ogre Male" to infections of BipedalList;
 	now Name entry is "Ogre Male";
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The ogre hits you![or]With a swing of his bat, the ogre smacks you in the stomach, knocking the wind out of you![or]He charges you shoulder-first, slamming his shoulder into your chin.[at random]";
 	now defeated entry is "";
 	now victory entry is "";
@@ -510,35 +510,35 @@ When Play begins:
 	now per entry is 12;
 	now int entry is 8;
 	now cha entry is 8;
-	now sex entry is "Nochange";       [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
-	now HP entry is 80;                [ How many HP has the monster got? ]
-	now lev entry is 10;               [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
-	now wdam entry is 15;              [ Amount of Damage monster Does when attacking.]
-	now area entry is "Nowhere";       [ Case sensitive]
-	now Cock Count entry is 1;              [ number of cocks if sex is 'Male' or 'Both' ]
+	now sex entry is "Nochange"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now HP entry is 80; [ How many HP has the monster got? ]
+	now lev entry is 10; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
+	now wdam entry is 15; [ Amount of Damage monster Does when attacking.]
+	now area entry is "Nowhere"; [ Case sensitive]
+	now Cock Count entry is 1; [ number of cocks if sex is 'Male' or 'Both' ]
 	now Cock Length entry is 16;
-	now Ball Size entry is 3;         [ Size of balls ]
-	now Nipple Count entry is 2;            [ Number of nipples. ]
-	now Breast Size entry is 0;        [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
-	now Male Breast Size entry is 0;   [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 0;              [ number of pussies if sex is 'Female' or 'Both' ]
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Ball Size entry is 3; [ Size of balls ]
+	now Nipple Count entry is 2; [ Number of nipples. ]
+	now Breast Size entry is 0; [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 0; [ number of pussies if sex is 'Female' or 'Both' ]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	now SeductionImmune entry is false;
-	now libido entry is 75;            [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
-	now loot entry is "";              [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
-	now lootchance entry is 0;         [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 4;              [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now libido entry is 75; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
+	now loot entry is ""; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
+	now lootchance entry is 0; [ Chance of loot dropping 0-100 ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 4; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "ogre";
 	now type entry is "ogre";
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is true;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;     [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -549,7 +549,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -561,7 +561,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -580,7 +580,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -601,18 +601,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -626,19 +626,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]

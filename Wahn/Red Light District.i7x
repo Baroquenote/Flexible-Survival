@@ -24,7 +24,7 @@ Exploring the City Dummy Room	"Exploring the City Dummy Room"
 Exploring the City Dummy Room is a room.
 Exploring the City Dummy Room is south of Red Light Street.
 
-The marea of Red Light Street is "Outside".
+The marea of Red Light Street is "Red".
 
 after looking while player is in Entrance to the Red Light District:
 	if findwires < 2 and fixedgens < 3:
@@ -165,8 +165,8 @@ name	price	object	allowed
 "bliss tablet"	1	bliss tablet	true rule
 "powerup tablet"	2	powerup tablet	true rule
 "pixie dust"	2	pixie dust	true rule
-"dalmatian cum"	1	dalmatian cum	true rule
-"dalmatian fur"	2	dalmatian fur	true rule
+"dalmatian male cum"	1	dalmatian male cum	true rule
+"dalmatian male fur"	2	dalmatian male fur	true rule
 
 Table of GameRoomIDs (continued)
 Object	Name

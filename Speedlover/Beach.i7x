@@ -11,7 +11,7 @@ Beach Plaza	"Beach Plaza"
 Beach Plaza is a Room.
 The Beach Plaza is fasttravel. The Beach Plaza is not known.
 Description of beach plaza is "[BeachPlazaDesc]".
-earea of Beach Plaza is "Outside".
+earea of Beach Plaza is "Beach".
 
 after looking while player is in Beach Plaza:
 	project the Figure of Map_Beach_1_icon;
@@ -21,7 +21,7 @@ to say BeachPlazaDesc:
 	say "     Numerous infected are present on this peaceful plaza, strolling around in a relaxed fashion and checking out various vendor stalls and buildings. Which is a bit surprising, to say the least - given the state of affairs everywhere else. Maybe the towering bronze statue of a crab straddling the street like an archway has something to do with it. You certainly do not remember that being there before all the trouble in the city started.";
 
 Beach Exit is a door. Beach Exit is dangerous.
-The marea of Beach Exit is "Outside". Beach Exit is undescribed. Beach Exit is east of Beach Plaza.
+The marea of Beach Exit is "Beach". Beach Exit is undescribed. Beach Exit is east of Beach Plaza.
 
 Table of GameRoomIDs (continued)
 Object	Name
@@ -62,7 +62,7 @@ Boardwalk2	"Boardwalk"
 Boardwalk2 is a Room.
 Description of Boardwalk2 is "[BoardwalkDesc]".
 Boardwalk2 is a room with printed name "Boardwalk".
-earea of Boardwalk2 is "Outside".
+earea of Boardwalk2 is "Beach".
 
 after looking while player is in Boardwalk2:
 	project the Figure of Map_Beach_2_icon;
@@ -326,7 +326,7 @@ Sunken Ship is a Room.
 Sunken Ship is below Open Ocean.
 understand "Shipwreck" as Sunken Ship.
 understand "Wreck" as Sunken Ship.
-Description of Sunken Ship is "A large ship lays sunken and rotting here. From the breaks in the old hull, it seems the ship ran afoul of the rocky waters and went down long ago. It is now an attraction for divers and sea creatures alike. Maybe going here was a bad idea. There is a cloudy mess of thick seed hanging in the water and stuck to part of the ship, tribute to some huge beast. You'd best be careful. Although in the distance to your [link]west[end link] you can see a sparkling sight in the distance. From here, you can barely make out the lighter spot in the rocks that is the [bold type]Rock Arch[roman type] you passed through to get here. You could surface and swim to it if you want to get back to the beach.".
+Description of Sunken Ship is "A large ship lays sunken and rotting here. From the breaks in the old hull, it seems the ship ran afoul of the rocky waters and went down long ago. It is now an attraction for divers and sea creatures alike. Maybe going here was a bad idea. There is a cloudy mess of thick seed hanging in the water and stuck to part of the ship, tribute to some huge beast. You'd best be careful. Although in the distance to your [link]west[end link] you can see a sparkling sight. From here, you can barely make out the lighter spot in the rocks that is the [bold type]Rock Arch[roman type] you passed through to get here. You could surface and swim to it if you want to get back to the beach.".
 
 The invent of Sunken Ship is { "sea dragon cum", "sea dragon cum" }.
 

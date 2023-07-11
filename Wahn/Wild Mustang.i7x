@@ -278,13 +278,13 @@ to say LuciferSex7: [player strapped under Lucifer with his cock inside them]
 			say "     Each movement, big or small, has your stretched [if Player is female]pussy[else]asshole[end if] basically jerking Lucifer off at it slides around his prick, while his flared equine head brushes against very sensitive spots deep inside your hole. The slow trot in which you gasp and moan and he nickers in lust quickly escalates to a fast canter, bouncing you harder against his erection and making the horse's heavy balls swat against your butt with satisfying slaps. Being used like a giant fleshlight turns you on more than a little bit, and [if Player is female]your pussy gets soaking wet with femcum just drooling out around his erection[else]your own erection presses against Lucifer's belly hard, rubbing against the horse's soft fur[end if]. Your equine partner does a lap around the whole paddock, moving along the fence as if to show off the living sex-toy strapped to his underside. You can feel the gaze of many eyes rest upon you, both Lucifer's mares as well as other inhabitants of the farm that pass closely and look your way.";
 			WaitLineBreak;
 			say "     After completing a full circuit, the feral mustang stops for a moment and neighs to Lee standing against the fence nearby. There is grudging respect and gratitude in the horse's voice you think - telling you he's grateful for the farmhand having facilitated this way of mating you. While Lee gives a short laugh in reply, you feel the muscles of Lucifer tense and his thick shaft throb in your body, then with a sudden jolt, you're driven all the way down on his erection as the mustang breaks into a full-on gallop down the long side of the paddock. Where his earlier movement was kinda like a rhythmic thrusting and grinding against your stretched [if Player is female]pussy[else]asshole[end if], this now is a really heavy pounding that makes you twist and tremble from the sensations it creates. Arms and legs wrapped around the mustang, you pant, moan and scream in lust as the horse rides your body hard - and it doesn't take more than a few moments for you to reach your breaking point and the massive buildup of arousal breaks as a monumental climax.";
-			say "     Lucifer lets out a loud and satisfied nicker as he feels your hole squeeze tight around his shaft. It is clear that the mustang feels on top of the world right now - hooves digging into the soft ground of his domain as he dashes forward at full speed, a sexy 'little' being like you strapped to himself and jostling on his pole, now even [if Player is female]screaming in lust and squirting even more femcum[else if Player is male]spurting wet streaks of cum against his belly as you inevitably orgasm from taking his manhood[else]screaming in lust as you orgasm[end if]. Yes, the proud stallion is definitively the master of his little realm here, with everyone in the paddock his to fuck - and breed, as he now does you. The large cockhead of Lucifer's equine prick swells and pushes its flared edge out into your already stretched insides, then the first long gush of cum blasts into you, followed by another, and another.";
+			say "     Lucifer lets out a loud and satisfied nicker as he feels your hole squeeze tight around his shaft. It is clear that the mustang feels on top of the world right now - hooves digging into the soft ground of his domain as he dashes forward at full speed, a sexy 'little' being like you strapped to himself and jostling on his pole, now even [if Player is female]screaming in lust and squirting even more femcum[else if Player is male]spurting wet streaks of cum against his belly as you inevitably orgasm from taking his manhood[else]screaming in lust as you orgasm[end if]. Yes, the proud stallion is definitely the master of his little realm here, with everyone in the paddock his to fuck - and breed, as he now does you. The large cockhead of Lucifer's equine prick swells and pushes its flared edge out into your already stretched insides, then the first long gush of cum blasts into you, followed by another, and another.";
 			WaitLineBreak;
 			say "     Throb after throb of his rich seed is deposited deep inside you, making you gasp at the warm and full feeling, as well as the sensations of wetness against your cheeks as cum spills out around the mustang's still thrusting shaft. [if Player is male]Between your bodies, there also is a creamy load you yourself blasted into his fur, being rubbed about as you're still jostled with each beat of the horse's hooves. [end if]Now that his lust is satisfied, Lucifer slows down a bit, then proceeds to check on his harem and trots around to show you off - all the while still enjoying having his maleness balls-deep inside you. It is enough of a turn-on that he doesn't even go soft, instead just resting inside you hard and throbbing.";
 			say "     But even so, eventually Lucifer has his fill of carrying you around and the feeling of his cock sliding around in your sloshing hole, so he trots back to the mounting block and carefully steps over it, making sure you're not scraped by the edges as you come to rest with your back on the flat top. He whinnies loudly in a commanding tone, which brings Lee to join you before much longer. 'You okay down there,' the farmhand asks and pats your shoulder, then laughs as you reply with a moan. 'Quite a show you put on, but I guess you're exhausted as hell now. Okay, let me unstrap you.' His trained hands make quick work of undoing the leather straps, freeing Lucifer to slip away from on top of you. The feral mustang nuzzles your shoulder in a mixture of affection and dominance, and you can almost hear the meaning of, 'Good bitch' in his whinny before he trots off.";
 			WaitLineBreak;
 			say "     It takes a minute or three till you're recovered enough from the constant stimulation you just went through, then you slowly stand up on shaky legs. Lee meanwhile uses a rag he had in his back pocket to wipe the equine sex harness down and clean off the cum that leaked on it, then he packs it up and starts walking off. 'I'll be ready when you want another go. Just keep the payment ready and you're up for more equine fun-time,' he calls over his shoulder, then ducks out of the paddock through the holes between the fence boards.";
-			if player is female:
+			if Player is female:
 				NPCSexAftermath Player receives "PussyFuck" from Lucifer;
 			else:
 				NPCSexAftermath Player receives "AssFuck" from Lucifer;
@@ -335,13 +335,13 @@ When Play begins:
 	now Name entry is "Feral Mustang Stallion";
 	now enemy title entry is "Wild Mustang";
 	now enemy Name entry is "Lucifer";
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The feral mustang rushes forward and runs you down, making you fall and tumble into the thankfully cushioning grass.[or]The feral mustang charges at you, knocking you to the ground roughly![or]The mustang rears up and manages to land a heavy hoof on your shoulder![or]The mustang bites you with his blunt, but pretty big teeth![or]The stallion rears up, causing his semi-hard cock to slap against his equine belly and release a spurt of precum onto you and also giving you a good view of his impressive penis and bloated balls![at random]";
 	now defeated entry is "[WildMustangLoses]";
 	now victory entry is "[WildMustangWins]";
 	now desc entry is "[WildMustangDesc]";
-	now face entry is "equine in appearance, with large brown eyes and rather expressive horse-like ears"; [ Face description, format as "Your face is (your text)."]
-	now body entry is "tall and muscular, shaped like an anthro equine. It has powerful digitigrade legs ending in large hooves with fluffy fetlocks. Your hands seem to be slightly hoof-like as well, bearing little hooflet-like nails at the end of each finger"; [ Body Description, format as "Your Body is (your text)"]
+	now face entry is "equine in appearance, with large brown eyes and rather expressive horse-like ears"; [ Face description, format as "Your face is [Face of Player]." ]
+	now body entry is "tall and muscular, shaped like an anthro equine. It has powerful digitigrade legs ending in large hooves with fluffy fetlocks. Your hands seem to be slightly hoof-like as well, bearing little hooflet-like nails at the end of each finger"; [ Body Description, format as "Your Body is [Body of Player]." ]
 	now skin entry is "[one of]brown-furred[or]softly furred[or]short fur covered[at random]"; [ format as "Your body is covered in (your text) skin"]
 	now tail entry is "You have a long, thick, horse-like tail swaying behind you, almost reaching to the ground. Its long strands of coarse hair cover your ass completely as it flicks this way and that seemingly on its own."; [ write a whole Sentence or leave blank. ]
 	now cock entry is "[one of]equine[or]horse-like[or]blunt[or]powerful[at random]"; [ format as "You have a 'size' (your text) cock ]
@@ -356,35 +356,35 @@ When Play begins:
 	now per entry is 12;
 	now int entry is 8;
 	now cha entry is 8;
-	now sex entry is "Female";         [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
-	now HP entry is 100;               [ How many HP has the monster got? She's not too hard- she doesn't want to win so much as not lose]
-	now lev entry is 14;               [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
-	now wdam entry is 18;              [ Amount of Damage monster Does when attacking. Claws and massive strength]
-	now area entry is "Nowhere";       [ Case sensitive. If you go down to the woods today, you're in for a big surprise]
-	now Cock Count entry is 0;              [ number of cocks if sex is 'Male' or 'Both' ]
+	now sex entry is "Male"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now HP entry is 100; [ How many HP has the monster got? She's not too hard- she doesn't want to win so much as not lose]
+	now lev entry is 14; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
+	now wdam entry is 18; [ Amount of Damage monster Does when attacking. Claws and massive strength]
+	now area entry is "Nowhere"; [ Case sensitive. If you go down to the woods today, you're in for a big surprise]
+	now Cock Count entry is 1; [ number of cocks if sex is 'Male' or 'Both' ]
 	now Cock Length entry is 18;
-	now Ball Size entry is 4;        [ Size of balls apparently ;) sneaky Nuku (big balls are underrated.)]
-	now Nipple Count entry is 2;            [ Number of nipples. ]
-	now Breast Size entry is 0;        [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
-	now Male Breast Size entry is 0;   [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 1;              [ number of pussies if sex is 'Female' or 'Both' ]
-	now Cunt Depth entry is 20;
-	now Cunt Tightness entry is 12;
+	now Ball Size entry is 4; [ Size of balls apparently ;) sneaky Nuku (big balls are underrated.)]
+	now Nipple Count entry is 2; [ Number of nipples. ]
+	now Breast Size entry is 0; [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 0; [ number of pussies if sex is 'Female' or 'Both' ]
+	now Cunt Depth entry is 0;
+	now Cunt Tightness entry is 1;
 	now SeductionImmune entry is false;
-	now libido entry is 30;            [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
-	now loot entry is "food";          [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
-	now lootchance entry is 0;         [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 4;              [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now libido entry is 30; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
+	now loot entry is "food"; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
+	now lootchance entry is 0; [ Chance of loot dropping 0-100 ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 4; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]muscular[or]equine[at random]";
-	now type entry is "equine";        [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
+	now type entry is "equine"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is "Feral Mustang Mare"; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;     [ 0 = Up at all times; 1 = Nocturnal (night encounters only); 2 = Diurnal (day encounters only) ]
+	now Cross-Infection entry is "Feral Mustang Mare"; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Nocturnal (night encounters only); 2 = Diurnal (day encounters only) ]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -407,7 +407,7 @@ When Play begins:
 	now Head Adjective entry is "equine"; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is "furred"; [one word descriptive adjective]
 	now Head Color entry is "dark brown"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "expressive equine ears";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "expressive equine ears";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 8; [hair length in inches]
 	now Hair Shape entry is "straight"; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is "black"; [one word color descriptor]
@@ -426,7 +426,7 @@ When Play begins:
 	now Torso Change entry is "it becomes barrel-shaped, like that of an equine, with fairly broad shoulders and a dark brown coat of fur"; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is "fairly barrel-shaped in an equine kind of way, with broad shoulders and a [Torso Color of Player] coat of fur"; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is "equine"; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is "furred"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is "dark brown"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -447,18 +447,18 @@ When Play begins:
 	now Arms Color entry is "dark brown"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is "bipedal"; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is "the muscles underneath your skin flex and move and bones rearrange themselves into a digitigrade stance. A brown coat of fur sprouting out of your skin and hooves forming from your feet completes the transformation"; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is "those of an anthro horse, complete with a [Legs Color of Player] coat of fur and hooves"; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is "those of an anthro horse, complete with a [Legs Color of Player] coat of fur and hooves"; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is "furred"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is "dark brown"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is "it becomes fairly broad in size, with dark brown fur sprouting over it"; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is "ass, covered in dark brown fur"; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "furred";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is "furred"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is "dark brown"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 4; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is "a short tail grows out of your tailbone and very long strands of hair start sprouting from it to hang down behind you"; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is "short tail with very long strands of [Tail Color of Player] hair growing from it"; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is "short tail with very long strands of [Tail Color of Player] hair growing from it"; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is "furred"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is "black"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 20; [inches deep for anal fucking]
@@ -472,19 +472,19 @@ When Play begins:
 	now Cock Length entry is 18; [length in inches]
 	now Cock Adjective entry is "[one of]equine[or]nonhuman[or]flared[at random]"; [one word adjective: avian/canine/...]
 	now Cock Change entry is "it grows erect and aroused before beginning to shift and change. The point of your cock broadens and flattens slightly into a rather blunt equine shape, while a proper sheath forms around its base, with a ribbed ring about halfway up your member"; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is "is [Cock Color of Player] and has a blunt tip with flared rim, as well as a ribbed ring about halfway up the shaft"; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is "is [Cock Color of Player] and has a blunt tip with flared rim, as well as a ribbed ring about halfway up the shaft"; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is "black"; [one word color descriptor]
 	now Ball Count entry is 2; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 4; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is "balls in a snug, smooth sack"; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is "balls in a snug, smooth sack"; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 2; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is "equine"; [one word adjective: avian/canine/...]
 	now Cunt Change entry is "it takes on a decidedly nonhuman shape, with fleshy nether lips and a large clit at the lowest point"; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is "is [Cunt Color of Player]-colored and equine in shape, with fleshy nether lips and a large clit at the lowest point"; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is "is [Cunt Color of Player]-colored and equine in shape, with fleshy nether lips and a large clit at the lowest point"; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is "black"; [one word color descriptor]
 	now Clit Size entry is 4; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -508,14 +508,14 @@ When Play begins:
 	add "Feral Mustang Mare" to infections of TailList;
 	now Name entry is "Feral Mustang Mare";
 	now enemy title entry is "Wild Mustang";
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[NonCombatError]";
 	now defeated entry is "[NonCombatError]";
 	now victory entry is "[NonCombatError]";
 	now desc entry is "[NonCombatError]";
-	now face entry is "equine in appearance, with large brown eyes and rather expressive horse-like ears"; [ Face description, format as "Your face is (your text)."]
-	now body entry is "tall and muscular, shaped like an anthro equine. It has powerful digitigrade legs ending in large hooves with fluffy fetlocks. Your hands seem to be slightly hoof-like as well, bearing little hooflet-like nails at the end of each finger"; [ Body Description, format as "Your Body is (your text)"]
+	now face entry is "equine in appearance, with large brown eyes and rather expressive horse-like ears"; [ Face description, format as "Your face is [Face of Player]." ]
+	now body entry is "tall and muscular, shaped like an anthro equine. It has powerful digitigrade legs ending in large hooves with fluffy fetlocks. Your hands seem to be slightly hoof-like as well, bearing little hooflet-like nails at the end of each finger"; [ Body Description, format as "Your Body is [Body of Player]." ]
 	now skin entry is "[one of]brown-furred[or]softly furred[or]short fur covered[at random]"; [ format as "Your body is covered in (your text) skin"]
 	now tail entry is "You have a long, thick, horse-like tail swaying behind you, almost reaching to the ground. Its long strands of coarse hair cover your ass completely as it flicks this way and that seemingly on its own."; [ write a whole Sentence or leave blank. ]
 	now cock entry is "[one of]equine[or]horse-like[or]blunt[or]powerful[at random]"; [ format as "You have a 'size' (your text) cock ]
@@ -530,35 +530,35 @@ When Play begins:
 	now per entry is 12;
 	now int entry is 8;
 	now cha entry is 8;
-	now sex entry is "Female";         [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
-	now HP entry is 100;               [ How many HP has the monster got? She's not too hard- she doesn't want to win so much as not lose]
-	now lev entry is 14;               [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
-	now wdam entry is 18;              [ Amount of Damage monster Does when attacking. Claws and massive strength]
-	now area entry is "Nowhere";       [ Case sensitive. If you go down to the woods today, you're in for a big surprise]
-	now Cock Count entry is 0;              [ number of cocks if sex is 'Male' or 'Both' ]
+	now sex entry is "Female"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now HP entry is 100; [ How many HP has the monster got? She's not too hard- she doesn't want to win so much as not lose]
+	now lev entry is 14; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
+	now wdam entry is 18; [ Amount of Damage monster Does when attacking. Claws and massive strength]
+	now area entry is "Nowhere"; [ Case sensitive. If you go down to the woods today, you're in for a big surprise]
+	now Cock Count entry is 0; [ number of cocks if sex is 'Male' or 'Both' ]
 	now Cock Length entry is 0;
-	now Ball Size entry is 0;        [ Size of balls apparently ;) sneaky Nuku (big balls are underrated.)]
-	now Nipple Count entry is 2;            [ Number of nipples. ]
-	now Breast Size entry is 0;        [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
-	now Male Breast Size entry is 0;   [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 1;              [ number of pussies if sex is 'Female' or 'Both' ]
+	now Ball Size entry is 0; [ Size of balls apparently ;) sneaky Nuku (big balls are underrated.)]
+	now Nipple Count entry is 2; [ Number of nipples. ]
+	now Breast Size entry is 0; [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 1; [ number of pussies if sex is 'Female' or 'Both' ]
 	now Cunt Depth entry is 20;
 	now Cunt Tightness entry is 4;
 	now SeductionImmune entry is false;
-	now libido entry is 90;            [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
-	now loot entry is "food";          [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
-	now lootchance entry is 0;         [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 4;              [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now libido entry is 90; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
+	now loot entry is "food"; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
+	now lootchance entry is 0; [ Chance of loot dropping 0-100 ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 4; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]muscular[or]equine[at random]";
-	now type entry is "equine";        [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
+	now type entry is "equine"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is "Feral Mustang Stallion"; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;     [ 0 = Up at all times; 1 = Nocturnal (night encounters only); 2 = Diurnal (day encounters only) ]
+	now Cross-Infection entry is "Feral Mustang Stallion"; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Nocturnal (night encounters only); 2 = Diurnal (day encounters only) ]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -581,7 +581,7 @@ When Play begins:
 	now Head Adjective entry is "equine"; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is "furred"; [one word descriptive adjective]
 	now Head Color entry is "dark brown"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "expressive equine ears";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "expressive equine ears";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 8; [hair length in inches]
 	now Hair Shape entry is "straight"; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is "black"; [one word color descriptor]
@@ -600,7 +600,7 @@ When Play begins:
 	now Torso Change entry is "it becomes barrel-shaped, like that of an equine, with fairly broad shoulders and a dark brown coat of fur"; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is "fairly barrel-shaped in an equine kind of way, with broad shoulders and a [Torso Color of Player] coat of fur"; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is "equine"; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is "furred"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is "dark brown"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -621,18 +621,18 @@ When Play begins:
 	now Arms Color entry is "dark brown"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is "bipedal"; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is "the muscles underneath your skin flex and move and bones rearrange themselves into a digitigrade stance. A brown coat of fur sprouting out of your skin and hooves forming from your feet completes the transformation"; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is "those of an anthro horse, complete with a [Legs Color of Player] coat of fur and hooves"; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is "those of an anthro horse, complete with a [Legs Color of Player] coat of fur and hooves"; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is "furred"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is "dark brown"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is "it becomes fairly broad in size, with dark brown fur sprouting over it"; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is "ass, covered in dark brown fur"; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "furred";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is "furred"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is "dark brown"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 4; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is "a short tail grows out of your tailbone and very long strands of hair start sprouting from it to hang down behind you"; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is "short tail with very long strands of [Tail Color of Player] hair growing from it"; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is "short tail with very long strands of [Tail Color of Player] hair growing from it"; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is "furred"; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is "black"; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 20; [inches deep for anal fucking]
@@ -646,19 +646,19 @@ When Play begins:
 	now Cock Length entry is 16; [length in inches]
 	now Cock Adjective entry is "[one of]equine[or]nonhuman[or]flared[at random]"; [one word adjective: avian/canine/...]
 	now Cock Change entry is "it grows erect and aroused before beginning to shift and change. The point of your cock broadens and flattens slightly into a rather blunt equine shape, while a proper sheath forms around its base, with a ribbed ring about halfway up your member"; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is "is [Cock Color of Player] and has a blunt tip with flared rim, as well as a ribbed ring about halfway up the shaft"; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is "is [Cock Color of Player] and has a blunt tip with flared rim, as well as a ribbed ring about halfway up the shaft"; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is "black"; [one word color descriptor]
 	now Ball Count entry is 2; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 4; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is "balls in a snug, smooth sack"; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is "balls in a snug, smooth sack"; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 2; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is "equine"; [one word adjective: avian/canine/...]
 	now Cunt Change entry is "it takes on a decidedly nonhuman shape, with fleshy nether lips and a large clit at the lowest point"; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is "is [Cunt Color of Player]-colored and equine in shape, with fleshy nether lips and a large clit at the lowest point"; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is "is [Cunt Color of Player]-colored and equine in shape, with fleshy nether lips and a large clit at the lowest point"; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is "black"; [one word color descriptor]
 	now Clit Size entry is 4; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -711,7 +711,7 @@ Cock Length of Lucifer is 18. [length in inches]
 Ball Count of Lucifer is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Lucifer is 4. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Lucifer is 0. [number of cunts]
-Cunt Depth of Lucifer is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Lucifer is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Lucifer is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Lucifer is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]

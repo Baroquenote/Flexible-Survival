@@ -120,7 +120,7 @@ to say cerberus3oral:
 	CreatureSexAftermath "Cerberus" receives "OralCock" from "Player";
 
 to say cerberusfuck:
-	if Libido of Player > 55 and player is female, now cerberusarousal is 1;
+	if Libido of Player > 55 and Player is female, now cerberusarousal is 1;
 	say "     Fingering her cunt, you press her down onto her back with your other hand. The lustful creature obeys readily, somehow sensing she'll receive some form of release. As you move into position, you keep pumping those fingers into her while your other hand strokes over your growing erection, getting it fully hard. Once you're ready, you slip your wet digits out and spread her canine muff with them as you guide your stiff [Cock of Player] cock into her.";
 	say "     You move your hands to her many breasts, stroking over them as you watch her three canine heads pant and whine in pleasure. As you drive your cock into that wet, canine pussy again and again, you moan in pleasure. You tease and pinch her many nipples, watching as her milk starts to flow from them[if cerberusarousal is 1]. As your pleasure continues to grow, you find yourself unable to resist the beast's tail and guide it to your dripping pussy even as you fuck her own. You push it into you, taking several inches in one go, then letting it pound away at you, driving your meat down into her snatch[end if].";
 	say "     You keep thrusting into her, enjoying the feel of her hot, squeezing pussy around your cock. her body squirms in delight beneath you as you pound away at his until finally you thrust hard into her one last time and start pumping your cum into her. She growls in pleasure from her three muzzles and cums as well, sending quivers through her pussy to milk you for all you'll give[if cerberusarousal is 1]. her cock thrusts hard into you one last time, tying with you and unleashing her hot seed deep inside you, painting the walls of your womb with her virile semen[end if].";
@@ -130,8 +130,8 @@ to say cerberusfuck:
 	CreatureSexAftermath "Cerberus" receives "PussyFuck" from "Player";
 
 to say cerberusride:
-	if Libido of Player > 55 and player is male, now cerberusarousal is 1;
-	if CockName of Player is "Cerberus" and player is male, now cerberusarousal is 2;
+	if Libido of Player > 55 and Player is male, now cerberusarousal is 1;
+	if CockName of Player is "Cerberus" and Player is male, now cerberusarousal is 2;
 	say "     Running your hand over her tail, your push her to roll over with the other. The lustful creature obeys readily, somehow sensing she'll receive some form of release. You sit atop her waist and move her tail into position, lining it up with your [if Player is female]wet cunt[else]tight pucker[end if]. You rub back against it, smearing her leaking pre against your hole before pushing that tailcock into you where you most need it. You moan softly as you guide her thick meat into you, then release the tail once it's far enough to start thrusting into you on its own.";
 	say "     You move your hands to her many breasts, stroking over them as you watch her three canine heads pant and whine in pleasure. As that ridged, canine cock plows into you again and again, you moan in pleasure. You tease and pinch her many nipples, watching as her milk starts to flow from them[if cerberusarousal is 1]. As your pleasure continues to grow, you find yourself lusting for more and you shift your hips and thrust your own cock into her wet snatch, fucking her even as you have her fuck you[else if cerberusarousal is 2]. As your pleasure continues to build, you find yourself lusting for more and bring your tailcock into position, guiding it into her wet snatch, fucking her even as you have her fuck you[end if].";
 	say "     You keep this up as you start clenching and relaxing your [if Player is female]pussy[else]anus[end if] around her cock until finally she drives her knot into you, locking that twisted, canine cock into you. She growls in pleasure from her three muzzles and unleashes her hot seed into your [if Player is female]womb[else]ass[end if], filling you with her virile semen[if cerberusarousal > 0]. You drive your own cock deep into her and unleash as well, pumping your seed into her waiting womb[end if].";
@@ -192,7 +192,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Cerberus"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Cerberus"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Cerberus" to infections of CanineList;
 	add "Cerberus" to infections of FurryList;
 	add "Cerberus" to infections of FeralList;
@@ -203,10 +203,10 @@ When Play begins:
 	add "Cerberus" to infections of SheathedCockList;
 	add "Cerberus" to infections of QuadrupedalList;
 	add "Cerberus" to infections of TailList;
-	now Name entry is "Cerberus"; [Name of your new Monster]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now Name entry is "Cerberus";
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The Cerberus herm growls and swings her powerful arms at you, striking you with her heavy paws![or]The Cerberus herm presses her body to yours, leaking milk from her many nipples across your body. The scent of that warm milk running across your body and the scent of it filling your nose weakens your resolve to keep fighting her![or]The canine foe releases spurts of her pre from her tail's cock across your face. You can't help but lick it up and find yourself thirsting for more![or]As she grapples with you, her tailcock rubs against you, spurting precum onto your body. The scent of it excites you, making you want to cease struggling![or]Dropping briefly to all fours, the Cerberus herm pounces at you and knocks you over, her triple heads panting and drooling as she grinds her wet pussy against you until you manage to push away![at random]";
 	now defeated entry is "[beatthecerberus]";
 	now victory entry is "[losetocerberus]";
@@ -245,16 +245,16 @@ When Play begins:
 	now libido entry is 75; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
 	now loot entry is "";
 	now lootchance entry is 0; [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 4; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]muscular[or]widened[or]broad-chested[as decreasingly likely outcomes]";
 	now type entry is "canine"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "cerberus"; [ Row used to designate any special combat features, "default" for standard combat. ]
 	now BannedStatus entry is false;
@@ -266,7 +266,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -278,7 +278,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -297,7 +297,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -318,18 +318,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -343,19 +343,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -463,7 +463,7 @@ This is the Cerberus Infection rule:
 			else if Player is herm:
 				say "     You feel as if something is missing, but you know not what nor where to find it. You wander out into the city and find your way into the park. Your powerful, canine body pounces upon one of the Painted Wolf Herms you find. After a bit of a scuffle, you two are rutting wildly, swapping places until you've both been thoroughly filled with cum. You head off together to her den and make plans for the future of the pack growing in both your wombs.";
 			else if Player is male:
-				say "     As you roam the city, feeling as if something is missing by not quite able to figure out what, you are found by a mostly-unchanged human. She has four enlarged breasts and featureless golden eyes, but no other visible changes. You approach her eagerly, hoping to satisfy your animal lusts upon her, but there is something about her gaze and her stance that makes you come up short. Clearly experienced at handling dogs, she soon has you obediently taking treats and is calling you by pet names. Your canine body quickly submits to her training during the remaining time in the city; teaching you to be a good dog and rewarding you with treats or hand jobs. Your mind slips further and further away during this time until you're nothing be an obedient and powerful guardian for your mistress.";
+				say "     As you roam the city, feeling as if something is missing by not quite able to figure out what, you are found by a mostly-unchanged human. She has four enlarged breasts and featureless golden eyes, but no other visible changes. You approach her eagerly, hoping to satisfy your animal lusts upon her, but there is something about her gaze and her stance that makes you come up short. Clearly experienced at handling dogs, she soon has you obediently taking treats and is calling you by pet names. Your canine body quickly submits to her training during the remaining time in the city; teaching you to be a good dog and rewarding you with treats or handjobs. Your mind slips further and further away during this time until you're nothing be an obedient and powerful guardian for your mistress.";
 				say "     When the military comes through, she is extracted along with you. At first, they have some concern about taking you along, but she's quite persuasive and has you demonstrate what a good doggy you are. Eventually released, she sets up a new life for herself with you as her loyal pet and guardian. Somewhere in your instincts, you are a powerful protector and defend your mistress and her home with your muscled body. Having been treated to prevent infection, she now happily takes you into her bed, letting you rut your mistress. These matings eventually bear fruit as she becomes pregnant with Cerberus puppies with six lovely, alluring, golden eyes.";
 			else:
 				say "     As you roam the city in search of something, though you know not what, you go into heat. With your dripping pussy leaking pheromones, you are found by one of the German shepherd males, who mounts you and pounds his knotted cock into you repeatedly. Despite your larger size, you submit to him readily, allowing him to take you as one of his many mates, breeding you full of large, strong puppies to add to his pack. Your instincts as a guardian make you a perfect guard for the pack's den while they are searching the city for potential mates to add to the pack.";

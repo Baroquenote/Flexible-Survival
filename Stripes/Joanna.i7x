@@ -42,7 +42,7 @@ Overrun Garden is a situation.
 ResolveFunction of Overrun Garden is "[ResolveEvent Overrun Garden]". The level of Overrun Garden is 10.
 Sarea of Overrun Garden is "High".
 when play begins:
-	add Overrun Garden to badspots of HermList;
+	add Overrun Garden to BadSpots of HermList;
 	add Overrun Garden to BadSpots of FemaleList;
 
 to say ResolveEvent Overrun Garden:
@@ -102,6 +102,19 @@ to say ResolveEvent Overrun Garden:
 			say "     'And I was just getting used to being a kinkajou,' she says with a soft giggle, walking slowly around the garden, smelling the large flowers and diving her tongue into them to enjoy their nectar. 'Mmm... this looks like a lovely garden. The perfect place for a lovely flower like me, don't you think?' she asks with a grin. '[if HP of Joanna >= 90]Be sure to tell Harold and the others at the Palomino that I'm okay[else]My name is Joanna[end if]. You're welcome to visit here again whenever you like, my brave hero,' she adds, running a green finger slowly down your chest and smiling as she sensually runs her foot-long tongue across your neck.";
 			now HP of Joanna is 1;
 			now lust of Joanna is 0;
+			now Tongue Length of Joanna is 14;
+			now Breast Size of Joanna is 4;
+			now Asshole Depth of Joanna is 12;
+			now Asshole Tightness of Joanna is 3;
+			now Cock Count of Joanna is 4;
+			now Cock Girth of Joanna is 2;
+			now Cock Length of Joanna is 12;
+			now Ball Count of Joanna is 2;
+			now Ball Size of Joanna is 4;
+			now Cunt Count of Joanna is 3;
+			now Cunt Depth of Joanna is 12;
+			now Cunt Tightness of Joanna is 3;
+			now Clit Size of Joanna is 1;
 			now Resolution of Overrun Garden is 1; [helped and won]
 	else:
 		LineBreak;
@@ -183,13 +196,13 @@ to SFquestion1:
 		LineBreak;
 		say "     ([link]Y[as]y[end link]) - Of course you love them! They're the best thing ever!";
 		say "     ([link]N[as]n[end link]) - Give her your take on it, but use soft words.";
-		if player consents:
+		if Player consents:
 			LineBreak;
 			say "     Eagerly, you let her know how much you adore her plant-like features and how fun they are to play with, besides how beautiful they look on her, which fills Joanna's eyes with joy. 'You really think so?! I was so worried you wouldn't appreciate them the way I do...! Eventually... Oh, sweetie, I'm so glad you like them!' she tells you, her plant stems moving around excitedly, though it looks like she's going to follow up on your response with something else in her mind. 'You see, I ask you this because I've been wondering... Isn't it so wonderful to be like me? Look at all this, all the fun that we had thanks to all these tendrils and stems...! What if... We could spread this strain around the world, let others feel how it is like to be this beautiful?' Seems like your kinkajou friend wants to find a way to spread her infection strain to other creatures and people, though would that be wise? Do you want to hear more about this plan, or shut her down right now and never speak of it again?";
 			LineBreak;
 			say "     ([link]Y[as]y[end link]) - Might as well listen to her idea, now.";
 			say "     ([link]N[as]n[end link]) - You won't hear anything more of this crazy idea!";
-			if player consents:
+			if Player consents:
 				LineBreak;
 				say "     You encourage her to continue, intrigued by her idea. She leans on closer to you as you pay utmost attention. 'Well, I've been thinking... There should be a way, right? Though sadly we don't have access to a parasitic plant anymore, we can't get its strain right off the bat... We'd have to craft one! But I have no idea how to make it effective...' she explains, making a pause before continuing, 'You see, I don't want it to instantaneously transform people and creatures who come in contact with it, I want it to linger for a while and then sprout and blossom when it's ready! This would also help spreading it further... My idea is putting it in something people would use for fun, like sex toys!' Sounds like she has been thinking about it for quite some time now, though you're clueless regarding where to start or what to do, even.";
 				WaitLineBreak;
@@ -197,7 +210,7 @@ to SFquestion1:
 				LineBreak;
 				say "     ([link]Y[as]y[end link]) - Follow her plan and fulfill her wish.";
 				say "     ([link]N[as]n[end link]) - This is risky and reckless, tell her you won't do it.";
-				if player consents:
+				if Player consents:
 					LineBreak;
 					say "     With a nod, you happen to accept her request, telling her you'll do what you can, which makes the kinkajou girl almost burst out of happiness. 'Really?! Oh, I can't thank you enough! I mean, I can let you rest in my garden, fondle and stuff you for hours and hours if that's what you want as reward, I think...' she adds, laughing with joy. 'Though do be careful! I've heard horrible things from that place... Strange things happen, and there are multiple dangerous creatures in there, things that went very very wrong... Just be careful, okay?' she warns you, concerned about your well being. You thank her for her kindness and promise you'll be back with something worth your time. 'Thank you so much, really! I promise I'll reward you with lots and lots of love, my hero!' Nodding, you prepare yourself to leave. However, you wonder how she would have known any of this...";
 					say "     Now, [bold type]you have to get in the Trevor Labs and seek some clues in the sealed area[roman type]. It won't be easy, though. As Joanna said, many dangers roam that area, so you have to be prepared for especially strange and disturbing results of previous [bold type]hybrid experimentations.[roman type][line break]";
@@ -247,7 +260,7 @@ to say ResolveEvent Hybrid Experimentations:
 to HEquestion1:
 	say "     ([link]Y[as]y[end link]) - Risk it for the sake of your quest!";
 	say "     ([link]N[as]n[end link]) - Better not... yet.";
-	if player consents:
+	if Player consents:
 		LineBreak;
 		if resolution of Hybrid Experimentations < 2:
 			say "     Your assumptions about the door's condition proves to be true once you push it with more effort than you really needed, making it hit a shelf rather violently. This causes several boxes and dossiers to fall over and a lot of noise echoing through the place! Immediately, you enter the room and close the broken door behind you, though you start thinking this was a bad idea...";
@@ -293,7 +306,7 @@ instead of navigating Flower Garden while (HP of Joanna is 7 and resolution of S
 	LineBreak;
 	say "     ([link]Y[as]y[end link]) - Pick something fun to do with Joanna.";
 	say "     ([link]N[as]n[end link]) - You're not in the mood for sex, right now.";
-	if player consents:
+	if Player consents:
 		LineBreak;
 		say "     Nodding, you approach your kinkajou lover and give her a kiss, considering your options...";
 		wait for any key;
@@ -329,7 +342,7 @@ to say XerxesSFHarvest:
 	LineBreak;
 	say "     ([link]Y[as]y[end link]) - Bring Xerxes to Joanna.";
 	say "     ([link]N[as]n[end link]) - Not right now.";
-	if player consents:
+	if Player consents:
 		LineBreak;
 		say "     He definitely sounds eager to hear you say that you're going for a walk. Without any further ado, you set things up and bring your human dog to the Flower Garden, where Joanna is awaiting you.";
 		move player to Flower Garden;
@@ -356,7 +369,7 @@ to say HelenSFHarvest:
 	LineBreak;
 	say "     ([link]Y[as]y[end link]) - Bring Helen to Joanna.";
 	say "     ([link]N[as]n[end link]) - Not right now.";
-	if player consents:
+	if Player consents:
 		LineBreak;
 		say "     She definitely sounds eager to hear you say that you're going for a walk. Without any further ado, you set things up and bring your human dog to the Flower Garden, where Joanna is awaiting you.";
 		move player to Flower Garden;
@@ -424,11 +437,11 @@ instead of navigating Flower Garden while (Resolution of Spreading Flowers is 6 
 	move player to Flower Garden;
 	SFAwesomeTree;
 
-instead of navigating Flower Garden while (Resolution of Spreading Flowers is 7 and carried of awesome fruit > 0 and carried of awesomer fruit > 0 and carried of awesomest fruit > 0 and "Awesome Tree" is listed in vials of player): [Player is carrying all the necessary items for ALT path]
+instead of navigating Flower Garden while (Resolution of Spreading Flowers is 7 and carried of awesome fruit > 0 and carried of awesomer fruit > 0 and carried of awesomest fruit > 0 and there is a name of "Awesome Tree" in the Table of OwnedVials): [Player is carrying all the necessary items for ALT path]
 	say "[NavCheck Flower Garden]";
 	if NavCheckReturn is false, stop the action; [can't nav from the player's location, or already there - so we stop this cold]
 	move player to Flower Garden;
-	deletevial "Awesome Tree";
+	VialLoss "Awesome Tree" by 1;
 	SFAwesomeTree;
 
 to SFAwesomeTree:
@@ -449,7 +462,7 @@ instead of navigating Flower Garden while (Resolution of Spreading Flowers is 8 
 	LineBreak;
 	say "     ([link]Y[as]y[end link]) - Ask her how she knew all about this process and how to proceed.";
 	say "     ([link]N[as]n[end link]) - Not yet. She's focused on her task and this seems sensible. Cuddle with her instead, maybe.";
-	if player consents:
+	if Player consents:
 		LineBreak;
 		say "     You decide to wait it out with her, and use the opportunity to ask her what you've been wanting to for so long. Who was she before the outbreak? How did she know all of this? Questions like these make Joanna visibly uncomfortable, hesitating to give you any specific answer. 'I suppose we never talked about this... Isn't it?' She asks, and you give her the obvious reply. 'There's a lot you don't know... I wasn't always a kinkajou, dancing in Palomino being all carefree like I was. I found this new form a blessing, a chance to see the world differently and learn how to enjoy myself more...' Whatever she is saying, it doesn't answer your question. You get the feeling she's dragging the subject. 'It wasn't easy, being who I was... Oh! The synthesis is ready!' Saved by the synthesis, you guess... Though it's important she does this well, or all your work would have been for nothing.";
 		say "     She takes some liquid out of a nearby leaf into a vial, then closes it carefully. It's colorless, very similar to water. 'Here it is, the strain... Now we only need to test this and develop a way to spread it, if it works... This really makes me anxious. After so much work... I'd be sad if it didn't.' She is staring at it, admiring her product with some fear in her eyes. 'About your question... I'll tell you everything, but I need one last favor.' She turns to you one more time, handing you her precious vial. 'I think I know who could help us. Take this vial to [bold type]Doctor Medea, at the Pediatrics Clinic[roman type]. She has precious knowledge about this matter, despite her expertise, and has been a friend of mine for a while now. She will help us test and arrange some way of achieving a means to spread it, maybe a sex toy or two... I'm sure she will be useful and willing to help.' To this Doctor Medea, then. Though you make her promise she will, indeed, tell you everything about herself after this.";
@@ -495,7 +508,7 @@ instead of navigating Flower Garden while (Resolution of Spreading Flowers is 10
 	LineBreak;
 	say "     ([link]Y[as]y[end link]) - Bring the subject.";
 	say "     ([link]N[as]n[end link]) - Just hug her and drop it. It's not important anymore.";
-	if player consents:
+	if Player consents:
 		LineBreak;
 		say "     No, you need to know the truth. About how Joanna knew of all this, and who she was before the nanite outbreak. You have to ask her... And so you do. 'Oh... I did tell you that, didn't I?' She makes a pause, looking at you, then downwards, before continuing to speak, 'I suppose... if that's important to you, then I'll tell you.' She grabs your hands and looks at you in the eyes. She is about to say something...";
 		WaitLineBreak;
@@ -545,14 +558,50 @@ Table of GameCharacterIDs (continued)
 object	name
 Joanna	"Joanna"
 
-Joanna is a woman. Joanna is in Flower Garden.
+Joanna is a woman.
+Joanna is in Flower Garden.
+ScaleValue of Joanna is 3. [human sized]
+SleepRhythm of Joanna is 0. [0 - awake at all times, 1 - day active, 2 - night active]
+Body Weight of Joanna is 3. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
+Body Definition of Joanna is 4. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
+[Body Adjective is generated out of the body weight and body definition and can be used in scenes - one word descriptive adjective depending on weight and definition groups: low weight group: skinny/slender/lithe; mid weight group: average/fit/muscled; high weight group: pudgy/husky/jacked]
+Androginity of Joanna is 8. [Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/somewhat effeminate/effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
+Mouth Length of Joanna is 7. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
+Mouth Circumference of Joanna is 3. [mouth circumference 1-5, "tiny, small, normal, wide, gaping"]
+Tongue Length of Joanna is 10. [length in inches]
+Breast Size of Joanna is 3. [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+Nipple Count of Joanna is 2. [count of nipples]
+Asshole Depth of Joanna is 8. [inches deep for anal fucking]
+Asshole Tightness of Joanna is 2. [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+Cock Count of Joanna is 0. [number of cocks]
+Cock Girth of Joanna is 0. [thickness 1-5, thin/slender/average/thick/monstrous]
+Cock Length of Joanna is 0. [Length in Inches]
+Ball Count of Joanna is 0. [allowed numbers: 1 (uniball), 2 or 4]
+Ball Size of Joanna is 0. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
+Cunt Count of Joanna is 1. [number of cunts]
+Cunt Depth of Joanna is 8. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Tightness of Joanna is 2. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+Clit Size of Joanna is 3. [size 1-5, very small/small/average/large/very large]
+[Basic Interaction states as of game start]
+PlayerMet of Joanna is false.
+PlayerRomanced of Joanna is false.
+PlayerFriended of Joanna is false.
+PlayerControlled of Joanna is false.
+PlayerFucked of Joanna is false.
+OralVirgin of Joanna is false.
+Virgin of Joanna is false.
+AnalVirgin of Joanna is true.
+PenileVirgin of Joanna is true.
+SexuallyExperienced of Joanna is true.
+TwistedCapacity of Joanna is false. [Twisted Characters can take any penetration, no matter the size]
+Sterile of Joanna is true. [steriles can't knock people up]
+MainInfection of Joanna is "".
 Description of Joanna is "[joannadesc]".
 Conversation of Joanna is { "Sunshine!" }.
+The scent of the Joanna is "[joannascent]".
 lastjoannajuice is a number that varies. lastjoannajuice is usually 555.
 joannatalk is a number that varies.
 joannaoffernum is a number that varies.
-
-the scent of the Joanna is "[joannascent]".
 
 to say joannascent:
 	if HP of Joanna is not 0 and HP of Joanna < 90:
@@ -579,7 +628,7 @@ to say joannadesc:
 Instead of conversing the Joanna:
 	[Joanna at Palomino]
 	if HP of Joanna is 0:
-		say "     Curious about the unusual looking creature on the dance floor, you try to move up to talk to her, but she's too into her dancing and it's too crowded around her to get close. She gives you a little smile, but keeps on going. Moving back off the dance floor, you decide to ask Tristian about her. 'Who? Oh, her,' he says with disinterest. 'Her name's J-something. Jackie? Joannie? Jolie?' he adds, trying to remember. 'Been around here most nights. Not my type though. Too much up here,' he says, cupping non-existent breasts. 'And not down here,' he finishes, grabbing his crotch.";
+		say "     Curious about the unusual looking creature on the dance floor, you try to move up to talk to her, but she's too into her dancing and it's too crowded around her to get close. She gives you a little smile, but keeps on going. Moving back off the dance floor, you decide to ask Tristian about her. 'Who? Oh, her,' he says with disinterest. 'Her name's J-something. Jackie? Joannie? Jolie?' he adds, trying to remember. 'Been around here most nights. Not my type though. Too much up here,' he says, cupping nonexistent breasts. 'And not down here,' he finishes, grabbing his crotch.";
 		say "     Harold, who was passing by with a case of beer under one arm, gives the horse a light smack on the back of the head. 'Her name's Joanna and she's a sweet girl. A little too plain-Jane for me, but nice enough. Only orders straight fruit juice, never any of the hard stuff,' he explains as he talks with you while restocking the bar. 'We've chatted a bit at the bar. She's a kinkajou, so she's nocturnal and only comes out here to dance at night. Gets too sleepy during the day to do much. She's here most nights, so you should be able to talk to her sometime. I'll introduce you.";
 		now HP of Joanna is 91;
 	else if HP of Joanna is 90:
@@ -621,7 +670,7 @@ Instead of conversing the Joanna:
 	else if HP of Joanna is 8: [only temporarily as she examines the documents]
 		say "     [one of]'Not now, hon. I'm still figuring out a few things before we move onto the next phase.' she says, face nearly buried in the pile of papers you brought from the sealed area under the Trevor Labs.[or]'If only I could have been there in time before the outbreak... O-oh, you're still here?' she turns to you, rather surprised by your presence. Looks like you caught her talking to herself.[or]'No, still nothing.' she says to you, 'I'll keep studying this, I'm sure I'll find a way...'[or]She's silently studying the big heavy dossier you got her, completely focused in her task.'[or]'Need anything, sweetie? I'm a little busy with these documents, but what I can provide, I'll give...!' she tells you with a rather teasing giggle.[or]'Truly abominations... These were never meant to see the light of the day. I hope I can make something better, something that makes people happy...'[or]'Reports say that they've been experimenting on this even before the nanite outbreak, in secrecy... What were their goals?' You are pretty sure she is talking to herself.[at random]";
 	else if HP of Joanna is 9: [on the human dogs or awesome tree stage]
-		say "     [one of]'One day, the entire world will be as verdant and beautiful as this garden. I hope I can give it that.' she says, with a gleam in her eyes.[or]'Sweety, don't overdo yourself. If you need to rest, you know what to ask of me...' she says, sliding a hand over her chest in a way to tease you.[or]'You should remember to take a moment to smell my lovely flowers,' she says as she spreads the petals of her pussies with a grin.[or]She grins and cups one of the large, vaginal flowers in her paw and slowly slides her tongue around its edge before diving into it, making a sensual show of her feeding.[or]'This plant body of mine has such... wonderful urges,' she whispers, her tendrils stirring a little.[or][if daytimer is day]'Doesn't the warm sun feel so good?' she asks, stretching herself out on the grass, tendril cocks rustling lightly as she enjoys the sunshine[else]'My kinkajou side is becoming more relaxed, making it easier to rest at night,' she says[end if].[or]'I'm so glad you decided to take my seed and be my special hero again,' she says, running a paw over your chest.[or]'Please be kind to my precious seed inside you, hon.'[or]'Be sure to have as much sex as you can out there. Gather lots of seed for me and my precious seed inside you.'[at random]";
+		say "     [one of]'One day, the entire world will be as verdant and beautiful as this garden. I hope I can give it that.' she says, with a gleam in her eyes.[or]'Sweetie, don't overdo yourself. If you need to rest, you know what to ask of me...' she says, sliding a hand over her chest in a way to tease you.[or]'You should remember to take a moment to smell my lovely flowers,' she says as she spreads the petals of her pussies with a grin.[or]She grins and cups one of the large, vaginal flowers in her paw and slowly slides her tongue around its edge before diving into it, making a sensual show of her feeding.[or]'This plant body of mine has such... wonderful urges,' she whispers, her tendrils stirring a little.[or][if daytimer is day]'Doesn't the warm sun feel so good?' she asks, stretching herself out on the grass, tendril cocks rustling lightly as she enjoys the sunshine[else]'My kinkajou side is becoming more relaxed, making it easier to rest at night,' she says[end if].[or]'I'm so glad you decided to take my seed and be my special hero again,' she says, running a paw over your chest.[or]'Please be kind to my precious seed inside you, hon.'[or]'Be sure to have as much sex as you can out there. Gather lots of seed for me and my precious seed inside you.'[at random]";
 	else if HP of Joanna is 10: [synthesizing Awesome Tree items]
 		say "     [one of]'One day, the entire world will be as verdant and beautiful as this garden. I hope I can give it that.' she says, with a gleam in her eyes.[or]'Sweetie, don't overdo yourself. If you need to rest, you know what to ask of me...' she says, sliding a hand over her chest in a way to tease you.[or]'Synthesis is going okay. My own biology allows for a clear product in the end, so let's just wait.' she says, smiling to you.[or]'Thank you so much for what you've done for me until now. I am a little tired, currently, but we can still have fun if you desire...' she lets you know, caressing your cheek.[or]'This plant body of mine has such... wonderful urges,' she whispers, her tendrils stirring a little.[or][if daytimer is day]'Doesn't the warm sun feel so good?' she asks, stretching herself out on the grass, tendril cocks rustling lightly as she enjoys the sunshine[else]'My kinkajou side is becoming more relaxed, making it easier to rest at night,' she says[end if].[or]'I'm so glad you decided to take my seed and be my special hero again,' she says, running a paw over your chest.[or]'Please be kind to my precious seed inside you, hon.'[or]'Be sure to have as much sex as you can out there. Gather lots of seed for me and my precious seed inside you.'[at random]";
 	else if HP of Joanna is 11: [Waiting on Medea]
@@ -1005,7 +1054,7 @@ to say ResolveEvent Dog Chase:
 		say "     As you're traveling along, you hear the repeated call of 'Squirrel! Squirrel!' coming from nearby. Curiously cautious, you approach the sound to find a small dog-man barking the word repeatedly, running around an isolated tree. From time to time, the Jack Russell terrier tries to scramble up, but he's mostly quadrupedal and his hands are mostly paws, preventing him from getting a grip. 'Squirrel!' he barks again, finally eliciting a response from the tree's occupant[if daytimer is day]. 'Shut up, you stupid mutt! I'm trying to sleep,' a female voice yells angrily[else]. 'Shut up, you dumb mutt. I told you, I'm not a squirrel,' a female voice yells angrily[end if]. Looking at the canopy more closely, you spot a slender, feminine creature lying casually among the branches. She has short brown fur, long brown hair and a very long tail. And she still has some clothes on, so she could even be a survivor given her lack of lustful reaction to the dog.";
 		say "     Deciding to risk it, you head closer, yelling at the terrier to get out of here. He turns and growls a little at you, but when the woman leaps from the tree wielding a large branch, the dog backs off, not wanting to fight two opponents. 'Damn it,' the woman grumbles as the dog runs off. 'Guy just wouldn't shut up. Too dumb to know I'm a kinkajou and not a squirrel,' she says, turning to smile at you. 'Thanks for helping out back there. I'm Joanna, by the way.'";
 		say "     Once the introductions are aside, you chat with her a bit[if daytimer is day]. 'I'm normally trying to rest during the day, but that dummy wouldn't let me sleep. Speaking of, I should really be getting some rest. I was up all night dancing at the club[else]. 'I was on my way to club for another night of dancing when I ran into that dummy. Speaking of, I should head on over while there's still a night to dance away[end if]. Yeah, there's still a club open to hang out at, called the Palomino. I'm usually there most nights. I hope to catch you there some time[if PALOMINO is known].' You tell her that you've been there before and that you'll have to swing by to see her some time[else].' She gives you some rough directions to the place, which include stuff like [']turn at this tree['] or [']run three rooftops over['], but you're pretty sure you'll be able to sort it out and find a more conventional route there[end if]. With that, she heads off, going from a car roof to an awning and then to the top of a building before moving out of sight.";
-		AddNavPoint PALOMINO;
+		AddNavPoint PALOMINO Dance Club;
 		now HP of Joanna is 90;
 		now joannadogsaved is true;
 		now Resolution of Dog Chase is 1; [saved Joanna]
@@ -1017,8 +1066,8 @@ to say ResolveEvent Dog Chase:
 an everyturn rule:
 	if HP of Joanna is 0 or HP of Joanna >= 90:
 		if daytimer is night: [non-plant Joanna is partying]
-			if Joanna is not in PALOMINO: [she's not in her party spot]
-				now Joanna is in PALOMINO; [let's move her there]
+			if Joanna is not in PALOMINO Dance Club: [she's not in her party spot]
+				now Joanna is in PALOMINO Dance Club; [let's move her there]
 		else: [during the day, she's out sleeping or scavenging]
 			now Joanna is nowhere; [off to the void]
 	else: [plant Joanna]
@@ -1080,12 +1129,12 @@ to say SmellingPlantDildo:
 	LineBreak;
 	say "     ([link]Y[as]y[end link]) - Do it.";
 	say "     ([link]N[as]n[end link]) - Suppress the urge.";
-	if player consents:
+	if Player consents:
 		LineBreak;
 		say "     The sight of it just turns you on so much that, almost by compulsion, you put your lips around the dildo and start sucking on it, the incredibly sweet thick juice landing in your tongue in an explosion of a nearly addicting flavor. It's so good that you have to force yourself to stop, and a tingle in your mouth reminds you that you were actually enjoying that immensely.";
-		increase libido of player by 10;
-		if libido of player > 100:
-			now libido of player is 100;
+		increase Libido of Player by 10;
+		if Libido of Player > 100:
+			now Libido of Player is 100;
 		decrease humanity of player by 5;
 		infect "Parasitic Plant";
 	else:
@@ -1093,12 +1142,12 @@ to say SmellingPlantDildo:
 		say "     Shaking off the urge, you pack away the plant-like dildo.";
 
 instead of using plant-like dildo:
-	if player is female:
+	if Player is female:
 		say "     [bold type]Do you want to pleasure yourself with this plant-like cock in your pussy or ass?[roman type][line break]";
 		LineBreak;
 		say "     ([link]Y[as]y[end link]) - Shove it in your pussy.";
 		say "     ([link]N[as]n[end link]) - You feel like taking it in the ass.";
-		if player consents:
+		if Player consents:
 			say "[PlantDildoPussyFuck]";
 		else:
 			say "[PlantDildoAssFuck]";
@@ -1106,18 +1155,18 @@ instead of using plant-like dildo:
 		say "[PlantDildoAssFuck]";
 
 to say PlantDildoPussyFuck:
-	say "     When you begin to handle the dildo some more, you see its white sap leaking through the tip more actively, sending an even more sweet smell to your nose. Sliding your fingers around the tip, you spread the slippery liquid all across the shaft, lubricating its surface and making it much smoother. In order to get started, you [if player is not naked]take off your clothes and[else]you[end if] bring it closer to your womanhood. The toy wiggles in your hand, the part of it that is still organic coming to live with the promise of a good sexual feeding. You're eager to push it in, so you start shoving it inside your pussy, moist and wet by now, inch by inch as its entire length ondulates inside you, providing you extra pleasure. It slides in very easily and with no pain at all, despite it being of a considerable size.";
+	say "     When you begin to handle the dildo some more, you see its white sap leaking through the tip more actively, sending an even more sweet smell to your nose. Sliding your fingers around the tip, you spread the slippery liquid all across the shaft, lubricating its surface and making it much smoother. In order to get started, you [if Player is not naked]take off your clothes and[else]you[end if] bring it closer to your womanhood. The toy wiggles in your hand, the part of it that is still organic coming to live with the promise of a good sexual feeding. You're eager to push it in, so you start shoving it inside your pussy, moist and wet by now, inch by inch as its entire length undulates inside you, providing you extra pleasure. It slides in very easily and with no pain at all, despite it being of a considerable size.";
 	say "     With your legs spread, you simply grab the dildo by its broad base and let it do its own thing, only pulling and pushing softly once in a while to feel more of it inside you, rubbing against your nether lips with vigor. The sap it leaks in you is warm, augmenting the sensations as your vagina feels even more wet. Its wiggling movements easily reach all your spots, as it seems to get accustomed to its user, making your legs tremble with so much bliss. Starting to become lost in the lust, you begin to help the living dildo fuck yourself, shoving it all the way in, then pushing it back rhythmically. It manages to rip a few moans out of your mouth as you keep doing it, and all you keep thinking is how much you want this to last...";
 	WaitLineBreak;
-	say "     Though everything has to come to an end, as your orgasm begins to build up. After going at it for some more time, your body begins to shake as you come with a loud gasp [if player is male]and start blasting heavy spurts of cum from your own cock - to land with little splats on the ground a little further away[else if player is female]and an intense, heated wave of pleasure takes over your senses - your feminine juices running down between your legs and leaking onto the dildo [else]and tremble in lust[end if], with the dildo wiggling through the entire process, only making it feel so much better.";
+	say "     Though everything has to come to an end, as your orgasm begins to build up. After going at it for some more time, your body begins to shake as you come with a loud gasp [if Player is male]and start blasting heavy spurts of cum from your own cock - to land with little splats on the ground a little further away[else if Player is female]and an intense, heated wave of pleasure takes over your senses - your feminine juices running down between your legs and leaking onto the dildo [else]and tremble in lust[end if], with the dildo wiggling through the entire process, only making it feel so much better.";
 	say "     As you pop the dildo away from your stretched pussy, it begins to slow down and lay still after a while, looking more green and colorful than before. It definitely enjoyed your attention, and every time you do this, you end up thinking about Joanna. Perhaps you should visit her, one of these days...";
 	infect "Parasitic Plant";
 
 to say PlantDildoAssFuck:
-	say "     When you begin to handle the dildo some more, you see its white sap leaking through the tip more actively, sending an even more sweet smell to your nose. Sliding your fingers around the tip, you spread the slippery liquid all across the shaft, lubricating its surface and making it much smoother. In order to get started, you [if player is not naked]take off your clothes and[else]you[end if] bring it closer to your pucker. The toy wiggles in your hand, the part of it that is still organic coming to live with the promise of a good sexual feeding. You're eager to push it in, so you start shoving it inside your anus, moist and slick by now, inch by inch as its entire length ondulates inside you, providing you extra pleasure. It slides in very easily and with no pain at all, despite it being of a considerable size.";
-	say "     With your legs spread, you simply grab the dildo by its broad base and let it do its own thing, only pulling and pushing softly once in a while to feel more of it inside you, rubbing against your [if player is male]prostate[else]insides with vigor. The sap it leaks in you is warm, augmenting the sensations as your flesh tunnel feels even more wet. Its wiggling movements easily reach all your spots, as it seems to get accustomed to its user, making your legs tremble with so much bliss. Starting to become lost in the lust, you begin to help the living dildo fuck yourself, shoving it all the way in, then pushing it back rhythmically. It manages to rip a few moans out of your mouth as you keep doing it, and all you keep thinking is how much you want this to last...";
+	say "     When you begin to handle the dildo some more, you see its white sap leaking through the tip more actively, sending an even more sweet smell to your nose. Sliding your fingers around the tip, you spread the slippery liquid all across the shaft, lubricating its surface and making it much smoother. In order to get started, you [if Player is not naked]take off your clothes and[else]you[end if] bring it closer to your pucker. The toy wiggles in your hand, the part of it that is still organic coming to live with the promise of a good sexual feeding. You're eager to push it in, so you start shoving it inside your anus, moist and slick by now, inch by inch as its entire length undulates inside you, providing you extra pleasure. It slides in very easily and with no pain at all, despite it being of a considerable size.";
+	say "     With your legs spread, you simply grab the dildo by its broad base and let it do its own thing, only pulling and pushing softly once in a while to feel more of it inside you, rubbing against your [if Player is male]prostate[else]insides with vigor. The sap it leaks in you is warm, augmenting the sensations as your flesh tunnel feels even more wet. Its wiggling movements easily reach all your spots, as it seems to get accustomed to its user, making your legs tremble with so much bliss. Starting to become lost in the lust, you begin to help the living dildo fuck yourself, shoving it all the way in, then pushing it back rhythmically. It manages to rip a few moans out of your mouth as you keep doing it, and all you keep thinking is how much you want this to last...";
 	WaitLineBreak;
-	say "     Though everything has to come to an end, as your orgasm begins to build up. After going at it for some more time, your body begins to shake as you come with a loud gasp [if player is male]and start blasting heavy spurts of cum from your own cock - to land with little splats on the ground a little further away[else if player is female]and an intense, heated wave of pleasure takes over your senses - your feminine juices running down between your legs and leaking onto the dildo [else]and tremble in lust[end if], with the dildo wiggling through the entire process, only making it feel so much better.";
+	say "     Though everything has to come to an end, as your orgasm begins to build up. After going at it for some more time, your body begins to shake as you come with a loud gasp [if Player is male]and start blasting heavy spurts of cum from your own cock - to land with little splats on the ground a little further away[else if Player is female]and an intense, heated wave of pleasure takes over your senses - your feminine juices running down between your legs and leaking onto the dildo [else]and tremble in lust[end if], with the dildo wiggling through the entire process, only making it feel so much better.";
 	say "     As you pop the dildo away from your stretched pussy, it begins to slow down and lay still after a while, looking more green and colorful than before. It definitely enjoyed your attention, and every time you do this, you end up thinking about Joanna. Perhaps you should visit her, one of these days...";
 	infect "Parasitic Plant";
 

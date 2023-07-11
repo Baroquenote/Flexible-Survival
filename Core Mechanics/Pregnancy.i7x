@@ -31,6 +31,7 @@ an everyturn rule:
 		if Libido of Impregnated Feral is 0: [birthing time]
 			say "     [bold type]Out of the blue, a sudden thought strikes you, making you remember the [MainInfection of Impregnated Feral] you recently had carnal relations with. You don't know how or why exactly, but you feel certain that your encounter resulted in them becoming pregnant and giving birth to your offspring. Somewhere out there in the city, a new life as entered the world.[roman type][line break]";
 			say "     While it is very unlikely that you will ever encounter your child - or the two of you will even recognize each other - you can't help but feel that they'll [one of]do great things[or]be an unholy terror[or]spread your genes far and wide[or]give you grandkids before long[or]dominate their surroundings[at random]. And whatever else, this is one more wild and feral inhabitant for the city, making it all the harder for the military to move in and regain control.";
+			BehaviorCount "Breeder";
 			extend game by a random number between 3 and 12;
 			increase FeralBirths by 1;
 			increase Score by 5;
@@ -63,74 +64,114 @@ mpregcount is a number that varies. [mpreg experience]
 
 [Male and/or Female]
 
-Definition: A person (called x) is impreg_ok: [Can the player become pregnant in general. Male and/or Female]
-	if Player is fpreg_ok or player is mpreg_ok, yes;
+Definition: A person (called X) is impreg_ok: [Can X become pregnant in general. Male and/or Female]
+	if X is fpreg_ok or X is mpreg_ok, yes;
 	no;
 
-Definition: A person (called x) is impreg_able: [Can the player be impregnated RIGHT NOW. Male and/or Female]
-	if Player is fpreg_able or player is mpreg_able, yes;
+Definition: A person (called X) is impreg_able: [Can X be impregnated RIGHT NOW. Male and/or Female]
+	if X is fpreg_able or X is mpreg_able, yes;
 	no;
 
-Definition: A person (called x) is impreg_now: [Is the player currently pregnant. Male and/or Female] [impreg_now and its variants should only be used for technical reasons - if an NPC is observing that the player might be pregnant (unless they know absolutely for sure that it's not a hijack) consider the vacant definitions instead]
-	if Player is fpreg_now or player is mpreg_now, yes;
+Definition: A person (called X) is impreg_now: [Is X currently pregnant. Male and/or Female] [impreg_now and its variants should only be used for technical reasons - if an NPC is observing that the player might be pregnant (unless they know absolutely for sure that it's not a hijack) consider the vacant definitions instead]
+	if X is fpreg_now or X is mpreg_now, yes;
 	no;
 
-Definition: A person (called x) is partial_vacant: [if EITHER male OR female vacant]
-	if Player is fem_vacant or player is male_vacant, yes;
+Definition: A person (called X) is partial_vacant: [if EITHER male OR female vacant]
+	if X is fem_vacant or X is male_vacant, yes;
 	no;
 
-Definition: A person (called x) is total_vacant: [if BOTH male AND female vacant]
-	if Player is fem_vacant and player is male_vacant, yes;
+Definition: A person (called X) is total_vacant: [if BOTH male AND female vacant]
+	if X is fem_vacant and X is male_vacant, yes;
 	no;
 
 [Female/vaginal-particular]
-Definition: A person (called x) is fpreg_ok: [Can the player become pregnant in general. Female]
-	if "Sterile" is listed in feats of Player, no;
-	if Player is female, yes;
-	no;
+Definition: A person (called X) is fpreg_ok: [Can the player become pregnant in general. Female]
+	if X is Player:
+		if Player is sterile, no; [not fertile]
+		if Player is female, yes; [has pussy]
+		no;
+	else:
+		if X is sterile, no; [not fertile]
+		if X is female, yes; [has pussy]
+		no;
 
-Definition: A person (called x) is fpreg_able: [Can the player be impregnated RIGHT NOW. Female]
-	if "Sterile" is listed in feats of Player, no;
-	if Player is not female, no;
-	if gestation of child > 0 or child is born, no;
-	if preghijack is true, no;
-	if insectlarva is true and larvaegg is 2, no;
-	yes;
+Definition: A person (called X) is fpreg_able: [Can X be impregnated RIGHT NOW. Female]
+	if X is Player:
+		if Player is sterile, no; [not fertile]
+		if Player is not female, no; [no pussy]
+		if gestation of child > 0 or child is born, no; [currently pregnant]
+		if preghijack is true, no; [Velos]
+		if insectlarva is true and larvaegg is 2, no; [parasites]
+		yes;
+	else:
+		if X is sterile, no; [not fertile]
+		if X is not female, no; [no pussy]
+		if ImpregTimer of X > 0, no; [currently pregnant]
+		yes;
 
-Definition: A person (called x) is fpreg_now: [Is the player currently pregnant. Female]
-	if gestation of child > 0 and pregtype is 1, yes;
-	no;
+Definition: A person (called X) is fpreg_now: [Is X currently pregnant. Female]
+	if X is Player:
+		if gestation of child > 0 and pregtype is 1, yes; [currently pregnant]
+		no;
+	else:
+		if X is not female, no; [no pussy]
+		if ImpregTimer of X > 0, yes; [currently pregnant]
+		no;
 
-Definition: A person (called x) is fem_vacant: [Disregarding fertility, is the player's cunt occupied by something]
-	if Player is not female, no;
-	if (gestation of child > 0 and pregtype is 1) or child is born, no;
-	if preghijack is true, no;
-	if insectlarva is true and larvaegg is 2, no;
-	yes;
+Definition: A person (called X) is fem_vacant: [Disregarding fertility, is X's cunt occupied by something]
+	if X is Player:
+		if Player is not female, no;
+		if (gestation of child > 0 and pregtype is 1) or child is born, no;
+		if preghijack is true, no;
+		if insectlarva is true and larvaegg is 2, no;
+		yes;
+	else:
+		if X is not female, no;
+		if ImpregTimer of X > 0, no; [currently pregnant]
+		yes;
 
 [Male/Anal-particular]
-Definition: A person (called x) is mpreg_ok: [Can the player become pregnant in general. Male]
-	if "Sterile" is listed in feats of Player, no;
-	if "MPreg" is listed in feats of Player and ( level of Velos is not 1 or HP of Velos < 3 ), yes;
-	no;
+Definition: A person (called X) is mpreg_ok: [Can X become pregnant in general. Male]
+	if X is Player:
+		if Player is sterile, no; [not fertile]
+		if ("MPreg" is listed in feats of Player or "Mpreg" is listed in feats of Player) and ( level of Velos is not 1 or HP of Velos < 3 ), yes;
+		no;
+	else:
+		if X is sterile, no;
+		if ("MPreg" is listed in traits of X or "Mpreg" is listed in traits of X), yes; [mpreg capable]
+		no;
 
-Definition: A person (called x) is mpreg_able: [Can the player be impregnated RIGHT NOW. Male]
-	if "Sterile" is listed in feats of Player, no;
-	if gestation of child > 0 or child is born, no;
-	if mpreghijack is true, no;
-	if insectlarva is true and larvaegg is 2, no;
-	if "MPreg" is listed in feats of Player, yes;
-	no;
+Definition: A person (called X) is mpreg_able: [Can X be impregnated RIGHT NOW. Male]
+	if X is Player:
+		if Player is sterile, no; [not fertile]
+		if gestation of child > 0 or child is born, no; [currently pregnant]
+		if mpreghijack is true, no; [Velos]
+		if insectlarva is true and larvaegg is 2, no; [parasites]
+		if ("MPreg" is listed in feats of Player or "Mpreg" is listed in feats of Player), yes; [mpreg capable]
+		no;
+	else:
+		if X is sterile, no; [not fertile]
+		if ImpregTimer of X > 0, no; [currently pregnant]
+		if ("MPreg" is listed in traits of X or "Mpreg" is listed in traits of X), yes; [mpreg capable]
+		no;
 
-Definition: A person (called x) is mpreg_now: [Is the player currently pregnant. Male]
-	if gestation of child > 0 and pregtype is 2, yes;
-	no;
+Definition: A person (called X) is mpreg_now: [Is X currently pregnant. Male]
+	if X is Player:
+		if gestation of child > 0 and pregtype is 2, yes; [currently pregnant]
+		no;
+	else:
+		if ("MPreg" is listed in traits of X or "Mpreg" is listed in traits of X) and ImpregTimer of X > 0, yes; [currently pregnant]
+		no;
 
-Definition: A person (called x) is male_vacant: [Disregarding fertility, is the player's ass occupied by something]
-	if mpreghijack is true, no;
-	if insectlarva is true and larvaegg is 2, no;
-	if (gestation of child > 0 and pregtype is 2) or child is born, no;
-	yes;
+Definition: A person (called X) is male_vacant: [Disregarding fertility, is X's ass occupied by something]
+	if X is Player:
+		if mpreghijack is true, no; [Velos]
+		if insectlarva is true and larvaegg is 2, no; [parasites]
+		if (gestation of child > 0 and pregtype is 2) or child is born, no;
+		yes;
+	else:
+		if ("MPreg" is listed in traits of X or "Mpreg" is listed in traits of X) and ImpregTimer of X > 0, no; [currently pregnant]
+		yes;
 
 preghijack is a truth state that varies. preghijack is usually false. [General-purpose variable for detailing a hijacked pregnancy]
 mpreghijack is a truth state that varies. mpreghijack is usually false. [male/anal version]
@@ -152,7 +193,7 @@ to decide which text is random child gender:
 	decide on "[entry ChildGenderRoll of GenderList]";
 
 to decide which text is random child personality:
-	let PersonalityList be { "friendly", "playful", "mean", "curious", "stubborn", "independent", "sassy", "assertive", "meek", "extroverted", "introverted", "mischievious" };
+	let PersonalityList be { "friendly", "playful", "mean", "curious", "stubborn", "independent", "sassy", "assertive", "meek", "extroverted", "introverted", "mischievous" };
 	let ChildPersonalityRoll be a random number from 1 to the number of entries in PersonalityList;
 	decide on "[entry ChildPersonalityRoll of PersonalityList]";
 
@@ -197,7 +238,7 @@ to pregprotocol:
 						say "Your breasts feel especially tender and you are surprised to find them swelling larger despite being [if Player is male]male[else]neuter[end if], now [breast size desc of Player] breasts.";
 					else:
 						say "Your breasts feel especially tender, swollen with your condition, now [breast size desc of Player], the mammary flesh stretched lightly.";
-			if gestation of child < 1 and ( player is female or player is mpreg_ok ) and skipturnblocker is 0:
+			if gestation of child < 1 and ( Player is female or Player is mpreg_ok ) and skipturnblocker is 0:
 				if pregtype is 1 and Cunt Count of Player is 0:
 					now pregtype is 2;
 				say "[detailbirth]";
@@ -300,6 +341,7 @@ to detailpregnancy:
 
 to say detailbirth:
 	detailbirth;
+	BehaviorCount "Breeder";
 
 to detailbirth:
 	LineBreak;
@@ -388,7 +430,7 @@ To Birth:
 	if "Maternal" is listed in feats of Player:
 		increase morale of Player by 3;
 	[NOTE: add any and all exceptions from "They have your Eyes" HERE]
-	if "Human Carrier" is not listed in feats of Player and "Chase's Breeder" is not listed in feats of Player and "Chris's Breeder Slut" is not listed in feats of Player and "Fang's Mate" is not listed in feats of Player and "CheerBreeder" is not listed in feats of Player: [none of the exceptions apply, so we can overwrite]
+	if "Human Carrier" is not listed in feats of Player and "Chase's Breeder" is not listed in feats of Player and "Chris's Breeder Slut" is not listed in feats of Player and "Fang's Mate" is not listed in feats of Player and "CheerBreeder" is not listed in feats of Player and "Hive Breeder" is not listed in feats of Player: [none of the exceptions apply, so we can overwrite]
 		if "They Have Your Eyes" is listed in feats of Player: [overwriting randoms, unbirthed creatures and snakes]
 			SetInfectionsOf Child to infections of Player;
 	[Pureblood check]
@@ -521,6 +563,23 @@ To Birth:
 			say "     The young buck of an orc warrior looks at you with a broad grin as he continues to show off a bit more, stroking his large hands over the muscle-packed form of his body, then finally gravitating to his crotch. Experimentally wrapping his fingers around the thick shaft, he gives it a few strokes and grunts in pleasure as it fills out to an impressive length of green-skinned man-meat. Winking at you as he lets go and the huge cock swings down between his legs, he says, [if Player is booked or player is bunkered]'I'll go say hello to dad now. See ya later!' [else]'I'll go say hello to dad now. Maybe fuck a guy or two on the way too. See ya later!'[end if] With that said, he wanders off, naked as a jaybird and erect, in an open challenge to anyone who might see him.";
 		increase Stamina of Chris by 1;
 		increase ChrisPlayerOffspring by 1;
+	else if "Hive Breeder" is listed in feats of Player: [Special Pregnancy from wasp warrors]
+		if Player is female and pregtype < 2:
+			if Nipple Count of Player > 0:
+				say "     Your child pushes free of the flexible shell enclosing it and you gather the strange larva into your arms so it may suckle at your [breast size desc of Player] breast. Strange sensations sweep over your [bodytype of Player] body as it drinks down its new mother's milk, growing from a featureless lump of pale flesh into something more wasp-like. ";
+			else:
+				say "     Your child pushes free of the flexible shell enclosing it and you gather it into your arms. It nuzzles at your chest and starts nursing, struggling for a while to draw milk from your flat chest, but your [bodytype of Player] body strives to complete its task and begins to lactate temporarily to feed your offspring, bringing the featureless, pale larva through several stages of growth until it looks more wasp-like. ";
+		else if Nipple Count of Player > 0:
+			say "     Your child pushes free of the flexible shell enclosing it and you gather into your arms, feeling a strong affection for your bizarrely born child. It starts to suckle at your [breast size desc of Player] breast, growing rapidly from a featureless lump of pale flesh into something more wasp-like as strange sensations sweep over your [bodytype of Player] body. ";
+		else:
+			say "     Your child pushes free of the flexible shell enclosing it and you gather into your arms, feeling a strong affection for your bizarrely born child. It nuzzles at your chest and starts nursing, struggling for a while to draw milk from your flat chest, but your [bodytype of Player] body strives to complete its task and begins to lactate temporarily to feed your offspring. As it feeds, it grows rapidly from a featureless lump of pale flesh into something more wasp-like against you as strange sensations sweep over your body. ";
+		say "Not only nutrition but personality and knowledge seep through the teat into the newborn, who is not newborn for long, soon a young adult. They pop free and stand, smiling. With a slow turn, they show off their pureblood [HeadSpeciesName of Child] form.";
+		LineBreak;
+		if Player is inWaspHive:
+			say "     Stretching his wings, your offspring checks on you, entwining his antennae with yours before wandering off to take his place within the hive, [if thirst of Zant > 1]joining his brothers hard at work on repairing the walls and expanding the walls[else] wandering off to find a way to make himself useful within your hive[end if].";
+		else:
+			say "     Stretching his wings, your offspring entwines antennae with you as if thanking you for his birth, then buzzes off in the direction of the hive, his nude body glistening in the [if daytimer is day]sunlight[else]moonlight[end if], still smooth and devoid of any of the fuzz you've grown used to seeing on yourself.";
+		increase thirst of Zant by 1;
 	else if Fang is Male and "Fang's Mate" is listed in feats of Player: [Special Pregnancy from Fang]
 		if hunger of Fang is 1:
 			if "All-Mother's Blessing" is listed in feats of Player: [Appeared in arms]
@@ -598,7 +657,7 @@ To Birth:
 		increase hunger of Player by 3;
 		increase thirst of Player by 3;
 	if IsFeral is false:
-		if ("Chase's Breeder" is not listed in feats of Player) and ("Fang's Mate" is not listed in feats of Player) and ("Chris's Breeder Slut" is not listed in feats of Player): [kids that run off to their fathers]
+		if ("Chase's Breeder" is not listed in feats of Player) and ("Fang's Mate" is not listed in feats of Player) and ("Chris's Breeder Slut" is not listed in feats of Player) and ("Hive Breeder" is not listed in feats of Player): [kids that run off to their fathers]
 			LineBreak;
 			say "[bold type]Please name your ([ChildPersonality], [ChildGender]) child: [roman type]";
 			get typed command as playerinput;
@@ -694,7 +753,7 @@ Chapter 3-1 - Impregnation and Ovi-Impreg Subroutines
 To impregnate with (x - text):
 	if child is born or gestation of child > 0 or "Sterile" is listed in feats of Player or larvaegg is 2 or ( Cunt Count of Player is 0 and player is not mpreg_ok ):
 		stop the action;
-	if Player is not female and "MPreg" is listed in feats of Player and ( level of Velos is 1 and HP of Velos > 2 ):
+	if Player is not female and ("MPreg" is listed in feats of Player or "Mpreg" is listed in feats of Player) and ( level of Velos is 1 and HP of Velos > 2 ):
 		stop the action;
 	if there is a name of x in the Table of Random Critters:
 		choose a row with Name of x in the Table of Random Critters;
@@ -746,6 +805,16 @@ To impregnate with (x - text):
 				stop the action;
 		now gestation of Child is a random number from 24 to 48;
 		SetInfectionsOf Child to "Orc Warrior";
+	else if "Hive Breeder" is listed in feats of Player:
+		if "Selective Mother" is listed in feats of Player:
+			say "Do you wish to be impregnated with an Wasp Warrior child?";
+			if Player consents:
+				increase score by 0;
+			else:
+				say "You choose not to accept the seed.";
+				stop the action;
+		now gestation of Child is a random number from 24 to 48;
+		SetInfectionsOf Child to "Wasp Warrior";
 	else if "Human Carrier" is listed in feats of Player:
 		if "Selective Mother" is listed in feats of Player:
 			say "Do you wish to be impregnated with a human child?";
@@ -814,7 +883,11 @@ to fimpregchance:		[Female-particular Pregnancy Roll]
 		if inheat is true and heatlevel is 3, decrease target by 1;
 		if Player can UB, increase target by 1;
 		choose row MonsterID from the Table of Random Critters;
+		if DebugLevel > 4:
+			say "     DEBUG: FPreg Roll of 2 in [target].";
 		if a random chance of 2 in target succeeds:
+			if DebugLevel > 4:
+				say "     DEBUG: FPreg Successful.";
 			if callovi is true or ovipreglevel is 3:
 				now ovipregnant is true;
 			else:
@@ -841,7 +914,11 @@ to mimpregchance:		[MPreg-particular Pregnancy Roll]
 		if inheat is true and heatlevel is 3, decrease target by 1;
 		if Player can UB, increase target by 1;
 		choose row MonsterID from the Table of Random Critters;
+		if DebugLevel > 4:
+			say "     DEBUG: MPreg Roll of 2 in [target].";
 		if a random chance of 2 in target succeeds:
+			if DebugLevel > 4:
+				say "     DEBUG: MPreg Successful.";
 			if callovi is true or ovipreglevel is 3:
 				now ovipregnant is true;
 			else:
@@ -867,7 +944,11 @@ to selfimpregchance:
 		if inheat is true and heatlevel is 3, decrease target by 1;
 		if Player can UB, increase target by 1;
 		choose row MonsterID from the Table of Random Critters;
+		if DebugLevel > 4:
+			say "     DEBUG: SelfPreg Roll of 2 in [target].";
 		if a random chance of 2 in target succeeds:
+			if DebugLevel > 4:
+				say "     DEBUG: SelfPreg Successful.";
 			if callovi is true or ovipreglevel is 3:
 				now ovipregnant is true;
 			else:
@@ -881,9 +962,11 @@ to selfimpregchance:
 	now callovi is false;
 
 to selfimpregnate:
+	if DebugLevel > 4:
+		say "     DEBUG: Self-Impregnation.";
 	if Player is not mpreg_able and player is not fpreg_able:
 		stop the action;
-	[if Player is not female and "MPreg" is listed in feats of Player and level of Velos is 1 and HP of Velos > 2:
+	[if Player is not female and ("MPreg" is listed in feats of Player or "Mpreg" is listed in feats of Player) and level of Velos is 1 and HP of Velos > 2:
 		stop the action;]
 	if "Selective Mother" is listed in feats of Player:
 		say "Do you wish to be self-impregnated?";
@@ -946,6 +1029,8 @@ to say randomimpreg:		[Use when either would work]
 	randomimpreg;
 
 to randomimpreg:		[Use when either would work]
+	if DebugLevel > 4:
+		say "     DEBUG: Random F/M Impregnation.";
 	sort Table of Random Critters in random order;
 	now MonsterID is 1;
 	choose row MonsterID from Table of Random Critters;
@@ -961,6 +1046,8 @@ to say randommimpreg:		[Use when only MPreg would work]
 	randommimpreg;
 
 to randommimpreg:		[Use when only MPreg would work]
+	if DebugLevel > 4:
+		say "     DEBUG: Random M Impregnation.";
 	sort Table of Random Critters in random order;
 	now MonsterID is 1;
 	choose row MonsterID from Table of Random Critters;
@@ -976,6 +1063,8 @@ to say randomfimpreg:		[Use when only female pregnancy would work]
 	randomfimpreg;
 
 to randomfimpreg:		[Use when only female pregnancy would work]
+	if DebugLevel > 4:
+		say "     DEBUG: Random F Impregnation.";
 	sort Table of Random Critters in random order;
 	now MonsterID is 1;
 	choose row MonsterID from Table of Random Critters;
@@ -991,6 +1080,8 @@ to say randomovi:		[random ovi-impregnation - use when either would work]
 	randomovi;
 
 to randomovi:		[random ovi-impregnation - use when either would work]
+	if DebugLevel > 4:
+		say "     DEBUG: Random Ovi Impregnation.";
 	sort Table of Random Critters in random order;
 	now MonsterID is 1;
 	choose row MonsterID from Table of Random Critters;
@@ -1006,6 +1097,8 @@ to say randommovi:		[random ovi-impregnation - use when only MPreg would work]
 	randommovi;
 
 to randommovi:		[random ovi-impregnation - use when only MPreg would work]
+	if DebugLevel > 4:
+		say "     DEBUG: Random Ovi M Impregnation.";
 	sort Table of Random Critters in random order;
 	now MonsterID is 1;
 	choose row MonsterID from Table of Random Critters;
@@ -1021,6 +1114,8 @@ to say randomfovi:		[random ovi-impregnation - use when only female pregnancy wo
 	randomfovi;
 
 to randomfovi:		[random ovi-impregnation - use when only female pregnancy would work]
+	if DebugLevel > 4:
+		say "     DEBUG: Random Ovi F Impregnation.";
 	sort Table of Random Critters in random order;
 	now MonsterID is 1;
 	choose row MonsterID from Table of Random Critters;

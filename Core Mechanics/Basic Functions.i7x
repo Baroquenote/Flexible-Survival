@@ -173,7 +173,7 @@ to ItemLoss all (ItemObj - object):
 		if debug is at level 10:
 			say "DEBUG -> Trying to re-move [ItemObj] from player who doesn't have any.[line break]";
 	else: [found at least one item]
-		ItemLoss ItemObj by carried of ItemObj
+		ItemLoss ItemObj by carried of ItemObj;
 
 to ItemLoss all (ItemObj - object) silently:
 	if carried of ItemObj < 1:
@@ -200,33 +200,37 @@ to ItemLoss (ItemObj - a grab object) by (N - number) silence state is (Silence 
 to PlayerMaxHeal:
 	LineBreak;
 	say "     [bold type]Your hitpoints are completely restored![roman type][line break]";
-	now HP of Player is maxHP of Player;
+	now HP of Player is MaxHP of Player;
 
 to PlayerHealed (N - number):
-	LineBreak;
-	say "     [bold type]Your hitpoints increase by [N]![roman type][line break]";
-	increase HP of Player by N;
-	if HP of Player > maxHP of Player:
-		now HP of Player is maxHP of Player;
+	if N is not 0:
+		LineBreak;
+		say "     [bold type]Your hitpoints increase by [N]![roman type][line break]";
+		increase HP of Player by N;
+		if HP of Player > MaxHP of Player:
+			now HP of Player is MaxHP of Player;
 
 to PlayerWounded (N - number): [wounded, not killed - this won't kill a player]
-	LineBreak;
-	say "     [bold type]Your hitpoints are reduced by [N]![roman type][line break]";
-	decrease HP of Player by N;
-	if HP of Player < 0:
-		now HP of Player is 0;
+	if N is not 0:
+		LineBreak;
+		say "     [bold type]Your hitpoints are reduced by [N]![roman type][line break]";
+		decrease HP of Player by N;
+		if HP of Player < 0:
+			now HP of Player is 0;
 
 to SanLoss (N - number):
-	LineBreak;
-	say "     [bold type]Your sanity has decreased by [N]![roman type][line break]";
-	decrease humanity of Player by N;
+	if N is not 0:
+		LineBreak;
+		say "     [bold type]Your sanity has decreased by [N]![roman type][line break]";
+		decrease humanity of Player by N;
 
 to SanBoost (N - number):
-	LineBreak;
-	say "     [bold type]Your sanity has increased by [N]![roman type][line break]";
-	increase humanity of Player by N;
-	if humanity of Player > 100:
-		now humanity of Player is 100;
+	if N is not 0:
+		LineBreak;
+		say "     [bold type]Your sanity has increased by [N]![roman type][line break]";
+		increase humanity of Player by N;
+		if humanity of Player > 100:
+			now humanity of Player is 100;
 
 to SanReset:
 	LineBreak;
@@ -234,18 +238,20 @@ to SanReset:
 	now humanity of Player is 100;
 
 to LibidoLoss (N - number):
-	LineBreak;
-	say "     [bold type]Your libido has decreased by [N]![roman type][line break]";
-	decrease Libido of Player by N;
-	if Libido of Player < 0:
-		now Libido of Player is 0;
+	if N is not 0:
+		LineBreak;
+		say "     [bold type]Your libido has decreased by [N]![roman type][line break]";
+		decrease Libido of Player by N;
+		if Libido of Player < 0:
+			now Libido of Player is 0;
 
 to LibidoBoost (N - number):
-	LineBreak;
-	say "     [bold type]Your libido has increased by [N]![roman type][line break]";
-	increase Libido of Player by N;
-	if Libido of Player > 100:
-		now Libido of Player is 100;
+	if N is not 0:
+		LineBreak;
+		say "     [bold type]Your libido has increased by [N]![roman type][line break]";
+		increase Libido of Player by N;
+		if Libido of Player > 100:
+			now Libido of Player is 100;
 
 to LibidoReset:
 	LineBreak;
@@ -302,7 +308,7 @@ to FeatGain (Featname - text):
 		else if Featname is "More Time":
 			extend game by 24;
 		else if Featname is "Hardy":
-			increase maxHP of Player by 8;
+			increase MaxHP of Player by 8;
 			increase HP of Player by 8;
 		else if Featname is "Instinctive Combat":
 			say "     Having gained the [']Instinctive Combat['] feat, you now have access to the 'Auto Attack' command. These are the same as picking the same option over and over again during combat. No different results, just less typing for faster gameplay.[line break]Type [bold type][link]auto attack normal[end link][roman type] for the default method of combat (choose each action).[line break]Type [bold type][link]auto attack berserk[end link][roman type] to always attack in combat.[line break]Type [bold type][link]auto attack pass[end link][roman type] to always pass in combat.[line break]Type [bold type][link]auto attack coward[end link][roman type] to always flee in combat.[line break]Type [bold type][link]auto attack submit[end link][roman type] to always submit in combat.[line break]You may review these commands at any time by using the [link]help[end link] command.";
@@ -315,6 +321,20 @@ to FeatGain (Featname - text):
 			now vampiric is true;
 	else if debugactive is 1:
 		say "ERROR: Trying to add '[Featname]', which the player already has.";
+
+to BallsGrow (TargetChar - a person) by (IncreaseNum - a number):
+	increase Ball Size of TargetChar by IncreaseNum;
+	if Ball Size of TargetChar < 0:
+		now Ball Size of TargetChar is 0;
+	if Ball Size of TargetChar > 7:
+		now Ball Size of TargetChar is 7;
+
+to BallsShrink (TargetChar - a person) by (DecreaseNum - a number):
+	decrease Ball Size of TargetChar by DecreaseNum;
+	if Ball Size of TargetChar < 0:
+		now Ball Size of TargetChar is 0;
+	if Ball Size of TargetChar > 7:
+		now Ball Size of TargetChar is 7;
 
 to TraitGain (TraitName - a text) for (TraitChar - a person):
 	if TraitName is not listed in Traits of TraitChar: [no duplicates]
@@ -362,6 +382,21 @@ to MoraleBoost (N - number):
 	increase morale of Player by N;
 	if morale of Player > 100:
 		now morale of Player is 100;
+
+to BehaviorCount (TraitCountName - text):
+	if TraitCountName is:
+		-- "Breeder":
+			increase BehaviorCount_Breeder of Player by 1;
+		-- "Lover":
+			increase BehaviorCount_Lover of Player by 1;
+		-- "Rapist":
+			increase BehaviorCount_Rapist of Player by 1;
+		-- "Nice":
+			increase BehaviorCount_Nice of Player by 1;
+		-- "Cruel":
+			increase BehaviorCount_Cruel of Player by 1;
+		-- "Vore":
+			increase BehaviorCount_Vore of Player by 1;
 
 
 understand "rename" as PlayerRenaming.
@@ -509,6 +544,8 @@ to NPCSexAftermath (TakingChar - a person) receives (SexAct - a text) from (Givi
 		say "DEBUG -> NPCSexAftermath[line break]";
 		say "TakingChar: [Printed Name of TakingChar][line break]";
 		say "GivingChar: [Printed Name of GivingChar][line break]";
+	now LastSexualPartner of TakingChar is printed name of GivingChar;
+	now LastSexualPartner of GivingChar is printed name of TakingChar;
 	if GivingChar is Player:
 		if debugactive is 1:
 			say "DEBUG -> Player is the giving partner for '[SexAct]'[line break]";
@@ -523,6 +560,8 @@ to NPCSexAftermath (TakingChar - a person) receives (SexAct - a text) from (Givi
 				say "     [Bold Type]You have taken [TakingChar]'s anal virginity![roman type][line break]";
 				add printed name of TakingChar to AnalVirginitiesTaken of Player;
 			increase AssFuckGiven of Player by 1;
+			if GivingChar is not sterile and TakingChar is mpreg_able: [mpreg fertile]
+				say "[ImpregFunction of TakingChar]";
 		else if SexAct is "PussyFuck":
 			if PenileVirgin of Player is true:
 				now PenileVirgin of Player is false;
@@ -532,13 +571,15 @@ to NPCSexAftermath (TakingChar - a person) receives (SexAct - a text) from (Givi
 				say "     [Bold Type]You have taken [TakingChar]'s virginity![roman type][line break]";
 				add printed name of TakingChar to VirginitiesTaken of Player;
 			increase PussyFuckGiven of Player by 1;
-		else if SexAct is "PussyDildoFuck": [used for dildos, fingers, tentacles - anything pussy penetrative that does not impregnate]
+			if GivingChar is not sterile and TakingChar is fpreg_able: [fpreg fertile]
+				say "[ImpregFunction of TakingChar]";
+		else if SexAct is "PussyDildoFuck": [used for dildos, fingers, tentacles, or even a cock that is pulled out before orgasm - anything pussy penetrative that does not impregnate]
 			if Virgin of TakingChar is true:
 				now Virgin of TakingChar is false;
 				say "     [Bold Type]You have taken [TakingChar]'s virginity![roman type][line break]";
 				add printed name of TakingChar to VirginitiesTaken of Player;
 			increase PussyFuckGiven of Player by 1;
-		else if SexAct is "AssDildoFuck": [used for dildos, fingers, tentacles - anything ass penetrative that does not impregnate]
+		else if SexAct is "AssDildoFuck": [used for dildos, fingers, tentacles, or even a cock that is pulled out before orgasm - anything ass penetrative that does not impregnate]
 			if AnalVirgin of TakingChar is true:
 				now AnalVirgin of TakingChar is false;
 				say "     [Bold Type]You have taken [TakingChar]'s anal virginity![roman type][line break]";
@@ -645,6 +686,8 @@ to NPCSexAftermath (TakingChar - a person) receives (SexAct - a text) from (Givi
 				now AnalVirgin of TakingChar is false;
 				say "     [Bold Type][GivingChar] has taken [TakingChar]'s anal virginity![roman type][line break]";
 				now FirstAnalPartner of TakingChar is printed name of GivingChar;
+			if GivingChar is not sterile and TakingChar is mpreg_able: [mpreg fertile]
+				say "[ImpregFunction of TakingChar]";
 		else if SexAct is "PussyFuck":
 			if PenileVirgin of GivingChar is true:
 				now PenileVirgin of GivingChar is false;
@@ -654,6 +697,8 @@ to NPCSexAftermath (TakingChar - a person) receives (SexAct - a text) from (Givi
 				now Virgin of TakingChar is false;
 				say "     [Bold Type][GivingChar] has taken [TakingChar]'s virginity![roman type][line break]";
 				now FirstVaginalPartner of TakingChar is printed name of GivingChar;
+			if GivingChar is not sterile and TakingChar is fpreg_able: [fpreg fertile]
+				say "[ImpregFunction of TakingChar]";
 		else if SexAct is "AssDildoFuck": [used for dildos, fingers, tentacles - anything ass penetrative that does not impregnate]
 			if AnalVirgin of TakingChar is true:
 				now AnalVirgin of TakingChar is false;
@@ -804,10 +849,12 @@ to CreatureSexAftermath (TakingCharName - a text) receives (SexAct - a text) fro
 		if there is a name of GivingCharName in the Table of GameCharacterIDs:
 			now GivingChar is the object corresponding to a name of GivingCharName in the Table of GameCharacterIDs;
 			now Lastfuck of GivingChar is turns;
+			now LastSexualPartner of GivingChar is TakingCharName;
 			now GivingCharIsNPC is 1;
 		if there is a name of TakingCharName in the Table of GameCharacterIDs:
 			now TakingChar is the object corresponding to a name of TakingCharName in the Table of GameCharacterIDs;
 			now Lastfuck of TakingChar is turns;
+			now LastSexualPartner of TakingChar is GivingCharName;
 			now TakingCharIsNPC is 1;
 		if GivingCharIsNPC is 0 and TakingCharIsNPC is 0:
 			say "Error: The CreatureSexAftermath function should include at least one NPC if it is used. Please report this on the FS Discord and quote this full message. Giving Char: '[GivingCharName]' Taking Char: '[TakingCharName]'";
@@ -829,11 +876,15 @@ to CreatureSexAftermath (TakingCharName - a text) receives (SexAct - a text) fro
 					now AnalVirgin of TakingChar is false;
 					say "     [Bold Type][TakingCharName] has lost their anal virginity to [GivingCharName in lower case]![roman type][line break]";
 					now FirstAnalPartner of TakingChar is GivingCharName;
+				if TakingChar is mpreg_able: [mpreg fertile]
+					say "[ImpregFunction of TakingChar]";
 			else if SexAct is "PussyFuck":
 				if Virgin of TakingChar is true:
 					now Virgin of TakingChar is false;
 					say "     [Bold Type][TakingCharName] has lost their virginity to [GivingCharName in lower case]![roman type][line break]";
 					now FirstVaginalPartner of TakingChar is GivingCharName;
+				if TakingChar is fpreg_able: [fpreg fertile]
+					say "[ImpregFunction of TakingChar]";
 			else if SexAct is "AssDildoFuck":
 				if AnalVirgin of TakingChar is true:
 					now AnalVirgin of TakingChar is false;
@@ -876,13 +927,13 @@ to StatChange (Statname - a text) by (Modifier - a number) silence state is (Sil
 				if Modifier > 0:
 					increase stamina of Player by 1;
 					if remainder after dividing stamina of Player by 2 is 0:
-						increase maxHP of Player by level of Player + 1;
+						increase MaxHP of Player by level of Player + 1;
 						increase HP of Player by level of Player + 1;
 				else:
 					decrease stamina of Player by 1;
 					if remainder after dividing stamina of Player by 2 is 1:
-						decrease maxHP of Player by level of Player + 1;
-						if HP of Player > maxHP of Player, now HP of Player is maxHP of Player;
+						decrease MaxHP of Player by level of Player + 1;
+						if HP of Player > MaxHP of Player, now HP of Player is MaxHP of Player;
 		-- "charisma":
 			increase charisma of Player by Modifier;
 		-- "intelligence":
@@ -1018,7 +1069,7 @@ to say StripCrotch:
 	else if WaistItem is not journal and CrotchItem is journal:
 		say "pulls down your [WaistItem] and bares your crotch";
 	else if WaistItem is not journal and CrotchItem is not journal:
-		say "pulls down your [Waistitem] and [CrotchItem], baring your crotch";
+		say "pulls down your [WaistItem] and [CrotchItem], baring your crotch";
 
 
 [
@@ -1084,7 +1135,7 @@ to say SelfDressCrotch:
 	else if WaistItem is not journal and CrotchItem is journal:
 		say "collect and put your [WaistItem] back on";
 	else if WaistItem is not journal and CrotchItem is not journal:
-		say "collect your [CrotchItem] and [Waistitem] to put them back on";
+		say "collect your [CrotchItem] and [WaistItem] to put them back on";
 
 [
 Adds the uppermost layer of bottom clothes, that the player wears, in the text
@@ -1285,5 +1336,89 @@ to WaitBreakReactions:
 		WaitLineBreak;
 	else:
 		LineBreak;
+
+
+[These are a series of ability checks that can be used to simplify the process of a standard ability check.
+This code can be copied and customized for any special use cases in situations and events. The difficulty can
+be adjusted as needed.]
+to decide if a dexterity check passes (difficulty - a number):
+	let bonus be (( dexterity of player minus 10 ) divided by 2);
+	let diceroll be a random number from 1 to 20;
+	say "You roll 1d20([diceroll])+[bonus] = [special-style-1][diceroll + bonus][roman type] vs [special-style-2][difficulty in words][roman type] (Dexterity Check):[line break]";
+	if diceroll + bonus >= difficulty:
+		decide yes;
+	else:
+		decide no;
+
+to decide if a strength check passes (difficulty - a number):
+	let bonus be (( strength of player minus 10 ) divided by 2);
+	let diceroll be a random number from 1 to 20;
+	say "You roll 1d20([diceroll])+[bonus] = [special-style-1][diceroll + bonus][roman type] vs [special-style-2][difficulty in words][roman type] (strength Check):[line break]";
+	if diceroll + bonus >= difficulty:
+		decide yes;
+	else:
+		decide no;
+
+to decide if a stamina check passes (difficulty - a number):
+	let bonus be (( stamina of player minus 10 ) divided by 2);
+	let diceroll be a random number from 1 to 20;
+	say "You roll 1d20([diceroll])+[bonus] = [special-style-1][diceroll + bonus][roman type] vs [special-style-2][difficulty in words][roman type] (stamina Check):[line break]";
+	if diceroll + bonus >= difficulty:
+		decide yes;
+	else:
+		decide no;
+
+to decide if a charisma check passes (difficulty - a number):
+	let bonus be (( charisma of player minus 10 ) divided by 2);
+	let diceroll be a random number from 1 to 20;
+	say "You roll 1d20([diceroll])+[bonus] = [special-style-1][diceroll + bonus][roman type] vs [special-style-2][difficulty in words][roman type] (charisma Check):[line break]";
+	if diceroll + bonus >= difficulty:
+		decide yes;
+	else:
+		decide no;
+
+to decide if an intelligence check passes (difficulty - a number):
+	let bonus be (( intelligence of player minus 10 ) divided by 2);
+	let diceroll be a random number from 1 to 20;
+	say "You roll 1d20([diceroll])+[bonus] = [special-style-1][diceroll + bonus][roman type] vs [special-style-2][difficulty in words][roman type] (intelligence Check):[line break]";
+	if diceroll + bonus >= difficulty:
+		decide yes;
+	else:
+		decide no;
+
+to decide if a perception check passes (difficulty - a number):
+	let bonus be (( perception of player minus 10 ) divided by 2);
+	let diceroll be a random number from 1 to 20;
+	say "You roll 1d20([diceroll])+[bonus] = [special-style-1][diceroll + bonus][roman type] vs [special-style-2][difficulty in words][roman type] (perception Check):[line break]";
+	if diceroll + bonus >= difficulty:
+		decide yes;
+	else:
+		decide no;
+
+[This can be used to avoid writing the choice code over and over again when needing
+to prompt the player with an number of options to choose from. example of usage: let playerChoice be what the player chooses from myList]
+to decide which text is what the player chooses from (choices - a list of text):
+	if the number of entries in choices is 0:
+		decide on "";
+	let choice order be 1;
+	repeat with option running through choices:
+		say "     [link]([choice order])[as][choice order][end link] - [option][line break]";
+		increase choice order by 1;
+	now calcnumber is 0;
+	while calcnumber < 1 or calcnumber > number of entries in choices:
+		say "Choice? (1-[number of entries in choices])>[run paragraph on]";
+		get a number;
+		if calcnumber < 1 or calcnumber > number of entries in choices:
+			say "Invalid choice. Type ";
+			now choice order is 1;
+			repeat with option running through choices:
+				if choice order is number of entries in choices:
+					say " or [link][choice order][end link] to select '[option]'[line break]";
+				else:
+					say "[link][choice order][end link] to select '[option]', ";
+				increase choice order by 1;
+	decide on entry calcnumber of choices;
+
+
 
 Basic Functions ends here.

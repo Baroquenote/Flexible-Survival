@@ -1,6 +1,5 @@
 Version 7 of Demon Brute by Wahn begins here.
 [Expansion & Rewriting by Wahn]
-[Version 6.1 - More/improved victory sex w/Brutus - Stripes]
 [Version 7 - Introducing Evil Demon Brute path - Gherod]
 [- Originally Authored By: Leo X -]
 [Todo: Endings]
@@ -36,9 +35,9 @@ Section 1 - Fighting and Capturing the Brute
 
 to say demonbrutedesc:
 	setmongender 3;
-	follow the monster combat mode rule;  [select the combat mode for first-strike]
+	follow the monster combat mode rule; [select the combat mode for first-strike]
 	choose row monstercom from the table of critter combat;
-	now alt1chance entry is 10;  [reset likelihood of alt attack]
+	now alt1chance entry is 10; [reset likelihood of alt attack]
 	if DBCaptureQuestVar is 5:
 		say "The large demon stretches its body, ropes of muscles rippling under dark purple skin and the spade-tipped tail whipping through the air. Then it turns its head towards you, red eyes glowing with hatred. With a roar, it rushes forward with outstretched claws.";
 	else:
@@ -263,7 +262,7 @@ to say Brutus_DBCapture:
 		now description entry is "fuck the demon while Brutus holds it down";
 	[]
 		choose a blank row in table of fucking options;
-		now title entry is "Blow job";
+		now title entry is "Blowjob";
 		now description entry is "make it suck you off";
 		now sortorder entry is 6;
 	[]
@@ -328,27 +327,27 @@ to say Brutus_DBCapture:
 				let num be sortorder entry;
 				now sextablerun is 1;
 				if num is 1:
-					say "[dbcapturesex_01]";  [fuck it]
+					say "[dbcapturesex_01]"; [fuck it]
 				else if num is 2:
-					say "[dbcapturesex_02]";  [spit roast]
+					say "[dbcapturesex_02]"; [spit roast]
 				else if num is 3:
-					say "[dbcapturesex_03]";  [DP]
+					say "[dbcapturesex_03]"; [DP]
 				else if num is 4:
-					say "[dbcapturesex_04]";  [tag team]
+					say "[dbcapturesex_04]"; [tag team]
 				else if num is 5:
-					say "[dbcapturesex_05]";  [Brutus fucks]
+					say "[dbcapturesex_05]"; [Brutus fucks]
 				else if num is 6:
-					say "[dbcapturesex_06]";  [bj]
+					say "[dbcapturesex_06]"; [bj]
 				else if num is 7:
-					say "[dbcapturesex_07]";  [cunn]
+					say "[dbcapturesex_07]"; [cunn]
 				else if num is 8:
-					say "[dbcapturesex_08]";  [vaginal]
+					say "[dbcapturesex_08]"; [vaginal]
 				else if num is 9:
-					say "[dbcapturesex_09]";  [anal]
+					say "[dbcapturesex_09]"; [anal]
 				else if num is 10:
-					say "[dbcapturesex_10]";  [Brutus rides - vag]
+					say "[dbcapturesex_10]"; [Brutus rides - vag]
 				else if num is 11:
-					say "[dbcapturesex_11]";  [Brutus rides - anal]
+					say "[dbcapturesex_11]"; [Brutus rides - anal]
 				wait for any key;
 		else:
 			say "Invalid Option. Pick between 0 and [the number of filled rows in the table of fucking options].";
@@ -493,10 +492,15 @@ demon tooth is a grab object. demon tooth is not temporary.
 Usedesc of demon tooth is "And just what do you want to do with it? Maybe find someone who understands the supernatural and give it to them...";
 
 instead of trading the demon tooth when the current action involves the Nermine:
+	say "[Nermine_DemonToothTrade]";
+
+to say Nermine_DemonToothTrade:
 	if DBCaptureQuestVar is 2:
+		ItemLoss demon tooth by 1;
 		say "     Nermine takes a look at the fang, then says 'What this jackaless is being shown here is a tooth of a demon soldier. How was it aquired?'";
 		say "     You tell her about your previous clashes with multiple demon brutes and how they always evaded you in the end. Nodding, the jackalwoman says 'Nermine's guest is having a desire for revenge then? Is needing a spell to capture this old enemy?' she holds up the fang, looking at it, then you, with a calculating look. 'This humble jackal can help her dear customer in doing this - but she has to insist the ritual be done somewhere else. She does not want hellish attention here if there should be... complications.' Agreeing to the storekeeper's conditions, you wait while she vanishes in a back room for a while, then comes back out with a small box holding candles, herbs, a small brazier and a scroll.";
 		say "     'These items are almost all that is required - but what remains is to gather some essence of your enemy. It is needful to paint the symbol, as detailed in the scroll...' From her description, you'd say about three bottles of demon seed should suffice. Finally Nermine gives you the tooth back and stores her box behind the counter. 'Please do keep it for now. Give it to Nermine when the demon essence is gathered and a final choice made about the ritual.'";
+		ItemGain demon tooth by 1;
 		now DBCaptureQuestVar is 3;
 	else if DBCaptureQuestVar is 3:
 		if carried of demon seed > 2:
@@ -533,20 +537,20 @@ instead of trading the demon tooth when the current action involves the Nermine:
 						end the story saying "An enraged demon brute dragged you off to hell.";
 					else if fightoutcome >= 30: [fled]
 						say "     Seems like this was a bit too much for you to take on. Running out of the building, closely followed by the enraged demon, you flee for your life and only barely make an escape. Well, there goes your one and only try for this ritual. But then, maybe that's for the best...";
-						now DBCaptureQuestVar is 99;   [ritual failed]
+						now DBCaptureQuestVar is 99; [ritual failed]
 					else if fightoutcome >= 10 and fightoutcome <= 19: [won]
 						say "     With a rather loud thud, the demon brute collapses to the ground, defeated. It proceeds to turn into a fine purple mist - but instead of dispersing in the air as before, it swirls around as one tight mass. The cloud of mist wavers as if it's fighting against some pull, then is drawn towards the pentagram in an elongated stream. Whirling around in an ever-tightening spiral, the purple mist finally is absorbed by the now blackened demon tooth in the brazier. As the last bit of it vanishes, the fire and surrounding candles are blown out by a sudden wind, silence falling over the room only disturbed by quiet ticking sounds of the slowly cooling brazier.";
 						WaitLineBreak;
 						say "     Looks like it worked. You carefully fish out the tooth from amongst the ashes and put it in your pocket, then make your way back to Nermine's shop. The jackalwoman seems just a bit surprised when you hand her the demon tooth. 'Congratulations. Nermine is glad you were not eaten. Rare to see business with demons work out.' She looks closely at the tooth, then continues 'One can feel it struggling to get out, your captive. Might even break free over time - let me put a stop to that.' Opening a box in one of the many shelves, the jackalwoman grabs a rough chunk of clear crystal, then touches it with the sharp end of the tooth and murmurs something. A swirl of dark purple flows from the contact point, filling the center of the crystal with a wavering cloud. Setting the changed crystal back into its box, Nermine says 'There, this is the demon power your captive no longer has - and payment for Nermine. He is controllable now.'";
 						say "     With skilled fingers, Nermine clamps the tooth into a small metal socket with a loop on the back and pulls a leather string through that. She hands you your new demontooth amulet and leans close to whisper some magical words you can use to summon the captured demon from within.";
-						now DBCaptureQuestVar is 5;   [captured and controlled]
+						now DBCaptureQuestVar is 5; [captured and controlled]
 						now demon brute is tamed;
 						add "Tamed" to Traits of demon brute;
 						LineBreak;
 						say "     (Brutus the demon brute is now a possible ally! You can make him your active ally by typing [bold type][link]ally Brutus[end link][roman type] or [bold type][link]ally demon brute[end link][roman type] and initiate sex with him while active by typing [bold type][link]fuck Brutus[end link][roman type]. You can see all the allies you have with the [bold type][link]allies[end link][roman type] command. Allies will lower the XP you gain from battle, but can gain levels themselves to be more useful in a scrap. Want to get rid of an ally? Use [bold type][link]ally dismiss[end link][roman type], or just [bold type][link]dismiss[end link][roman type])[line break]";
 				else:
 					say "     Getting cold feet at almost he last second, you blow out the candles and douse the brazier. Well, there goes your one and only try for this ritual. With the herbs already up in smoke, you won't have any for a second try. But then, maybe that's for the best...";
-					now DBCaptureQuestVar is 99;  [failed]
+					now DBCaptureQuestVar is 99; [failed]
 			else:
 				say "     As you shake your head, the jackalwoman says 'Nermine cannot help you unless you bring enough demon essence to paint the needed symbols. Go out and gather...' She describes the amount you need, which you'd say translates to three bottles of demon seed.";
 		else:
@@ -572,7 +576,7 @@ to say ChurchDemonCleanse:
 			say "     Looks like this requires a bit of a different approach. Taking the plastic water bottle in hand, you gain a few steps distance, then use it to splash the demon. The resulting explosion of steam is about what you'd have expected when aiming a water cannon at molten lava. The bottle is empty pretty soon, and you take another, and another. With all the steam boiling off from the demon, it's getting pretty warm in here and sometimes you can barely see him through the clouds, but it's endurable. You just hope this works and you're not just wasting your time - though you think you noticed some difference, a lessening of the amount of steam, after the sixth bottle. Armed with your next to last one, you step a bit closer, splashing parts of the demon you missed before. Then it's the last bottle, which you upend all over his head and chest, getting only a last little sizzling sound before that too stops.";
 			WaitLineBreak;
 			say "     Looking down on the thoroughly drenched, unconscious demon, you do notice some differences in him. He's a bit lighter purple in the shade of his skin and you could swear that his horns and claws a somewhat smaller and less sharp. Then he sits up, opening his eyes and focuses on you with their now azure blue slitted irises. A curious look comes to his face as he starts to rub his skin, then runs a claw over his arm, leaving a bleeding but shallow scratch. 'That hurts. But why don't I hurt? Inside. I always hurt inside... you made it stop.' Hesitantly, as if he has trouble remembering the expression, he smiles - which still is rather frightening, in light of his many, many sharp teeth.";
-			say "     Hey, looks like it worked. Asking the demon what he'd like to do to you if he were free, you get a puzzled expression and a shrug as an answer. Definitively a step forward from threats of dismemberment. With this hopefully leading to a bit nicer a relationship, having a name to talk to him seems appropriate too, so you ask him about it. As it turns out, your captive demon has the unpronounceable name Ba'haz-eu'nizaal't'chha. You decide to just call him [bold type]'Brutus'[roman type], a name he accepts without complaint.";
+			say "     Hey, looks like it worked. Asking the demon what he'd like to do to you if he were free, you get a puzzled expression and a shrug as an answer. Definitely a step forward from threats of dismemberment. With this hopefully leading to a bit nicer a relationship, having a name to talk to him seems appropriate too, so you ask him about it. As it turns out, your captive demon has the unpronounceable name Ba'haz-eu'nizaal't'chha. You decide to just call him [bold type]'Brutus'[roman type], a name he accepts without complaint.";
 			say "     For now, you banish the demon brute back into your amulet with a magical command. Turning towards the door, you see Aaron standing there, smiling as he gives you a thumbs up. Thanking the fox, you follow him as he leads you back out to the main room of the chapel.";
 			now DBCaptureQuestVar is 6;
 			ItemLoss water bottle by 8;
@@ -608,7 +612,7 @@ Cock Length of Brutus is 18. [length in inches]
 Ball Count of Brutus is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Brutus is 5. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Brutus is 0. [number of cunts]
-Cunt Depth of Brutus is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Brutus is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Brutus is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Brutus is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -1007,7 +1011,7 @@ to say DBTalk2:
 				say "     'Strip!' comes the demon's lusty bellow next, followed by him growling, 'I'm gonna pound your tight little butt so hard!' David's hands fly to obey his dominant partner's request, pulling the tight shirt off his muscled chest and throwing it aside aimlessly, already moving to undo his pants before it even lands on the floor. With the clink of his belt buckle hitting the floor an eye-blink later, the young man is fully naked, hard and ready to be taken - which Brutus does right away, simply snatching the human up in his arms. Lips pressed together as they share a hungry kiss, David is carried to the bed by his demon lover, then lowered to lie on his back. 'Beg for me to fuck you!' Brutus grunts loudly as he holds David down possessively, one large hand covering the man's left pec.";
 				say "     'Please, take me. Fuck you like you want to! I need it, hard and deep!' David moans obediently, by now well trained to respond to his otherworldly lover's domineering requests. 'That's a good slut,' Brutus replies with a chuckle, then takes hold of his mighty shaft and lines it up with the young soldier's pucker. He rubs the cockhead over David's hole, leaving a smear of pre-cum, then milks even more of the thick liquid from his manhood to spread it all over the shaft, lubing it up till the pole glistens with wetness. And then, quite suddenly, the demon gives a roaring bellow as he thrusts deep into his human partner, making David buck and thrash on the bed, gripping the sheets under him tightly with both hands. But the human's initial whimper almost immediately leads over into an aroused moan, the pleasure of serving his demonic lover overwhelming the pain of having his hole stretched by a massive piece of cock-flesh.";
 				WaitLineBreak;
-				say "     When his massive erection finally is buried all the way in David's ass, Brutus bends over his friend and plays a long tongue over his nipples and pecs, then up over his neck before kissing him deeply. The awe-inspiring feat of actually being able to bottom out in the smaller human makes you once again aware just how much the nanites infusing everyone in this city have opened up the playing field sexually. David's hole definitively is more than a little stretchy these days, fitting tightly around that purple cock and yet effortlessly contracting to a little pink rosebud again as the demon pulls out again a moment later. 'I love you David,' Brutus groans as he comes back up from their kiss, then continues saying, 'You're just the best fuckhole I've ever had. Your willingness to be mine makes this so much better than anything else!'";
+				say "     When his massive erection finally is buried all the way in David's ass, Brutus bends over his friend and plays a long tongue over his nipples and pecs, then up over his neck before kissing him deeply. The awe-inspiring feat of actually being able to bottom out in the smaller human makes you once again aware just how much the nanites infusing everyone in this city have opened up the playing field sexually. David's hole definitely is more than a little stretchy these days, fitting tightly around that purple cock and yet effortlessly contracting to a little pink rosebud again as the demon pulls out again a moment later. 'I love you David,' Brutus groans as he comes back up from their kiss, then continues saying, 'You're just the best fuckhole I've ever had. Your willingness to be mine makes this so much better than anything else!'";
 				say "     And with that, the purple giant pushes his hips forward again, sinking his shaft into the human's back door, whose pucker readily stretches to allow him entry. 'UuunnggghhHH! So big and warm!' David groans in arousal, panting rapidly as lifts his hips a bit and pushes himself down on the thick pole, eager to get more into his ass. Brutus chuckles as he watches the young man try fuck himself on his manhood, enjoying the submission and obedient behavior just as much as the actual penetration. 'That's it! Work for it, my lovely little slut!' comes his deep-voiced growl a moment later, followed by a short jab of his erection that makes David howl in lust.";
 				WaitLineBreak;
 				say "     David slowly slides himself deeper on Brutus's massive cock, showing his eager dedication by taking a position not easy for anyone but a gymnast and making both of them moan and groan in lust - but eventually, that isn't enough anymore for the demon. 'More!' he grunts to loudly, then bellows, 'I'll show you how to really fuck!' With that said, Brutus's hands grip David's hips tightly and he impales the human on his shaft fully in one rough pull, making him yelp with yet another forceful invasion of his insides. But Brutus doesn't stop there - he just keeps going, sliding his helplessly moaning partner up again and hammering him down against his hips - repeatedly and in a merciless tempo.";
@@ -1059,13 +1063,13 @@ to say DemonBruteSexMenu:
 		now sortorder entry is 4;
 		now description entry is "Finger-fuck your captured demon's pussy to make him cum.";
 	[]
-	if (DemonBruteStatus > 0 and player is male):
+	if (DemonBruteStatus > 0 and Player is male):
 		choose a blank row in table of fucking options;
 		now title entry is "Fuck his pussy";
 		now sortorder entry is 5;
 		now description entry is "Fill the your captured demon's pussy with your cock.";
 	[]
-	if (DemonBruteStatus < 2 and player is female):
+	if (DemonBruteStatus < 2 and Player is female):
 		choose a blank row in table of fucking options;
 		now title entry is "Let him fuck your pussy";
 		now sortorder entry is 6;
@@ -1140,7 +1144,7 @@ to say DemonBruteSex1: [cock sucked by demon brute]
 			say "     Smiling at how well-behaved the formerly ravenous beast has become, you pull his head to yours for a deep kiss, then direct his attention towards your own erect manhood. Leaning downward and putting his two massive hands on your hips, Brutus doesn't hesitate to bring his long forked tongue into play, running it over your crotch, licking your balls, even snaking it between your legs to poke your asshole for a second, before he wraps it around your cock. After teasing your manhood a bit, he gently takes hold of it with his lips, taking care to keep your precious piece away from all the sharp teeth filling his mouth as he bobs up and down on it. Amazingly good at oral sex, this demon - his hot lips around your manhood and his tongue teasing its shaft.";
 			say "     A hand on the demon's horned head as he sucks you, moaning deeply in your mounting arousal, you have an idea for even more fun, giving Brutus's erection some attention too. A smile on your lips, you tell him he may rub himself against you, tease your asshole a bit. With an eager, lust-filled grunt, the demon swipes you off your feet, then lowers you to lie on your back with amazing gentleness. He is on top of you in a second, his body covering yours and hips thrusting forward - only to stop with just the tip of his thick erection touching your back door, then starting to rub it up against your ass. The hot member of this infernal creature sliding over your skin, touching your pucker and - almost - pushing in, drives your arousal through the roof. It doesn't take much longer until your gasps and moans rise in a crescendo, a lustful groan accompanying long strings of cum shooting from your cock to splat down on your chest.";
 			WaitLineBreak;
-			say "     As you lie on your back, still in the grip of the amazing feelings coursing through your body, the demon asks 'Have I pleased you, master?', earning a nod and very satisfied smile from you. Giving a sound that resembles a very deep purr, the demon brings both his hands up to his massive erection, using them to jerk himself off. Quickly getting ready to cum, he pushes it in between your ass-cheeks, right against your pucker - and blows a hot burst of demonic seed into you. The force of his spurts alone is enough to push open your iris and you can feel shot after shot jet deep into your body. A warm feeling begins to spread through your insides as the demon fills you with his seed. With the sheer amount he's shooting, quite a bit immediately leaks out of your chock-full ass and forms a puddle between your legs.";
+			say "     As you lie on your back, still in the grip of the amazing feelings coursing through your body, the demon asks 'Have I pleased you, master?', earning a nod and very satisfied smile from you. Giving a sound that resembles a very deep purr, the demon brings both his hands up to his massive erection, using them to jerk himself off. Quickly getting ready to cum, he pushes it in between your ass-cheeks, right against your pucker - and blows a hot burst of demonic seed into you. The force of his spurts alone is enough to push open your pucker and you can feel shot after shot jet deep into your body. A warm feeling begins to spread through your insides as the demon fills you with his seed. With the sheer amount he's shooting, quite a bit immediately leaks out of your chock-full ass and forms a puddle between your legs.";
 			LineBreak;
 			if demon brute is listed in companionList of Player: [is the active pet]
 				say "     Exhausted and pretty sticky as you are now, you lie there on the ground for a while, resting and looking up at Brutus's form, still kneeling obediently beside you. Finally you sit up with a sigh, thank him for his service and tell the large demon to resume guarding you.";
@@ -1171,7 +1175,7 @@ to say DemonBruteSex1: [cock sucked by demon brute]
 			say "     With an annoyed grumble at not being able to just fuck you, the demon obeys, leaning forward and putting his two massive hands on your hips. Bringing his long forked tongue to your crotch, he licks over your balls, then up the shaft of your cock before taking it into his mouth. Being willing - but not able - to harm you in any way, he takes great care to hold your member in his lips and keep it away from the sharp teeth filling his mouth. While he sucks you, his forked tongue plays over your shaft, stroking and teasing the most sensitive spots. Amazingly good at oral sex, this demon - if one can make him do it.";
 			WaitLineBreak;
 			say "     A hand on the demon's horned head as he sucks you, moaning deeply in your mounting arousal, you have an idea for even more fun, teasing your captive demon. A smile on your lips, you say 'Good job so far - for pleasing me, I'll allow you a bit more - you can touch my asshole with your cock too... but only on the outside.' With a hungry growl, the demon swipes you off your feet, then lowers you to lie on your back with amazing gentleness. He is on top of you in a second, his body covering yours and hips thrusting forward - only to stop with just the tip of his thick erection touching your back door. You can see beads of sweat form on the demon's purple skin and the muscles below tighten and flex - but no matter how much he tries, the magic controlling him doesn't allow breaking your commands. Finally he relents, venting his frustration by digging his claws into the ground left and right of your chest with a crunch, then starts rubbing up against your ass. The hot member of this infernal creature sliding over your skin, touching your pucker and - almost - pushing in, drives your arousal through the roof. It doesn't take much longer until your gasps and moans rise in a crescendo, a lustful groan accompanying long strings of cum shooting from your cock to splat down on your chest.";
-			say "     As you lie on your back, still in the grip of the amazing feelings coursing through your body, the demon uses that moment of inattention to bring both hands to the infernal erection between your legs and jerking himself off. Quickly getting ready to cum, he pushes it in between your ass-cheeks, right against your pucker - and blows a hot burst of demonic seed right into you. The force of his spurts alone is enough to push open your iris and you can feel shot after shot jet deep into your body. A warm feeling begins to spread through your insides as the demon fills you with his seed. With the sheer amount he's shooting, quite a bit immediately leaks out of your chock-full ass and forms a puddle between your legs.";
+			say "     As you lie on your back, still in the grip of the amazing feelings coursing through your body, the demon uses that moment of inattention to bring both hands to the infernal erection between your legs and jerking himself off. Quickly getting ready to cum, he pushes it in between your ass-cheeks, right against your pucker - and blows a hot burst of demonic seed right into you. The force of his spurts alone is enough to push open your pucker and you can feel shot after shot jet deep into your body. A warm feeling begins to spread through your insides as the demon fills you with his seed. With the sheer amount he's shooting, quite a bit immediately leaks out of your chock-full ass and forms a puddle between your legs.";
 			LineBreak;
 			if demon brute is listed in companionList of Player: [is the active pet]
 				say "     As hot and riled up as you still are, you can't bring yourself to bother disciplining the demon for getting himself off and creaming you. Oh well - letting your head sink back to rest on the ground, you tell the creature to resume guarding you.";
@@ -1662,7 +1666,7 @@ instead of navigating Grey Abbey Library while (DBCaptureQuestVar is 5 and demon
 	say "     As you arrive at the Library with the demon brute following behind, you figure you shouldn't postpone this conversation. However, not even the time you spent together, mostly in silence, was enough to shed some light into how you should address this situation, although you figure you could ask him to follow you to a corner and inquire about the subject some more. You let him know that you do not want to force the amulet's magic on him to make him tell you anything, but that you'd like to know what is this all about demons feeling a constant torment that denies their freedom. His eyes spill hatred towards you, though it gives out a feeling that it's not on purpose, it's merely the way he stares at all living mortals, as if he never learned how to look in another way, or behave differently.";
 	say "     You actually have no clue how you can see through him, but it still leaves you without answers. Although you hear a deep voice almost mumbling at you. The demon speaks on a very low tone... 'There's only pain. Torment. No freedom. Nothing can take it away.' He tells you nothing more, shifting his gaze downwards and avoiding you in his sight. Still, you insist a little more, between telling him you mean no harm, and that you're sorry about the way you've been treating him, and explain that you want a peaceful relationship between both, or a way to help you. He ignores the first part, only replying with a rather unhelpful grunt, followed by 'Then release me. It would be great help.' as he goes silent afterwards.";
 	WaitLineBreak;
-	say "     Well, that wasn't very fruitful. Confronted with the demon brute's suffering and his usual mean behavior, you wrack your brain about some other way to get closer. Trying it alone would most likely just push him away, as you saw, since after beating his ass and enslaving the demon, you're in the 'cruel master' category for sure. What comes to mind is an old report you once saw on TV, about therapy dogs achieving amazing results on people with mental disorders or psychological trauma. Could that be the case of the demons, or something similar? You think you remember they used huskies and german shepherds, although finding a trained beast like that is pretty much impossible in all this chaos. [bold type]Maybe a level-headed anthro of the aforementioned breeds might do in a pinch instead?[roman type][line break]";
+	say "     Well, that wasn't very fruitful. Confronted with the demon brute's suffering and his usual mean behavior, you wrack your brain about some other way to get closer. Trying it alone would most likely just push him away, as you saw, since after beating his ass and enslaving the demon, you're in the 'cruel master' category for sure. What comes to mind is an old report you once saw on TV, about therapy dogs achieving amazing results on people with mental disorders or psychological trauma. Could that be the case of the demons, or something similar? You think you remember they used huskies and German shepherds, although finding a trained beast like that is pretty much impossible in all this chaos. [bold type]Maybe a level-headed anthro of the aforementioned breeds might do in a pinch instead?[roman type][line break]";
 	now resolution of Demonic Redemption is 2; [talked to Demon Brute, on the way to find an anthro canine]
 	if HP of Carl > 49 and HP of Carl <= 100:
 		say "     [bold type]You do know of one that could have helped you, one certain anthro husky you left to meet a doomed fate. Now you'll be left with no option but to cleanse the demon brute or leave him as he is...[roman type][line break]";
@@ -1765,7 +1769,7 @@ to say CarlTalk_DB:
 			LineBreak;
 			say "     ([link]Y[as]y[end link]) - He still didn't call for assistance, so... It's probably safe.";
 			say "     ([link]N[as]n[end link]) - Now that's going too far. Enough is enough!";
-			if player consents:
+			if Player consents:
 				LineBreak;
 				say "     Now, everything seems to be under control. Carl is already a professional at this, so he should be alright giving the demon brute a treat for good behavior, right? Even though he's choking big time on the fat purple cock buried deep down his throat as the demon keeps pushing the anthro canine's head. The husky has no means to resist against such a strong, massive muscular brute holding him down like that. Though this treatment doesn't last for long. With how turned on the brute was, it's only a matter of seconds until his huge cum-filled balls begin to shift their positions in order to get emptied. As the furry soldier continues to get facefucked, the demon lets out a very audible, beast-like grunt as he starts shooting in his mouth, then everywhere else around them, his heavy load making a huge mess all over as his dick keeps pumping it out in thick, long spurts of demon jizz.";
 				say "     What could be your fear before turns out to be just a [']slight['] change of pace initiated by the brute, as he immediately lets go of Carl with a snarky grin on his face. The poor anthro husky is panting, trying to catch his breath after the short, but very hard fuck in the mouth that he had, widening his eyes over the overwhelming mess the demon made with his little trick. 'Well, I... Phew... Okay, you're allowed a treat. That's fair, you did good... But please warn me before you want to do something like that again, okay?' He says, as the demon brute looks at the exhausted husky, throwing in a short phrase in response 'I like it hard... and rough.' Though it didn't seem he said that as a threat, only as an information... Probably.";
@@ -1813,22 +1817,22 @@ When Play begins:
 	add "Demon Brute" to infections of BipedalList;
 	add "Demon Brute" to infections of TailList;
 	now Name entry is "Demon Brute";
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "The brute [one of]throws a powerful punch[or]swings a great fist[or]begins to kick wildly with powerful legs[at random].";
 	now defeated entry is "[demon brute loses]"; [ Text or say command used when Monster is defeated.]
 	now victory entry is "[demon brute wins]"; [ Text used when monster wins, can be directly entered like combat text or description. or if more complex it can be linked to a 'To Say' block as the demonstration text shows.]
-	now desc entry is "[demonbrutedesc]";  [ Description of the creature when you encounter it.]
-	now face entry is "very inhuman, with a pair of slits for nostrils, sharp teeth, and yellow eyes with red slitted pupils. The top of your head is crowned by three matching pairs of horns, curved and getting smaller front to back";  [ Face description, format as "Your face is (your text)"]
-	now body entry is "now large and muscle-bound, any body-builder would be proud to have it";  [ Body Description, format as "Your Body is (your text)"]
+	now desc entry is "[demonbrutedesc]"; [ Description of the creature when you encounter it.]
+	now face entry is "very inhuman, with a pair of slits for nostrils, sharp teeth, and yellow eyes with red slitted pupils. The top of your head is crowned by three matching pairs of horns, curved and getting smaller front to back"; [ Face description, format as "Your face is [Face of Player]." ]
+	now body entry is "now large and muscle-bound, any body-builder would be proud to have it"; [ Body Description, format as "Your Body is [Body of Player]." ]
 	now skin entry is "deep purple";
 	now tail entry is "You have a long demon tail that sways back and forth behind you, equipped with a spaded tip and everything.";
 	now cock entry is "[one of]demonic[or]demon[or]infernal[or]bump-ridden[at random]";
-	now face change entry is "you begin to feel your skull reshaping under your skin. Your nose disappears, leaving a pair of slits. A strange feeling in your mouth heralds your teeth changing, sharpening and becoming longer to give you a monstrous smile. Finally three pairs of horns grow out of the top of your head, with the front pair the largest, the others getting smaller towards the back. Even your eyes have changed, the white parts now yellow and around red, slitted pupils"; [ face change text. format as "Your face feels funny as (your text)." ]
+	now face change entry is "you begin to feel your skull reshaping under your skin. Your nose disappears, leaving a pair of slits. A strange feeling in your mouth heralds your teeth changing, sharpening and becoming longer to give you a monstrous smile. Finally three pairs of horns grow out of the top of your head, with the front pair the largest, the others getting smaller towards the back. Even your eyes have changed, the white parts now yellow and around red, slitted pupils"; [ Face change text, format as "Your face feels funny as [face change entry]." ]
 	now body change entry is "your arms and legs begin to grow longer and more muscular. Your chest widens as well.";
 	now skin change entry is "you begin to feel a strange burning sensation. You look down, and realize that your skin has turned a deep shade of purple";
-	now ass change entry is "you feel it becoming tighter, leaner, and more fit. This is followed by a strange feeling at the base of your spine, and then there is a very strange, and painful, burning sensation, as if your flesh is boiling and liquefying. The pain lasts for some time, but, when it finally subsides, you can feel your new, long demon tail sway back and forth behind you, equipped with a spaded tip and everything"; [ ass/tail change text. format as "Your ass feels funny as (your text)." ]
+	now ass change entry is "you feel it becoming tighter, leaner, and more fit. This is followed by a strange feeling at the base of your spine, and then there is a very strange, and painful, burning sensation, as if your flesh is boiling and liquefying. The pain lasts for some time, but, when it finally subsides, you can feel your new, long demon tail sway back and forth behind you, equipped with a spaded tip and everything"; [ Ass/tail change text, format as "Your ass feels funny as [ass change entry]." ]
 	now cock change entry is "it begins to grow thicker, large bumps sprouting up all across its surface";
 	now str entry is 20;
 	now dex entry is 9;
@@ -1852,19 +1856,19 @@ When Play begins:
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	now SeductionImmune entry is false;
 	now libido entry is 30;
-	now loot entry is "demon seed";     [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
-	now lootchance entry is 50;         [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 4;               [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now loot entry is "demon seed"; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
+	now lootchance entry is 50; [ Chance of loot dropping 0-100 ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 4; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]muscled[or]muscular[or]powerful[at random]";
-	now type entry is "demonic";        [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
-	now magic entry is true;            [ Is this a magic creature? true/false (normally false) ]
-	now resbypass entry is false;       [ Bypasses Researcher bonus? true/false (almost invariably false) ]
+	now type entry is "demonic"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
+	now magic entry is true; [ Is this a magic creature? true/false (normally false) ]
+	now resbypass entry is false; [ Bypasses Researcher bonus? true/false (almost invariably false) ]
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]  [ Is this a non-infectious, non-shiftable creature? True/False (usually false) ]
-	now DayCycle entry is 0;      [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]  [ Is this a non-infectious, non-shiftable creature? True/False (usually false) ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "demonbrute"; [ Row used to designate any special combat features, "default" for standard combat. ]
 	now BannedStatus entry is false;
 
@@ -1875,7 +1879,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -1887,7 +1891,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -1906,7 +1910,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -1927,18 +1931,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -1952,19 +1956,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -2000,7 +2004,7 @@ this is the bruteforce rule:
 	now alt1chance entry is 5;
 	choose row MonsterID from the Table of Random Critters;
 	let rangenum be ( 80 - ( peppereyes * 4 ) );
-	let dam be ( ( wdam entry times a random number from rangenum to 120 ) / 50 );  [double damage]
+	let dam be ( ( wdam entry times a random number from rangenum to 120 ) / 50 ); [double damage]
 	if HardMode is true and a random chance of 1 in ( 10 + peppereyes ) succeeds:
 		now dam is (dam * 150) divided by 100;
 		say "The enemy finds a particular vulnerability in your defense - Critical Hit![line break]";

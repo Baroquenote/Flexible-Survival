@@ -181,7 +181,7 @@ Cock Length of Felix is 14. [length in inches]
 Ball Count of Felix is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Felix is 4. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Felix is 0. [number of cunts]
-Cunt Depth of Felix is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Felix is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Felix is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Felix is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -220,87 +220,86 @@ to say FelixDesc:
 		say "     Looking up to Felix face again before he notices you checking him out, you realize that you needn't have worried. He's busy exchanging longing looks with his new boyfriend Andre, almost everything around them forgotten.";
 
 instead of conversing the Felix:
-	if (HP of Felix is 0): [not yet met]
-		say "ERROR-Felix-001B: He should not be around yet anywhere where players can see him.";
-	else if (HP of Felix is 100): [removed from game]
-		say "ERROR-Felix-100A: He should be removed from the game.";
-	else:
-		say "     Felix smiles as you come closer and says, 'Hello, what's up?'";
-		wait for any key;
-		say "[FelixTalkMenu]";
+	say "     Felix smiles as you come closer and says, 'Hello, what's up?'";
+	say "[FelixTalkMenu]";
 
 to say FelixTalkMenu:
 	project the Figure of Felix_icon;
 	blank out the whole of table of fucking options;
+	say "     [bold type]What do you want to talk with Felix about?[roman type][line break]";
+	now sextablerun is 0;
+	blank out the whole of table of fucking options;
+	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Just chat a bit";
 	now sortorder entry is 1;
-	now description entry is "Talk a bit about this and that.";
-	now toggle entry is FelixTalk rule;
-	choose a blank row in table of fucking options;
+	now description entry is "Talk a bit about this and that";
+	[]
 	if (Libido of Felix is 1 or Libido of Felix is 2):
 		choose a blank row in table of fucking options;
 		now title entry is "Search for signs of his stalker";
 		now sortorder entry is 2;
-		now description entry is "Look around in the high grass.";
-		now toggle entry is FelixTalk rule;
+		now description entry is "Look around in the high grass";
+	[]
 	if (Libido of Felix is 3):
 		choose a blank row in table of fucking options;
 		now title entry is "Ask about the stalker";
 		now sortorder entry is 3;
-		now description entry is "Inquire if he saw something.";
-		now toggle entry is FelixTalk rule;
+		now description entry is "Inquire if he saw something";
+	[]
 	if (Libido of Felix is 5):
 		choose a blank row in table of fucking options;
 		now title entry is "Tell him about Andre";
 		now sortorder entry is 4;
-		now description entry is "Explain who's stalking him and why.";
-		now toggle entry is FelixTalk rule;
+		now description entry is "Explain who's stalking him and why";
+	[]
 	if (Libido of Felix is 99):
 		choose a blank row in table of fucking options;
 		now title entry is "Tell him about his stalker";
 		now sortorder entry is 5;
-		now description entry is "Explain that you took care of things.";
-		now toggle entry is FelixTalk rule;
+		now description entry is "Explain that you took care of things";
+	[]
 	if (Libido of Thomas > 0):
 		choose a blank row in table of fucking options;
 		now title entry is "Ask about the herd";
 		now sortorder entry is 6;
-		now description entry is "Chat about Thomas centaur herd.";
-		now toggle entry is FelixTalk rule;
-	choose a blank row in table of fucking options;
-	now title entry is "Nothing";
-	now sortorder entry is 10;
-	now description entry is "Wave him off as you don't want to talk after all.";
-	now toggle entry is FelixTalk rule;
+		now description entry is "Chat about Thomas centaur herd";
+	[]
 	sort the table of fucking options in sortorder order;
-	change the current menu to table of fucking options;
-	carry out the displaying activity;
-	clear the screen;
-
-This is the FelixTalk rule:
-	choose row Current Menu Selection in table of fucking options;
-	let nam be title entry;
-	say "[title entry]: [description entry][line break]";
-	say "Is this what you want?";
-	if Player consents:
-		decrease menu depth by 1;
-		clear the screen;
-		if (nam is "Just chat a bit"):
-			say "[FelixTalk1]";
-		if (nam is "Search for signs of his stalker"):
-			say "[FelixTalk2]";
-		if (nam is "Ask about the stalker"):
-			say "[FelixTalk3]";
-		if (nam is "Tell him about Andre"):
-			say "[FelixTalk4]";
-		if (nam is "Tell him about his stalker"):
-			say "[FelixTalk5]";
-		if (nam is "Ask about the herd"):
-			say "[FelixTalk6]";
-		else if (nam is "Nothing"):
-			say "[FelixTalk10]";
-		wait for any key;
+	repeat with y running from 1 to number of filled rows in table of fucking options:
+		choose row y from the table of fucking options;
+		say "[link][y] - [title entry][as][y][end link][line break]";
+	say "[link]0 - Nevermind[as]0[end link][line break]";
+	while sextablerun is 0:
+		say "Pick the corresponding number> [run paragraph on]";
+		get a number;
+		if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
+			now current menu selection is calcnumber;
+			choose row calcnumber in table of fucking options;
+			say "[title entry]: [description entry]?";
+			if Player consents:
+				let nam be title entry;
+				now sextablerun is 1;
+				if (nam is "Just chat a bit"):
+					say "[FelixTalk1]";
+				if (nam is "Search for signs of his stalker"):
+					say "[FelixTalk2]";
+				if (nam is "Ask about the stalker"):
+					say "[FelixTalk3]";
+				if (nam is "Tell him about Andre"):
+					say "[FelixTalk4]";
+				if (nam is "Tell him about his stalker"):
+					say "[FelixTalk5]";
+				if (nam is "Ask about the herd"):
+					say "[FelixTalk6]";
+				wait for any key;
+		else if calcnumber is 0:
+			now sextablerun is 1;
+			say "     You step back from the young centaur, shaking your head slightly as he gives a questioning look.";
+			wait for any key;
+		else:
+			say "Invalid Option. Pick between 1 and [the number of filled rows in the table of fucking options].";
+	clear the screen and hyperlink list;
 
 to say FelixTalk1:
 	say "     You talk a while with Felix and tell him how things were before the nanite plague, talk about creatures you've seen in the city and everyday survival. It's good to be able to talk to another person and get some things off your chest. In the end, you somehow feel more sane and human than before.";
@@ -346,7 +345,6 @@ to say FelixTalk4:
 	now HP of Felix is 2;
 	move Andre to Dry Plains;
 
-
 to say FelixTalk5:
 	say "     You walk up to Felix and tell him, 'You can stop worrying now - turns out it was some sort of lizard dude stalking you, but I took care of things. He won't be bothering you anymore. Oh, and he had this...' With that, you pull out the leather pouch and hand it to Felix. He looks surprised to see it, saying, 'Hey, I lost this - I thought I'd never see it again. Guess my stalker picked it up, hm?' He gives you a hug, then continues, 'Thank you so much for bringing it back.' Opening up the bag, he looks through its contents - a book, a small plastic dragon, pens and various knickknacks come to light. 'This is everything I ever owned - my favorite toys and possessions from all the weeks of my childhood. One of my father's mares gave it to me when he threw me out.'";
 	LineBreak;
@@ -372,92 +370,89 @@ to say FelixTalk6:
 		if Libido of Felix is 6:
 			say "     Giving a smile and a small wave to Andre, Felix shares a longing look with his friend, then shakes it off not to be rude to you. 'And then there's of course our honorary herd member, even though he's not a centaur. I can't thank you enough for bringing Andre to me.'";
 
-to say FelixTalk10:
-	say "     Having decided not to want to talk to Felix after all, you wave him off and turn away.";
-
 Section 3 - Fucking Felix
 
 Instead of fucking the Felix:
-	[puts Centaur Stallion as lead monster in case of impregnation]
-	repeat with y running from 1 to number of filled rows in Table of Random Critters:
-		choose row y in Table of Random Critters;
-		if Name entry is "Centaur Stallion":
-			now MonsterID is y;
-			break;
-	if (HP of Felix is 0): [not yet met]
-		say "ERROR-Felix-001C: He should not be around yet anywhere where players can see him.";
-	else if (HP of Felix is 100): [avoiding the player]
-		say "ERROR-Felix-100B: He should be removed from the game.";
+	if (lastfuck of Felix - turns < 6):
+		say "     Felix says, 'Sorry I'm still worn out from last time. Give me some space, OK?'";
+	else if (Libido of Felix < 6 or Libido of Felix > 90):
+		say "     Felix says, 'Thanks for the offer - though I think I'll wait a bit more before doing any of that. I mean - you have my thanks for saving me, but... I want to be together with someone - not just have sex. Someone I care for.'";
 	else:
-		if (lastfuck of Felix - turns < 6):
-			say "     Felix says, 'Sorry I'm still worn out from last time. Give me some space, OK?'";
-		else if (Libido of Felix < 6 or Libido of Felix > 90):
-			say "     Felix says, 'Thanks for the offer - though I think I'll wait a bit more before doing any of that. I mean - you have my thanks for saving me, but... I want to be together with someone - not just have sex. Someone I care for.'";
-		else:
-			say "[FelixSexMenu]";
+		say "[FelixSexMenu]";
 
 to say FelixSexMenu:
 	project the Figure of Felix_icon;
+	say "     [bold type]What do you want to do with Felix?[roman type][line break]";
+	now sextablerun is 0;
 	blank out the whole of table of fucking options;
+	[]
 	if Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Have him blow your cock";
 		now sortorder entry is 1;
-		now description entry is "Let the young centaur blow you.";
-		now toggle entry is FelixSex rule;
+		now description entry is "Let the young centaur blow you";
+	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Suck Felix cock";
 	now sortorder entry is 2;
-	now description entry is "Put Felix long horsecock in your mouth.";
-	now toggle entry is FelixSex rule;
+	now description entry is "Put Felix long horsecock in your mouth";
+	[]
 	if Player is female:
 		choose a blank row in table of fucking options;
 		now title entry is "Have him lick your pussy";
 		now sortorder entry is 3;
-		now description entry is "Put the young centaur's mouth to good use.";
-		now toggle entry is FelixSex rule;
+		now description entry is "Put the young centaur's mouth to good use";
+	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Finger Felix ass";
 	now sortorder entry is 4;
-	now description entry is "Stimulate the young centaur's ass.";
-	now toggle entry is FelixSex rule;
+	now description entry is "Stimulate the young centaur's ass";
+	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Watch Andre fuck Felix";
 	now sortorder entry is 5;
-	now description entry is "See the big lizard mount his boyfriend.";
-	now toggle entry is FelixSex rule;
+	now description entry is "See the big lizard mount his boyfriend";
+	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Watch Felix fuck Andre";
 	now sortorder entry is 6;
-	now description entry is "See the big lizard being fucked by his boyfriend.";
-	now toggle entry is FelixSex rule;
+	now description entry is "See the big lizard being fucked by his boyfriend";
+	[]
 	sort the table of fucking options in sortorder order;
-	change the current menu to table of fucking options;
-	carry out the displaying activity;
-	clear the screen;
-
-This is the FelixSex rule:
-	choose row Current Menu Selection in table of fucking options;
-	let nam be title entry;
-	say "[title entry]: [description entry][line break]";
-	say "Is this what you want?";
-	if Player consents:
-		decrease menu depth by 1;
-		clear the screen;
-		if (nam is "Have him blow your cock"):
-			say "[FelixSex1]";
-		if (nam is "Suck Felix cock"):
-			say "[FelixSex2]";
-		if (nam is "Have him lick your pussy"):
-			say "[FelixSex3]";
-		if (nam is "Finger Felix ass"):
-			say "[FelixSex4]";
-		if (nam is "Watch Andre fuck Felix"):
-			say "[FelixSex5]";
-		if (nam is "Watch Felix fuck Andre"):
-			say "[FelixSex6]";
-		wait for any key;
-	now lastfuck of Felix is turns;
+	repeat with y running from 1 to number of filled rows in table of fucking options:
+		choose row y from the table of fucking options;
+		say "[link][y] - [title entry][as][y][end link][line break]";
+	say "[link]0 - Nevermind[as]0[end link][line break]";
+	while sextablerun is 0:
+		say "Pick the corresponding number> [run paragraph on]";
+		get a number;
+		if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
+			now current menu selection is calcnumber;
+			choose row calcnumber in table of fucking options;
+			say "[title entry]: [description entry]?";
+			if Player consents:
+				let nam be title entry;
+				now sextablerun is 1;
+				if (nam is "Have him blow your cock"):
+					say "[FelixSex1]";
+				if (nam is "Suck Felix cock"):
+					say "[FelixSex2]";
+				if (nam is "Have him lick your pussy"):
+					say "[FelixSex3]";
+				if (nam is "Finger Felix ass"):
+					say "[FelixSex4]";
+				if (nam is "Watch Andre fuck Felix"):
+					say "[FelixSex5]";
+				if (nam is "Watch Felix fuck Andre"):
+					say "[FelixSex6]";
+				wait for any key;
+		else if calcnumber is 0:
+			now sextablerun is 1;
+			say "     You step back from the young centaur, shaking your head slightly as he gives a questioning look.";
+			wait for any key;
+		else:
+			say "Invalid Option. Pick between 1 and [the number of filled rows in the table of fucking options].";
+	clear the screen and hyperlink list;
 
 to say FelixSex1: [cock sucked by Felix]
 	say "     Walking up to Felix, you run your hands over his muscular chest, then stroke his cheek and lean close to him. You whisper, 'You know what would be hot?' and pull Felix hands down to your crotch. 'You sucking off my cock.' Smiling, Felix pulls out your hard [Cock of Player] cock, pumping it in his hand. 'Anything for you, man. You saved me and brought Andre and me together.'";
@@ -527,7 +522,7 @@ Cock Length of Andre is 16. [length in inches]
 Ball Count of Andre is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Andre is 4. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Andre is 0. [number of cunts]
-Cunt Depth of Andre is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Andre is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Andre is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Andre is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -553,66 +548,57 @@ instead of sniffing Andre:
 	say "Andre has a pleasant animalistic smell. It's definitely male, with a kind of spicy undertone.";
 
 to say AndreDesc:
-	if (HP of Felix < 2): [starting state]
-		say "ERROR-Andre-001A: He should not be around yet anywhere where players can see him.";
-	else if (HP of Felix is 100):
-		say "ERROR-Andre-100A: He should be removed from the game (together with Felix).";
-	else if HP of Felix is 2:
-		say "     Andre is an about horse-sized lizard, strong and agile. He is quadrupedal and has a long and flexible tail and neck, with the latter ending in an elongated reptilian head with sharp teeth. On top of his head is a spined crest, giving him a dashing appearance. With his sand-colored scales glinting in the [if daytimer is day]sunlight[else]moonlight[end if], it looks like he was made to prowl these dry plains. You wonder if the nanites would adjust his coloring to a greener environment or other areas. Unobtrusively letting your eyes wander to his hind legs, you catch a glimpse of a small slit between his legs. He doesn't have any external balls or anything, but you remember that there's a quite impressive cock hidden inside that sheath.";
-		say "     Looking up to Andre face again before he notices you checking him out, you realize that you needn't have worried. He's busy exchanging longing looks with his new boyfriend Felix, almost everything around them forgotten.";
+	say "     Andre is an about horse-sized lizard, strong and agile. He is quadrupedal and has a long and flexible tail and neck, with the latter ending in an elongated reptilian head with sharp teeth. On top of his head is a spined crest, giving him a dashing appearance. With his sand-colored scales glinting in the [if daytimer is day]sunlight[else]moonlight[end if], it looks like he was made to prowl these dry plains. You wonder if the nanites would adjust his coloring to a greener environment or other areas. Unobtrusively letting your eyes wander to his hind legs, you catch a glimpse of a small slit between his legs. He doesn't have any external balls or anything, but you remember that there's a quite impressive cock hidden inside that sheath.";
+	say "     Looking up to Andre face again before he notices you checking him out, you realize that you needn't have worried. He's busy exchanging longing looks with his new boyfriend Felix, almost everything around them forgotten.";
 
 instead of conversing the Andre:
-	if (HP of Felix is 0): [not yet met]
-		say "ERROR-Andre-001B: He should not be around yet anywhere where players can see him.";
-	else if (HP of Felix is 100): [removed from game]
-		say "ERROR-Andre-100A: He should be removed from the game, together with Felix.";
-	else:
-		say "     Andre gives you a tooth-filled (but friendly) smile as you come closer and says, 'Hey there, what's up?'";
-		wait for any key;
-		say "[AndreTalkMenu]";
+	say "     Andre gives you a tooth-filled (but friendly) smile as you come closer and says, 'Hey there, what's up?'";
+	say "[AndreTalkMenu]";
 
 to say AndreTalkMenu:
 	project the Figure of Andre_face_icon;
+	say "     [bold type]What do you want to talk with Andre about?[roman type][line break]";
+	now sextablerun is 0;
 	blank out the whole of table of fucking options;
+	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Just chat a bit";
 	now sortorder entry is 1;
 	now description entry is "Talk a bit about this and that.";
-	now toggle entry is AndreTalk rule;
-[
-	choose a blank row in table of fucking options;
+	[
 	if (Libido of Thomas > 0):
 		choose a blank row in table of fucking options;
 		now title entry is "Ask about the herd";
 		now sortorder entry is 5;
 		now description entry is "Chat about Thomas centaur herd.";
-		now toggle entry is AndreTalk rule;
-]
-	choose a blank row in table of fucking options;
-	now title entry is "Nothing";
-	now sortorder entry is 10;
-	now description entry is "Wave him off as you don't want to talk after all.";
-	now toggle entry is AndreTalk rule;
+	]
 	sort the table of fucking options in sortorder order;
-	change the current menu to table of fucking options;
-	carry out the displaying activity;
-	clear the screen;
-
-This is the AndreTalk rule:
-	choose row Current Menu Selection in table of fucking options;
-	let nam be title entry;
-	say "[title entry]: [description entry][line break]";
-	say "Is this what you want?";
-	if Player consents:
-		decrease menu depth by 1;
-		clear the screen;
-		if (nam is "Just chat a bit"):
-			say "[AndreTalk1]";
-		if (nam is "Ask about the centaur herd"):
-			say "[AndreTalk5]";
-		else if (nam is "Nothing"):
-			say "[AndreTalk10]";
-		wait for any key;
+	repeat with y running from 1 to number of filled rows in table of fucking options:
+		choose row y from the table of fucking options;
+		say "[link][y] - [title entry][as][y][end link][line break]";
+	say "[link]0 - Nevermind[as]0[end link][line break]";
+	while sextablerun is 0:
+		say "Pick the corresponding number> [run paragraph on]";
+		get a number;
+		if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
+			now current menu selection is calcnumber;
+			choose row calcnumber in table of fucking options;
+			say "[title entry]: [description entry]?";
+			if Player consents:
+				let nam be title entry;
+				now sextablerun is 1;
+				if (nam is "Just chat a bit"):
+					say "[AndreTalk1]";
+				if (nam is "Ask about the centaur herd"):
+					say "[AndreTalk5]";
+				wait for any key;
+		else if calcnumber is 0:
+			now sextablerun is 1;
+			say "     You step back from the plains lizard, shaking your head slightly as he gives a questioning look.";
+			wait for any key;
+		else:
+			say "Invalid Option. Pick between 1 and [the number of filled rows in the table of fucking options].";
+	clear the screen and hyperlink list;
 
 to say AndreTalk1:
 	say "     You talk a while with Andre about how things were for the two of you before the nanite plague, talk about creatures you've seen in the city and everyday survival. It's good to be able to talk to another person and get some things off your chest. In the end, you somehow feel more sane and human than before.";
@@ -623,8 +609,6 @@ to say AndreTalk1:
 to say AndreTalk5:
 	say "     <ask about the rest of the herd>";
 
-to say AndreTalk10:
-	say "     Having decided not to want to talk to Andre after all, you wave him off and turn away.";
 
 to say Plains Lizard wins:
 	say "     Standing over you with raised claws, the lizard guy suddenly looks at his claw, then you, and shakes his head. An expression of shame and embarrassment comes to his face and he stops attacking you. 'Err - sorry about that. I - I just couldn't stop when I was... I should just go.' With a last, longing look towards the distant centaurs, he drops something beside you and dashes off through the high grass, away from you and them.";
@@ -645,14 +629,15 @@ When Play begins:
 	add "Plains Lizard Male" to infections of NatureList;
 	add "Plains Lizard Male" to infections of MaleList;
 	add "Plains Lizard Male" to infections of InternalCockList;
+	add "Plains Lizard Male" to infections of InternalBallsList;
 	add "Plains Lizard Male" to infections of TaperedCockList;
 	add "Plains Lizard Male" to infections of QuadrupedalList;
 	add "Plains Lizard Male" to infections of TailList;
 	add "Plains Lizard Male" to infections of OviImpregnatorList;
 	now Name entry is "Plains Lizard Male";
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
 	now enemy Name entry is "Andre";
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]He attacks you with a slash of his claws.[or]Ouch - you manage to pull away from a bite, but still lose some skin to sharp teeth scraping over your skin.[at random]";
 	now defeated entry is "[Plains Lizard loses]";
 	now victory entry is "[Plains Lizard wins]";
@@ -677,31 +662,31 @@ When Play begins:
 	now HP entry is 40;
 	now lev entry is 6;
 	now wdam entry is 8;
-	now area entry is "Nowhere";        [ Case sensitive]
-	now Cock Count entry is 1;               [ number of cocks if sex is 'Male' or 'Both' ]
+	now area entry is "Nowhere"; [ Case sensitive]
+	now Cock Count entry is 1; [ number of cocks if sex is 'Male' or 'Both' ]
 	now Cock Length entry is 16;
-	now Ball Size entry is 2;          [ Size of balls ]
-	now Nipple Count entry is 0;             [ Number of nipples. ]
-	now Breast Size entry is 0;         [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Ball Size entry is 2; [ Size of balls ]
+	now Nipple Count entry is 0; [ Number of nipples. ]
+	now Breast Size entry is 0; [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
 	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 0;               [ number of pussies if sex is 'Female' or 'Both' ]
+	now Cunt Count entry is 0; [ number of pussies if sex is 'Female' or 'Both' ]
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	now SeductionImmune entry is false;
-	now libido entry is 40;             [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
-	now loot entry is "";               [ Dropped item, blank for none. Case sensitive. ]
-	now lootchance entry is 0;          [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 3;               [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
-	now body descriptor entry is "sleek";      [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender". Use [one of] to vary ]
-	now type entry is "reptilian";      [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
+	now libido entry is 40; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
+	now loot entry is ""; [ Dropped item, blank for none. Case sensitive. ]
+	now lootchance entry is 0; [ Percentage chance of dropping loot, from 0-100. ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now body descriptor entry is "sleek"; [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender". Use [one of] to vary ]
+	now type entry is "reptilian"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;      [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -712,7 +697,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -724,7 +709,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -743,7 +728,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -764,18 +749,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -789,19 +774,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -811,90 +796,84 @@ When Play begins:
 Section 5 - Fucking Andre
 
 Instead of fucking the Andre:
-	[puts Plains Lizard as lead monster in case of impregnation]
-	repeat with y running from 1 to number of filled rows in Table of Random Critters:
-		choose row y in Table of Random Critters;
-		if Name entry is "Plains Lizard Male":
-			now MonsterID is y;
-			break;
-	if (HP of Felix is 0): [not yet met]
-		say "ERROR-Andre-001C: He should not be around yet anywhere where players can see him.";
-	else if (HP of Felix is 100): [avoiding the player]
-		say "ERROR-Andre-100B: He should be removed from the game, together with Felix.";
+	if (lastfuck of Andre - turns < 6):
+		say "     Andre says, 'Phew, I need a break for a bit. Another time, OK?'";
 	else:
-		if (lastfuck of Andre - turns < 6):
-			say "     Andre says, 'Phew, I need a break for a bit. Another time, OK?'";
-		else:
-			say "[AndreSexMenu]";
+		say "[AndreSexMenu]";
 
 to say AndreSexMenu:
 	project the Figure of Andre_icon;
+	say "     [bold type]What do you want to do with Andre?[roman type][line break]";
+	now sextablerun is 0;
 	blank out the whole of table of fucking options;
+	[]
 	if Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Have him blow your cock";
 		now sortorder entry is 1;
-		now description entry is "Let the lizard blow you.";
-		now toggle entry is AndreSex rule;
+		now description entry is "Let the lizard blow you";
 	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Suck Andre's cock";
 	now sortorder entry is 2;
-	now description entry is "Put Andre's cock in your mouth.";
-	now toggle entry is AndreSex rule;
+	now description entry is "Put Andre's cock in your mouth";
 	[]
 	if Player is female:
 		choose a blank row in table of fucking options;
 		now title entry is "Have him lick your pussy";
 		now sortorder entry is 3;
-		now description entry is "Put the lizard's mouth to good use.";
-		now toggle entry is AndreSex rule;
+		now description entry is "Put the lizard's mouth to good use";
 	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Finger Andre's ass";
 	now sortorder entry is 4;
-	now description entry is "Stimulate the lizard guy's ass.";
-	now toggle entry is AndreSex rule;
+	now description entry is "Stimulate the lizard guy's ass";
 	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Watch Andre fuck Felix";
 	now sortorder entry is 5;
-	now description entry is "See the big lizard mount his boyfriend.";
-	now toggle entry is AndreSex rule;
+	now description entry is "See the big lizard mount his boyfriend";
 	[]
 	choose a blank row in table of fucking options;
 	now title entry is "Watch Felix fuck Andre";
 	now sortorder entry is 6;
-	now description entry is "See the big lizard being fucked by his boyfriend.";
-	now toggle entry is AndreSex rule;
+	now description entry is "See the big lizard being fucked by his boyfriend";
 	[]
 	sort the table of fucking options in sortorder order;
-	change the current menu to table of fucking options;
-	carry out the displaying activity;
-	clear the screen;
-
-This is the AndreSex rule:
-	choose row Current Menu Selection in table of fucking options;
-	let nam be title entry;
-	say "[title entry]: [description entry][line break]";
-	say "Is this what you want?";
-	if Player consents:
-		decrease menu depth by 1;
-		clear the screen;
-		if (nam is "Have him blow your cock"):
-			say "[AndreSex1]";
-		if (nam is "Suck Andre's cock"):
-			say "[AndreSex2]";
-		if (nam is "Have him lick your pussy"):
-			say "[AndreSex3]";
-		if (nam is "Finger Andre's ass"):
-			say "[AndreSex4]";
-		if (nam is "Watch Andre fuck Felix"):
-			say "[FelixSex5]";
-		if (nam is "Watch Felix fuck Andre"):
-			say "[FelixSex6]";
-		wait for any key;
-	now lastfuck of Andre is turns;
+	repeat with y running from 1 to number of filled rows in table of fucking options:
+		choose row y from the table of fucking options;
+		say "[link][y] - [title entry][as][y][end link][line break]";
+	say "[link]0 - Nevermind[as]0[end link][line break]";
+	while sextablerun is 0:
+		say "Pick the corresponding number> [run paragraph on]";
+		get a number;
+		if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
+			now current menu selection is calcnumber;
+			choose row calcnumber in table of fucking options;
+			say "[title entry]: [description entry]?";
+			if Player consents:
+				let nam be title entry;
+				now sextablerun is 1;
+				if (nam is "Have him blow your cock"):
+					say "[AndreSex1]";
+				if (nam is "Suck Andre's cock"):
+					say "[AndreSex2]";
+				if (nam is "Have him lick your pussy"):
+					say "[AndreSex3]";
+				if (nam is "Finger Andre's ass"):
+					say "[AndreSex4]";
+				if (nam is "Watch Andre fuck Felix"):
+					say "[FelixSex5]";
+				if (nam is "Watch Felix fuck Andre"):
+					say "[FelixSex6]";
+				wait for any key;
+		else if calcnumber is 0:
+			now sextablerun is 1;
+			say "     You step back from the plains lizard, shaking your head slightly as he gives a questioning look.";
+			wait for any key;
+		else:
+			say "Invalid Option. Pick between 1 and [the number of filled rows in the table of fucking options].";
+	clear the screen and hyperlink list;
 
 to say AndreSex1: [cock sucked by Andre]
 	say "     Walking up to Andre, you run a hand over his long scaled neck, pulling his head towards you a bit so you can whisper in his ear. 'I'm really horny right now. Could you do me a favor and blow me off?' Looking at you, then your crotch, the big lizard replies, 'S-sure. I totally owe you for bringing Felix and me together.'";

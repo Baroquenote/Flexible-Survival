@@ -90,19 +90,19 @@ to say beatthecfg:
 	if cfgmode is 1: [female cf]
 		say "     The defeated clockwork fox girl winds down further and collapses to the floor. She moans weakly with a few clicks and whirrs as she tries to get back up, but she is too run down to do so.";
 		WaitLineBreak;
-		if CockName of Player is "Clockwork Fox" and player is male:
+		if CockName of Player is "Clockwork Fox" and Player is male:
 			say "[beatthecfgirl1]";
-		else if libido of Player >= 50 and player is male:
+		else if Libido of Player >= 50 and Player is male:
 			say "     You are way too turned on to do anything else but try to sate your lust...";
 			say "[beatthecfgirl2]";
-		else if player is female:
+		else if Player is female:
 			say "     You don't think you're properly equipped for this, and so you get on with your other escapades.";
 		else:
 			say "     You suppose you could make your escape, if you wanted to. The other option would be to let yourself be drawn to her lure as her body tempts you to come closer...";
 			LineBreak;
 			say "     ([link]Y[as]y[end link]) - Go to her.";
 			say "     ([link]N[as]n[end link]) - Get away.";
-			if player consents:
+			if Player consents:
 				LineBreak;
 				say "[beatthecfgirl2]";
 			else:
@@ -111,21 +111,21 @@ to say beatthecfg:
 	else: [male cf]
 		say "     The defeated clockwork fox guy winds down further and collapses to the floor. He moans weakly with a few clicks and whirrs as he tries to get back up, but he is too run down to do so.";
 		WaitLineBreak;
-		if CockName of Player is "Clockwork Fox" and player is female:
+		if CockName of Player is "Clockwork Fox" and Player is female:
 			say "[beatthecfguy1]";
-		else if libido of Player >= 50 and player is male: [currently only males can take advantage of cf guy]
+		else if Libido of Player >= 50 and Player is male: [currently only males can take advantage of cf guy]
 			say "     You are way too turned on to do anything else but try to sate your lust...";
 			say "[beatthecfguy2]";
-		else if player is female: [plays this until a female scene is added]
+		else if Player is female: [plays this until a female scene is added]
 			say "     You decide to take this opportunity to make your escape, leaving him to be enjoyed by the mechanical vixens (or any of the other creatures) you've seen around the museum.";
 		else:
 			say "     You suppose you could make your escape, if you wanted to. The other option would be to let yourself be drawn to his lure as his body tempts you to come closer...";
 			LineBreak;
 			say "     ([link]Y[as]y[end link]) - Go to him.";
 			say "     ([link]N[as]n[end link]) - Get away.";
-			if player consents:
+			if Player consents:
 				LineBreak;
-				say "[beatthecfgirl2]";
+				say "[beatthecfguy2]";
 			else:
 				LineBreak;
 				say "     Thinking twice about it, you decide to take this opportunity to make your escape, leaving him to be enjoyed by the mechanical tods (or any of the other creatures) you've seen around the museum.";
@@ -137,11 +137,11 @@ to say beatthecfgirl1:
 	decrease humanity of Player by 2;
 
 to say beatthecfgirl2:
-	say "     With the sight of the defeated female before you, a metallic one at that, you lose all sense of control. Your body suddenly lights up with pure lust, your mind fogs over and your cock jerks to full attention. There's no way you can resist such a tempting specimen. As your dick dribbles, [if player is not naked]you rip off the clothes that block your cock from that dripping pussy[else]you give your length a few strokes, prepping it for what's to come[end if]. Your body then seems to go on autopilot, your hands gripping and flipping the clicking fox onto her belly. Your cock's dribbling excitement drinches her lower back, and as you hold your hands against her shoulders, you angle your crotch towards hers.";
-	say "     Her resistance is nonexistant, and so you move your hands to grab at her hips, the angled metal plating is cool, and yet hot, to the touch. There's something about them, something that drives you to even further levels of depravity, but it's far too late to care. Her legs are spread, your hands have gotten their grip, and as you angle her towards you cock, your hips slam forward. You miss the first time, but your heated lust is too out of control to feel an ounce of embarrassment. There's only a single microsecond of hesitance as you pull back, and then you're slamming forward once more, and this time, you find your mark.";
+	say "     With the sight of the defeated female before you, a metallic one at that, you lose all sense of control. Your body suddenly lights up with pure lust, your mind fogs over and your cock jerks to full attention. There's no way you can resist such a tempting specimen. As your dick dribbles, [if Player is not naked]you rip off the clothes that block your cock from that dripping pussy[else]you give your length a few strokes, prepping it for what's to come[end if]. Your body then seems to go on autopilot, your hands gripping and flipping the clicking fox onto her belly. Your cock's dribbling excitement drenches her lower back, and as you hold your hands against her shoulders, you angle your crotch towards hers.";
+	say "     Her resistance is nonexistent, and so you move your hands to grab at her hips, the angled metal plating is cool, and yet hot, to the touch. There's something about them, something that drives you to even further levels of depravity, but it's far too late to care. Her legs are spread, your hands have gotten their grip, and as you angle her towards you cock, your hips slam forward. You miss the first time, but your heated lust is too out of control to feel an ounce of embarrassment. There's only a single microsecond of hesitance as you pull back, and then you're slamming forward once more, and this time, you find your mark.";
 	WaitLineBreak;
 	say "     As your cock slips into her metallic body, you gasp at the warmth. The clockwork pussy is soft, wet and hot. It almost drives you to cum immediately, but you retain just enough control to avoid being a one-pump-chump. However, the slick feeling as you start fucking her, the mix of hot and cold as you push in and pull out, really drives you to a new high. It's almost as if this robotic entity was made for sex, and as you pick up your speed, you grin down at her, pounding her pussy with all of the power your hips can provide. The sounds of your hips slapping into her, and the feeling of folds wrapping around your cock, drive you over the edge.";
-	say "     With a powerful, gutteral moan, you slam forward as hard as you can, bottoming out in her pussy. As soon as your balls slap into her, your cock fires off like a cannon. Your cum shoots into her depths, filling her up as the heat of your seed begins to surround the tip of your length. It's a feeling you'll never grow tired of. Your cock continues to pulse for a few minutes, but as you hear cries of something nearby, you quickly pull out and wipe your cock on her ass. Grabbing your things, you then head off on your own.";
+	say "     With a powerful, guttural moan, you slam forward as hard as you can, bottoming out in her pussy. As soon as your balls slap into her, your cock fires off like a cannon. Your cum shoots into her depths, filling her up as the heat of your seed begins to surround the tip of your length. It's a feeling you'll never grow tired of. Your cock continues to pulse for a few minutes, but as you hear cries of something nearby, you quickly pull out and wipe your cock on her ass. Grabbing your things, you then head off on your own.";
 	CreatureSexAftermath "Clockwork Fox" receives "PussyFuck" from "Player";
 	increase morale of Player by 2;
 	decrease humanity of Player by 2;
@@ -153,11 +153,11 @@ to say beatthecfguy1:
 	decrease humanity of Player by 2;
 
 to say beatthecfguy2:
-	say "     With the sight of the defeated male before you, a metallic one at that, you lose all sense of control. Your body goes into autopilot, directing you to [if player is not naked]toss aside all things blocking your cock from your prize, and then you rush right over to the fox and lift his metal legs[else]rush right over to the fox and lift his metal legs[end if]. With his legs over you shoulders, and your cock angled just right, you slam forward. His anus seems to be self-lubricating, which makes the entire situation far easier on you, since you can immediately start pounding him with all your might.";
-	say "     The lubricant feels like oil, and as you glance down, you realize that's exactly what it is. Your movements don't slow even the slightest bit, however, as you don't have the mind to care about why it's easy to fuck this tempting toy. All you care about is taking back an ounce of control over this crazy world. It may be fleeting, but you know this clockwork being is at your mercy. Your hips fly into a flury after you fully realize that, your balls pulling up into your crotch as you keep fucking the male with utter abandon.";
+	say "     With the sight of the defeated male before you, a metallic one at that, you lose all sense of control. Your body goes into autopilot, directing you to [if Player is not naked]toss aside all things blocking your cock from your prize, and then you rush right over to the fox and lift his metal legs[else]rush right over to the fox and lift his metal legs[end if]. With his legs over you shoulders, and your cock angled just right, you slam forward. His anus seems to be self-lubricating, which makes the entire situation far easier on you, since you can immediately start pounding him with all your might.";
+	say "     The lubricant feels like oil, and as you glance down, you realize that's exactly what it is. Your movements don't slow even the slightest bit, however, as you don't have the mind to care about why it's easy to fuck this tempting toy. All you care about is taking back an ounce of control over this crazy world. It may be fleeting, but you know this clockwork being is at your mercy. Your hips fly into a flurry after you fully realize that, your balls pulling up into your crotch as you keep fucking the male with utter abandon.";
 	WaitLineBreak;
-	say "     It's only shortly thereafter that you release a gutteral moan, your cock surges and your seed spills into the mechanical innards of the beast before you. You find yourself still thinking about pounding the fox, plowing more seed deep into his innards, and there's no reason to resist, right? So you keep fucking, keep pounding at that ass, bits of cum pulling out with you before you pound right back in. You're spreading cum all over his hole the entire time, and as you reach your second peak, you grin in satisfaction.";
-	say "     Not only did you beat this Clockwork fox, but you took it, twice, and spread your seed all over its hole. For the next while, everything that fucks this fox will be using your cum to help them along. That's the last thought you have before your give the fox a gutteral grunt, releasing your seed deep within it. You hold your hips to his ass, your balls and cock pulsing as you unload everything you've got. It feels like ages before everything finally shoots out of your cock, but when it does, you yank free and stand over your conquered toy.";
+	say "     It's only shortly thereafter that you release a guttural moan, your cock surges and your seed spills into the mechanical innards of the beast before you. You find yourself still thinking about pounding the fox, plowing more seed deep into his innards, and there's no reason to resist, right? So you keep fucking, keep pounding at that ass, bits of cum pulling out with you before you pound right back in. You're spreading cum all over his hole the entire time, and as you reach your second peak, you grin in satisfaction.";
+	say "     Not only did you beat this Clockwork fox, but you took it, twice, and spread your seed all over its hole. For the next while, everything that fucks this fox will be using your cum to help them along. That's the last thought you have before your give the fox a guttural grunt, releasing your seed deep within it. You hold your hips to his ass, your balls and cock pulsing as you unload everything you've got. It feels like ages before everything finally shoots out of your cock, but when it does, you yank free and stand over your conquered toy.";
 	WaitLineBreak;
 	say "     With an arrogant grin, you grab you stuff and head for your next target.";
 	CreatureSexAftermath "Clockwork Fox" receives "AssFuck" from "Player";
@@ -176,7 +176,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Clockwork Fox"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Clockwork Fox"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Clockwork Fox" to infections of VulpineList;
 	add "Clockwork Fox" to infections of FurryList;
 	add "Clockwork Fox" to infections of MachineList;
@@ -185,10 +185,10 @@ When Play begins:
 	add "Clockwork Fox" to infections of KnottedCockList;
 	add "Clockwork Fox" to infections of BipedalList;
 	add "Clockwork Fox" to infections of TailList;
-	now Name entry is "Clockwork Fox"; [Name of your new Monster]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now Name entry is "Clockwork Fox";
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[cfgfight]";
 	now defeated entry is "[beatthecfg]";
 	now victory entry is "[losetocfg]";
@@ -209,7 +209,7 @@ When Play begins:
 	now per entry is 10;
 	now int entry is 14;
 	now cha entry is 10;
-	now sex entry is "Male"; 	[ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now sex entry is "Male"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
 	now HP entry is 28; [ How many HP has the monster got? She's not too hard- she doesn't want to win so much as not lose]
 	now lev entry is 2; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
 	now wdam entry is 5; [Amount of Damage monster Does when attacking. Claws and massive strength]
@@ -227,16 +227,16 @@ When Play begins:
 	now libido entry is 40; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
 	now loot entry is "";
 	now lootchance entry is 0; [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]clockwork[or]mechanical[or]compact[at random]";
 	now type entry is "vulpine"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
@@ -248,7 +248,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -260,7 +260,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -279,7 +279,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -300,18 +300,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -325,19 +325,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]

@@ -61,9 +61,9 @@ to say losetolab:
 			say "     As you are pushed to the ground the chocolate canine looks over your confectionary body, panting happily as it takes in your sweet cocoa aroma. Stepping back momentarily the lab releases one happy bark before burying its muzzle in your groin. You can't help but moan softly as the lab begins [if Player is herm]alternating between licking at your increasingly firm maleness and lapping at your womanly folds, quickly coating your crotch in its warm syrupy saliva[else if Player is female]lapping at your womanly folds, driving its warm sticky canine tongue into your depths[else if Player is male]licking at your increasingly firm maleness, soon coating your entire erect length in its warm syrupy saliva[else]lapping at your featureless groin[end if]. As the chocolate canine continues to pleasure you and your mind slips into the haze of your arousal, you begin to lose focus on maintaining cohesion of your confectionary body, and apparently this is exactly what your attacker wants.";
 			WaitLineBreak;
 			say "     Confused for a moment as the attention at your groin suddenly stops you look up to see the lab stepping backwards, releasing a few happy yips before crouching down and leaping towards you. Before you can react the chocolate dog lands squarely on your chest, licking your face happily as you try and push it off. It is at this point that your realize the dog is not standing on you, but IN you! You begin to panic as the lab begins to sink deeper into your body, thrashing about wildly as you attempt to separate yourself from the canine, however this only seams to make matters worse, quickening the pace of the sinking lab. You can only watch in horror as the last of the chocolaty canine disappears into your body, giving you one last bark before submerging completely. With little choice and a heavy sigh you rise to a stand on uneasy feet, already feeling the chocolate of your unwanted passenger churning and mingling with your own. You can hear its happy barking in the back of your mind, but with no way to separate yourself from the chocolate canine all you can do is gather your equipment and your resolve before making your way to a safer location.";
-			if player is female:
+			if Player is female:
 				CreatureSexAftermath "Chocolate Lab" receives "OralPussy" from "Player";
-			if player is male:
+			if Player is male:
 				CreatureSexAftermath "Chocolate Lab" receives "OralCock" from "Player";
 			now labhost is 1;
 			now labtimerA is 21;
@@ -73,9 +73,9 @@ to say losetolab:
 			say "     You are pushed onto your back as the dog climbs atop you, flowing its molten chocolate body over you. You can feel the firm press of its body at your puss[yfn] and asshole, spreading you open with a cock of hard chocolate for each. Its body also grips around your cock[smn] with a soft, wet pussy[if Cock Count of Player > 1] for each[end if]. Its fluid form flows and ripples, rubbing all over your body and teasing your nipples. The amorous confection stimulates you inside and out until finally it shoots its white chocolate cream into every hole and you pump your hot cum into it in return.";
 		else if Player is female:	[female]
 			say "     You are pushed onto your back as the dog climbs atop you, flowing its molten chocolate body over you. You can feel the firm press of its body at your puss[yfn] and asshole, spreading you open with a cock of hard chocolate for each. Its fluid form flows and ripples, rubbing all over your body and teasing your nipples. The amorous confection stimulates you inside and out until finally it shoots its white chocolate cream into every hole.";
-			if player is female:
+			if Player is female:
 				CreatureSexAftermath "Player" receives "PussyFuck" from "Chocolate Lab";
-			if player is male:
+			if Player is male:
 				CreatureSexAftermath "Player" receives "AssFuck" from "Chocolate Lab";
 				CreatureSexAftermath "Chocolate Lab" receives "PussyFuck" from "Player";
 		else:	[male]
@@ -145,7 +145,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Chocolate Dog"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Chocolate Dog"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Chocolate Lab" to infections of CanineList;
 	add "Chocolate Lab" to infections of FoodList;
 	add "Chocolate Lab" to infections of HumorousList;
@@ -157,23 +157,23 @@ When Play begins:
 	add "Chocolate Lab" to infections of QuadrupedalList;
 	add "Chocolate Lab" to infections of FeralmindList;
 	add "Chocolate Lab" to infections of TailList;
-	now Name entry is "Chocolate Lab"; [Name of your new Monster]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now Name entry is "Chocolate Lab";
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "The [one of]milk chocolate creature knocks itself into you, trying to push you down[or]semi-fluid canine slashes its forepaws at you, suddenly making them hard and leaving chocolate scraps across your skin[or]The gooey Labrador bites at your wrist, leaking some of its thick, chocolate saliva onto you[or]malleable dog flows around your leg, gripping it firmly. You pull frantically as it starts to flow up over it. You manage to pull free, but wrench your knee in the process[or]chocolate lab snaps at you as you try to fend it off, but you end up splattered with chocolaty syrup. The scent of it makes your head dizzy, draining your will to resist the sweet smelling beast[or]flowing dog pounces at you, trying to push you down, partially collapsing into a wave of chocolate that you have to pull free from[or]milk chocolate dog swipes its paws at you, leaving thick streaks of chocolate across your body. The scent of it weakens your resolve to keep fighting[or]chocolate Lab pounces onto you, covering your face in slobbery, chocolate kisses that weaken your resolve to continue resisting[at random]!";
 	now defeated entry is "[beatthelab]";
 	now victory entry is "[losetolab]"; [Text used when monster wins, can be directly entered like combat text or description. or if more complex it can be linked to a 'To Say' block as the demonstration text shows.]
 	now desc entry is "[choclabdesc]"; [ Description of the creature when you encounter it.]
-	now face entry is "dog's head, a smooth, rich brown and somehow made of chocolate. You have a long, slobbery tongue and drool chocolate syrup. Your eyes are a solid, dark black, as if made of dark chocolate, but still able to see. As if being constantly remolded instead of moving flesh and bone, your expression seems to shift the shape of your face"; [ Face description, format as "Your face is (your text)."]
-	now body entry is "that of an anthropomorphic canine, strangely somehow chocolate in color and composition. Your body is covered in a confectionary imitation of [SkinSpeciesName of Player in lower case] flesh. Your body has become like soft chocolate, bending and reshaping itself to move instead of having any actual bones or muscles[if labhost > 0]. Occasionally, an extra chocolaty tail, or the head of another chocolate lab pushes out of your chocolate form, barking or drooling its thick chocolate saliva as it pants happily, making the presence of your unwanted passenger clear[end if]. The scent of cocoa lingers pleasantly around you. When teased, you leak white chocolate syrup from your nipples"; [ Body Description, format as "Your Body is (your text)."]
-	now skin entry is "a soft layer of milk-chocolate in the place of regular"; [ skin Description, format as "Looking at yourself, your body is covered in (your text) skin"]
+	now face entry is "dog's head, a smooth, rich brown and somehow made of chocolate. You have a long, slobbery tongue and drool chocolate syrup. Your eyes are a solid, dark black, as if made of dark chocolate, but still able to see. As if being constantly remolded instead of moving flesh and bone, your expression seems to shift the shape of your face"; [ Face description, format as "Your face is [Face of Player]." ]
+	now body entry is "that of an anthropomorphic canine, strangely somehow chocolate in color and composition. Your body is covered in a confectionary imitation of [SkinSpeciesName of Player in lower case] flesh. Your body has become like soft chocolate, bending and reshaping itself to move instead of having any actual bones or muscles[if labhost > 0]. Occasionally, an extra chocolaty tail, or the head of another chocolate lab pushes out of your chocolate form, barking or drooling its thick chocolate saliva as it pants happily, making the presence of your unwanted passenger clear[end if]. The scent of cocoa lingers pleasantly around you. When teased, you leak white chocolate syrup from your nipples"; [ Body Description, format as "Your Body is [Body of Player]." ]
+	now skin entry is "a soft layer of milk-chocolate in the place of regular"; [ Skin Description, format as "Looking at yourself, your body is covered in [Skin of Player] skin." ]
 	now tail entry is "You have a slender, canine tail made of chocolate that wags happily."; [ Tail description, write a whole Sentence or leave blank. ]
 	now cock entry is "chocolate-brown, canine"; [ Cock Description, format as you have a 'size' (your text) cock]
-	now face change entry is "it seems to lose all internal structure. Your nose and mouth push out to form a canine muzzle while your ears and the rest of your head change as well. Your vision blurs momentarily as your eyes change somehow. The scent of cocoa fills you, exciting you, making you hunger for it. Somehow you know your head is made of chocolate, through and through. Your tongue lolls from your mouth, drooling a chocolaty syrup as your dark chocolate eyes look around"; [ face change text. format as "Your face feels funny as (your text)." ]
-	now body change entry is "a strange sensation sinks into you as your whole body changes. Your body becomes that of an anthropomorphic dog, with paw-like hands and feet and digitigrade legs. But that's not strange when compared to the internal changes you're feeling. It is as if your muscles, bones and organs are melting and reforming into flowing chocolate. Your mind tries to maintain cohesion on it, holding your body in a state of semi-solid chocolateness"; [ body change text. format as "Your body feels funny as (your text)." ]
-	now skin change entry is "a soft layer of milk chocolate coats you that flexes and shifts as you move"; [ skin change text. format as "Your skin feels funny as (your text)." ]
-	now ass change entry is "a short, canine tail grows from your ass. But it is not made of fur and flesh, but instead of malleable chocolate that wags all the same"; [ ass/tail change text. format as "Your ass feels funny as (your text)." ]
+	now face change entry is "it seems to lose all internal structure. Your nose and mouth push out to form a canine muzzle while your ears and the rest of your head change as well. Your vision blurs momentarily as your eyes change somehow. The scent of cocoa fills you, exciting you, making you hunger for it. Somehow you know your head is made of chocolate, through and through. Your tongue lolls from your mouth, drooling a chocolaty syrup as your dark chocolate eyes look around"; [ Face change text, format as "Your face feels funny as [face change entry]." ]
+	now body change entry is "a strange sensation sinks into you as your whole body changes. Your body becomes that of an anthropomorphic dog, with paw-like hands and feet and digitigrade legs. But that's not strange when compared to the internal changes you're feeling. It is as if your muscles, bones and organs are melting and reforming into flowing chocolate. Your mind tries to maintain cohesion on it, holding your body in a state of semi-solid chocolateness"; [ Body change text, format as "Your body feels funny as [body change entry]." ]
+	now skin change entry is "a soft layer of milk chocolate coats you that flexes and shifts as you move"; [ Skin change text, format as "Your skin feels funny as [skin change entry]." ]
+	now ass change entry is "a short, canine tail grows from your ass. But it is not made of fur and flesh, but instead of malleable chocolate that wags all the same"; [ Ass/tail change text, format as "Your ass feels funny as [ass change entry]." ]
 	now cock change entry is "it becomes canine in shape, then starts to turn a smooth, even chocolate-brown in color. As this change in color happens, you can feel it becoming made of chocolate. A flexible sheath grows to bundle it up and white, creamy chocolate leaks from its tip"; [ cock change text. format as "Your cock feels funny as (your text)." ]
 	now str entry is 12;
 	now dex entry is 14;
@@ -184,7 +184,7 @@ When Play begins:
 	now sex entry is "Both"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
 	now HP entry is 40;
 	now lev entry is 4; [ Level of the Monster, you get this much XP if you win, or this much XP halved if you loose ]
-	now wdam entry is 6; [Amount of Damage monster Does when attacking.]
+	now wdam entry is 6; [ Amount of Damage monster Does when attacking. ]
 	now area entry is "High"; [ Location of monster, in this case the High Rise District]
 	now Cock Count entry is 3; [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
 	now Cock Length entry is 8; [ Length infection will make cock grow to if cocks]
@@ -200,15 +200,15 @@ When Play begins:
 	now loot entry is "chocolate milk"; [ Dropped item. Key will be used later ]
 	now lootchance entry is 25; [ Chance of loot dropping 0-100 ]
 	now MilkItem entry is "chocolate milk";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 2; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]chocolate[or]confectionary[or]flowing[or]malleable[at random]";
 	now type entry is "canine"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
@@ -220,7 +220,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -232,7 +232,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -251,7 +251,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -272,18 +272,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -297,19 +297,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]

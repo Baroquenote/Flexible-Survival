@@ -1,5 +1,6 @@
 Version 1 of Automaton by Stripes begins here.
 [Version 1.1 - Added player loss oral w/male and randomized outcomes]
+[ Version 1.2 - Added Automaton gear loot item & trophy list - Fenekku]
 
 "Adds Automaton to Flexible Survival."
 
@@ -92,21 +93,21 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Automaton"; [name of the overall species of the infection, used for children, ...]
-	add "Automaton" to infections of FurryList;
+	now Species Name entry is "Automaton"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
+	add "Automaton" to infections of FemaleList;
 	add "Automaton" to infections of MachineList;
 	add "Automaton" to infections of MaleList;
 	add "Automaton" to infections of BipedalList;
 	now Name entry is "Automaton"; [ Infection/Creature name. Capitalized. ]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of][if a random chance of 1 in 3 succeeds]The automaton[else if autogender is 1]He[else]She[end if] strikes you with a metal fist![or][if a random chance of 1 in 3 succeeds]The automaton[else if autogender is 1]He[else]She[end if] squeezes your wrist in its painfully strong grip![or][if a random chance of 1 in 3 succeeds]The automaton[else if autogender is 1]He[else]She[end if] batters you hard blows![or][if a random chance of 1 in 3 succeeds]The automaton[else if autogender is 1]He[else]She[end if] knees you in the gut with its metal leg![at random]";
 	now defeated entry is "[beattheautomaton]"; [ Text when monster loses. ]
 	now victory entry is "[losetoautomaton]"; [ Text when monster wins. ]
 	now desc entry is "[automatondesc]"; [ Description of the creature when you encounter it. ]
 	now face entry is "a [if Player is female]feminine[else]masculine[end if] version of your human face, but flat and expressionless. Your eyes glow with a [if Playermetalskin is 1]yellow[else if Playermetalskin is 2]blue[else if Playermetalskin is 3]green[else if Playermetalskin is 4]red[end if] light";
-	now body entry is "back to human in form, but moves with stiff, mechanical motions as if you're no longer flesh and blood inside"; [ Body. Format as "Your body is [Body of Player]." ]
+	now body entry is "back to human in form, but moves with stiff, mechanical motions as if you're no longer flesh and blood inside"; [ Body description, format as "Your body is [Body of Player]." ]
 	now skin entry is "[if Playermetalskin is 1]bronze[else if Playermetalskin is 2]aluminum[else if Playermetalskin is 3]cobalt with a faint blue tint[else if Playermetalskin is 4]steel[end if]";
 	now tail entry is ""; [ Ass/Tail. Write as a full sentence (with period) or leave blank for none. ]
 	now cock entry is "[one of]metallic[or][if Playermetalskin is 1]bronze[else if Playermetalskin is 2]aluminum[else if Playermetalskin is 3]cobalt[else if Playermetalskin is 4]steel[end if][or]human-shaped[at random]";
@@ -137,18 +138,18 @@ When Play begins:
 	now Cunt Tightness entry is 4; [ Width of female sex the infection will try to give a player. ]
 	now SeductionImmune entry is true;
 	now libido entry is 0; [ Target libido the infection will rise towards. ]
-	now loot entry is "silver semen"; [ Dropped item, blank for none. Case sensitive. ]
+	now loot entry is "Automaton gear"; [ Dropped item, blank for none. Case sensitive. ]
 	now lootchance entry is 0; [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is "automaton milk"; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is "automaton cum"; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "[GenerateTrophyList_Automaton]"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]normal[or]unchanged[at random]";
 	now type entry is "[one of]human[or]humanoid[or]robotic[at random]";
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
@@ -160,7 +161,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -172,7 +173,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -191,7 +192,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -212,18 +213,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -237,19 +238,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -260,32 +261,70 @@ to say autoskinchange:
 	now playermetalskin is metalskin;
 	say "grows hard and metallic, stiffening into a shifting, flexing skin made of [if Playermetalskin is 1]bronze[else if Playermetalskin is 2]aluminum[else if Playermetalskin is 3]cobalt[else if Playermetalskin is 4]steel[end if]";
 
+Section 3 - Loot
+
+to say GenerateTrophyList_Automaton:
+	[ Reminder: LootBonus can be +35 at maximum - 10 for Magpie Eyes, 15 for Mugger and 10 from Player Perception ]
+	if a random chance of (80 + LootBonus) in 100 succeeds: [common drop]
+		add "Automaton gear" to CombatTrophyList;
+	if a random chance of (50 + LootBonus) in 100 succeeds: [common drop]
+		add "automaton cum" to CombatTrophyList;
+	if a random chance of (30 + LootBonus) in 100 succeeds: [uncommon drop]
+		add "automaton milk" to CombatTrophyList;
+	if Debug is at level 10:
+		say "DEBUG: Trophy List: [CombatTrophyList].";
 
 Table of Game Objects (continued)
 name	desc	weight	object
-"silver semen"	"Flowing, mercurial cum."	1	silver semen
+"Automaton gear"	"A copper gear that looks like it has been pulled out of an automaton."	1	Automaton gear
 
-silver semen is a grab object.
-Usedesc of silver semen is "[silversemenuse]".
-
+Automaton gear is a grab object.
 It is temporary.
-silver semen is cum.
+Usedesc of Automaton gear is "[Automaton gear use]".
 
-to say silversemenuse:
-	say "With a little shrug, you tilt your head back and slam down the silvery semen, letting the metallic contents flow down your throat.";
-	[puts Automaton as lead monster in case of impregnation]
-	repeat with y running from 1 to number of filled rows in Table of Random Critters:
-		choose row y in Table of Random Critters;
-		if Name entry is "Automaton":
-			now MonsterID is y;
-			if "Male Preferred" is listed in feats of Player:
-				now sex entry is "Male";
-			else:
-				now sex entry is "Female";
-			break;
-	infect;
+to say Automaton gear use:
+	say "Holding the automaton gear on a finger, you spin it idly with your other hand, curious as to how well it turns. Strangely, the gear disintegrates after a while, becoming a cloud of fine particles that are absorbed into your skin.";
+	Infect "Automaton";
 
-the scent of silver semen is "The contents of the jar has a metallic smell to accompany the musky scent of semen.".
+instead of sniffing Automaton gear:
+	say "The gear has a coppery, metallic scent.";
+
+Table of Game Objects (continued)
+name	desc	weight	object
+"automaton cum"	"A plastic water bottle containing a moderate amount of milky white fluid. Almost could be mistaken for mercury, if someone hadn't written 'Automaton Cum' across the label on the bottle. You [italic type]could[roman type] drink it to quench your thirst, or you maybe just do it for fun. Who knows what else it might do to you though..."	1	automaton cum
+
+automaton cum is a grab object.
+automaton cum is cum.
+automaton cum is infectious.
+Purified of automaton cum is "distilled cum".
+Strain of automaton cum is "Automaton".
+Usedesc of automaton cum is "[automaton cum use]";
+
+to say automaton cum use:
+	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy cum run over your tongue and down your throat. Tastes metallic. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
+	PlayerDrink 5;
+	SanLoss 5;
+
+instead of sniffing automaton cum:
+	say "You open the lid for a moment and take a sniff. Doesn't smell too bad actually, just kinda coppery.";
+
+Table of Game Objects (continued)
+name	desc	weight	object
+"automaton milk"	"A plastic water bottle filled with what is clearly milk. One could think it was a regular cow's milk, if someone hadn't written 'Automaton Milk' across the label on the bottle. You [italic type]could[roman type] drink it to quench your thirst. Who knows what else it might do to you though..."	1	automaton milk
+
+automaton milk is a grab object.
+automaton milk is milky.
+Purified of automaton milk is "distilled milk".
+automaton milk is infectious.
+Strain of automaton milk is "Automaton".
+Usedesc of automaton milk is "[automaton milk use]";
+
+to say automaton milk use:
+	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the automaton milk run over your tongue and down your throat. Tastes rich and a little like metal. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
+	PlayerDrink 15;
+
+instead of sniffing automaton milk:
+	say "You open the lid for a moment and take a sniff. Smells kinda like any other milk, really.";
 
 [
 Section 3 - Endings

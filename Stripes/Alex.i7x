@@ -8,14 +8,51 @@ Table of GameCharacterIDs (continued)
 object	name
 Alex	"Alex"
 
-Alex is a man. Alex is in Alex's Condo.
+Alex is a man.
+Alex is in Alex's Condo.
+ScaleValue of Alex is 3. [human sized]
+SleepRhythm of Alex is 0. [0 - awake at all times, 1 - day active, 2 - night active]
+Body Weight of Alex is 3. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
+Body Definition of Alex is 4. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
+[Body Adjective is generated out of the body weight and body definition and can be used in scenes - one word descriptive adjective depending on weight and definition groups: low weight group: skinny/slender/lithe; mid weight group: average/fit/muscled; high weight group: pudgy/husky/jacked]
+Androginity of Alex is 2. [Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/somewhat effeminate/effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
+Mouth Length of Alex is 6. [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
+Mouth Circumference of Alex is 3. [mouth circumference 1-5, "tiny, small, normal, wide, gaping"]
+Tongue Length of Alex is 6. [length in inches]
+Breast Size of Alex is 0. [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+Nipple Count of Alex is 2. [count of nipples]
+Asshole Depth of Alex is 6. [inches deep for anal fucking]
+Asshole Tightness of Alex is 2. [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+Cock Count of Alex is 1. [number of cocks]
+Cock Girth of Alex is 2. [thickness 1-5, thin/slender/average/thick/monstrous]
+Cock Length of Alex is 6. [Length in Inches]
+Ball Count of Alex is 2. [allowed numbers: 1 (uniball), 2 or 4]
+Ball Size of Alex is 2. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
+Cunt Count of Alex is 0. [number of cunts]
+Cunt Depth of Alex is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Tightness of Alex is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+Clit Size of Alex is 0. [size 1-5, very small/small/average/large/very large]
+[Basic Interaction states as of game start]
+PlayerMet of Alex is false.
+PlayerRomanced of Alex is false.
+PlayerFriended of Alex is false.
+PlayerControlled of Alex is false.
+PlayerFucked of Alex is false.
+OralVirgin of Alex is true.
+Virgin of Alex is true.
+AnalVirgin of Alex is true.
+PenileVirgin of Alex is false.
+SexuallyExperienced of Alex is true.
+TwistedCapacity of Alex is false. [Twisted Characters can take any penetration, no matter the size]
+Sterile of Alex is true. [steriles can't knock people up]
+MainInfection of Alex is "".
+Description of Alex is "[AlexDesc]".
 Conversation of alex is { "Poing!" }.
+the scent of Alex is "[alexscent]".
 alexbrunch is a number that varies.
 alexdiego is a number that varies.
 alexleeinfo is a number that varies.
 gettinglee is a number that varies.
-
-the scent of Alex is "[alexscent]".
 
 a postimport rule: [bugfixing rules for players that import savegames]
 	if alexbrunch >= 4:
@@ -27,7 +64,8 @@ to say alexscent:
 	else:
 		say "Alex smells of male ferret and brunchtime fun.";
 
-Description of Alex is "[if alexbrunch < 4]A mostly humanoid male with ferret-like ears and a long, sinuous tail. He has a twitchy animal nose with whiskers around it. He has a slightly rumpled suit on, still looking good despite his changes. He is a pleasant enough looking person who looks even better in those moments when he's not stressed or worried by his clients[else]Alex is a sexy ferret male, with a cute mustelid head. His twitchy animal nose has an array of whiskers around it. He has a slightly rumpled suit on, still looking good despite his changes. You find his new look quite pleasing to the eyes and he certainly seems much happier and friendlier of late. It seems the changes he's undergone are for the better[end if].".
+to say AlexDesc:
+	say "[if alexbrunch < 4]A mostly humanoid male with ferret-like ears and a long, sinuous tail. He has a twitchy animal nose with whiskers around it. He has a slightly rumpled suit on, still looking good despite his changes. He is a pleasant enough looking person who looks even better in those moments when he's not stressed or worried by his clients[else]Alex is a sexy ferret male, with a cute mustelid head. His twitchy animal nose has an array of whiskers around it. He has a slightly rumpled suit on, still looking good despite his changes. You find his new look quite pleasing to the eyes and he certainly seems much happier and friendlier of late. It seems the changes he's undergone are for the better[end if].";
 
 Table of GameRoomIDs (continued)
 Object	Name
@@ -172,19 +210,6 @@ to say ResolveEvent Find Lorenda:
 		now AlexProgress is 2;
 		now battleground is "void";
 		now find lorenda is resolved;
-
-[
-Instead of conversing the Rod while AlexProgress is 2:
-	say "     'Darrell? Yeah, he was here when it all went down. But... you might be a little surprised.[if HP of ronda is 0] Go talk to my girl, she knows where he is.'[else]' He shrugs, and points to the north. 'Go ask the others. They might know where he is.' He seems a little bummed.[end if]";
-]
-
-instead of going to Mall Atrium while AlexProgress is 2:		[now works for getting there either from Nermine's shop or the food court]
-	now the player is in Mall Atrium;
-	if Ronda is in Mall Atrium:
-		say "     You arrive in the atrium of the mall and approach Ronda, Rod's girlfriend. 'Yeah, I know where he is. Darrell, c'mere!' Another mall rat approaches, and it shortly becomes clear that the city's star point guard is now a good deal furrier and rattier. He arrives and asks her 'What's up?' She explains the situation, and he nods, facing you. After some brief explanation, the white rat nods. 'You can go tell Alex I appreciate his concern, but I'm pretty good here at this point.' You try to convince him, but he stands firm on it. 'Nah, I'm good here, man.' Darrell waves and heads back to talk to some of the other rats, putting his arms around a pair of the girls. You sigh a bit, and you have some mixed news for Alex the next time you see him.";
-	else:
-		say "     You arrive in the atrium of the mall and approach one of the various mall rats there. After going back and forth between a few of them, eventually you come to Darrell. It shortly becomes clear that the city's star point guard is now a good deal furrier and rattier. 'What's up?' the white rat asks. After some brief explanation, he nods. 'You can go tell Alex I appreciate his concern, but I'm pretty good here at this point.' You try to convince him, but he stands firm on it. 'Nah, I'm good here, man.' Darrell waves and heads back to talk to some of the other rats, putting his arms around a pair of the girls. You sigh a bit, and you have some mixed news for Alex the next time you see him.";
-	now AlexProgress is 3;
 
 
 instead of entering the Confession Booth while AlexProgress is 4:

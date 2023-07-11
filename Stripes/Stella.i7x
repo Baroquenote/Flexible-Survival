@@ -2,7 +2,7 @@ Version 1 of Stella by Stripes begins here.
 [ Version 1.2 - Spoony sex scene and oral 3some w/Jimmy ]
 [NOTE: It was the commissioner's specific request that this character top only. She's very "been there, done that" with her vagina and is instead all "I've got a stiffy!"]
 
-"Adds a dalmatian herm to Flexible Survival."
+"Adds a Dalmatian herm to Flexible Survival."
 
 [  HP of Stella                                                                ]
 [ overall status                                                               ]
@@ -22,7 +22,7 @@ Eager Dal is a situation.
 ResolveFunction of Eager Dal is "[ResolveEvent Eager Dal]".
 Sarea of Eager Dal is "Red".
 when play begins:
-	add Eager Dal to badspots of HermList;
+	add Eager Dal to BadSpots of HermList;
 	add Eager Dal to BadSpots of FurryList;
 
 to say ResolveEvent Eager Dal:
@@ -30,9 +30,9 @@ to say ResolveEvent Eager Dal:
 		say "DEBUG -> HP: [HP of Stella]. Location: [location of Stella]. Alexandra's hint: [if AT_Stella is true]Given[else]Not given[end if]. <- DEBUG[line break]";
 	if HP of Stella is 0:
 		project the figure of Stella_icon;
-		say "     As you're sneaking through an alley between two buildings, you hear a cheerful British voice call out to you from behind. 'Hey there, hon. Care to bang?' Expecting it to be a sex-crazed monster by this point, you turn and take up a fighting stance. 'Whoa there, cowboy! Kind of touchy, aren't we? No need to spaz out!' the cute dalmatian herm in front of you says, paws up as she takes a quick couple of steps back.";
+		say "     As you're sneaking through an alley between two buildings, you hear a cheerful British voice call out to you from behind. 'Hey there, hon. Care to bang?' Expecting it to be a sex-crazed monster by this point, you turn and take up a fighting stance. 'Whoa there, cowboy! Kind of touchy, aren't we? No need to spaz out!' the cute Dalmatian herm in front of you says, paws up as she takes a quick couple of steps back.";
 		say "     Realizing you'd misjudged the situation, you relax a little and try to strike up a conversation. As you do, you look her over more closely. Aside from having a nice figure and shapely breasts, the dog-woman's got a cute face with a happy smile on her muzzle. She's got shoulder-length white hair with a splash of black on her bangs. She's wearing a pair of glasses in front of her bright, blue eyes. And between her legs is an obviously canine cock.";
-		say "     Aside from learning that her name is Stella, most of your conversation's pretty vacuous babbling. She mainly talks about how she's been enjoying herself since she'd woken up as a dalmatian. Actually, her big thing's her new dick, which she's been trying out all around town. It's no wonder she's ended up in this neighborhood with an attitude like that. When she mentions having been looking for somewhere safe to hang out when she needs to rest, you wonder about inviting her to come with you.";
+		say "     Aside from learning that her name is Stella, most of your conversation's pretty vacuous babbling. She mainly talks about how she's been enjoying herself since she'd woken up as a Dalmatian. Actually, her big thing's her new dick, which she's been trying out all around town. It's no wonder she's ended up in this neighborhood with an attitude like that. When she mentions having been looking for somewhere safe to hang out when she needs to rest, you wonder about inviting her to come with you.";
 		say "     [bold type]Shall you do just that?[roman type][line break]";
 		LineBreak;
 		say "     ([link]Y[as]y[end link]) - Yes.";
@@ -40,11 +40,11 @@ to say ResolveEvent Eager Dal:
 		if Player consents:
 			say "[convincestella]";
 		else:
-			say "     You decide against it and stay mum. After a few more minutes of chatting, the dalmatian herm gives a chipper farewell and goes off in search of fun elsewhere.";
+			say "     You decide against it and stay mum. After a few more minutes of chatting, the Dalmatian herm gives a chipper farewell and goes off in search of fun elsewhere.";
 			now Resolution of Eager Dal is 99; [disinterest]
 			now Eager Dal is resolved;
 	else:
-		say "     You end up crossing paths with Stella the dalmatian herm again. She strikes up a friendly, if meandering, conversation with you for a while. During your chat, you try to convince her to come with you.";
+		say "     You end up crossing paths with Stella the Dalmatian herm again. She strikes up a friendly, if meandering, conversation with you for a while. During your chat, you try to convince her to come with you.";
 		say "[convincestella]";
 
 
@@ -110,7 +110,7 @@ Cock Length of Stella is 10. [length in inches]
 Ball Count of Stella is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Stella is 3. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Stella is 1. [number of cunts]
-Cunt Depth of Stella is 9. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Stella is 9. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Stella is 3. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Stella is 4. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -135,7 +135,7 @@ StellaNPCInt is a text that varies. StellaNPCInt is usually "AAAAAAAAAAAA".
 the scent of the Stella is "Stella smells of canine arousal, the scent of sex lingering around her always.".
 
 to say stelladesc:
-	say "     Once a female exchange student from England, she's been transformed into a herm dalmatian by the outbreak. Aside from having a nice figure and shapely breasts, the dog-woman's got a cute face with a happy smile on her muzzle. Despite having a refined British accent, it seems like she's always been a bit of a ditzy slut even before coming here. She's got shoulder-length white hair with a splash of black on her bangs. She's wearing a pair of glasses in front of her bright, blue eyes. She's got a somewhat larger than normal cock, canine in form and lacking in sheath or balls. It grows from the top of her pussy, turning her clitoris into this dripping doggy dong she's so proud of.";
+	say "     Once a female exchange student from England, she's been transformed into a herm Dalmatian by the outbreak. Aside from having a nice figure and shapely breasts, the dog-woman's got a cute face with a happy smile on her muzzle. Despite having a refined British accent, it seems like she's always been a bit of a ditzy slut even before coming here. She's got shoulder-length white hair with a splash of black on her bangs. She's wearing a pair of glasses in front of her bright, blue eyes. She's got a somewhat larger than normal cock, canine in form and lacking in sheath or balls. It grows from the top of her pussy, turning her clitoris into this dripping doggy dong she's so proud of.";
 	if Police Station Twelve is known and HP of Stella >= 52:
 		say "     Being no stranger to roaming the city, you can ask to [bold type]move Stella[roman type] between the police station and the library.";
 
@@ -200,9 +200,9 @@ to say sexwithStella:
 	else if HP of Stella is 2:
 		say "     Perhaps you should talk to her first. She certainly seems eager enough, but it'd probably be best to chat a bit first.";
 	else if lastfuck of Stella - turns < 4:
-		say "     'I'm glad to see you're stoked for more, but [one of]I was thinking of popping out for a bit of variety[or]even I need a break from time to time[or]I'm knackered[at random],' the dalmatian responds.";
+		say "     'I'm glad to see you're stoked for more, but [one of]I was thinking of popping out for a bit of variety[or]even I need a break from time to time[or]I'm knackered[at random],' the Dalmatian responds.";
 	else:
-		say "     The dalmatian herm's ears perk up at the suggestion of sex. She rubs her canine cock, making it twitch upwards as it stiffens at the prospect of fun. '[one of]So which hole are you looking for me to stuff?'[or]How about you bend over for the pretty doggy?'[or]Let's get this shag on the road.'[at random]";
+		say "     The Dalmatian herm's ears perk up at the suggestion of sex. She rubs her canine cock, making it twitch upwards as it stiffens at the prospect of fun. '[one of]So which hole are you looking for me to stuff?'[or]How about you bend over for the pretty doggy?'[or]Let's get this shag on the road.'[at random]";
 		say "[Stellasexmenu]";
 
 
@@ -240,7 +240,7 @@ to say Stellasexmenu:
 		now sortorder entry is 7;
 		now description entry is "Be this Brit's bitch";
 	if HP of Stella >= 4:	[threesomes]
-		if Jimmy is visible and lastfuck of Jimmy - turns >= 6 and HP of Jimmy >= 4 and player is male:
+		if Jimmy is visible and lastfuck of Jimmy - turns >= 6 and HP of Jimmy >= 4 and Player is male:
 			choose a blank row in table of fucking options;
 			now title entry is "Oral threesome with Jimmy";
 			now sortorder entry is 10;
@@ -282,7 +282,7 @@ to say Stellasexmenu:
 
 
 to say stellasex1:
-	say "     Offering to blow her, she grins and strokes her swelling penis. 'That's the spirit,' she says in her cheerful British accent. As you drop to your knees in front of her, she offers her canine cock with a doggy grin on her muzzle. It's a reddish-pink in color and thoroughly canine in form. It may just be the infection, but looking at it makes your mouth start to water. [one of]After giving it a teasing lick[or]after some kisses along its six-inch length[or]After a playful lick across her pussy[at random], you let it slide past your lips and start sucking the dalmatian herm off.";
+	say "     Offering to blow her, she grins and strokes her swelling penis. 'That's the spirit,' she says in her cheerful British accent. As you drop to your knees in front of her, she offers her canine cock with a doggy grin on her muzzle. It's a reddish-pink in color and thoroughly canine in form. It may just be the infection, but looking at it makes your mouth start to water. [one of]After giving it a teasing lick[or]after some kisses along its six-inch length[or]After a playful lick across her pussy[at random], you let it slide past your lips and start sucking the Dalmatian herm off.";
 	say "     Stella's doghood pulses and throbs in your mouth, drooling precum across your tongue. You lick and suck on it eagerly while she strokes her paws over your head[one of]. While sucking on that juicy dogcock, you brush your fingers across her pussy lips. After some light teasing, you slip a pair of fingers into her dripping folds and work them in and out. She pants in excitement at this and starts thrusting into your mouth, all the more eager to fuck your face[or]. While sucking on that juicy dogcock, you can't help but notice her lack of balls, her penis growing up from her pussy like an enlarged clit, but shaped like a dog's wang. You're distracted from your musing as she starts thrusting into your mouth because your attention's wavered[or]. While sucking on that juicy dogcock, you feel across it with your tongue, lavishing attention upon it. You work especially attentively across her pointed glans and dribbling cumslit. As her excitement builds, she grips your head more firm and starts thrusting into your mouth[at random]. Panting heavily with excitement, she grits her teeth and whines like a dog, her climax approaching. And with barks of excitement, she presses your face to her groin and cums hard, pumping her canine cum down your throat.";
 	NPCSexAftermath Player receives "OralCock" from Stella;
 
@@ -297,7 +297,7 @@ to say stellasex3:
 	say "     Panting with her tongue hanging out, the horny herm drives her animal cock into you again and again. She fucks you at a leisurely pace so as not to push you off. This lets you enjoy the firm push of that doggy dong into your [if Player is female]hot tunnel delightfully[else]ass, buggering you skillfully[end if], allowing you to feel its exotic, animalistic shape as it moves in and out of you.";
 	say "     With you resting atop one of her arms, she cuddles you with that one while the other roams across your [bodydesc of Player] body[if Breast Size of Player > 0]. Her paw stops for a time at your chest, groping and fondling your tits in a playful manner that is never too rough[end if]. Eventually, her paw makes it way to your crotch[if Player is herm]. After playfully brushing over your erection, she slips beneath it to tease your cock-filled pussy. Spreading her fingers into a V, she rubs her furry digits along either side of her thrusting shaft, further stimulating your cunt[else if Player is female]. After playfully tickling your thigh, she slips those last few inches to tease your cock-filled pussy. Spreading her fingers into a V, she rubs her furry digits along either side of her thrusting shaft, further stimulating your cunt[else if Player is male]. After playfully brushing over your erection, she takes hold of it and starts masturbating you in time to her slow, steady thrusting[else]. Finding it disappointingly bare, she rubs at your genderless groin, soothing that unfocused ache for release you have a little[end if].";
 	say "     As her excitement builds towards its peak, she grinds her knot firmly against your by now [if Player is female]soaked petals[else]relaxed and stretched hole[end if]. She pants with her long, doggy tongue draped across your neck as her canine urges come to the fore. A few more thrust and she finally manages to pop her growing knot into you, locking her cum-spurting rod inside you. You can feel the hot rush of her canine seed flowing into your [if Player is female]cunt and onwards to your womb[else]bowels as it splashes across your over-stimulated prostate[end if][if Player is not neuter]. Having that throbbing bulb of knot buried inside you becomes too much and you cry out lustfully as you orgasm in blissful delight[else]. Having that throbbing bulb of knot buried inside you seems to be finally enough to push you over the top. Your anus clenches around her doggy dick as waves of unfocused sexual pleasure shudders through your body without a proper outlet. Your [bodytype of Player] body aches, but it's a good kind of ache[end if]. While waiting for her extended climax to end and her knot to go down, she snuggles with you, her paw caressing your side while she licks and kisses at your neck.";
-	NPCSexAftermath Player receives "[if player is female]PussyFuck[else]AssFuck[end if]" from Stella;
+	NPCSexAftermath Player receives "[if Player is female]PussyFuck[else]AssFuck[end if]" from Stella;
 
 to say stellasex4:
 	say "***missionary";
@@ -313,7 +313,7 @@ to say stellasex6:
 	say "     As you offer to let Stella fuck you, there's a little something in your voice that causes her canine ears to perk up. Sensing the submissive need in your tone, she gives a doggy grin and a sniff. 'Smells like someone's looking forward to their chance to be my bitch[if HP of Stella >= 4] again[end if]. Don't worry, I'll give you the proper shagging a slut like you deserves,' she says with a lustful growl in her voice. Pressing you down onto a bench, she gives your rear a couple of slaps with her cock, making you blush as you grow all the more aroused by her mistreatment of you.";
 	say "     Having gotten herself quite worked up as well, precum drools from her cock onto your [if Player is female]pussy[else]tight pucker[end if] as she gets into position. Not in the mood to wait any long, she takes the nape of your neck in her muzzle and thrusts into you. Thankfully, she shows a little restraint, but is still steady and inexorable in her determination to stuff your [if Player is female]needy cunt[else]back passage[end if]. Her paws roam over your body, groping and teasing you as she pants in your ear about what a slutty bitch you are, lusting for dog cock so badly. You can only pant and moan beneath her, feeling like the dog herm's bitch and loving it as she pounds away at you.";
 	say "     With a final, hard thrust, she pops her growing knot into you, tying her pulsing, cum-spurting rod inside you. Her canine seed, copious for one with no ballsack, splashes [if Player is female]against your cervix[else if Player is male]against your prostate[else]around inside your bowels[end if]. As it builds up, having nowhere else to go, it can only flow deeper into you. While waiting for her extended climax to end and her knot to go down, she continues to grope and fondle you, enjoying your whimpers of pleasure and lustful cries as her paws roam over your [bodytype of Player] body appreciatively.";
-	NPCSexAftermath Player receives "[if player is female]PussyFuck[else]AssFuck[end if]" from Stella;
+	NPCSexAftermath Player receives "[if Player is female]PussyFuck[else]AssFuck[end if]" from Stella;
 
 to stellainfect:
 	setmonster "Dalmatian Male";
@@ -341,8 +341,8 @@ to say stellajimmy01:
 	say "     Passing Stella a grin and a nod toward Jimmy, she smiles and nods in agreement. The two of you approach the little dog from opposite sides, catching him by surprise between you. 'Uh, what's up?' he asks, looking up at both of you. The fact that you're both erect and pointing your dicks at him doesn't go unnoticed either.";
 	say "     '[one of]We've got a hard problem and figured you'd be just the pup to help us both with it,[or]Less talk, more suck, cutie,[or]You looked hungry, so we thought we'd give you a tasty treat,[or]Got another BJ or two in you, pup?[run paragraph on][at random]' Stella says with a grin. She puts a paw on the happy corgi's head, pushing his muzzle to her doggy dick before he has a chance to properly respond. Not that he'd refuse, his muzzle opening and readily taking her erection into it. He bobs his muzzle over her shaft while sliding his canine tongue across it for several licks. Jimmy starts off with just a short slathering before switching over to you rather than leave you hanging.";
 	say "     Jimmy starts off with just a short taste before switching over to you rather than leave you hanging. His cute muzzle slides over your [Cock of Player] shaft, wrapping it in the warm embrace of his mouth. His floppy tongue slathers across your manhood with an eagerness you can feel in his efforts. He laps up your precum and swallows it down greedily[if PoliceStationTwelvePopulation > 0]. He's becoming quite good at this, obviously getting plenty of practice with so many around in need of cheering up[end if]. He thorough in his licking, getting every square centimeter of your cock before swapping back to Stella.";
-	say "     While she'd obviously enjoyed the show of Jimmy working over your cock, she's much happier with his muzzle back on her instead of just his paw. While it's her turn to get blown again, the corgi keeps a paw on your cock, stroking your saliva-slick shaft to keep you hard for him. Not that you need much help with the sight of him working the dalmatian's dick in and out of his muzzle.";
-	say "     The playful corgi swaps between you both several times, steadily working your excitement higher with every round[if the remainder after dividing level of Stella by 3 is 0]. Eventually, Stella can't hold back any longer and holds the playful dog's head. She gives a long, happy moan and bucks her hips. From the wet sounds of Jimmy swallowing, you know she's pumping a big load of canine cum into the corgi's belly. Jimmy pumps at your cock all the faster while sucking down the dalmatian's seed, soon driving you to cum messily across his face and muzzle[else if the remainder after dividing level of Stella by 3 is 1]. As you're building towards climax, Jimmy keeps his muzzle on your shaft a little longer, ensuring that you're the one to pop off in his muzzle this time. He moans wetly as you shoot blast after blast of your [Cum Load Size of Player] load into his mouth and down his throat. Meanwhile, Stella's been masturbated to her own climax, spraying her semen across the corgi's sucking muzzle[else]. With you both about to blow, Jimmy changes over to rapidly stroking you both off while exchanging licks across the tips of your cocks. It's not long before this results in the two of you cumming messily across the cute corgi's face and muzzle. He aims both spurting dongs towards his open mouth, catching what he can on his tongue and letting the rest spray onto him sloppily[end if]. When it's all over, the smaller dog smiles happily, licking his tongue across his messy muzzle to get the rest of his tasty treat.";
+	say "     While she'd obviously enjoyed the show of Jimmy working over your cock, she's much happier with his muzzle back on her instead of just his paw. While it's her turn to get blown again, the corgi keeps a paw on your cock, stroking your saliva-slick shaft to keep you hard for him. Not that you need much help with the sight of him working the Dalmatian's dick in and out of his muzzle.";
+	say "     The playful corgi swaps between you both several times, steadily working your excitement higher with every round[if the remainder after dividing level of Stella by 3 is 0]. Eventually, Stella can't hold back any longer and holds the playful dog's head. She gives a long, happy moan and bucks her hips. From the wet sounds of Jimmy swallowing, you know she's pumping a big load of canine cum into the corgi's belly. Jimmy pumps at your cock all the faster while sucking down the Dalmatian's seed, soon driving you to cum messily across his face and muzzle[else if the remainder after dividing level of Stella by 3 is 1]. As you're building towards climax, Jimmy keeps his muzzle on your shaft a little longer, ensuring that you're the one to pop off in his muzzle this time. He moans wetly as you shoot blast after blast of your [Cum Load Size of Player] load into his mouth and down his throat. Meanwhile, Stella's been masturbated to her own climax, spraying her semen across the corgi's sucking muzzle[else]. With you both about to blow, Jimmy changes over to rapidly stroking you both off while exchanging licks across the tips of your cocks. It's not long before this results in the two of you cumming messily across the cute corgi's face and muzzle. He aims both spurting dongs towards his open mouth, catching what he can on his tongue and letting the rest spray onto him sloppily[end if]. When it's all over, the smaller dog smiles happily, licking his tongue across his messy muzzle to get the rest of his tasty treat.";
 	increase level of Stella by 1;
 	NPCSexAftermath Jimmy receives "OralCock" from Player;
 	NPCSexAftermath Jimmy receives "OralCock" from Stella;

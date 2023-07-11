@@ -24,9 +24,9 @@ to say hornydocdesc:
 	now hdform is a random number between 0 and 6;
 	if hdform is 0, now hdformname is "mutt";
 	if hdform is 1, now hdformname is "beagle";
-	if hdform is 2, now hdformname is "rottweiler";
-	if hdform is 3, now hdformname is "samoyed";
-	if hdform is 4, now hdformname is "malamute";
+	if hdform is 2, now hdformname is "Rottweiler";
+	if hdform is 3, now hdformname is "Samoyed";
+	if hdform is 4, now hdformname is "Malamute";
 	if hdform is 5, now hdformname is "boxer";
 	if hdform is 6, now hdformname is "bulldog";
 	if hdmode is 3:				[event forces male]
@@ -89,7 +89,7 @@ to hdheatprompt:
 
 to say losetohdmale:
 	say "     The horny doctor eagerly pushes you down over a stray gurney and runs his paws roughly over you. '[if HP of Player > 0]Now that's much better. Now take your medicine like a good patient. I've got it nice and hot right here,' he chuckles, grinding his throbbing cock against your hip as he does[else]Such a troublesome patient you're being. You don't want me to call an orderly to help me with you, do you?' he chuckles, grinding his throbbing cock against your hip as he does[end if]. No longer resisting his advances, he licks your neck and gives your crotch a probing caress, a quick examination of what fun he might have with his new patient. You can't help but moan in response, your lustful urges rapidly overpowering your good sense.";
-	if inheat is true and ( ( player is female and heatform is 0 ) or ( heatform is 1 ) ):
+	if inheat is true and ( ( Player is female and heatform is 0 ) or ( heatform is 1 ) ):
 		say "     While fondling your [if Player is female and heatform is 0]juicy cunt[else]crinkled hole[end if], the canine doctor sniffs excitedly, catching your scent in the air. 'Oh, my poor patient is in heat. I have the cure for that right here,' he says, grinding his cock against your ass harder in emphasis. In your heat-addled state, you can't help but moan and raise your ass to him, allowing him to get his doggy dong lined up with your wanton hole. 'Mmm... it's [one of]malpractice time[or]time for some practical gynecology[or]heavy-duty doctoring time[as decreasingly likely outcomes], my dear,' he says with a grin and a lick just before thrusting firmly into your [if Player is female and heatform is 0]needy cunt[else]needy back door[end if] with intent to breed you out of your heat.";
 		if Player is female and heatform is 0:
 			say "[hdmale_sex01]";
@@ -128,7 +128,7 @@ to say hdmale_sex04:
 	else:
 		say "     He shifts his attention onto your flat chest next, kneading your chest and rubbing his fingers across your chest. 'The lack of nipples[if Player is female] and breasts[end if] is most concerning. I recommend immediate treatment,' he adds before leaning down and lapping across your bare chest. His tongue slathers doggy drool across your flesh and he nips lightly at your pecs, drawing moans from you.";
 	WaitLineBreak;
-	if anallevel is 3 or ( player is neuter ):
+	if anallevel is 3 or ( Player is neuter ):
 		say "     Pulling on some latex gloves with a snap and a grin, he lubricates a finger and slips it between your ass cheeks. It is quite cool and uncomfortable at first, but quickly warms up as he probes around inside you. The wiggling of his digit becomes increasingly pleasurable as he even starts thrusting it in and out of you[if Player is male], stimulating your prostate[end if] until you're squirming and moaning from this as well.";
 	if Player is male:
 		say "     Taking [if Cock Count of Player > 1]one of your cocks[else]your cock[end if] in paw, he strokes and over it. Already quite hard from all the teasing, he sizes you up even as he jerks you off[if Cock Length of Player > 20]. He seems quite impressed with your [cock size desc of Player] shaft[smn][else if Cock Length of Player > 10]. He seems rather pleased with your [cock size desc of Player] shaft[smn][else if Cock Length of Player > 5]. He seems unimpressed with your [cock size desc of Player] shaft[smn][else]. He shakes his head and clucks his tongue at your [cock size desc of Player] shaft[smn][end if] and leans in to give [itthemm] a quick lick and suck[if CockName of Player is not listed in infections of InternalCockList]. While he does this, his paw moves to your ballsack, rolling around your [Ball Size Adjective of Player] [Balls] in his palm and appraising their heft[end if]. He gets you to the point of drooling precum, laps some up for a taste test and then moves on.";
@@ -182,7 +182,7 @@ to say hdfemale_sex04:
 	else:
 		say "     She shifts her attention onto your flat chest next, kneading your chest and rubbing her fingers across your chest. 'The lack of nipples[if Player is female] and breasts[end if] is most concerning. I recommend immediate treatment,' she adds before leaning down and lapping across your bare chest. Her tongue slathers doggy drool across your flesh and she nips lightly at your pecs, drawing moans from you.";
 	WaitLineBreak;
-	if anallevel is 3 or ( player is neuter ):
+	if anallevel is 3 or ( Player is neuter ):
 		say "     Pulling on some latex gloves with a snap and a grin, she lubricates a finger and slips it between your ass cheeks. It is quite cool and uncomfortable at first, but quickly warms up as she probes around inside you. The wiggling of her digit becomes increasingly pleasurable as she even starts thrusting it in and out of you[if Player is male], stimulating your prostate[end if] until you're squirming and moaning from this as well.";
 	if Player is male:
 		say "     Taking [if Cock Count of Player > 1]one of your cocks[else]your cock[end if] in paw, she strokes and over it. Already quite hard from all the teasing, she sizes you up even as she jerks you off[if Cock Length of Player > 20]. She seems quite impressed with[else if Cock Length of Player > 10]. She seems rather pleased with[else if Cock Length of Player > 5]. She seems unimpressed with[else]. She shakes her head and clucks her tongue at[end if] your [cock size desc of Player] shaft[smn] and leans in to give [itthemm] a quick lick and suck[if CockName of Player is not listed in infections of InternalCockList]. While she does this, her paw moves to your ballsack, rolling around your [Ball Size Adjective of Player] [Balls] in her palm and appraising their heft[end if]. She gets you to the point of drooling precum, laps some up for a taste test and then moves on.";
@@ -226,7 +226,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Samoyed"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Samoyed"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Horny Doctor" to infections of CanineList;
 	add "Horny Doctor" to infections of FurryList;
 	add "Horny Doctor" to infections of NatureList;
@@ -236,15 +236,15 @@ When Play begins:
 	add "Horny Doctor" to infections of BipedalList;
 	add "Horny Doctor" to infections of TailList;
 	now Name entry is "Horny Doctor"; [ Infection/Creature name. Capitalized. ]
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "The [one of]dog[or]canine doctor[or]doggy doctor[or]infected doctor[or]horny hound[or][hdformname][at random]
 [one of]presses [if hdmode is 1]his[else]her[end if] stethoscope against your groin. BRrr! That's cold![or]gropes you lustfully while grinding [if hdmode is 1]his[else]her[end if] crotch against your leg[or]strikes your hard on the temple, making your ear ring.[or]seems to know just where to grab and grope you to turn you on.[or]gives you a hard punch to the solar plexus.[or]manages to slip behind you and grab your ass with one paw while fondling you with the other.[at random]";
 	now defeated entry is "[beatthehornydoc]"; [ Text when monster loses. Change 'hornydoc' as above. ]
 	now victory entry is "[losetohornydoc]"; [ Text when monster wins. Change 'hornydoc' as above. ]
 	now desc entry is "[hornydocdesc]"; [ Description of the creature when you encounter it. ]
-	now face entry is "quite canine, with a muzzle and doggy ears. Resembling a samoyed, your head is covered in fluffy white fur contrasted by dark eyes, lips and nose";
+	now face entry is "quite canine, with a muzzle and doggy ears. Resembling a Samoyed, your head is covered in fluffy white fur contrasted by dark eyes, lips and nose";
 	now body entry is "that of a dog person, with paw-like hands that long to grab and grope others";
 	now skin entry is "floofy white fur covering your";
 	now tail entry is "You've got a poofy white tail that naturally curls upwards.";
@@ -278,16 +278,16 @@ When Play begins:
 	now libido entry is 45; [ Target libido the infection will rise towards. ]
 	now loot entry is "libido suppressant"; [ Dropped item, blank for none. Case sensitive. ]
 	now lootchance entry is 20; [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]mutated[or]altered[or]animalistic[at random]";
-	now type entry is "[one of]canine[or]samoyed[as decreasingly likely outcomes]";
+	now type entry is "[one of]canine[or]Samoyed[as decreasingly likely outcomes]";
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "hump"; [ Row used to designate any special combat features, "default" for standard combat. ]
 	now BannedStatus entry is false;
@@ -299,7 +299,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -311,7 +311,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -330,7 +330,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -351,18 +351,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -376,19 +376,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -430,14 +430,14 @@ This is the Horny Doctor Infection rule:
 				else:
 					say "     Following your new urges, you are humped by many of the other canine doctors. You end up claiming one of the offices as your own and making it your preferred place to [']confer['] with your peers or give your patients an in-depth [']examination[']. Your favorite though is when you're able to book one of the operating rooms for a medical orgy where you and some of the nurses and orderlies take turns sexing up a captured patient until the treatment is successful in turning them into another member of the staff.";
 			else if hospquest < 13:
-				say "     Drawn by your instincts as a member of the hospital staff, you report back to Dr Mouse. While you only vaguely remember him, he greets you with a smile and happily adds you to his hospital's staff. He assigns you to one of the vacant offices and has you direct a few of his exploratory teams. You rarely go out with these teams, instead focused on keeping tabs on their forays to capture new [']volunteers['] for his experiments as well as the occasional [']patient['] for you.";
+				say "     Drawn by your instincts as a member of the hospital staff, you report back to Dr. Mouse. While you only vaguely remember him, he greets you with a smile and happily adds you to his hospital's staff. He assigns you to one of the vacant offices and has you direct a few of his exploratory teams. You rarely go out with these teams, instead focused on keeping tabs on their forays to capture new [']volunteers['] for his experiments as well as the occasional [']patient['] for you.";
 				if Player is male:
 					say "     During one of these trips to accompany a team, needing to survey the situation at the college campus yourself, your team gets stormed by a muscular team of bunnies in sports gear. During the fray, you get tackled by a pair of them and dragged away from the group. By the time you regain consciousness, you are in a locker room surrounded by the bunnies, who take turns celebrating their capture. Having been treated by the mouse director, you resist physically changing and becoming another bunny like them, but that's not what they want anyhow. You are instead remade into their sexy team doctor, tending to their injuries and providing relief for their aching loins.";
 				else:
-					say "     During one of these trips to accompany a team, wanting to hand-pick the next set of test subjects for a crucial experiment, the team gets stormed by a pack of huskies. While the females keep the team occupied, their alpha male leader - tired of having his girls snatched up by the hospital raids - assaults you from behind and captures you. You get added to his little pack of fucktoy bitches as a samoyed plaything to add some spice to his breeding bitches.";
+					say "     During one of these trips to accompany a team, wanting to hand-pick the next set of test subjects for a crucial experiment, the team gets stormed by a pack of huskies. While the females keep the team occupied, their alpha male leader - tired of having his girls snatched up by the hospital raids - assaults you from behind and captures you. You get added to his little pack of fucktoy bitches as a Samoyed plaything to add some spice to his breeding bitches.";
 			else if hospquest is 13 and HP of doctor mouse is 1:
-				say "     Drawn by your instincts as a member of the hospital staff, you report back to Dr Mouse. While you only vaguely remember him, he somehow recognizes you readily and is cruelly pleased with your fate. Fully subservient to him now, he takes delight in ordering you around and using you for any twisted experiment he wants. Your body is changed over and over again in countless ways over the years and you are often used to mate with any new test subjects he captures for his amusement";
-				if "Sterile" is not listed in feats of Player and player is female:
+				say "     Drawn by your instincts as a member of the hospital staff, you report back to Dr. Mouse. While you only vaguely remember him, he somehow recognizes you readily and is cruelly pleased with your fate. Fully subservient to him now, he takes delight in ordering you around and using you for any twisted experiment he wants. Your body is changed over and over again in countless ways over the years and you are often used to mate with any new test subjects he captures for his amusement";
+				if "Sterile" is not listed in feats of Player and Player is female:
 					say ". You birth many bizarre, hybrid creatures from these matings";
 				say ". You do all this for him gladly, though never understanding why he is so mean to you, his loyal follower.";
 			else if hospquest is 13 and HP of doctor mouse is 2:
@@ -450,8 +450,8 @@ This is the Horny Doctor Infection rule:
 					say "     It is only with the coming of the military that control is restored. The united threat of military action unites the factions, at least temporarily. And you would see that unity remain and head out into the city to search for a means to ensure this. Feeling the need to have someone in charge, you break from the defense and slip past the military lines. You find a small clinic with a reptilian doctor performing gynecological work within its ruins. Armed with a syringe filled with tranquilizers and a need to do what must be done for the good of the hospital, you slip in and attack the lizard girl doctor. Being a rather weak creature and having preferred to hide rather than fight to survive, she is easily taken down and knocked out.";
 					say "     It is touch and go at times, but you manage to evade the increasing military activity and drag her back to the hospital[if Player is male]. You have a very enjoyable time welcoming her to the hospital[else]. You have a very enjoyable time watching one the male doctor's welcome her to the hospital[end if], fucking her senseless until she's bonded to become part of the staff as your new leader. The lizard doctor fills her position well, maintaining the unity of the hospital after the military is repulsed. The hospital's medical work picks up again after that time, but now is largely focused towards breeding and fertility of its patients (voluntary and involuntary), resulting in an overall increase in creature numbers. This growth in population strains the military's capacity to hold back their tide until finally they spill forth in all directions.";
 			else:
-				say "     Drawn by your instincts as a member of the hospital staff, you report back to Dr Mouse. While you only vaguely remember him, he greets you with a smile and happily adds you to his hospital's staff. He puts you in charge of monitoring the other doctors on his staff. Obediently, you follow the mad doctor's orders and relay them to the other doctors while checking up or assisting them with their activities and [']patients[']. This often involves you sexing up the horny canines as their alpha as well as aiding in several operations or experiments of theirs[if susan is in hidden lab]. Susan, as Dr Mouse's assistant, is there with him to help you and reward you with lustful sex[end if].";
-				say "     Once all the preparations have been made and the military is about to move, Dr Mouse takes you[if susan is in hidden lab], Susan[end if] and your small selection of staff to escape through the service tunnels under the hospital. The rest of the staff and the helicopter crew act as a distraction, holding the hospital against the army and drawing their attention while the director makes his getaway. You all escape out of the city and Dr Mouse sets up a new lab in secret. He begins selling off the fruits of his research to foreign powers and the growing factions of transformed creatures that form. He has you continue to act as his chief of staff, checking up on and assisting with their work when he is otherwise occupied.";
+				say "     Drawn by your instincts as a member of the hospital staff, you report back to Dr. Mouse. While you only vaguely remember him, he greets you with a smile and happily adds you to his hospital's staff. He puts you in charge of monitoring the other doctors on his staff. Obediently, you follow the mad doctor's orders and relay them to the other doctors while checking up or assisting them with their activities and [']patients[']. This often involves you sexing up the horny canines as their alpha as well as aiding in several operations or experiments of theirs[if susan is in hidden lab]. Susan, as Dr. Mouse's assistant, is there with him to help you and reward you with lustful sex[end if].";
+				say "     Once all the preparations have been made and the military is about to move, Dr. Mouse takes you[if susan is in hidden lab], Susan[end if] and your small selection of staff to escape through the service tunnels under the hospital. The rest of the staff and the helicopter crew act as a distraction, holding the hospital against the army and drawing their attention while the director makes his getaway. You all escape out of the city and Dr. Mouse sets up a new lab in secret. He begins selling off the fruits of his research to foreign powers and the growing factions of transformed creatures that form. He has you continue to act as his chief of staff, checking up on and assisting with their work when he is otherwise occupied.";
 		else:
 			if hospquest > 13:
 				say "     When you are rescued from the infected city by the military, they take you to a base they've set up for testing and processing of the infected. While you're being examined, often by doctors and technicians whom you feel have no clue what they're doing, you have to bite your tongue often. You pass yourself off as another random canine survivor rather than as a doctor yourself. As much as you'd like the opportunity to join their staff and get your paws on their records, it is far more likely you'd be interrogated and monitored in regards to the strange activity at the hospital. Using your innate medical knowledge, you do know how to fool several of their tests as well as avoid receiving the treatment to render you non-infectious by fudging the results.";

@@ -142,11 +142,11 @@ to say ResolveEvent Alternative Entry:
 			if fightoutcome < 20: [player won]
 				say "     You sigh in relief at having driven off so dangerous a beast, and after a moment to rest, you take a look inside the dark room the large cat was using for a den. Searching the area, you manage to discover a maintenance door which has had its lock broken quite recently. Opening the door, you see that it is an entrance to the subway system and sewers. You sigh as you realize that trying to track the beasts through the filth of the sewers yourself will be pretty pointless at this point. Who knows what lives in there, and the stinking runoff will have washed away their tracks for sure. With a sigh, you close the door securely and barricade it with a nearby shelf. There, that should at least make Valerie happy.";
 				if New Ewe Storeroom is known and Mary is in New Ewe Storeroom: [player rescued Mary]
-					say "     Hm, you wonder for a moment what you should do now, then realize that there is a person who could possibly help you out. Mary, the previously lost sheep, was down in the underground for an extended time before you rescued her. It's a long shot, but she just might have encountered the hyenas down there too... Definitively worth a try, as you're out of other ideas right now. You resolve to check by the [bold type]New Ewe[roman type] store sometime soon.";
+					say "     Hm, you wonder for a moment what you should do now, then realize that there is a person who could possibly help you out. Mary, the previously lost sheep, was down in the underground for an extended time before you rescued her. It's a long shot, but she just might have encountered the hyenas down there too... Definitely worth a try, as you're out of other ideas right now. You resolve to check by the [bold type]New Ewe[roman type] store sometime soon.";
 				else if NESProgress is 2: [player knows Mary is in the underground]
-					say "     Hm, you wonder for a moment what you should do now, then realize that there is a person who could possibly help you out. Mary, the lost sheep, is still somewhere underground. It's a long shot, but she just might have encountered the hyenas down there too... Definitively worth a try, as you're out of other ideas right now. You resolve to try finding [bold type]Little Lost Lamb[roman type] through the sewers sometime soon.";
+					say "     Hm, you wonder for a moment what you should do now, then realize that there is a person who could possibly help you out. Mary, the lost sheep, is still somewhere underground. It's a long shot, but she just might have encountered the hyenas down there too... Definitely worth a try, as you're out of other ideas right now. You resolve to try finding [bold type]Little Lost Lamb[roman type] through the sewers sometime soon.";
 				else if NESProgress is 3: [player rescued Mary from the underground, hasn't checked in with her yet]
-					say "     Hm, you wonder for a moment what you should do now, then realize that there is a person who could possibly help you out. Mary, the previously lost sheep, was down in the underground for an extended time before you rescued her. It's a long shot, but she just might have encountered the hyenas down there too... Definitively worth a try, as you're out of other ideas right now. You resolve to check by the [bold type]New Ewe[roman type] store sometime soon. She'll hopefully have made her way there by now.";
+					say "     Hm, you wonder for a moment what you should do now, then realize that there is a person who could possibly help you out. Mary, the previously lost sheep, was down in the underground for an extended time before you rescued her. It's a long shot, but she just might have encountered the hyenas down there too... Definitely worth a try, as you're out of other ideas right now. You resolve to check by the [bold type]New Ewe[roman type] store sometime soon. She'll hopefully have made her way there by now.";
 				else: [no contact with the New Ewe Crowd yet]
 					say "     Hm, you wonder for a moment what you should do now, without much success. Tracking in the sewers is hopeless - even a bloodhound would capitulate to the stench, and the darkness and dirt pretty much rule out reading footprints. The only other idea that comes to you would be to find some friendly sewer-dweller who might have seen the hyenas pass through... but that's highly unlikely, right? A bit beaten and distraught, you walk back to the entrance of the museum. Maybe you should take a while off from this task to clear your head. Go out and maybe find a [bold type]store[roman type] that still has supplies to loot or something like that. You've still got your everyday survival to think of after all...";
 				now HyenaTrailing is 3;
@@ -175,7 +175,7 @@ Hyena Challenge	"Hyena Challenge"
 Hyena Challenge is a situation.
 ResolveFunction of Hyena Challenge is "[ResolveEvent Hyena Challenge]". The level of Hyena Challenge is 12.
 when play begins:
-	add Hyena Challenge to badspots of HermList;
+	add Hyena Challenge to BadSpots of HermList;
 	add Hyena Challenge to BadSpots of FurryList;
 
 to say ResolveEvent Hyena Challenge:
@@ -203,6 +203,7 @@ to say ResolveEvent Hyena Challenge:
 				increase HyenaFightCounter by 1;
 			now inasituation is false; [reset]
 			if fightoutcome < 20: [player won]
+				project Figure of Hyena_Matriarch_clothed_icon;
 				say "     After defeating the hyenas, they are more than willing to admit your dominance, and with a pair of matching grins easily agree to lead you to their hideout. Given how cheerful the tricky beasts are about the whole situation, you suspect you are walking right into a trap, but since it is probably the only way you will find out what happened to the items Nermine wants, you have no choice but to follow along. Eventually after quite a bit of walking, you find yourself outside one of the large warehouses in the area, and looking around you realize you could have been here much quicker if they had brought you directly here. All the extra walking was just buying time so that a large number of hyenas could gather here and be ready for you, all of them grinning at chuckling at you as the two hyenas you beat earlier quickly duck away from you to join the crowd.";
 				say "     Sighing as you look around, you realize there is no way you could beat all of these hyenas in combat, so you try calling out and telling them you are only looking for three very specific pieces of jewelry from the museum, and hoping they are in the mood to listen. The air is filled with the laughter of the hyenas at your bold questioning, the noise making you feel somewhat less human as it echoes throughout the area. Then suddenly, their laughter stops as quickly as if someone had flipped a switch. From the jostling crowd of gang-members, a much larger hyena steps into sight, her muscular body adorned with many loops of jewelry and necklaces. As she sizes you up, you do the same - and realize that what is obviously the leader of the hyenas is wearing the items you came her for!";
 				WaitLineBreak;
@@ -224,7 +225,7 @@ to say ResolveEvent Hyena Challenge:
 							CreatureSexAftermath "Hyena Herm" receives "PussyFuck" from "Player";
 							if anallevel is not 1:
 								CreatureSexAftermath "Hyena Herm" receives "AssFuck" from "Player";
-							if player is female:
+							if Player is female:
 								CreatureSexAftermath "Hyena Herm" receives "OralPussy" from "Player";
 							now matriarchowned is 0;
 							now RareQuesting is 9;
@@ -362,7 +363,7 @@ ResolveFunction of Twisted Fruit Grove is "[ResolveEvent Twisted Fruit Grove]". 
 Sarea of Twisted Fruit Grove is "Park".
 FelinoidRescued is a number that varies.
 when play begins:
-	add Twisted Fruit Grove to badspots of HermList;
+	add Twisted Fruit Grove to BadSpots of HermList;
 
 to say ResolveEvent Twisted Fruit Grove:
 	if FelinoidRescued is 1: [player lost the fight to save the Felinoid]
@@ -675,7 +676,7 @@ To say jackalankhmagic:
 		now NermineTalk is 1;
 		stop the action;
 	if "Ceryneian Blessed - Anthro" is listed in traits of Player or "Ceryneian Blessed - Feral" is listed in traits of Player or "Ceryneian Blessed - Taur" is listed in traits of Player:
-		say "     As you rub the small golden ankh, you suddenly begin to sweat, as though caught in the desert without any shelter or water, an intense burning feeling growing in your chest. Just as you think that it can't get any worse, you hear a voice growl, 'This one is already claimed...' and the feeling abates though you are unable to see who said it. Still recovering from this ordeal, you look over your body to see whether you have cahnged in any way, but find that you look exactly the same, the Olympians seemingly unwilling to allow Egypt a claim on you while you are in Ceryneian deer. Fortunately, they did not destroy the ankh, the small golden object still sitting in your palm. You decide to stow it away again, wondering whether you would be better off trying again when you are in another form...";
+		say "     As you rub the small golden ankh, you suddenly begin to sweat, as though caught in the desert without any shelter or water, an intense burning feeling growing in your chest. Just as you think that it can't get any worse, you hear a voice growl, 'This one is already claimed...' and the feeling abates though you are unable to see who said it. Still recovering from this ordeal, you look over your body to see whether you have changed in any way, but find that you look exactly the same, the Olympians seemingly unwilling to allow Egypt a claim on you while you are in Ceryneian deer. Fortunately, they did not destroy the ankh, the small golden object still sitting in your palm. You decide to stow it away again, wondering whether you would be better off trying again when you are in another form...";
 		ItemGain strange ankh by 1;
 		stop the action;
 	if JackalManTF is 0:

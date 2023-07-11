@@ -36,7 +36,7 @@ Cock Length of Duke is 9. [length in inches]
 Ball Count of Duke is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Duke is 3. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Duke is 0. [number of cunts]
-Cunt Depth of Duke is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Duke is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Duke is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Duke is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -76,7 +76,7 @@ instead of conversing the Duke:
 		if HP of Duke is 0:
 			say "     Note: Hm, you shouldn't be able to talk to him before watching his event with Shawn the ram - please report how you got to see this.";
 		else if HP of Duke is 1:
-			if (BodyName of Player is "Ram" or BodyName of Player is "Ewe") and player is pure: [with a player in sheep form, this gets pretty easy]
+			if (BodyName of Player is "Ram" or BodyName of Player is "Ewe") and Player is pure: [with a player in sheep form, this gets pretty easy]
 				say "     As you walk up to Duke, he looks you up and down with a happy, almost ecstatic expression, his tail wagging excitedly. 'I haven't seen you around here before, so you came in from elsewhere in the city? And you're a sheep-person!' He turns his head to look at his 'special' ram friend, then back to you. 'I was hoping that there might be... sheep-people out there somewhere - and now you just walk into our farm and come to talk to me.' Duke takes a deep breath, then says 'You see - my boyfriend and I started working here a while ago as shepherds, and... then everything went crazy with that nanite infection and I turned into an actual German shepherd. At least still more or less humanoid...' He looks down over his naked body and stretches his arms a bit, then points at the young ram you saw him with before. 'Shawn on the other hand, he went all the way to being a sheep. He can't even talk, and barely recognizes me. I don't know if there's much left of him inside, he acts pretty much like any other ram.'";
 				say "     He sniffs a bit, then continues 'I tried to... infect him with being a German shepherd, but it doesn't work. Nothing someone here on the farm has worked so far. I think having a similar infection might be the only way to make him a person again - a sheep-person, like you' Duke gives you a pleading look and a wag of his tail 'Could you maybe... rub your fur against his or something? I'd be incredibly thankful -' *glancing at Shawn the ram, he adds* 'we both would be.'";
 				LineBreak;
@@ -106,7 +106,7 @@ instead of conversing the Duke:
 					say "     You assure Duke you'll have an eye out for sheep in the city and walk away from him a bit.";
 					now HP of Duke is 2;
 		else if HP of Duke is 2:
-			if (BodyName of Player is "Ram" or BodyName of Player is "Ewe") and player is pure: [with a player in sheep form, this gets pretty easy]
+			if (BodyName of Player is "Ram" or BodyName of Player is "Ewe") and Player is pure: [with a player in sheep form, this gets pretty easy]
 				say "     As you walk up to Duke, he looks you up and down with a happy, almost ecstatic expression, his tail wagging excitedly. 'I ask you to get some wool, and you go all the way and come back as a sheep-person. Thank you - you're amazing!' He turns his head to look at his ram boyfriend, then back to you. 'Could you maybe... rub your fur against his or something? I'd be incredibly thankful -' *glancing at Shawn the ram, he adds* 'we both would be.'";
 				LineBreak;
 				say "     Well, that's a task for once that doesn't seem hard at all. Do you want to help Duke out and try to transform the ram yourself?";
@@ -135,7 +135,7 @@ instead of conversing the Duke:
 					say "     Shaking your head to show that you don't have what he needs, you see Duke's raised tail droop a bit, then partly perk up again as you assure him you'll have an eye out for sheep in the city.";
 					now HP of Duke is 2;
 		else if HP of Duke is 3:
-			if (BodyName of Player is "Ram" or BodyName of Player is "Ewe") and player is pure: [with a player in sheep form, this gets pretty easy]
+			if (BodyName of Player is "Ram" or BodyName of Player is "Ewe") and Player is pure: [with a player in sheep form, this gets pretty easy]
 				say "     As you walk up to Duke, he gives you a hopeful but still somewhat guarded look, then says 'Have you changed your mind? Please let it be so. You could just... rub your fur against his or something? I'd be incredibly thankful -' *glancing at Shawn the ram, he adds* 'we both would be.'";
 				LineBreak;
 				say "     Well, that's a task for once that doesn't seem hard at all. Do you want to help Duke out and try to transform the ram yourself?";
@@ -247,61 +247,73 @@ instead of fucking the Duke:
 					now lastfuck of Duke is turns;
 
 to say DukeSexMenu:
+	say "     [bold type]What do you want to do with Duke?[roman type][line break]";
+	now sextablerun is 0;
 	blank out the whole of table of fucking options;
+	[]
 	if Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Have him blow your cock";
 		now sortorder entry is 1;
-		now description entry is "Put your shepherd friend's mouth to good use.";
-		now toggle entry is DukeSex rule;
+		now description entry is "Put your shepherd friend's mouth to good use";
+	[]
 	if (HP of Duke > 1):
 		choose a blank row in table of fucking options;
 		now title entry is "Give Duke a blowjob";
 		now sortorder entry is 3;
-		now description entry is "Blow off the German shepherd.";
-		now toggle entry is DukeSex rule;
+		now description entry is "Blow off the German shepherd";
+	[]
 	if (HP of Duke > 1):
 		choose a blank row in table of fucking options;
 		now title entry is "Finger his ass";
 		now sortorder entry is 4;
-		now description entry is "Finger-fuck Duke and jerk him off at the same time.";
-		now toggle entry is DukeSex rule;
+		now description entry is "Finger-fuck Duke and jerk him off at the same time";
+	[]
 	if Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Take Duke's ass";
 		now sortorder entry is 6;
-		now description entry is "Fill the German shepherd's ass with your cock.";
-		now toggle entry is DukeSex rule;
+		now description entry is "Fill the German shepherd's ass with your cock";
+	[]
 	if Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Let him fuck your ass";
 		now sortorder entry is 7;
-		now description entry is "Take his canine shaft in the back door and be knotted by him.";
-		now toggle entry is DukeSex rule;
+		now description entry is "Take his canine shaft in the back door and be knotted by him";
+	[]
 	sort the table of fucking options in sortorder order;
-	change the current menu to table of fucking options;
-	carry out the displaying activity;
-	clear the screen;
-
-This is the DukeSex rule:
-	choose row Current Menu Selection in table of fucking options;
-	let nam be title entry;
-	say "[title entry]: [description entry][line break]";
-	say "Is this what you want?";
-	if Player consents:
-		decrease menu depth by 1;
-		clear the screen;
-		if (nam is "Have him blow your cock"):
-			say "[DukeSex1]";
-		else if (nam is "Give Duke a blowjob"):
-			say "[DukeSex2]";
-		else if (nam is "Finger his ass"):
-			say "[DukeSex3]";
-		else if (nam is "Take Duke's ass"):
-			say "[DukeSex4]";
-		else if (nam is "Let him fuck your ass"):
-			say "[DukeSex5]";
-		wait for any key;
+	repeat with y running from 1 to number of filled rows in table of fucking options:
+		choose row y from the table of fucking options;
+		say "[link][y] - [title entry][as][y][end link][line break]";
+	say "[link]0 - Nevermind[as]0[end link][line break]";
+	while sextablerun is 0:
+		say "Pick the corresponding number> [run paragraph on]";
+		get a number;
+		if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
+			now current menu selection is calcnumber;
+			choose row calcnumber in table of fucking options;
+			say "[title entry]: [description entry]?";
+			if Player consents:
+				let nam be title entry;
+				now sextablerun is 1;
+				if (nam is "Have him blow your cock"):
+					say "[DukeSex1]";
+				else if (nam is "Give Duke a blowjob"):
+					say "[DukeSex2]";
+				else if (nam is "Finger his ass"):
+					say "[DukeSex3]";
+				else if (nam is "Take Duke's ass"):
+					say "[DukeSex4]";
+				else if (nam is "Let him fuck your ass"):
+					say "[DukeSex5]";
+				wait for any key;
+		else if calcnumber is 0:
+			now sextablerun is 1;
+			say "     You step back from the German shepherd, shaking your head slightly as he gives a questioning look.";
+			wait for any key;
+		else:
+			say "Invalid Option. Pick between 1 and [the number of filled rows in the table of fucking options].";
+	clear the screen and hyperlink list;
 
 to say DukeSex1: [cock sucked by Duke]
 	say "     Rubbing your crotch, you tell Duke how much you'd appreciate some attention from him, pulling out your already half-hard shaft in an obvious invitation. With a smiling face, the German shepherd sinks to his knees and starts licking your manhood and balls, showing good skill in the use of his long and flexible tongue. Taking your shaft into his muzzle, carefully using his lips and tongue to hold it away from his teeth, Duke bobs up and down, sending shivers of pleasure up your spine. Meanwhile, he moves a hand up to tease and caress your balls, fondling them softly between his fingers.";
@@ -380,7 +392,7 @@ Cock Length of Shawn is 11. [length in inches]
 Ball Count of Shawn is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Shawn is 3. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Shawn is 0. [number of cunts]
-Cunt Depth of Shawn is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Shawn is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Shawn is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Shawn is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]

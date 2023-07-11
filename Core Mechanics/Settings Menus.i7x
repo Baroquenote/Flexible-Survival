@@ -23,7 +23,7 @@ carry out Trixiecheating:
 	say "     Now, this stuff here is outright cheating, but if you really want to do it, I can help you out with that. It doesn't come for free though. You'll take a knock to your score, though I'll give half that back if you turn the cheat off later.";
 	let Trixieexit be 0;
 	while Trixieexit is 0:
-		say "[bold type]Unerring Hunter[roman type] will let you automatically succeed while hunting as long as your target exists in the area. [bold type]Automatic Survival[roman type] removes your need for food and water. [bold type]Open World[roman type] grants you access to all nav points which aren't private (locked by event or NPC). [bold type]Lil Better[roman type] gives +1 to all stats. [bold type]Booster Feats[roman type] gives you one additional basic and fun feats. [bold type]Play On[roman type] removes the time limit to the game. [bold type]Weak-Willed[roman type] makes you prone to spontaneously surrendering during combat. [bold type]Remove Carry Limits[roman type] allows you to carry as many things as you want. You can also set your [bold type]humanity[roman type] or [bold type]libido[roman type] to any number from 0 to 100.";
+		say "[bold type]Unerring Hunter[roman type] will let you automatically succeed while hunting as long as your target exists in the area. You'll also be able to call up lists of all local enemies and active situations. [bold type]Automatic Survival[roman type] removes your need for food and water. [bold type]Open World[roman type] grants you access to all nav points which aren't private (locked by event or NPC). [bold type]Lil Better[roman type] gives +1 to all stats. [bold type]Booster Feats[roman type] gives you one additional basic and fun feats. [bold type]Play On[roman type] removes the time limit to the game. [bold type]Weak-Willed[roman type] makes you prone to spontaneously surrendering during combat. [bold type]Remove Carry Limits[roman type] allows you to carry as many things as you want. You can also set your [bold type]humanity[roman type] or [bold type]libido[roman type] to any number from 0 to 100.";
 		say "[bold type]Cheats:[roman type][line break]";
 		say "[link](1) Unerring Hunter[as]1[end link] - [if Unerring Hunter is listed in feats of Player]Active[else]Inactive[end if][line break]";
 		say "[link](2) Automatic Survival[as]2[end link] - [if Automatic Survival is listed in feats of Player]Active[else]Inactive[end if][line break]";
@@ -44,15 +44,15 @@ carry out Trixiecheating:
 		if Player can vore or Player can UB:
 			say "-- Player predator: [bold type][if vorechoice is 0]Player choice vore[else if vorechoice is 1]Automatic vore[else]Never vore[end if][roman type] w/Hard Vore frequency: [bold type][if hvorelevel is 1]None[else if hvorelevel is 2]Basic (25%)[else if hvorelevel is 3]High (56%)[end if][roman type] & [bold type][if Player cannot UB]Inactive UB[else if ubchoice is 0]Player choice UB[else if ubchoice is 1]Automatic UB[else]Never UB[end if][roman type][line break]";
 		say "[link](15) Set egg-pregnancy (ovi) content level[as]15[end link] - Currently: [bold type][if ovipreglevel is 1]No Ovi[else if ovipreglevel is 2]Standard[else]Always Ovi[end if][roman type][line break]";
-		say "[link](16) Adjust flags[as]16[end link] - View/change warding settings[line break]";
+		[say "[link](16) Adjust flags[as]16[end link] - View/change warding settings[line break]";]
 		say "[link](0) Abort[as]0[end link][line break]";
 		while 1 is 1:
-			say "Choice? (0-16)> [run paragraph on]";
+			say "Choice? (0-15)> [run paragraph on]";
 			get a number;
-			if calcnumber >= 0 and calcnumber <= 16:
+			if calcnumber >= 0 and calcnumber <= 15:
 				break;
 			else:
-				say "Invalid choice. Pick from 0 to 16.";
+				say "Invalid choice. Pick from 0 to 15.";
 		if calcnumber is:
 			-- 1:
 				if "Unerring Hunter" is listed in feats of Player:
@@ -63,7 +63,8 @@ carry out Trixiecheating:
 					add "Unerring Hunter" to feats of Player;
 					decrease score by 500;
 					say "You have gained the 'Unerring Hunter' cheat, but are penalized 500 points.";
-					say "You now have access to the 'huntinglist' listing (appearing as [bracket]Hunt[close bracket])."; [See Core Mechanics/Hunting.i7x]
+					say "You now have access to the 'huntinglist' listing (appearing as [bracket]Enemies[close bracket])."; [See Core Mechanics/Hunting.i7x]
+					say "You now have access to the 'situationlist' listing (appearing as [bracket]Situations[close bracket])."; [See Core Mechanics/Hunting.i7x]
 			-- 2:
 				if "Automatic Survival" is listed in feats of Player:
 					remove "Automatic Survival" from feats of Player;
@@ -196,8 +197,10 @@ carry out Trixiecheating:
 				try voremenuing;
 			-- 15:
 				try Oviadjusting;
+			[
 			-- 16:
 				new ban menu;
+			]
 			-- 0:
 				say "Exiting menu.";
 				now Trixieexit is 1;

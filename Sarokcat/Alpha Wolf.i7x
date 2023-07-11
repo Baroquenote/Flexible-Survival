@@ -13,7 +13,7 @@ AlphaWolfReplaced is a truth state that varies. AlphaWolfReplaced is usually fal
 
 to say AlphaWolfdesc:
 	project the Figure of AlphaWolf_naked_icon;
-	setmongender 3;  [creature is male]
+	setmongender 3; [creature is male]
 	say "     Sauntering through the forest towards you, a large male wolf pads on all fours, his thick black fur gleaming in the light. Spying you, he quickly raises himself up onto his digitigrade legs, a feral grin crossing his muzzle as his new upright stance reveals his semi-erect canine cock for all to see. '[one of]Oh look, a chew toy for me to play with[or]Hmm now the question is, will you submit to the packleader with or without a struggle? Either way sounds fun to me[or]I can't wait to see you on all fours beneath me[at random],' he says, dominance rolling off of him in waves[if AlphaWolfReplaced is true]. While similar to the alpha wolf you've seen before, this one is clearly a different one. Whether that means the last one had his position usurped or if this is a new pack entirely is unclear, it seems this new alpha's just as confidence of his success[else], making you shudder as you realize you have definitely managed to encounter an alpha wolf[end if].";
 	if AlphaWolfReplaced is true:			[reset for new alpha wolf]
 		now AlphaWolfReplaced is false;
@@ -47,7 +47,6 @@ to say Alpha Wolf attack:
 				CreatureSexAftermath "Player" receives "AssFuck" from "Alpha Wolf";
 			else:
 				say "'Bad little wolf, not being ready for the packleader,' the large canine beast says, baring his teeth at your defeated form, causing you to cringe in submission. 'Next time I'm sure you will do better, won't you?' the large Alpha asks you, and you find yourself nodding submissively in agreement. 'Good, you had better,' the large beast mutters as it stalks away, leaving you lying there submissively in the road, worried about his last statement.";
-			infect "Alpha Wolf";
 		else:
 			if Player is female:
 				say "     The wolf grabs you and throws you down onto the ground again, his rough, paw-like hand keeping a strong steady pressure up as it grips the back of your neck, while his other moves between your legs, seemingly satisfied with what he finds there, the lupine beast lets out a pleased grunt. Gripping your neck tighter, the beast forces your face down into the ground. As he positions himself behind you, you can hear his harsh panting breath while he moves his hard lupine cock up between your thighs. Your body shudders as his pointed tip probes the entrance to your feminine passage, before thrusting himself into you in one hard, swift thrust.";
@@ -62,7 +61,7 @@ to say Alpha Wolf attack:
 			else:
 				say "The wolf grabs you and pins you to the ground again, his rough, paw-like hand exploring your crotch and causing you to moan. The beast growls, seemingly unhappy with what he finds, before snarling and snapping over your prone body. 'What is this?' The alpha demands, 'A weakling like you without the proper equipment to submit to your alpha? Unacceptable!' The beast growls cause you to shudder as his displeasure washes over you. The alpha knocks you to the side, forcing you to prostrate yourself beneath him as he rests his hind paw on your throat, causing you to gasp as he growls down at you. 'Next time you will be ready for your alpha's pleasure little submissive, or else I might not be so forgiving,' your alpha growls at you, before he removes his paw from your neck and pads off down the street, leaving you gasping behind him and lying their submissively, shuddering in fear and a strange desire to do as your alpha pleases long after the beast is gone.";
 				increase Alpha Wolfdefeat by 1;
-		now wolffight is 2;  [lost]
+		now wolffight is 2; [lost]
 
 
 To say Alpha Wolf loss:
@@ -126,7 +125,7 @@ To say Alpha Wolf loss:
 							if a random chance of AlphaWolfBeaten in targetnum succeeds, now AlphaWolfReplaced is true;
 		else:
 			say "The large, black-furred wolf sinks to the ground his tail tucked between his legs as his ears droop back, his mouth falling open in astonishment. 'You? You managed to defeat an alpha? This must be a mistake...' the wolf mutters to himself as he lowers his head and exposes his neck in acknowledgment of your dominance... for now. Once the wolf has backed a short distance away, his head comes back up and he stares right into your eyes for a minute before opening his mouth in a lupine laugh. 'Don't think this is over little one, you definitely have my attention now... You might even manage to make a good little alpha bitch someday at this rate,' he says with a barking laugh, before he turns and lopes off down the road[if AlphaWolfBeaten > 3]. Despite his losses, it seems the alpha wolf's infected mind remains confident in his superiority[end if].";
-		now wolffight is 1;  [victory]
+		now wolffight is 1; [victory]
 	wait for any key;
 	clear the screen and hyperlink list;
 
@@ -142,7 +141,7 @@ to say AlphaWolfSex2: [ride the wolf]
 	say "     Deciding that while you'd like the alpha wolf's cock inside you, you'll be taking on your own terms. You shove the wolf over onto his back and keep him pinned down with one arm which your other gropes his furry package. He squirms a little, but settles down as he realizes what you have in mind when you grind your [if Player is female]pussy[else]ass[end if] down onto his meat. With his cock dribbling precum, you let his pointed glans brush across your [if Player is female]wet folds[else]tight pucker[end if] as a prelude to the main event. With his cock quite hard, he whimpers a little with need as you deny him a hole to fuck, reveling in your position of power above this strong alpha you've defeated. After you've teased several spurts of precum from him, you ease yourself down onto his throbbing pole, letting the tapered tip of his lupine shaft sink into you.";
 	say "     Keeping the wolf pinned on his back, you ride up and down on his cock, enjoying his lustful panting and moaning as he struggles the thrust up into you. You keep a hand firmly on his pelvis, ensuring that you're the one setting the pace and in charge of this hard fucking you're getting. You take your time with it, rubbing down onto the wolf's knot, but not letting him tie with you, denying him release several times as you draw out as much pleasure as you can from your carnal act. Only once you're ready do you push yourself firmly down onto the wolf's cock and let his engorged knot stretch your [if Player is female]vagina wide[else]asshole open[end if] to tie with him. You bounce rapidly upon it and clamp down hard, getting the wolf to howl loudly in release as he blasts his thick load into your [if Player is female]waiting womb[else]bowels[end if] before you cum hard[if Player is male], spraying your own seed across his body[end if].";
 	say "     After his knot has gone down, you pull yourself off him and get up. As he starts to rise, you give his ass a shove with your heel, sending him on his way. He slinks off, growling about his superiority even as he backs away, but he doesn't seem quite as confident as before. Having been beaten and used seems to have shaken his alpha identity somewhat. And with the scent of defeat[if Player is male] and another male marking him[end if], he may face some trouble if he can't get a confidence boost before meeting up with the rest of the pack.";
-	CreatureSexAftermath "Player" receives "[if player is female]PussyFuck[else if player is male]AssFuck[else if player is herm and a random chance of 1 in 2 succeeds]PussyFuck[else if player is herm]AssFuck[end if]" from "Alpha Wolf";
+	CreatureSexAftermath "Player" receives "[if Player is female]PussyFuck[else if Player is male]AssFuck[else if Player is herm and a random chance of 1 in 2 succeeds]PussyFuck[else if Player is herm]AssFuck[end if]" from "Alpha Wolf";
 	let targetnum be 16;
 	if Player is male, decrease targetnum by ( Ball Size of Player / 5 );
 	if targetnum < 12, now targetnum is 12;
@@ -154,12 +153,12 @@ to say AlphaWolfSex3:
 	if Player is herm:
 		say "     The alpha wolf whimpers a little at having to lick your cock and does so halfheartedly, always switching back to your pussy after just a few swipes of his tongue. You grab his muzzle and force your shaft into his mouth, ordering him to do a proper job to prove he's worth bothering with at all. His ears dip, but he starts lavishing increasing attention upon your erection as you start thrusting into his warm, wet muzzle. In time he's licking and sucking at your throbbing penis eagerly, even if it's mostly just to end his humiliation. And you make sure to tell him what a good job and a fine cocksucker he is when presented with a proper cock.";
 		say "     Remaining in charge, you only ever let him switch from your cock when you feel he's earned another go at your pussy. His canine tongue feels great upon it, sliding all over it and then diving deep inside to pleasure you. You stroke his head and ears, telling him to lick deeper like a good and obedient bitch. He whines a little at this, but does as he's told, working hard to please the one who bested him. Your juices flow across his tongue and muzzle while your cock twitches and leaves spurts of precum across his face.";
-		say "     After a very enjoyable blow job from the beaten male, you grip his head firmly and shove your cock fully into his maw. You cum hard with a groan of pleasure, blasting your thick seed down his throat while your hot juices soak your thighs[if Ball Size of Player >= 5]. Your large load fills his muzzle and overflows from it even as much of it is forced into his belly[end if]. After your first several shots, you pull out, letting the rest of your load spray across his face and muzzle. With the last of your load dribbling out, you press his muzzle to your pussy, getting him to lick you clean. Looking down, you can see the wolf's cock is hard and leaking from arousal at what he's been made to do, and you make certain to tease the wolf about that as well.";
+		say "     After a very enjoyable blowjob from the beaten male, you grip his head firmly and shove your cock fully into his maw. You cum hard with a groan of pleasure, blasting your thick seed down his throat while your hot juices soak your thighs[if Ball Size of Player >= 5]. Your large load fills his muzzle and overflows from it even as much of it is forced into his belly[end if]. After your first several shots, you pull out, letting the rest of your load spray across his face and muzzle. With the last of your load dribbling out, you press his muzzle to your pussy, getting him to lick you clean. Looking down, you can see the wolf's cock is hard and leaking from arousal at what he's been made to do, and you make certain to tease the wolf about that as well.";
 		CreatureSexAftermath "Alpha Wolf" receives "OralCock" from "Player";
 		CreatureSexAftermath "Alpha Wolf" receives "OralPussy" from "Player";
 	else if Player is male:
 		say "     The alpha wolf whimpers a little at having to lick another male's cock and does so halfheartedly at first. You grab his muzzle and force your cock into his mouth, ordering him to do a proper job to prove he's worth bothering with at all. His ears dip, but he starts lavishing increasing attention upon your cock as you start thrusting into his warm, wet muzzle. In time he's licking and sucking at your throbbing penis eagerly, even if it's mostly just to end his humiliation. And you make sure to tell him what a good job and a fine cocksucker he is for a stronger male's cock.";
-		say "     After a very enjoyable blow job from the beaten male, you grip his head firmly and shove your cock fully into his maw. You cum hard with a groan of pleasure, blasting your thick seed down his throat[if Ball Size of Player >= 5]. Your large load fills his muzzle and overflows from it even as much of it is forced into his belly[end if]. After your first several shots, you pull out, letting the rest of your load spray across his face and muzzle. Looking down, you can see the wolf's cock is hard and leaking from arousal at what he's been made to do, and you make certain to tease the wolf about that as well.";
+		say "     After a very enjoyable blowjob from the beaten male, you grip his head firmly and shove your cock fully into his maw. You cum hard with a groan of pleasure, blasting your thick seed down his throat[if Ball Size of Player >= 5]. Your large load fills his muzzle and overflows from it even as much of it is forced into his belly[end if]. After your first several shots, you pull out, letting the rest of your load spray across his face and muzzle. Looking down, you can see the wolf's cock is hard and leaking from arousal at what he's been made to do, and you make certain to tease the wolf about that as well.";
 		CreatureSexAftermath "Alpha Wolf" receives "OralCock" from "Player";
 	else:
 		say "     The alpha wolf whimpers a little at having to submit to you, but does lick at your pussy enthusiastically. His canine tongue feels great upon it, sliding all over it and then diving deep inside to pleasure you. You stroke his head and ears, telling him to lick deeper like a good and obedient bitch. He whines a little at this, but does as he's told, working hard to please the one who bested him. Your juices flow across his tongue and muzzle as he licks your dripping cunt.";
@@ -181,7 +180,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Wolf"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Wolf"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Alpha Wolf" to infections of CanineList;
 	add "Alpha Wolf" to infections of FurryList;
 	add "Alpha Wolf" to infections of NatureList;
@@ -192,22 +191,22 @@ When Play begins:
 	add "Alpha Wolf" to infections of BipedalList;
 	add "Alpha Wolf" to infections of TailList;
 	now Name entry is "Alpha Wolf";
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]He snaps at you with his sharp teeth, leaving marks on your skin[or]He whips his clawed paw out, slapping you down like a submissive wolf[or]His large, erect member catches your eye for a minute. Noticing, he pauses to stroke it and gestures towards you, the obvious demand eroding your desire to resist[or]He grabs your arm in his teeth and wrestles you to the ground[or]Striking where you aren't expecting it, he grabs your foot and jerks it out from under you, dumping you on the ground[at random].";
 	now defeated entry is "[Alpha Wolf loss]";
 	now victory entry is "[Alpha Wolf attack]";
 	now desc entry is "[AlphaWolfdesc]";
-	now face entry is "a long canine muzzle sticking out of your feral lupine countenance. Your mouth hangs open in a lupine grin, revealing your sharp teeth. If it weren't for the intelligence sparking in your eyes and the slightly bigger forehead, it would be hard to tell your face from a regular wolf's"; [ Face description, format as "Your face is (your text)."]
-	now body entry is "lean and equally well-suited to life in the wild or the streets, your canine form stands easily on its new digitigrade legs. Your paw-like hands are still as dexterous as ever, though you know that you could drop to all fours in an instant if the situation called for it"; [ Body Description, format as "Your Body is (your text)"]
-	now skin entry is "[one of]black[or]roughly[or]thickly[at random]-furred"; [ skin Description, format as "Looking at yourself, your body is covered in (your text) skin"]
+	now face entry is "a long canine muzzle sticking out of your feral lupine countenance. Your mouth hangs open in a lupine grin, revealing your sharp teeth. If it weren't for the intelligence sparking in your eyes and the slightly bigger forehead, it would be hard to tell your face from a regular wolf's"; [ Face description, format as "Your face is [Face of Player]." ]
+	now body entry is "lean and equally well-suited to life in the wild or the streets, your canine form stands easily on its new digitigrade legs. Your paw-like hands are still as dexterous as ever, though you know that you could drop to all fours in an instant if the situation called for it"; [ Body Description, format as "Your Body is [Body of Player]." ]
+	now skin entry is "[one of]black[or]roughly[or]thickly[at random]-furred"; [ Skin Description, format as "Looking at yourself, your body is covered in [Skin of Player] skin." ]
 	now tail entry is "You have a thick canine tail wagging happily behind you, its presence somehow feeling so very right."; [ Tail description, write a whole Sentence or leave blank. ]
 	now cock entry is "[one of]canine[or]wolf[or]knotted[at random]"; [ Cock Description, format as you have a 'size' (your text) cock]
-	now face change entry is "it stretches out into a large lupine muzzle, new scents filling your mind as nose works overtime, especially hoping to catch the scent of the strong alpha who changed you"; [ face change text. format as "Your face feels funny as (your text)." ]
-	now body change entry is "it shifts and changes, your spine snapping and your legs shifting. You feel yourself becoming more comfortable now on your newly-formed canine feet and handpaws"; [ body change text. format as "Your body feels funny as (your text)." ]
-	now skin change entry is "thick black fur begins to grow all over your body, its rough, shaggy presence making you much more suitable for nights spent outside, running underneath the moon with the pack"; [ skin change text. format as "Your skin feels funny as (your text)." ]
-	now ass change entry is "a large lupine tail pushes its way out of your backside. Once it finishes growing, you find yourself wagging it slightly in pleasure at the new canine appendage"; [ ass/tail change text. format as "Your ass feels funny as (your text)." ]
+	now face change entry is "it stretches out into a large lupine muzzle, new scents filling your mind as nose works overtime, especially hoping to catch the scent of the strong alpha who changed you"; [ Face change text, format as "Your face feels funny as [face change entry]." ]
+	now body change entry is "it shifts and changes, your spine snapping and your legs shifting. You feel yourself becoming more comfortable now on your newly-formed canine feet and handpaws"; [ Body change text, format as "Your body feels funny as [body change entry]." ]
+	now skin change entry is "thick black fur begins to grow all over your body, its rough, shaggy presence making you much more suitable for nights spent outside, running underneath the moon with the pack"; [ Skin change text, format as "Your skin feels funny as [skin change entry]." ]
+	now ass change entry is "a large lupine tail pushes its way out of your backside. Once it finishes growing, you find yourself wagging it slightly in pleasure at the new canine appendage"; [ Ass/tail change text, format as "Your ass feels funny as [ass change entry]." ]
 	now cock change entry is "your aching member grows thicker and tapers to a sharp point, a large canine knot forming at the base of your new lupine sheath"; [ cock change text. format as "Your cock feels funny as (your text)." ]
 	now str entry is 18;
 	now dex entry is 14;
@@ -215,35 +214,35 @@ When Play begins:
 	now per entry is 14;
 	now int entry is 12;
 	now cha entry is 10;
-	now sex entry is "Male";  [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now sex entry is "Male"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
 	now HP entry is 55;
-	now lev entry is 7;  [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
-	now wdam entry is 12;  [ Amount of Damage monster Does when attacking. ]
-	now area entry is "Forest";  [ Current options are 'Outside' and 'Mall'. Case sensitive]
-	now Cock Count entry is 1;  [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
-	now Cock Length entry is 10;  [ Length infection will make cock grow to if cocks]
-	now Ball Size entry is 3;  [ Size of balls ]
-	now Nipple Count entry is 6;  [ Number of nipples infection will give you (males have nipples too) ]
-	now Breast Size entry is 3;  [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
-	now Male Breast Size entry is 0;  [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 1;  [ if sex = "Female or both", indicates the number of female sexes infection will grant you.]
+	now lev entry is 7; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
+	now wdam entry is 12; [ Amount of Damage monster Does when attacking. ]
+	now area entry is "Forest"; [ Current options are 'Outside' and 'Mall'. Case sensitive]
+	now Cock Count entry is 1; [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
+	now Cock Length entry is 10; [ Length infection will make cock grow to if cocks]
+	now Ball Size entry is 3; [ Size of balls ]
+	now Nipple Count entry is 6; [ Number of nipples infection will give you (males have nipples too) ]
+	now Breast Size entry is 3; [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 1; [ if sex = "Female or both", indicates the number of female sexes infection will grant you.]
 	now Cunt Depth entry is 12;
 	now Cunt Tightness entry is 8;
 	now SeductionImmune entry is false;
-	now libido entry is 30;  [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
-	now loot entry is "alpha wolf fur";  [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
-	now lootchance entry is 70;  [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 3;  [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
-	now body descriptor entry is "[one of]sleek[or]lean[at random]";  [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender". Use [one of] to vary ]
-	now type entry is "lupine";  [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
+	now libido entry is 30; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
+	now loot entry is "alpha wolf fur"; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
+	now lootchance entry is 70; [ Chance of loot dropping 0-100 ]
+	now MilkItem entry is "alpha wolf man-milk";
+	now CumItem entry is "alpha wolf cum";
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now body descriptor entry is "[one of]sleek[or]lean[at random]"; [ Ex: "plump" "fat" "muscled" "strong" "slimy" "gelatinous" "slender". Use [one of] to vary ]
+	now type entry is "lupine"; [ one-word creature type. Ex: feline, canine, lupine, robotic, human... Use [one of] to vary ]
 	now magic entry is false;
-	now resbypass entry is false;  [ Bypasses Researcher bonus? true/false (almost invariably false) ]
+	now resbypass entry is false; [ Bypasses Researcher bonus? true/false (almost invariably false) ]
 	now non-infectious entry is false;
-	now Cross-Infection entry is "Feral Wolf Bitch"; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;  [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
+	now Cross-Infection entry is "Feral Wolf Bitch"; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -254,7 +253,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -266,7 +265,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -285,7 +284,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -306,18 +305,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -331,19 +330,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -376,7 +375,7 @@ Strain of alpha wolf cum is "Feral Wolf Bitch".
 Usedesc of alpha wolf cum is "[alpha wolf cum use]";
 
 to say alpha wolf cum use:
-	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy fluid cum run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
+	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy cum run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
 	PlayerDrink 5;
 	SanLoss 5;
 
@@ -395,7 +394,7 @@ Strain of alpha wolf man-milk is "Alpha Wolf".
 Usedesc of alpha wolf man-milk is "[alpha wolf man-milk use]";
 
 to say alpha wolf man-milk use:
-	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the canine man-milk run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
+	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the milk run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
 	PlayerDrink 15;
 
 instead of sniffing alpha wolf man-milk:

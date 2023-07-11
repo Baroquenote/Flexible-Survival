@@ -103,17 +103,17 @@ This is the turnpass rule:
 		say "You feel a tingling dampness at your groin that soon turns into a wet gush of fluids as your flesh splits open into a brand new pussy. This dripping cunny is sopping with feminine juices from its orgasmic formation.";
 	if balloversize is 0:
 		if ( scalevalue of Player is 1 or scalevalue of Player is 2 ) and Ball Size of Player >= 4:
-			if CockName of Player is not "Tanuki" and player is not internal:
+			if CockName of Player is not "Tanuki" and player is not internalBalls:
 				decrease Dexterity of Player by 1 + (dexterity of Player / 10 );
 				now balloversize is 1 + (dexterity of Player / 10 );
 				say "     Your balls, so huge when compared to your [Body Size Adjective of Player] frame, are so big and heavy that it's difficult to carry them around, hindering your ability to move around somewhat.";
 		else if ( scalevalue of Player is 3 or scalevalue of Player is 4 ) and Ball Size of Player >= 6:
-			if CockName of Player is not "Tanuki" and player is not internal:
+			if CockName of Player is not "Tanuki" and player is not internalBalls:
 				decrease Dexterity of Player by 1 + (dexterity of Player / 10 );
 				now balloversize is 1 + (dexterity of Player / 10 );
 				say "     Your balls, are so big and heavy that it's difficult to carry them around, hindering your ability to move around somewhat.";
 		else if Ball Size of Player >= 7:
-			if CockName of Player is not "Tanuki" and player is not internal:
+			if CockName of Player is not "Tanuki" and player is not internalBalls:
 				decrease Dexterity of Player by 1 + (dexterity of Player / 10 );
 				now balloversize is 1 + (dexterity of Player / 10 );
 				say "     Your balls, huge even when compared to your huge frame, are so massive and heavy that it's difficult to carry them around, hindering your ability to move around somewhat.";
@@ -126,7 +126,7 @@ This is the turnpass rule:
 			increase dexterity of Player by balloversize;
 			now balloversize is 0;
 			say "     Your mystical, Tanuki nature allows you to carry your oversize balls with ease, no longer hindered by their massive size.";
-		else if Player is internal:
+		else if Player is internalBalls:
 			increase dexterity of Player by balloversize;
 			now balloversize is 0;
 			say "     Your massive balls, having become internalized, no longer hinder your movement quite so much. You can still feel them there, heavily resting inside you, but they're no longer in the way at least.";
@@ -171,7 +171,7 @@ This is the turnpass rule:
 			if Stamina of Player < 14 and a random chance of 1 in 2 succeeds and restoration is 0:
 				increase Stamina of Player by 1;
 				if remainder after dividing stamina of Player by 2 is 0:
-					increase maxHP of Player by level of Player plus 1;
+					increase MaxHP of Player by level of Player plus 1;
 				increase hunger of Player by 6;
 				say "Your body strives to restore its lost hardiness and toughens your body. Your stomach grumbles with hunger at this sudden effort. [bold type]Stamina increased by 1.[roman type][line break]";
 				now restoration is 1;
@@ -371,6 +371,46 @@ definition: Daytimer is night:
 		no;
 	else:
 		yes;
+
+to decide if the time is post midnight:
+	if TimekeepingVar is 1 or TimekeepingVar is -7:
+		decide yes;
+	decide no;
+
+to decide if the time is pre dawn:
+	if TimekeepingVar is 0 or TimekeepingVar is -8:
+		decide yes;
+	decide no;
+
+to decide if the time is early morning:
+	if TimekeepingVar is 7 or TimekeepingVar is -1:
+		decide yes;
+	decide no;
+
+to decide if the time is morning:
+	if TimekeepingVar is 6 or TimekeepingVar is -2:
+		decide yes;
+	decide no;
+
+to decide if the time is evening:
+	if TimekeepingVar is 4 or TimekeepingVar is -4:
+		decide yes;
+	decide no;
+
+to decide if the time is afternoon:
+	if TimekeepingVar is -3 or TimekeepingVar is 5:
+		decide yes;
+	decide no;
+
+to decide if the time is night:
+	if TimekeepingVar is 2 or TimekeepingVar is -6:
+		decide yes;
+	decide no;
+
+to decide if the time is early night:
+	if TimekeepingVar is 3 or TimekeepingVar is -5:
+		decide yes;
+	decide no;
 
 Chapter 4 - Sunrise/Sunset
 

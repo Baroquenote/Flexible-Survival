@@ -203,9 +203,9 @@ to say medkit use:
 		if ssmb is true:
 			now healed is ( healed * 3 ) / 2;
 		increase HP of Player by healed;
-		if HP of Player > maxHP of Player:
-			decrease healed by HP of Player minus maxHP of Player;
-			now HP of Player is maxHP of Player;
+		if HP of Player > MaxHP of Player:
+			decrease healed by HP of Player minus MaxHP of Player;
+			now HP of Player is MaxHP of Player;
 		say "Using your medkit, [if Paula is visible]Paula helps you [one of]treat the worst of your wounds[or]bandage up the worst of your wounds[or]spray your cuts with anesthetic[or]clean and dress your wounds[at random], making sure to kiss them to make it all better[else if Sarah is visible and SarahCured > 3]Sarah expertly helps you [one of]treat the worst of your wounds[or]bandage up the worst of your wounds[or]spray your cuts with anesthetic[or]clean and dress your wounds[at random][else][one of]you spray your cuts with anesthetic[or]you bandage your worst wounds[at random][end if]. You regain [special-style-1][healed][roman type] HP.";
 		decrease CurrentMedkitSupplies by 1;
 		if CurrentMedkitSupplies < 1:
@@ -280,8 +280,12 @@ indigo potion is fast.
 Usedesc of indigo potion is "[indigo potion use]";
 
 to say indigo potion use:
-	say "You pop the cork and down the potion in a single gulp. NNNGggghhhaaAHH! Its sour taste has you pulling a pained grimace, but somehow you feel better for having drunk that stuff.";
-	PlayerHealed 20;
+	if HP of Player < MaxHP of Player:
+		say "You pop the cork and down the potion in a single gulp. NNNGggghhhaaAHH! Its sour taste has you pulling a pained grimace, but somehow you feel better for having drunk that stuff.";
+		PlayerHealed 20;
+	else:
+		say "You're not hurt, so you decide to keep your potion for when you actually need it.";
+		ItemGain indigo potion by 1 silently; [quietly giving back the auto-destroyed item]
 
 instead of sniffing indigo potion:
 	say "Just sniffing this stuff makes your nose itch. It's got a sharp, chemical smell.";

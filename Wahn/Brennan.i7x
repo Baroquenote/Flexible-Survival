@@ -104,6 +104,9 @@ Lone Survivor is a situation.
 ResolveFunction of Lone Survivor is "[ResolveEvent Lone Survivor]".
 Sarea of Lone Survivor is "Outside".
 
+when play begins:
+	add Lone Survivor to BadSpots of TransList;
+
 to say ResolveEvent Lone Survivor:
 	if BrennanRelationship is 0:
 		say "     The streets seem fairly empty right now - a good time to be out and about, scavenging or hunting for whatever. Skirting around a burned-out car here and there, piles of trash or even rubble from buildings destroyed in fights (or overenthusiastic lovemaking), you make good progress on your way. Soon, you arrive at a fairly big intersection of roads, dominated by a multi-car pileup. Glancing at the four directions meeting here, broad and open spaces with no real cover or concealment, you're not surprised to find numerous piles of torn and cum-stained clothing scattered about. This must be a prime hunting spot for ferals, running down people or swooping in from above to catch those exposed in the open, which means that the numerous personal vehicle wrecks - and a mangled greyhound bus on the opposite side of where you stand - have in all likelihood not been looted yet!";
@@ -282,10 +285,10 @@ to say ResolveEvent Lone Survivor:
 		let bonus be (( dexterity of Player minus 10 ) divided by 2);
 		let diceroll be a random number from 1 to 20;
 		say "You roll 1d20([diceroll])+[bonus] = [special-style-1][diceroll + bonus][roman type] vs [special-style-2]15[roman type] (Dexterity Check):[line break]";
-		if diceroll + bonus >= 15:
+		if diceroll + bonus >= 15: [success]
 			say "     Doing your best with a bent piece of wire or two, you fiddle around with the lock for a few minutes before eventually popping it open with a satisfying click. Phew, so far so good! Beyond the door is indeed a used apartment - lived in, if empty of people right now. You set out to search it thoroughly.";
 			say "[Apartment2bLooting]";
-		else:
+		else: [fail]
 			say "     Nope, no chance to pick that lock. You shrug and resolve to just kick in the door instead.";
 			let bonus be (( strength of Player minus 10 ) divided by 2);
 			let diceroll be a random number from 1 to 20;
@@ -578,7 +581,7 @@ to say ResolveEvent Wolf Whisperer:
 			LineBreak;
 			project the figure of Brennan_clothed_icon;
 			say "     Your offer is eagerly accepted and Brennan gladly makes room for you to have a go at the excavation while he rests for a short while. Soon, the two of you are working together, handing off chunks of brick and mortar from one to the other as you work your way deeper. After another hour or so, the upper third of the entrance door is in sight - but sadly, it opens outwards, so you still can't open it. That takes another sweat-inducing half hour of clearing the rest of the debris, before Brennan finally can stand in front of it and twist the doorknob. As the door swings open, a potent fruity scent washes over you. 'Phew, no wonder they smelled that up on the street. This place reeks of whatever that is!' the human survivor says, then draws a flashlight and clicks it on.";
-			say "     Stepping into the dark and abandoned basement room, you see a fairly nice bar setup, the tables and chairs covered in rock-dust and some fallen pieces of concrete. A thick crack goes right across the ceiling, waking worry over the structural integrity of the place. This definitively isn't a spot to stay in long. Walking around the counter, glass crunches beneath your boots and Brennan lowers the flashlight to illuminate a mess of shattered bottles - fruit liquor, which explains the smell. Sadly, it looks like the destruction above made just about all of the stock tumble down into a great mess. Yet Brennan isn't too easily frustrated and just keeps going with the search, pushing the shards out of the way to walk past. On the other side of the whole mess, he quickly finds the entrance of a storage room.";
+			say "     Stepping into the dark and abandoned basement room, you see a fairly nice bar setup, the tables and chairs covered in rock-dust and some fallen pieces of concrete. A thick crack goes right across the ceiling, waking worry over the structural integrity of the place. This definitely isn't a spot to stay in long. Walking around the counter, glass crunches beneath your boots and Brennan lowers the flashlight to illuminate a mess of shattered bottles - fruit liquor, which explains the smell. Sadly, it looks like the destruction above made just about all of the stock tumble down into a great mess. Yet Brennan isn't too easily frustrated and just keeps going with the search, pushing the shards out of the way to walk past. On the other side of the whole mess, he quickly finds the entrance of a storage room.";
 			WaitLineBreak;
 			say "     'This looks promising,' your friend says as he glances into the room, finding shelves with peanuts, pretzel sticks and various other food items designed to make people more thirsty, as well as some soda and water bottles. Since you helped excavate the place, he is only to happy to share the stash with you.";
 			ItemGain food by 3;
@@ -696,10 +699,10 @@ to say ResolveEvent Fountain Discussion:
 to FountainDiscussionEvent:
 	project the figure of Spartan_icon;
 	say "     Your path over the campus brings you close to the fountain in the middle of the central green. Just as you arrive, you see the tail end of a human figure, flanked by two wolves, go into the college admin building to the north. It must have been Brennan, as that combination of beings is not something you have seen anywhere else, and 'regular' humans are becoming exceedingly rare these days, too. This of course means that your friend draws quite a bit of attention wherever he goes. Overhearing a trio of Spartans standing a little bit aside from the usual fountain crowd, you are therefore not too surprised by the topic of their conversation.";
-	say "     '...imagine him joining us as a new brother. Now that is a real man!' the first of them says in a voice full of admiration, and is answered by another of the young men. 'You think we should approach him when he comes back out? He might decline - then where would we be? A pity about Pericles['] edict of not testing someone's skill without provocation or... consent.' The first spartan replies, 'I'm not saying I'd publicly challenge that commandment, but... if one should run into that man somewhere else on campus, away from prying eyes... who will be able to tell he didn't petition to join us afterwards?'";
+	say "     '...imagine him joining us as a new brother. Now that is a real man!' the first of them says in a voice full of admiration, and is answered by another of the young men. 'You think we should approach him when he comes back out? He might decline - then where would we be? A pity about Pericles['] edict of not testing someone's skill without provocation or... consent.' The first Spartan replies, 'I'm not saying I'd publicly challenge that commandment, but... if one should run into that man somewhere else on campus, away from prying eyes... who will be able to tell he didn't petition to join us afterwards?'";
 	WaitLineBreak;
 	say "     The third of the group speaks up after listening to his friends until now, 'You know... if I met and bested that hunk - and his two beasts, not to forget about them - I would just take him as my personal slave. Imagine having such a man to warm your bed and serve.' Given that the Spartans in Tenvale college are not at all bothered by nudity and that you rarely see any wear pants or even underwear, the erections this line of talk makes grow are more than obvious. And you are far from the only one to notice. An incubus strolls over to the group almost straight away, offering them a good time in a very smooth and charming voice.";
-	say "     'You think you can take three spartan warriors at the same time?! I'd like to see you try!' comes the inevitable reply from the leader of their little group, and the demon gleefully leads them off to wherever his room or fuck-nest may be.";
+	say "     'You think you can take three Spartan warriors at the same time?! I'd like to see you try!' comes the inevitable reply from the leader of their little group, and the demon gleefully leads them off to wherever his room or fuck-nest may be.";
 	now Fountain Discussion is resolved;
 	now LastCampusWalkin is turns;
 
@@ -722,7 +725,7 @@ to say ResolveEvent Infernal Offer:
 to InfernalOfferEvent:
 	project the figure of Brennan_clothed_icon;
 	say "     You run into Brennan at the college fountain and spend a little time chatting. Clearly, the bearded man enjoys the somewhat more relaxed atmosphere of the campus a lot and can often be found here. Getting those immunity booster shots really helped him get out of his shell by taking away the worry about casual infection. Eventually, you're all caught up on all the current news and the two of you decide to go your separate ways. Just as you start to walk away, you are passed by a shirtless incubus, who 'accidentally' stumbles and lands right in Brennan's arms. Bare pecs pressed right against your human friend's front, the demon smiles charmingly at Brennan and says, 'Thanks for catching me, handsome. How about I pay you back with the best blowjob you'll ever have?' With that said, he quickly takes the human survivor's hands and slides them down to rest on his hellishly perfect buttocks.";
-	say "     'Yeah, I wish,' the human survivor says under his breath, then puts his hands on the incubus's shoulders and pushes him out of his comfort zone. 'Sorry, I don't just fuck around with any charming stranger that comes my way,' Brennan adds in a more normal voice, rejecting the sex-demon politely but firmly. With that said, he steps to the side and walks right past the baffled incubus. You see the demon whirl around and stare after his intended prey, his fist clenching in anger. A two-spartan patrol that strolls by in that very moment makes him re-think a physical confrontation and suppress the irritation though, and the incubus stalks off in a tiff. You can hear him mutter, 'You'll be mine in the end, asshole,' before he vanishes down the path.";
+	say "     'Yeah, I wish,' the human survivor says under his breath, then puts his hands on the incubus's shoulders and pushes him out of his comfort zone. 'Sorry, I don't just fuck around with any charming stranger that comes my way,' Brennan adds in a more normal voice, rejecting the sex-demon politely but firmly. With that said, he steps to the side and walks right past the baffled incubus. You see the demon whirl around and stare after his intended prey, his fist clenching in anger. A two-Spartan patrol that strolls by in that very moment makes him re-think a physical confrontation and suppress the irritation though, and the incubus stalks off in a tiff. You can hear him mutter, 'You'll be mine in the end, asshole,' before he vanishes down the path.";
 	now Infernal Offer is resolved;
 	now LastCampusWalkin is turns;
 
@@ -860,7 +863,7 @@ When Play begins:
 	now Name entry is "Human Survivor";
 	now enemy title entry is "Human Survivor";
 	now enemy Name entry is "Brennan";
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]Brennan swings his baseball bat at you and hits![or]The human survivor kicks your knee.[or]For a second, you think you got him, but Brennan elbows you in the stomach and sends you stumbling back.[or]Brennan's balled fist hits your face![at random]";
 	now defeated entry is "";
 	now victory entry is "";
@@ -881,35 +884,35 @@ When Play begins:
 	now per entry is 14;
 	now int entry is 12;
 	now cha entry is 16;
-	now sex entry is "Nochange";       [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
-	now HP entry is 75;                [ How many HP has the monster got? ]
-	now lev entry is 10;                [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
-	now wdam entry is 9;               [ Amount of Damage monster Does when attacking.]
-	now area entry is "Nowhere";       [ Case sensitive]
-	now Cock Count entry is 0;              [ number of cocks if sex is 'Male' or 'Both' ]
+	now sex entry is "Nochange"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now HP entry is 75; [ How many HP has the monster got? ]
+	now lev entry is 10; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
+	now wdam entry is 9; [ Amount of Damage monster Does when attacking.]
+	now area entry is "Nowhere"; [ Case sensitive]
+	now Cock Count entry is 0; [ number of cocks if sex is 'Male' or 'Both' ]
 	now Cock Length entry is 8;
-	now Ball Size entry is 3;         [ Size of balls ]
-	now Nipple Count entry is 2;            [ Number of nipples. ]
-	now Breast Size entry is 4;        [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
-	now Male Breast Size entry is 0;   [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 1;              [ number of pussies if sex is 'Female' or 'Both' ]
+	now Ball Size entry is 3; [ Size of balls ]
+	now Nipple Count entry is 2; [ Number of nipples. ]
+	now Breast Size entry is 4; [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 1; [ number of pussies if sex is 'Female' or 'Both' ]
 	now Cunt Depth entry is 6;
 	now Cunt Tightness entry is 4;
 	now SeductionImmune entry is true;
-	now libido entry is 25;            [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
-	now loot entry is "";              [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
-	now lootchance entry is 0;         [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 3;              [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now libido entry is 25; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
+	now loot entry is ""; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
+	now lootchance entry is 0; [ Chance of loot dropping 0-100 ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "Human";
 	now type entry is "human";
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is true;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;     [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -920,7 +923,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -932,7 +935,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -951,7 +954,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -972,18 +975,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -997,19 +1000,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -1104,7 +1107,7 @@ Cock Length of Brennan is 0. [10 Inches]
 Ball Count of Brennan is 0. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Brennan is 0. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"] [Increase by 1 for Alpha, decrease by 1 for Omega]
 Cunt Count of Brennan is 1. [number of cunts]
-Cunt Depth of Brennan is 9. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Brennan is 9. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Brennan is 2. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Brennan is 4. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -1442,7 +1445,7 @@ to say BrennanCampBravoTrip1:
 
 to say BrennanTinyTalk:
 	say "     As you bring up Tiny Tim, the resident minotaur of Camp Bravo, a somewhat embarrassed look crosses the human survivor's face. He raises one arm and rubs the back of his neck, then says, 'Well... I got to admit I was wrong on that front. Hearing your story about all those men being fucked by a 'nonhuman beast', I assumed... I don't know what exactly. Something far more sinister, a [italic type]monster[roman type] holding them down screaming or something.' He falls quiet for a moment after that, looking to the ground and mulling things over in his head. Eventually, Brennan goes on to say, 'Now that I have actually met him, I recognize that Tiny is just another victim in this matter. He's a person, re-shaped against his will by the infection and just can't help being what he has become. And there is simply no way that he was the one who cooked up the deception.'";
-	say "     Brennan raises his eyebrows and shrugs, then adds, 'I don't think Tiny even understands why exactly he is in the camp. For him, it will likely be just that he met some extremely friendly and generous people who decided to take care of him and all his needs.' Letting out a deep breath, the human survivor walks over to the nearest window and glances out over the city for a long moment. 'Just what kind of twisted individual would do all this to innocent people? Someone put a major effort into selling the story to the commanding officer of Camp Bravo, and for what? Putting countless straight men to what must be a real ordeal for them and also negating any positive things they might have achieved if they weren't busy getting pounded one after another. So, who is responsible? Could this person also be behind the outbreak itself? Those definitively are questions we should look into!'";
+	say "     Brennan raises his eyebrows and shrugs, then adds, 'I don't think Tiny even understands why exactly he is in the camp. For him, it will likely be just that he met some extremely friendly and generous people who decided to take care of him and all his needs.' Letting out a deep breath, the human survivor walks over to the nearest window and glances out over the city for a long moment. 'Just what kind of twisted individual would do all this to innocent people? Someone put a major effort into selling the story to the commanding officer of Camp Bravo, and for what? Putting countless straight men to what must be a real ordeal for them and also negating any positive things they might have achieved if they weren't busy getting pounded one after another. So, who is responsible? Could this person also be behind the outbreak itself? Those definitely are questions we should look into!'";
 
 to say BrennanDiegoTracking:
 	if PlayerMet of Diego is true:
@@ -1856,6 +1859,8 @@ instead of fucking the Brennan:
 		say "     Something tells you that just stepping forward and demanding sex isn't exactly the right way to go here. Maybe talking to him about it first would be a good idea.";
 	else if Libido of Brennan is 101:
 		say "     After having shown him a cold shoulder when he revealed his birth-gender, you don't think sex with Brennan is on the table anymore...";
+	else if Libido of Brennan is 102:
+		say "     You don't think sex with Brennan is on the table anymore...";
 	else if (TimekeepingVar is 1 or TimekeepingVar is 0 or TimekeepingVar is -1 or TimekeepingVar is -7 or TimekeepingVar is -8 or TimekeepingVar is 7):
 		say "     He's asleep. Better wait till Brennan has rested up.";
 	else: [ready for sex]
@@ -2138,7 +2143,7 @@ ResolveFunction of Brennan Shower Walkin is "".
 Sarea of Brennan Shower Walkin is "Nowhere".
 
 when play begins:
-	add Brennan Shower Walkin to badspots of TransList;
+	add Brennan Shower Walkin to BadSpots of TransList;
 
 after going to Brennan's Bathroom while (Brennan Shower Walkin is active and Brennan Shower Walkin is not resolved and (TimekeepingVar is -2 or TimekeepingVar is -3 or TimekeepingVar is -4 or TimekeepingVar is 6 or TimekeepingVar is 5 or TimekeepingVar is 4) and a random chance of 1 in 2 succeeds): [first time, Brennan awake and in the apartment, 50% chance]
 	project the figure of Brennan_face_icon;
@@ -2429,7 +2434,7 @@ to BrennanWolfRepeatThreesome:
 		say "     Quietly walking closer, you give the door a tiny bit of a push, widening the gap to watch through. From your new position, you can see Brennan stretched out across the bed on his back, legs spread and presenting his pussy to Romulus, who is busy pounding into his folds with a big red doggy cock. The wolf is stretched out over the trans-man's chest in a bit of an odd position for a canine, but clearly, he'll do anything to make his master happy - and get his dick wet in a tight pussy of course. But that's not the only wolf on the bed, as Remus is standing next to his human master, making out with Brennan in sloppy licks and kisses. Both the feral's tails are beating up a storm, emphasizing just how happy they are to be allowed some intimate time with their alpha. Before long, Brennan can't restrain himself any more and pulls Remus head aside to almost shout out a climactic moan.";
 		say "     Thrashing under the humping wolf as he comes, Brennan wraps his arms and legs around Romulus, holding on to the feral beast to ride out his orgasm. Meanwhile, the wolf is intensely stimulated by the gush of wetness around his thrusting shaft, as well as the knowledge that he got his alpha off, and he goes wild with grinding against the stretched-out man. 'Fuuck yeah! Knot me Romulus! I want it all!' Brennan gasps out as he feels the wolf's bulge start to grow inside his pussy. Hands shooting up to catch the canine's furry head between them, the human survivor pulls his wolf companion into a kiss, sucking on his floppy tongue as the beast ties with his pussy and starts to unload a series of thick blasts of cum to flood his womb. For a moment, Brennan just lies on the bed with his eyes closed, still sucking on the wolf's tongue and taking in the full sensation of his beloved companion breeding him.";
 		WaitLineBreak;
-		say "     The bedroom is filled with excited barks as Remus seems to 'talk' with his compatriot, maybe cheering him on and congratulating him on fucking their alpha. Both of the canines definitively seem ecstatic to be allowed such fun with Brennan. Circling around the entwined human and wolf, Remus comes to stand between Brennan's legs, sticking his muzzle to the spot where his pack-mate is joined with the trans-man. Sniffing excitedly, he starts to lick the human's pussy as well as his pack-mate's balls. Romulus twitches at the stimulation, his erection grinding against Brennan's insides and making the man buck against his waist, opening his eyes and moaning loudly. The wolf twists his head to look back, giving his friend a happy bark as he rides out the ecstasy of being in Brennan at the same time as getting his balls lapped and teased.";
+		say "     The bedroom is filled with excited barks as Remus seems to 'talk' with his compatriot, maybe cheering him on and congratulating him on fucking their alpha. Both of the canines definitely seem ecstatic to be allowed such fun with Brennan. Circling around the entwined human and wolf, Remus comes to stand between Brennan's legs, sticking his muzzle to the spot where his pack-mate is joined with the trans-man. Sniffing excitedly, he starts to lick the human's pussy as well as his pack-mate's balls. Romulus twitches at the stimulation, his erection grinding against Brennan's insides and making the man buck against his waist, opening his eyes and moaning loudly. The wolf twists his head to look back, giving his friend a happy bark as he rides out the ecstasy of being in Brennan at the same time as getting his balls lapped and teased.";
 		say "     Then Remus raises his muzzle a little more, licking Romulus trembling tailstar instead. The wolf clearly knows that Brennan will be knotted for some time, so he wants to make use of another hole to get off himself. Romulus takes this new development in good humor, his tail never stopping to wag in obvious happiness, and then even giving an encouraging bark to his pack-mate. With the scent of Brennan's juices in his nose and turning him on so very much, Remus eagerly takes the invitation and jumps on Romulus's back, hips thrusting to find his mark under the other wolf's tail. After just a few thrusts, he spears his dick into the back door of his pack-mate and starts to rut him like a wild beast, eager to join his two companions in their climaxes.";
 		WaitLineBreak;
 		say "     Growls, grunts and moans fill the bedroom as Remus thrusts in and out of Romulus, and this makes the other wolf's knotted shaft push deeper into Brennan, then pull against the lips of his pussy when the topping wolf pulls out. His knot is already starting to balloon outwards, and Romulus instinctively moves a little with him as the thick bulge is popped past his pucker again and again. A deep plunge by the canine rod follows soon after, finally tying the two canines together as Remus knot swells up fully and gets too big to pull out again. A second later, the wolf starts to unload into his pack-mate, flooding his hole with splashes of creamy white seed. As Remus howls loudly to proclaim his orgasm to the world, Brennan laughs happily and reaches up to rub the sides of his second wolf's body.";
@@ -2466,7 +2471,7 @@ to BrennanWolfRepeatThreesome:
 			now lust of Brennan is 22; [player joined in with Brennan and the wolves]
 		else if calcnumber is 2: [come in and watch]
 			LineBreak;
-			say "     As you say the words and reach out to pat Brennan's muscular arm, he replies, 'Oh? Oooooh! I didn't think that you might actually like what I do with them and just... want to watch. [if Dexterity of Brennan is 0]Uhm, that's fine by me I guess. We've been through some shit together, so why shouldn't I let you stay and do your thing. It's kinda flattering really.' [else]We've had some fun together just between the two of us, and seeing that you're okay with me including them is amazing.' [end if]Then suddenly, both of you are distracted by the wolves, who start 'talking' in excited barks, apparently happy in the knowledge that their fun-time with Brennan can continue despite your intrusion. Both of the canines definitively seem ecstatically happy to be allowed sexual contact with Brennan. Circling around the entwined human and wolf, Remus comes to stand between Brennan's legs, sticking his muzzle to the spot where his pack-mate is joined with the trans-man. Sniffing excitedly, he starts to lick the human's pussy as well as the other wolf's balls.";
+			say "     As you say the words and reach out to pat Brennan's muscular arm, he replies, 'Oh? Oooooh! I didn't think that you might actually like what I do with them and just... want to watch. [if Dexterity of Brennan is 0]Uhm, that's fine by me I guess. We've been through some shit together, so why shouldn't I let you stay and do your thing. It's kinda flattering really.' [else]We've had some fun together just between the two of us, and seeing that you're okay with me including them is amazing.' [end if]Then suddenly, both of you are distracted by the wolves, who start 'talking' in excited barks, apparently happy in the knowledge that their fun-time with Brennan can continue despite your intrusion. Both of the canines definitely seem ecstatically happy to be allowed sexual contact with Brennan. Circling around the entwined human and wolf, Remus comes to stand between Brennan's legs, sticking his muzzle to the spot where his pack-mate is joined with the trans-man. Sniffing excitedly, he starts to lick the human's pussy as well as the other wolf's balls.";
 			say "     You watch with excited eyes as Romulus twitches from the stimulation, his erection grinding against Brennan's insides and making the man buck against his waist. The wolf twists his head to look back, giving his friend a happy bark as he rides out the ecstasy of being in Brennan at the same time as getting his balls lapped and teased. Then Remus raises his muzzle a little more, licking Romulus trembling tailstar instead. The wolf clearly knows that Brennan will be knotted for some time, so he wants to make use of another hole to get off himself. Romulus takes this new development in good humor, his tail never stopping to wag in obvious happiness, and then even giving an encouraging bark to his pack-mate. As you are watching the canines amorous exploits, you let your hand stray down to your crotch and start to rub yourself.";
 			WaitLineBreak;
 			say "     With the scent of Brennan's juices in his nose and turning him on so very much, Remus eagerly takes the invitation and jumps on Romulus's back, his hard cock spearing forward to find its mark under the other wolf's tail. After just a few thrusts, he penetrates the back door of his pack-mate and starts to rut him like a wild beast, eager to join his two companions in their climaxes. Growls, grunts and moans fill the bedroom as Remus thrusts in and out of Romulus and this makes the other wolf's knotted shaft push deeper into Brennan, then pull against the lips of his pussy when the topping wolf pulls out. Remus's knot is already starting to balloon outwards, and Romulus instinctively moves a little with him as the thick bulge is popped past his pucker again and again. A deep plunge by the canine rod follows soon after, finally tying the two canines together as Remus knot swells up fully and gets too big to pull out again.";

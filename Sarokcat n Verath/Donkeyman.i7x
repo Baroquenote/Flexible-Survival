@@ -52,7 +52,7 @@ To say Donkeyman loses:
 			say "     The donkeyman writhes underneath you helplessly as you continue to tease the tip of his large shaft by rubbing yourself against it, the feeling of power and control rushing through you is almost as exhilarating as the feel of his thick member rubbing up between your thighs. After teasing him for another minute or so, you moan with pleasure as you finally slip his hard equine length inside of you, taking time to enjoy the sensations as you slowly lower yourself down onto his amazingly pleasurable shaft. The donkeyman moans helplessly underneath you as you slowly begin to ride him, your hands tangled in his leather harness as you rise up on his shaft, and then lower yourself down even further with slow teasing motions. When you have almost his entire wonderful length inside of you, its wonderfully shaped tip and thick shaft spreading you open wide and making you moan with pleasure, the submissive donkey obviously can't take any more of your sensual torture, and his body begins to shake with pleasure as he orgasms.";
 			WaitLineBreak;
 			say "     His thick seed erupts inside of you making you moan with pleasure as your body is filled with a torrent of thick equine seed, overflowing your stuffed pussy and dripping down your thighs as he continues to fill you full of his cum. His orgasm triggers your own, and you cry out happily as your little donkey toy fills you nice and full, every spurt of his seed into your body another sign of his total submission to your dominance. The sheer erotic thrill of conquering the male donkey makes your own orgasm all the stronger, the sensations continuing until both of you are completely worn out by the pleasure. Groaning, you pull yourself up once you can stand again, some of his seed leaking down your inner thighs as he slides out of you, the feeling surprisingly pleasurable as you begin to gather your stuff together again. You spare a glance back at where the donkeyman has passed out in a puddle of your mixed sexual fluids, and almost consider for a minute taking him along to be a proper pet for you to use whenever you want, before shaking your head and continuing on your way.[impregchance]";
-			if FemaleList is banned or player is submissive:
+			if FemaleList is banned or Player is submissive:
 				infect "Donkeyman";
 			else:
 				infect "Donkeywoman";
@@ -83,7 +83,7 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "Donkey"; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is "Donkey"; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	add "Donkeyman" to infections of EquineList;
 	add "Donkeyman" to infections of FurryList;
 	add "Donkeyman" to infections of NatureList;
@@ -93,20 +93,20 @@ When Play begins:
 	add "Donkeyman" to infections of BipedalList;
 	add "Donkeyman" to infections of TailList;
 	now Name entry is "Donkeyman";
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is ""; [specific name of unique enemy]
-	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is ""; [ Specific name of unique enemy. ]
+	now enemy type entry is 0; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The powerful donkey twists around and kicks out at you with one of his boot covered hooves![or]He charges forward swinging wildly![or]The powerful donkeyman grabs you and tries to pin you up against the wall![or]The strangely sexy donkey strokes his cock teasingly, the sight making you feel strangely aroused.[or]he charges forward, slamming his powerful donkey-like body right into you![or]He strikes at you powerfully, only to overbalance and trip, sending both of you sprawling to the ground![or]The donkey like brute swings his powerful fist right into your gut![at random]";
 	now defeated entry is "[Donkeyman loses]";
 	now victory entry is "[Donkeyman wins]";
 	now desc entry is "[DonkeymanDesc]";
-	now face entry is "that of a narrow donkey-like face, with a crudely made leather mask covering most of your muzzle, which only emphasizes your striking donkey-like eyes and expressive large equine ears which sit on top of your new face"; [ Face description, format as "Your face is (your text)."]
+	now face entry is "that of a narrow donkey-like face, with a crudely made leather mask covering most of your muzzle, which only emphasizes your striking donkey-like eyes and expressive large equine ears which sit on top of your new face"; [ Face description, format as "Your face is [Face of Player]." ]
 	now body entry is "powerful and muscular, built much like a beast of burdens, you have broad shoulders and powerfully built legs, you have managed to find some boots somewhere to cover your rough, mostly human feet and have made a rough harness out of strips of leather and rope to help make you feel more comfortable";
 	now skin entry is "[one of]gray furred[or]coarse furred[or]rough gray[at random]";
 	now tail entry is "You have a long, silken furred donkey tail emerging from above your tight ass. A small strip of leather has been tied at the base to help keep it together and pulled up to give a proper view of your rear to anyone who might be interested in looking."; [ Tail description, write a whole Sentence or leave blank. ]
 	now cock entry is "[one of]thick[or]equine[or]donkey[at random]";
-	now face change entry is "it pushes out into a rather narrow equine muzzle, and your eyes blur as your ears lengthen and shift to the top of your head. Blinking you reach up to feel your changed donkey-like face, and as your eyes begin to focus again you realize that your face feels rather vulnerable and naked. Glancing around you quickly spot several bits of cloth and leather nearby, and after a little bit of work you soon feel much better with a rough leather mask wrapped around your equine snout"; [ face change text. format as "Your face feels funny as (your text)." ]
-	now body change entry is "it shifts and changes and begins to bulge with muscles, you groan as your shoulders broaden and your build becomes more suited to that of a working beast, your [Skin of Player] chest seemingly to advertise the fact that you could now likely pull a cart or load easily enough. Unfortunately your chest feels disturbingly bare without a harness of some kind over it, almost as if you should be hitched up to something, looking around however you fail to spot anything that could be used as a proper harness, and so end up making do with some rope from your pack. And while it does look rather interesting, it makes you feel much happier and sexier to have it on"; [ body change text. format as "Your body feels funny as (your text)." ]
+	now face change entry is "it pushes out into a rather narrow equine muzzle, and your eyes blur as your ears lengthen and shift to the top of your head. Blinking you reach up to feel your changed donkey-like face, and as your eyes begin to focus again you realize that your face feels rather vulnerable and naked. Glancing around you quickly spot several bits of cloth and leather nearby, and after a little bit of work you soon feel much better with a rough leather mask wrapped around your equine snout"; [ Face change text, format as "Your face feels funny as [face change entry]." ]
+	now body change entry is "it shifts and changes and begins to bulge with muscles, you groan as your shoulders broaden and your build becomes more suited to that of a working beast, your [Skin of Player] chest seemingly to advertise the fact that you could now likely pull a cart or load easily enough. Unfortunately your chest feels disturbingly bare without a harness of some kind over it, almost as if you should be hitched up to something, looking around however you fail to spot anything that could be used as a proper harness, and so end up making do with some rope from your pack. And while it does look rather interesting, it makes you feel much happier and sexier to have it on"; [ Body change text, format as "Your body feels funny as [body change entry]." ]
 	now skin change entry is "it tightens and stretches across your body, coarse gray and black fur pushing out of it as your new donkey-like hide";
 	now ass change entry is "your ass tightens and becomes more muscular, and the area above your ass is tickled by the soft strands of hair pushing out of them, the soft strands of your new tail tickling your ass and legs slightly as it extends out behind you. The sensations making you shudder with each step as your tail brushes up against your thighs and ass, you look around for some way to keep it stable and out of the way, and spotting a bit of leather nearby, you gather the strands of your new donkey-like tail together and tie it with the leather, enjoying both the look and feel of the leather on your new appendage";
 	now cock change entry is "it draws up close to your body, its tip flattening as it flares out into a more equine shape as your skin bulges out to form a proper donkey-like sheath around it"; [ cock change text. format as "Your cock feels funny as (your text)." ]
@@ -116,10 +116,10 @@ When Play begins:
 	now per entry is 16;
 	now int entry is 14;
 	now cha entry is 16;
-	now sex entry is "Male"; 	[ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
+	now sex entry is "Male"; [ Defines which sex the infection will try and make you. current options are 'Male' 'Female' 'Both']
 	now HP entry is 60;
 	now lev entry is 4; [ Level of the Monster, you get this much HP if you win, or this much HP halved if you loose ]
-	now wdam entry is 7; [Amount of Damage monster Does when attacking.]
+	now wdam entry is 7; [ Amount of Damage monster Does when attacking. ]
 	now area entry is "Stable"; [ Current options are 'Outside' and 'Mall'. Case sensitive]
 	now Cock Count entry is 1; [ How many cocks will the infection try and cause if sex is 'Male' or 'Both']
 	now Cock Length entry is 15; [ Length infection will make cock grow to if cocks]
@@ -134,16 +134,16 @@ When Play begins:
 	now libido entry is 75; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
 	now loot entry is "lucky horseshoe"; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
 	now lootchance entry is 10; [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
 	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]muscled[or]strong[or]hard-working[at random]";
 	now type entry is "[one of]asinine[or]donkey-like[at random]";
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
 	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
@@ -155,7 +155,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -167,7 +167,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -186,7 +186,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -207,18 +207,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -232,19 +232,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Depth entry is 0; [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -261,7 +261,7 @@ This is the Donkeyman Infection rule:
 	if Player has a body of "Donkeyman":
 		trigger ending "Donkeyman Infection"; [Here it states, that the ending has been played.]
 		if humanity of Player < 10:
-			if Player is male and player is submissive:
+			if Player is male and Player is submissive:
 				say "     Finally unable to fight your new instincts and submissive urges any longer, you find yourself returning eagerly to the Stables, knowing they will surely have a place for someone like you. They guards just wave you in as you arrive with smirks on their faces, though you are too caught up with the need to find a means to properly fulfill your submissive needs. Hurrying inside, you pass the empty lobby and start roaming the halls. And while it feels so long to your needy body, it is only a few minutes before you run into another donkeyman like yourself. Your lustful instincts and submissive desires have you begging him to fuck you. Not one to refuse such an offer, he pushes you into one of the rooms and ties your wrists to the bedposts. Even as he enjoys your body, he continues your training, teaching you everything he knows about being a subby plaything over the next several hours.";
 				say "     When he's done, he leaves you tied up there and calls out into the hall for several of his brethren to come. They enter the room and eye you with lustful excitement. Soon you're surrounded on the bed by lustful male subs, each very eager to teach you all they know in the most hands-on and intimate way they can, much to your delight. You are subject to so many positions, toys and kinky gear that all bring you such pleasure. You take to your place as a submissive donkeyman readily, loving being the lowest of the low, fucktoy to these fucktoys.";
 				WaitLineBreak;
@@ -278,7 +278,7 @@ This is the Donkeyman Infection rule:
 				say "     Being properly outfitted for the first time, you feel increasingly happy with your new situation as the handsome donkeys lead you into another room where a large bed with several chains attached to it is waiting. Your body shudders with desire as the other donkeys grin and rub their hands over your body, making you shudder with ever increasing arousal as they hook your harness to the bed, leaving you unable to escape, even if you wanted to. Looking around at all the male donkeys with their similar gear, and their powerful erections, you realize that you are completely at their mercy. This realization sends an erotic thrill through your body as the first of the powerful males begins to move over you. You find yourself groaning eagerly as your lust-filled mind is bombarded with pleasure as the donkeymen show you just how best to please them, and your bound needy body is teased and fucked again and again. It isn't long before you find yourself loving your new position as a bondage slut, the other donkeys using you for their pleasure whenever they feel like it. The life of a well-loved and well-cared for sexual toy is filled with an amazing amount of pleasure, and you find you just love the sensations of surrendering control and being mastered and dominated by the customers as well as the staff...";
 		else:
 			say "     When the military arrives for the rescue you are more than happy to go with them, and while your form gets more than a few odd looks, it is still humanoid enough that they only give you the simplest of checks to make sure you still have your mind before letting you go, as they have much more important problems to focus on with all the issues they are having pushing into the city. Finally free and on the streets, you drift for a while, having no real focus, and while you try several different things, something seems to be missing from your life. Eventually when you stop at a leather shop on impulse to replace your hand-made harness, which you still find yourself wearing as often as possible, someone mentions a nightclub you might want to visit where people who like harnesses and leather tend to gather. Finding yourself curious, you decide to investigate and end up dressing up in a shining new set of leather gear to go look at this new club.";
-			if Player is puremale and player is submissive and anallevel > 1:
+			if Player is puremale and Player is submissive and anallevel > 1:
 				say "     Arriving at the club, you are a little surprised to find it a gay bar, not having been told that about it. You settle in fairly quickly though, the ambience, the music and the appealing clientele help you settle in to enjoy your first visit to 'The Bit and Reins'. Eventually after a few drinks, you find yourself loosening up a bit and enjoying yourself, and all the attention your finely toned body is getting, no one seeming to mind your non-human changes as they admire your body.";
 				say "     You find yourself chatting with some of the gentlemen at the club, similarly dressed in leather gear like you. They are all subs who are enjoying a night out together without their respective masters and, in one case, mistress. You enjoy listening to their (increasingly sordid) stories of their lives as subs and you become increasingly eager to emulate them. When you mention this after a particularly kinky story, one of them grins and mentions that, since he works here, he can get you all into a back room for some private fun. With that, they're all up and you're dragged in tow by the quartet of horny males eager to use and abuse their new friend.";
 				WaitLineBreak;

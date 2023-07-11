@@ -41,6 +41,14 @@ Description of NPC Nexus is "This is the extradimensional storage room for unuse
 SituationNexus is a room.
 Description of SituationNexus is "This is the extradimensional storage room for unused Situations. DON'T PANIC - Trixie will be along in the next turn to pick you up for a trip back into the bunker".
 
+Table of GameRoomIDs (continued)
+Object	Name
+Traveling	"Traveling"
+
+Traveling is a room.
+Description of Traveling is "You set out towards your destination...".
+The earea of Traveling is "Outside".
+
 Section 3 - Main Hub and other standard rooms
 
 Table of GameRoomIDs (continued)
@@ -635,7 +643,7 @@ Park Entrance	"Park Entrance"
 
 Park Entrance is a room. "     Ah, the city park. Smell that fresh pine air, and the scent of - wait no, that grass has not been mowed for quite a while. Just how long ago did all this trouble start anyway? Time seems fluid these days, making it hard for you to remember. No matter what, the grass has started to creep up onto the pavement that leads further into the park ([link]north[end link]) and all the other plants seem pretty overgrown and untamed too. The park's boundary wall remains largely intact, with a sign that welcomes you into the park, except during night hours, not that anyone is enforcing this rule at the moment.".
 Park Entrance is fasttravel.
-The earea of Park Entrance is "Outside".
+The earea of Park Entrance is "Park".
 Park Entrance is sleepsafe.
 
 Table of GameRoomIDs (continued)
@@ -647,8 +655,8 @@ earea of Park Trail is "Park".
 Description of Park Trail is "[ParkTrailDesc]".
 
 to say ParkTraiLDesc:
-	say "     Following this north/south trail, you can see the severely overgrown state of the park all around you. All this can't be purely natural - it'd take ages to have gotten this bad. Seems like some of the spreading nanites decided to create a section of untamed wilderness right in the middle of the city. There are dense woods in almost every direction, including to the [link]north[end link], where the paved trail ends at a truly colossal tree that must have literally exploded out of the ground under it. It is wider than the path was in its intact state. A wooden sign pointing [link]east[end link] indicates the presence of a hiking trail going that way. In the [link]northwest[end link], there is an expanse of bamboo forest, with a bright red Torii arch forming the start of a gravel trail leading into it. [if Public Hitching Post is resolved]Besides that, you remember that there actually is a narrow way through the thick and underbrush to the [link]northwest[end link], leading to a former picnic area. [end if][line break]";
-	say "     Nature is abuzz and active all around you, with rustling The path [link]northwest[end link] looks safe and strangely peaceful, but it'll be easy to become lost in the rest of the thick woods of the park - though perhaps exploring might have its own rewards. You can hear soft clopping sounds just beyond sight, and the occasional buzz of insects. The air is fresh here under the [short time of day] sky.";
+	say "     Following this north/south trail, you can see the severely overgrown state of the park all around you. All this can't be purely natural - it'd take ages to have gotten this bad. Seems like some of the spreading nanites decided to create a section of untamed wilderness right in the middle of the city. There are dense woods in almost every direction, including to the [link]north[end link], where the paved trail ends at a truly colossal tree that must have literally exploded out of the ground under it. It is wider than the path was in its intact state. A wooden sign pointing [link]east[end link] indicates the presence of a hiking trail going that way. In the [link]northwest[end link], there is an expanse of bamboo forest, with a bright red Torii arch forming the start of a gravel trail leading into it. [if Public Hitching Post is resolved]Besides that, you remember that there actually is a narrow way through the thick and underbrush to the [link]northeast[end link], leading to a former picnic area. [end if][line break]";
+	say "     Nature is abuzz and active all around you, with rustling in the woods and the occasional buzz of insects. The air is fresh here under the [short time of day] sky.";
 
 Park Trail is north of Park Entrance.
 Park Exit is a door. Park Exit is dangerous. The marea of Park Exit is "Outside". Park Exit is undescribed. Park Exit is south of Park Entrance. Outside Exploration is south of Park Exit.
@@ -732,7 +740,7 @@ Description of Green Apartment Building is "[GreenAptDesc]".
 The earea of Green Apartment Building is "Outside".
 
 to say GreenAptDesc:
-	say "     Standing in a somewhat out of the way neighborhood, a green-tinted apartment building rises before you, six stories tall. A fire escape clings to the outside of its structure, its retracting lowest set of stairs weighted down with a number of cement blocks, allowing easy access to the roof. The place and its surroundings seem fairly quiet - while the streets around here are filled with the usual abandoned cars, sacks of uncollected trash and scattered clothes, you haven't actually seen any large groups of infected hanging around or roaming the streets. The petrified herm hyena standing in front of the entrance door might have something to do with that...";
+	say "     Standing in a somewhat out of the way neighborhood, a green-tinted apartment building rises before you, six stories tall. A fire escape clings to the outside of its structure, next to a colossal set of solar panels that stretch up the south wall of the building for its full height. The fire escape's retracting lowest set of stairs weighted down with a number of cement blocks, allowing easy access to the roof. The place and its surroundings seem fairly quiet - while the streets around here are filled with the usual abandoned cars, sacks of uncollected trash and scattered clothes, you haven't actually seen any large groups of infected hanging around or roaming the streets. The petrified herm hyena standing in front of the entrance door might have something to do with that...";
 
 Table of GameRoomIDs (continued)
 Object	Name
@@ -825,7 +833,7 @@ understand "plains" as Dry Plains.
 
 LastTrashSearchTurn is a number that varies. [@Tag:NotSaved]
 
-Dry Plains is a room. It is fasttravel. "     At this edge of the city, the thinning buildings have collapsed before opening up to the great plain stretching away from you, all the way to the harsh and insurmountable cliff-faces of Mount Shirley, the [link]northern[as]north[end link] barrier of the wide river valley the city was originally founded in. You don't see any kind of military cordon here, making you suspect those already infected have spread out here before the military was mobilized to close it off. Smoke rising far in the northwest makes you guess that their lines are probably there, at the chokepoint between the mountain and the expansive Pacifica Nature Preserve. Some hoof prints you spot in a sandy patch nearby furthers the assumption that it is no longer human civilization that rules here. As for the open grasslands, it looks like the something leveled just about all of the scattered buildings further out. Now all that is left of them among the dirt and grassland are mounds of rubble. The plains are dry and brown with only a few trees or bushes scattered across the rolling plains before you.".
+Dry Plains is a room. It is fasttravel. "     At this edge of the city, the thinning buildings have collapsed before opening up to the great plain stretching away from you, all the way to the harsh and insurmountable cliff-faces of Mount Shirley, the northern barrier of the wide river valley the city was originally founded in. You don't see any kind of military cordon here, making you suspect those already infected have spread out here before the military was mobilized to close it off. Smoke rising far in the northwest makes you guess that their lines are probably there, at the chokepoint between the mountain and the expansive Pacifica Nature Preserve. Some hoof prints you spot in a sandy patch nearby furthers the assumption that it is no longer human civilization that rules here. As for the open grasslands, it looks like the something leveled just about all of the scattered buildings further out. Now all that is left of them among the dirt and grassland are mounds of rubble. The plains are dry and brown with only a few trees or bushes scattered across the rolling plains before you.".
 The earea of Dry Plains is "Plains".
 Plains Door is a door. The marea of plains door is "Plains". "The plains stretch out before you, with slight rolls in the landscape and dotted with fallen buildings and other rare features.". Plains Door is dangerous. Plains door is east of dry plains.
 Plains door is west of Wandering the Plains.

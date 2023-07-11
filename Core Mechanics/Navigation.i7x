@@ -7,6 +7,7 @@ Grey Abbey Library	"Grey Abbey Library"	"Grey Abbey Library"	"Primary Rooms"
 Outside Trevor Labs	"Trevor Labs"	"Outside Trevor Labs"	"Primary Rooms"
 Approaching the Capitol Building	"Approaching the Capitol Building"	"Approaching the Capitol Building"	"Capitol District"
 Disused Garage	"Disused Garage"	"Disused Garage"	"Capitol District"
+Hymenoptera Hotel	"Hymenoptera Hotel"	"Hymenoptera Hotel"	"Capitol District"
 Office Den	"Office Den"	"Office Den"	"Capitol District"
 Orc Lair Side Entrance	"Orc Lair"	"Orc Lair Side Entrance"	"Capitol District"
 Camp Bravo Entrance	"Camp Bravo"	"Camp Bravo Entrance"	"Central City"
@@ -33,7 +34,7 @@ Kristen's Hideout	"Kristen's Hideout"	"Kristen's Hideout"	"Commercial District"
 Lingerie Store	"Lingerie Store"	"Lingerie Store"	"Commercial District"
 New Ewe Storeroom	"New Ewe Store"	"New Ewe Storeroom"	"Commercial District"
 Slut Rat Den	"Slut Rat Den"	"Slut Rat Den"	"Commercial District"
-The Palomino	"The Palomino"	"The Palomino"	"Commercial District"
+PALOMINO Dance Club	"PALOMINO Dance Club"	"PALOMINO Dance Club"	"Commercial District"
 Froggy Hideout	"Froggy Hideout"	"Froggy Hideout"	"Commercial District"
 Dry Plains	"Dry Plains"	"Dry Plains"	"Dry Plains"
 Entrance to Red Rock Lair	"Entrance to Red Rock Lair"	"Entrance to Red Rock Lair"	"Dry Plains"
@@ -52,6 +53,7 @@ Clayton's Front Yard	"Clayton's Front Yard"	"Clayton's Front Yard"	"High Rise Di
 Flower Garden	"Flower Garden"	"Flower Garden"	"High Rise District"
 Lizard Parlor	"Lizard Parlor"	"Lizard Parlor"	"High Rise District"
 Rex's Place	"Rex's Place"	"Rex's Place"	"High Rise District"
+Snapjaw_Beach_Camp	"Snapjaw Beach Camp"	"Snapjaw_Beach_Camp"	"High Rise District"
 Zephyr Lobby	"Zephyr"	"Zephyr Lobby"	"High Rise District"
 City Hospital	"City Hospital"	"City Hospital"	"Hospital"
 Psych Department	"Psych Department"	"Psych Department"	"Hospital"
@@ -63,6 +65,8 @@ Hyena Shack	"Hyena Shack"	"Hyena Shack"	"Junkyard"
 Ogre's Camp	"Ogre's Camp"	"Ogre's Camp"	"Junkyard"
 Steven's Home	"Steven's Home"	"Steven's Home"	"Junkyard"
 Foxy Hideaway	"Foxy Hideaway"	"Foxy Hideaway"	"Misc"
+Haunted House Entrance	"Haunted House Entrance"	"Haunted House Entrance"	"Misc"
+Ruined Apartments	"Ruined Apartments"	"Ruined Apartments"	"Misc"
 Qytat Plaza	"Qytat Plaza"	"Qytat Plaza"	"Misc"
 Shifting Room	"Shifting Room"	"Shifting Room"	"Misc"
 Museum Foyer	"Museum Foyer"	"Museum Foyer"	"Museum"
@@ -100,6 +104,8 @@ Staghorn	"Staghorn"	"Staghorn"	"Urban Forest"
 Happy Puppy Kennel	"Happy Puppy Kennel"	"Happy Puppy Kennel"	"Urban Forest"
 Ironscale Hollow	"Ironscale Hollow"	"Ironscale Hollow"	"Urban Forest"
 Avalon-Crossroads	"Avalon-Crossroads"	"Avalon-Crossroads"	"Urban Forest"
+Mystical Falls	"Mystical Falls"	"Mystical Falls"	"Urban Forest"
+Camp Of The Snake	"Camp Of The Snake"	"Camp Of The Snake"	"Urban Forest"
 Hidden Rock Cavern Entrance	"Hidden Rock Cavern Entrance"	"Hidden Rock Cavern Entrance"	"Urban Forest"
 Warehouse District	"Warehouse District"	"Warehouse District"	"Warehouse District"
 Hyena Hideout	"Hyena Hideout"	"Hyena Hideout"	"Warehouse District"
@@ -239,6 +245,12 @@ carry out navigating:
 	if noun is location of Player:
 		say "You're already there.";
 		stop the action;
+	now Player is in Traveling;
+	if companionList of Player is not empty:
+		repeat with y running through companionList of Player:
+			if NPCObject of y is not Nullpet:
+				now NPCObject of y is in location of Player;
+	follow turnpass rule;
 	let the bonus be (( Perception of Player minus 10 ) divided by 2);
 	now battleground is "Outside";
 	if a random number from 1 to 20 < 10 minus bonus and battleground is not "void":
@@ -249,10 +261,10 @@ carry out navigating:
 				Fight;
 	else:
 		say "You travel to [the noun], avoiding trouble as best you can.";
-	if HP of Velos > 2, move Velos to the noun;
+	if HP of Velos > 2, move Velos to noun;
 	now Player is in noun;
 	follow the ngraphics_blank rule;
-	follow turnpass rule;
+	NavInEvent_Check noun;
 
 NavCheckReturn is a truth state that varies.
 

@@ -41,7 +41,7 @@ Cock Length of Darren is 8. [Length in Inches]
 Ball Count of Darren is 4. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Darren is 3. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Darren is 0. [number of cunts]
-Cunt Depth of Darren is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Darren is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Darren is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Darren is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -103,7 +103,7 @@ to say DarrenTalkMenu:
 			now current menu selection is calcnumber;
 			choose row calcnumber in table of fucking options;
 			say "[title entry]: [description entry]?";
-			if player consents:
+			if Player consents:
 				let nam be title entry;
 				now sextablerun is 1;
 				if (nam is "Himself"):
@@ -153,9 +153,9 @@ to say DarrenTalk3: [helping]
 		[say "[DarrenRebuilding]";]
 
 to say DarrenRebuilding: [assorted tasks to improve the hideaway and get closer to Darren]
-	if hp of Darren is 0: [basic scene, cleaning things up]
+	if HP of Darren is 0: [basic scene, cleaning things up]
 		say "     A";
-	else if hp of Darren < 5:
+	else if HP of Darren < 5:
 		say "     A";
 		[insert talk style table with different tasks]
 	else:
@@ -190,7 +190,7 @@ to say DarrenSexMenu:
 	now sortorder entry is 2;
 	now description entry is "See about getting some salamander dick";
 	[]
-	if player is male and (Loyalty of Darren > 2):
+	if Player is male and (Loyalty of Darren > 2):
 		choose a blank row in table of fucking options;
 		now title entry is "Ask to fuck him";
 		now sortorder entry is 3;
@@ -214,7 +214,7 @@ to say DarrenSexMenu:
 			now current menu selection is calcnumber;
 			choose row calcnumber in table of fucking options;
 			say "[title entry]: [description entry]?";
-			if player consents:
+			if Player consents:
 				let nam be title entry;
 				now sextablerun is 1;
 				if (nam is "Offer a BJ"):
@@ -286,7 +286,7 @@ instead of going southeast from Approaching the Capitol Building while Loyalty o
 	say "     While walking through the Capitol district, you spot a pair of luminous eyes examining you through a narrow gap in a doorway. When you focus your gaze to examine more closely, you can see them move out of visibility as you hear a small crashing sound. A moment later, a small panel seems to cover the gap you'd just seen. It seems like someone might be hiding back there, though they aren't being quite as stealthy about it as they think.";
 	say "     [bold type]Do you want to go check it out?[roman type][line break]";
 	if Player consents:
-		if bodyname of Player is "Salamander":
+		if BodyName of Player is "Salamander":
 			say "     You approach the door you saw a moment ago, and knock firmly. For a second, the panel opens back up, revealing the same eyes you saw before, but scarcely a moment later you can see those eyes widen before the opening is slammed closed again. You blink, surprised by the reaction they had, before trying to figure out what happened. You didn't even have a chance to speak, so the only thing that might have turned them off of you would be your appearance. Maybe you'd have better luck trying again if you came back looking different...";
 		else:
 			say "     You approach the door you saw a moment ago, and knock firmly. For a second, the panel opens back up, revealing the same eyes you saw before, but scarcely a moment later you can see those eyes widen before the opening is slammed closed again. Before you can react further, you hear a voice coming through the door. 'Okay, you get a few points for not being with them, but I think you should tell me who you are and why you're here before I even think about letting you in.' You explain your situation as a survivor, and how you were out exploring. Several seconds pass in silence, and finally the peephole opens again, once more revealing the same bright eyes. 'Okay, you seem trustworthy, but please don't make me regret this.";

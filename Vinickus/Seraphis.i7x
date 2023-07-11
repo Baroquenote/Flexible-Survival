@@ -43,7 +43,7 @@ Cock Length of Seraphis is 22. [length in inches]
 Ball Count of Seraphis is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Seraphis is 5. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Seraphis is 0. [number of cunts]
-Cunt Depth of Seraphis is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Seraphis is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Seraphis is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Seraphis is 3. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -81,8 +81,8 @@ Conflict within the Plains is a situation.
 ResolveFunction of Conflict within the Plains is "[ResolveEvent Conflict within the Plains]". The level of Conflict within the Plains is 6.
 Sarea of Conflict within the Plains is "Plains".
 when play begins:
-	add Conflict within the Plains to Badspots of MaleList;
-	add Conflict within the Plains to Badspots of FurryList;
+	add Conflict within the Plains to BadSpots of MaleList;
+	add Conflict within the Plains to BadSpots of FurryList;
 
 to say ResolveEvent Conflict Within the Plains:
 	if HP of Seraphis is 0: [First interaction]
@@ -183,7 +183,7 @@ to say ResolveEvent Conflict Within the Plains:
 						LineBreak;
 						say "     Considering that he can't really move from where he's standing, it's not hard to stay away from him, and after a few hours, it begins to look like as though he's coming down from his lust high. More intelligence is visible within his eyes with each passing second, and as the third or fourth hour passes, you can see his cock is deflating a little. However, he's still very evidently horny, but at least a little more in control than before. 'Huh. You're a rather... unique individual. Most would have jumped at the chance for a fuck, especially nowadays.'";
 						say "     You tell him about what you've been through so far, leaving out anything too risky, and his face seems to lighten up a bit. 'Ah, so you avoided the brunt of the start. Lucky, ";
-						if bodyname of Player is "Human":
+						if BodyName of Player is "Human":
 							say "and you've even kept your own body.' His equine shaft jerks up a bit as he says that. ";
 						else:
 							say "well, for the most part, for you definitely lost your old body,' he remarks with some evident disappointment. ";
@@ -224,8 +224,8 @@ Prereq1 of Plant Ruins Encounters is Conflict Within the Plains.
 The Prereq1Resolution of Plant Ruins Encounters is { 1, 2 }. [dom, neutral]
 
 when play begins:
-	add Plant Ruins Encounters to Badspots of MaleList;
-	add Plant Ruins Encounters to Badspots of FurryList;
+	add Plant Ruins Encounters to BadSpots of MaleList;
+	add Plant Ruins Encounters to BadSpots of FurryList;
 
 to say ResolveEvent Plant Ruins Encounters:
 	[
@@ -352,13 +352,13 @@ to say DominantSeraphisFirst:
 
 to say SubmissiveSeraphisFirst:
 	if anallevel < 2:
-		say "     You open up your clothes and let your [cock of Player] genitals flop out, your eyes completely locked onto this beast's flank. The donut hole back here, plus the curvy rump around it, is hard to look away from. You know how good it's going to feel to sink your cock down to the root in it, all the while grinding your hips into him. You gather up as much spit as you can in your mouth, and when there's enough of it, you spit it onto his ass, using your cock to smear it around and into his hole. You then angle his flank down towards your hips.";
+		say "     You open up your clothes and let your [Cock of Player] genitals flop out, your eyes completely locked onto this beast's flank. The donut hole back here, plus the curvy rump around it, is hard to look away from. You know how good it's going to feel to sink your cock down to the root in it, all the while grinding your hips into him. You gather up as much spit as you can in your mouth, and when there's enough of it, you spit it onto his ass, using your cock to smear it around and into his hole. You then angle his flank down towards your hips.";
 	else:
-		say "     You open up your clothes and let your [cock of Player] genitals flop out, your eyes completely locked onto this beast's flank. The donut hole back here, plus the curvy rump around it, is hard to look away from. You know how good it's going to feel to sink your cock down to the root in it, all the while grinding your hips into him, but you can't resist getting a nice taste of that ass before anything else. Which is why you immediately, and a bit harshly, yank his tail out of the way. Your rough treatment earns you a nice sight of his donut and a quiet, whimpering neigh. With your sight now locked in on your goal, you drop to one knee, propping yourself up as you push your face between those sexy equine curves.";
+		say "     You open up your clothes and let your [Cock of Player] genitals flop out, your eyes completely locked onto this beast's flank. The donut hole back here, plus the curvy rump around it, is hard to look away from. You know how good it's going to feel to sink your cock down to the root in it, all the while grinding your hips into him, but you can't resist getting a nice taste of that ass before anything else. Which is why you immediately, and a bit harshly, yank his tail out of the way. Your rough treatment earns you a nice sight of his donut and a quiet, whimpering neigh. With your sight now locked in on your goal, you drop to one knee, propping yourself up as you push your face between those sexy equine curves.";
 		say "     Your nose is quickly met with a strong, masculine musk, and as you poke your tongue out, the taste of sweat and the very same musk that you smelled, greets you. With a near mad vigor, you run your tongue over every nook and cranny of his ass, gracing the hole ever so slightly at random intervals, keeping the centaur on edge the entire time. It doesn't take long for his hole to start winking, his excitement growing with each swipe of your tongue, each huffed breath over his ass. Whinny after whinny starts filling your ears, panting gasps and moans following each one, and as you finally move over his twitching hole, you dart your tongue straight into him.";
 		WaitLineBreak;
 		say "     With your tongue wiggling about in his depths, you sloppily thrust it in and out, swiping it around the edges of the inner walls. While you keep up your pleasuring of the beast, you can't help but reach out with your free hand to grip at his ass, rubbing and squeezing his furred flank. You smile to yourself at the sheer noises the centaur makes, giving into the satisfaction of twisting another to your whims. Just as you think about that, you hear huffed utterances, 'Please...pl-please. Fuck. Fuck me.' Your smile grows even more, glee filling you as you give one more thrust of your tongue and one last suck on his hole. With that, you pull back, angling his flank down towards your hips. With the centaur's strong back legs lowered, his hips are easy to get into the right position.";
-	say "     The big male's flank is soon mere inches from your cock, and as you pull it closer to your tip, you can feel heat radiate off of his rear. That heat envelopes your crotch, driving your lusts further, and as you push your hips forward, you feel his saliva-slickened hole part for your [cock length of Player] breeding rod. As you sink inch after inch inside of him, sheathing your cock into his depths, you move your hand from his flank, resting it on your hip as you push into him. While you sink further in, the lust that filled you before doubles, no, triples as the donut hole tightens and loosens constantly. The hole is quite large, but it has more muscles than most any other hole you've been in, and the mad beast uses them with exceptional skill.";
+	say "     The big male's flank is soon mere inches from your cock, and as you pull it closer to your tip, you can feel heat radiate off of his rear. That heat envelopes your crotch, driving your lusts further, and as you push your hips forward, you feel his saliva-slickened hole part for your [Cock Length of Player] breeding rod. As you sink inch after inch inside of him, sheathing your cock into his depths, you move your hand from his flank, resting it on your hip as you push into him. While you sink further in, the lust that filled you before doubles, no, triples as the donut hole tightens and loosens constantly. The hole is quite large, but it has more muscles than most any other hole you've been in, and the mad beast uses them with exceptional skill.";
 	WaitLineBreak;
 	say "     Even with how needy he is, you still feel exceptionally skilled muscle movements, twitches, and control. It all drives you closer to the edge even faster than if your sole goal was to get off, but this lustful half-beast still has a great deal more use to you. As you pump in and out of his quivering hole, you do everything you can to not think of the slick, suctioning hole quivering around your cock, or how it feels when you slam your hips into him, his raised anus pressing against your groin, or how it feels to be pistoning in and out of that warm, fleshy pit.";
 	say "     It's all for naught though, and you find your balls tensing and rising with each second, your cock pulsing as you hit the edge and shoot right past it[if Player is knotted], shoving your knot straight into his ass[end if]. As you feel your seed pumping through your shaft, the ecstasy of orgasm rushes over your body, filling you with more savage desire as you [if Player is knotted]yank your knot out and shove it back in, continuing to pound him as you slip it in and out of [else]keep pounding in and out of [end if]the fleshy hole.";

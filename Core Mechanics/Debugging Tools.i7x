@@ -178,9 +178,10 @@ check turncountdisplay:
 carry out turncountdisplay:
 	say "DEBUG: CURRENT TURN IS [turns]; Current Turn Count is [turn count]";
 
-PregStatus is an action applying to nothing.
-understand "zPreg Status" as PregStatus.
-understand "zPregStatus" as PregStatus.
+PregStatus is an action applying to one topic.
+understand "zPreg Status [text]" as PregStatus.
+understand "zPregStatus [text]" as PregStatus.
+understand "zPregCheck [text]" as PregStatus.
 
 check PregStatus:
 	if debugactive is 0:
@@ -188,71 +189,76 @@ check PregStatus:
 		stop the action;
 
 carry out PregStatus:
-	say "     DEBUG: You summon up a magic mirror and look into it:[line break]";
+	let PregCheckObj be Player;
+	if topic understood is not "Player":
+		repeat with x running through persons:
+			if printed name of x exactly matches the text topic understood, case insensitively:
+				now PregCheckObj is x;
+	say "     DEBUG: Preg Status of [PregCheckObj]:[line break]";
 	say "impreg_ok: ";
-	if Player is impreg_ok:
+	if PregCheckObj is impreg_ok:
 		say "+";
 	else:
 		say "-";
 	say "[line break]impreg_able: ";
-	if Player is impreg_able:
+	if PregCheckObj is impreg_able:
 		say "+";
 	else:
 		say "-";
 	say "[line break]impreg_now: ";
-	if Player is impreg_now:
+	if PregCheckObj is impreg_now:
 		say "+";
 	else:
 		say "-";
 	say "[line break]partial_vacant: ";
-	if Player is partial_vacant:
+	if PregCheckObj is partial_vacant:
 		say "+";
 	else:
 		say "-";
 	say "[line break]total_vacant: ";
-	if Player is total_vacant:
+	if PregCheckObj is total_vacant:
 		say "+";
 	else:
 		say "-";
 	LineBreak;
 	say "[line break]fpreg_ok: ";
-	if Player is fpreg_ok:
+	if PregCheckObj is fpreg_ok:
 		say "+";
 	else:
 		say "-";
 	say "[line break]fpreg_able: ";
-	if Player is fpreg_able:
+	if PregCheckObj is fpreg_able:
 		say "+";
 	else:
 		say "-";
 	say "[line break]fpreg_now: ";
-	if Player is fpreg_now:
+	if PregCheckObj is fpreg_now:
 		say "+";
 	else:
 		say "-";
 	say "[line break]female_vacant: ";
-	if Player is fem_vacant:
+	if PregCheckObj is fem_vacant:
 		say "+";
 	else:
 		say "-";
 	LineBreak;
 	say "[line break]mpreg_ok: ";
-	if Player is mpreg_ok:
+	if PregCheckObj is mpreg_ok:
 		say "+";
 	else:
 		say "-";
 	say "[line break]mpreg_able: ";
-	if Player is mpreg_able:
+	if PregCheckObj is mpreg_able:
 		say "+";
 	else:
 		say "-";
 	say "[line break]mpreg_now: ";
-	if Player is mpreg_now:
+	if PregCheckObj is mpreg_now:
 		say "+";
 	else:
 		say "-";
 	say "[line break]male_vacant: ";
-	if Player is male_vacant:
+	if PregCheckObj is male_vacant:
 		say "+";
 	else:
 		say "-";
@@ -309,9 +315,9 @@ to DescriptionDisplay:
 	follow the cock descr rule;
 	if Player is male:
 		if Cock Count of Player > 1:
-			now cocktext is "have [Cock Count of Player] [cock size desc of Player] [Cock Length of Player]-inch-long [Cock of Player] [one of]cocks[or]penises[or]shafts[or]manhoods[at random]. They are [if Libido of Player <= 25]only somewhat aroused at the moment[else if Libido of Player <= 50]partially hard and dribbling a little pre[else if Libido of Player <= 75]erect and leaking precum[else]fully erect and drooling precum steadily[end if]. [if Player is internal]Though they are not outwardly apparent, you wager you have[else]Underneath them hangs[end if] [one of]a pair of[or]a set of[at random] [Ball Size Adjective of Player] [Balls].";
+			now cocktext is "have [Cock Count of Player] [cock size desc of Player] [Cock Length of Player]-inch-long [Cock of Player] [one of]cocks[or]penises[or]shafts[or]manhoods[at random]. They are [if Libido of Player <= 25]only somewhat aroused at the moment[else if Libido of Player <= 50]partially hard and dribbling a little pre[else if Libido of Player <= 75]erect and leaking precum[else]fully erect and drooling precum steadily[end if]. [if Player is internalBalls]Though they are not outwardly apparent, you wager you have[else]Underneath them hangs[end if] [one of]a pair of[or]a set of[at random] [Ball Size Adjective of Player] [Balls].";
 		else:
-			now cocktext is "have a [cock size desc of Player] [Cock Length of Player]-inch-long [Cock of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random]. It is [if Libido of Player <= 25]only somewhat aroused at the moment[else if Libido of Player <= 50]partially hard and dribbling a little pre[else if Libido of Player <= 75]erect and leaking precum[else]fully erect and drooling precum steadily[end if]. [if Player is internal]Though they are not outwardly apparent, you wager you have[else]Underneath it hangs[end if] [one of]a pair of[or]a set of[at random] [Ball Size Adjective of Player] [Balls].";
+			now cocktext is "have a [cock size desc of Player] [Cock Length of Player]-inch-long [Cock of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random]. It is [if Libido of Player <= 25]only somewhat aroused at the moment[else if Libido of Player <= 50]partially hard and dribbling a little pre[else if Libido of Player <= 75]erect and leaking precum[else]fully erect and drooling precum steadily[end if]. [if Player is internalBalls]Though they are not outwardly apparent, you wager you have[else]Underneath it hangs[end if] [one of]a pair of[or]a set of[at random] [Ball Size Adjective of Player] [Balls].";
 	let cunttext be "";
 	follow the cunt descr rule;
 	if Player is female:
@@ -337,6 +343,8 @@ to DescriptionDisplay:
 		say " Thin lines of healed claw-marks run down your back, marking you as Angie's mate.[run paragraph on]";
 	if "Boghrim's Mark" is listed in feats of Player:
 		say " Two small scars from Boghrim's tusks mark your shoulder, a reminder of the first time the big orc fucked you.[run paragraph on]";
+	if "Marked - Fang" is listed in Traits of Player:
+		say "Your neck bears the tooth-marks from when Fang became your alpha, marking you as a member of his pack and family.[run paragraph on]";
 	if weapon object of Player is not journal:
 		say " You are carrying a/an [weapon object of Player] just in case of trouble";
 		if weapon object of Player is unwieldy:
@@ -501,11 +509,12 @@ check TagListReadout:
 carry out TagListReadout:
 	say "All current lists:";
 	LineBreak;
+	sort Infections of AmphibianList;
 	sort Infections of AquaticList;
 	sort Infections of ArachnidList;
 	sort Infections of AvianList;
 	sort Infections of AvianpredList;
-	sort Infections of Bovinelist;
+	sort Infections of BovineList;
 	sort Infections of CanineList;
 	sort Infections of CervineList;
 	sort Infections of CetaceanList;
@@ -543,7 +552,7 @@ carry out TagListReadout:
 	sort Infections of InternalCockList;
 	sort Infections of KnottedCockList;
 	sort Infections of OviPositorList;
-	sort Infections of PrehensileCocklist;
+	sort Infections of PrehensileCockList;
 	sort Infections of SheathedCockList;
 	sort Infections of TaperedCockList;
 	sort Infections of TentacleCockList;
@@ -564,21 +573,22 @@ carry out TagListReadout:
 	sort Infections of AlwaysRutList;
 	sort Infections of GillList;
 	sort Infections of NotBreathingList;
-	sort Infections of Birthlist;
-	sort Infections of Egglaylist;
+	sort Infections of BirthList;
+	sort Infections of EgglayList;
 	sort Infections of MpregList;
 	sort Infections of OviImpregnatorList;
-	sort Infections of Sterilelist;
+	sort Infections of SterileList;
 	sort Infections of FeralmindList;
 	sort Infections of HivemindList;
 	sort Infections of PackmindList;
 	sort Infections of FirebreathList;
 	sort Infections of TailweaponList;
+	say "AmphibianList: [Infections of AmphibianList][line break][line break]";
 	say "AquaticList: [Infections of AquaticList][line break][line break]";
 	say "ArachnidList: [Infections of ArachnidList][line break][line break]";
 	say "AvianList: [Infections of AvianList][line break][line break]";
 	say "AvianpredList: [Infections of AvianpredList][line break][line break]";
-	say "Bovinelist: [Infections of Bovinelist][line break][line break]";
+	say "BovineList: [Infections of BovineList][line break][line break]";
 	say "CanineList: [Infections of CanineList][line break][line break]";
 	say "CervineList: [Infections of CervineList][line break][line break]";
 	say "CetaceanList: [Infections of CetaceanList][line break][line break]";
@@ -616,7 +626,7 @@ carry out TagListReadout:
 	say "InternalCockList: [Infections of InternalCockList][line break][line break]";
 	say "KnottedCockList: [Infections of KnottedCockList][line break][line break]";
 	say "OviPositorList: [Infections of OviPositorList][line break][line break]";
-	say "PrehensileCocklist: [Infections of PrehensileCocklist][line break][line break]";
+	say "PrehensileCockList: [Infections of PrehensileCockList][line break][line break]";
 	say "SheathedCockList: [Infections of SheathedCockList][line break][line break]";
 	say "TaperedCockList: [Infections of TaperedCockList][line break][line break]";
 	say "TentacleCockList: [Infections of TentacleCockList][line break][line break]";
@@ -637,11 +647,11 @@ carry out TagListReadout:
 	say "AlwaysRutList: [Infections of AlwaysRutList][line break][line break]";
 	say "GillList: [Infections of GillList][line break][line break]";
 	say "NotBreathingList: [Infections of NotBreathingList][line break][line break]";
-	say "Birthlist: [Infections of Birthlist][line break][line break]";
-	say "Egglaylist: [Infections of Egglaylist][line break][line break]";
+	say "BirthList: [Infections of BirthList][line break][line break]";
+	say "EgglayList: [Infections of EgglayList][line break][line break]";
 	say "MpregList: [Infections of MpregList][line break][line break]";
 	say "OviImpregnatorList: [Infections of OviImpregnatorList][line break][line break]";
-	say "Sterilelist: [Infections of Sterilelist][line break][line break]";
+	say "SterileList: [Infections of SterileList][line break][line break]";
 	say "FeralmindList: [Infections of FeralmindList][line break][line break]";
 	say "HivemindList: [Infections of HivemindList][line break][line break]";
 	say "PackmindList: [Infections of PackmindList][line break][line break]";
@@ -871,7 +881,7 @@ carry out TestMode:
 	now charisma of Player is 30;
 	now perception of Player is 30;
 	now level of Player is 30;
-	now maxHP of Player is 300;
+	now MaxHP of Player is 300;
 	now HP of Player is 300;
 	now capacity of Player is 300;
 	ItemGain food by 15 silently;
@@ -1104,6 +1114,23 @@ carry out unresolvecheat:
 		choose row X from the Table of GameEventIDs;
 		if Name entry exactly matches the text topic understood, case insensitively:
 			now Object entry is unresolved;
+			now Resolution of Object entry is 0;
+			break;
+
+activatecheat is an action applying to one topic.
+
+understand "zActivate [text]" as activatecheat.
+
+check activatecheat:
+	if debugactive is 0:
+		say "You aren't currently debugging.";
+		stop the action;
+
+carry out activatecheat:
+	repeat with X running from 1 to number of filled rows in Table of GameEventIDs:
+		choose row X from the Table of GameEventIDs;
+		if Name entry exactly matches the text topic understood, case insensitively:
+			now Object entry is active;
 			break;
 
 
@@ -1119,6 +1146,16 @@ carry out itemcheat:
 		if the printed name of x exactly matches the text topic understood, case insensitively:
 			ItemGain x by 1;
 			break;
+
+[Allows the spawning of any vial in game.]
+vialcheat is an action applying to one topic.
+understand "zVial [text]" as vialcheat.
+
+check vialcheat:
+	if debugactive is 0, say "You aren't currently debugging!" instead;
+
+carry out vialcheat:
+	VialGain topic understood by 10;
 
 allitemcheat is an action applying to nothing.
 understand "zAllItems" as allitemcheat.

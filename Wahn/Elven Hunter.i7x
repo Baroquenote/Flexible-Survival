@@ -18,7 +18,6 @@ a postimport rule:
 	if TailName of Player is "Elven Hunter", now TailName of Player is "Elven Male";
 	if CockName of Player is "Elven Hunter", now CockName of Player is "Elven Male";
 
-
 to say GenerateTrophyList_ElvenHunter:
 	[ Reminder: LootBonus can be +35 at maximum - 10 for Magpie Eyes, 15 for Mugger and 10 from Player Perception]
 	if a random chance of (80 + LootBonus) in 100 succeeds: [common drop]
@@ -60,7 +59,7 @@ to say Hunter wins:
 	else: [player was beaten in a fight]
 		if BodyName of Player is "Wood Elf" or BodyName of Player is "Elven Hunter":
 			say "     'And you want to call yourself an elf? Any novice hunter would have lasted longer in his first summer,' he scoffs at you. Pulling off your clothes, the hunter looks you over and touches your naked body, then remarks 'The tiny machines of this realm made you look the part, enough to fool pixies and lower fey. But believe me - you'll never be a true elf unless you get accepted for The Hunt.' ";
-		else if ( BodyName of Player is listed in infections of Reptilelist and SkinName of Player is listed in infections of Reptilelist ):
+		else if ( BodyName of Player is listed in infections of ReptileList and SkinName of Player is listed in infections of ReptileList ):
 			say "     The elf looks over your [bodytype of Player] form with disdain. 'You're already beaten? How disappointing. I had remembered those big lizards this world had a while ago with more cunning and strength. Oh well, maybe you're just an especially frail and sickly specimen. But you're certainly waking the hope for the existence of worthy prey in this realm.' ";
 		[add other demons below as they are added to the game - left out the slutrat on purpose, as it's not a full demon the elf recognizes]
 		else if BodyName of Player is listed in infections of DemonList:
@@ -106,7 +105,7 @@ To say Hunter loses:
 			say "That said, the elf gives you a nod of recognition, then looks you up and down. ";
 			if BodySpeciesName of Player is "Elf" and FaceSpeciesName of Player is "Elf" and SkinSpeciesName of Player is "Elf":
 				say "'Though maybe you long to be of another world, by your appearance? You almost do have the appearance of a real elf, though of course the difference is apparent by your aura. Still Auberon might deign to take on a local guide, and for your service you could become a true elf, not just a lookalike. Watch out for us if you hear the horns and present yourself, I might just put in a good word for you.' ";
-			else if ( BodyName of Player is listed in infections of Reptilelist and SkinName of Player is listed in infections of Reptilelist ):
+			else if ( BodyName of Player is listed in infections of ReptileList and SkinName of Player is listed in infections of ReptileList ):
 				say "'Maybe you are a fitting heir to the big lizards we hunted on this world in the past. I've many fond memories of hunting the dinosaurs, good to see the reappearance of something similar in cunning and strength. The Wild Hunt will be honored to take you on once we ride.' ";
 			else:
 				say "'The Wild Hunt will be honored to take you on once we ride. Always good to have some novel prey with unpredictable behavior.' ";
@@ -193,7 +192,7 @@ to say ElvenHunterVictoryMenu:
 	clear the screen and hyperlink list;
 
 to say Castien_Fucked_Anal:
-	say "     Only to happy to agree to the prospect of claiming your reward from this handsome being, you nod to him. Without further delay, Castien slips out of his vest and pushes the leather pants off his bubble butt and his legs. For a second, you are spell-struck at seeing his pale, perfect body in all its naked glory, your cock instantly springing to attention. There is a little accent to him though, the tattoo of a beautiful little flower just where his back starts to flow over into the smooth curve of his right buttock. You reach out to touch it, which has Castien glance over his shoulder and smile. [if player is herm]Then he says, 'I sense this realm's tiny machines have blessed you with both genders.' [end if]The elf's gaze wanders down to come to rest on your erection, his face now showing a lewd smirk. 'I see what you're interested in.' With that, he saunters over to the next tree, then braces himself against it. 'Bring it on!' As the naked hunter murmurs a few arcane syllables under his breath, you see a sheen of slick wetness appear, covering his crack and pucker. Certainly a very useful spell he knows there.";
+	say "     Only to happy to agree to the prospect of claiming your reward from this handsome being, you nod to him. Without further delay, Castien slips out of his vest and pushes the leather pants off his bubble butt and his legs. For a second, you are spell-struck at seeing his pale, perfect body in all its naked glory, your cock instantly springing to attention. There is a little accent to him though, the tattoo of a beautiful little flower just where his back starts to flow over into the smooth curve of his right buttock. You reach out to touch it, which has Castien glance over his shoulder and smile. [if Player is herm]Then he says, 'I sense this realm's tiny machines have blessed you with both genders.' [end if]The elf's gaze wanders down to come to rest on your erection, his face now showing a lewd smirk. 'I see what you're interested in.' With that, he saunters over to the next tree, then braces himself against it. 'Bring it on!' As the naked hunter murmurs a few arcane syllables under his breath, you see a sheen of slick wetness appear, covering his crack and pucker. Certainly a very useful spell he knows there.";
 	say "     Eagerly stepping up behind Castien, you rub your [cock size desc of Player] cock between the silky smooth cheeks of his ass, then align its head with his pucker and start to push in. The elf moans lustfully as you slowly sink yourself into him, expertly keeping his muscles tight and gripping around your shaft while still allowing easy entry into his lubed hole. As you bottom out inside him with your hips meeting the smooth buns of his ass, he grips the tree tightly and thrusts his rear back to envelop your shaft, 'Let's see how much staying power you have!' Following his lust-filled challenge, you pull out until only the very tip of your cock remains, then slide deep into him in one sharp thrust until your hips slap against his firm ass. The two of you fill the forest with moans and pants as you hold on to Castien's shoulders with both hands you pound into him, reveling in the vice-like grip he manages to keep your manhood in. The elf makes the most delightful sounds to accompany each new thrust and the things he can do with the muscles in his ass are just indescribable.";
 	WaitLineBreak;
 	say "     Not wanting this to be over too soon, you make yourself slow down a bit. As you let yourself rest for a moment with your [Cock of Player] cock deep inside its tight prison, your hands move over your partner's body, stroking over the smooth skin and feeling his hard muscles. Leaning your [bodydesc of Player] body lightly over his as your searching hands move to find his cock. It feels pretty long and smooth, bare of any imperfections, with a snug pair of balls just beneath. Delighting in the perfection of his physical form, his scent, just everything about the elf, you almost want to stay this way forever, deep inside as well as wrapped around your beautiful otherworldly visitor. Eventually though, as he seems to think that you've recovered enough, the elf starts moving his hips, fucking his own ass on your hard shaft and making both of you moan in pleasure. You join in, thrusting forward each time he pushes back, creating slapping noises each time his buns meet your hips.";
@@ -210,7 +209,7 @@ to say Castien_Fucked_Vaginal:
 	say "     Only to happy to agree to the prospect of claiming your reward from this handsome being, you nod to him. Without further delay, Castien slips out of his vest and pushes the leather pants off his bubble butt and his legs. For a second, you are spell-struck at seeing his pale, perfect body in all its naked glory[if Player is herm], your cock instantly springing to attention. He smiles at you, then says, 'I sense this realm's tiny machines have blessed you with both genders. Though I think I know what your mood is set for right now.' [else]. [end if]Stepping towards you, the elf frees you from any clothing you might be wearing, revealing your naked [bodytype of Player] form. He guides you down to lay upon the discarded clothes, and kneels between your legs, kissing you softly on your nether lips. Before long, starts a line of soft kisses up your stomach and abs. He stops for a moment as he reaches your chest, playfully circling your nipples and licking them.";
 	say "     Then the handsome elf moves up, putting pleasant little kisses on your shoulder and neck until he finally arrives at your lips and goes in for a long and deep kiss. When you pull back for air, your body tingling all over from the arousal that Castien has awoken, you notice something poking you in the stomach. Looking down, you see it's your partner's amazing cock, rock hard and ready. You take it in your hand eagerly, aligning it to your pussy while your other hand reaches around the lithe hunter, grabbing one of his firm buns and pulling him towards you. You both share a deep moan as his amazing cock sinks into your folds, rubbing against the walls of your pussy. He goes deeper and deeper, spearing you on his shaft until finally you feel the smooth skin of his balls against your hips. Then he pulls out almost all the way again and slides back in hard, starting a series of thrusts that leaves you panting in lust. While his cock expertly finds just the right spots inside you, his hands aren't idle either, stroking your body and playing with your nipples.";
 	WaitLineBreak;
-	say "     The skillful attentions of your otherworldly lover make you forget almost everything else around you, spreading pleasure into every fiber of your being. With a breathless scream, you climax, pussy getting dripping wet around his erection[if player is herm] and your own cock starting to spurt out long strings of cum. [else]. [end if]At the same time, he never stops fucking you, constantly adding to the stimulation that keeps you in blissful oblivion. You wish it'd last forever, but even your hunter's self discipline has limits. With a deep moan, he holds tight to your body as the first jet of his cum shoots deep into your body, painting your womb with his fertile seed. After several more spurts, he exhaustedly sinks to the ground beside you and leans in for a kiss. You stay like that for a while, holding on to your elven partner and stroking his silky smooth skin.";
+	say "     The skillful attentions of your otherworldly lover make you forget almost everything else around you, spreading pleasure into every fiber of your being. With a breathless scream, you climax, pussy getting dripping wet around his erection[if Player is herm] and your own cock starting to spurt out long strings of cum. [else]. [end if]At the same time, he never stops fucking you, constantly adding to the stimulation that keeps you in blissful oblivion. You wish it'd last forever, but even your hunter's self discipline has limits. With a deep moan, he holds tight to your body as the first jet of his cum shoots deep into your body, painting your womb with his fertile seed. After several more spurts, he exhaustedly sinks to the ground beside you and leans in for a kiss. You stay like that for a while, holding on to your elven partner and stroking his silky smooth skin.";
 	say "     Some time later, Castien gives you a last soft kiss on the lips, then rises up and grabs his bow. With a whispered, 'I hope to hunt you again later', he turns from you and walks off. You have a very nice view of his pale naked body and impressive buns until he vanishes into the forest.";
 	NPCSexAftermath Player receives "PussyFuck" from Castien;
 
@@ -254,9 +253,9 @@ to say ElvenHunterDesc:
 			say "     He snarls 'Go back to the stinking pit you call home - demon', before gracefully pulling an arrow from the quiver on his back. With the comment, 'I'll show you why you shouldn't try to spread your infestation on elven hunting grounds,' he lets it fly, purposefully missing your head by less an inch.";
 		else if BodyName of Player is "Elf" or BodyName of Player is "Elven Hunter":
 			say "     He sighs, saying 'Are you masquerading as one of us? The human phantasies of becoming something better than they are somewhat sad.' Gracefully pulling an arrow from the quiver on his back, he continues, 'Let's see if you're worthy of the shape you wear...'";
-		else if (BodyName of Player is "Human" or BodyName of Player is "Herm Human") and player is pure:
+		else if (BodyName of Player is "Human" or BodyName of Player is "Herm Human") and Player is pure:
 			say "     He sighs, saying 'A human - how droll. Still, some of you are rather inventive...' Gracefully pulling an arrow from the quiver on his back, he continues, 'Let's see if you might be worth hunting. Start running and be a bit of a challenge, will you?'";
-		else if ( BodyName of Player is listed in infections of Reptilelist and SkinName of Player is listed in infections of Reptilelist ):
+		else if ( BodyName of Player is listed in infections of ReptileList and SkinName of Player is listed in infections of ReptileList ):
 			say "     He sighs, saying to himself 'It's scaly and looks a bit like the big lizards of the past - but will it be a worthy heir to their legacy of cunning and strength? Only one way to find out...' Gracefully pulling an arrow from the quiver on his back, he addresses you, 'Start running and be a bit of a challenge, will you?'";
 		else:
 			say "     He sighs, saying to himself, 'It'll have to do for now', before gracefully pulling an arrow from the quiver on his back. 'You there, creature - start running and be a bit of a challenge, will you?'";
@@ -506,9 +505,9 @@ When Play begins:
 	add "Elven Male" to infections of MaleList;
 	add "Elven Male" to infections of BipedalList;
 	now Name entry is "Elven Male";
-	now enemy title entry is "Elven Hunter"; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
-	now enemy Name entry is "Castien"; [specific name of unique enemy]
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy title entry is "Elven Hunter"; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
+	now enemy Name entry is "Castien"; [ Specific name of unique enemy. ]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]A finely fletched arrow buries itself in your lower leg.[or]Moving with an almost magical swiftness, the elf suddenly appears behind you and gives you a good kick.[or]You manage to get in close, just to be swatted on the head with the bow itself.[or]With his hunting knife in hand, the elf gives you a shallow, but bleeding cut.[at random]"; [Text used when the monster makes an Attack]
 	now defeated entry is "[Hunter loses]";
 	now victory entry is "[Hunter wins]";
@@ -516,7 +515,7 @@ When Play begins:
 	now face entry is "supernaturally beautiful, with sharp but handsome features, full lips and a seductive smile. Your eyes are slightly larger than a human's, showing jade green slitted irises and two pointed ears poke out from under your long black hair";
 	now body entry is "that of a lithe and slender human being, toned and strong";
 	now skin entry is "[one of]pale, flawless[or]pristine[or]perfect[at random]";
-	now tail entry is "You have a round, firm bubble butt, just waiting to be grabbed.";  [ Ass/Tail. Write as a full sentence (with period) or leave blank for none. ]
+	now tail entry is "You have a round, firm bubble butt, just waiting to be grabbed."; [ Ass/Tail. Write as a full sentence (with period) or leave blank for none. ]
 	now cock entry is "[one of]amazing[or]perfect[or]human-like[at random]";
 	now face change entry is "your facial muscles seem to ripple under the skin, rearranging themselves into sharp, but handsome features. Your ears lengthen and taper to narrow points. Finally from one blink to the next your eyes change in some way, allowing for much sharper vision"; [ format as "Your face feels funny as (your text)." ]
 	now body change entry is "it is reshaped into a more attractive form, ending up in a tall and slender, nicely muscled shape";
@@ -529,35 +528,35 @@ When Play begins:
 	now per entry is 18;
 	now int entry is 12;
 	now cha entry is 16;
-	now sex entry is "Male";            [ Infection will move the player towards this gender. Current: 'Male' 'Female' 'Both' ]
+	now sex entry is "Male"; [ Infection will move the player towards this gender. Current: 'Male' 'Female' 'Both' ]
 	now HP entry is 63;
-	now lev entry is 8;                 [ Monster level. (Level x 2) XP for victory. (Level / 2) XP for losing. ]
-	now wdam entry is 12;               [ Monster's average damage when attacking. ]
-	now area entry is "Forest";         [ "Outside" "Mall" "Park" "Beach" etc... Check an existing creature in the area. ]
-	now Cock Count entry is 1;          [ Number of cocks the infection will try to cause if sex entry is 'Male' or 'Both'. ]
-	now Cock Length entry is 9;         [ Length infection will make cock grow to if cocks. ]
-	now Ball Size entry is 2;           [ Cock width, more commonly used for ball size. ]
-	now Nipple Count entry is 2;        [ Number of nipples the infection will give a player. ]
-	now Breast Size entry is 0;         [ Size of breasts the infection will try to attain. ]
-	now Male Breast Size entry is 0;    [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 0;          [ The number of cunts the infection will try to cause if sex entry is 'Female' or 'Both'. ]
-	now Cunt Depth entry is 0;          [ Depth of female sex the infection will attempt to give a player. ]
-	now Cunt Tightness entry is 0;      [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]          [ Width of female sex the infection will try to give a player. ]
+	now lev entry is 8; [ Monster level. (Level x 2) XP for victory. (Level / 2) XP for losing. ]
+	now wdam entry is 12; [ Monster's average damage when attacking. ]
+	now area entry is "Forest"; [ "Outside" "Mall" "Park" "Beach" etc... Check an existing creature in the area. ]
+	now Cock Count entry is 1; [ Number of cocks the infection will try to cause if sex entry is 'Male' or 'Both'. ]
+	now Cock Length entry is 9; [ Length infection will make cock grow to if cocks. ]
+	now Ball Size entry is 2; [ Cock width, more commonly used for ball size. ]
+	now Nipple Count entry is 2; [ Number of nipples the infection will give a player. ]
+	now Breast Size entry is 0; [ Size of breasts the infection will try to attain. ]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 0; [ The number of cunts the infection will try to cause if sex entry is 'Female' or 'Both'. ]
+	now Cunt Depth entry is 0; [ Depth of female sex the infection will attempt to give a player. ]
+	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]          [ Width of female sex the infection will try to give a player. ]
 	now SeductionImmune entry is true;
 	now libido entry is 10;
-	now loot entry is "lembas bread";   [ Dropped item, blank for none. Case sensitive. ]
-	now lootchance entry is 50;         [ Percentage chance of dropping loot, from 0-100. ]
-	now MilkItem entry is "";
+	now loot entry is "lembas bread"; [ Dropped item, blank for none. Case sensitive. ]
+	now lootchance entry is 50; [ Percentage chance of dropping loot, from 0-100. ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
 	now CumItem entry is "elven male cum";
 	now TrophyFunction entry is "[GenerateTrophyList_ElvenHunter]";
-	now scale entry is 3;               [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "[one of]alluring[or]sexy[or][if Player is male]handsome[else]sultry[end if][at random]";
 	now type entry is "[one of]elven[or]fae[at random]";
 	now magic entry is true;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;      [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Diurnal (day encounters only); 2 = Nocturnal (night encounters only);]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -568,7 +567,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -580,7 +579,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -599,7 +598,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -620,18 +619,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -645,19 +644,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -727,7 +726,7 @@ Strain of elven male cum is "Elven Male".
 Usedesc of elven male cum is "[elven male cum use]";
 
 to say elven male cum use:
-	say "     Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy fluid cum run over your tongue and down your throat. Tastes rich and almost... spicy? Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
+	say "     Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy cum run over your tongue and down your throat. Tastes rich and almost... spicy? Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
 	PlayerDrink 5;
 	SanLoss 5;
 
@@ -761,7 +760,7 @@ Cock Length of Castien is 9. [length in inches]
 Ball Count of Castien is 2. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Castien is 3. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Castien is 0. [number of cunts]
-Cunt Depth of Castien is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Castien is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Castien is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Castien is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -915,12 +914,12 @@ to say CastienSexMenu:
 	[]
 	if Player is male:
 		choose a blank row in table of fucking options;
-		now title entry is "Blow job (receiving)";
+		now title entry is "Blowjob (receiving)";
 		now sortorder entry is 7;
 		now description entry is "Have him put that muzzle of his to use on your cock";
 	[]
 	choose a blank row in table of fucking options;
-	now title entry is "Blow job (giving)";
+	now title entry is "Blowjob (giving)";
 	now sortorder entry is 8;
 	now description entry is "Reward your loyal dog by allowing him to face-fuck you";
 	[]
@@ -951,9 +950,9 @@ to say CastienSexMenu:
 					say "[Castien_sex05]";
 				else if nam is "Tell him to take you (anal)":
 					say "[Castien_sex06]";
-				else if nam is "Blow job (receiving)":
+				else if nam is "Blowjob (receiving)":
 					say "[Castien_sex07]";
-				else if nam is "Blow job (giving)":
+				else if nam is "Blowjob (giving)":
 					say "[Castien_sex08]";
 		else if calcnumber is 0:
 			now sextablerun is 1;

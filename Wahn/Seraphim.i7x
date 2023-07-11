@@ -285,9 +285,9 @@ When Play begins:
 	add "Seraphim Warrior" to the infections of BipedalList;
 	add "Seraphim Warrior" to the infections of FlightList;
 	now Name entry is "Seraphim Warrior";
-	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
+	now enemy title entry is ""; [ Name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name. ]
 	now enemy Name entry is "Gabriel";
-	now enemy type entry is 1; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
+	now enemy type entry is 1; [ 0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters. ]
 	now attack entry is "[one of]The Seraphim calls out, 'Surrender! This just prolongs your pain. It will be over quickly if you do not struggle.' Then he smites you with a faintly glowing hand.[or]Your angelic opponent calls out, 'Stop fighting, foolish mortal - I only want to help you!' Then he gives you a hard punch in the face, a mixture of regret and annoyance on his face.[or]Hooking a foot behind your leg, the Seraphim pulls it out from under you. As you crash down on the ground, he calls out, 'Surrender, I do not wish to hurt you more than necessary.'[at random]";
 	now defeated entry is "[SeraphDefeated]";
 	now victory entry is "[SeraphVictorious]";
@@ -295,48 +295,48 @@ When Play begins:
 	now face entry is "quite beautiful, with chiseled features bare of even the slightest imperfection. A full head of shoulder-length and slightly curled brown hair frames the picture of a handsome male";
 	now body entry is "that of a well-built and muscular human being, toned and strong. It is garbed in a robe of pure white, flowing fabric. Two large wings sprout from your back, bearing white feathers";
 	now skin entry is "[one of]pale, flawless[or]pristine[or]perfect[at random]";
-	now tail entry is "You have a round, firm bubble butt, just waiting to be grabbed.";  [ Ass/Tail. Write as a full sentence (with period) or leave blank for none. ]
+	now tail entry is "You have a round, firm bubble butt, just waiting to be grabbed."; [ Ass/Tail. Write as a full sentence (with period) or leave blank for none. ]
 	now cock entry is "[one of]amazing[or]perfect[or]human-like[at random]";
 	now face change entry is "your facial muscles seem to ripple under the skin, rearranging themselves into perfectly sculpted male features. Shoulder-length locks of brown hair form to frame your handsome visage"; [ format as "Your face feels funny as (your text)." ]
 	now body change entry is "it is reshaped into a very well-built form, leaving you with a toned and strong human-like body. A moment later, a pair of large white wings unfold behind your back, leaving you to wonder if you might fly once you've figured out how they actually work. Then finally, there is a short ringing in the air behind you, as if from hundreds of tiny bells, leaving you to find a neatly folded white robe on the ground as you turn around. Slipping into the silk-soft item of clothing, you just feel right";
 	now skin change entry is "it seems to soften and smooth out, creating the impression of timeless youth. Any blemishes and unwanted hair are wiped away with a wonderfully pleasant sensation that leaves you with perfect skin";
 	now ass change entry is "it tightens up into a firm, round bubble butt";
 	now cock change entry is "it becomes human-like, uncut and well-proportioned";
-	now str entry is 20;                  [ These are now the creature's stats... ]
-	now dex entry is 18;                  [ ...and are only altered onto the player via Shifting or the Mighty Mutation feat ]
-	now sta entry is 16;                  [ These values may be used as part of alternate combat.]
+	now str entry is 20; [ These are now the creature's stats... ]
+	now dex entry is 18; [ ...and are only altered onto the player via Shifting or the Mighty Mutation feat ]
+	now sta entry is 16; [ These values may be used as part of alternate combat.]
 	now per entry is 14;
 	now int entry is 16;
 	now cha entry is 18;
-	now sex entry is "Male";              [ Infection will move the player towards this gender. Current: 'Male' 'Female' 'Both' ]
+	now sex entry is "Male"; [ Infection will move the player towards this gender. Current: 'Male' 'Female' 'Both' ]
 	now HP entry is 85;
-	now lev entry is 13;                  [ Monster level. (Level x 2) XP for victory. (Level / 2) XP for losing. ]
-	now wdam entry is 12;                 [ Monster's average damage when attacking. ]
-	now area entry is "Nowhere";          [ "Outside" "Mall" "Park" "Beach" etc... Check an existing creature in the area. ]
-	now Cock Count entry is 1;                 [ number of cocks if sex is 'Male' or 'Both' ]
+	now lev entry is 13; [ Monster level. (Level x 2) XP for victory. (Level / 2) XP for losing. ]
+	now wdam entry is 12; [ Monster's average damage when attacking. ]
+	now area entry is "Nowhere"; [ "Outside" "Mall" "Park" "Beach" etc... Check an existing creature in the area. ]
+	now Cock Count entry is 1; [ number of cocks if sex is 'Male' or 'Both' ]
 	now Cock Length entry is 9;
-	now Ball Size entry is 3;            [ Size of balls ]
-	now Nipple Count entry is 2;               [ Number of nipples. ]
-	now Breast Size entry is 0;           [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
-	now Male Breast Size entry is 0;      [ Breast size for if Sex="Male", usually zero. ]
-	now Cunt Count entry is 0;                 [ number of pussies if sex is 'Female' or 'Both' ]
+	now Ball Size entry is 3; [ Size of balls ]
+	now Nipple Count entry is 2; [ Number of nipples. ]
+	now Breast Size entry is 0; [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
+	now Cunt Count entry is 0; [ number of pussies if sex is 'Female' or 'Both' ]
 	now Cunt Depth entry is 6;
 	now Cunt Tightness entry is 4;
 	now SeductionImmune entry is true;
-	now libido entry is 0;               [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
-	now loot entry is "";                 [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
-	now lootchance entry is 0;            [ Chance of loot dropping 0-100 ]
-	now MilkItem entry is "";
-	now CumItem entry is "";
-	now TrophyFunction entry is "-";
-	now scale entry is 3;                 [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
+	now libido entry is 0; [ As part of infection, the Player will be gradually moved towards this value; also used for the creature's seduce defense as a penalty ]
+	now loot entry is ""; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
+	now lootchance entry is 0; [ Chance of loot dropping 0-100 ]
+	now MilkItem entry is ""; [ Item to be given to the player if they have this infection and milk themselves. ]
+	now CumItem entry is ""; [ Item to be given to the player if they have this infection and jerk off. ]
+	now TrophyFunction entry is "-"; [ Function to generate a list of optional loot items, of which the player can choose one after victory. ]
+	now scale entry is 3; [ Number 1-5, approx size/height of infected PC body: 1=tiny, 3=avg, 5=huge ]
 	now body descriptor entry is "angelic";
 	now type entry is "angel";
 	now magic entry is false;
 	now resbypass entry is false;
 	now non-infectious entry is false;
-	now Cross-Infection entry is ""; [infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own]
-	now DayCycle entry is 0;        [ 0 = Up at all times; 1 = Nocturnal (night encounters only); 2 = Diurnal (day encounters only) ]
+	now Cross-Infection entry is ""; [ Infection that this infection will give the player when they lose; can be left empty if they infect with the monster's own strain. ]
+	now DayCycle entry is 0; [ 0 = Up at all times; 1 = Nocturnal (night encounters only); 2 = Diurnal (day encounters only) ]
 	now altcombat entry is "default";
 	now BannedStatus entry is false;
 
@@ -347,7 +347,7 @@ Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Descr
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	now Species Name entry is ""; [ Name of the overall species of the infection, used so a "male x" and "female x" have "pureblood X" children. ]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -359,7 +359,7 @@ When Play begins:
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
 	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [Head Adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
@@ -378,7 +378,7 @@ When Play begins:
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
 	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
-	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
+	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [Torso Adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
@@ -399,18 +399,18 @@ When Play begins:
 	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
-	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
+	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [Legs Description of Player]."]
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
 	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
-	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
+	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [Tail Description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
@@ -424,19 +424,19 @@ When Play begins:
 	now Cock Length entry is 0; [length in inches]
 	now Cock Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
-	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
+	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [Cock Adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock Description of Player]."]
 	now Cock Color entry is ""; [one word color descriptor]
 	now Ball Count entry is 0; [allowed numbers: 1 (uniball), 2 or 4]
 	now Ball Size entry is 0; [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
-	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
+	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [Ball Description of Player]."]
 	now Cunt Count entry is 0;
 	now Cunt Depth entry is 0;
 	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [Cunt Description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -468,7 +468,7 @@ Cock Length of Gabriel is 0. [length in inches]
 Ball Count of Gabriel is 0. [allowed numbers: 1 (uniball), 2 or 4]
 Ball Size of Gabriel is 0. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Gabriel is 0. [number of cunts]
-Cunt Depth of Gabriel is 0. [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+Cunt Depth of Gabriel is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Gabriel is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 Clit Size of Gabriel is 0. [size 1-5, very small/small/average/large/very large]
 [Basic Interaction states as of game start]
@@ -545,7 +545,7 @@ to say GabrielTalkMenu:
 		now sortorder entry is 6;
 		now description entry is "Let your cum-slut in training chug some wolf cum";
 	[]
-	if (Libido of Gabriel > 0 and Libido of Gabriel < 99) and carried of demon seed > 0 and player is male:
+	if (Libido of Gabriel > 0 and Libido of Gabriel < 99) and carried of demon seed > 0 and Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Offer him a bottle of demon seed to drink";
 		now sortorder entry is 6;
@@ -660,13 +660,13 @@ instead of fucking Gabriel:
 		choose a blank row in table of fucking options;
 		now title entry is "Suck Gabriel's cock";
 		now sortorder entry is 1;
-		now description entry is "Give him a blow-job";
+		now description entry is "Give him a blowjob";
 		[]
 		if Player is male:
 			choose a blank row in table of fucking options;
 			now title entry is "Have him suck your cock";
 			now sortorder entry is 2;
-			now description entry is "Get a blow-job";
+			now description entry is "Get a blowjob";
 		[
 		if Player is female:
 			choose a blank row in table of fucking options;
@@ -790,7 +790,7 @@ to say GabrielCumSlutTraining1:
 			now Stamina of Gabriel is turns; [last cum dose]
 		else: [assfuck]
 			say "     Making your way behind Gabriel as he continues to lick up and swallow his own cum, you stroke the length of your erection and then crouch down to his level. With his face down against the ground, your sexy hunk of a fucktoy literally has to raise his ass in a very inviting way. It's no trouble at all to line yourself up with his back door and slam into him from behind with a harsh thrust that has the angel rearing up with a gasp, only to be pushed down again by your hands, face-planting into the puddle of cum. With your hands grasping his shoulders tightly and holding Gabriel down, you're just grinding against his ass, reveling in the sensation of his hole tightly gripping your shaft. Giving little thrusts to underline each word, you tell him that this is what he's made for - eating cum, lying in a pool of it and taking it up the ass like the needy cum-slut he is.";
-			say "     Already broken in to obedience and getting a vigorous fuck to boot, Gabriel's responses to your statements are simply long, drawn-out moans that speak of his desire to be dominated. He definitively is a happy slut of a sex pet for you and even flexes his ass muscles in just the right way as you tell him to, milking your cock inside his tight chute. It only takes a little while longer before this drives you over the edge, erupting into the angel's bowels with your cock buried balls-deep inside. Spurt after spurt of creamy seed floods his inner passage, painting it white and once more confirming your claim on Gabriel as your sex pet. While your cock is still filling him with more and more cum, you draw the man up into embracing him from behind and whisper into his ear that he's pleased his [master]. Then you wipe your finger over his cum-slick cheek and make him lick it off before pushing him back down to finish cleaning off his spilled seed.";
+			say "     Already broken in to obedience and getting a vigorous fuck to boot, Gabriel's responses to your statements are simply long, drawn-out moans that speak of his desire to be dominated. He definitely is a happy slut of a sex pet for you and even flexes his ass muscles in just the right way as you tell him to, milking your cock inside his tight chute. It only takes a little while longer before this drives you over the edge, erupting into the angel's bowels with your cock buried balls-deep inside. Spurt after spurt of creamy seed floods his inner passage, painting it white and once more confirming your claim on Gabriel as your sex pet. While your cock is still filling him with more and more cum, you draw the man up into embracing him from behind and whisper into his ear that he's pleased his [master]. Then you wipe your finger over his cum-slick cheek and make him lick it off before pushing him back down to finish cleaning off his spilled seed.";
 			NPCSexAftermath Gabriel receives "AssFuck" from Player;
 			now Stamina of Gabriel is turns; [last cum dose]
 		now Libido of Gabriel is 1; [started the cumslut training]
@@ -845,11 +845,26 @@ to say GabrielSex6:
 	say "     Meanwhile, catching his stride again after his climax, Elijah pulls out of Gabriel with little fanfare, even laughing out loud at the sight of his helpless bottom's gaping and creamy hole and the gasp he gives at the sudden emptiness. He slaps Gabriel on the bare buttocks one last time, leaving a reddened imprint of his hand, then turns away from the fucked-out and exhausted angel. Looking at you with a smile at how aroused the show of their coupling has made you, Elijah saunters over to his own bunk, totally unconcerned about his own nudity or the tail of cum-droplets he leaves as he goes along. 'Wouldn't mind if you brought the bitch over regularly,' he says with a sidelong glance at you, then throws himself on the bed to lounge around in lazy satisfaction.";
 	NPCSexAftermath Gabriel receives "AssFuck" from Elijah;
 
-instead of going down from Grey Abbey Library while (Libido of Gabriel > 4 and Gabriel is in Bunker and player is male and Lastfuck of Gabriel - turns > 8 and a random chance of 1 in 3 succeeds): [cumslut, in the bunker, male player, not fucked that day, 33% chance]
-	move player to Bunker;
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+4	"Gabriel_Cumslut_Walkin"	Gabriel_Cumslut_Walkin	"[EventConditions_Gabriel_Cumslut_Walkin]"	Bunker	2500	2	50
+
+to say EventConditions_Gabriel_Cumslut_Walkin:
+	if (Libido of Gabriel > 4 and Gabriel is in Bunker and Player is male and Lastfuck of Gabriel - turns > 8): [list of conditions here]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+Gabriel_Cumslut_Walkin	"Gabriel_Cumslut_Walkin"
+
+Gabriel_Cumslut_Walkin is a situation.
+ResolveFunction of Gabriel_Cumslut_Walkin is "[ResolveEvent Gabriel_Cumslut_Walkin]".
+Sarea of Gabriel_Cumslut_Walkin is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent Gabriel_Cumslut_Walkin:
 	if debugactive is 1:
 		say "     DEBUG: Gabriel Cumslut WALKIN[line break]";
-	say "     As you come down the stairs into the bunker and enter the main room of your underground refuge, a very interesting sight awaits you. Roughly a dozen feet in front of the door, a pad made of folded blankets has been laid out on the floor, with your captive Seraphim pet kneeling on it. He is completely naked, providing a real feast for the eyes with his lithe, well-muscled body and the sizable cock that he is slowly stroking up and down. He's looking down at it right now, swiping up a glistening droplet of pre-cum with his index finger and bringing that up to lick off with a blissful expression. As he does so, he raises his gaze and catches sight of you, startling him to straighten up from the fairly relaxed position he was holding up till now. Eager to present himself, he pushes out his chest and stretches his pretty white wings to the sides, spreading their feathers wide.";
+	say "     As you step into the main room of the bunker, a very interesting sight awaits you. Roughly a dozen feet in front of the door, a pad made of folded blankets has been laid out on the floor, with your captive Seraphim pet kneeling on it. He is completely naked, providing a real feast for the eyes with his lithe, well-muscled body and the sizable cock that he is slowly stroking up and down. He's looking down at it right now, swiping up a glistening droplet of pre-cum with his index finger and bringing that up to lick off with a blissful expression. As he does so, he raises his gaze and catches sight of you, startling him to straighten up from the fairly relaxed position he was holding up till now. Eager to present himself, he pushes out his chest and stretches his pretty white wings to the sides, spreading their feathers wide.";
 	say "     '[Master], I've been waiting for you. I - I need to taste you, feel your cum sliding down my throat! Please, [master]!' comes his plea, delivered in a slightly breathy tone. He flexes his arms and chest a little to give you a nice show, followed by pinching his own nipples. A needy moan escapes Gabriel's mouth as his nipples harden and a little throb of pre leaks from his cum-slit to drip down onto the blanket. After all the work you've put into breaking and training him to be a good little slut, the sexy angel really gets off on submitting now. You can't help but feel a grin spreading over your face as you walk closer, every step followed by his eager gaze until you're standing right in front of him. Reaching out to stroke over your subby slut's chest, then brushing your fingers up along his collarbone and neck, you grab a handful of his long, soft hair and pull his head back to look into Gabriel's eyes.";
 	say "     [bold type]What do you want to do to Gabriel now?[roman type][line break]";
 	say "     [link](1)[as]1[end link] - Praise him for being a good little cum-slut and fill his mouth with your cock!";
@@ -877,11 +892,11 @@ instead of going down from Grey Abbey Library while (Libido of Gabriel > 4 and G
 		say "     ([link]N[as]n[end link]) - No, command him to put his arms behind his back.";
 		if Player consents: [let him jerk]
 			LineBreak;
-			say "     Unconcerned about Gabriel's self-pleasure, you concentrate on your own fun of face-fucking the attractive man and give him some more deep thrusts, one after the other. It just feels so good to have his throat contract around your dick every time he swallows, Adam's Apple bouncing up and down as he does so. Given such delightful sensations, it doesn't take all that much longer before the urge to cum builds sharply in your balls, and so you call out to your pet that you'll give him his reward now, grinding hard against his face to sink as much of your length as you can into him. With a deep grunt, you blast the first splash of cum straight into Gabriel's stomach, followed by another and another that trickles down his throat. Yet a good cumslut doesn't just need to be filled, he also needs to love the taste of cum, so you soon pull back, withdrawing your shaft until only the very tip is inside the angel's mouth, with the further spurts of seed painting his tongue white.";
+			say "     Unconcerned about Gabriel's self-pleasure, you concentrate on your own fun of face-fucking the attractive man and give him some more deep thrusts, one after the other. It just feels so good to have his throat contract around your dick every time he swallows, Adam's apple bouncing up and down as he does so. Given such delightful sensations, it doesn't take all that much longer before the urge to cum builds sharply in your balls, and so you call out to your pet that you'll give him his reward now, grinding hard against his face to sink as much of your length as you can into him. With a deep grunt, you blast the first splash of cum straight into Gabriel's stomach, followed by another and another that trickles down his throat. Yet a good cumslut doesn't just need to be filled, he also needs to love the taste of cum, so you soon pull back, withdrawing your shaft until only the very tip is inside the angel's mouth, with the further spurts of seed painting his tongue white.";
 			say "     Filling your happy little sub's mouth with cum is the last little push he needed to reach his own orgasm, so with a needy groan, Gabriel closes his fingers around his erection in a vice-tight grip and starts to erupt like a geyser, catching most of the cum in his cupped other hand. The two of you ride out your respective orgasms, in the course of which you relax your grip on the angel's head. This is just the opportunity he was waiting for, as Gabriel brings up his hand and lets the cum slide off it and onto your erection, then inhales its whole length all on his own, slurping hard on your cock to suck off his own seed. Withdrawing soon after, he lets out a happy, 'Thank you [master]!' and licks his lips to catch even the last droplet of cum to eat.";
 		else: [no jerking!]
 			LineBreak;
-			say "     Gruffly deciding to cut down on Gabriel's self-pleasure, give his hair a sharp tug and then remind your pet that you control what he does, not him. His eyes widen and he gives you a submissive murmur around the cock between his lips, immediately obeying the command to put his hands behind his back right after. Glancing down, you see his erection throbbing as it swings between his legs. Almost looks like he's getting even harder from you dominating him like this. Chuckling, you focus your concentration back on face-fucking the attractive man, giving him some more deep thrusts, one after the other. It just feels so good to have his throat contract around your dick every time he swallows, Adam's Apple bouncing up and down as he does so. Given such delightful sensations, it doesn't take all that much longer before the urge to cum builds sharply in your balls, and so you call out to your pet that you'll give him his reward now, grinding hard against his face to sink as much of your length as you can into him.";
+			say "     Gruffly deciding to cut down on Gabriel's self-pleasure, give his hair a sharp tug and then remind your pet that you control what he does, not him. His eyes widen and he gives you a submissive murmur around the cock between his lips, immediately obeying the command to put his hands behind his back right after. Glancing down, you see his erection throbbing as it swings between his legs. Almost looks like he's getting even harder from you dominating him like this. Chuckling, you focus your concentration back on face-fucking the attractive man, giving him some more deep thrusts, one after the other. It just feels so good to have his throat contract around your dick every time he swallows, Adam's apple bouncing up and down as he does so. Given such delightful sensations, it doesn't take all that much longer before the urge to cum builds sharply in your balls, and so you call out to your pet that you'll give him his reward now, grinding hard against his face to sink as much of your length as you can into him.";
 			say "     With a deep grunt, you blast the first splash of cum straight into Gabriel's stomach, followed by another and another that trickles down his throat. Yet a good cumslut doesn't just need to be filled, he also needs to love the taste of cum, so you soon pull back, withdrawing your shaft until only the very tip is inside the angel's mouth, with the further spurts of seed painting his tongue white. Filling your happy little sub's mouth with cum is the last little push he needed to reach his own orgasm, so with a needy groan, Gabriel stiffens before you, the muscles of his arms trembling as he forces himself to not to reach for his cock. Humping his hips forward reflexively, his cock starts to erupt like a geyser, spraying long streaks of angelic cum over the concrete floor of the bunker. The two of you ride out your respective orgasms, in the course of which you relax your grip on the angel's head, allowing him to pull off and give you a beaming smile after licking the last droplets of cum from his lips. Afterwards, he lets out a happy, 'Thank you [master]!'";
 		NPCSexAftermath Gabriel receives "OralCock" from Player;
 		now Stamina of Gabriel is turns; [last cum dose]
@@ -895,7 +910,7 @@ instead of going down from Grey Abbey Library while (Libido of Gabriel > 4 and G
 		say "     Panting hard through his nose, Gabriel huffs the aroma of his own pre-cum, then licks it off the dickhead and smacks his lips hungrily. Then he stretches his neck just a little further and takes the dickhead into his mouth, giving it a slurp that leads over into a happy groan. You continue to press down on his ass, bending him just a little bit further before it seems like you've reached the end of his flexibility. It is enough for him to start sucking on himself in earnest, able to take in not quite half of his own length and sucking hard on it. It is a fun sight to see what you can make your sex-pet do, but even though he's able to please himself, you think it'd take a while till he gets off, what with half his cock not getting any caresses at all. You decide to help him out this time, wrapping your fingers around the angel's erection and squeezing it, jerking him off.";
 		say "     Suckling on his own cock and knowing exactly how to maximize his pleasure, as well as having his [master] touching his naked body and cock, it's to little surprise that Gabriel rapidly approaches an orgasm, with the breathing through his nose becoming faster and just a little ragged. You make a move to drive him over the edge by grasping his balls, rolling them between your fingers and giving nice little squeezes while at the same time jerking him hard. Then the point of no return is reached and with a grunt, Gabriel's whole body stiffens and you can see his balls throb as they send forth spurt after spurt of angelic seed to cover his tongue. Telling the subby angel to open his mouth, you watch with a grin as he relaxes his lips around his manhood and its mushroom head comes into sight, pulsing a little as a fresh splash of cum is sprayed into Gabriel's mouth.";
 		WaitLineBreak;
-		say "     Counting the shots of cum, you keep massaging and stroking Gabriel's cock and balls to coax out even more. Only then his orgasm eventually ebbs off and the man starts giving you pleading looks to give his now sensitive manhood a little rest do you relent, letting go with a last caress. Afterwards, you leave Gabriel free to stretch out on his back once more, finally relaxing from his ass over head position. Taking in the blissful expression on his face and seeing some slight movements of his cheeks, you just know that he's swishing his cum around in his mouth, reveling in the taste. Then his Adam's Apple starts to bob as he swallows a first little bit, in which you interrupt Gabriel by clearing your throat loudly and demand that he show you first. The handsome angel bows his head submissively, then stretches out his tongue and shows the white cum on it, creating a few little strings to his upper lips. Praising your cum-slut for giving you such a nice show, you allow him his full treat now and Gabriel hungrily swallows, followed by an earnest, 'Thank you [master]!'";
+		say "     Counting the shots of cum, you keep massaging and stroking Gabriel's cock and balls to coax out even more. Only then his orgasm eventually ebbs off and the man starts giving you pleading looks to give his now sensitive manhood a little rest do you relent, letting go with a last caress. Afterwards, you leave Gabriel free to stretch out on his back once more, finally relaxing from his ass over head position. Taking in the blissful expression on his face and seeing some slight movements of his cheeks, you just know that he's swishing his cum around in his mouth, reveling in the taste. Then his Adam's apple starts to bob as he swallows a first little bit, in which you interrupt Gabriel by clearing your throat loudly and demand that he show you first. The handsome angel bows his head submissively, then stretches out his tongue and shows the white cum on it, creating a few little strings to his upper lips. Praising your cum-slut for giving you such a nice show, you allow him his full treat now and Gabriel hungrily swallows, followed by an earnest, 'Thank you [master]!'";
 		NPCSexAftermath Gabriel receives "OralCock" from Gabriel;
 		now Stamina of Gabriel is turns; [last cum dose]
 		if Libido of Gabriel < 10:
@@ -915,7 +930,7 @@ after resting while ((Player is bunkered or Player is booked) and Player is male
 		say "     As you drift up from the depths of sleep, you become aware of a quite pleasurable sensation coursing through your body. Still shaking off last vestiges of dreams that melt away like fog in the sun, you move your hand towards the source of the slurping noises down at your crotch and soon feel the soft curls of Gabriel's long hair under your fingers. He's bobbing up and down on your shaft in an urgent tempo while massaging your balls, giving you a clear sign that your angelic cum-slut is desperate for your seed. Feeling a little lazy right now, you only open your eyes a tiny bit to allow them to get used to the light while just leaving your hand on Gabriel's head and letting him continue at his fast pace. It doesn't take all that long before your angelic slut's enthusiastic efforts drive you past the point of no return. Reflexively humping upwards, you force your whole length down his throat and blast the first big spurt of cum directly into his stomach.";
 		say "     Gabriel quickly pulls back, keeping just your head between his lips to catch any following cum shots on his tongue, with whorish moans speaking of his pleasure in doing so. The well-tamed sex slave caresses your body and suckles on your cock until the last spurts of your orgasm have ebbed off, then pulls off your dick and gives its head a careful kiss. You push yourself up on your elbows to look at the ecstatic and oh so very naked male, who then opens his mouth to show the white froth of your seed and his spit, drawing strings in the air as he stretches his tongue out to show it to you. Without losing one drop, he demonstratively swallows your cum, then suddenly starts to twitch and tremble. Following the movement of his hands, you realize that he just came from being allowed to feed on your seed!";
 		WaitLineBreak;
-		say "     Gabriel is sure to catch his own load in the palm of his hand, both not to make a mess as well as enabling him to slurp the white spunk up with his tongue. He moans happily as he does so, though not as much as when he was feeding on the sperm of his [master]. You've definitively created a happy little cum-slut in your sex pet, and you caress him once again to express your pleasure about his progress before you start to get up. He happily fulfills the role as a servant too, bringing your clothes and gear up to you as you get dressed, all the while being very nice eye-candy as he nakedly moves around.";
+		say "     Gabriel is sure to catch his own load in the palm of his hand, both not to make a mess as well as enabling him to slurp the white spunk up with his tongue. He moans happily as he does so, though not as much as when he was feeding on the sperm of his [master]. You've definitely created a happy little cum-slut in your sex pet, and you caress him once again to express your pleasure about his progress before you start to get up. He happily fulfills the role as a servant, too, bringing your clothes and gear up to you as you get dressed, all the while being very nice eye-candy as he nakedly moves around.";
 		NPCSexAftermath Gabriel receives "OralCock" from Player;
 		now Stamina of Gabriel is turns; [last cum dose]
 	else if Libido of Gabriel is 12: [forbidden to suck the player during sleep, but desperate enough to do it anyways]
@@ -939,7 +954,7 @@ after resting while ((Player is bunkered or Player is booked) and Player is male
 			say "     Grabbing a handful of his brown curls, you give them a sharp tug and remind Gabriel that he's your sex-pet and shouldn't get used to having ideas of his own. He gulps and whimpers apologetically, with an earnest expression on his face. Still as you expect that he'll be unable to control himself in the future, being the cum-slut that you made him into, you wait a moment longer for the lesson to sink in, then finally relent and tell him that he may wake you up in the future, like he did today. Something about his happy smile tells you that he'll likely do it every day, unless you give him his daily dose of creamy seed some other way first. Having given your command, you nod for the angelic slut to continue and then lay back with your hands behind your head. Gabriel immediately gets back to the frantic bobbing from earlier, slurping on your shaft and letting out needy groans as he goes down on you. His hands move to caress your thighs and cup your balls at the same time, quickly inflaming the still sizzling fires of your lust.";
 			say "     It doesn't take all that long before your angelic slut's enthusiastic efforts drive you past the point of no return. Reflexively humping upwards, you force your whole length down his throat and blast the first big spurt of cum directly into his stomach. Then he pulls back, keeping just your head between his lips to catch any following cum shots on his tongue, with whorish moans speaking of his pleasure in doing so. The well-tamed sex slave caresses your body and suckles on your cock until the last spurts of your orgasm have ebbed off, then pulls off your dick and gives its head a careful kiss. You push yourself up on your elbows to look at the ecstatic male, who then opens his mouth to show the white froth of your seed and his spit, drawing strings in the air as he stretches his tongue out to show it to you. Without losing one drop, he demonstratively swallows your cum, then suddenly starts to twitch and tremble. Following the movement of his hands, you realize that he just came from being allowed to feed on your seed!";
 			WaitLineBreak;
-			say "     Gabriel is sure to catch his own load in the palm of his hand, both not to make a mess as well as enabling him to slurp the white spunk up with his tongue. He moans happily as he does so, though not as much as when he was feeding on the sperm of his [master]. You've definitively created a happy little cum-slut in your sex pet, and you caress him once again to express your pleasure about his progress before you start to get up. He happily fulfills the role as a servant too, bringing your clothes and gear up to you as you get dressed, all the while being very nice eye-candy as he nakedly moves around.";
+			say "     Gabriel is sure to catch his own load in the palm of his hand, both not to make a mess as well as enabling him to slurp the white spunk up with his tongue. He moans happily as he does so, though not as much as when he was feeding on the sperm of his [master]. You've definitely created a happy little cum-slut in your sex pet, and you caress him once again to express your pleasure about his progress before you start to get up. He happily fulfills the role as a servant, too, bringing your clothes and gear up to you as you get dressed, all the while being very nice eye-candy as he nakedly moves around.";
 			NPCSexAftermath Gabriel receives "OralCock" from Player;
 			now Stamina of Gabriel is turns; [last cum dose]
 			now Libido of Gabriel is 11; [sleep sucking allowed]
@@ -964,7 +979,7 @@ after resting while ((Player is bunkered or Player is booked) and Player is male
 		say "     As you drift up from the depths of sleep, you become aware of a quite pleasurable sensation coursing through your body. Still shaking off last vestiges of dreams that melt away like fog in the sun, you move your hand towards the source of the slurping noises down at your crotch and soon feel the soft curls of Gabriel's long hair under your fingers. He's bobbing up and down on your shaft in a steady rhythm, from time to time pulling off to let his tongue wander up the side of your shaft, tease the head of your dick around the rim or lap at your balls. Your angelic cum-slut is apparently hungry for your seed, but also wants to please his [master] as well as he can. Feeling a little lazy right now, you only open your eyes a tiny bit to allow them to get used to the light while just leaving your hand on Gabriel's head and giving him caressing pats as he continues at his own pace. Even so, it doesn't take all that long before your angelic slut's quite enthusiastic efforts drive you past the point of no return. Reflexively humping upwards, you force your whole length down his throat and blast the first big spurt of cum directly into his stomach.";
 		say "     Gabriel quickly pulls back, keeping just your head between his lips to catch any following cum shots on his tongue, with whorish moans speaking of his pleasure in doing so. The well-tamed sex slave caresses your body and suckles on your cock until the last spurts of your orgasm have ebbed off, then pulls off your dick and gives its head a careful kiss. You push yourself up on your elbows to look at the ecstatic and oh so very naked male, who then opens his mouth to show the white froth of your seed and his spit, drawing strings in the air as he stretches his tongue out to show it to you. Without losing one drop, he demonstratively swallows your cum, then suddenly starts to twitch and tremble. Following the movement of his hands, you realize that he just came from being allowed to feed on your seed!";
 		WaitLineBreak;
-		say "     Gabriel is sure to catch his own load in the palm of his hand, both not to make a mess as well as enabling him to slurp the white spunk up with his tongue. He moans happily as he does so, though not as much as when he was feeding on the sperm of his [master]. You've definitively created a happy little cum-slut in your sex pet, and you caress him once again to express your pleasure about his progress before you start to get up. He happily fulfills the role as a servant too, bringing your clothes and gear up to you as you get dressed, all the while being very nice eye-candy as he nakedly moves around.";
+		say "     Gabriel is sure to catch his own load in the palm of his hand, both not to make a mess as well as enabling him to slurp the white spunk up with his tongue. He moans happily as he does so, though not as much as when he was feeding on the sperm of his [master]. You've definitely created a happy little cum-slut in your sex pet, and you caress him once again to express your pleasure about his progress before you start to get up. He happily fulfills the role as a servant, too, bringing your clothes and gear up to you as you get dressed, all the while being very nice eye-candy as he nakedly moves around.";
 		NPCSexAftermath Gabriel receives "OralCock" from Player;
 		now Stamina of Gabriel is turns; [last cum dose]
 	NPCSexAftermath Gabriel receives "OralCock" from Player;
@@ -991,7 +1006,7 @@ to say FirstTimeGabrielSleepBJ:
 		say "     Running your hands through the soft, brown curls of Gabriel's hair, you caress him possessively and praise him for anticipating his [master]'s desires. That he's craving regular cum is exactly what you had planned for your obedient sex pet after all. He looks ecstatic at your touch and relieved that you understand his needs, more moaning than saying, 'Anything for you, [master]!' With you having decided to be generous with him, you expressly give him permission to wake you up just like he did today. Something about his happy smile tells you that he'll likely do it every day, unless you give him his daily dose of creamy seed some other way first. Having given your command, you nod for the angelic slut to continue and then lay back with your hands behind your head. Gabriel very happily gets back to the gentle sucking from earlier, slurping on your shaft and letting out pleased little grunts as he bobs up and down on it. His hands move to caress your thighs and cup your balls while he goes down on you, quickly inflaming the still sizzling fires of your lust.";
 		say "     It doesn't take all that long before your angelic slut's enthusiastic efforts drive you past the point of no return. Reflexively humping upwards, you force your whole length down his throat and blast the first big spurt of cum directly into his stomach. Then he pulls back, keeping just your head between his lips to catch any following cum shots on his tongue, with whorish moans speaking of his pleasure in doing so. The well-tamed sex slave caresses your body and suckles on your cock until the last spurts of your orgasm have ebbed off, then pulls off your dick and gives its head a careful kiss. You push yourself up on your elbows to look at the ecstatic male, who then opens his mouth to show the white froth of your seed and his spit, drawing strings in the air as he stretches his tongue out to show it to you. Without losing one drop, he demonstratively swallows your cum, then suddenly starts to twitch and tremble. Following the movement of his hands, you realize that he just came from being allowed to feed on your seed!";
 		WaitLineBreak;
-		say "     Gabriel is sure to catch his own load in the palm of his hand, both not to make a mess as well as enabling him to slurp the white spunk up with his tongue. He moans happily as he does so, though not as much as when he was feeding on the sperm of his [master]. You've definitively created a happy little cum-slut in your sex pet, and you caress him once again to express your pleasure about his progress before you start to get up. He happily fulfills the role as a servant too, bringing your clothes and gear up to you as you get dressed, all the while being very nice eye-candy as he nakedly moves around.";
+		say "     Gabriel is sure to catch his own load in the palm of his hand, both not to make a mess as well as enabling him to slurp the white spunk up with his tongue. He moans happily as he does so, though not as much as when he was feeding on the sperm of his [master]. You've definitely created a happy little cum-slut in your sex pet, and you caress him once again to express your pleasure about his progress before you start to get up. He happily fulfills the role as a servant, too, bringing your clothes and gear up to you as you get dressed, all the while being very nice eye-candy as he nakedly moves around.";
 		NPCSexAftermath Gabriel receives "OralCock" from Player;
 		now Stamina of Gabriel is turns; [last cum dose]
 		now Libido of Gabriel is 11; [sleep sucking allowed]
@@ -1007,7 +1022,23 @@ to say FirstTimeGabrielSleepBJ:
 		say "     Grabbing a handful of his brown curls, you wrench the tamed angel back from your cock and give him a stern talking-to. With him soon being almost in tears, you declare that he will not be getting what he wanted because of his disobedience. Instead, you keep a tight grip on his hair and jerk off, quickly pushing yourself over the edge and blasting cum all over his glorious curls to give him a somewhat patchy appearance. With a dire warning that he may not remove the cum until it's well and truly dried, you send him scurrying away.";
 		now Libido of Gabriel is 12; [sleep sucking forbidden]
 
-after of going to Bunker while (David is bunkered and Gabriel is bunkered and Charisma of Gabriel is 0):
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+3	"Gabriel_David_Meeting"	Gabriel_David_Meeting	"[EventConditions_Gabriel_David_Meeting]"	Bunker	2500	2	100
+
+to say EventConditions_Gabriel_David_Meeting:
+	if (David is collected and Gabriel is collected and Charisma of Gabriel is 0) and Player is not CoA: [list of conditions here]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+Gabriel_David_Meeting	"Gabriel_David_Meeting"
+
+Gabriel_David_Meeting is a situation.
+ResolveFunction of Gabriel_David_Meeting is "[ResolveEvent Gabriel_David_Meeting]".
+Sarea of Gabriel_David_Meeting is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent Gabriel_David_Meeting:
 	if debugactive is 1:
 		say "     DEBUG: David/Gabriel Talk Walkin[line break]";
 	say "     As you enter the bunker, you see David and Gabriel stand not too far away, next to one of the side walls of the underground refuge. They're talking, with the male soldier's back turned your way and you overhear David say, 'Wait, you mean -?' 'Yes, I'm the [master]'s servant. Before, I was someone else, something else. [SubjectProCap of Player] fought and won against me, held me down and changed me. Now I belong to [ObjectPro of Player].' Gabriel pats the leather restraint cuffs resting around his wrists, then lowers his hands to rest just above his crotch as he bends his head. 'B-but that's slavery! No one can own other people!' David replies in a shocked tone, only to find the angel reaching out to cover his mouth with a gentle touch of his fingers. 'My kind was made to serve, to follow the grand plan to perfection. But how could I do so after having been changed? Impure thoughts in my head and the urges of this new flesh between my legs, they mark me as an abomination. I bear the mark of the [master], so now I serve [ObjectPro of Player].'";
@@ -1049,6 +1080,7 @@ after of going to Bunker while (David is bunkered and Gabriel is bunkered and Ch
 		say "     Watching the soldier go, you wave Gabriel over to yourself and take him to one of the side rooms for a private chat. The beautiful angel you've turned into your private sex toy obeys immediately, coming to stand in front of you at attention. Looking into those innocent eyes, you reach out to run a hand up and down his toned chest while you think about what you want to tell him about his future interactions with David.";
 		say "[GabrielDavidInteractionChoice]";
 		now Charisma of Gabriel is 50; [David and Gabriel kissed without player intervention]
+	now Gabriel_David_Meeting is resolved;
 
 to say GabrielDavidInteractionChoice:
 	LineBreak;
@@ -1099,14 +1131,28 @@ to say GabrielDavidInteractionStatus:
 		-- 99: [interaction forbidden]
 			say "Lowering his head in a show of submission, Gabriel says, 'I've been avoiding him, as you commanded. It isn't always easy, living here together and with him curious and trying to talk to me. But I can manage it and obey.'";
 
-after of going to Bunker while (David is bunkered and (Charisma of Gabriel is 10 or Charisma of Gabriel is 30 or Charisma of Gabriel is 50)): [he needs to talk about Gabriel]
-	if debugactive is 1:
-		say "     DEBUG: David/Gabriel Talk Walkin Aftermath[line break]";
-	say "[DavidGabrielTalkAftermath]";
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+3	"Gabriel_David_TalkAftermath"	Gabriel_David_TalkAftermath	"[EventConditions_Gabriel_David_TalkAftermath1]"	Bunker	2500	2	100
+3	"Gabriel_David_TalkAftermath"	Gabriel_David_TalkAftermath	"[EventConditions_Gabriel_David_TalkAftermath2]"	Parade Ground	2500	2	100
 
-after of going to Parade Ground while (David is in Parade Ground and (Charisma of Gabriel is 10 or Charisma of Gabriel is 30 or Charisma of Gabriel is 50)): [he needs to talk about Gabriel]
-	if debugactive is 1:
-		say "     DEBUG: David/Gabriel Talk Walkin Aftermath[line break]";
+to say EventConditions_Gabriel_David_TalkAftermath1:
+	if (David is collected and Gabriel is collected and (Charisma of Gabriel is 10 or Charisma of Gabriel is 30 or Charisma of Gabriel is 50)) and Player is not CoA: [list of conditions here]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+to say EventConditions_Gabriel_David_TalkAftermath2:
+	if (David is in Parade Ground and (Charisma of Gabriel is 10 or Charisma of Gabriel is 30 or Charisma of Gabriel is 50)) and Player is not CoA: [list of conditions here]
+		now CurrentWalkinEvent_ConditionsMet is true;
+
+Table of GameEventIDs (continued)
+Object	Name
+Gabriel_David_TalkAftermath	"Gabriel_David_TalkAftermath"
+
+Gabriel_David_TalkAftermath is a situation.
+ResolveFunction of Gabriel_David_TalkAftermath is "[ResolveEvent Gabriel_David_TalkAftermath]".
+Sarea of Gabriel_David_TalkAftermath is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent Gabriel_David_TalkAftermath:
 	say "[DavidGabrielTalkAftermath]";
 
 to say DavidGabrielTalkAftermath:
@@ -1142,6 +1188,7 @@ to say DavidGabrielTalkAftermath:
 		say "     Pressing your lips together and shaking your head, you let out an artfully delivered sigh and give David's arm a consoling squeeze. Then you lay it on thick: You don't really know what happened to Gabriel out in the wild streets, but you ran into him in the state he is now, sexually abused and still dripping with cum all over him. Bending over the unconscious man lying in the street, you checked on him, which is when he opened his eyes and focused on you with an unhinged expression on his face. Kinda like imprinting with animal babies, suddenly you were his master in Gabriel's mind and he kept begging for your orders. He didn't seem capable of surviving out in the streets on his own, so you took him in for his own good. Faking embarrassment, you admit that you even had to indulge his fantasies physically since Gabriel is just so obsessed about serving his [master].";
 		say "     David eats up your words, getting a bit pale as you paint a picture of Gabriel's mind shattering under his previous experiences. 'I - oh god, that is horrible! Do you think he can be cured somehow?' In a serious tone, you tell him that you really hope it'll be possible once all of you get out of here. Therapy can work wonders and all that. But for now, it's best to not complicate matters with Gabriel any further. He's stable in his assumed role as your servant, so everyone should treat him accordingly and not give him any undue stress by contradicting it. Doing an fairly good job in spinning this web of lies, you get David so far that he quietly nods and promises, 'Okay, if that's how it must go, I will do my best to play along.' He gulps as he says this, but then presses his lips together and puts a determined look on his face.";
 		say "[DavidGabrielTalkAftermath2]";
+	now Gabriel_David_TalkAftermath is resolved;
 
 to say DavidGabrielTalkAftermath2:
 	WaitLineBreak;
@@ -1189,9 +1236,23 @@ to say DavidGabrielTalkAftermath2:
 			say "     David looks at you thoughtfully as you explain that from your viewpoint, it might be best if he kept things platonic from now on. Having a friend to rely on might be just what Gabriel needs. As for the 'cheating', that's not really applicable with all of the madness that rules the city these days. People do what they must and everyone will surely understand in the end.";
 			now Charisma of Gabriel is 71; [David will no longer participate in sex with Gabriel, might become a friend though]
 
+Table of WalkInEvents (continued)
+Priority	Name	EventObject	EventConditions	EventRoom	LastEncounterTurn	CoolDownTurns	EncounterPercentage
+3	"Gabriel_David_Cumslut1"	Gabriel_David_Cumslut1	"[EventConditions_Gabriel_David_Cumslut1]"	Bunker	2500	2	100
 
+to say EventConditions_Gabriel_David_Cumslut1:
+	if (David is collected and Gabriel is collected and (Charisma of Gabriel is 11 or Charisma of Gabriel is 31 or Charisma of Gabriel is 51 or Charisma of Gabriel is 71) and Libido of Gabriel > 9 and Stamina of Gabriel - turns > 7 and (Intelligence of Gabriel is 1 or Intelligence of Gabriel is 41)) and Player is not CoA: [Gabriel + David present, David and player talked after precious scene, Gabriel Cumslut Stage 2, not fed cum for a day, sex allowed]
+		now CurrentWalkinEvent_ConditionsMet is true;
 
-after of going to Bunker while (David is bunkered and Gabriel is bunkered and (Charisma of Gabriel is 11 or Charisma of Gabriel is 31 or Charisma of Gabriel is 51 or Charisma of Gabriel is 71) and Libido of Gabriel > 9 and Stamina of Gabriel - turns > 7 and (Intelligence of Gabriel is 1 or Intelligence of Gabriel is 41)): [Gabriel + David present, David and player talked after precious scene, Gabriel Cumslut Stage 2, not fed cum for a day, sex allowed]
+Table of GameEventIDs (continued)
+Object	Name
+Gabriel_David_Cumslut1	"Gabriel_David_Cumslut1"
+
+Gabriel_David_Cumslut1 is a situation.
+ResolveFunction of Gabriel_David_Cumslut1 is "[ResolveEvent Gabriel_David_Cumslut1]".
+Sarea of Gabriel_David_Cumslut1 is "Nowhere". [standard walkins that cannot be hunted for are Nowhere, but walkin events can also be made huntable as an alternate access way]
+
+to say ResolveEvent Gabriel_David_Cumslut1:
 	if debugactive is 1:
 		say "     DEBUG: David/Gabriel Cumslut Walkin[line break]";
 	say "     As you enter the main room of the bunker, you see the white-winged form of Gabriel stand over to the side, at the end of one of the numerous beds down here. He is bare-ass naked except for the collar and cuffs you put on him. Meanwhile, the bed is occupied by the sleeping form of David, obviously completely unaware yet of the attention your angelic pet is giving him. Then Gabriel leans forward and reaches out to take hold of the blanket covering the stretched-out soldier, gently lifting it and pulling it down over his form. He feasts his eyes on David's bare chest, putting a hand on it and slowly stroking over the light fuzz covering his pecs, then the treasure trail down towards the man's crotch. Still hesitating before he lays his fingers on the fabric of the somewhat oversized pair of boxer shorts the soldier must have scavenged somewhere, Gabriel becomes aware of you at that moment. He flinches and looks up with a guilty expression as he meets your eyes, the hand frozen in movement just above David's crotch.";
@@ -1351,6 +1412,6 @@ after of going to Bunker while (David is bunkered and Gabriel is bunkered and (C
 				now Intelligence of Gabriel is 49; [sex only path, rejected by David]
 			now Charisma of Gabriel is 72; [David fed Gabriel cum from cup, not open for sex]
 		now Stamina of Gabriel is turns; [last cum dose]
-
+	now Gabriel_David_Cumslut1 is resolved;
 
 Seraphim ends here.
