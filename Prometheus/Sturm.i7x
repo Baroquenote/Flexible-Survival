@@ -110,6 +110,7 @@ Conversation of Sturm is { "Woof grrr" }.
 The scent of Sturm is "     Sturm, smells of the city. Sweat, sexual fluid, and dust mingle with his natural wolfy scent."
 
 to say SturmDesc:
+	project the figure of Sturm_full_body_icon;
 	if debugactive is 1:
 		say "DEBUG -> HP: [HP of Sturm] <- DEBUG[line break]";
 	if HP of Sturm is 0:
@@ -217,7 +218,7 @@ instead of navigating Grey Abbey Library while ((Sturm is booked or Sturm is bun
 
 to say SturmApology:
 	say "     As you go in through the door, you find yourself suddenly submerged in an avalanche of snow-white fur, spurring the realization that someone is now hugging you. While you try to move yourself enough to get a good look at who is, you hear his heartbeat rise a little as a familiar voice commands, 'Stop struggling and listen, because this is hard for me to say and important that you listen.' Sturm loosens his bear hug which gives enough leeway to look at his expression, usually cold and stern, instead reminding you of Blanche as he continues, 'Considering how you were never around I had honestly thought that there wasn't much difference between you and the infected that wandered the city; only looking for a reliable source of pleasure.' While his grip never wavered, his voice did, whether from remembering the Office Den or thinking of his new life at the Library, you can't tell.";
-	say "     Though those words make you silently wonder for a moment if you should have carried Blanche back to the Library despite her protests, Sturm continues speaking. 'I realize now after seeing the Library and your willingness to let others stay here that you are a lot more like Mom than I had thought, so I want to apologize for the way I have acted towards you and hope that with this we can start over by treating each other as family.' Obviously done he looks at you, nervously expectant of your answer.  Having heard Sturm's apology and his willingness to accept you, you can't help but smile and return the hug that he has been giving you for a while now. The wordless actions eliciting happy tail wagging from Sturm as he realizes that you aren't holding his hostility against him, though the hug ends up lasting for quite some time before you finally both return to your usual antics.";
+	say "     Though those words make you silently wonder for a moment if you should have carried Blanche back to the Library despite her protests, Sturm continues speaking. 'I realize now after seeing the Library and your willingness to let others stay here that you are a lot more like Mom than I had thought, so I want to apologize for the way I have acted towards you and hope that with this we can start over by treating each other as family.' Obviously done he looks at you, nervously expectant of your answer. Having heard Sturm's apology and his willingness to accept you, you can't help but smile and return the hug that he has been giving you for a while now. The wordless actions eliciting happy tail wagging from Sturm as he realizes that you aren't holding his hostility against him, though the hug ends up lasting for quite some time before you finally both return to your usual antics.";
 	now HP of Sturm is 2;
 
 instead of going to Grey Abbey Library while HP of Sturm > 1 and "Sturm - Chess Set" is listed in Traits of Sturm and Sturm is in Grey Abbey Library and Player is not CoA:
@@ -279,12 +280,14 @@ the fuckscene of White Wolf One is "WIP".
 
 to say SummonSturm:
 	if Sturm is visible: [summoning while standing next to him]
+		project the figure of Sturm_full_body_icon;
 		say "     Walking over to Sturm, you ask whether he would be interested in coming with you out into the city. He smiles widely and nods, darting in for a quick hug, his tail wagging wildly. 'Thank you, [BlancheMomDadTitle]. Really. I'd love to.' You privately chuckle at how such an innocent question can transform the usually stern wolf into a puppy.";
 	else: [regular summoning]
 		say "     Sturm for all his many qualities doesn't possess the ability to hear you when you aren't in earshot. Perhaps you should try again when you can see him.";
 		now SummonFailure is true;
 
 to say DismissSturm:
+	project the figure of Sturm_full_body_icon;
 	move Sturm to Grey Abbey Library;
 	if Player is not in Grey Abbey Library: [regular dismiss]
 		say "     With a word, you get Sturm's attention and tell him that he should head back to the library for now. He looks indignant for a moment but bites his tongue and merely nods. 'Fine. I guess I'll see you at home then,' he grumbles as he walks away, before hurrying back. '[BlancheMomDadTitle]. I enjoy this time together. Just so you know,' he says quickly as he gives you a firm hug before turning away and rushing off before you have a chance to reply. You know that he can handle himself, but you still feel guilty for dismissing him here. ";

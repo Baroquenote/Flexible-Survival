@@ -362,7 +362,7 @@ instead of conversing the Eric:
 		say "     Eric tells you what happened to him when the plague hit - with people shifting all around and his best friend taking a slash at his arm, he moved in here and barricaded himself in. Since then, he's only left a few times, sneaking outside at night when most creatures are sleeping to gather some supplies. You in turn tell him of all the things you've seen and witnessed out in the city, making him go pale as he listens.";
 		say "     When you finish, Eric asks you 'You're a pretty resilient person from your stories... could you maybe help me save Stacy, my girlfriend? Well, ex-girlfriend I guess - she broke up with me a day before the plague hit... but that doesn't matter now. I've tried to find her and bring her here, but there was a massive green creature moving around her dorm building every time I checked. I just couldn't fight something that big, so I sneaked away before it noticed me. Please, help me save her from there!'";
 		if Player consents: [going on a rescue mission]
-			say "     Eric arms himself with a baseball bat and you move out together, mostly staying behind buildings and sneaking through the bushes. It goes pretty well, until you arrive at one of the main thoroughfare of the campus and have to step onto a large open area to move on. You almost make it, then hear a female voice behind you. Turning around, you see a succubus and incubus stand there, eying you like pieces of meat.";
+			say "     Eric arms himself with a baseball bat and you move out together, mostly staying behind buildings and sneaking through the bushes. It goes pretty well, until you arrive at one of the main thoroughfare of the campus and have to step onto a large open area to move on. You almost make it, then hear a female voice behind you. Turning around, you see a succubus and incubus stand there, eyeing you like pieces of meat.";
 			say "     'It's just like you promised, Aidan - a whole campus of pretty young things ripe for the plucking. How about you take that one,' she says with a nod to you, '- and I ride the redhead.'";
 			challenge "Incubus";
 			if fightoutcome >= 20 and fightoutcome <= 29: [lost]
@@ -489,7 +489,7 @@ to say StacyFight_Victory:
 				now Resistant entry is false;
 				now Sluttyness entry is 1;
 				now WhoredOut entry is false;
-				now Sexcount entry is 1;
+				now SexCount entry is 1;
 				say "     [bold type]After thinking about it a second, you pick...[roman type][line break]";
 				say "     ([link]Y[as]y[end link]) - Making regular payments.";
 				say "     ([link]N[as]n[end link]) - The milking option.";
@@ -2844,7 +2844,7 @@ to say EricCarlScene3:
 to say EricCarlScene4:
 	say "     Coming into the library, you see Carl and Eric do another stint of jogging together, coming out of the long rows of shelves side by side in casual conversation as they go along. Seeing you as they reach the end of their run, the human and husky wave in greeting, then Carl tells his friend with a smile, 'Nice workout. I'm so glad to have someone to hang out with.' Eric gives him a beaming grin and replies, 'Right back at you. Always a pleasure Carl.' And with that, the young man says he wants to cool down a bit and read, then starts walking to the bunker entrance door. The canine soldier gives you a sidelong glance that tells you he wants to talk, but you notice his eyes barely leave Eric's backside. He is checking the young man out as he walks away, tail wagging excitedly as he clearly likes what he sees.";
 	project the figure of Carl_face_icon;
-	if HP of Carl < 11: [regular Carl]
+	if HP of Carl > 10 and HP of Carl < 30: [regular Carl]
 		say "     By the time you've walked over to Carl, Eric is through the bunker door and on his way down, leaving your resident soldier to turn to you. 'He's quite something, isn't he?' Carl says distractedly with a last glance at the door as it closes slowly on its own. It is clear that he doesn't really expect an answer, and he shakes off whatever thought was in his mind a second later, then turns his whole attention to you. 'Hey there, I wanted to ask you something. With you kinda being the landlord here, giving me a place to stay in all this chaos... would you be okay with it if I had some fun with... someone? Just hypothetically, you know. Don't worry, I don't plan to build a husky harem.'";
 		LineBreak;
 		say "     It is fairly clear who he's eluding to. What's your reply?";
@@ -2858,7 +2858,7 @@ to say EricCarlScene4:
 			LineBreak;
 			say "     Reaching out to give the muscular soldier's shoulder a firm squeeze, you put on a serious expression and tell him that he should focus on his duty. Some of the people in the city are hanging on to their humanity by the barest thread, and it'd be bad to have someone succumb right here in the library. It is easily visible how disappointed the man his - from his drooping tail and flopping-down ears to a little grimace on his muzzle, but he accepts your decision nonetheless. With a nod, he trots off towards the stairs and makes his way to the upper story of the library.";
 			now CarlEricInteraction is 50;
-	else if HP of Carl is 30: [subby Carl]
+	else if HP of Carl > 30 and HP of Carl < 40: [subby Carl]
 		say "     By the time you've walked over to Carl, Eric is through the bunker door and on his way down, leaving your resident soldier to turn to you. 'He's quite something, isn't he?' Carl says distractedly with a last glance at the door as it closes slowly on its own. Then a visible change goes through Carl as he remembers your status over him - lowering his head submissively, the anthro husky turns to you. 'Alpha, I wanted to ask you something. With you giving me a place to stay in all this chaos and being my pack-leader... would you be okay with it if I had some fun with... someone? Just hypothetically, you know.'";
 		LineBreak;
 		say "     It is fairly clear who he's eluding to. What's your reply?";

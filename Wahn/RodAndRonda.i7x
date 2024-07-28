@@ -73,13 +73,13 @@ to say roddesc:
 	project Figure of Rod_icon;
 	if Rod is in Mall FoodCourt:
 		if MaleInterest of Player is false: [no sexual interest at all, more neutral description]
-			say "     Rod is an anthro rat rocking a skater look, consisting of grey khaki-punk shorts and a tank top depicting a cow being abducted by an UFO. A shiny silver earring in his left earlobe rounds out the outfit and provides some extra cool points. He's about average height for a human, his slender rodent body mostly covered in white fur, with just his shoulders and part of his face being grey, as well as having a mop of black hair on top of his head. A pink, twitching nose surrounded by fine whiskers and sky-blue eyes are the other noticable features of his face. Pink-skinned hands, slender feet and a long tail round out the image of the young man.";
+			say "     Rod is an anthro rat rocking a skater look, consisting of grey khaki-punk shorts and a tank top depicting a cow being abducted by an UFO. A shiny silver earring in his left earlobe rounds out the outfit and provides some extra cool points. He's about average height for a human, his slender rodent body mostly covered in white fur, with just his shoulders and part of his face being grey, as well as having a mop of black hair on top of his head. A pink, twitching nose surrounded by fine whiskers and sky-blue eyes are the other noticeable features of his face. Pink-skinned hands, slender feet and a long tail round out the image of the young man.";
 			if Ronda is not in Mall Atrium:
-				say "     Currently, he's looking like a wreck, with dark circles under his eyes as he's not getting any sleep from what happened to Ronda. Worry is drawn all over his features, and he paces up and down trying to think of something to do.";	
-			else: 
+				say "     Currently, he's looking like a wreck, with dark circles under his eyes as he's not getting any sleep from what happened to Ronda. Worry is drawn all over his features, and he paces up and down trying to think of something to do.";
+			else:
 				say "     As he notices your attention, the mall rat gives you a smile and little wave. Cheerful and fairly relaxed, the young man is propped up against the wall, idly listening to some music through a pair of earphones that look fairly comical clamped over his overlarge ratty ears.";
 		else: [player interested in men and pays more attention to his body]
-			say "     Rod is a handsome anthro rat rocking a skater look, consisting of grey khaki-punk shorts and a tank top depicting a cow being abducted by an UFO. A shiny silver earring in his left earlobe rounds out the outfit and provides some extra cool points. He's about average height for a human, his slender rodent body mostly covered in white fur, with just his shoulders and part of his face being grey, as well as having a mop of black hair on top of his head. A pink, twitching nose surrounded by fine whiskers and sky-blue eyes are the other noticable features of his face. Pink-skinned hands, slender feet and a long tail round out the image of the young man.";
+			say "     Rod is a handsome anthro rat rocking a skater look, consisting of grey khaki-punk shorts and a tank top depicting a cow being abducted by an UFO. A shiny silver earring in his left earlobe rounds out the outfit and provides some extra cool points. He's about average height for a human, his slender rodent body mostly covered in white fur, with just his shoulders and part of his face being grey, as well as having a mop of black hair on top of his head. A pink, twitching nose surrounded by fine whiskers and sky-blue eyes are the other noticeable features of his face. Pink-skinned hands, slender feet and a long tail round out the image of the young man.";
 			if Ronda is not in Mall Atrium:
 				say "     Currently, he's looking like a wreck, with dark circles under his eyes as he's not getting any sleep from what happened to Ronda. Worry is drawn all over his features, and he paces up and down trying to think of something to do.";
 			else: [normal]
@@ -93,7 +93,7 @@ to say roddesc:
 instead of conversing Rod Mallrat:
 	project Figure of Rod_icon;
 	if PlayerMet of Rod Mallrat is false:
-		say "     As you approach, the mall rat's hand dips into his pocket to pull out a music player and pause it, then tugs his earphones down so they rest around his neck. 'What up?' he says with a smile, flicking some strands of his black hair out of his face so he can meet your gaze with his active, sky-blue eyes. Pushing himself away from the wall he was leaning against, the young man takes a step forward and adds, 'Haven't seen you around here before, so welcome to the Smith Haven Mall, [dude]! I'm Rod. Always stroked to meet new people! At least those that aren't going to go mob on folks, you know.' Gaze flicking to the entrance of the mall for a second, he shudders a little, then quickly pushes any worries about the outside aside. 'So, you coming to stay? To wait out all the crazyness going on out there?' Rod asks next, giving you a friendly and curious expression.";
+		say "     As you approach, the mall rat's hand dips into his pocket to pull out a music player and pause it, then tugs his earphones down so they rest around his neck. 'What up?' he says with a smile, flicking some strands of his black hair out of his face so he can meet your gaze with his active, sky-blue eyes. Pushing himself away from the wall he was leaning against, the young man takes a step forward and adds, 'Haven't seen you around here before, so welcome to the Smith Haven Mall, [dude]! I'm Rod. Always stroked to meet new people! At least those that aren't going to go mob on folks, you know.' Gaze flicking to the entrance of the mall for a second, he shudders a little, then quickly pushes any worries about the outside aside. 'So, you coming to stay? To wait out all the craziness going on out there?' Rod asks next, giving you a friendly and curious expression.";
 		say "     You introduce yourself in turn, then give a casual explanation of what brings you to the mall today, to which the mall rat listens attentively. 'Wow, so you go out there on the streets regularly? All over the city? Man, that's pretty gnarly! Most of the refugees coming in are telling scary stories about everything going on out there. Really not my scene, to roam the streets Mad-Max style. Guess we were the lucky ones, hanging out here when things went down. Got everything we need, right here in the mall. My girl, the other rats, and all the cool stuff from the stores. Of course, for the best things, one has to wait a bunch until it's your turn. I keep myself busy tinkering with stuff in the meantime. So if you got something to trade, I might be interested in that.'";
 		now PlayerMet of Rod Mallrat is true; [met and introduced]
 		say "[RodTalkMenu]";
@@ -124,7 +124,7 @@ to say RodTalkMenu:
 	[]
 	if AlexProgress is 2 and HP of Ronda is not 100:
 		choose a blank row in table of fucking options;
-		now title entry is "Ask him if he kows where Darrell is";
+		now title entry is "Ask him if he knows where Darrell is";
 		now sortorder entry is 12;
 		now description entry is "Maybe Rod can tell you where to find him";
 	[]
@@ -133,7 +133,7 @@ to say RodTalkMenu:
 		now title entry is "Talk about Ronda";
 		now sortorder entry is 13;
 		now description entry is "Discuss the things going on with Rod";
-	[]	
+	[]
 	sort the table of fucking options in sortorder order;
 	repeat with y running from 1 to number of filled rows in table of fucking options:
 		choose row y from the table of fucking options;
@@ -198,7 +198,6 @@ to say Rod_Darrell:
 	if Ronda is not in Mall Atrium:
 		say "     Following Rod's guidance, you arrive in the atrium of the mall and approach one of the various mall rats there. After going back and forth between a few of them, eventually someone says, 'Yeah, sure! I know where he is.' Half-turning away from you, she waves to someone and calls out, 'Darrell, c'mere!' Following his gaze, you see various people in the densely packed mall, but no one matching the description you were given. Then one of the mall rats of a somewhat further away group peels off and makes his way towards you, weaving in between the various passersby. Looks like the city's star point guard is now a good deal furrier and rattier. There's a hint of greater than usual muscle mass on his white-furred frame, but overall he's got the fairly slender build typical for the anthro rodents. As the man arrives, he gives you a casual nod, 'What's up?' You are introduced to each other, and after some brief explanation, the white rat nods.";
 		say "     'You can go tell Alex I appreciate his concern, but I'm pretty good here at this point.' Not yet willing to admit failure in your task to bring him to Alex, you spend a minute trying to convince him to come with you, but he stands firm on it. 'Nah, I'm good here, man. Got all I need with my new friends,' Darrell finally states, then heads back to talk to some of the other rats, giving fist bumps to a buddy and then putting his arms around a pair of the girls. Letting out a sigh, you mentally prepare yourself to give Alex mixed news the next time you see him.";
-
 
 to say Rod_RondaSlutrat: [leaving this here in case someone wants to play the old slutrat content]
 	if HP of Ronda is 1 or HP of Ronda is 2:
@@ -398,7 +397,7 @@ to say RondaTalkMenu:
 		now title entry is "Talk about Ronda";
 		now sortorder entry is 13;
 		now description entry is "Discuss the things going on with Ronda";
-	]	
+	]
 	sort the table of fucking options in sortorder order;
 	repeat with y running from 1 to number of filled rows in table of fucking options:
 		choose row y from the table of fucking options;
@@ -437,7 +436,7 @@ to say RondaTalkMenu:
 
 to say Ronda_BackgroundTalk1:
 	say "     'Oh, sure! I can tell you that you're speaking to one of the first mall rats! The original crew, you understand? Not a later arrival.' The last words are accompanied by a second of side-eye directed to one of Ronda's rivals in the social hierarchy of the rat pack, before she turns her full attention back to you. 'A little while back, the day all of this started, my man Rod and I, plus a number of our friends went to spend a day here in the Smith Haven Mall. It's always a blast to go browsing in all the stores, and we wanted to celebrate his birthday too, with some good food and a movie. Things started out fairly slow, the changes I mean, and all of us were fairly focused on the screen, only really noticing that something was going on when the lights came on at the end. It was a little bit of a shock at first, to find that you've grown fur, but it's actually quite lovely, isn't it? As for why we turned to this shape, I guess it might have had something to do with Julie. She's got two pet rats, fancy ones with special patterns. Not that she had them with her that day, but some fur might have stuck to her jacket or so...'";
-	say "     A tought crops up in your mind almost on its own, and you spend a second contemplating the possibility of an enterprising band of regular rats gnawing a well-hidden hole to enter the cinema and having nightly feasts on the never-ending bonanza of dropped snacks and half-dried puddles of spilled soda. Wisely choosing not to mention this theory, you keep the possibility that the mall rats are descended from vermin living in the walls to yourself. Never noticing your bief mental excursion, Ronda continues, 'Since then, our numbers have grown steadily. Mostly from other friends having made it to the mall, and a number of refugees deciding the rat lifestyle was for them, but we've also had a number of births - oooh, the ratlings are soo cute!' Letting out a little squeal at the memory of little baby mall rats, Ronda bites her lip, then shakes her head. 'Not that I'm ready to have kids myself yet, of course! Me and Rod are using protection, that's for sure! Thankfully, the gals over from the community center keep handing out condoms for everyone, going around to remind everyone that we must not let the population explode, hah.'";
+	say "     A thought crops up in your mind almost on its own, and you spend a second contemplating the possibility of an enterprising band of regular rats gnawing a well-hidden hole to enter the cinema and having nightly feasts on the never-ending bonanza of dropped snacks and half-dried puddles of spilled soda. Wisely choosing not to mention this theory, you keep the possibility that the mall rats are descended from vermin living in the walls to yourself. Never noticing your bief mental excursion, Ronda continues, 'Since then, our numbers have grown steadily. Mostly from other friends having made it to the mall, and a number of refugees deciding the rat lifestyle was for them, but we've also had a number of births - oooh, the ratlings are soo cute!' Letting out a little squeal at the memory of little baby mall rats, Ronda bites her lip, then shakes her head. 'Not that I'm ready to have kids myself yet, of course! Me and Rod are using protection, that's for sure! Thankfully, the gals over from the community center keep handing out condoms for everyone, going around to remind everyone that we must not let the population explode, hah.'";
 	TraitGain "Background Talk" for Ronda;
 
 to say Ronda_JaguarOrderlyVisit:
@@ -502,7 +501,7 @@ instead of going to Mall FoodCourt while ( HP of Ronda is 1 and lastfuck of rod 
 	move player to Mall FoodCourt;
 	if FurryList is banned or FemaleList is banned or HermList is banned or HumorousList is banned or MaleList is banned:
 		say "     Rod seems particularly down and you go over to talk to him. He sighs sadly and tells you about how he went to the mysterious shop in the mall to look for a cure for Ronda. 'But the spooky dog-woman said nothing could be done for her. She had some weird, mumbo-jumbo explanation. Something about needing the creatures that have been banned or something. So, I guess nothing can be done for her.' With that, he slumps off to be alone at one of the tables in the far corner of the food court.";
-		say "     (This quest requires that Furry, Girl, Guy, Hermaphrodite and Humorous content all be unbanned.)[line break]";
+		say "     (This quest requires that Furry, Girl, Guy, Hermaphrodite, and Humorous content all be unbanned.)[line break]";
 		now HP of Ronda is 2;
 	else:
 		say "     Rod comes up to you as you arrive. He seems a little more animate than he's been of late, if still rather disheveled. 'Hey, can I ask a favor? I was, like, you know, totally missing Ronda. You know about Ronda, dontcha? She was there when those infected rats popped up and swarmed the place. You must've missed it, but it was a bad scene, dude.' You keep quiet, thinking it best that Rod and the other rats not know about your part in that incident. 'But yeah, there I was, totally bummed, when I went [']Dude!['] and got this brainwave to talk to that weird dog-girl at that creepy shop. She was all spooky and stuff, but she said there might be a way to help Ronda. But that's when she told me that I'd need to get some stuff out in the city, and I'm not to keen on leaving the mall, you know. So brainwave number two comes and I'm thinking my friend can help me with it. So that's where you come in.' Feeling a little guilty about what happened, you agree to visit the shop on the west side of the Atrium and see what needs to be done.";
@@ -612,8 +611,6 @@ to say ResolveEvent Art Collector:
 
 Chapter 3 - The Rescue Attempt
 
-Rondafight is a number that varies.
-
 to say RondaRescue:
 	[puts Slut Rat as lead monster in case of impregnation]
 	repeat with y running from 1 to number of filled rows in Table of Random Critters:
@@ -709,32 +706,33 @@ to say helpingRonda:
 to say helpingrod:
 	say "     You start to tell her that's Rod's waiting for her to come back to the Mall. As you try to explain that you've found a way to change her back, she shakes her head at that and grinds her hard cock against you harder. 'Change? Why would I want to change? We're the sexiest beasts on the planet. Mmm... enough talking. Let's fuck, sweet stuff,' she rumbles, grinding her hard cock against you. You'll have to fight her before you can get her to take it.";
 	LineBreak;
-	now Rondafight is 3;
+	say "     Despite your hopes of saving her, you find yourself facing off against the slut rat Ronda. She is a tall and intimidating wall of fur and leather, appearing female at first glance. But you know better, sporting a bulging package under her tight, leather outfit. She has a lustful look in her eyes, having decided she'd rather repay you for the chocolates with sex than listening to what you have to say. You try to calm her down and get her to focus, but that moment of remembrance is fading. In her confusion, she seems to think you're just looking to scrap to see who's on top, as the slut rats sometimes do. Being the first of the slut rats, she is a little bigger and tougher than the others.";
+	SlutRatRondaUpgrade;
 	now inasituation is true;
 	challenge "Slut Rat";
 	now inasituation is false;
-	if Rondafight is 3:
-		say "     As you make an attempt to flee from the slut rat, your hand gets knocked by hers, sending the vial tumbling to the ground and breaking. Its contents spill out onto the dirty floor, ending any hope of saving her. Ronda follows you briefly before heading back to the main group, what brief moment of clarity she had is gone forever. Having successfully gotten away from her, all you can do is make your way back up to the mall food court.";
-		move player to Mall Foodcourt;
-		say "     Back up in the mall, you head over to Rod and give him the bad news that Ronda was too far gone to be saved. Heartbroken, the depressed rat slumps off somewhere to be alone for a while.";
-		now HP of Ronda is 99;
-		now Rondafight is 0;
-	else if Rondafight is 2:
+	SlutRatStatReset;
+	if fightoutcome >= 20 and fightoutcome <= 29: [lost]
+		say "     Victorious, Ronda pushes you down onto one of the crates and climbs atop you roughly. You moan as she grinds her cock against your backside. 'See! Told you I was sexiest beast around. And the only change going on around here is that I'm going to make you into my sexy bitch for the next half hour,' she rumbles, pressing her thick rod deep into you. Your moans at being penetrated stifle any attempt to tell her about the potion and soon enough, with the large rat pumping her cock into your [if Player is female]pussy[else]ass[end if], you forget about it as well. As she starts pounding you harder, you drop it to get a better grip on the crate. True to her word, Ronda pounds you long and hard for the next half hour, swapping positions a few times, making sure she's blasted thick rat cum into you from both end and splattering it all over your face[if Player is not neuter], making you cum several times as well from her enthusiastic fucking[end if]. During the course of this wild session, any last vestiges of Ronda's previous life fade away completely, buried forever under her new slut rat persona.[impregchance]";
+		SanLoss 10;
+		increase Libido of Player by 20;
+		if Libido of Player > 80, now Libido of Player is 80;
+		infect "Slut Rat";
 		say "     After being beaten by Ronda and in the ensuing wild romp, the small vial is knocked aside and shatters, spilling its contents onto the dirty floor, ending any hope of saving her. Once she's sated herself, she heads back to the main group, what brief moment of clarity she had is gone forever. After you recover, you make your way back up to the food court.";
 		move player to Mall Foodcourt;
 		say "     Back up in the mall, you head over to Rod and give him the bad news that Ronda was too far gone to be saved. Heartbroken, the depressed rat slumps off somewhere to be alone for a while.";
 		now HP of Ronda is 99;
-		now Rondafight is 0;
-	else if Rondafight is 1:
-		now Rondafight is 0;
+	else if fightoutcome >= 30: [fled]
+		say "     As you make an attempt to flee from the slut rat, your hand gets knocked by hers, sending the vial tumbling to the ground and breaking. Its contents spill out onto the dirty floor, ending any hope of saving her. Ronda follows you briefly before heading back to the main group, what brief moment of clarity she had is gone forever. Having successfully gotten away from her, all you can do is make your way back up to the mall food court.";
+		move player to Mall Foodcourt;
+		say "     Back up in the mall, you head over to Rod and give him the bad news that Ronda was too far gone to be saved. Heartbroken, the depressed rat slumps off somewhere to be alone for a while.";
+		now HP of Ronda is 99;
+	else if fightoutcome >= 10 and fightoutcome <= 19: [won]
 		now HP of Ronda is 10;
 		move Ronda to Mall Atrium;
 		increase score by 50;
-		say "     Eventually forced to swallow, Ronda releases a muffled gasp as you keep your hand over her mouth and she starts to thrash. She almost manages to push you off, the renewed strength from her fear only held in check by her lack of control of her changing body. As the potion takes effect, Ronda begins to shrink down a little and the harsher features of her slut rat face diminish, starting to look more like her old self.";
-		say "     As clarity and recognition return to her eyes, she stops struggling and looks around, taking in her surroundings as if for the first time. You whisper firmly that you're rescuing her from some dangerous creatures and she's got to be quiet as they're still around here. Cautiously, you take your hands from her and thankfully she doesn't scream.";
-		WaitLineBreak;
-		say "     'What's going on? Last thing I remember, I was hanging out with the girls and then... it all gets hazy. There's just vague images of rats and sex. Where's Rod? Is he okay?' It seems she's thankfully forgotten how she ended up this way in the first place. You quickly tell her that Rod sent you to rescue her. 'Oh, my dear, sweet Rod,' she says lovingly holding her paws at her chest.";
-		say "     And that's when she notices her large, and now ill-fitting, leather outfit. You quickly put your hand over her mouth again, silencing her cry of surprise. You tell her that you'll explain on the way back and grab a sheet from the pile of junk to bundle herself in. She nods and clutches it tightly to herself. You notice that her changes are still slowly progressing, with her fur now something between her previous white and spotted pelt and the dark tones of the slut rats.";
+		say "     You manage to knock Ronda down long enough to jump on top of her. It takes some effort to resist fucking her then and there, your ratty blood all worked up, but you rein it in. You tell the sexy rat to open wide, which she does, thinking she's going to get a meaty treat. You instead quickly dump the serum down her throat and put your hand over her mouth to keep her from spitting it up. Eventually forced to swallow, Ronda releases a muffled gasp as you keep your hand over her mouth and she starts to thrash. She almost manages to push you off, the renewed strength from her fear only held in check by her lack of control of her changing body. As the potion takes effect, Ronda begins to shrink down a little and the harsher features of her slut rat face diminish, starting to look more like her old self. As clarity and recognition return to her eyes, she stops struggling and looks around, taking in her surroundings as if for the first time. You whisper firmly that you're rescuing her from some dangerous creatures and she's got to be quiet as they're still around here. Cautiously, you take your hands from her and thankfully she doesn't scream.";
+		say "     'What's going on? Last thing I remember, I was hanging out with the girls and then... it all gets hazy. There's just vague images of rats and sex. Where's Rod? Is he okay?' It seems she's thankfully forgotten how she ended up this way in the first place. You quickly tell her that Rod sent you to rescue her. 'Oh, my dear, sweet Rod,' she says lovingly holding her paws at her chest. And that's when she notices her large, and now ill-fitting, leather outfit. You quickly put your hand over her mouth again, silencing her cry of surprise. You tell her that you'll explain on the way back and grab a sheet from the pile of junk to bundle herself in. She nods and clutches it tightly to herself. You notice that her changes are still slowly progressing, with her fur now something between her previous white and spotted pelt and the dark tones of the slut rats.";
 		WaitLineBreak;
 		say "     You head over to the archway leading out of the entrance and make sure the coast is clear before motioning for her to follow you. Moving quickly and quietly, you lead Ronda back out of the sewers by the safest route you know. In the dark tunnels, it's hard to tell but the changes eventually seem to subside, with her only a little bigger than before, but otherwise looking the same. On the way, you give her a marginally edited version of the situation with the slut rats, leaving out your involvement in the whole fiasco. She tells you she only has a few, vague memories of her time as a slut rat and readily accepts your version of events.";
 		move player to Mall Foodcourt;
@@ -841,7 +839,7 @@ to UtilityRoomChoicePoint:
 			say "     You've seen enough horror movies to know that entering creepy underground rooms is not advisable. Though along the same lines, you wonder for a second why you're even down here in the first place, then push that thought aside and turn around, retracing your steps. As you leave the door behind, you make a firm resolution to not come back.";
 			now Resolution of Mall Utility Room is 100; [avoided for good - unless the slutrat quest is started]
 			now Mall Utility Room is resolved;
-	
+
 to say Mall_Utility_Room_Desc:
 	say "Glancing around, you see that what once was just an unremarkable utility room has been transformed into something else entirely. Lit by more than a dozen large, slow-burn candles set on the metal shelving along the walls, the place looks more like the underground lair of some sort of cult, complete with mildly disturbing paraphernalia taking the place of maintenance worker's tools: There are plenty of jars and bottles with unknown fluids in various colors, gags and various items of BDSM bondage gear, and even a human skull staring at you from hollow eye-sockets. The centerpiece of it all is a large pentagram spray-painted on the concrete floor in the middle of the room, with fresh, black candles set at each point of the symbol's central star.";
 	say "     Unsure what to make of this ritual chamber, you keep looking around and spot another door on the opposite side of the room. Instantly deciding that you should check that out first, you lay your hand on the door handle and try it, slowly and carefully, but find the metal door locked. Seems like that won't lead you on anywhere, so you turn back to investigate your surroundings instead. Stepping up to the nearest shelf, you have a look at the bottles and jars - none of them are labeled, or if they were, had their labels scraped off. Blue, green, purple - there's plenty of colors to go around with these, but more than a few are filled with milky white goop. A little closer examination of one such jar with a dried smear down its outside reveals that this is what was to be expected - cum. You can't help but idly wonder what would produce enough of the stuff to fill all the containers you see (if everything white actually is cum, that is). There must be gallons of the stuff in here!";

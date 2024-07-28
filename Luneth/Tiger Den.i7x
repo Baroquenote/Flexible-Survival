@@ -357,7 +357,7 @@ to say ResolveEvent TigerVSTaur:
 			else:
 				say "Invalid choice. Type [link]1[end link] to fight the tigertaur, [link]2[end link] to fight the tiger or [link]3[end link] to watch, or [link]4[end link] to run.";
 		if calcnumber is 1: [help chase]
-			Linebreak;
+			LineBreak;
 			say "[TigerVSTaur_Helped_Chase]";
 			now HP of Chase is 1;
 			now PlayerMet of Chase is true;
@@ -369,11 +369,11 @@ to say ResolveEvent TigerVSTaur:
 			say "[TigerVSTaur_Helped_Kage]";
 			now Resolution of TigerVSTaur is 2;
 		else if calcnumber is 3: [watch]
-			Linebreak;
+			LineBreak;
 			say "[TigerVSTaur_Watched]";
 			now Resolution of TigerVSTaur is 99;
 		else if calcnumber is 4: [run]
-			Linebreak;
+			LineBreak;
 			say "[TigerVSTaur_Ran]";
 			now Resolution of TigerVSTaur is 99;
 		now TigerVSTaur is resolved;
@@ -413,7 +413,7 @@ to say TigerVSTaur_Helped_Chase: [TODO: I wanna include something for the end of
 	say "     The only response is a deep sigh that definitely sounds like this man has had to suffer this type of cocky conversation daily, 'You know the rules boy, I can't let you in without an inspection.' The smaller tiger simply nods his head and helps you get into position, 'We have to be careful about those tigertaurs, so... yeah, no tigertaurs allowed, haha!' Once the larger feline is in front of you, you can really see his size, the man is literally built like a tank. He inspects you quickly but efficiently and then moves on to Chase and repeats. He stops though when he notices the splatter of blood still on the small anthro's claws, 'What's this?' Chase looks a bit sheepish, but honestly replies that it's tigertaur blood, a simple mmhmm is his only reply.";
 	WaitLineBreak;
 	say "[TigerVSTaur_Help_Chase_Companion_06]";
-	say "     You're finally cleared to enter the den, however after you pass the gate and are about to open the door Kano speak up, 'Was it...?' Chase doesn't turn around when he answers, 'Yeah... it was Kage. I woulda been in big trouble if [if Player is not defaultnamed] as [name of Player][else]they [end if]hadn't bailed me out.'";
+	say "     You're finally cleared to enter the den, however after you pass the gate and are about to open the door Kano speak up, 'Was it...?' Chase doesn't turn around when he answers, 'Yeah... it was Kage. I woulda been in big trouble if [if Player is not defaultnamed][name of Player] [else]they [end if]hadn't bailed me out.'";
 	WaitLineBreak;
 	say "     Glancing behind you for a moment, you see the large tiger's head drop and his eyes close, the man looks like he just got punched in the gut. You quickly follow after Chase into the large open room filled with gear and other tigers. Not wanting to lose your train of thought, you decide to ask the tiger why Kano seemed so upset, 'Well, because Kage is his son...' Silence hangs between the two of you until Chase finally tries to brighten the mood and continues the previous conversation that you were having. 'Sadly I never did actually encounter a tiger that day, but there must have been enough of whatever is causing the changes left over in their den to change me, I still don't regret it though... this body is so much better than my old one was,' he says, flashing you a grin. 'And hey!' Chase says as he opens his arms clearly meaning to show off the room.";
 	say "     Furniture is placed haphazardly all over, causing the place to look like a major battle took place here at some point. 'At least I'm not alone like this,' the tiger man says with a grin as he points out several other tiger men and tiger women who look up to see what's happening. 'Welcome to the Tiger Den,' your guide says somewhat smugly as he leads you further inside.";
@@ -458,7 +458,7 @@ to say TigerVSTaur_Helped_Kage:
 			else:
 				say "Invalid choice. Type [link]1[end link] to tiger throat, [link]2[end link] to tiger ass or [link]3[end link] to tigertaur, or [link]4[end link] to not in the mood.";
 		if calcnumber is 1: [skullfuck Chase]
-			Linebreak;
+			LineBreak;
 			say "     [TigerVSTaur_Throat_Fuck]";
 			now HP of Chase is 99;
 			now PlayerMet of Chase is true;
@@ -467,10 +467,10 @@ to say TigerVSTaur_Helped_Kage:
 			say "     [TigerVSTaur_Ass_Fuck]";
 			now HP of Chase is 99;
 		else if calcnumber is 3: [mess around with Kage]
-			Linebreak;
+			LineBreak;
 			say "     [TigerVSTaur_Sexy_Kage]";
 		else if calcnumber is 4: [no sexy times]
-			Linebreak;
+			LineBreak;
 			say "     [TigerVSTaur_No_Sexy_Time]";
 
 to say TigerVSTaur_Throat_Fuck:

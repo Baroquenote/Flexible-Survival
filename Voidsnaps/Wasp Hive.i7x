@@ -12,7 +12,36 @@ Definition: A person (Called x) is inWaspHive:
 
 An everyturn rule:
 	if "Wasp Royalty" is listed in feats of Player:
-		turn player into "Wasp King" silently;
+		if Nightmaretf > 0: [Nightmare]
+			if debugactive is 1:
+				say "     <The wasp king infection can't proceed with other permanent infections! Sorry. In this case, it's the Nightmare infection blocking it!>";
+			stop the action;
+		if wrcursestatus >= 7 and wrcursestatus < 100: [Were-raptor]
+			if debugactive is 1:
+				say "     <The wasp king infection can't proceed with other permanent infections! Sorry. In this case, it's the Wereraptor infection blocking it!>";
+			stop the action;
+		if (JackalManTF > 0 and JackalManTF < 5) or (JackalBoyTF > 0): [Jackalman Transformation]
+			if debugactive is 1:
+				say "     <The wasp king infection can't proceed with other permanent infections! Sorry. In this case, it's the Jackalman infection blocking it!>";
+			stop the action;
+		if isHellhound is true: [Hellhound]
+			if debugactive is 1:
+				say "     <The wasp king infection can't proceed with other permanent infections! Sorry. In this case, it's the Hellhound infection blocking it!>";
+			stop the action;
+		if "Ceryneian Blessed - Anthro" is listed in feats of Player:
+			if debugactive is 1:
+				say "     <The wasp king infection can't proceed with other permanent infections! Sorry. In this case, it's the Anthro Ceryneian infection blocking it!>";
+			stop the action;
+		if "Ceryneian Blessed - Feral" is listed in feats of Player:
+			if debugactive is 1:
+				say "     <The wasp king infection can't proceed with other permanent infections! Sorry. In this case, it's the Feral Ceryneian infection blocking it!>";
+			stop the action;
+		if "Ceryneian Blessed - Taur" is listed in feats of Player:
+			if debugactive is 1:
+				say "     <The wasp king infection can't proceed with other permanent infections! Sorry. In this case, it's the Taur Ceryneian infection blocking it!>";
+			stop the action;
+		else:
+			turn player into "Wasp King" silently;
 
 [Resolution Variables:
  Last stand:
@@ -621,6 +650,7 @@ to say ResolveEvent Last Stand:
 				say "[ZiixSodaChoice]";
 			else:
 				say "     Sadly, you don't have anything that could help. Maybe another of the warrior's hivemates survived the purge and could help you rouse him? You don't think you have time to scavenge and return!";
+				now Resolution of Last Stand is 2;
 		else:
 			say "     The wasp man charges you before you convince him that you aren't a threat, saying something intelligible about dragging you to death with him. It seems you have no choice but to fight him. Thankfully, despite his muscles and size, he's unsteady and unable to focus on you, let alone aim his attacks. It shouldn't be hard to take him down.";
 			now inasituation is true;
@@ -739,7 +769,7 @@ Object	Name
 Broken But Alive	"Broken But Alive"
 
 Broken But Alive is a situation.
-ResolveFunction of Broken But Alive is "[ResolveEvent Broken  But Alive]".
+ResolveFunction of Broken But Alive is "[ResolveEvent Broken But Alive]".
 Sarea of Broken But Alive is "Nowhere".
 Prereq1 of Broken But Alive is Last Stand.
 Prereq1Resolution of Broken But Alive is { 1, 2, 3 }.

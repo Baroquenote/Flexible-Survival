@@ -125,6 +125,11 @@ to PlayerDrink (N - number):
 	if thirst of Player < 0:
 		now thirst of Player is 0;
 
+to PlayerDrink (N - number) silently:
+	decrease thirst of Player by N;
+	if thirst of Player < 0:
+		now thirst of Player is 0;
+
 to PlayerThirst (N - number):
 	LineBreak;
 	say "     [bold type]Your thirst has increased by [N]![roman type][line break]";
@@ -547,7 +552,7 @@ to NPCSexAftermath (TakingChar - a person) receives (SexAct - a text) from (Givi
 						mimpregchance;
 					[
 					if Player is mpreg_now: [player has _just_ been impregnated]
-						<set the Givingchar as father somehow>
+						<set the GivingChar as father somehow>
 					]
 			increase AssFuckTaken of Player by 1;
 		else if SexAct is "PussyFuck":
@@ -566,7 +571,7 @@ to NPCSexAftermath (TakingChar - a person) receives (SexAct - a text) from (Givi
 						fimpregchance;
 					[
 					if Player is fpreg_now: [player has _just_ been impregnated]
-						<set the Givingchar as father somehow>
+						<set the GivingChar as father somehow>
 					]
 			increase PussyFuckTaken of Player by 1;
 		else if SexAct is "AssDildoFuck": [used for dildos, fingers, tentacles - anything ass penetrative that does not impregnate]

@@ -1619,6 +1619,34 @@ instead of sniffing dracovixentaur milk:
 
 Table of Game Objects (continued)
 name	desc	weight	object
+"Dragon Breeder milk"	"A tall glass vessel packed to the rim with pearly white perfection, a normal unassuming person could easily mistake your scrumptious draconic cream for a banal dairy product at first glance, had you not written the words [']Dragon Breeder milk['] on the side. Though should someone gaze too deeply or too long at its content, their unworthy eyes would be treated to an ever-shifting collage of unnatural colors and enthralling dark shapes fluttering in the alabaster waters."	1	Dragon Breeder milk
+
+Dragon Breeder milk is a grab object.
+Dragon Breeder milk is milky.
+Usedesc of Dragon Breeder milk is "[Dragon Breeder milk use]".
+
+to say Dragon Breeder milk use:
+	say "Bringing the glistening your lips, you swallow down your succulent cream with eager abandon. Delighting in the warm, rich, soothing balm coating your palate in a heady sheen of heavy vanilla and some crisp, almost herbal, bite as you swish the thick ambrosial liquid along the roof mouth before swallowing. Ah delicious, you preen self-indulgently as the potent draconic energies infuse you with a raw rush of fertile excess.";
+	PlayerDrink 15;
+	PlayerEat 15;
+	increase Breast Size of Player by 3;
+	if Cunt Count of Player < 1:
+		increase Cunt Count of Player by 1;
+	increase Cunt Depth of Player by 3;
+	increase Cunt Tightness of Player by 3;
+	if Cock Count of Player is 1:
+		Increase Cock Length of Player by 5;
+	if Ball Size of Player <= 6:
+		Increase Ball size of player by 1;
+	if scalevalue of Player < 5:
+		now scalevalue of Player is 5;
+
+instead of sniffing Dragon Breeder milk:
+	say "You open the lid for a moment and take a sniff, your senses are greet by the subtle scent of cloves and Plumeria.";
+
+
+Table of Game Objects (continued)
+name	desc	weight	object
 "dragon pool toy milk"	"A plastic water bottle filled with what is clearly milk. One could think it was a regular cow's milk, if someone hadn't written 'Dragon Pool Toy Milk' across the label on the bottle. You [italic type]could[roman type] drink it to quench your thirst, or you maybe just do it for fun. Who knows what else it might do to you though..."	1	dragon pool toy milk
 
 dragon pool toy milk is a grab object.
@@ -2968,6 +2996,32 @@ instead of sniffing hentai fan milk:
 
 Table of Game Objects (continued)
 name	desc	weight	object
+"Hermacore Cream"	"A generic plastic bottle filled to the rim with your unique one-of-a-kind cream, that could almost pass for regular milk. Were it not for the unusual prismatic oily hues reflected in the alabaster liquids surface, or the words [']Hermacore Cream['] you wrote on the side."	1	Hermacore Cream
+
+Hermacore Cream is a grab object.
+Hermacore Cream is milky.
+Hermacore Cream is infectious.
+Strain of Hermacore Cum is "Hermacore".
+Usedesc of Hermacore Cream is "[Hermacore Cream use]".
+
+to say Hermacore Cream use:
+	say "Tilting the creamy vessel to lips, and take a deep greedy pull of your exotic milk. Your inner sommelier detects hints of subtle oaks, interspliced with effervescent spear mints, and a light undercurrent of fresh vanilla playing across your palate. Swallowing, your tastebuds note aftertaste leaves on uncanny but not wholly unwelcome sour bite evocative of some high proof liquor.";
+	PlayerDrink 7;
+	PlayerEat 7;
+	increase Breast Size of Player by 3;
+	if Cunt Count of Player is 0:
+		increase Cunt Count of Player by 1;
+	increase Cunt Depth of Player by 3;
+	increase Cunt Tightness of Player by 3;
+	decrease turns in heat by 8;
+	infect "Hermacore";
+	SanLoss 5;
+
+instead of sniffing Hermacore Cream:
+	say "You open the lid for a moment and take a sniff. Smells kinda like any other milk, really.";
+
+Table of Game Objects (continued)
+name	desc	weight	object
 "hermaid milk"	"A plastic water bottle filled with what is clearly milk. One could think it was a regular cow's milk, if someone hadn't written 'Hermaid Milk' across the label on the bottle. You [italic type]could[roman type] drink it to quench your thirst, or you maybe just do it for fun. Who knows what else it might do to you though..."	1	hermaid milk
 
 hermaid milk is a grab object.
@@ -4181,6 +4235,28 @@ to say mareslut milk use:
 
 instead of sniffing mareslut milk:
 	say "You open the lid for a moment and take a sniff. Smells kinda like any other milk, really.";
+
+
+Table of Game Objects (continued)
+name	desc	weight	object
+"margay taur milk"	"A glass bottle filled to the brim with rich and thick creamy milk. Oddly, the bottle and its contents never seem to get warm or even go off when left out in the sun."	1	margay taur milk
+
+margay taur milk is a grab object.
+margay taur milk is milky.
+Usedesc of margay taur milk is "[margay taur milk use]".
+
+to say margay taur milk use:
+	say "Noticing a mild dryness on the roof of your mouth, you pop open a bottle of tauric cream and hungry slurp up its rich contents. Though you feel somewhat sated, you can't help but take note of a strange tingling sensation coming from your chest and groin as your body shifts towards a radically more feminine bend.";
+	PlayerDrink 15;
+	PlayerEat 15;
+	increase Breast Size of Player by 3;
+	if Cunt Count of Player < 1:
+		increase Cunt Count of Player by 1;
+	increase Cunt Depth of Player by 3;
+	increase Cunt Tightness of Player by 3;
+	now Cock Count of Player is 0;
+	now Ball Size of Player is 0;
+	now Cock Length of Player is 0;
 
 
 Table of Game Objects (continued)
@@ -5787,7 +5863,7 @@ name	desc	weight	object
 skunk milk is a grab object.
 skunk milk is milky.
 skunk milk is infectious.
-Strain of skunk milk is "Skunk".
+Strain of skunk milk is "Skunk Female".
 Usedesc of skunk milk is "[skunk milk use]".
 
 to say skunk milk use:

@@ -171,7 +171,7 @@ to say DrMattTalkMenu:
 		now sortorder entry is 2;
 		now description entry is "Tell him you got some samples for him";
 	[]
-	if HP of Doctor Matt is 6:
+	if HP of Doctor Matt is 6 and Unusual Creature is resolved:
 		choose a blank row in table of fucking options;
 		now title entry is "The results of his examination";
 		now sortorder entry is 3;
@@ -512,6 +512,7 @@ to DrMattSusanQuestIntro:
 	WaitLineBreak;
 	say "     'Given that she appeared to be a woodland creature, I would hazard the guess that our mystery woman might be found here, in this large [bold type]city park[roman type]. You might want to check this high probability area first before hunting for the [bold type]unusual creature[roman type] anywhere else.' Circling a green area that extends for several blocks in either direction, the doctor then caps his pen and hands you the map. 'I also wanted to commend you for your willingness to assist. Science and understanding will be the way out of this dire situation, that you can be certain of. We need good people like you to make progress.'";
 	now Unusual Creature is active;
+	now Only the Lonely is active;
 	now HP of Doctor Matt is 6;
 
 to DrMattSusanQuestReminder:
@@ -621,7 +622,7 @@ to say DrMattQuestTalk:
 		now HP of Doctor Matt is 5;
 	else if HP of Doctor Matt is 5:
 		DrMattSusanQuestIntro;
-	else if HP of Doctor Matt is 6 and unusual creature is unresolved:
+	else if HP of Doctor Matt is 6 and Unusual Creature is not resolved:
 		DrMattSusanQuestReminder;
 	else if HP of Doctor Matt is 6:
 		DrMattSusanQuestReturn;

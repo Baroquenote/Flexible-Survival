@@ -158,12 +158,14 @@ to say ResolveEvent Kitty Adventures:
 				move Player to Haunted House Entrance;
 				AddNavPoint Haunted House Entrance;
 				say "[SaschaMansionReady]";
+				now Resolution of Kitty Adventures is 1;
 				now Kitty Adventures is Resolved;
 			-- "Sure, but you've kinda got plans for right now. Later would be better...":
 				LineBreak;
 				say "     Sascha is momentarily saddened that you can't just set out immediately, but his smile is back a moment later, 'Okay then, but don't let me wait too long, or I might be tempted to go in on my own!' He then gives you detailed instructions of how to get to the mansion, before giving his goodbyes and walking up to the wall of a nearby building, climbing up a rain-gutter drainage pipe in short notice. After watching him reach the roof, giving you a friendly wave before climbing onto it, you turn your attention back to your own survival in the city.";
 				AddNavPoint Haunted House Entrance;
 				now Sascha is in Haunted House Entrance;
+				now Resolution of Kitty Adventures is 2;
 				now Kitty Adventures is Resolved;
 			-- "That doesn't quite match your idea of fun. You'll skip out on this adventure.":
 				LineBreak;

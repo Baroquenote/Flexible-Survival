@@ -1619,6 +1619,33 @@ instead of sniffing dracovixentaur cum:
 
 Table of Game Objects (continued)
 name	desc	weight	object
+"Dragon Breeder cum"	"A nondescript clear plastic bottle overflowing with your virile draconic seed. To the unobservant, this vessel could be mistaken for some sort of off-brand synthetic creamer, had you not taken the time to write [']Dragon Breeder cum['] across the label on the bottle. True, there is nothing preventing you from drinking it, yet it's anyone's guess what the consequence of such flagrant hedonism would be."	1	Dragon Breeder cum
+
+Dragon Breeder cum is a grab object.
+Dragon Breeder cum is cum.
+Usedesc of Dragon Breeder cum is "[Dragon Breeder cum use]".
+
+to say Dragon Breeder cum use:
+	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the tangy oceanic cum run over your tongue and down your throat. A sapid flavor of salty taffy proliferates your taste buds, your body thrums with reproductive purpose as your virile essence feeds into your [bodydesc of player] form. A pleased reptilian growl leaks from your lips, as your assets swell with draconic vigor to better aid the propagation of your future flight.";
+	if child is not born and gestation of child > 6:
+		decrease the gestation of child by 4;
+	PlayerDrink 5;
+	Playereat 5;
+	if Cock Count of Player < 1:
+		Increase Cock Count of Player by 1;
+	increase Cock Length of Player by 2;
+	increase Ball Size of Player by 1;
+	increase Cunt Depth of Player by 2;
+	increase Cunt Tightness of Player by 1;
+	if scalevalue of Player < 5:
+		now scalevalue of Player is 5;
+
+instead of sniffing Dragon Breeder cum:
+	say "You open the lid for a moment and take a sniff. Unsurprisingly, it smells a lot like you, but just a hair saltier.";
+
+
+Table of Game Objects (continued)
+name	desc	weight	object
 "dragon pool toy cum"	"A plastic water bottle containing a moderate amount of milky white fluid. Almost could be mistaken for some sort of buttermilk, if someone hadn't written 'Dragon Pool Toy Cum' across the label on the bottle. You [italic type]could[roman type] drink it to quench your thirst, or you maybe just do it for fun. Who knows what else it might do to you though..."	1	dragon pool toy cum
 
 dragon pool toy cum is a grab object.
@@ -1961,7 +1988,7 @@ instead of sniffing feline gymnast cum:
 
 Table of Game Objects (continued)
 name	desc	weight	object
-"felinoid cum"	"A plastic water bottle containing a moderate amount of milky white fluid. Almost could be mistaken for some sort of buttermilk, if someone hadn't written 'Felinoid Cum' across the label on the bottle. You [italic type]could[roman type] drink it to quench your thirst, or you maybe just do it for fun. Who knows what else it might do to you though..."	1	felinoid cum
+"felinoid cum"	"A plastic water bottle containing a moderate amount of milky white fluid. Almost could be mistaken for some sort off-white cream or buttermilk, if someone hadn't written 'Felinoid Cum' across the label on the bottle. You [italic type]could[roman type] drink it to quench your thirst, or you maybe just do it for fun. Who knows what else it might do to you though..."	1	felinoid cum
 
 felinoid cum is a grab object.
 felinoid cum is cum.
@@ -1972,10 +1999,10 @@ Usedesc of felinoid cum is "[felinoid cum use]".
 to say felinoid cum use:
 	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy cum run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties'.";
 	PlayerDrink 5;
-	SanLoss 5;
+	PlayerEat 5;
 
 instead of sniffing felinoid cum:
-	say "You open the lid for a moment and take a sniff. Doesn't smell too bad actually, just kinda nutty.";
+	say "You open the lid for a moment and take a sniff. Doesn't smell too bad actually, just kinda nutty with a hint of mint.";
 
 
 Table of Game Objects (continued)
@@ -2964,6 +2991,35 @@ to say hentai fan cum use:
 
 instead of sniffing hentai fan cum:
 	say "You open the lid for a moment and take a sniff. Doesn't smell too bad actually, just kinda nutty.";
+
+
+Table of Game Objects (continued)
+name	desc	weight	object
+"Hermacore Cum"	"A plastic water bottle containing an impressive quantity of your tainted seed. A lay person could mistake it for some sort of heavy creamer, had you not taken the time to write 'Hermacore Cum' across the label on the bottle. In theory, there is nothing stopping you from drink it, although who knows what it would do to you."	1	Hermacore Cum
+
+Hermacore Cum is a grab object.
+Hermacore Cum is cum.
+Hermacore Cum is infectious.
+Strain of Hermacore Cum is "Hermacore".
+Usedesc of Hermacore Cum is "[Hermacore Cum use]".
+
+to say Hermacore Cum use:
+	say "Lifting the plastic bottle to your mouth, you take a drink from it, letting the creamy cum run over your tongue and down your throat. Tastes rich and animal-like. Swishing it around in your mouth a little, you finish the bottle off, then stuff it back into your collection of 'empties' as the lingering nanites infecting your aberrant seed make their presence felt.";
+	if child is not born and gestation of child > 0:
+		decrease the gestation of child by 4;
+	PlayerDrink 5;
+	Playereat 5;
+	SanLoss 5;
+	if Cock Count of Player < 2:
+		Increase Cock Count of Player by 1;
+	increase Cock Length of Player by 2;
+	increase Ball Size of Player by 1;
+	increase Cunt Depth of Player by 2;
+	increase Cunt Tightness of Player by 1;
+	infect "Hermacore";
+
+instead of sniffing Hermacore Cum:
+	say "You open the lid for a moment and take a sniff. Unsurprisingly, it smells alot like you just a tad nuttier.";
 
 
 Table of Game Objects (continued)
@@ -5787,7 +5843,7 @@ name	desc	weight	object
 skunk cum is a grab object.
 skunk cum is cum.
 skunk cum is infectious.
-Strain of skunk cum is "Skunk".
+Strain of skunk cum is "Skunk Male".
 Usedesc of skunk cum is "[skunk cum use]".
 
 to say skunk cum use:
